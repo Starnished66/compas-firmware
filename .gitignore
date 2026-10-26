@@ -1,0 +1,22 @@
+# External base firmware, unpacked inputs and generated images stay local.
+/inputs/
+/outputs/
+/build/
+/scratch/
+/work/
+/cache/
+*.upt
+*.iso
+*.squashfs
+*.sqfs
+*.o
+*.a
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.key
+/AGENTS.md
+/CLAUDE.md
+/.agents/
+/.claude/
