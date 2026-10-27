@@ -59,7 +59,7 @@ done
 
 # check_icons ROOT: no image ships a stock icon that nothing loads, and no icon ships whose
 # Breeze replacement is what the player draws (the legacy-inventory names are the only ones
-# kept; gui_themes.c compares leftover legacy theme copies with the stock file of that name).
+# kept: stock HiBy art that gui_themes.c still lists and legacy themes may override).
 check_icons() {
     python3 -I - "$repo" "$1" <<'PY'
 import os, sys
@@ -87,6 +87,13 @@ REDIRECTED = {
     "power_action/screen_off.png",   # power_hub_card() -> breeze_rows/power_action_screen_off.png
     "power_action/sleep_timer.png",  # power_hub_card() -> breeze_rows/power_action_sleep_timer.png
     "navigation/reorder.png",        # set_reorder_handle_icon() -> titlebar/breeze_handle.png
+    "navigation/back.png",           # build_header_back_button() -> titlebar/breeze_back.png
+    "navigation/more.png",           # titlebar_breeze_icon() -> titlebar/breeze_menu.png (headers, compact_list trailing)
+    "navigation/search.png",         # titlebar_breeze_icon() -> titlebar/breeze_search.png
+    "power_action/power.png",        # power_hub_card() -> breeze_rows/power_action_power.png
+    "power_action/reboot.png",       # power_hub_card() -> breeze_rows/power_action_reboot.png
+    "submenu/bluetooth.png",         # decorate_category_row() -> breeze_rows/submenu_bluetooth.png
+    "submenu/usb.png",               # decorate_category_row() -> breeze_rows/submenu_usb.png
 }
 import re
 player = (pathlib.Path(sys.argv[2]) / "usr/bin/compas_player").read_bytes()
@@ -98,14 +105,12 @@ for p in clean_os.unused_asset_paths(repo):
 if named:
     raise SystemExit("compas_player names images the manifest removes: " + ", ".join(sorted(named)))
 LEGACY_KEPT = {
-    "navigation/back.png", "navigation/more.png", "navigation/search.png",
-    "power_action/power.png", "power_action/reboot.png",
     "settings/about.png", "settings/display.png", "settings/music.png", "settings/power.png", "settings/system.png",
     "stream_media/podcasts_row.png", "stream_media/radio_row.png", "stream_media/subsonic_row.png",
     "sub_back/btn_playlist.png", "touch_list/list_folder.png",
     "submenu/album_artist.png", "submenu/albums.png", "submenu/all_songs.png", "submenu/artists.png",
-    "submenu/bluetooth.png", "submenu/books.png", "submenu/favorites.png", "submenu/files.png",
-    "submenu/playlists.png", "submenu/usb.png",
+    "submenu/books.png", "submenu/favorites.png", "submenu/files.png",
+    "submenu/playlists.png",
     "wireless/list_airplay.png", "wireless/list_bt.png", "wireless/list_dlna.png",
     "wireless/list_remote.png", "wireless/list_wifi.png",
 }

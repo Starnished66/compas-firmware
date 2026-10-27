@@ -11,10 +11,10 @@
 # literal or format, the gui_themes.c legacy inventory, layout_images[], titlebar and
 # breeze_row maps), or a published plugin/theme references it (compas-plugins), or it is
 # the "_s" pressed sibling of one of those.  Everything below is neither.
-# Kept on purpose although Breeze art is shown instead: the names in gui_themes.c
-# s_legacy_asset_inventory (e.g. navigation/back|more|search, power_action/power|reboot,
-# submenu/bluetooth|usb), because legacy-theme migration compares leftover override copies
-# with the stock file of that name.
+# Several names below are also in gui_themes.c s_legacy_asset_inventory (navigation/back|more|
+# search, power_action/power|reboot, submenu/bluetooth|usb). Removing the stock file is safe:
+# those icons are only drawn through titlebar_breeze_icon()/breeze_row_icon(), which never
+# consult the override folder, so a leftover legacy override copy is never shown either way.
 
 # bt: only bt/bt.png is named (gui_themes.c inventory); the Bluetooth screens draw Breeze art
 */bt/bt_icon.png
@@ -304,6 +304,8 @@
 */wireless/wifi_s.png
 
 # theme2 power_action: Breeze art replaces these (screen_off/sleep_timer only reach power_hub_card(), which swaps in breeze_rows/power_action_*.png when the active theme layer is stock theme2 (breeze_row_icon()))
+theme2/power_action/power.png
+theme2/power_action/reboot.png
 theme2/power_action/screen_off.png
 theme2/power_action/sleep_timer.png
 
@@ -313,6 +315,7 @@ theme2/settings/playback.png
 theme2/settings/sound.png
 
 # theme2 submenu: Breeze art replaces these (redirected to breeze_rows/submenu_*.png by decorate_category_row()/titlebar mapping; genres/layouts/plugins/themes/emulators/refresh_*/update_database/music_database are not in gui_themes.c s_legacy_asset_inventory)
+theme2/submenu/bluetooth.png
 theme2/submenu/emulators.png
 theme2/submenu/genres.png
 theme2/submenu/layouts.png
@@ -321,7 +324,11 @@ theme2/submenu/refresh_covers.png
 theme2/submenu/refresh_metadata.png
 theme2/submenu/themes.png
 theme2/submenu/update_database.png
+theme2/submenu/usb.png
 theme2/submenu/music_database.png
 
 # theme2 navigation: Breeze art replaces these (reorder.png is the fallback of set_reorder_handle_icon() only when titlebar/breeze_handle.png is missing)
+theme2/navigation/back.png
+theme2/navigation/more.png
 theme2/navigation/reorder.png
+theme2/navigation/search.png

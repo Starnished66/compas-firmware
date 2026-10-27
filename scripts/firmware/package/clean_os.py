@@ -361,6 +361,13 @@ def prepare(root: str | os.PathLike[str], repo: str | os.PathLike[str]) -> dict[
         if full in canonical:
             raise ValueError(f"{UNUSED_ASSETS_MANIFEST} lists a tracked asset: assets/{rel}")
         _remove(_inside(root_path, full), full, removed)
+    # Directories the deletions emptied (only inside litegui), deepest first.
+    litegui = _inside(root_path, "usr/resource/litegui")
+    for directory in sorted((d for d in litegui.rglob("*") if d.is_dir() and not d.is_symlink()),
+                            key=lambda d: len(d.parts), reverse=True):
+        if not any(directory.iterdir()):
+            directory.rmdir()
+            removed.append({"path": "/" + directory.relative_to(root_path).as_posix(), "bytes": 0})
 
     report["removed_bytes"] = sum(item["bytes"] for item in removed)
     report["removed_count"] = len(removed)
