@@ -26,6 +26,7 @@ Follow this before every Compás release, whether a person or an agent prepares 
 - [ ] `scripts/tests/run_all.sh` passes.
 - [ ] `scripts/build/firmware/build_all_upt.sh` finishes for all four boards and `scripts/build/firmware/validate_images.sh` passes for each (branding, player marker, `ota_update.in` format, `v1_md5.txt`).
 - [ ] Compared with the previous release, each image changes only where expected: unpack both rootfs (`unsquashfs`) and diff the file list, modes and contents; the kernel (`xImage`) is byte-identical unless the release changes it on purpose.
+- [ ] Per-board asset folders hold only board-specific files (boot animation, logo, board overlays), no superseded icon ships next to its Breeze replacement, and every image passes the unused-asset checks in `validate_images.sh` (`firmware/unused_assets.txt`).
 - [ ] Every image is at most 45 MiB.
 - [ ] `SHA256SUMS` lists every asset and `sha256sum -c SHA256SUMS` passes; `v1_md5.txt` matches `v1.upt`.
 - [ ] Re-download the published assets from GitHub and check them again with `sha256sum -c` (GitHub may rename files with spaces or accents).
