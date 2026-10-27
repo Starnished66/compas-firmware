@@ -1,3 +1,5 @@
+> Documents the player's `make bootloader` and the Rockbox patch (`firmware/bootloader/rockbox-compas.patch` in compas-player). It belongs in that repository and is kept here only until moved.
+
 # Compás bootloaders
 
 `make bootloader BOARD=r1` and `make bootloader BOARD=r3proii` build the full
