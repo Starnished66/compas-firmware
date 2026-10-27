@@ -82,7 +82,11 @@ if [[ " $boards " == *" tempotec_v1 "* ]]; then
         --tmp "$tmp" --md5-template "$repo/firmware/v1/v1_md5.template.txt"
 fi
 
-sums=(./*.upt ./compas_player*)
-[[ ! -f $out_dir/v1_md5.txt ]] || sums+=(./v1_md5.txt)
-(cd "$out_dir" && sha256sum "${sums[@]#./}" > SHA256SUMS && sha256sum --check SHA256SUMS)
+(
+    cd "$out_dir"
+    sums=(*.upt compas_player*)
+    [[ ! -f v1_md5.txt ]] || sums+=(v1_md5.txt)
+    sha256sum "${sums[@]}" > SHA256SUMS
+    sha256sum --check SHA256SUMS
+)
 "$repo/scripts/build/firmware/validate_images.sh" "$out_dir"
