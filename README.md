@@ -54,6 +54,8 @@ GitHub disables scheduled workflows after 60 days without repository activity; i
 or re-enable it under Actions. Tests: `COMPAS_PLAYER_DIR=../compas-player scripts/tests/run_all.sh`
 (`scripts/tests/disabled` explains the tests that cannot run on a clean clone).
 
+Before any release, go through `docs/RELEASE_CHECKLIST.md`.
+
 ## Translations
 
 `i18n/po/` holds the gettext catalogs for the player's UI and `i18n/po2c.py` generates the player's
