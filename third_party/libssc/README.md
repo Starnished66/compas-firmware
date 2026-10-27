@@ -13,9 +13,7 @@ validates PCM before encoding, checks output capacity against the exact
 rate/depth/bitrate frame size before advancing state, and permits one live
 encoder per process because the underlying working tables are global.
 
-The source derives from the recovered `analysis/mips_port/scratch/ssc_full.c`
-and `analysis/mips_port/ssc_image_data.h` in the companion reverse-engineering
-workspace. The preserved eight-byte state slots are intentional on MIPS32.
+The source is the Compás project's own reverse-engineered implementation (see `PROVENANCE.md`). The preserved eight-byte state slots are intentional on MIPS32.
 Unaligned pointer aliases and packed vector storage represent the original
 unaligned accesses. Builds require GNU-compatible C, signed wrap semantics,
 and disabled strict aliasing.
@@ -29,4 +27,4 @@ tiers. Other formats and bitrates are rejected.
 
 Build with CMake. `scripts/build/base/bluetooth/audio/build_base_bt_codecs.sh` installs the MIPS shared
 library, public header, and `ssc.pc` in the existing codec developer stage.
-Reference verification harnesses and vectors remain outside the repository.
+Reference verification harnesses and vectors are not part of this repository.
