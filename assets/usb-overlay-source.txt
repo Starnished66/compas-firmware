@@ -1,0 +1,19 @@
+USB DAC overlay asset provenance
+
+Installed path on all devices: /usr/resource/litegui/theme2/usb/usb.png
+Source artwork: assets/theme2/usb/usb.png (300 x 300 RGBA PNG)
+Source SHA-256: 02cf183970c58042dc62537e98afb15174dba361c93a0e574de65bf7abdf1084
+
+The R3II 2025 asset at assets/r3ii_2025/theme2/usb/usb.png is a 200 x 200
+Lanczos resize of that source (SHA-256
+1c4714d9b446aa0e9733e0cc0db1dbd9607e2d5214cb9eae5afb81ce16bac519).
+The V1 asset at assets/v1/theme2/usb/usb.png is a 150 x 150 Lanczos resize
+(SHA-256 fb7c7e98ce1efb7ef33f341c508e09c0110c1e09093cea7a960860266662c434).
+Both sizes keep the stock artwork within each panel's available USB overlay
+area; R1 and R3 Pro II use the unscaled 300 x 300 original.
+
+The original image is from the stock R1 firmware root at
+/usr/resource/litegui/theme2/usb/usb.png. The player loads this path for its
+full-screen USB DAC mode overlay. Firmware cleanup pruned the stock file
+because no tracked asset declared the path, so the packagers now install the
+board-sized, hash-pinned original or deterministic resize after cleanup.
