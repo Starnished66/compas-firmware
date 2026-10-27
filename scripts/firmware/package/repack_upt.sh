@@ -3,6 +3,8 @@
 # The base remains external because it contains stock HiBy firmware assets.
 
 set -euo pipefail
+# Fixed umask: directory modes in the image must not depend on the caller.
+umask 022
 
 usage() {
     echo "Usage: $0 [--board r1|r3proii|r3ii_2025] [--vendor-drivers VENDOR_UPT] [--early-splash EARLY_SPLASH_BINARY] BASE_UPT PLAYER_BINARY BOOTLOADER_BINARY OUTPUT_UPT" >&2
