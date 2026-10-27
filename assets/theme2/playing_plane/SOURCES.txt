@@ -1,0 +1,4 @@
+airplay_logo_white.png: white AirPlay mark used to label AirPlay playback. It is the Apple AirPlay
+logo (trademark of Apple Inc.), taken from the HiBy stock firmware; licence unknown, nominative use only.
+btn_pause.png, btn_play.png, quality_waveform.png: Compas-made or derived from stock artwork; no separate
+third-party licence recorded (provenance not documented; treat as unknown).

@@ -64,12 +64,12 @@ both offline (no build step in this repo regenerates it):
    tradeoff -- any song/artist/album tag using a kanji outside Joyo
    (uncommon proper nouns, place names, older readings) shows a blank glyph
    instead of falling through to a different working font. See
-   `src/fallback_font.c`'s own comment for the full reasoning and the next
+   compas-player `src/ui/text/rendering/fallback_font.c`'s own comment for the full reasoning and the next
    step up in coverage (JIS X 0208, ~6,355 kanji) if the flash budget ever
    allows revisiting this.
 2. **Outlines converted from CFF (PostScript) to TrueType** (`glyf`) --
    via `fonttools`/`otf2ttf`'s cubic-to-quadratic curve conversion. LVGL's
-   lighter `tiny_ttf` renderer (used for this file, see `src/fallback_font.c`)
+   lighter `tiny_ttf` renderer (used for this file, see compas-player `src/ui/text/rendering/fallback_font.c`)
    only reads TrueType outlines, not CFF; the original ships as CFF.
 
 Per Apache License 2.0 section 4(b), this NOTICE documents that the file
@@ -91,7 +91,7 @@ subset`; already TrueType outlines, so no outline conversion was needed.
 Used only by the host build (`make host`) so the desktop simulator can
 exercise the same fallback chain as the real device -- on target, this
 project reads `/usr/resource/fonts/Thai.ttf` directly from the stock
-firmware at runtime rather than bundling a copy (see `src/fallback_font.c`).
+firmware at runtime rather than bundling a copy (see compas-player `src/ui/text/rendering/fallback_font.c`).
 
 # emoji.ttf -- provenance and license
 
@@ -114,7 +114,7 @@ project already uses to ship other files it owns that aren't in stock
 `.compas/compas_player` swap, or `adb push`) does not carry
 this file; on a device that never received a full repack, the emoji fallback
 face is simply absent and every other font/rendering behavior is
-unaffected -- see `src/ui/text/rendering/fallback_font.c`'s own comment on why loading
+unaffected -- see compas-player `src/ui/text/rendering/fallback_font.c`'s own comment on why loading
 this face is optional, not required, unlike CJK/Korean/Thai.
 
 ## Modifications made for this project
@@ -125,7 +125,7 @@ them):
 
 1. **Instantiated to a static Regular (`wght=400`) instance** via
    `fonttools varLib.instancer` -- LVGL's `tiny_ttf` renderer (used for
-   this file, see `src/ui/text/rendering/fallback_font.c`) does not apply `gvar` variation
+   this file, see compas-player `src/ui/text/rendering/fallback_font.c`) does not apply `gvar` variation
    deltas, so a variable font's un-instantiated glyphs would render at
    whatever the font's own default outline happens to be, not necessarily
    Regular weight.
@@ -171,7 +171,7 @@ redistributed by this app. A subsetted copy is deliberately **not**
 included here for the host build: unlike Thai.ttf, this particular file's
 own embedded metadata doesn't state a license (Naver's Nanum font family is
 widely distributed under SIL OFL 1.1 elsewhere, but that isn't confirmed
-from this file itself), so it's excluded from this public repo pending
+from this file itself), so it is not included in this repository pending
 verification. The desktop simulator therefore won't render Korean text
 locally; this has no effect on the real device, where Korean.ttf is never
 copied or modified, only read from its existing on-device location.

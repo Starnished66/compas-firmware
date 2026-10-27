@@ -1,0 +1,1 @@
+Theme preview images (breeze_dark.png etc.) are Compas project screenshots/renders of the bundled themes (GPL-3.0); individual provenance was not recorded.

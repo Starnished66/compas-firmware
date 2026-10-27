@@ -45,3 +45,5 @@ actual color depth), same root-cause family as the Player background
 shimmer fixed earlier. Plain lv_obj_set_style_bg_image_src() does not
 dither on load (only asset_decoded_gradient_open()'s category-row path
 does), so the dithering has to be baked into the PNG itself here.
+
+Licence texts: licenses/Phosphor-MIT.txt, licenses/Apache-2.0.txt (Material Symbols).

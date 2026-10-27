@@ -28,3 +28,8 @@ tile backgrounds, tinted to each icon's own accent color above. Wired via
 icon_grid_item_t.bg_image (screen_builders.h/.c) and build_wireless_screen()
 (gui_network.c). Bayer-dithered at generation time -- see launcher/SOURCES.txt
 for why (undithered gradients caused real on-device flicker).
+
+hibylink.png / hibylink_s.png (also in theme2/pull_down) and the Phosphor-derived icons
+Phosphor Icons are MIT (licenses/Phosphor-MIT.txt). The hibylink artwork is the HiBy Link logo taken
+from the HiBy stock firmware; it is a vendor trademark/logo and its licence is unknown. It is used
+only to label that feature.

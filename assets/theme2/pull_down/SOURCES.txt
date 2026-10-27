@@ -1,0 +1,3 @@
+Pull-down panel icons not listed in CAR_MODE_SOURCES.txt come from the HiBy stock firmware or were
+adapted from it (airplay, bt, dlna, fade, gain, hibylink, ...). Their licence is unknown; hibylink* is the
+HiBy Link logo. Provenance was not recorded when they were added.

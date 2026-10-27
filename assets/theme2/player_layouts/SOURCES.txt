@@ -1,0 +1,1 @@
+default/gallery/orbit/panorama layout XML and preview PNGs are Compas project files (GPL-3.0, see LICENSE); individual authorship was not recorded.
