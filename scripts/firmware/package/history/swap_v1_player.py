@@ -5,7 +5,7 @@ Used for the v1.3.0 V1 image: the base is the V1 image produced by
 repack_v1_upt.py (BASE_SHA256 below), the output differs from it only in
 usr/bin/compas_player. Set V1_BASE_UPT to that base, SQUASHFS_TOOLS to a
 squashfs-tools 4.6.1 build directory whose unsquashfs prints xattrs NUL
-terminated (see docs/v1.md), and V1_MD5_TEMPLATE to a v1_md5.txt template.
+terminated (see history/README.md), and V1_MD5_TEMPLATE to a v1_md5.txt template.
 
 The stock SquashFS pseudo manifest is used to preserve numeric owners, modes,
 timestamps, links and every xattr without requiring host SELinux privileges.
@@ -48,7 +48,7 @@ UNSQUASHFS = TOOLS / "unsquashfs"
 MKSQUASHFS = TOOLS / "mksquashfs"
 BASE = pathlib.Path(os.environ.get("V1_BASE_UPT", "v1-base.upt"))
 SIDECAR = pathlib.Path(os.environ.get("V1_MD5_TEMPLATE", str(BASE.parent / "v1_md5.txt")))
-HELPER_PATH = HERE / "repack_v1_upt.py"
+HELPER_PATH = HERE.parent / "repack_v1_upt.py"
 
 
 class RepackError(RuntimeError):

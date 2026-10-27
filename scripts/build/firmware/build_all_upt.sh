@@ -6,10 +6,9 @@
 #   SSC_OVERLAY_DIR=...    directory with usr/bin/bluealsad (see docs/inputs.md)
 #   OUT_DIR=...            receives the .upt files, standalone players and SHA256SUMS
 #   RELEASE_LABEL=...      vX.Y.Z or "Weekly Beta YYYY-MM-DD"
-# Optional TempoTec V1 (skipped when V1_STOCK_UPT is unset):
-#   V1_STOCK_UPT=...       official TempoTec V1 1.2 firmware (not committed)
-#   COMPAS_PLAYER_V1_DIR=... compas-player checkout of the tempotec-v1 branch
+#   V1_STOCK_UPT=...       official TempoTec V1 1.2 firmware (not committed); needed for tempotec_v1
 # BOARDS="r1 r3proii r3ii_2025 tempotec_v1" limits the build (tempotec_v1 needs r1).
+# scripts/build/firmware/fetch_inputs.sh downloads and verifies BASE_DIR, SSC_OVERLAY_DIR and the V1 stock image.
 set -euo pipefail
 
 repo=$(cd "$(dirname "$0")/../../.." && pwd)
@@ -32,6 +31,8 @@ for tool in make 7z unsquashfs mksquashfs genisoimage file python3 mipsel-linux-
     command -v "$tool" >/dev/null || { echo "Required command is unavailable: $tool" >&2; exit 1; }
 done
 mkdir -p "$out_dir"
+tmp=$(mktemp -d "${TMPDIR:-/tmp}/build-all.XXXXXX")
+trap 'rm -rf "$tmp"' EXIT
 
 suffix() { [[ $1 == r1 ]] && echo "" || echo "_$1"; }
 
@@ -42,13 +43,8 @@ check_player() {   # check_player BINARY: MIPS ELF without diagnostic builds
     fi
 }
 
-build_player() {   # build_player DIR BOARD
-    local dir=$1 board=$2
-    if grep -q '^release:' "$dir/Makefile"; then
-        make -C "$dir" -j"$jobs" release BOARD="$board" RELEASE_LABEL="$label"
-    else    # older branches (the tempotec-v1 port) predate the release target
-        make -C "$dir" -j"$jobs" target BOARD="$board" RELEASE_LABEL="$label"
-    fi
+build_player() {   # build_player DIR BOARD: `make release` refuses unlabelled / Development Build players
+    make -C "$1" -j"$jobs" release BOARD="$2" RELEASE_LABEL="$label"
 }
 
 for board in $boards; do
@@ -73,20 +69,20 @@ for board in $boards; do
 done
 unset R1_RUNTIME_OVERLAY R3_RUNTIME_OVERLAY
 
-if [[ " $boards " == *" tempotec_v1 "* && -n ${V1_STOCK_UPT:-} ]]; then
-    v1_dir=$(realpath "${COMPAS_PLAYER_V1_DIR:-$player_dir}")
+if [[ " $boards " == *" tempotec_v1 "* ]]; then
+    : "${V1_STOCK_UPT:?set V1_STOCK_UPT for tempotec_v1}"
     [[ -s $out_dir/r1.upt ]] || { echo "tempotec_v1 needs the freshly built r1.upt in OUT_DIR" >&2; exit 1; }
-    build_player "$v1_dir" tempotec_v1
-    check_player "$v1_dir/compas_player_target_tempotec_v1"
-    tmp=$(mktemp -d "${TMPDIR:-/tmp}/v1-repack.XXXXXX")
-    trap 'rm -rf "$tmp"' EXIT
+    build_player "$player_dir" tempotec_v1
+    check_player "$player_dir/compas_player_target_tempotec_v1"
     rm -f "$out_dir/v1.upt" "$out_dir/v1_md5.txt" "$out_dir/v1-manifest.json"
     python3 -I "$repo/scripts/firmware/package/repack_v1_upt.py" \
-        --base "$V1_STOCK_UPT" --player "$v1_dir/compas_player_target_tempotec_v1" \
+        --base "$V1_STOCK_UPT" --player "$player_dir/compas_player_target_tempotec_v1" \
         --r1-candidate "$out_dir/r1.upt" --output "$out_dir/v1.upt" \
         --md5-output "$out_dir/v1_md5.txt" --manifest "$out_dir/v1-manifest.json" \
         --tmp "$tmp" --md5-template "$repo/firmware/v1/v1_md5.template.txt"
 fi
 
-(cd "$out_dir" && sha256sum *.upt compas_player* $( [[ -f v1_md5.txt ]] && echo v1_md5.txt ) > SHA256SUMS && sha256sum --check SHA256SUMS)
+sums=(./*.upt ./compas_player*)
+[[ ! -f $out_dir/v1_md5.txt ]] || sums+=(./v1_md5.txt)
+(cd "$out_dir" && sha256sum "${sums[@]#./}" > SHA256SUMS && sha256sum --check SHA256SUMS)
 "$repo/scripts/build/firmware/validate_images.sh" "$out_dir"

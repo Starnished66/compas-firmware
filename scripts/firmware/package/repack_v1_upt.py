@@ -29,8 +29,8 @@ BASE_SHA256 = "9f929a92319a05a81bbd16cbf0fb8a886a9bb2def192f5a6786b6ea7032fa05d"
 BASE_MD5 = "d3301d3930309b5433331a2aed741652"
 BASE_KERNEL_SHA256 = "3a83176b9d8da6c09eedd64348ea8a612ad5ee2ae532ce04ccadd7d0fa4bb25d"
 R1_SSC_UPT_SHA256 = "43f55224db696391cdc650b77d276176a533505d88f98946d83f6eb5fa1bd8e9"
-# Static-SSC BlueALSA daemon (firmware/ssc-overlay.sha256) copied from the R1 image.
-SSC_DAEMON_SHA256 = "d683e3389fbfb3e35351d3b44f9dafbbc4007136c1f2ee510702280415cc11c4"
+# Static-SSC BlueALSA daemon: single source of truth is firmware/ssc-overlay.sha256.
+SSC_DAEMON_SHA256 = (pathlib.Path(__file__).resolve().parents[3] / "firmware/ssc-overlay.sha256").read_text().split()[0]
 V1_MARKER = b"COMPAS_PLAYER_BOARD:tempotec_v1"
 IMAGE_CHUNK_SIZE = 512 * 1024
 
@@ -992,7 +992,7 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         # Rebuild only the compressed rootfs. Keep xImage and all other outer
         # ISO files/chunks byte-for-byte; create new rootfs OTA chains.
         rebuilt = work / "new-rootfs.squashfs"
-        run(["mksquashfs", str(v1_root), str(rebuilt), "-comp", "lzo", "-b", "131072", "-all-root", "-noappend"])
+        run(["mksquashfs", str(v1_root), str(rebuilt), "-comp", "lzo", "-b", "131072", "-all-root", "-noappend", "-no-xattrs"])
         new_md5 = digest(rebuilt, "md5")
         new_size = rebuilt.stat().st_size
         if new_size > base_images["rootfs.squashfs"]["size_bytes"]:
@@ -1041,6 +1041,9 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         # Keep the vendor's ISO metadata and files; write a new UPT next to the
         # explicit candidate output. No init/recovery/kernel/module files are
         # removed or replaced.
+        # Match the HiBy repacker and the published images: the marker file is empty
+        # (the stock V1 file holds a single newline).
+        (ota / "ota_v0.ok").write_bytes(b"")
         package_temp = work / "candidate-v1.upt"
         run(["genisoimage", "-o", str(package_temp), "-J", "-r", str(work / "base" / "outer")])
         run(["7z", "t", str(package_temp)])

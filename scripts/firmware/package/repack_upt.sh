@@ -1259,10 +1259,9 @@ fi
 python3 "$repo/scripts/firmware/package/clean_os.py" "$work/root" "$repo" --report "$output.cleanup.json"
 
 # This stock USB DAC overlay is required by the player at
-# /usr/resource/litegui/theme2/usb/usb.png. The cleanup allowlist is based on
-# tracked assets, while this narrowly pinned asset may be supplied locally
-# without staging contributor changes. Reinstall it after cleanup and fail
-# closed if its source differs from the reviewed original.
+# /usr/resource/litegui/theme2/usb/usb.png. The cleanup removes stock files
+# that no tracked asset declares, so reinstall this hash-pinned tracked asset
+# afterwards and fail closed if it differs from the reviewed original.
 if [[ $board == r3ii_2025 ]]; then
     usb_overlay_asset="$repo/assets/r3ii_2025/theme2/usb/usb.png"
     usb_overlay_sha=1c4714d9b446aa0e9733e0cc0db1dbd9607e2d5214cb9eae5afb81ce16bac519
