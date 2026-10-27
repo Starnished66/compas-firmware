@@ -4,7 +4,7 @@
 # source tree argument (test_uac_safety.py, test_radio_input_safety.py).
 set -u
 repo=$(cd "$(dirname "$0")/../.." && pwd)
-cd "$repo"
+cd "$repo" || exit 1
 : "${COMPAS_PLAYER_DIR:?set COMPAS_PLAYER_DIR}"
 fail=0
 while IFS= read -r t; do
