@@ -5,7 +5,7 @@ set -euo pipefail
 repo=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../../../../.." && pwd)
 base="$repo/scratch/base-upgrade"
 work=${BASE_CODECS_BUILD_DIR:-"$base/codecs"}
-stock=${BASE_STOCK_ROOT:-/home/josegarita/Desktop/Test2/squashfs-root}
+stock=${BASE_STOCK_ROOT:?set BASE_STOCK_ROOT to the extracted stock rootfs}
 cross=${BASE_CROSS_PREFIX:-"$repo/scratch/ingenic-toolchain-v5.2/toolchain/bin/mips-linux-gnu-"}
 check_source() {
     [[ $(git -C "$1" rev-parse HEAD) == "$2" ]] || { echo "Source revision mismatch: $1" >&2; exit 1; }
@@ -82,10 +82,13 @@ cmake -S "$repo/third_party/libssc" -B "$run/ssc" -DCMAKE_SYSTEM_NAME=Linux \
     -DCMAKE_C_COMPILER="${cross}gcc" -DCMAKE_C_FLAGS="${flags/-Os/-O2}" \
     -DCMAKE_SHARED_LINKER_FLAGS="$flags -Wl,--no-undefined" \
     -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib \
-    -DCMAKE_BUILD_TYPE=Release
+    -DCMAKE_BUILD_TYPE=Release -DSSC_STATIC="${SSC_STATIC:-OFF}"
 cmake --build "$run/ssc" --parallel "${JOBS:-4}"
 DESTDIR="$stage" cmake --install "$run/ssc"
-"${cross}strip" --strip-unneeded "$stage/usr/lib/libssc.so.0.1.0"
+# SSC_STATIC=ON installs libssc.a (linked into bluealsad) instead of the .so.
+if [[ ${SSC_STATIC:-OFF} == OFF ]]; then
+    "${cross}strip" --strip-unneeded "$stage/usr/lib/libssc.so.0.1.0"
+fi
 [[ ! -e "$work/stage" || -L "$work/stage" ]] || { echo 'stage must be a symlink' >&2; exit 1; }
 ln -sfnT "$stage" "$work/stage"
 printf 'Codec developer stage: %s\nLDAC encoder/ABR retained; decoder rebuilt from source.\n' "$stage"

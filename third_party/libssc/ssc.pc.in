@@ -6,5 +6,5 @@ includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
 Name: ssc
 Description: bounded Samsung SSC encoder wrapper (stereo 16-bit, 44.1/48 kHz)
 Version: @PROJECT_VERSION@
-Libs: -L${libdir} -lssc -pthread
+Libs: -L${libdir} @SSC_PC_LIBS@ -pthread
 Cflags: -I${includedir}
