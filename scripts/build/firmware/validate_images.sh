@@ -69,6 +69,34 @@ repo, root = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]) / "usr/resourc
 shipped = [p for p in clean_os.unused_asset_paths(repo) if (root / p).exists()]
 if shipped:
     raise SystemExit("unused stock images ship in the image: " + ", ".join(shipped[:8]))
+# The packaged player must not name a removed image, except these: it names them but always
+# draws Breeze art instead (a missing stock file is never opened).
+REDIRECTED = {
+    "settings/library.png",          # decorate_category_row() -> breeze_rows/settings_library.png
+    "settings/playback.png",         # titlebar_breeze_icon() -> titlebar/breeze_playback.png; rows -> breeze_rows/settings_playback.png
+    "settings/sound.png",            # titlebar_breeze_icon() -> titlebar/breeze_sound.png; rows -> breeze_rows/settings_sound.png
+    "submenu/genres.png",            # decorate_category_row() -> breeze_rows/submenu_genres.png
+    "submenu/layouts.png",           # decorate_category_row() -> breeze_rows/submenu_layouts.png
+    "submenu/plugins.png",           # decorate_category_row() -> breeze_rows/submenu_plugins.png
+    "submenu/themes.png",            # decorate_category_row() -> breeze_rows/submenu_themes.png
+    "submenu/emulators.png",         # decorate_category_row() -> breeze_rows/submenu_emulators.png
+    "submenu/refresh_covers.png",    # decorate_category_row() -> breeze_rows/submenu_refresh_covers.png
+    "submenu/refresh_metadata.png",  # decorate_category_row() -> breeze_rows/submenu_refresh_metadata.png
+    "submenu/update_database.png",   # decorate_category_row() -> breeze_rows/submenu_update_database.png
+    "submenu/music_database.png",    # titlebar_breeze_icon() -> titlebar/breeze_database.png
+    "power_action/screen_off.png",   # power_hub_card() -> breeze_rows/power_action_screen_off.png
+    "power_action/sleep_timer.png",  # power_hub_card() -> breeze_rows/power_action_sleep_timer.png
+    "navigation/reorder.png",        # set_reorder_handle_icon() -> titlebar/breeze_handle.png
+}
+import re
+player = (pathlib.Path(sys.argv[2]) / "usr/bin/compas_player").read_bytes()
+named = set()
+for p in clean_os.unused_asset_paths(repo):
+    rel = p.split("/", 1)[1]
+    if rel not in REDIRECTED and re.search(rb"(?<![A-Za-z0-9_/.-])" + re.escape(rel.encode()) + rb"\0", player):
+        named.add(rel)
+if named:
+    raise SystemExit("compas_player names images the manifest removes: " + ", ".join(sorted(named)))
 LEGACY_KEPT = {
     "navigation/back.png", "navigation/more.png", "navigation/search.png",
     "power_action/power.png", "power_action/reboot.png",

@@ -32,7 +32,7 @@
 */category/item_s.png
 */category/net_radio.png
 
-# keyboard: gui_text_input.c text_entry_key_image() names only keyboard/<n>, symbol<n>, char_<l|u>, <letters>_<l|u>, upper/lower/etc. from the legacy inventory; select/, wifi/, cursor, bg, ok, space, negative, num_more, symbol_more, text_bg are never named (gui_library.c notes ok/text_bg/cursor as redundant chrome)
+# keyboard: gui_text_input.c text_entry_key_image() names only keyboard/<n>, symbol<n>, char_<l|u>, <letters>_<l|u> and upper.png (the only one of upper/lower in the legacy inventory; lower.png is removed); select/, wifi/, cursor, bg, ok, space, negative, num_more, symbol_more, text_bg are never named (gui_library.c notes ok/text_bg/cursor as redundant chrome)
 */keyboard/bg.png
 */keyboard/cursor.png
 */keyboard/cursor2.png
