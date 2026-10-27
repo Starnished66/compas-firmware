@@ -25,7 +25,8 @@ import tempfile
 from typing import Iterable
 
 
-BASE_SHA256 = "9f929a92319a05a81bbd16cbf0fb8a886a9bb2def192f5a6786b6ea7032fa05d"
+# Single source of truth: firmware/inputs.sha256 (entry v1-stock.upt).
+BASE_SHA256 = next(l.split()[0] for l in (pathlib.Path(__file__).resolve().parents[3] / "firmware/inputs.sha256").read_text().splitlines() if l.endswith("v1-stock.upt"))
 BASE_MD5 = "d3301d3930309b5433331a2aed741652"
 BASE_KERNEL_SHA256 = "3a83176b9d8da6c09eedd64348ea8a612ad5ee2ae532ce04ccadd7d0fa4bb25d"
 R1_SSC_UPT_SHA256 = "43f55224db696391cdc650b77d276176a533505d88f98946d83f6eb5fa1bd8e9"
@@ -998,13 +999,15 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         if new_size > base_images["rootfs.squashfs"]["size_bytes"]:
             raise RepackError("V1 rootfs exceeds the verified stock rootfs size")
 
-        metadata_text = (ota / "ota_update.in").read_text()
-        # Alter only the rootfs size and MD5 fields; preserve kernel metadata
-        # and vendor formatting verbatim.
-        root_block = re.compile(r"(?ms)(img_type=rootfs\s*\nimg_name=rootfs\.squashfs\s*\nimg_size=)[0-9]+(\s*\nimg_md5=)[0-9a-fA-F]{32}")
-        metadata_text, changed = root_block.subn(rf"\g<1>{new_size}\g<2>{new_md5}", metadata_text)
-        if changed != 1:
-            raise RepackError("could not safely update exactly one rootfs OTA metadata block")
+        # Rewrite ota_update.in in the compact layout repack_upt.sh writes (no blank lines): the
+        # player's own parser (firmware_image.c parse_manifest) rejects the stock TempoTec
+        # layout. Only the rootfs size and MD5 change; kernel values come from the base.
+        k = base_images["xImage"]
+        metadata_text = (
+            "ota_version=0\n"
+            f"img_type=kernel\nimg_name=xImage\nimg_size={k['size_bytes']}\nimg_md5={k['md5']}\n"
+            f"img_type=rootfs\nimg_name=rootfs.squashfs\nimg_size={new_size}\nimg_md5={new_md5}\n"
+        )
         (ota / "ota_update.in").write_text(metadata_text)
 
         for p in ota.glob("rootfs.squashfs.[0-9][0-9][0-9][0-9].*"):
