@@ -13,7 +13,7 @@ https://github.com/phosphor-icons/core
 https://cdn.jsdelivr.net/npm/@phosphor-icons/core@2.1.1/assets/regular/<name>.svg
 
 Equalizer Waveform Icon: Google Material Symbols (Rounded variant)
-License: Apache License 2.0
+License: Apache License 2.0, Copyright Google LLC
 https://github.com/google/material-design-icons
 Source: symbols/web/graphic_eq/materialsymbolsrounded/graphic_eq_24px.svg
 Used for dac.png to match the reference's symmetrical 5-bar rounded

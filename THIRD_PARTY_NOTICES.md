@@ -17,7 +17,7 @@ Licence texts and provenance sit beside the files they cover. Summary:
 | Linux kernel and driver patches | `firmware/kernel` | GPL-2.0 |
 | BlueALSA, BlueZ, D-Bus, GLib, ALSA, LDAC, fdk-aac, libopenaptx patches | `scripts/base_image/patches` | patches to upstream sources (MIT, GPL/LGPL, Apache-2.0 variants); sources are fetched at pinned commits |
 | Rockbox bootloader patch | in compas-player (`firmware/bootloader`) | GPL-2.0 |
-| Phosphor icons, Material Symbols | `assets/theme2/launcher`, `wireless` | MIT (`licenses/Phosphor-MIT.txt`), Apache-2.0 (`licenses/Apache-2.0.txt`) |
+| Phosphor icons, Material Symbols | `assets/theme2/launcher`, `wireless` | Phosphor: MIT, Copyright (c) 2023 Phosphor Icons (`licenses/Phosphor-MIT.txt`); Material Symbols: Apache-2.0, Copyright Google LLC (`licenses/Apache-2.0.txt`) |
 | libssc | `third_party/libssc` | GPL-3.0 (`LICENSE`), the project's own reverse-engineered implementation (`PROVENANCE.md`); no Samsung code licence |
 
 ## Remaining notes

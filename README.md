@@ -10,7 +10,7 @@ It contains no accounts, settings, media or stock firmware dumps. Packaging crea
 | Path | Contents |
 | --- | --- |
 | `scripts/build/firmware/` | `build_all_upt.sh` (all four images), `validate_images.sh` |
-| `scripts/firmware/package/` | `repack_upt.sh` (HiBy boards), `repack_v1_upt.py` (V1), `clean_os.py`, player swap tools |
+| `scripts/firmware/package/` | `repack_upt.sh` (HiBy boards), `repack_v1_upt.py` (V1), `clean_os.py`; `history/` holds the old player-swap tools |
 | `scripts/build/base`, `scripts/base_image`, `scripts/overlays` | Bluetooth / audio / Wi-Fi base-system builds and overlays |
 | `scripts/kernel`, `firmware/kernel` | kernel, driver, display, radio work and repackers |
 | `firmware/overlay`, `firmware/vendor_drivers.json`, `firmware/ssc-overlay.sha256`, `firmware/v1` | init overlay, pins |
@@ -28,7 +28,8 @@ Work from a Git clone: the repacker copies only tracked files.
 
 ```sh
 git clone https://github.com/Starnished66/compas-player ../compas-player
-COMPAS_PLAYER_DIR=../compas-player COMPAS_PLAYER_V1_DIR=../compas-player-v1 \
+scripts/build/firmware/fetch_inputs.sh inputs     # downloads and verifies the inputs (needs the gh CLI)
+COMPAS_PLAYER_DIR=../compas-player \
 BASE_DIR=inputs/base SSC_OVERLAY_DIR=inputs/ssc V1_STOCK_UPT=inputs/base/v1-stock.upt \
 OUT_DIR=outputs RELEASE_LABEL="Weekly Beta 2026-11-02" \
 scripts/build/firmware/build_all_upt.sh

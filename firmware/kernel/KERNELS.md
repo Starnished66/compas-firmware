@@ -21,3 +21,9 @@ vendor `.ko` files carried in each base image.
 
 Items marked "not recorded" or "unverified" are unknown to this repository today; they should be filled in
 from the original build logs when found, or the kernels rebuilt and the hashes updated.
+
+## Source requests
+
+The exact build commit and compiled `.config` of the **r1** kernel (and the config of the r3ii_2025 kernel) are
+**unknown** in this repository. For source or build details of any shipped kernel, open an issue on this repository
+and the corresponding source will be provided; the pinned upstream is listed above.

@@ -13,7 +13,7 @@ while IFS= read -r t; do
         *.sh) cmd=(bash "$t") ;;
         *) cmd=(python3 -I "$t") ;;
     esac
-    if "${cmd[@]}" >/dev/null 2>&1; then echo "PASS $t"; else echo "FAIL $t"; fail=1; fi
+    if log=$("${cmd[@]}" 2>&1); then echo "PASS $t"; else echo "FAIL $t"; printf '%s\n' "$log" | tail -40; fail=1; fi
 done < <(git ls-files | grep -E '/(test_[^/]*)$|/run_early_splash_boot_test.sh$' | sort)
 rm -f qemu_*.core
 exit $fail
