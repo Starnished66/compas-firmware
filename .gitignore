@@ -20,3 +20,6 @@ __pycache__/
 /CLAUDE.md
 /.agents/
 /.claude/
+/release/
+/toolchains/
+/player/
