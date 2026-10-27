@@ -2,39 +2,38 @@ name: Weekly firmware build
 
 on:
   schedule:
-    # Every Monday at 13:00 in Costa Rica (UTC-6).
+    # Every Monday at 13:00 in Costa Rica (UTC-6). GitHub disables scheduled
+    # workflows after 60 days without repository activity: see README.
     - cron: "0 19 * * 1"
   workflow_dispatch:
 
+# Read-only by default; only the publish job gets contents: write.
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: weekly-firmware
   cancel-in-progress: false
 
 env:
-  # Checksums of the prepared base images are repository secrets (see
-  # docs/inputs.md); nothing about them is committed here.
-  STAGING_IMAGE_SHA256: ${{ secrets.STAGING_IMAGE_SHA256 }}
-  R3PROII_STAGING_IMAGE_SHA256: ${{ secrets.R3PROII_STAGING_IMAGE_SHA256 }}
-  R3II_2025_STAGING_IMAGE_SHA256: ${{ secrets.R3II_2025_STAGING_IMAGE_SHA256 }}
-  V1_STAGING_IMAGE_SHA256: ${{ secrets.V1_STAGING_IMAGE_SHA256 }}
-  V1_STOCK_UPT_URL: ${{ secrets.V1_STOCK_UPT_URL }}
   PLAYER_REPO: Starnished66/compas-player
-  PLAYER_V1_BRANCH: tempotec-v1
 
 jobs:
-  weekly:
-    name: Weekly firmware build
+  build:
+    name: Build and validate images
     runs-on: ubuntu-24.04
     timeout-minutes: 150
-
+    permissions:
+      contents: read
+    outputs:
+      tag: ${{ steps.release.outputs.tag }}
+      title: ${{ steps.release.outputs.title }}
     steps:
       - name: Check out firmware repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           path: firmware
+          persist-credentials: false
 
       - name: Check out compas-player (main)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -42,13 +41,7 @@ jobs:
           repository: ${{ env.PLAYER_REPO }}
           ref: main
           path: compas-player
-
-      - name: Check out compas-player (tempotec-v1 branch)
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-        with:
-          repository: ${{ env.PLAYER_REPO }}
-          ref: ${{ env.PLAYER_V1_BRANCH }}
-          path: compas-player-v1
+          persist-credentials: false
 
       - name: Set weekly release identity
         id: release
@@ -56,24 +49,9 @@ jobs:
           set -euo pipefail
           day=$(TZ=America/Costa_Rica date +%F)
           {
-            echo "tag=weekly-$day"
+            echo "tag=weekly-beta-$day"
             echo "title=Weekly Beta $day"
           } >> "$GITHUB_OUTPUT"
-
-      - name: Check required secrets
-        run: |
-          set -euo pipefail
-          for name in STAGING_IMAGE_SHA256 R3PROII_STAGING_IMAGE_SHA256 \
-              R3II_2025_STAGING_IMAGE_SHA256 V1_STAGING_IMAGE_SHA256; do
-            [[ ${!name:-} =~ ^[0-9a-fA-F]{64}$ ]] || {
-              echo "$name secret is missing or invalid." >&2
-              exit 1
-            }
-          done
-          [[ ${V1_STOCK_UPT_URL:-} == https://* ]] || {
-            echo 'V1_STOCK_UPT_URL secret is missing or not an https URL.' >&2
-            exit 1
-          }
 
       - name: Install build and repack tools
         run: |
@@ -91,28 +69,17 @@ jobs:
       - name: Download and verify build inputs
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          mkdir -p inputs/base inputs/ssc/usr/bin
-          # Prepared base images: public compas-player release, checksums in secrets.
-          gh release download staging-image-base -R "$PLAYER_REPO" --dir inputs/base \
-            --pattern r1.upt --pattern r3proii.upt --pattern r3ii_2025.upt
-          echo "$STAGING_IMAGE_SHA256  inputs/base/r1.upt" | sha256sum --check
-          echo "$R3PROII_STAGING_IMAGE_SHA256  inputs/base/r3proii.upt" | sha256sum --check
-          echo "$R3II_2025_STAGING_IMAGE_SHA256  inputs/base/r3ii_2025.upt" | sha256sum --check
-          # Samsung SSC BlueALSA daemon: release asset, checksum tracked in the repository.
-          gh release download build-inputs -R "$GITHUB_REPOSITORY" --dir inputs/ssc/usr/bin \
-            --pattern bluealsad
-          chmod 0755 inputs/ssc/usr/bin/bluealsad
-          # Official TempoTec V1 firmware, never committed or republished.
-          curl --fail --location --silent --show-error --retry 3 \
-            --output inputs/base/v1-stock.upt "$V1_STOCK_UPT_URL"
-          echo "$V1_STAGING_IMAGE_SHA256  inputs/base/v1-stock.upt" | sha256sum --check
+          FIRMWARE_REPO: ${{ github.repository }}
+        run: firmware/scripts/build/firmware/fetch_inputs.sh "$GITHUB_WORKSPACE/inputs"
+
+      - name: Run firmware tests
+        env:
+          COMPAS_PLAYER_DIR: ${{ github.workspace }}/compas-player
+        run: firmware/scripts/tests/run_all.sh
 
       - name: Build and package all four images
         env:
           COMPAS_PLAYER_DIR: ${{ github.workspace }}/compas-player
-          COMPAS_PLAYER_V1_DIR: ${{ github.workspace }}/compas-player-v1
           BASE_DIR: ${{ github.workspace }}/inputs/base
           V1_STOCK_UPT: ${{ github.workspace }}/inputs/base/v1-stock.upt
           SSC_OVERLAY_DIR: ${{ github.workspace }}/inputs/ssc
@@ -120,17 +87,19 @@ jobs:
           RELEASE_LABEL: ${{ steps.release.outputs.title }}
           JOBS: "2"
           TMPDIR: ${{ runner.temp }}
-        run: |
-          set -euo pipefail
-          firmware/scripts/build/firmware/build_all_upt.sh
+        run: firmware/scripts/build/firmware/build_all_upt.sh
 
       - name: Prepare release notes
         run: |
           set -euo pipefail
+          fw_sha=$(git -C firmware rev-parse HEAD)
+          pl_sha=$(git -C compas-player rev-parse HEAD)
+          fw="https://github.com/${GITHUB_REPOSITORY}"
+          pl="https://github.com/${PLAYER_REPO}"
           {
             echo "Automated weekly build of the Compás firmware images. Weekly betas are untested pre-releases."
             echo
-            echo "Built from compas-firmware \`${GITHUB_SHA}\`, compas-player \`$(git -C compas-player rev-parse HEAD)\` (r1, r3proii, r3ii_2025) and \`$(git -C compas-player-v1 rev-parse HEAD)\` (tempotec_v1)."
+            echo "Built from compas-firmware [\`${fw_sha}\`](${fw}/commit/${fw_sha}) and compas-player [\`${pl_sha}\`](${pl}/commit/${pl_sha}) (all four boards)."
             echo
             echo "### Downloads"
             echo
@@ -141,30 +110,21 @@ jobs:
             echo "- **compas_player**, **compas_player_r3proii**, **compas_player_r3ii_2025** — standalone player updates (copy to **SD/.compas/compas_player**, then choose Settings > Updates > Player Update > Install from SD card)."
             echo
             echo "Checksums are attached in **SHA256SUMS**."
+            echo
+            echo "### Source for the GPL components"
+            echo
+            echo "The images contain GPL/LGPL software (Linux kernel 4.4.94+, vendor and open kernel modules, BlueZ, BlueALSA, D-Bus, GLib, ALSA, dosfstools, exfatprogs, ntfs-3g, Rockbox bootloader). The corresponding source, patches and build recipes are in these repositories:"
+            echo
+            echo "- Kernel provenance per board, configs, patches and module sources: [firmware/kernel](${fw}/tree/${fw_sha}/firmware/kernel) ([KERNELS.md](${fw}/blob/${fw_sha}/firmware/kernel/KERNELS.md))."
+            echo "- Base-system patches and build scripts (BlueZ, BlueALSA, D-Bus, GLib, ALSA, codecs, fsck tools): [scripts/base_image](${fw}/tree/${fw_sha}/scripts/base_image) and [scripts/build](${fw}/tree/${fw_sha}/scripts/build); pinned upstream commits are listed in [scripts/base_image/README.md](${fw}/blob/${fw_sha}/scripts/base_image/README.md)."
+            echo "- Player, loader and Rockbox bootloader patch: [compas-player](${pl}/tree/${pl_sha}) (\`firmware/bootloader/rockbox-compas.patch\`)."
+            echo "- Stock kernels and modules from HiBy and TempoTec come from their public firmware; for anything else write to the issue tracker of ${fw} and the source will be provided."
           } > release/RELEASE_NOTES.md
 
-      - name: Publish weekly pre-release
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TAG: ${{ steps.release.outputs.tag }}
-          TITLE: ${{ steps.release.outputs.title }}
-        run: |
-          set -euo pipefail
-          assets=(release/r1.upt release/r3proii.upt release/r3ii_2025.upt release/v1.upt
-                  release/v1_md5.txt release/compas_player release/compas_player_r3proii
-                  release/compas_player_r3ii_2025 release/SHA256SUMS)
-          if gh release view "$TAG" >/dev/null 2>&1; then
-            gh release upload "$TAG" "${assets[@]}" --clobber
-            gh release edit "$TAG" --prerelease --title "$TITLE" --notes-file release/RELEASE_NOTES.md
-          else
-            gh release create "$TAG" "${assets[@]}" --prerelease --target "$GITHUB_SHA" \
-              --title "$TITLE" --notes-file release/RELEASE_NOTES.md
-          fi
-
-      - name: Preserve package as workflow artifact
+      - name: Preserve package for the publish job
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: ${{ steps.release.outputs.tag }}
+          name: release-${{ steps.release.outputs.tag }}
           path: |
             release/*.upt
             release/v1_md5.txt
@@ -173,3 +133,36 @@ jobs:
             release/RELEASE_NOTES.md
           if-no-files-found: error
           retention-days: 30
+
+  publish:
+    name: Publish pre-release
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - name: Download package
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: release-${{ needs.build.outputs.tag }}
+          path: release
+
+      - name: Verify checksums
+        run: cd release && sha256sum --check SHA256SUMS
+
+      - name: Publish weekly pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ needs.build.outputs.tag }}
+          TITLE: ${{ needs.build.outputs.title }}
+        run: |
+          set -euo pipefail
+          # A second run on the same day replaces the release and moves the tag to this commit.
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release delete "$TAG" --yes --cleanup-tag
+          fi
+          gh release create "$TAG" release/*.upt release/v1_md5.txt release/compas_player* \
+            release/SHA256SUMS --prerelease --target "$GITHUB_SHA" \
+            --title "$TITLE" --notes-file release/RELEASE_NOTES.md

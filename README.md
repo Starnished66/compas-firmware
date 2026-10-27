@@ -28,7 +28,6 @@ Work from a Git clone: the repacker copies only tracked files.
 
 ```sh
 git clone https://github.com/Starnished66/compas-player ../compas-player
-git clone -b tempotec-v1 https://github.com/Starnished66/compas-player ../compas-player-v1   # V1 only
 COMPAS_PLAYER_DIR=../compas-player COMPAS_PLAYER_V1_DIR=../compas-player-v1 \
 BASE_DIR=inputs/base SSC_OVERLAY_DIR=inputs/ssc V1_STOCK_UPT=inputs/base/v1-stock.upt \
 OUT_DIR=outputs RELEASE_LABEL="Weekly Beta 2026-11-02" \
@@ -38,14 +37,27 @@ scripts/build/firmware/build_all_upt.sh
 `BOARDS="r1"` (etc.) limits the build. Per board by hand: `make release BOARD=<b> RELEASE_LABEL=v1.3.1` and
 `make bootloader BOARD=<b>` in the player, `make early-splash BOARD=<b>` here, then
 `scripts/firmware/package/repack_upt.sh --board <b> --early-splash build/compas_early_splash[_<b>] BASE PLAYER LOADER OUT`
-(set `R1_RUNTIME_OVERLAY` / `R3_RUNTIME_OVERLAY` to the SSC overlay). V1: `scripts/firmware/package/repack_v1_upt.py --help`.
+(set `R1_RUNTIME_OVERLAY` / `R3_RUNTIME_OVERLAY` to the SSC overlay). V1: `make release BOARD=tempotec_v1` in the player, then `scripts/firmware/package/repack_v1_upt.py --help`.
 Labels must be `vX.Y.Z` or `Weekly Beta YYYY-MM-DD`. See `docs/inputs.md` for the inputs.
 
 ## Continuous integration
 
-`.github/workflows/weekly.yml` runs Mondays 19:00 UTC (and on demand): it builds the four images, validates them
-and publishes a pre-release `weekly-YYYY-MM-DD`. Secrets: `STAGING_IMAGE_SHA256`, `R3PROII_STAGING_IMAGE_SHA256`,
-`R3II_2025_STAGING_IMAGE_SHA256`, `V1_STAGING_IMAGE_SHA256`, `V1_STOCK_UPT_URL`. The build fails if one is missing.
+`.github/workflows/weekly.yml` runs Mondays 19:00 UTC (and on demand). A read-only job runs the tests, builds
+the four images from compas-player `main`, validates them and uploads the package; a second job with
+`contents: write` publishes the pre-release `weekly-beta-YYYY-MM-DD` ("Weekly Beta YYYY-MM-DD"). A second run on
+the same day replaces the release and moves the tag to the new commit. No secrets are used: input checksums are
+tracked (`firmware/inputs.sha256`, `firmware/ssc-overlay.sha256`) and the inputs come from the public
+`staging-image-base` release (compas-player) and the `build-inputs` release (this repository).
+
+GitHub disables scheduled workflows after 60 days without repository activity; if the weekly stops, push a commit
+or re-enable it under Actions. Tests: `COMPAS_PLAYER_DIR=../compas-player scripts/tests/run_all.sh`
+(`scripts/tests/disabled` explains the tests that cannot run on a clean clone).
+
+## Translations
+
+`i18n/po/` holds the gettext catalogs for the player's UI and `i18n/po2c.py` generates the player's
+`src/ui/text/i18n/i18n_catalog.c` from them (see `i18n/po/README.md`). They are kept here on purpose; the player only
+carries the generated C file. They are not used by the firmware build.
 
 ## Licences and provenance
 
