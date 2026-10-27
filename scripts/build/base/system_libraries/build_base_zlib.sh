@@ -43,7 +43,7 @@ done
 
 if [[ -z $stock_zlib ]]; then
     for candidate in \
-        /home/josegarita/Desktop/Test2/squashfs-root/usr/lib/libz.so.1.2.11; do
+        "${BASE_STOCK_ROOT:-}/usr/lib/libz.so.1.2.11"; do
         if [[ -f $candidate ]]; then stock_zlib=$candidate; break; fi
     done
 fi

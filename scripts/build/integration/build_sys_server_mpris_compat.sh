@@ -6,7 +6,7 @@ set -euo pipefail
 readonly SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 readonly REPO_ROOT=$(cd -- "$SCRIPT_DIR/../../.." && pwd)
 readonly TARGET_FLAGS='-EL -mips32r2 -mabi=32 -mhard-float -mfp32'
-stock_root=${BASE_STOCK_ROOT:-/home/josegarita/Desktop/Test2/squashfs-root}
+stock_root=${BASE_STOCK_ROOT:?set BASE_STOCK_ROOT to the extracted stock rootfs}
 glib_stage=${BASE_GLIB_STAGE:-$REPO_ROOT/scratch/base-upgrade/glib/stage}
 cross_prefix=${BASE_CROSS_PREFIX:-$REPO_ROOT/scratch/ingenic-toolchain-v5.2/toolchain/bin/mips-linux-gnu-}
 work=${BASE_SYS_SERVER_MPRIS_COMPAT_BUILD_DIR:-$REPO_ROOT/scratch/base-upgrade/sys-server-mpris-compat}

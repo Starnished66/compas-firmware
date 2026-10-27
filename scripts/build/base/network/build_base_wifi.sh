@@ -21,7 +21,7 @@ readonly PREFIX=/usr
 
 compiler=${MIPS_GCC:-$REPO_ROOT/scratch/ingenic-toolchain-v5.2/toolchain/bin/mips-linux-gnu-gcc}
 work=${BASE_WIFI_BUILD_DIR:-$REPO_ROOT/scratch/base-upgrade/wifi}
-stock_root=${BASE_STOCK_ROOT:-/home/josegarita/Desktop/Test2/squashfs-root}
+stock_root=${BASE_STOCK_ROOT:?set BASE_STOCK_ROOT to the extracted stock rootfs}
 openssl_include=${OPENSSL_INCLUDE_DIR:-}
 jobs=${JOBS:-4}
 

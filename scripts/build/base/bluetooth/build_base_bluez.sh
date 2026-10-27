@@ -14,7 +14,7 @@ readonly READLINE_VERSION=8.0
 readonly READLINE_SHA256=e339f51971478d369f8a053a330a190781acb9864cf4c541060f12078948e461
 readonly READLINE_URL=https://ftp.gnu.org/gnu/readline/readline-8.0.tar.gz
 readonly TARGET_FLAGS='-EL -mips32r2 -mabi=32 -mhard-float -mfp32'
-readonly STOCK_ROOT=${BASE_STOCK_ROOT:-/home/josegarita/Desktop/Test2/squashfs-root}
+readonly STOCK_ROOT=${BASE_STOCK_ROOT:?set BASE_STOCK_ROOT to the extracted stock rootfs}
 readonly GLIB_STAGE=${BASE_GLIB_STAGE:-$REPO_ROOT/scratch/base-upgrade/glib/stage}
 readonly DBUS_STAGE=${BASE_DBUS_STAGE:-$REPO_ROOT/scratch/base-upgrade/dbus/stage}
 readonly CROSS_PREFIX=${BASE_CROSS_PREFIX:-$REPO_ROOT/scratch/ingenic-toolchain-v5.2/toolchain/bin/mips-linux-gnu-}

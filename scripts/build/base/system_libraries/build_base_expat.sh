@@ -6,7 +6,7 @@ set -euo pipefail
 repo=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../../../.." && pwd)
 work=${BASE_EXPAT_BUILD_DIR:-"$repo/scratch/base-upgrade/expat"}
 cross=${BASE_CROSS_PREFIX:-"$repo/scratch/ingenic-toolchain-v5.2/toolchain/bin/mips-linux-gnu-"}
-stock=${BASE_EXPAT_STOCK:-/home/josegarita/Desktop/Test2/squashfs-root/usr/lib/libexpat.so.1.6.11}
+stock=${BASE_EXPAT_STOCK:-${BASE_STOCK_ROOT:?set BASE_EXPAT_STOCK or BASE_STOCK_ROOT}/usr/lib/libexpat.so.1.6.11}
 
 if [[ $# -ne 0 ]]; then
     echo "usage: $0" >&2

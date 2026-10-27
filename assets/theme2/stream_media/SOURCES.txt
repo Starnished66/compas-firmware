@@ -8,20 +8,20 @@ Selected files retain the normal artwork, following the custom radio/category ic
 The UI provides the pressed/selected row highlight.
 
 subsonic_row.png and subsonic_row_s.png
-  Source: /home/josegarita/Desktop/Test2/squashfs-root/usr/resource/litegui/theme2/stream_media/subsonic.png
+  Source: <stock R1 root>/usr/resource/litegui/theme2/stream_media/subsonic.png
   The source's transparent vinyl mark is alpha-cropped and scaled to the canvas.
 
 radio_row.png and radio_row_s.png
-  Source: /home/josegarita/Desktop/Test2/squashfs-root/usr/resource/litegui/theme2/category/net_radio.png
+  Source: <stock R1 root>/usr/resource/litegui/theme2/category/net_radio.png
   The transparent coral radio mark is alpha-cropped and scaled to the canvas.
 
 qobuz_row.png and qobuz_row_s.png
-  Source: /home/josegarita/Desktop/Test2/squashfs-root/usr/resource/litegui/theme2/stream_media/qobuz.png
+  Source: <stock R1 root>/usr/resource/litegui/theme2/stream_media/qobuz.png
   The white/gray Q record detail is isolated from its dark tile using the
   source bounds (71,37)-(140,106), then scaled onto transparency.
 
 tidal_row.png and tidal_row_s.png
-  Source: /home/josegarita/Desktop/Test2/squashfs-root/usr/resource/litegui/theme2/stream_media/tidal.png
+  Source: <stock R1 root>/usr/resource/litegui/theme2/stream_media/tidal.png
   The white five-diamond mark is isolated from its dark tile using the
   source bounds (76,53)-(137,93), then scaled onto transparency.
 

@@ -88,7 +88,7 @@ make -j4 target
 bash scripts/overlays/base_image/prepare_base_image_overlay.sh
 ```
 
-Default stock tree: `/home/josegarita/Desktop/Test2/squashfs-root`.
+The stock tree is the unpacked stock rootfs of the matching board and has no default: set `BASE_STOCK_ROOT`.
 Override `BASE_STOCK_ROOT` and `BASE_CROSS_PREFIX` where needed. Outputs stay
 under `scratch/base-upgrade`; the overlay script does not install or flash.
 Keep the downloaded sources, notices and these recipes with release source
