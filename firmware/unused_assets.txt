@@ -1,0 +1,327 @@
+# Stock UI images that nothing in the shipped system loads. repack_upt.sh -> clean_os.py
+# deletes every path below from /usr/resource/litegui after the tracked assets are copied
+# (a missing path is skipped; a path that is also tracked under assets/ is an error).
+#
+# Format: one path per line relative to /usr/resource/litegui.
+#   */<dir>/<file>     theme1 and theme2
+#   theme2/<dir>/<file>  theme2 only (theme1 files of that name are live: a theme with
+#                        icon_root=theme1 resolves them directly and bypasses the Breeze swap)
+#
+# Rule used: a file stays if compas_player/compas_loader can name it (any asset_path()
+# literal or format, the gui_themes.c legacy inventory, layout_images[], titlebar and
+# breeze_row maps), or a published plugin/theme references it (compas-plugins), or it is
+# the "_s" pressed sibling of one of those.  Everything below is neither.
+# Kept on purpose although Breeze art is shown instead: the names in gui_themes.c
+# s_legacy_asset_inventory (e.g. navigation/back|more|search, power_action/power|reboot,
+# submenu/bluetooth|usb), because legacy-theme migration compares leftover override copies
+# with the stock file of that name.
+
+# bt: only bt/bt.png is named (gui_themes.c inventory); the Bluetooth screens draw Breeze art
+*/bt/bt_icon.png
+*/bt/bt_ldac.png
+*/bt/bt_uat.png
+*/bt/ldac.png
+*/bt/list_line.png
+
+# category: only category/{all,artist,album_artist,genre}.png are named (gui_themes.c inventory); the rest is HiBy list chrome
+*/category/album.png
+*/category/album_s.png
+*/category/explorer.png
+*/category/explorer_s.png
+*/category/item.png
+*/category/item_s.png
+*/category/net_radio.png
+
+# keyboard: gui_text_input.c text_entry_key_image() names only keyboard/<n>, symbol<n>, char_<l|u>, <letters>_<l|u>, upper/lower/etc. from the legacy inventory; select/, wifi/, cursor, bg, ok, space, negative, num_more, symbol_more, text_bg are never named (gui_library.c notes ok/text_bg/cursor as redundant chrome)
+*/keyboard/bg.png
+*/keyboard/cursor.png
+*/keyboard/cursor2.png
+*/keyboard/lower.png
+*/keyboard/negative.png
+*/keyboard/num_more.png
+*/keyboard/ok.png
+*/keyboard/ok_s.png
+*/keyboard/select/0.png
+*/keyboard/select/1.png
+*/keyboard/select/2.png
+*/keyboard/select/3.png
+*/keyboard/select/4.png
+*/keyboard/select/5.png
+*/keyboard/select/6.png
+*/keyboard/select/7.png
+*/keyboard/select/8.png
+*/keyboard/select/9.png
+*/keyboard/select/abc_l.png
+*/keyboard/select/abc_u.png
+*/keyboard/select/char.png
+*/keyboard/select/char_l.png
+*/keyboard/select/char_u.png
+*/keyboard/select/cursor2.png
+*/keyboard/select/def_l.png
+*/keyboard/select/def_u.png
+*/keyboard/select/del.png
+*/keyboard/select/dot.png
+*/keyboard/select/enter.png
+*/keyboard/select/ghi_l.png
+*/keyboard/select/ghi_u.png
+*/keyboard/select/jkl_l.png
+*/keyboard/select/jkl_u.png
+*/keyboard/select/left.png
+*/keyboard/select/lower.png
+*/keyboard/select/mno_l.png
+*/keyboard/select/mno_u.png
+*/keyboard/select/negative.png
+*/keyboard/select/num.png
+*/keyboard/select/num_more.png
+*/keyboard/select/pqrs_l.png
+*/keyboard/select/pqrs_u.png
+*/keyboard/select/right.png
+*/keyboard/select/space.png
+*/keyboard/select/space2.png
+*/keyboard/select/symbol.png
+*/keyboard/select/symbol0.png
+*/keyboard/select/symbol1.png
+*/keyboard/select/symbol2.png
+*/keyboard/select/symbol3.png
+*/keyboard/select/symbol4.png
+*/keyboard/select/symbol5.png
+*/keyboard/select/symbol6.png
+*/keyboard/select/symbol7.png
+*/keyboard/select/symbol8.png
+*/keyboard/select/symbol9.png
+*/keyboard/select/symbol_more.png
+*/keyboard/select/tuv_l.png
+*/keyboard/select/tuv_u.png
+*/keyboard/select/upper.png
+*/keyboard/select/wxyz_l.png
+*/keyboard/select/wxyz_u.png
+*/keyboard/space.png
+*/keyboard/symbol_more.png
+*/keyboard/text_bg.png
+*/keyboard/wifi bg.png
+
+# launcher: bg_*.png tile cards and hor/ver_line, item, item_s are not resolved (screen_builders.h only mentions bg_music in a comment); Themes.lua inventory says the same
+*/launcher/bg_book.png
+*/launcher/bg_dac.png
+*/launcher/bg_music.png
+*/launcher/bg_stream_media.png
+*/launcher/bg_sys_set.png
+*/launcher/bg_wireless.png
+*/launcher/hor_line.png
+*/launcher/item.png
+*/launcher/item_s.png
+*/launcher/ver_line.png
+
+# playing_plane: speed_*, repeater_*, lyrics_*, loading_*, cursor*, *_f/_fous and fm_cover are not named by player_layouts.c layout_images[] or gui_player.c
+*/playing_plane/btn_next_f.png
+*/playing_plane/btn_prev_f.png
+*/playing_plane/cursor.png
+*/playing_plane/cursor_focus.png
+*/playing_plane/fm_cover.png
+*/playing_plane/loading_0.png
+*/playing_plane/loading_1.png
+*/playing_plane/loading_2.png
+*/playing_plane/loading_3.png
+*/playing_plane/loading_4.png
+*/playing_plane/loading_5.png
+*/playing_plane/loading_6.png
+*/playing_plane/loading_7.png
+*/playing_plane/lyrics_in.png
+*/playing_plane/lyrics_out.png
+*/playing_plane/lyrics_out_s.png
+*/playing_plane/repeater_left_bt.png
+*/playing_plane/repeater_left_bt_fous.png
+*/playing_plane/repeater_left_flag.png
+*/playing_plane/repeater_left_flag_fous.png
+*/playing_plane/repeater_plus.png
+*/playing_plane/repeater_plus_fous.png
+*/playing_plane/repeater_reduce.png
+*/playing_plane/repeater_reduce_fous.png
+*/playing_plane/repeater_right_bt.png
+*/playing_plane/repeater_right_bt_fous.png
+*/playing_plane/repeater_right_flag.png
+*/playing_plane/repeater_right_flag_fous.png
+*/playing_plane/repeater_switch_close.png
+*/playing_plane/repeater_switch_open.png
+*/playing_plane/repeater_switch_open_s.png
+*/playing_plane/speed_0.5x.png
+*/playing_plane/speed_0.5x_s.png
+*/playing_plane/speed_0.75x.png
+*/playing_plane/speed_0.75x_s.png
+*/playing_plane/speed_1.25x.png
+*/playing_plane/speed_1.25x_s.png
+*/playing_plane/speed_1.5x.png
+*/playing_plane/speed_1.5x_s.png
+*/playing_plane/speed_2x.png
+*/playing_plane/speed_2x_s.png
+
+# playlist_actions: trash.png was superseded by titlebar/breeze_delete.png; list-checks.png is named nowhere
+*/playlist_actions/list-checks.png
+
+# pull_down: bg.png is not named; the drawer toggles are the names in gui_shell.c plus the plugin-referenced mseb/gain_h/gain_l
+*/pull_down/bg.png
+
+# settings: color_*, cursor, gain_*, lo/po/on/off, progress, bt are HiBy settings chrome never named; library/playback/sound are redirected to breeze_rows/settings_*.png or titlebar/breeze_*.png
+*/settings/bt.png
+*/settings/color_0.png
+*/settings/color_1.png
+*/settings/color_2.png
+*/settings/color_3.png
+*/settings/color_4.png
+*/settings/color_icon.png
+*/settings/cursor.png
+*/settings/gain_high.png
+*/settings/gain_low.png
+*/settings/lo.png
+*/settings/off.png
+*/settings/on.png
+*/settings/po.png
+*/settings/progress.png
+
+# stream_media: qobuz/tidal tile faces; the rows use stream_media/<name>_row.png (kept)
+*/stream_media/qobuz.png
+*/stream_media/qobuz_s.png
+*/stream_media/tidal.png
+*/stream_media/tidal_s.png
+
+# sub_back: HiBy sub-screen buttons never named (btn_back/btn_search/btn_playlist/close/set/bg_search stay: legacy inventory)
+*/sub_back/btn_back_w.png
+*/sub_back/btn_collect.png
+*/sub_back/btn_collect_s.png
+*/sub_back/btn_songlist.png
+*/sub_back/btn_songlist_s.png
+*/sub_back/delete.png
+*/sub_back/delete_s.png
+*/sub_back/ic_folder.png
+*/sub_back/playing_0.png
+*/sub_back/playing_1.png
+*/sub_back/playing_2.png
+*/sub_back/to_play.png
+*/sub_back/to_play_s.png
+*/sub_back/to_top.png
+*/sub_back/to_top_s.png
+*/sub_back/tv_bg.png
+
+# topbar: lucide_* is the fallback topbar_icon() uses only when topbar/breeze_play.png is missing; every image ships the Breeze set
+*/topbar/lucide_audio_lines.png
+*/topbar/lucide_battery.png
+*/topbar/lucide_battery_charging.png
+*/topbar/lucide_battery_full.png
+*/topbar/lucide_battery_low.png
+*/topbar/lucide_battery_medium.png
+*/topbar/lucide_bluetooth.png
+*/topbar/lucide_bluetooth_off.png
+*/topbar/lucide_headphones.png
+*/topbar/lucide_pause.png
+*/topbar/lucide_play.png
+*/topbar/lucide_usb.png
+*/topbar/lucide_volume_2.png
+*/topbar/lucide_wifi.png
+*/topbar/lucide_wifi_high.png
+*/topbar/lucide_wifi_low.png
+*/topbar/lucide_wifi_off.png
+*/topbar/lucide_wifi_zero.png
+
+# touch_list: HiBy list chrome (loading_*, pull_menu_*, list_*_bg, scrollbar, ...) never named
+*/touch_list/a_z.png
+*/touch_list/bt_icon.png
+*/touch_list/dot.png
+*/touch_list/edit_down.png
+*/touch_list/edit_down_s.png
+*/touch_list/edit_icon_bg.png
+*/touch_list/enter.png
+*/touch_list/enter_s.png
+*/touch_list/inputbox.png
+*/touch_list/item_bg_focus.png
+*/touch_list/item_invalid_bg.png
+*/touch_list/list_album_bg.png
+*/touch_list/list_album_bg_s.png
+*/touch_list/list_dsd.png
+*/touch_list/list_line.png
+*/touch_list/list_select.png
+*/touch_list/list_select_s.png
+*/touch_list/listview_scrollbar.png
+*/touch_list/listview_scrollbar_focus.png
+*/touch_list/little_item_bg.png
+*/touch_list/loading_0.png
+*/touch_list/loading_1.png
+*/touch_list/loading_2.png
+*/touch_list/loading_3.png
+*/touch_list/loading_4.png
+*/touch_list/loading_5.png
+*/touch_list/loading_6.png
+*/touch_list/loading_7.png
+*/touch_list/loading_bg.png
+*/touch_list/middle_item_bg.png
+*/touch_list/more.png
+*/touch_list/more_s.png
+*/touch_list/mqa.png
+*/touch_list/music_update.png
+*/touch_list/music_update_focus.png
+*/touch_list/otg.png
+*/touch_list/otg_s.png
+*/touch_list/pull_menu_airplay.png
+*/touch_list/pull_menu_balance.png
+*/touch_list/pull_menu_bt.png
+*/touch_list/pull_menu_digital_filter.png
+*/touch_list/pull_menu_dlna.png
+*/touch_list/pull_menu_fade.png
+*/touch_list/pull_menu_gain.png
+*/touch_list/pull_menu_gapless_play.png
+*/touch_list/pull_menu_hiby_link.png
+*/touch_list/pull_menu_mseb.png
+*/touch_list/pull_menu_output.png
+*/touch_list/pull_menu_sleep_switch.png
+*/touch_list/pull_menu_usb_mode.png
+*/touch_list/pull_menu_wifi.png
+*/touch_list/pulldown.png
+*/touch_list/remove.png
+*/touch_list/tf.png
+*/touch_list/tf_s.png
+*/touch_list/tidal_subscription.png
+
+# volume: vol_* HiBy volume chrome; only volume/bg.png and vol.png are named
+*/volume/cursor.png
+*/volume/vol_bg.png
+*/volume/vol_inc.png
+*/volume/vol_inc_s.png
+*/volume/vol_progress.png
+*/volume/vol_red.png
+*/volume/vol_red_s.png
+
+# wireless: tile icons went away with the old grid; only wireless/list_*.png are named
+*/wireless/airplay.png
+*/wireless/airplay_s.png
+*/wireless/bt.png
+*/wireless/bt_s.png
+*/wireless/dlna.png
+*/wireless/dlna_s.png
+*/wireless/hibylink.png
+*/wireless/hibylink_s.png
+*/wireless/via.png
+*/wireless/via_s.png
+*/wireless/wifi.png
+*/wireless/wifi_s.png
+
+# theme2 power_action: Breeze art replaces these (screen_off/sleep_timer only reach power_hub_card(), which swaps in breeze_rows/power_action_*.png when the active theme layer is stock theme2 (breeze_row_icon()))
+theme2/power_action/screen_off.png
+theme2/power_action/sleep_timer.png
+
+# theme2 settings (Breeze-only): color_*, cursor, gain_*, lo/po/on/off, progress, bt are HiBy settings chrome never named; library/playback/sound are redirected to breeze_rows/settings_*.png or titlebar/breeze_*.png
+theme2/settings/library.png
+theme2/settings/playback.png
+theme2/settings/sound.png
+
+# theme2 submenu: Breeze art replaces these (redirected to breeze_rows/submenu_*.png by decorate_category_row()/titlebar mapping; genres/layouts/plugins/themes/emulators/refresh_*/update_database/music_database are not in gui_themes.c s_legacy_asset_inventory)
+theme2/submenu/emulators.png
+theme2/submenu/genres.png
+theme2/submenu/layouts.png
+theme2/submenu/plugins.png
+theme2/submenu/refresh_covers.png
+theme2/submenu/refresh_metadata.png
+theme2/submenu/themes.png
+theme2/submenu/update_database.png
+theme2/submenu/music_database.png
+
+# theme2 navigation: Breeze art replaces these (reorder.png is the fallback of set_reorder_handle_icon() only when titlebar/breeze_handle.png is missing)
+theme2/navigation/reorder.png

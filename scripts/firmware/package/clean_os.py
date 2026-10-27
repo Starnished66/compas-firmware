@@ -34,6 +34,24 @@ RESOURCE_REF_RE = re.compile(
 )
 
 
+UNUSED_ASSETS_MANIFEST = "firmware/unused_assets.txt"
+
+
+def unused_asset_paths(repo: Path) -> list[str]:
+    """Expand firmware/unused_assets.txt into litegui-relative paths (theme1/..., theme2/...)."""
+    paths: list[str] = []
+    for number, raw in enumerate((repo / UNUSED_ASSETS_MANIFEST).read_text(encoding="utf-8").splitlines(), 1):
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = Path(line).parts
+        if ".." in parts or line.startswith("/") or len(parts) < 3 or parts[0] not in ("*", "theme1", "theme2"):
+            raise ValueError(f"{UNUSED_ASSETS_MANIFEST}:{number}: bad path {line!r}")
+        for theme in (("theme1", "theme2") if parts[0] == "*" else (parts[0],)):
+            paths.append("/".join((theme,) + parts[1:]))
+    return paths
+
+
 def _inside(root: Path, rel: str) -> Path:
     """Return a root-relative path while rejecting symlinked ancestors."""
     path = root / rel
@@ -336,6 +354,13 @@ def prepare(root: str | os.PathLike[str], repo: str | os.PathLike[str]) -> dict[
     for theme in ("theme1", "theme2"):
         _prune_tree(root_path, f"usr/resource/litegui/{theme}", set(THEME_NAMESPACES), canonical, removed)
     _prune_tree(root_path, "usr/resource/fonts", kept_fonts, set(), removed)
+
+    # Stock images nothing loads (see firmware/unused_assets.txt for the evidence).
+    for rel in unused_asset_paths(repo_path):
+        full = f"usr/resource/litegui/{rel}"
+        if full in canonical:
+            raise ValueError(f"{UNUSED_ASSETS_MANIFEST} lists a tracked asset: assets/{rel}")
+        _remove(_inside(root_path, full), full, removed)
 
     report["removed_bytes"] = sum(item["bytes"] for item in removed)
     report["removed_count"] = len(removed)

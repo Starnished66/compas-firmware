@@ -44,6 +44,58 @@ for base, name in ((3, "xImage"), (7, "rootfs.squashfs")):
 PY
 }
 
+# Per-board folders hold only what differs per board: the boot animation at the board's
+# resolution, etc/logo1.jpeg and a board-specific USB DAC overlay. Shared icons live in
+# assets/theme1 and assets/theme2 and are never duplicated per board.
+for dir in r1 r3proii r3ii_2025 v1; do
+    while IFS= read -r f; do
+        case $f in
+            theme2/boot_animation/en/0.jpg|theme2/boot_animation/en/0.png|theme2/boot_animation/en/config.ini) ;;
+            etc/logo1.jpeg|theme2/usb/usb.png) ;;
+            *) echo "assets/$dir/$f is not board-specific; move it to assets/theme1 or assets/theme2" >&2; exit 1 ;;
+        esac
+    done < <(cd "$repo/assets/$dir" && find . -type f | sed 's#^\./##' | LC_ALL=C sort)
+done
+
+# check_icons ROOT: no image ships a stock icon that nothing loads, and no icon ships whose
+# Breeze replacement is what the player draws (the legacy-inventory names are the only ones
+# kept; gui_themes.c compares leftover legacy theme copies with the stock file of that name).
+check_icons() {
+    python3 -I - "$repo" "$1" <<'PY'
+import os, sys
+sys.path.insert(0, os.path.join(sys.argv[1], "scripts/firmware/package"))
+import pathlib, clean_os
+repo, root = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]) / "usr/resource/litegui"
+shipped = [p for p in clean_os.unused_asset_paths(repo) if (root / p).exists()]
+if shipped:
+    raise SystemExit("unused stock images ship in the image: " + ", ".join(shipped[:8]))
+LEGACY_KEPT = {
+    "navigation/back.png", "navigation/more.png", "navigation/search.png",
+    "power_action/power.png", "power_action/reboot.png",
+    "settings/about.png", "settings/display.png", "settings/music.png", "settings/power.png", "settings/system.png",
+    "stream_media/podcasts_row.png", "stream_media/radio_row.png", "stream_media/subsonic_row.png",
+    "sub_back/btn_playlist.png", "touch_list/list_folder.png",
+    "submenu/album_artist.png", "submenu/albums.png", "submenu/all_songs.png", "submenu/artists.png",
+    "submenu/bluetooth.png", "submenu/books.png", "submenu/favorites.png", "submenu/files.png",
+    "submenu/playlists.png", "submenu/usb.png",
+    "wireless/list_airplay.png", "wireless/list_bt.png", "wireless/list_dlna.png",
+    "wireless/list_remote.png", "wireless/list_wifi.png",
+}
+theme2 = root / "theme2"
+folders = sorted((d.name for d in theme2.iterdir() if d.is_dir()), key=len, reverse=True)
+stale = []
+for art in sorted((theme2 / "breeze_rows").glob("*.png")):
+    folder = next((f for f in folders if art.name.startswith(f + "_")), None)
+    if folder is None:
+        continue
+    stock = f"{folder}/{art.name[len(folder) + 1:]}"
+    if (theme2 / stock).exists() and stock not in LEGACY_KEPT:
+        stale.append(stock)
+if stale:
+    raise SystemExit("superseded stock icons ship next to their Breeze art: " + ", ".join(stale))
+PY
+}
+
 for board in r1 r3proii r3ii_2025; do
     [[ -f $out/$board.upt ]] || continue
     theme_src=$repo/assets/theme2
@@ -57,7 +109,8 @@ for board in r1 r3proii r3ii_2025; do
     cmp -- "$theme_src/boot_animation/en/0.png" "$root/usr/resource/litegui/theme2/boot_animation/en/0.png"
     suffix=_$board; [[ $board != r1 ]] || suffix=
     cmp -- "$out/compas_player$suffix" "$root/usr/bin/compas_player"
-    echo "$board.upt: branding assets and player verified"
+    check_icons "$root"
+    echo "$board.upt: branding assets, icon set and player verified"
 done
 
 if [[ -f $out/v1.upt ]]; then
@@ -67,6 +120,7 @@ if [[ -f $out/v1.upt ]]; then
     grep -aq 'COMPAS_PLAYER_BOARD:tempotec_v1' "$root/usr/bin/compas_player"
     cmp -- "$repo/assets/v1/theme2/usb/usb.png" "$root/usr/resource/litegui/theme2/usb/usb.png"
     cmp -- "$repo/assets/theme2/boot_animation/en/0.png" "$root/usr/resource/litegui/theme2/boot_animation/en/0.png"
+    check_icons "$root"
     [[ $(awk '{print $1}' "$out/v1_md5.txt") == "$(md5sum "$out/v1.upt" | awk '{print $1}')" ]]
     echo "v1.upt: player marker, assets and v1_md5.txt verified"
 fi

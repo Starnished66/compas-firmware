@@ -1,3 +1,4 @@
+Removed (2026-10-27): bg_music.png, bg_book.png, bg_stream_media.png, bg_sys_set.png, bg_wireless.png and bg_dac.png. compas_player never resolves the tile card backgrounds (firmware/unused_assets.txt). The entries below still describe the icons that ship.
 theme2/launcher icons (swapped in place; old assets removed)
 Firmware reads these unsuffixed names.
 Skipped chrome: hor_line.png, ver_line.png, item.png, item_s.png
