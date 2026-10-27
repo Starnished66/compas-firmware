@@ -14,7 +14,7 @@ It contains no accounts, settings, media or stock firmware dumps. Packaging crea
 | `scripts/build/base`, `scripts/base_image`, `scripts/overlays` | Bluetooth / audio / Wi-Fi base-system builds and overlays |
 | `scripts/kernel`, `firmware/kernel` | kernel, driver, display, radio work and repackers |
 | `firmware/overlay`, `firmware/vendor_drivers.json`, `firmware/ssc-overlay.sha256`, `firmware/v1` | init overlay, pins |
-| `assets/` | themes, fonts, bootloader selector, brand and per-board assets (`r3proii`, `r3ii_2025`, `v1`) |
+| `assets/` | themes, fonts, bootloader selector, brand assets and the few per-board files (`r1`, `r3proii`, `r3ii_2025`, `v1`: boot animation, `etc/logo1.jpeg`, USB DAC overlay). `firmware/unused_assets.txt` lists stock UI images the cleanup removes |
 | `src/bootloader/startup` + `Makefile` | early splash (built against the player checkout) |
 | `third_party/libssc` | native Samsung SSC encoder |
 | `i18n/` | `.po` catalogs and `po2c.py` |
