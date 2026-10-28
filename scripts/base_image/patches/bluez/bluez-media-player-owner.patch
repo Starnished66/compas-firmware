@@ -1,0 +1,114 @@
+Subject: [PATCH] Prefer the AVRCP player owned by the Compas MPRIS name
+
+The cover-art patch makes the Compas player the addressed AVRCP player
+ahead of the vendor provider. Match it by the D-Bus connection that owns
+org.mpris.MediaPlayer2.compas instead of the user-visible Identity string,
+which changes with renames and translations.
+
+diff -ruN a/profiles/audio/avrcp.c b/profiles/audio/avrcp.c
+--- a/profiles/audio/avrcp.c
++++ b/profiles/audio/avrcp.c
+@@ -4723,8 +4723,7 @@
+ 
+ 	/* The vendor daemon registers a second, incomplete provider first.
+ 	 * Prefer Compás while it is present; unregister falls back normally. */
+-	const char *name = cb->get_name ? cb->get_name(user_data) : NULL;
+-	bool preferred = name != NULL && strcmp(name, "Compás") == 0;
++	bool preferred = cb->is_preferred && cb->is_preferred(user_data);
+ 	if (preferred)
+ 		server->players = g_slist_prepend(server->players, player);
+ 	else
+diff -ruN a/profiles/audio/avrcp.h b/profiles/audio/avrcp.h
+--- a/profiles/audio/avrcp.h
++++ b/profiles/audio/avrcp.h
+@@ -83,6 +83,7 @@
+ 	uint32_t (*get_position)(void *user_data);
+ 	uint32_t (*get_duration)(void *user_data);
+ 	const char *(*get_name)(void *user_data);
++	bool (*is_preferred)(void *user_data);
+ 	bool (*play)(void *user_data);
+ 	bool (*stop)(void *user_data);
+ 	bool (*pause)(void *user_data);
+diff -ruN a/profiles/audio/avrcp-player.c b/profiles/audio/avrcp-player.c
+--- a/profiles/audio/avrcp-player.c
++++ b/profiles/audio/avrcp-player.c
+@@ -103,6 +103,13 @@
+ 	return local_player_get_player_name(p->lp);
+ }
+ 
++static bool lp_is_preferred(void *user_data)
++{
++	struct player_link *p = user_data;
++
++	return local_player_is_compas(p->lp);
++}
++
+ static bool lp_play(void *user_data)
+ {
+ 	struct player_link *p = user_data;
+@@ -149,6 +156,7 @@
+ 	.get_duration = lp_get_duration,
+ 	.get_status = lp_get_status,
+ 	.get_name = lp_get_name,
++	.is_preferred = lp_is_preferred,
+ 	.play = lp_play,
+ 	.stop = lp_stop,
+ 	.pause = lp_pause,
+diff -ruN a/profiles/audio/media.c b/profiles/audio/media.c
+--- a/profiles/audio/media.c
++++ b/profiles/audio/media.c
+@@ -2106,6 +2106,43 @@
+ 	return mp->name;
+ }
+ 
++/* True when the player was registered by the D-Bus connection that owns the
++ * Compás MPRIS name. The sender, unlike the user-visible Identity, cannot be
++ * changed by a rename or a translation. */
++bool local_player_is_compas(struct local_player *mp)
++{
++	DBusMessage *msg, *reply;
++	DBusError err;
++	const char *owner = NULL;
++	const char *name = "org.mpris.MediaPlayer2.compas";
++	bool ret = false;
++
++	msg = dbus_message_new_method_call("org.freedesktop.DBus",
++					"/org/freedesktop/DBus",
++					"org.freedesktop.DBus", "GetNameOwner");
++	if (!msg)
++		return false;
++
++	dbus_message_append_args(msg, DBUS_TYPE_STRING, &name,
++							DBUS_TYPE_INVALID);
++	dbus_error_init(&err);
++	reply = dbus_connection_send_with_reply_and_block(
++			btd_get_dbus_connection(), msg, 1000, &err);
++	dbus_message_unref(msg);
++	if (!reply) {
++		dbus_error_free(&err);
++		return false;
++	}
++
++	if (dbus_message_get_args(reply, NULL, DBUS_TYPE_STRING, &owner,
++							DBUS_TYPE_INVALID))
++		ret = mp->sender && strcmp(mp->sender, owner) == 0;
++
++	dbus_message_unref(reply);
++
++	return ret;
++}
++
+ bool local_player_have_track(struct local_player *mp)
+ {
+ 	return mp->track;
+diff -ruN a/profiles/audio/media.h b/profiles/audio/media.h
+--- a/profiles/audio/media.h
++++ b/profiles/audio/media.h
+@@ -69,6 +69,7 @@
+ uint32_t local_player_get_position(struct local_player *lp);
+ uint32_t local_player_get_duration(struct local_player *lp);
+ const char *local_player_get_player_name(struct local_player *lp);
++bool local_player_is_compas(struct local_player *lp);
+ bool local_player_have_track(struct local_player *lp);
+ bool local_player_play(struct local_player *lp);
+ bool local_player_stop(struct local_player *lp);

@@ -105,6 +105,16 @@ grep -q 'handle_transport_connect(session, chan, imtu, omtu);' "$SOURCE/profiles
     die 'BlueZ AVDTP media MTU patch not applied'
 grep -q 'session->remote_volume = true;' "$SOURCE/profiles/audio/avrcp.c" ||
     die 'BlueZ AVRCP target-less volume patch not applied'
+grep -q 'avdtp_has_discovered_seps(session)' "$SOURCE/profiles/audio/a2dp.c" ||
+    die 'BlueZ AVDTP rediscover patch not applied'
+grep -q 'sep->chan->last_used = NULL;' "$SOURCE/profiles/audio/a2dp.c" ||
+    die 'BlueZ last-used patch not applied'
+grep -q 'local_player_is_compas' "$SOURCE/profiles/audio/avrcp-player.c" ||
+    die 'BlueZ media player owner patch not applied'
+grep -q 'bcm_acl_priority' "$SOURCE/src/device.c" ||
+    die 'BlueZ Broadcom ACL priority patch not applied'
+grep -q 'find_orphan_sep' "$SOURCE/profiles/audio/avdtp.c" ||
+    die 'BlueZ remote stream SEP patch not applied'
 
 # bluetoothctl requires readline headers, but the vendor rootfs contains only
 # its ABI-compatible runtime library. Prefer host headers when available;
@@ -151,7 +161,7 @@ for pc in "$GLIB_STAGE"/usr/lib/pkgconfig/*.pc "$DBUS_STAGE"/usr/lib/pkgconfig/*
     ln -s "$pc" "$SYSROOT/usr/lib/pkgconfig/$(basename -- "$pc")"
 done
 
-readonly CFLAGS="$TARGET_FLAGS -Os -fPIC -fno-PIE -I$SYSROOT/usr/include"
+readonly CFLAGS="$TARGET_FLAGS -Os -fPIC -fno-PIE -fdebug-prefix-map=$RUN=. -I$SYSROOT/usr/include"
 readonly LDFLAGS="$TARGET_FLAGS -fno-PIE -L$SYSROOT/usr/lib -L$STOCK_ROOT/usr/lib -Wl,-rpath-link,$SYSROOT/usr/lib -Wl,-rpath-link,$STOCK_ROOT/usr/lib -Wl,-z,noexecstack"
 export CC="$cc" AR="$ar" RANLIB="$ranlib" STRIP="$strip"
 export CFLAGS CPPFLAGS="$TARGET_FLAGS -fno-PIE -I$SYSROOT/usr/include"
@@ -178,9 +188,12 @@ printf '%s\n' \
     '[host_machine]' "system = 'linux'" "subsystem = 'linux'" "kernel = 'linux'" \
     "cpu_family = 'mips'" "cpu = 'mips32r2'" "endian = 'little'" > "$CROSS_FILE"
 
+# Configure through a relative path: BlueZ embeds __FILE__ in its debug tables, and
+# the Ingenic GCC 5.2 has no -ffile-prefix-map/-fmacro-prefix-map, so an absolute
+# source path would put the build directory (and the builder's home) in the binaries.
 pushd "$BUILD" >/dev/null
 env CFLAGS="$CFLAGS" CPPFLAGS="$CPPFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" \
-    "$SOURCE/configure" --host=mips-linux-gnu --build="$(gcc -dumpmachine)" \
+    ../src/bluez-$BLUEZ_VERSION/configure --host=mips-linux-gnu --build="$(gcc -dumpmachine)" \
     --prefix=/usr --exec-prefix=/usr --libdir=/usr/lib --libexecdir=/usr/libexec \
     --sysconfdir=/etc --localstatedir=/var --with-dbusconfdir=/etc/dbus-1 \
     --with-dbussystembusdir=/usr/share/dbus-1/system-services \
@@ -231,6 +244,12 @@ fi
 if printf '%s\n' "$daemon_strings" | grep -Fx "$BLUEZ_STORAGE_DIR/lib/bluetooth" >/dev/null; then
     die 'staged bluetoothd contains an unintended extra /lib/bluetooth suffix'
 fi
+# Builds must not carry the builder's paths (BlueZ prints __FILE__ in debug output).
+for elf in "$DAEMON" "$OBEXD"; do
+    if strings "$elf" | grep -F -e "$RUN" -e "$REPO_ROOT" -e "$HOME" >/dev/null; then
+        die "build path leaked into $elf"
+    fi
+done
 for binary in "${REQUIRED_TOOLS[@]}"; do
     [[ -x "$STAGE/usr/bin/$binary" ]] || die "missing staged tool: $binary"
 done
@@ -255,120 +274,15 @@ printf '%s\n' \
     "Expected obexd startup log: OBEX daemon $BLUEZ_VERSION" \
     > "$STAGE/usr/share/licenses/bluez-daemon-tools/BUILD-NOTICE.txt"
 
-# The responder runs on the system bus after the vendor's S80_bt_init hook.
-mkdir -p "$STAGE/etc/dbus-1/system.d" "$STAGE/etc/init.d"
-cat > "$STAGE/etc/dbus-1/system.d/org.bluez.obex.conf" <<'EOF'
-<!DOCTYPE busconfig PUBLIC "-//freedesktop//DTD D-BUS Bus Configuration 1.0//EN"
- "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
-<busconfig>
-  <policy user="root">
-    <allow own="org.bluez.obex"/>
-    <allow send_destination="org.bluez.obex"/>
-    <allow own="org.mpris.MediaPlayer2.compas"/>
-    <allow send_destination="org.mpris.MediaPlayer2.compas"/>
-  </policy>
-  <policy context="default">
-    <deny own="org.bluez.obex"/>
-    <deny own="org.mpris.MediaPlayer2.compas"/>
-  </policy>
-</busconfig>
-EOF
-cat > "$STAGE/etc/init.d/S81compas_obex" <<'EOF'
-#!/bin/sh
-
-OBEXD=/usr/libexec/bluetooth/obexd
-OBEX_ROOT=/tmp/compas-obexd
-PIDFILE=/var/run/compas-obexd.pid
-
-is_owned_obexd() {
-    pid=$1
-    case "$pid" in ''|*[!0-9]*) return 1 ;; esac
-    [ -e "/proc/$pid/exe" ] || return 1
-    executable=$(readlink "/proc/$pid/exe" 2>/dev/null) || return 1
-    [ "$executable" = "$OBEXD" ]
-}
-
-start_obexd() {
-    [ -x "$OBEXD" ] || exit 1
-    if [ -L "$OBEX_ROOT" ] || { [ -e "$OBEX_ROOT" ] && [ ! -d "$OBEX_ROOT" ]; }; then
-        echo "Refusing unsafe OBEX root: $OBEX_ROOT" >&2
-        return 1
-    fi
-    mkdir -p "$OBEX_ROOT" || return 1
-    [ ! -L "$OBEX_ROOT" ] || {
-        echo "Refusing symlink OBEX root: $OBEX_ROOT" >&2
-        return 1
-    }
-    chmod 0700 "$OBEX_ROOT" || return 1
-    if [ -f "$PIDFILE" ]; then
-        pid=$(cat "$PIDFILE")
-        case "$pid" in
-            ''|*[!0-9]*) rm -f "$PIDFILE" ;;
-            *)
-                if is_owned_obexd "$pid"; then return 0; fi
-                rm -f "$PIDFILE"
-                ;;
-        esac
-    fi
-    if pidof obexd >/dev/null 2>&1; then
-        echo 'An obexd process is already running without the Compas PID file' >&2
-        return 1
-    fi
-    "$OBEXD" --system-bus --nodetach --root="$OBEX_ROOT" \
-        --plugin=bluetooth,bip_avrcp \
-        >/dev/null 2>&1 &
-    pid=$!
-    echo "$pid" > "$PIDFILE"
-    sleep 1
-    attempt=0
-    while [ "$attempt" -lt 4 ]; do
-        is_owned_obexd "$pid" && return 0
-        kill -0 "$pid" 2>/dev/null || break
-        attempt=$((attempt + 1))
-        sleep 1
-    done
-    if is_owned_obexd "$pid"; then kill "$pid" 2>/dev/null || true; fi
-    rm -f "$PIDFILE"
-    return 1
-}
-
-stop_obexd() {
-    if [ -f "$PIDFILE" ]; then
-        pid=$(cat "$PIDFILE")
-        case "$pid" in
-            ''|*[!0-9]*) rm -f "$PIDFILE"; return 0 ;;
-            *)
-                if ! is_owned_obexd "$pid"; then
-                    rm -f "$PIDFILE"
-                    return 0
-                fi
-                kill "$pid" 2>/dev/null || true
-                attempt=0
-                while [ "$attempt" -lt 5 ]; do
-                    if ! is_owned_obexd "$pid"; then
-                        rm -f "$PIDFILE"
-                        return 0
-                    fi
-                    attempt=$((attempt + 1))
-                    sleep 1
-                done
-                echo "obexd pid $pid is still running after the stop timeout" >&2
-                return 1
-                ;;
-        esac
-    fi
-    return 0
-}
-
-case "$1" in
-    start|start-sync) start_obexd ;;
-    stop) stop_obexd ;;
-    restart) stop_obexd && start_obexd ;;
-    *) echo "Usage: $0 {start|start-sync|stop|restart}" >&2; exit 2 ;;
-esac
-EOF
-chmod 0644 "$STAGE/etc/dbus-1/system.d/org.bluez.obex.conf"
-chmod 0755 "$STAGE/etc/init.d/S81compas_obex"
+# The responder runs on the system bus after the vendor's S80_bt_init hook. The
+# bus policy and init script are tracked in firmware/overlay (shipped in every
+# image); they are staged here too so the cover-art overlay recipe stays complete.
+for policy in org.bluez.obex.conf org.mpris.MediaPlayer2.compas.conf; do
+    install -D -m 0644 "$REPO_ROOT/firmware/overlay/etc/dbus-1/system.d/$policy" \
+        "$STAGE/etc/dbus-1/system.d/$policy"
+done
+install -D -m 0755 "$REPO_ROOT/firmware/overlay/etc/init.d/S81compas_obex" \
+    "$STAGE/etc/init.d/S81compas_obex"
 
 for elf in "$DAEMON" "$OBEXD" "${REQUIRED_TOOLS[@]/#/$STAGE/usr/bin/}"; do
     file "$elf" | rg 'ELF 32-bit.*LSB.*MIPS' >/dev/null || die "wrong ELF format: $elf"

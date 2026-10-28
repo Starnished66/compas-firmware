@@ -89,9 +89,9 @@ diff --git a/Makefile.obexd b/Makefile.obexd
  
  if EXTERNAL_PLUGINS
  obexd_src_obexd_LDFLAGS = $(AM_LDFLAGS) -Wl,--export-dynamic
-diff --git a/obexd/src/app/main.c b/obexd/src/app/main.c
---- a/obexd/src/app/main.c
-+++ b/obexd/src/app/main.c
+diff --git a/obexd/src/main.c b/obexd/src/main.c
+--- a/obexd/src/main.c
++++ b/obexd/src/main.c
 @@ -322,16 +322,20 @@
  		exit(EXIT_FAILURE);
  	}

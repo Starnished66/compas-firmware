@@ -3,7 +3,7 @@
 #
 #   COMPAS_PLAYER_DIR=...  compas-player checkout (r1, r3proii, r3ii_2025)
 #   BASE_DIR=...           holds r1.upt, r3proii.upt, r3ii_2025.upt (prepared base images)
-#   SSC_OVERLAY_DIR=...    directory with usr/bin/bluealsad (see docs/inputs.md)
+#   SSC_OVERLAY_DIR=...    runtime overlay: usr/bin/bluealsad, usr/libexec/bluetooth/{bluetoothd,obexd} (see docs/inputs.md)
 #   OUT_DIR=...            receives the .upt files, standalone players and SHA256SUMS
 #   RELEASE_LABEL=...      vX.Y.Z or "Weekly Beta YYYY-MM-DD"
 #   V1_STOCK_UPT=...       official TempoTec V1 1.2 firmware (not committed); needed for tempotec_v1
@@ -23,9 +23,11 @@ export COMPAS_PLAYER_DIR="$player_dir"
 
 [[ $label =~ ^((Compas )?v[0-9]+\.[0-9]+\.[0-9]+|Weekly\ Beta\ [0-9]{4}-[0-9]{2}-[0-9]{2})$ ]] || {
     echo "RELEASE_LABEL must be vX.Y.Z or 'Weekly Beta YYYY-MM-DD': $label" >&2; exit 1; }
-[[ -f $overlay_dir/usr/bin/bluealsad ]] || { echo "Missing $overlay_dir/usr/bin/bluealsad" >&2; exit 1; }
-(cd "$overlay_dir/usr/bin" && sha256sum --check --status "$repo/firmware/ssc-overlay.sha256") || {
-    echo "bluealsad does not match firmware/ssc-overlay.sha256" >&2; exit 1; }
+for f in usr/bin/bluealsad usr/libexec/bluetooth/bluetoothd usr/libexec/bluetooth/obexd; do
+    [[ -f $overlay_dir/$f ]] || { echo "Missing $overlay_dir/$f" >&2; exit 1; }
+done
+(cd "$overlay_dir" && sha256sum --check --status "$repo/firmware/ssc-overlay.sha256") || {
+    echo "The runtime overlay does not match firmware/ssc-overlay.sha256" >&2; exit 1; }
 for tool in make 7z unsquashfs mksquashfs genisoimage file python3 mipsel-linux-musl-gcc \
     mipsel-linux-musl-readelf sha256sum; do
     command -v "$tool" >/dev/null || { echo "Required command is unavailable: $tool" >&2; exit 1; }

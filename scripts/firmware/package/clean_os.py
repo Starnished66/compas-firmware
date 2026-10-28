@@ -264,9 +264,37 @@ def prepare(root: str | os.PathLike[str], repo: str | os.PathLike[str]) -> dict[
                     break
             lines.insert(insert_at or 1, "Name = compás\n")
             changed = True
+        # Ask Broadcom/Cypress controllers for a high priority A2DP link (our bluetoothd option;
+        # a no-op on other controllers). Idempotent: set it right in [General] after Name.
+        section = None
+        option = None
+        name_at = None
+        for index, line in enumerate(lines):
+            section_match = re.match(r"\s*\[([^]]+)\]", line)
+            if section_match:
+                section = section_match.group(1).strip().lower()
+            if section != "general" or line.lstrip().startswith("#"):
+                continue
+            if re.match(r"\s*BroadcomHighPriority\s*=", line, re.I):
+                option = index
+            elif re.match(r"\s*Name\s*=", line, re.I):
+                name_at = index
+        wanted = "BroadcomHighPriority = true"
+        if option is not None:
+            if lines[option].strip() != wanted:
+                newline = "\r\n" if lines[option].endswith("\r\n") else "\n"
+                lines[option] = wanted + newline
+                changed = True
+        elif name_at is not None:
+            newline = "\r\n" if lines[name_at].endswith("\r\n") else "\n"
+            lines.insert(name_at + 1, wanted + newline)
+            changed = True
+        else:
+            raise ValueError(f"BlueZ config has no Name to place BroadcomHighPriority after: {bluez}")
         if changed:
             _write(bluez, "".join(lines).encode("utf-8", "surrogateescape"))
-            report["naming_updates"].append({"path": "/etc/bluetooth/main.conf", "general_name": "compás"})
+            report["naming_updates"].append({"path": "/etc/bluetooth/main.conf", "general_name": "compás",
+                                             "bluetooth_options": {"BroadcomHighPriority": True}})
 
     for name in ("bt_init", "bt_resume"):
         path = _inside(root_path, f"usr/bin/{name}")

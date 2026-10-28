@@ -26,7 +26,8 @@ overlay=$(realpath -- "$overlay")
 mkdir -p "$overlay/usr/libexec/bluetooth" "$overlay/etc/dbus-1/system.d" "$overlay/etc/init.d"
 cp -a "$stage/usr/libexec/bluetooth/bluetoothd" "$overlay/usr/libexec/bluetooth/"
 cp -a "$stage/usr/libexec/bluetooth/obexd" "$overlay/usr/libexec/bluetooth/"
-cp -a "$stage/etc/dbus-1/system.d/org.bluez.obex.conf" "$overlay/etc/dbus-1/system.d/"
+cp -a "$stage/etc/dbus-1/system.d/org.bluez.obex.conf" \
+    "$stage/etc/dbus-1/system.d/org.mpris.MediaPlayer2.compas.conf" "$overlay/etc/dbus-1/system.d/"
 cp -a "$stage/etc/init.d/S81compas_obex" "$overlay/etc/init.d/"
 sh -n "$overlay/etc/init.d/S81compas_obex"
 

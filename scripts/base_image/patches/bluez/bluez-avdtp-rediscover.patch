@@ -1,0 +1,113 @@
+When the remote device starts the A2DP connection, BlueZ only runs an AVDTP
+Discover if it has no remote endpoints at all. The endpoints it loaded from the
+persistent cache (<storage>/<adapter>/cache/<addr>) count as present, so an
+outdated cache is used for the whole connection. A sink that was streaming to
+another source when the cache was written (a new endpoint is skipped while it
+is in use) then never exposes that endpoint, e.g. the Galaxy Buds SSC endpoint.
+
+Run one Discover per AVDTP session instead, once the stream is open and unless
+a Discover already confirmed the endpoints (cached ones are not marked
+discovered). It runs after the stream setup, outside the setup state, so a slow
+or rejecting device cannot fail the incoming Set Configuration; its result only
+registers the missing endpoints and rewrites the cache.
+
+diff -ruN a/profiles/audio/a2dp.c b/profiles/audio/a2dp.c
+--- a/profiles/audio/a2dp.c
++++ b/profiles/audio/a2dp.c
+@@ -665,6 +665,8 @@
+ 		a2dp_stream_free(astream);
+ }
+ 
++static void rediscover_remote_seps(struct avdtp *session);
++
+ static void stream_state_changed(struct avdtp_stream *stream,
+ 					avdtp_state_t old_state,
+ 					avdtp_state_t new_state,
+@@ -679,6 +681,10 @@
+ 		struct a2dp_setup *setup;
+ 		int err;
+ 
++		a2dp_stream = queue_find(sep->streams, match_stream, stream);
++		if (a2dp_stream)
++			rediscover_remote_seps(a2dp_stream->session);
++
+ 		setup = find_setup_by_stream(stream);
+ 		if (!setup || !setup->start || setup->err)
+ 			return;
+@@ -3117,6 +3123,37 @@
+ 	finalize_discover(setup);
+ }
+ 
++static void rediscover_cb(struct avdtp *session, GSList *seps,
++				struct avdtp_error *err, void *user_data)
++{
++	struct a2dp_channel *chan = find_channel(session);
++
++	DBG("err %p", err);
++
++	/* Best effort: a failure must not affect the stream in use. */
++	if (err || !chan)
++		return;
++
++	g_slist_foreach(seps, foreach_register_remote_sep, chan);
++
++	if (avdtp_get_version(session))
++		store_remote_seps(chan);
++}
++
++/* When the remote starts the connection, the SEPs loaded from the cache are
++ * all BlueZ knows about, and nothing refreshes them. Discover once the stream
++ * is open, so a stale cache gets the SEPs it misses (e.g. one that was in use
++ * when the cache was written) without delaying or failing the stream setup.
++ */
++static void rediscover_remote_seps(struct avdtp *session)
++{
++	if (avdtp_has_discovered_seps(session))
++		return;
++
++	if (avdtp_discover(session, rediscover_cb, NULL) < 0)
++		DBG("Unable to rediscover remote SEPs");
++}
++
+ unsigned int a2dp_discover(struct avdtp *session, a2dp_discover_cb_t cb,
+ 							void *user_data)
+ {
+diff -ruN a/profiles/audio/avdtp.c b/profiles/audio/avdtp.c
+--- a/profiles/audio/avdtp.c
++++ b/profiles/audio/avdtp.c
+@@ -3469,6 +3469,23 @@
+ 	return FALSE;
+ }
+ 
++bool avdtp_has_discovered_seps(struct avdtp *session)
++{
++	GSList *l;
++
++	/* Remote SEPs loaded from the cache are not marked as discovered until
++	 * an AVDTP Discover of this session confirms them.
++	 */
++	for (l = session->seps; l; l = g_slist_next(l)) {
++		struct avdtp_remote_sep *sep = l->data;
++
++		if (sep->discovered)
++			return true;
++	}
++
++	return false;
++}
++
+ int avdtp_discover(struct avdtp *session, avdtp_discover_cb_t cb,
+ 			void *user_data)
+ {
+diff -ruN a/profiles/audio/avdtp.h b/profiles/audio/avdtp.h
+--- a/profiles/audio/avdtp.h
++++ b/profiles/audio/avdtp.h
+@@ -231,6 +231,8 @@
+ 
+ bool avdtp_get_delay_reporting(struct avdtp_remote_sep *sep);
+ 
++bool avdtp_has_discovered_seps(struct avdtp *session);
++
+ int avdtp_discover(struct avdtp *session, avdtp_discover_cb_t cb,
+ 			void *user_data);
+ 

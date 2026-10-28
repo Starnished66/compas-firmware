@@ -145,6 +145,23 @@ if stale:
 PY
 }
 
+# check_bluetooth_overlay ROOT LABEL: the BlueALSA SSC daemon and the patched BlueZ daemons (bluetoothd,
+# cover-art obexd) are the pinned overlay binaries, and the cover-art responder is installed.
+check_bluetooth_overlay() {
+    local root=$1 label=$2 want path
+    while read -r want path; do
+        [[ $(sha256sum "$root/$path" | awk '{print $1}') == "$want" ]] || {
+            echo "$label: /$path is not the pinned overlay binary" >&2; exit 1; }
+    done < "$repo/firmware/ssc-overlay.sha256"
+    [[ -x $root/etc/init.d/S81compas_obex && -f $root/etc/dbus-1/system.d/org.bluez.obex.conf &&
+       -f $root/etc/dbus-1/system.d/org.mpris.MediaPlayer2.compas.conf ]] || {
+        echo "$label: the OBEX cover-art responder is not installed" >&2; exit 1; }
+    grep -qx 'BroadcomHighPriority = true' "$root/etc/bluetooth/main.conf" || {
+        echo "$label: main.conf lacks BroadcomHighPriority = true" >&2; exit 1; }
+    [[ $(readlink "$root/usr/lib/libbluetooth.so.3") == libbluetooth.so.3.19.16 ]] || {
+        echo "$label: libbluetooth.so.3 does not point at the BlueZ 5.87 library" >&2; exit 1; }
+}
+
 for board in r1 r3proii r3ii_2025; do
     [[ -f $out/$board.upt ]] || continue
     theme_src=$repo/assets/theme2
@@ -159,7 +176,8 @@ for board in r1 r3proii r3ii_2025; do
     suffix=_$board; [[ $board != r1 ]] || suffix=
     cmp -- "$out/compas_player$suffix" "$root/usr/bin/compas_player"
     check_icons "$root"
-    echo "$board.upt: branding assets, icon set and player verified"
+    check_bluetooth_overlay "$root" "$board.upt"
+    echo "$board.upt: branding assets, icon set, player and overlay daemons verified"
 done
 
 if [[ -f $out/v1.upt ]]; then
@@ -170,6 +188,10 @@ if [[ -f $out/v1.upt ]]; then
     cmp -- "$repo/assets/v1/theme2/usb/usb.png" "$root/usr/resource/litegui/theme2/usb/usb.png"
     cmp -- "$repo/assets/theme2/boot_animation/en/0.png" "$root/usr/resource/litegui/theme2/boot_animation/en/0.png"
     check_icons "$root"
+    check_bluetooth_overlay "$root" v1.upt
+    grep -qx 'DiscoverableTimeout = 0' "$root/etc/bluetooth/main.conf" &&
+        grep -qx 'AutoEnable=false' "$root/etc/bluetooth/main.conf" || {
+        echo "v1.upt: main.conf lacks the V1 Bluetooth options" >&2; exit 1; }
     [[ $(awk '{print $1}' "$out/v1_md5.txt") == "$(md5sum "$out/v1.upt" | awk '{print $1}')" ]]
-    echo "v1.upt: player marker, assets and v1_md5.txt verified"
+    echo "v1.upt: player marker, assets, BlueZ stack and v1_md5.txt verified"
 fi

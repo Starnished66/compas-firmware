@@ -95,9 +95,9 @@ payload=$(find "$STAGE/usr/lib" -maxdepth 1 -type f -name 'libdbus-1.so.3.*' -pr
 
 for elf in "$payload" "$STAGE/usr/bin/"*; do
     [[ -f $elf ]] || continue
-    file "$elf" | rg -q 'ELF 32-bit.*LSB.*MIPS' || die "wrong ELF: $elf"
-    readelf -h "$elf" | rg -q 'Flags:.*mips32r2' || die "wrong MIPS ABI: $elf"
-    readelf -A "$elf" | rg -q 'Tag_GNU_MIPS_ABI_FP:.*Hard float' || die "wrong FP ABI: $elf"
+    file "$elf" | rg 'ELF 32-bit.*LSB.*MIPS' >/dev/null || die "wrong ELF: $elf"
+    readelf -h "$elf" | rg 'Flags:.*mips32r2' >/dev/null || die "wrong MIPS ABI: $elf"
+    readelf -A "$elf" | rg 'Tag_GNU_MIPS_ABI_FP:.*Hard float' >/dev/null || die "wrong FP ABI: $elf"
 done
 grep -Eq '^Libs:.*-ldbus-1' "$STAGE/usr/lib/pkgconfig/dbus-1.pc" || die "bad dbus-1.pc"
 if rg -n '/home/|/usr/local|/lib/x86_64|/lib64' "$STAGE/usr/lib/pkgconfig/dbus-1.pc" >/dev/null; then

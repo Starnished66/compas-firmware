@@ -1,0 +1,24 @@
+Subject: [PATCH] a2dp: clear the last used pair when its remote SEP is freed
+
+chan->last_used keeps a pointer to a remote SEP. When a Discover drops a
+cached SEP the remote no longer reports (remove_disappeared), the pointer was
+left dangling and a2dp_find_eps() dereferenced it. Free the pair together with
+the SEP. Not specific to this firmware: a candidate for upstream.
+
+diff -ruN a/profiles/audio/a2dp.c b/profiles/audio/a2dp.c
+--- a/profiles/audio/a2dp.c
++++ b/profiles/audio/a2dp.c
+@@ -1858,6 +1858,13 @@
+ 
+ 	avdtp_remote_sep_set_destroy(sep->sep, NULL, NULL);
+ 
++	/* The last used pair points at this remote SEP: forget it, or
++	 * a2dp_find_eps() reads freed memory once a rediscovery drops it. */
++	if (sep->chan->last_used && sep->chan->last_used->rsep == sep) {
++		free(sep->chan->last_used);
++		sep->chan->last_used = NULL;
++	}
++
+ 	free(sep->path);
+ 	free(sep);
+ }

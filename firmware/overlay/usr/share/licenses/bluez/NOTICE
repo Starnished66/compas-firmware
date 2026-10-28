@@ -1,0 +1,24 @@
+BlueZ 5.87 (bluetoothd and obexd)
+
+/usr/libexec/bluetooth/bluetoothd and /usr/libexec/bluetooth/obexd replace the vendor
+BlueZ daemons. They are built from the unmodified upstream release plus the patches in the
+Compas firmware repository, with scripts/build/base/bluetooth/build_base_bluez.sh:
+
+  Source:   https://www.kernel.org/pub/linux/bluetooth/bluez-5.87.tar.xz
+  SHA-256:  26bdcf2cebd7310c6f598850606b037ef0c515fe6608ebc54d22c50c4c32b35f
+  Patches:  scripts/base_image/patches/bluez/bluez-*.patch, applied in name order
+            (AVDTP input MTU and media MTU, AVRCP volume without a target record,
+            A2DP endpoint rediscovery, AVRCP cover art, preferred Compas player,
+            cover-art-only OBEX build, last-used endpoint fix,
+            Broadcom ACL priority option,
+            remote-configured stream endpoint)
+  Build:    https://github.com/Starnished66/compas-firmware (the same revision as the image)
+
+obexd is the cover-art-only build (Bluetooth transport and the AVRCP image-pull responder;
+no client, phonebook, file transfer or object push). The AVRCP cover-art responder is based on
+the upstream BlueZ series by Jan-Michael Brummer (PR #2500) and keeps its copyright notices.
+
+BlueZ is GPL-2.0-or-later (daemons and tools) and LGPL-2.1-or-later (libraries); the texts are
+COPYING and COPYING.LIB in this folder. The corresponding source for any image is the pinned
+tarball plus the patches above; write to the issue tracker of the repository above if
+anything is missing.

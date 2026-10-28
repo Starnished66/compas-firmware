@@ -1,0 +1,203 @@
+Subject: [PATCH] device: raise the A2DP ACL priority on Broadcom controllers
+
+The TempoTec V1 firmware ships a BlueZ 5.54 with a vendor patch that, once the
+A2DP sink service of a device is connected, sends the Broadcom vendor command
+0xfd1a (set ACL priority: connection handle, 0x01, 0x00) on a raw HCI socket, so
+the AP6212 keeps the audio link going while Wi-Fi shares the radio. Port the
+same behaviour behind a main.conf option, [General] BroadcomHighPriority
+(default false). It only acts on Broadcom/Cypress controllers (manufacturer
+from the HCI version information) and ignores every failure.
+
+diff -ruN a/src/adapter.c b/src/adapter.c
+--- a/src/adapter.c
++++ b/src/adapter.c
+@@ -404,6 +404,11 @@
+ 	return adapter->is_default;
+ }
+ 
++uint16_t btd_adapter_get_manufacturer(struct btd_adapter *adapter)
++{
++	return adapter->manufacturer;
++}
++
+ uint16_t btd_adapter_get_index(struct btd_adapter *adapter)
+ {
+ 	if (!adapter)
+diff -ruN a/src/adapter.h b/src/adapter.h
+--- a/src/adapter.h
++++ b/src/adapter.h
+@@ -32,6 +32,7 @@
+ struct btd_adapter *btd_adapter_get_default(void);
+ bool btd_adapter_is_default(struct btd_adapter *adapter);
+ uint16_t btd_adapter_get_index(struct btd_adapter *adapter);
++uint16_t btd_adapter_get_manufacturer(struct btd_adapter *adapter);
+ bool btd_adapter_has_cable_pairing_devices(struct btd_adapter *adapter);
+ 
+ typedef void (*adapter_cb) (struct btd_adapter *adapter, gpointer user_data);
+diff -ruN a/src/btd.h b/src/btd.h
+--- a/src/btd.h
++++ b/src/btd.h
+@@ -147,6 +147,7 @@
+ 	bool		name_resolv;
+ 	bool		debug_keys;
+ 	bool		fast_conn;
++	bool		bcm_acl_priority;
+ 	bool		refresh_discovery;
+ 	bool		experimental;
+ 	bool		testing;
+diff -ruN a/src/device.c b/src/device.c
+--- a/src/device.c
++++ b/src/device.c
+@@ -20,6 +20,8 @@
+ #include <fcntl.h>
+ #include <stdbool.h>
+ #include <errno.h>
++#include <sys/ioctl.h>
++#include <sys/socket.h>
+ #include <dirent.h>
+ #include <time.h>
+ #include <limits.h>
+@@ -68,6 +70,8 @@
+ #include "set.h"
+ #include "bearer.h"
+ 
++#include "bluetooth/hci.h"
++
+ #define DISCONNECT_TIMER	2
+ #define DISCOVERY_TIMER		1
+ #define INVALID_FLAGS		0xff
+@@ -8216,6 +8220,86 @@
+ 	}
+ }
+ 
++/* Broadcom controllers (the AP6212 of the TempoTec V1 among them) share the
++ * radio with Wi-Fi and can starve a streaming A2DP link. The vendor firmware
++ * has a command that raises the priority of an ACL link: opcode 0xfd1a
++ * (OGF 0x3f, OCF 0x11a), parameters: connection handle (le16), 0x01, 0x00.
++ * This is what the TempoTec BlueZ 5.54 does once the A2DP sink service of a
++ * device is connected. Best effort: only for Broadcom/Cypress controllers and
++ * only when BroadcomHighPriority is set; every failure is ignored.
++ */
++#define COMPANY_ID_BROADCOM	15
++#define COMPANY_ID_CYPRESS	305
++#define BCM_SET_ACL_PRIORITY	0xfd1a
++#define BCM_ACL_MAX_CONNS	10
++
++static void device_bcm_acl_high_priority(struct btd_device *device)
++{
++	struct hci_conn_list_req *cl;
++	struct sockaddr_hci addr;
++	uint16_t manufacturer, index;
++	int fd, i;
++
++	manufacturer = btd_adapter_get_manufacturer(device->adapter);
++	if (manufacturer != COMPANY_ID_BROADCOM &&
++					manufacturer != COMPANY_ID_CYPRESS)
++		return;
++
++	index = btd_adapter_get_index(device->adapter);
++
++	fd = socket(PF_BLUETOOTH, SOCK_RAW | SOCK_CLOEXEC, BTPROTO_HCI);
++	if (fd < 0)
++		return;
++
++	memset(&addr, 0, sizeof(addr));
++	addr.hci_family = AF_BLUETOOTH;
++	addr.hci_dev = index;
++	addr.hci_channel = HCI_CHANNEL_RAW;
++	if (bind(fd, (struct sockaddr *) &addr, sizeof(addr)) < 0)
++		goto done;
++
++	cl = g_malloc0(sizeof(*cl) +
++			BCM_ACL_MAX_CONNS * sizeof(struct hci_conn_info));
++	cl->dev_id = index;
++	cl->conn_num = BCM_ACL_MAX_CONNS;
++
++	if (ioctl(fd, HCIGETCONNLIST, cl) < 0)
++		goto free;
++
++	for (i = 0; i < cl->conn_num; i++) {
++		struct hci_conn_info *ci = &cl->conn_info[i];
++		struct {
++			uint8_t type;
++			uint16_t opcode;
++			uint8_t plen;
++			uint16_t handle;
++			uint8_t param[2];
++		} __attribute__((packed)) cmd = {
++			.type = HCI_COMMAND_PKT,
++			.opcode = htobs(BCM_SET_ACL_PRIORITY),
++			.plen = 4,
++			.param = { 0x01, 0x00 },
++		};
++
++		if (ci->type != ACL_LINK ||
++				bacmp(&ci->bdaddr, &device->bdaddr))
++			continue;
++
++		cmd.handle = htobs(ci->handle);
++		if (write(fd, &cmd, sizeof(cmd)) < 0)
++			DBG("Broadcom ACL priority: %s", strerror(errno));
++		else
++			DBG("Broadcom ACL priority raised for handle %u",
++								ci->handle);
++		break;
++	}
++
++free:
++	g_free(cl);
++done:
++	close(fd);
++}
++
+ static void service_state_changed(struct btd_service *service,
+ 						btd_service_state_t old_state,
+ 						btd_service_state_t new_state,
+@@ -8233,6 +8317,12 @@
+ 		device_profile_connected(device, profile, err);
+ 	else if (old_state == BTD_SERVICE_STATE_DISCONNECTING)
+ 		device_profile_disconnected(device, profile, err);
++
++	/* "a2dp-sink" is the profile that connects to a remote A2DP sink */
++	if (btd_opts.bcm_acl_priority &&
++			new_state == BTD_SERVICE_STATE_CONNECTED &&
++			g_str_equal(profile->name, "a2dp-sink"))
++		device_bcm_acl_high_priority(device);
+ }
+ 
+ struct btd_service *btd_device_get_service(struct btd_device *dev,
+diff -ruN a/src/main.c b/src/main.c
+--- a/src/main.c
++++ b/src/main.c
+@@ -92,6 +92,7 @@
+ 	"KernelExperimental",
+ 	"RemoteNameRequestRetryDelay",
+ 	"FilterDiscoverable",
++	"BroadcomHighPriority",
+ 	NULL
+ };
+ 
+@@ -1098,6 +1099,8 @@
+ 	parse_multi_profile(config);
+ 	parse_config_bool(config, "General", "FastConnectable",
+ 						&btd_opts.fast_conn);
++	parse_config_bool(config, "General", "BroadcomHighPriority",
++						&btd_opts.bcm_acl_priority);
+ 	parse_privacy(config);
+ 	parse_repairing(config);
+ 	parse_config_u32(config, "General", "TemporaryTimeout",
+diff -ruN a/src/main.conf b/src/main.conf
+--- a/src/main.conf
++++ b/src/main.conf
+@@ -69,6 +69,11 @@
+ # 'false'.
+ #FastConnectable = false
+ 
++# Ask a Broadcom controller to give the A2DP ACL link high priority while it
++# shares the radio with Wi-Fi (vendor command, ignored by other controllers).
++# Default: false
++#BroadcomHighPriority = false
++
+ # Default privacy setting.
+ # Enables use of private address.
+ # Possible values for LE mode: "off", "network/on", "device"

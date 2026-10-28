@@ -118,6 +118,7 @@ jobs:
             echo
             echo "- Kernel provenance per board, configs, patches and module sources: [firmware/kernel](${fw}/tree/${fw_sha}/firmware/kernel) ([KERNELS.md](${fw}/blob/${fw_sha}/firmware/kernel/KERNELS.md))."
             echo "- Base-system patches and build scripts (BlueZ, BlueALSA, D-Bus, GLib, ALSA, codecs, fsck tools): [scripts/base_image](${fw}/tree/${fw_sha}/scripts/base_image) and [scripts/build](${fw}/tree/${fw_sha}/scripts/build); pinned upstream commits are listed in [scripts/base_image/README.md](${fw}/blob/${fw_sha}/scripts/base_image/README.md)."
+            echo "- BlueZ 5.87 daemons (\`bluetoothd\`, cover-art \`obexd\`): pinned upstream tarball plus [patches](${fw}/tree/${fw_sha}/scripts/base_image/patches/bluez), notice and licence texts in [firmware/overlay/usr/share/licenses/bluez](${fw}/tree/${fw_sha}/firmware/overlay/usr/share/licenses/bluez)."
             echo "- Player, loader and Rockbox bootloader patch: [compas-player](${pl}/tree/${pl_sha}) (\`firmware/bootloader/rockbox-compas.patch\`)."
             echo "- Stock kernels and modules from HiBy and TempoTec come from their public firmware; for anything else write to the issue tracker of ${fw} and the source will be provided."
           } > release/RELEASE_NOTES.md

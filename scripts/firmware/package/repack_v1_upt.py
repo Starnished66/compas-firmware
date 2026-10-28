@@ -31,7 +31,11 @@ BASE_MD5 = "d3301d3930309b5433331a2aed741652"
 BASE_KERNEL_SHA256 = "3a83176b9d8da6c09eedd64348ea8a612ad5ee2ae532ce04ccadd7d0fa4bb25d"
 R1_SSC_UPT_SHA256 = "43f55224db696391cdc650b77d276176a533505d88f98946d83f6eb5fa1bd8e9"
 # Static-SSC BlueALSA daemon: single source of truth is firmware/ssc-overlay.sha256.
-SSC_DAEMON_SHA256 = (pathlib.Path(__file__).resolve().parents[3] / "firmware/ssc-overlay.sha256").read_text().split()[0]
+SSC_DAEMON_SHA256 = next(
+    line.split()[0]
+    for line in (pathlib.Path(__file__).resolve().parents[3] / "firmware/ssc-overlay.sha256").read_text().splitlines()
+    if line.split()[-1:] == ["usr/bin/bluealsad"]
+)
 V1_MARKER = b"COMPAS_PLAYER_BOARD:tempotec_v1"
 IMAGE_CHUNK_SIZE = 512 * 1024
 
@@ -52,6 +56,47 @@ RUNTIME_FILES = (
     "usr/lib/alsa-lib/libasound_module_pcm_bluealsa.so",
     "usr/lib/alsa-lib/libasound_module_ctl_bluealsa.so",
 )
+
+# The BlueZ 5.87 set of the R1 base. The two daemons come from the pinned runtime
+# overlay (firmware/ssc-overlay.sha256); the rest are untouched files of the
+# staging base r1.upt (firmware/inputs.sha256) and are pinned here.
+OVERLAY_PINS_FILE = pathlib.Path(__file__).resolve().parents[3] / "firmware/ssc-overlay.sha256"
+BLUEZ_OVERLAY_FILES = (
+    "usr/libexec/bluetooth/bluetoothd",
+    "usr/libexec/bluetooth/obexd",
+)
+BLUEZ_BASE_SHA256 = {
+    "usr/bin/bluetoothctl": "c7827d6f19e803622cca2de4d1ea3b6300965863752f9c02d94966c3c5a00c17",
+    "usr/bin/btmon": "77a9538fce2ef4412950520bab953ab408cb1588c53bec1fdf1c39d3ce2ae704",
+    "usr/bin/hciconfig": "f048fb934eef02854dd275d78dc25010337337841633ae9122cbfb9a4bb38c4d",
+    "usr/bin/hcitool": "9c5972aa72055788952bc83ecf1cf8eb8a7f046df8441017a4ae7cc4bd3803de",
+    "usr/lib/libbluetooth.so.3.19.16": "21976de17255a7167fe671028f8294aefb2d96946086c05c019a99d7f3ac83cf",
+}
+# V1 main.conf: the R1 file (base file with the Compás name and BroadcomHighPriority = true set by
+# clean_os.py), pinned, with V1's own DiscoverableTimeout = 0 (stay discoverable until the player turns
+# it off) as the only difference.
+R1_MAIN_CONF_SHA256 = "1781440d0389bac39f879a184aeb80f9e320a88360a2573f0f15aaedb0233582"
+V1_MAIN_CONF_SHA256 = "a787d41320ef211f431d1bb4a0dc573617d620e280312b573b618aa820e0e603"
+# libbluetooth: keep the old 3.19.2 file, point the SONAME and dev links at 3.19.16 like the R1 base.
+OLD_V1_LIBBLUETOOTH_LINKS = {
+    "usr/lib/libbluetooth.so": "libbluetooth.so.3.19.2",
+    "usr/lib/libbluetooth.so.3": "libbluetooth.so.3.19.2",
+}
+NEW_LIBBLUETOOTH_LINKS = {
+    "usr/lib/libbluetooth.so.3": "libbluetooth.so.3.19.16",
+    "usr/lib/libbluetooth.so": "libbluetooth.so.3",
+}
+# Tracked files of this repository (firmware/overlay) shipped with the cover-art responder.
+BLUEZ_TRACKED_FILES = (
+    "etc/init.d/S81compas_obex",
+    "etc/dbus-1/system.d/org.bluez.obex.conf",
+    "etc/dbus-1/system.d/org.mpris.MediaPlayer2.compas.conf",
+    "usr/share/licenses/bluez/NOTICE",
+    "usr/share/licenses/bluez/COPYING",
+    "usr/share/licenses/bluez/COPYING.LIB",
+)
+BLUEZ_ELF_FILES = (*BLUEZ_OVERLAY_FILES, "usr/bin/bluetoothctl", "usr/bin/btmon",
+                   "usr/bin/hciconfig", "usr/bin/hcitool")
 
 # BlueALSA 5.0 from the pinned R1 QA UPT uses GLib APIs added after the V1
 # stock 2.62 runtime. Keep the old versioned files in place for existing V1
@@ -903,6 +948,77 @@ def install_ssc_runtime(r1_root: pathlib.Path, v1_root: pathlib.Path) -> dict[st
     }
 
 
+def install_bluez_stack(r1_root: pathlib.Path, v1_root: pathlib.Path) -> dict[str, object]:
+    """Bring V1 onto the BlueZ 5.87 set of the R1 base, keeping TempoTec's bt_init radio bring-up."""
+    pins = {}
+    for line in OVERLAY_PINS_FILE.read_text().splitlines():
+        if line.strip():
+            value, rel = line.split()
+            pins[rel] = value
+    expected = {rel: pins[rel] for rel in BLUEZ_OVERLAY_FILES}
+    expected.update(BLUEZ_BASE_SHA256)
+    replaced: dict[str, object] = {}
+    for rel, want in expected.items():
+        src = r1_root / rel
+        safe_regular(src, "approved R1 BlueZ file")
+        if digest(src) != want:
+            raise RepackError("R1 BlueZ file is not the pinned one: " + rel)
+        if rel in BLUEZ_ELF_FILES:
+            check_elf_compatibility(src, v1_root, {"libbluetooth.so.3"})
+        dest = v1_root / rel
+        if rel.endswith("libbluetooth.so.3.19.16"):
+            if dest.exists() or dest.is_symlink():
+                raise RepackError("V1 stock already has libbluetooth 3.19.16")
+        else:
+            safe_regular(dest, "stock V1 BlueZ file")
+            dest.unlink()
+        replaced[rel] = copy_explicit_file(src, dest, "approved R1 BlueZ file")
+    check_elf_compatibility(r1_root / "usr/lib/libbluetooth.so.3.19.16", v1_root, set())
+    conf_src = r1_root / "etc/bluetooth/main.conf"
+    safe_regular(conf_src, "approved R1 BlueZ configuration")
+    conf = v1_root / "etc/bluetooth/main.conf"
+    safe_regular(conf, "stock V1 BlueZ configuration")
+    conf.write_bytes(v1_main_conf(conf_src.read_bytes()))
+    replaced["etc/bluetooth/main.conf"] = {"path": str(conf), "sha256": digest(conf)}
+    for rel, old_target in OLD_V1_LIBBLUETOOTH_LINKS.items():
+        link = v1_root / rel
+        if not link.is_symlink() or os.readlink(link) != old_target:
+            raise RepackError("unexpected stock V1 libbluetooth link: " + rel)
+    for rel, target in NEW_LIBBLUETOOTH_LINKS.items():
+        link = v1_root / rel
+        link.unlink()
+        link.symlink_to(target)
+    tracked: dict[str, object] = {}
+    for rel in BLUEZ_TRACKED_FILES:
+        src = ASSET_REPO / "firmware/overlay" / rel
+        dest = v1_root / rel
+        tracked[rel] = copy_explicit_file(src, dest, "tracked BlueZ support file")
+        dest.chmod(src.stat().st_mode & 0o777)
+    run(["sh", "-n", str(v1_root / "etc/init.d/S81compas_obex")])
+    return {"replaced": replaced, "tracked": tracked, "libbluetooth_links": NEW_LIBBLUETOOTH_LINKS}
+
+
+def v1_main_conf(r1_conf: bytes) -> bytes:
+    """The R1 main.conf with V1's own DiscoverableTimeout."""
+    if hashlib.sha256(r1_conf).hexdigest() != R1_MAIN_CONF_SHA256:
+        raise RepackError("R1 main.conf is not the pinned one")
+    text = r1_conf.decode("utf-8")
+    old = "DiscoverableTimeout = 180\n"
+    if text.count(old) != 1 or "BroadcomHighPriority = true\n" not in text:
+        raise RepackError("R1 main.conf lacks the expected DiscoverableTimeout / BroadcomHighPriority lines")
+    new = "DiscoverableTimeout = 0\n"
+    out = text.replace(old, new, 1).encode("utf-8")
+    if hashlib.sha256(out).hexdigest() != V1_MAIN_CONF_SHA256:
+        raise RepackError("generated V1 main.conf differs from its pin")
+    return out
+
+
+def bluez_changed_paths() -> list[str]:
+    paths = ["etc/bluetooth/main.conf", *BLUEZ_OVERLAY_FILES, *BLUEZ_BASE_SHA256, *NEW_LIBBLUETOOTH_LINKS, *BLUEZ_TRACKED_FILES]
+    parents = {str(parent) for rel in paths for parent in pathlib.PurePosixPath(rel).parents if str(parent) != "."}
+    return sorted({*paths, *parents})
+
+
 def update_sidecar(template: pathlib.Path, output: pathlib.Path, md5_hex: str) -> None:
     safe_regular(template, "official V1 MD5 sidecar")
     text = template.read_text()
@@ -966,6 +1082,7 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         assets = copy_theme_and_fonts(r1_root, v1_root)
         runtime = install_ssc_runtime(r1_root, v1_root)
         speex_runtime = install_speex_runtime(r1_root, v1_root)
+        bluez_stack = install_bluez_stack(r1_root, v1_root)
 
         # Preserve OEM executable and wrapper byte-for-byte, then change only
         # the single active command in the original launcher.
@@ -987,7 +1104,7 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         clean_os = clean_new_os(v1_root)
         current_assets.update(install_required_usb_overlay(v1_root))
         clean_paths = [item["path"].lstrip("/") for item in clean_os["removed"] + clean_os["naming_updates"]]
-        allowed_paths = list(current_assets) + clean_paths
+        allowed_paths = list(current_assets) + clean_paths + bluez_changed_paths()
         changed_paths = verify_only_allowed_changes(stock_inventory, tree_inventory(v1_root), allowed_paths)
 
         # Rebuild only the compressed rootfs. Keep xImage and all other outer
@@ -1074,7 +1191,7 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         if final_changed_paths != changed_paths:
             raise RepackError("final rootfs delta differs from the explicitly prepared file delta")
         final_runtime_closure = check_runtime_strong_symbol_closure(
-            result_root, (*RUNTIME_FILES, *RUNTIME_LIBRARY_FILES)
+            result_root, (*RUNTIME_FILES, *RUNTIME_LIBRARY_FILES, *BLUEZ_ELF_FILES)
         )
         if not final_runtime_closure["closed"]:
             sample = final_runtime_closure["unresolved_strong_symbols"][:8] or final_runtime_closure["unresolved_libraries"][:8]
@@ -1112,6 +1229,7 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
             "bluealsa_ssc_runtime": runtime,
             "bluealsa_runtime_final_strong_symbol_closure": final_runtime_closure,
             "speex_runtime": speex_runtime,
+            "bluez_stack": bluez_stack,
             "recovery": "Use the official TempoTec recovery firmware; no old OS backup payload is shipped.",
             "limit_status": "Conservative gate: rootfs and whole UPT are no larger than the verified official stock image. Exact partition map and device validation remain unavailable.",
             "removed_unused_oem_files": removed_oem_files,

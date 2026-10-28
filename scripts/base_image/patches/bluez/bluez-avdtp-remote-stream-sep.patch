@@ -1,0 +1,153 @@
+Subject: [PATCH] avdtp: export the SEP a remote-configured stream runs on
+
+A device that starts the connection can configure the stream under an INT SEID
+that Discover does not list: the Galaxy Buds use SEID 7 and report their SSC
+SEP 3 as in use. Discover skips in-use SEPs that have no stream with that SEID,
+so SEP 3 was never registered or exported, update_last_used() failed with
+"Unable to find remote SEP", and every such session rewrote the cache without it.
+
+When the session has exactly one stream configured by the remote under a SEID
+missing from the Discover response, and exactly one in-use SEP can belong to it
+(opposite role, same media type), register that SEP and tie it to the stream:
+avdtp_stream_get_remote_sep() then returns it and the last used pair is
+recorded. In-use SEPs that cannot be tied to such a stream (busy with another
+source, or an ambiguous match) are skipped as before.
+
+diff -ruN a/profiles/audio/avdtp.c b/profiles/audio/avdtp.c
+--- a/profiles/audio/avdtp.c
++++ b/profiles/audio/avdtp.c
+@@ -726,10 +726,16 @@
+ {
+ 	struct avdtp_stream *stream = data;
+ 	struct avdtp_remote_sep *rsep;
++	GSList *l;
+ 
+-	rsep = find_remote_sep(stream->session->seps, stream->rseid);
+-	if (rsep)
+-		rsep->stream = NULL;
++	/* Also covers a SEP that was matched to the stream by
++	 * find_orphan_stream() under a different SEID than stream->rseid. */
++	for (l = stream->session->seps; l; l = l->next) {
++		rsep = l->data;
++
++		if (rsep->stream == stream)
++			rsep->stream = NULL;
++	}
+ 
+ 	if (stream->timer)
+ 		timeout_remove(stream->timer);
+@@ -2771,13 +2777,73 @@
+ 	return send_req(session, priority, req);
+ }
+ 
++/* A remote that starts the connection may configure the stream under an INT
++ * SEID that Discover does not list: the Galaxy Buds use SEID 7 and report their
++ * SSC SEP 3 as in use. Skipping every in-use SEP (below) then hides the SEP
++ * the stream really runs on, so it is never exported and cannot be recorded as
++ * the last used one. Return the index of the single in-use SEP that can be that
++ * SEP, and its stream in *orphan: a stream configured by the remote under a
++ * SEID missing from the response, matching the SEP in type and media. An
++ * in-use SEP that cannot be tied to such a stream is busy with another source
++ * and stays hidden, as before.
++ */
++static int find_orphan_sep(struct avdtp *session, struct discover_resp *resp,
++					int sep_count, struct avdtp_stream **orphan)
++{
++	struct avdtp_stream *found = NULL;
++	int i, candidate = -1;
++	GSList *l;
++
++	for (l = session->streams; l; l = l->next) {
++		struct avdtp_stream *stream = l->data;
++
++		if (!stream->lsep)
++			continue;
++
++		for (i = 0; i < sep_count; i++) {
++			if (resp->seps[i].seid == stream->rseid)
++				break;
++		}
++		if (i < sep_count)
++			continue;
++
++		/* More than one such stream: ambiguous */
++		if (found)
++			return -1;
++
++		found = stream;
++	}
++
++	if (!found)
++		return -1;
++
++	for (i = 0; i < sep_count; i++) {
++		if (!resp->seps[i].inuse ||
++				resp->seps[i].type == found->lsep->info.type ||
++				resp->seps[i].media_type !=
++						found->lsep->info.media_type)
++			continue;
++
++		/* More than one candidate: ambiguous */
++		if (candidate >= 0)
++			return -1;
++
++		candidate = i;
++	}
++
++	*orphan = found;
++
++	return candidate;
++}
++
+ static gboolean avdtp_discover_resp(struct avdtp *session,
+ 					struct discover_resp *resp, int size)
+ {
+-	int sep_count, i;
++	int sep_count, i, adopt;
+ 	uint8_t getcap_cmd;
+ 	int ret = 0;
+ 	gboolean getcap_pending = FALSE;
++	struct avdtp_stream *orphan = NULL;
+ 
+ 	if (session->version >= 0x0103)
+ 		getcap_cmd = AVDTP_GET_ALL_CAPABILITIES;
+@@ -2785,6 +2851,7 @@
+ 		getcap_cmd = AVDTP_GET_CAPABILITIES;
+ 
+ 	sep_count = size / sizeof(struct seid_info);
++	adopt = find_orphan_sep(session, resp, sep_count, &orphan);
+ 
+ 	for (i = 0; i < sep_count; i++) {
+ 		struct avdtp_remote_sep *sep;
+@@ -2796,12 +2863,16 @@
+ 				resp->seps[i].media_type, resp->seps[i].inuse);
+ 
+ 		stream = find_stream_by_rseid(session, resp->seps[i].seid);
++		if (!stream && i == adopt)
++			stream = orphan;
+ 
+ 		sep = find_remote_sep(session->seps, resp->seps[i].seid);
+ 		if (sep && sep->type == resp->seps[i].type &&
+ 				sep->media_type == resp->seps[i].media_type &&
+ 				sep->codec) {
+ 			sep->discovered = true;
++			if (i == adopt)
++				sep->stream = stream;
+ 			continue;
+ 		}
+ 
+@@ -3275,6 +3346,14 @@
+ 			return sep;
+ 	}
+ 
++	/* Matched to the stream by Discover under another SEID */
++	for (l = stream->session->seps; l; l = l->next) {
++		struct avdtp_remote_sep *sep = l->data;
++
++		if (sep->stream == stream)
++			return sep;
++	}
++
+ 	return NULL;
+ }
+ 

@@ -1,0 +1,95 @@
+#!/bin/sh
+# AVRCP cover-art responder (obexd, Bluetooth + bip_avrcp plugins only).
+# A small supervisor runs obexd in the background, so booting is not delayed,
+# and restarts it with a growing delay if it dies.
+
+OBEXD=/usr/libexec/bluetooth/obexd
+OBEX_ROOT=/tmp/compas-obexd
+PIDFILE=/var/run/compas-obexd.pid
+
+# The PID file holds the supervisor, which is this script run as "supervise".
+is_supervisor() {
+    pid=$1
+    case "$pid" in ''|*[!0-9]*) return 1 ;; esac
+    [ -r "/proc/$pid/cmdline" ] || return 1
+    cmdline=$({ tr '\0' ' ' < "/proc/$pid/cmdline"; } 2>/dev/null) || return 1
+    case "$cmdline" in
+        *S81compas_obex*supervise*) return 0 ;;
+    esac
+    return 1
+}
+
+supervise() {
+    delay=1
+    child=
+    trap 'if [ -n "$child" ]; then kill "$child" 2>/dev/null; fi; exit 0' TERM INT
+    while :; do
+        started=$(date +%s)
+        "$OBEXD" --system-bus --nodetach --root="$OBEX_ROOT" \
+            --plugin=bluetooth,bip_avrcp \
+            >/dev/null 2>&1 &
+        child=$!
+        wait "$child"
+        child=
+        # A run that lasted a minute counts as healthy: start the backoff over.
+        if [ $(( $(date +%s) - started )) -ge 60 ]; then delay=1; fi
+        sleep "$delay"
+        delay=$((delay * 2))
+        if [ "$delay" -gt 30 ]; then delay=30; fi
+    done
+}
+
+start_obexd() {
+    [ -x "$OBEXD" ] || exit 1
+    if [ -L "$OBEX_ROOT" ] || { [ -e "$OBEX_ROOT" ] && [ ! -d "$OBEX_ROOT" ]; }; then
+        echo "Refusing unsafe OBEX root: $OBEX_ROOT" >&2
+        return 1
+    fi
+    mkdir -p "$OBEX_ROOT" || return 1
+    [ ! -L "$OBEX_ROOT" ] || {
+        echo "Refusing symlink OBEX root: $OBEX_ROOT" >&2
+        return 1
+    }
+    chmod 0700 "$OBEX_ROOT" || return 1
+    if [ -f "$PIDFILE" ]; then
+        pid=$(cat "$PIDFILE")
+        if is_supervisor "$pid"; then return 0; fi
+        rm -f "$PIDFILE"
+    fi
+    if pidof obexd >/dev/null 2>&1; then
+        echo 'An obexd process is already running without the Compas PID file' >&2
+        return 1
+    fi
+    "$0" supervise >/dev/null 2>&1 &
+    echo "$!" > "$PIDFILE"
+    return 0
+}
+
+stop_obexd() {
+    [ -f "$PIDFILE" ] || return 0
+    pid=$(cat "$PIDFILE")
+    if ! is_supervisor "$pid"; then
+        rm -f "$PIDFILE"
+        return 0
+    fi
+    kill "$pid" 2>/dev/null || true
+    attempt=0
+    while [ "$attempt" -lt 5 ]; do
+        if ! is_supervisor "$pid"; then
+            rm -f "$PIDFILE"
+            return 0
+        fi
+        attempt=$((attempt + 1))
+        sleep 1
+    done
+    echo "obexd supervisor $pid is still running after the stop timeout" >&2
+    return 1
+}
+
+case "$1" in
+    start|start-sync) start_obexd ;;
+    stop) stop_obexd ;;
+    restart) stop_obexd && start_obexd ;;
+    supervise) supervise ;;
+    *) echo "Usage: $0 {start|start-sync|stop|restart}" >&2; exit 2 ;;
+esac
