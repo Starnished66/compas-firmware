@@ -31,6 +31,7 @@ that image; the stock icon stays the fallback.
   submenu_update_database.png        <- actions/22/view-refresh.svg, #6cd2f1
   submenu_refresh_metadata.png       <- actions/22/tag-edit.svg, #f5a5a2
   submenu_refresh_covers.png         <- actions/22/view-preview.svg, #b498e8
+  submenu_external_apps.png          <- actions/22/view-list-icons.svg, #8fb1f5
   settings_sound.png                 <- status/22/audio-volume-high.svg, #72dabe
   settings_playback.png              <- actions/22/view-media-equalizer.svg, #c28df2
   settings_display.png               <- actions/22/brightness-high.svg, #71d0f5
