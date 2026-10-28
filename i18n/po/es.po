@@ -3673,6 +3673,137 @@ msgstr "Controles de energía"
 msgid "Playback and device actions"
 msgstr "Reproducción y acciones del equipo"
 
+msgid "Not available in your subscription"
+msgstr "No disponible en tu suscripción"
+
+msgid "This track is unavailable"
+msgstr "Esta pista no está disponible"
+
+msgid "This quality is unavailable for this track"
+msgstr "Esta calidad no está disponible para esta pista"
+
+msgid "This track is copy-protected"
+msgstr "Esta pista está protegida contra copia"
+
+msgid "Could not reach the streaming service"
+msgstr "No se pudo conectar con el servicio de streaming"
+
+msgid "Sign in to the streaming service again"
+msgstr "Vuelve a iniciar sesión en el servicio de streaming"
+
+msgid "Could not get a stream link"
+msgstr "No se pudo obtener el enlace de streaming"
+
+msgid "The streaming service did not answer"
+msgstr "El servicio de streaming no respondió"
+
+msgid "The streaming plugin is not available"
+msgstr "El plugin de streaming no está disponible"
+
+msgid "TXT Reader"
+msgstr "Lector TXT"
+
+#: src/ui/settings/gui_settings.c
+msgid "Keep Lyrics Screen On"
+msgstr ""
+
+msgid "PCM"
+msgstr "PCM"
+
+msgid "Native DSD"
+msgstr "DSD nativo"
+
+msgid "DoP"
+msgstr "DoP"
+
+msgid "Native DSD and DoP bypass software volume and DSP. Use DoP only with a compatible DAC. Unavailable formats or rates use PCM."
+msgstr "DSD nativo y DoP omiten el volumen por software y el DSP. Usa DoP solo con un DAC compatible. Los formatos o las frecuencias no disponibles usan PCM."
+
+msgid "USB DSD Output"
+msgstr "Salida DSD USB"
+
+msgid "Allow remote settings changes"
+msgstr "Permitir cambios de ajustes remotos"
+
+msgid "%s changed from the remote"
+msgstr "%s cambiado desde el mando remoto"
+
+msgid "Settings changed from the remote"
+msgstr "Ajustes cambiados desde el mando remoto"
+
+msgid "Music scan started from the remote"
+msgstr "Análisis de música iniciado desde el mando remoto"
+
+msgid "Remote settings changes turned off"
+msgstr "Cambios de ajustes remotos desactivados"
+
+msgid "Brightness"
+msgstr "Brillo"
+
+msgid "Connections"
+msgstr "Conexiones"
+
+msgid "Play Mode"
+msgstr "Modo de reproducción"
+
+msgid "Sequential"
+msgstr "Secuencial"
+
+msgid "Repeat All"
+msgstr "Repetir todo"
+
+msgid "Repeat One"
+msgstr "Repetir una"
+
+msgid "Shuffle with repeat"
+msgstr "Aleatorio con repetición"
+
+msgid "Shuffle once"
+msgstr "Aleatorio una vez"
+
+#. External apps (More menu and launcher)
+msgid "External Apps"
+msgstr "Apps externas"
+
+msgid "Apps run on the player only."
+msgstr "Las apps solo funcionan en el reproductor."
+
+msgid "Check the SD card and disconnect USB storage before running apps."
+msgstr "Revisa la tarjeta SD y desconecta el almacenamiento USB antes de ejecutar apps."
+
+msgid "Turn off DAC mode to run apps."
+msgstr "Desactiva el modo DAC para ejecutar apps."
+
+msgid "Could not start the app."
+msgstr "No se pudo iniciar la app."
+
+msgid "Audio is still active; cannot start the app."
+msgstr "El audio sigue activo; no se puede iniciar la app."
+
+msgid "The app closed unexpectedly."
+msgstr "La app se cerró inesperadamente."
+
+msgid "Run %s?"
+msgstr "¿Ejecutar %s?"
+
+msgid "External apps have full access to the player."
+msgstr "Las apps externas tienen acceso total al reproductor."
+
+msgid "Run"
+msgstr "Ejecutar"
+
+msgid "Could not save the approval."
+msgstr "No se pudo guardar la aprobación."
+
+msgid "Another app is waiting for approval."
+msgstr "Otra app está esperando aprobación."
+
+msgid "No apps installed"
+msgstr "No hay apps instaladas"
+
+msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
+msgstr "Copia una app en la carpeta .apps de la tarjeta SD, una carpeta por app con un archivo app.json."
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Las partidas guardadas se quedan en la tarjeta SD."
 
@@ -3821,54 +3952,3 @@ msgstr "Reproducción y acciones del equipo"
 
 #~ msgid "Finish setup"
 #~ msgstr "Finalizar configuración"
-
-msgid "Not available in your subscription"
-msgstr "No disponible en tu suscripción"
-
-msgid "This track is unavailable"
-msgstr "Esta pista no está disponible"
-
-msgid "This quality is unavailable for this track"
-msgstr "Esta calidad no está disponible para esta pista"
-
-msgid "This track is copy-protected"
-msgstr "Esta pista está protegida contra copia"
-
-msgid "Could not reach the streaming service"
-msgstr "No se pudo conectar con el servicio de streaming"
-
-msgid "Sign in to the streaming service again"
-msgstr "Vuelve a iniciar sesión en el servicio de streaming"
-
-msgid "Could not get a stream link"
-msgstr "No se pudo obtener el enlace de streaming"
-
-msgid "The streaming service did not answer"
-msgstr "El servicio de streaming no respondió"
-
-msgid "The streaming plugin is not available"
-msgstr "El plugin de streaming no está disponible"
-
-msgid "TXT Reader"
-msgstr "Lector TXT"
-
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr ""
-
-msgid "PCM"
-msgstr "PCM"
-
-msgid "Native DSD"
-msgstr "DSD nativo"
-
-msgid "DoP"
-msgstr "DoP"
-
-msgid ""
-"Native DSD and DoP bypass software volume and DSP. Use DoP only with a "
-"compatible DAC. Unavailable formats or rates use PCM."
-msgstr "DSD nativo y DoP omiten el volumen por software y el DSP. Usa DoP solo con un DAC compatible. Los formatos o las frecuencias no disponibles usan PCM."
-
-msgid "USB DSD Output"
-msgstr "Salida DSD USB"

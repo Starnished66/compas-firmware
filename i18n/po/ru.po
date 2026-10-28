@@ -3627,6 +3627,137 @@ msgstr "Управление питанием"
 msgid "Playback and device actions"
 msgstr "Воспроизведение и действия устройства"
 
+msgid "Not available in your subscription"
+msgstr "Недоступно в вашей подписке"
+
+msgid "This track is unavailable"
+msgstr "Этот трек недоступен"
+
+msgid "This quality is unavailable for this track"
+msgstr "Это качество недоступно для этого трека"
+
+msgid "This track is copy-protected"
+msgstr "Этот трек защищён от копирования"
+
+msgid "Could not reach the streaming service"
+msgstr "Не удалось подключиться к стриминговому сервису"
+
+msgid "Sign in to the streaming service again"
+msgstr "Войдите в стриминговый сервис снова"
+
+msgid "Could not get a stream link"
+msgstr "Не удалось получить ссылку на поток"
+
+msgid "The streaming service did not answer"
+msgstr "Стриминговый сервис не ответил"
+
+msgid "The streaming plugin is not available"
+msgstr "Плагин стриминга недоступен"
+
+msgid "TXT Reader"
+msgstr "Просмотр TXT"
+
+#: src/ui/settings/gui_settings.c
+msgid "Keep Lyrics Screen On"
+msgstr "Держать экран текста песен включеным"
+
+msgid "PCM"
+msgstr "PCM"
+
+msgid "Native DSD"
+msgstr "Нативный DSD"
+
+msgid "DoP"
+msgstr "DoP"
+
+msgid "Native DSD and DoP bypass software volume and DSP. Use DoP only with a compatible DAC. Unavailable formats or rates use PCM."
+msgstr "Нативный DSD и DoP обходят программную регулировку громкости и DSP. Используйте DoP только с совместимым ЦАП. Для неподдерживаемых форматов или частот используется PCM."
+
+msgid "USB DSD Output"
+msgstr "Вывод DSD через USB"
+
+msgid "Allow remote settings changes"
+msgstr "Разрешить удалённое изменение настроек"
+
+msgid "%s changed from the remote"
+msgstr "%s изменено удалённо"
+
+msgid "Settings changed from the remote"
+msgstr "Настройки изменены удалённо"
+
+msgid "Music scan started from the remote"
+msgstr "Сканирование музыки запущено удалённо"
+
+msgid "Remote settings changes turned off"
+msgstr "Удалённое изменение настроек выключено"
+
+msgid "Brightness"
+msgstr "Яркость"
+
+msgid "Connections"
+msgstr "Подключения"
+
+msgid "Play Mode"
+msgstr "Режим воспроизведения"
+
+msgid "Sequential"
+msgstr "По порядку"
+
+msgid "Repeat All"
+msgstr "Повторять все"
+
+msgid "Repeat One"
+msgstr "Повторять одну"
+
+msgid "Shuffle with repeat"
+msgstr "Вперемешку с повтором"
+
+msgid "Shuffle once"
+msgstr "Перемешать один раз"
+
+#. External apps (More menu and launcher)
+msgid "External Apps"
+msgstr "Внешние приложения"
+
+msgid "Apps run on the player only."
+msgstr "Приложения работают только на плеере."
+
+msgid "Check the SD card and disconnect USB storage before running apps."
+msgstr "Проверьте SD-карту и отключите USB-накопитель перед запуском приложений."
+
+msgid "Turn off DAC mode to run apps."
+msgstr "Отключите режим DAC, чтобы запускать приложения."
+
+msgid "Could not start the app."
+msgstr "Не удалось запустить приложение."
+
+msgid "Audio is still active; cannot start the app."
+msgstr "Звук всё ещё воспроизводится; не удаётся запустить приложение."
+
+msgid "The app closed unexpectedly."
+msgstr "Приложение неожиданно закрылось."
+
+msgid "Run %s?"
+msgstr "Запустить «%s»?"
+
+msgid "External apps have full access to the player."
+msgstr "Внешние приложения получают полный доступ к плееру."
+
+msgid "Run"
+msgstr "Запустить"
+
+msgid "Could not save the approval."
+msgstr "Не удалось сохранить разрешение."
+
+msgid "Another app is waiting for approval."
+msgstr "Другое приложение ожидает разрешения."
+
+msgid "No apps installed"
+msgstr "Нет установленных приложений"
+
+msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
+msgstr "Скопируйте приложение в папку .apps на SD-карте: одна папка на приложение с файлом app.json."
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Сохранения остаются на SD-карте."
 
@@ -3672,54 +3803,3 @@ msgstr "Воспроизведение и действия устройства"
 
 #~ msgid "Back"
 #~ msgstr "Назад"
-
-msgid "Not available in your subscription"
-msgstr "Недоступно в вашей подписке"
-
-msgid "This track is unavailable"
-msgstr "Этот трек недоступен"
-
-msgid "This quality is unavailable for this track"
-msgstr "Это качество недоступно для этого трека"
-
-msgid "This track is copy-protected"
-msgstr "Этот трек защищён от копирования"
-
-msgid "Could not reach the streaming service"
-msgstr "Не удалось подключиться к стриминговому сервису"
-
-msgid "Sign in to the streaming service again"
-msgstr "Войдите в стриминговый сервис снова"
-
-msgid "Could not get a stream link"
-msgstr "Не удалось получить ссылку на поток"
-
-msgid "The streaming service did not answer"
-msgstr "Стриминговый сервис не ответил"
-
-msgid "The streaming plugin is not available"
-msgstr "Плагин стриминга недоступен"
-
-msgid "TXT Reader"
-msgstr "Просмотр TXT"
-
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "Держать экран текста песен включеным"
-
-msgid "PCM"
-msgstr "PCM"
-
-msgid "Native DSD"
-msgstr "Нативный DSD"
-
-msgid "DoP"
-msgstr "DoP"
-
-msgid ""
-"Native DSD and DoP bypass software volume and DSP. Use DoP only with a "
-"compatible DAC. Unavailable formats or rates use PCM."
-msgstr "Нативный DSD и DoP обходят программную регулировку громкости и DSP. Используйте DoP только с совместимым ЦАП. Для неподдерживаемых форматов или частот используется PCM."
-
-msgid "USB DSD Output"
-msgstr "Вывод DSD через USB"

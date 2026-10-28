@@ -3596,6 +3596,137 @@ msgstr "Voedingsbediening"
 msgid "Playback and device actions"
 msgstr "Afspelen en apparaatacties"
 
+msgid "Not available in your subscription"
+msgstr "Niet beschikbaar in je abonnement"
+
+msgid "This track is unavailable"
+msgstr "Dit nummer is niet beschikbaar"
+
+msgid "This quality is unavailable for this track"
+msgstr "Deze kwaliteit is niet beschikbaar voor dit nummer"
+
+msgid "This track is copy-protected"
+msgstr "Dit nummer is tegen kopiëren beveiligd"
+
+msgid "Could not reach the streaming service"
+msgstr "Kan de streamingdienst niet bereiken"
+
+msgid "Sign in to the streaming service again"
+msgstr "Meld je opnieuw aan bij de streamingdienst"
+
+msgid "Could not get a stream link"
+msgstr "Kan geen streamlink ophalen"
+
+msgid "The streaming service did not answer"
+msgstr "De streamingdienst reageerde niet"
+
+msgid "The streaming plugin is not available"
+msgstr "De streamingplug-in is niet beschikbaar"
+
+msgid "TXT Reader"
+msgstr "TXT-lezer"
+
+#: src/ui/settings/gui_settings.c
+msgid "Keep Lyrics Screen On"
+msgstr ""
+
+msgid "PCM"
+msgstr "PCM"
+
+msgid "Native DSD"
+msgstr "Native DSD"
+
+msgid "DoP"
+msgstr "DoP"
+
+msgid "Native DSD and DoP bypass software volume and DSP. Use DoP only with a compatible DAC. Unavailable formats or rates use PCM."
+msgstr "Native DSD en DoP omzeilen softwarevolume en DSP. Gebruik DoP alleen met een compatibele DAC. Niet-beschikbare formaten of samplefrequenties gebruiken PCM."
+
+msgid "USB DSD Output"
+msgstr "USB DSD-uitvoer"
+
+msgid "Allow remote settings changes"
+msgstr "Wijzigingen van instellingen op afstand toestaan"
+
+msgid "%s changed from the remote"
+msgstr "%s gewijzigd op afstand"
+
+msgid "Settings changed from the remote"
+msgstr "Instellingen gewijzigd op afstand"
+
+msgid "Music scan started from the remote"
+msgstr "Muziekscan gestart op afstand"
+
+msgid "Remote settings changes turned off"
+msgstr "Wijzigingen op afstand uitgeschakeld"
+
+msgid "Brightness"
+msgstr "Helderheid"
+
+msgid "Connections"
+msgstr "Verbindingen"
+
+msgid "Play Mode"
+msgstr "Afspeelmodus"
+
+msgid "Sequential"
+msgstr "Op volgorde"
+
+msgid "Repeat All"
+msgstr "Alles herhalen"
+
+msgid "Repeat One"
+msgstr "Eén nummer herhalen"
+
+msgid "Shuffle with repeat"
+msgstr "Willekeurig met herhaling"
+
+msgid "Shuffle once"
+msgstr "Eén keer willekeurig"
+
+#. External apps (More menu and launcher)
+msgid "External Apps"
+msgstr "Externe apps"
+
+msgid "Apps run on the player only."
+msgstr "Apps werken alleen op de speler."
+
+msgid "Check the SD card and disconnect USB storage before running apps."
+msgstr "Controleer de SD-kaart en koppel de USB-opslag los voordat je apps start."
+
+msgid "Turn off DAC mode to run apps."
+msgstr "Schakel de DAC-modus uit om apps te starten."
+
+msgid "Could not start the app."
+msgstr "De app kon niet worden gestart."
+
+msgid "Audio is still active; cannot start the app."
+msgstr "Audio is nog actief; de app kan niet starten."
+
+msgid "The app closed unexpectedly."
+msgstr "De app is onverwacht gesloten."
+
+msgid "Run %s?"
+msgstr "%s starten?"
+
+msgid "External apps have full access to the player."
+msgstr "Externe apps hebben volledige toegang tot de speler."
+
+msgid "Run"
+msgstr "Starten"
+
+msgid "Could not save the approval."
+msgstr "De goedkeuring kon niet worden opgeslagen."
+
+msgid "Another app is waiting for approval."
+msgstr "Een andere app wacht op goedkeuring."
+
+msgid "No apps installed"
+msgstr "Geen apps geïnstalleerd"
+
+msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
+msgstr "Kopieer een app naar de map .apps op de SD-kaart, één map per app met een bestand app.json."
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Opgeslagen games blijven op de SD-kaart staan."
 
@@ -3641,54 +3772,3 @@ msgstr "Afspelen en apparaatacties"
 
 #~ msgid "Back"
 #~ msgstr "Terug"
-
-msgid "Not available in your subscription"
-msgstr "Niet beschikbaar in je abonnement"
-
-msgid "This track is unavailable"
-msgstr "Dit nummer is niet beschikbaar"
-
-msgid "This quality is unavailable for this track"
-msgstr "Deze kwaliteit is niet beschikbaar voor dit nummer"
-
-msgid "This track is copy-protected"
-msgstr "Dit nummer is tegen kopiëren beveiligd"
-
-msgid "Could not reach the streaming service"
-msgstr "Kan de streamingdienst niet bereiken"
-
-msgid "Sign in to the streaming service again"
-msgstr "Meld je opnieuw aan bij de streamingdienst"
-
-msgid "Could not get a stream link"
-msgstr "Kan geen streamlink ophalen"
-
-msgid "The streaming service did not answer"
-msgstr "De streamingdienst reageerde niet"
-
-msgid "The streaming plugin is not available"
-msgstr "De streamingplug-in is niet beschikbaar"
-
-msgid "TXT Reader"
-msgstr "TXT-lezer"
-
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr ""
-
-msgid "PCM"
-msgstr "PCM"
-
-msgid "Native DSD"
-msgstr "Native DSD"
-
-msgid "DoP"
-msgstr "DoP"
-
-msgid ""
-"Native DSD and DoP bypass software volume and DSP. Use DoP only with a "
-"compatible DAC. Unavailable formats or rates use PCM."
-msgstr "Native DSD en DoP omzeilen softwarevolume en DSP. Gebruik DoP alleen met een compatibele DAC. Niet-beschikbare formaten of samplefrequenties gebruiken PCM."
-
-msgid "USB DSD Output"
-msgstr "USB DSD-uitvoer"

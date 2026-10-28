@@ -3584,50 +3584,6 @@ msgstr "Energieoptionen"
 msgid "Playback and device actions"
 msgstr "Wiedergabe- und Geräteaktionen"
 
-#~ msgid "Saved games stay on the SD card."
-#~ msgstr "Spielstände bleiben auf der SD-Karte."
-
-#~ msgid "Parametric EQ"
-#~ msgstr "Parametrischer EQ"
-
-#~ msgid "Library migration pending. Favourites and play history will be kept"
-#~ msgstr "Bibliotheksmigration ausstehend. Favoriten und Wiedergabeverlauf bleiben erhalten"
-
-#~ msgid ""
-#~ "Migrating\n"
-#~ "music database..."
-#~ msgstr "Musikdatenbank wird migriert …"
-
-#~ msgid "Preparing database migration..."
-#~ msgstr "Datenbankmigration wird vorbereitet …"
-
-#~ msgid "Library migration failed. Old library intact. Use Settings > Update Music Database to retry"
-#~ msgstr "Bibliotheksmigration fehlgeschlagen. Alte Bibliothek intakt. Zum erneuten Versuch: Einstellungen > Musikdatenbank aktualisieren"
-
-#~ msgid "Library migrated. Old database cleanup will retry"
-#~ msgstr "Bibliothek migriert. Bereinigung der alten Datenbank wird erneut versucht"
-
-#~ msgid "Library migrated. Favourites and play history kept"
-#~ msgstr "Bibliothek migriert. Favoriten und Wiedergabeverlauf bleiben erhalten"
-
-#~ msgid "Load covers during playback (Experimental)"
-#~ msgstr "Cover während der Wiedergabe laden (Experimentell)"
-
-#~ msgid "Albums (main list)"
-#~ msgstr "Alben (Hauptliste)"
-
-#~ msgid "Visible"
-#~ msgstr "Sichtbar"
-
-#~ msgid "Move Up"
-#~ msgstr "Nach oben"
-
-#~ msgid "Move Down"
-#~ msgstr "Nach unten"
-
-#~ msgid "Back"
-#~ msgstr "Zurück"
-
 msgid "Not available in your subscription"
 msgstr "Nicht in deinem Abo enthalten"
 
@@ -3671,10 +3627,134 @@ msgstr "Natives DSD"
 msgid "DoP"
 msgstr "DoP"
 
-msgid ""
-"Native DSD and DoP bypass software volume and DSP. Use DoP only with a "
-"compatible DAC. Unavailable formats or rates use PCM."
+msgid "Native DSD and DoP bypass software volume and DSP. Use DoP only with a compatible DAC. Unavailable formats or rates use PCM."
 msgstr "Natives DSD und DoP umgehen Softwarelautstärke und DSP. DoP nur mit einem kompatiblen DAC verwenden. Nicht verfügbare Formate oder Abtastraten verwenden PCM."
 
 msgid "USB DSD Output"
 msgstr "USB-DSD-Ausgabe"
+
+msgid "Allow remote settings changes"
+msgstr "Remote-Einstellungsänderungen erlauben"
+
+msgid "%s changed from the remote"
+msgstr "%s von der Fernbedienung geändert"
+
+msgid "Settings changed from the remote"
+msgstr "Einstellungen von der Fernbedienung geändert"
+
+msgid "Music scan started from the remote"
+msgstr "Musik-Scan von der Fernbedienung gestartet"
+
+msgid "Remote settings changes turned off"
+msgstr "Remote-Einstellungsänderungen ausgeschaltet"
+
+msgid "Brightness"
+msgstr "Helligkeit"
+
+msgid "Connections"
+msgstr "Verbindungen"
+
+msgid "Play Mode"
+msgstr "Wiedergabemodus"
+
+msgid "Sequential"
+msgstr "Der Reihe nach"
+
+msgid "Repeat All"
+msgstr "Alle wiederholen"
+
+msgid "Repeat One"
+msgstr "Titel wiederholen"
+
+msgid "Shuffle with repeat"
+msgstr "Zufall mit Wiederholung"
+
+msgid "Shuffle once"
+msgstr "Einmal zufällig"
+
+#. External apps (More menu and launcher)
+msgid "External Apps"
+msgstr "Externe Apps"
+
+msgid "Apps run on the player only."
+msgstr "Apps laufen nur auf dem Player."
+
+msgid "Check the SD card and disconnect USB storage before running apps."
+msgstr "Prüfe die SD-Karte und trenne den USB-Speicher, bevor du Apps startest."
+
+msgid "Turn off DAC mode to run apps."
+msgstr "Schalte den DAC-Modus aus, um Apps zu starten."
+
+msgid "Could not start the app."
+msgstr "Die App konnte nicht gestartet werden."
+
+msgid "Audio is still active; cannot start the app."
+msgstr "Die Audiowiedergabe ist noch aktiv; die App kann nicht starten."
+
+msgid "The app closed unexpectedly."
+msgstr "Die App wurde unerwartet beendet."
+
+msgid "Run %s?"
+msgstr "%s starten?"
+
+msgid "External apps have full access to the player."
+msgstr "Externe Apps haben vollen Zugriff auf den Player."
+
+msgid "Run"
+msgstr "Starten"
+
+msgid "Could not save the approval."
+msgstr "Die Freigabe konnte nicht gespeichert werden."
+
+msgid "Another app is waiting for approval."
+msgstr "Eine andere App wartet auf Freigabe."
+
+msgid "No apps installed"
+msgstr "Keine Apps installiert"
+
+msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
+msgstr "Kopiere eine App in den Ordner .apps auf der SD-Karte, ein Ordner pro App mit einer Datei app.json."
+
+#~ msgid "Saved games stay on the SD card."
+#~ msgstr "Spielstände bleiben auf der SD-Karte."
+
+#~ msgid "Parametric EQ"
+#~ msgstr "Parametrischer EQ"
+
+#~ msgid "Library migration pending. Favourites and play history will be kept"
+#~ msgstr "Bibliotheksmigration ausstehend. Favoriten und Wiedergabeverlauf bleiben erhalten"
+
+#~ msgid ""
+#~ "Migrating\n"
+#~ "music database..."
+#~ msgstr "Musikdatenbank wird migriert …"
+
+#~ msgid "Preparing database migration..."
+#~ msgstr "Datenbankmigration wird vorbereitet …"
+
+#~ msgid "Library migration failed. Old library intact. Use Settings > Update Music Database to retry"
+#~ msgstr "Bibliotheksmigration fehlgeschlagen. Alte Bibliothek intakt. Zum erneuten Versuch: Einstellungen > Musikdatenbank aktualisieren"
+
+#~ msgid "Library migrated. Old database cleanup will retry"
+#~ msgstr "Bibliothek migriert. Bereinigung der alten Datenbank wird erneut versucht"
+
+#~ msgid "Library migrated. Favourites and play history kept"
+#~ msgstr "Bibliothek migriert. Favoriten und Wiedergabeverlauf bleiben erhalten"
+
+#~ msgid "Load covers during playback (Experimental)"
+#~ msgstr "Cover während der Wiedergabe laden (Experimentell)"
+
+#~ msgid "Albums (main list)"
+#~ msgstr "Alben (Hauptliste)"
+
+#~ msgid "Visible"
+#~ msgstr "Sichtbar"
+
+#~ msgid "Move Up"
+#~ msgstr "Nach oben"
+
+#~ msgid "Move Down"
+#~ msgstr "Nach unten"
+
+#~ msgid "Back"
+#~ msgstr "Zurück"
