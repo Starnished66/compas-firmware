@@ -1,3 +1,4 @@
+Removed (2026-10-27): the stock list_airplay/bt/dlna/remote/wifi.png no longer ship; list_import.png stays (firmware/unused_assets.txt).
 Superseded (2026-10-23): list_wifi.png, list_bt.png, list_airplay.png, list_dlna.png and list_remote.png were replaced by pre-tinted Breeze art in ../breeze_rows/ and ../titlebar/ and removed. The entries below describe the removed files.
 
 Wireless list assets (2026-09-13)

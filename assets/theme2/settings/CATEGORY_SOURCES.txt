@@ -1,3 +1,4 @@
+Removed (2026-10-27): the remaining stock settings icons (about, display, music, power, system) no longer ship; only breeze_rows/settings_*.png is drawn (firmware/unused_assets.txt).
 Superseded (2026-10-23): the category icons (sound, playback, display, power, library, system, about, music) were replaced by pre-tinted Breeze art in ../breeze_rows/ and ../titlebar/ and removed. The entries below describe the removed files.
 
 Settings assets, 2026-09-13

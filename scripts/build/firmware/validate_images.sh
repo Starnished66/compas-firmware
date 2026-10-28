@@ -57,9 +57,8 @@ for dir in r1 r3proii r3ii_2025 v1; do
     done < <(cd "$repo/assets/$dir" && find . -type f | sed 's#^\./##' | LC_ALL=C sort)
 done
 
-# check_icons ROOT: no image ships a stock icon that nothing loads, and no icon ships whose
-# Breeze replacement is what the player draws (the legacy-inventory names are the only ones
-# kept: stock HiBy art that gui_themes.c still lists and legacy themes may override).
+# check_icons ROOT: no image ships a stock icon that nothing loads, and no theme2 icon ships
+# next to the Breeze art the player draws instead.
 check_icons() {
     python3 -I - "$repo" "$1" <<'PY'
 import os, sys
@@ -94,6 +93,33 @@ REDIRECTED = {
     "power_action/reboot.png",       # power_hub_card() -> breeze_rows/power_action_reboot.png
     "submenu/bluetooth.png",         # decorate_category_row() -> breeze_rows/submenu_bluetooth.png
     "submenu/usb.png",               # decorate_category_row() -> breeze_rows/submenu_usb.png
+    "settings/about.png",            # legacy inventory only; Settings rows use breeze_rows/settings_about.png
+    "settings/display.png",          # decorate_category_row() -> breeze_rows/settings_display.png
+    "settings/music.png",            # legacy inventory only; breeze_rows/settings_music.png
+    "settings/power.png",            # decorate_category_row() -> breeze_rows/settings_power.png
+    "settings/system.png",           # decorate_category_row() -> breeze_rows/settings_system.png
+    "stream_media/podcasts_row.png", # Stream Media row (Podcasts plugin) -> breeze_rows/stream_media_podcasts_row.png
+    "stream_media/podcasts_row_s.png",   # gui_themes.c inventory / plugin_manager "_s" derivation; category rows never draw it
+    "stream_media/radio_row.png",    # Stream Media row (NetRadio, RadioBrowser) -> breeze_rows/stream_media_radio_row.png
+    "stream_media/radio_row_s.png",  # same: pressed copy, not drawn
+    "stream_media/subsonic_row.png", # build_stream_media_screen() -> breeze_rows/stream_media_subsonic_row.png
+    "stream_media/subsonic_row_s.png",   # same: pressed copy, not drawn
+    "sub_back/btn_playlist.png",     # resolve_file_row_icon() -> breeze_rows/sub_back_btn_playlist.png
+    "sub_back/btn_playlist_s.png",   # pressed copy, not drawn
+    "touch_list/list_folder.png",    # resolve_file_row_icon() -> breeze_rows/touch_list_list_folder.png
+    "submenu/album_artist.png",      # build_music_screen() rows -> breeze_rows/submenu_album_artist.png
+    "submenu/albums.png",            # build_music_screen() rows -> breeze_rows/submenu_albums.png
+    "submenu/all_songs.png",         # build_music_screen() rows -> breeze_rows/submenu_all_songs.png
+    "submenu/artists.png",           # build_music_screen() rows -> breeze_rows/submenu_artists.png
+    "submenu/books.png",             # gui_books.c decorate_category_row() -> breeze_rows/submenu_books.png
+    "submenu/favorites.png",         # gui_books.c decorate_category_row() -> breeze_rows/submenu_favorites.png
+    "submenu/files.png",             # Music and More rows -> breeze_rows/submenu_files.png
+    "submenu/playlists.png",         # build_music_screen() rows -> breeze_rows/submenu_playlists.png
+    "wireless/list_airplay.png",     # build_wireless_screen() -> breeze_rows/wireless_list_airplay.png
+    "wireless/list_bt.png",          # build_wireless_screen() -> breeze_rows/wireless_list_bt.png
+    "wireless/list_dlna.png",        # build_wireless_screen() -> breeze_rows/wireless_list_dlna.png
+    "wireless/list_remote.png",      # build_wireless_screen() -> breeze_rows/wireless_list_remote.png
+    "wireless/list_wifi.png",        # build_wireless_screen() -> breeze_rows/wireless_list_wifi.png
 }
 import re
 player = (pathlib.Path(sys.argv[2]) / "usr/bin/compas_player").read_bytes()
@@ -104,16 +130,6 @@ for p in clean_os.unused_asset_paths(repo):
         named.add(rel)
 if named:
     raise SystemExit("compas_player names images the manifest removes: " + ", ".join(sorted(named)))
-LEGACY_KEPT = {
-    "settings/about.png", "settings/display.png", "settings/music.png", "settings/power.png", "settings/system.png",
-    "stream_media/podcasts_row.png", "stream_media/radio_row.png", "stream_media/subsonic_row.png",
-    "sub_back/btn_playlist.png", "touch_list/list_folder.png",
-    "submenu/album_artist.png", "submenu/albums.png", "submenu/all_songs.png", "submenu/artists.png",
-    "submenu/books.png", "submenu/favorites.png", "submenu/files.png",
-    "submenu/playlists.png",
-    "wireless/list_airplay.png", "wireless/list_bt.png", "wireless/list_dlna.png",
-    "wireless/list_remote.png", "wireless/list_wifi.png",
-}
 theme2 = root / "theme2"
 folders = sorted((d.name for d in theme2.iterdir() if d.is_dir()), key=len, reverse=True)
 stale = []
@@ -122,7 +138,7 @@ for art in sorted((theme2 / "breeze_rows").glob("*.png")):
     if folder is None:
         continue
     stock = f"{folder}/{art.name[len(folder) + 1:]}"
-    if (theme2 / stock).exists() and stock not in LEGACY_KEPT:
+    if (theme2 / stock).exists():
         stale.append(stock)
 if stale:
     raise SystemExit("superseded stock icons ship next to their Breeze art: " + ", ".join(stale))

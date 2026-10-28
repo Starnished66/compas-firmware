@@ -1,3 +1,4 @@
+Removed (2026-10-27): the stock submenu row icons no longer ship (firmware/unused_assets.txt); only subsonic.png remains here.
 Superseded (2026-10-23): every submenu row icon except subsonic.png were replaced by pre-tinted Breeze art in ../breeze_rows/ and ../titlebar/ and removed. The entries below describe the removed files.
 
 Main submenu assets (2026-09-13)

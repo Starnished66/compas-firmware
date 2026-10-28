@@ -11,10 +11,11 @@
 # literal or format, the gui_themes.c legacy inventory, layout_images[], titlebar and
 # breeze_row maps), or a published plugin/theme references it (compas-plugins), or it is
 # the "_s" pressed sibling of one of those.  Everything below is neither.
-# Several names below are also in gui_themes.c s_legacy_asset_inventory (navigation/back|more|
-# search, power_action/power|reboot, submenu/bluetooth|usb). Removing the stock file is safe:
-# those icons are only drawn through titlebar_breeze_icon()/breeze_row_icon(), which never
-# consult the override folder, so a leftover legacy override copy is never shown either way.
+# Many names below are also in gui_themes.c s_legacy_asset_inventory (the stock names the old
+# Themes plugin copied). Removing the stock file is safe for theme2: those icons are only drawn
+# through titlebar_breeze_icon()/breeze_row_icon() (decorate_category_row, power_hub_card,
+# resolve_file_row_icon), which never consult the override folder, so a leftover legacy override
+# copy is never shown either way. theme1 copies stay: an icon_root=theme1 theme draws them.
 
 # bt: only bt/bt.png is named (gui_themes.c inventory); the Bluetooth screens draw Breeze art
 */bt/bt_icon.png
@@ -332,3 +333,36 @@ theme2/navigation/back.png
 theme2/navigation/more.png
 theme2/navigation/reorder.png
 theme2/navigation/search.png
+
+# theme2 rows now drawn only as Breeze art (breeze_rows/<dir>_<name>.png) through decorate_category_row()
+# (Settings, Music, Wireless, Stream Media, Books, More) and resolve_file_row_icon() (file browser).
+# stream_media/*_row.png named by published plugins (NetRadio, RadioBrowser, Podcasts) reach the same
+# decorate_category_row() path via register_stream_media_tile(); the *_row_s.png pressed copies are never
+# drawn by the category rows. jellyfin/qobuz/tidal rows have no Breeze twin and stay.
+theme2/settings/about.png
+theme2/settings/display.png
+theme2/settings/music.png
+theme2/settings/power.png
+theme2/settings/system.png
+theme2/stream_media/podcasts_row.png
+theme2/stream_media/podcasts_row_s.png
+theme2/stream_media/radio_row.png
+theme2/stream_media/radio_row_s.png
+theme2/stream_media/subsonic_row.png
+theme2/stream_media/subsonic_row_s.png
+theme2/sub_back/btn_playlist.png
+theme2/sub_back/btn_playlist_s.png
+theme2/touch_list/list_folder.png
+theme2/submenu/album_artist.png
+theme2/submenu/albums.png
+theme2/submenu/all_songs.png
+theme2/submenu/artists.png
+theme2/submenu/books.png
+theme2/submenu/favorites.png
+theme2/submenu/files.png
+theme2/submenu/playlists.png
+theme2/wireless/list_airplay.png
+theme2/wireless/list_bt.png
+theme2/wireless/list_dlna.png
+theme2/wireless/list_remote.png
+theme2/wireless/list_wifi.png
