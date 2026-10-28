@@ -52,6 +52,7 @@ for dir in r1 r3proii r3ii_2025 v1; do
         case $f in
             theme2/boot_animation/en/0.jpg|theme2/boot_animation/en/0.png|theme2/boot_animation/en/config.ini) ;;
             etc/logo1.jpeg|theme2/usb/usb.png) ;;
+            etc/logo.jpeg|etc/logo2.jpeg) [[ $dir == v1 ]] || { echo "assets/$dir/$f is only valid for v1" >&2; exit 1; } ;;
             *) echo "assets/$dir/$f is not board-specific; move it to assets/theme1 or assets/theme2" >&2; exit 1 ;;
         esac
     done < <(cd "$repo/assets/$dir" && find . -type f | sed 's#^\./##' | LC_ALL=C sort)
@@ -186,7 +187,17 @@ if [[ -f $out/v1.upt ]]; then
     check_manifest "$work/v1/upt/ota_v0"
     grep -aq 'COMPAS_PLAYER_BOARD:tempotec_v1' "$root/usr/bin/compas_player"
     cmp -- "$repo/assets/v1/theme2/usb/usb.png" "$root/usr/resource/litegui/theme2/usb/usb.png"
-    cmp -- "$repo/assets/theme2/boot_animation/en/0.png" "$root/usr/resource/litegui/theme2/boot_animation/en/0.png"
+    # Panel-sized (240x320) artwork, not the shared 480x800 one.
+    for logo in logo.jpeg logo1.jpeg logo2.jpeg; do
+        cmp -- "$repo/assets/v1/etc/$logo" "$root/etc/$logo"
+        [[ $(file -b "$repo/assets/v1/etc/$logo") == *"JPEG image data"*240x320* ]] || {
+            echo "v1.upt: assets/v1/etc/$logo is not a 240x320 JPEG" >&2; exit 1; }
+    done
+    cmp -- "$repo/assets/v1/theme2/boot_animation/en/0.jpg" "$root/usr/resource/litegui/theme2/boot_animation/en/0.jpg"
+    cmp -- "$repo/assets/v1/theme2/boot_animation/en/0.png" "$root/usr/resource/litegui/theme2/boot_animation/en/0.png"
+    [[ $(file -b "$repo/assets/v1/theme2/boot_animation/en/0.jpg") == *"JPEG image data"*240x320* ]] &&
+        [[ $(file -b "$repo/assets/v1/theme2/boot_animation/en/0.png") == *"PNG image data, 240 x 320"* ]] || {
+        echo "v1.upt: boot animation is not 240x320" >&2; exit 1; }
     check_icons "$root"
     check_bluetooth_overlay "$root" v1.upt
     grep -qx 'DiscoverableTimeout = 0' "$root/etc/bluetooth/main.conf" &&

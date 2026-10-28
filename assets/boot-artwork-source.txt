@@ -1,0 +1,25 @@
+TempoTec V1 boot artwork provenance
+
+Installed by scripts/firmware/package/repack_v1_upt.py (install_v1_boot_artwork)
+after the shared 480 x 800 theme2 assets, because the V1 panel is 240 x 320:
+
+  assets/v1/etc/logo.jpeg
+  assets/v1/etc/logo1.jpeg
+  assets/v1/etc/logo2.jpeg                          -> /etc/
+  assets/v1/theme2/boot_animation/en/0.jpg          -> /usr/resource/litegui/theme2/...
+  assets/v1/theme2/boot_animation/en/0.png
+
+The V1 splash script picks logo.jpeg, logo1.jpeg or logo2.jpeg from a NAND theme
+flag, so all three carry the same image. The four JPEGs are one 240 x 320 JPEG
+(git blob 2a1897987f3fadd6128b6c51feb38ea1150f4d80, SHA-256
+dab3711574f46254ad30119c90bfef1731362f4359563bf33cb1cc08529919b6). 0.png is a
+240 x 320 RGB PNG (git blob 3ef057c213a97a8a1888fba944269ecb6523dc95, SHA-256
+77552121c451ad33e7e4cdf88d1615be210430173e8bc834b49f788241d44cfb).
+
+Origin: the Compas splash artwork from the compas-player branch
+tempotec-v1-release (commit a16289b28, assets/tempotec_v1/), extracted
+byte for byte with git cat-file. boot_animation/en/config.ini is the shared
+one (it names 0.png) and is not duplicated here.
+
+The packager checks format, 240 x 320 size and these hashes;
+scripts/build/firmware/validate_images.sh checks the built v1.upt against them.

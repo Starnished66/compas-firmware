@@ -853,6 +853,74 @@ def install_required_usb_overlay(root: pathlib.Path) -> dict[str, object]:
     return {rel: {"sha256": USB_OVERLAY_SHA256}}
 
 
+# Panel-sized (240x320) boot artwork. The shared theme2 splash is 480x800. The V1 splash script
+# picks etc/logo.jpeg, logo1.jpeg or logo2.jpeg from a NAND theme flag; all three carry the same
+# splash. Provenance: assets/boot-artwork-source.txt (the per-board folders hold only
+# installable files, so it lives beside usb-overlay-source.txt).
+V1_BOOT_ARTWORK = {
+    "etc/logo.jpeg": ("JPEG", "assets/v1/etc/logo.jpeg"),
+    "etc/logo1.jpeg": ("JPEG", "assets/v1/etc/logo1.jpeg"),
+    "etc/logo2.jpeg": ("JPEG", "assets/v1/etc/logo2.jpeg"),
+    "usr/resource/litegui/theme2/boot_animation/en/0.jpg": ("JPEG", "assets/v1/theme2/boot_animation/en/0.jpg"),
+    "usr/resource/litegui/theme2/boot_animation/en/0.png": ("PNG", "assets/v1/theme2/boot_animation/en/0.png"),
+}
+V1_BOOT_ARTWORK_SHA256 = {
+    "JPEG": "dab3711574f46254ad30119c90bfef1731362f4359563bf33cb1cc08529919b6",
+    "PNG": "77552121c451ad33e7e4cdf88d1615be210430173e8bc834b49f788241d44cfb",
+}
+V1_PANEL = (240, 320)
+
+
+def image_format_and_size(data: bytes) -> tuple[str, int, int] | None:
+    if len(data) >= 24 and data[:8] == b"\x89PNG\r\n\x1a\n" and data[12:16] == b"IHDR":
+        width, height = struct.unpack(">II", data[16:24])
+        return "PNG", width, height
+    if data[:2] == b"\xff\xd8":
+        pos = 2
+        while pos + 4 <= len(data):
+            if data[pos] != 0xFF:
+                return None
+            marker = data[pos + 1]
+            if marker == 0xFF:
+                pos += 1
+                continue
+            if marker in (0xD8, 0x01) or 0xD0 <= marker <= 0xD7:
+                pos += 2
+                continue
+            length = struct.unpack(">H", data[pos + 2:pos + 4])[0]
+            if marker in (0xC0, 0xC1, 0xC2) and pos + 9 <= len(data):
+                height, width = struct.unpack(">HH", data[pos + 5:pos + 9])
+                return "JPEG", width, height
+            pos += 2 + length
+    return None
+
+
+def install_v1_boot_artwork(root: pathlib.Path) -> dict[str, object]:
+    """Install the 240x320 splash/logo images after the shared 480x800 ones.
+
+    Each source must be a regular file, the expected format, exactly 240x320 and match its pinned
+    hash, so a wrong-sized image can never reach the V1 panel."""
+    installed = {}
+    for rel, (kind, asset) in V1_BOOT_ARTWORK.items():
+        source = ASSET_REPO / asset
+        safe_regular(source, "V1 boot artwork")
+        data = source.read_bytes()
+        info = image_format_and_size(data)
+        if info is None or info[0] != kind or (info[1], info[2]) != V1_PANEL:
+            raise RepackError(f"V1 boot image must be {kind} {V1_PANEL[0]}x{V1_PANEL[1]}: {asset} (found {info})")
+        if hashlib.sha256(data).hexdigest() != V1_BOOT_ARTWORK_SHA256[kind]:
+            raise RepackError("V1 boot image differs from its pinned hash: " + asset)
+        target = root / rel
+        if target.is_symlink() or (target.exists() and not target.is_file()):
+            raise RepackError("unsafe V1 boot image destination: " + rel)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, target)
+        if digest(target) != V1_BOOT_ARTWORK_SHA256[kind]:
+            raise RepackError("installed V1 boot image failed its hash check: " + rel)
+        installed[rel] = {"sha256": V1_BOOT_ARTWORK_SHA256[kind], "format": kind, "size": f"{V1_PANEL[0]}x{V1_PANEL[1]}"}
+    return installed
+
+
 def install_speex_runtime(source: pathlib.Path, root: pathlib.Path) -> dict[str, object]:
     files = ("usr/lib/libspeexdsp.so.1.5.2",
              "usr/lib/alsa-lib/libasound_module_rate_speexrate.so")
@@ -1103,6 +1171,7 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         current_assets = copy_current_assets(v1_root)
         clean_os = clean_new_os(v1_root)
         current_assets.update(install_required_usb_overlay(v1_root))
+        current_assets.update(install_v1_boot_artwork(v1_root))
         clean_paths = [item["path"].lstrip("/") for item in clean_os["removed"] + clean_os["naming_updates"]]
         allowed_paths = list(current_assets) + clean_paths + bluez_changed_paths()
         changed_paths = verify_only_allowed_changes(stock_inventory, tree_inventory(v1_root), allowed_paths)
