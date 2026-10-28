@@ -2355,11 +2355,11 @@ msgstr ""
 "\n"
 "Asennetaanko nyt? Laite käynnistyy palautustilaan asentaakseen sen. Älä sammuta sitä ennen kuin se käynnistyy uudelleen."
 
-msgid "The downloaded update record is invalid. Download the update again."
-msgstr "Ladattu päivitystietue on virheellinen. Lataa päivitys uudelleen."
-
 msgid "Cannot read the update record on the SD card. Check the card and try again."
 msgstr "SD-kortin päivitystietueen lukeminen epäonnistui. Tarkista kortti ja yritä uudelleen."
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "Edellinen lataus on keskeneräinen tai virheellinen. Poista päivitystiedosto SD-kortilta, napauta Asenna SD-kortilta, kopioi sitten uusi tiedosto ja yritä uudelleen."
 
 msgid "Checking for updates"
 msgstr "Tarkistetaan päivityksiä"
@@ -3773,3 +3773,6 @@ msgstr "Kopioi sovellus SD-kortin kansioon .apps, yksi kansio sovellusta kohden 
 
 #~ msgid "Back"
 #~ msgstr "Takaisin"
+
+#~ msgid "The downloaded update record is invalid. Download the update again."
+#~ msgstr "Ladattu päivitystietue on virheellinen. Lataa päivitys uudelleen."

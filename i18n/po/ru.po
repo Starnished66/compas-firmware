@@ -2385,11 +2385,11 @@ msgstr ""
 "\n"
 "Установить сейчас? Устройство перезагрузится в режим восстановления для установки прошивки. Не выключайте его до завершения перезапуска."
 
-msgid "The downloaded update record is invalid. Download the update again."
-msgstr "Загруженная запись обновления недействительна. Загрузите обновление еще раз."
-
 msgid "Cannot read the update record on the SD card. Check the card and try again."
 msgstr "Невозможно прочитать запись обновления на SD-карте. Проверьте карту и повторите попытку."
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "Предыдущая загрузка неполная или повреждена. Удалите файл обновления с SD-карты, нажмите «Установить с SD-карты», затем скопируйте новый файл и повторите попытку."
 
 msgid "Checking for updates"
 msgstr "Проверка обновлений"
@@ -3802,3 +3802,6 @@ msgstr "Скопируйте приложение в папку .apps на SD-к
 
 #~ msgid "Back"
 #~ msgstr "Назад"
+
+#~ msgid "The downloaded update record is invalid. Download the update again."
+#~ msgstr "Загруженная запись обновления недействительна. Загрузите обновление еще раз."

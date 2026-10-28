@@ -2362,11 +2362,11 @@ msgstr ""
 "\n"
 "Установити зараз? Пристрій перезавантажиться в режим відновлення для прошивання. Не вимикайте його до перезапуску."
 
-msgid "The downloaded update record is invalid. Download the update again."
-msgstr "Запис завантаженого оновлення недійсний. Завантажте оновлення ще раз."
-
 msgid "Cannot read the update record on the SD card. Check the card and try again."
 msgstr "Не вдалося прочитати запис оновлення на SD-картці. Перевірте картку та спробуйте ще раз."
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "Попереднє завантаження неповне або пошкоджене. Видаліть файл оновлення з SD-карти, натисніть «Встановити з SD-карти», потім скопіюйте новий файл і спробуйте ще раз."
 
 msgid "Checking for updates"
 msgstr "Перевірка оновлень"
@@ -3780,3 +3780,6 @@ msgstr "Скопіюйте застосунок до теки .apps на SD-ка
 
 #~ msgid "Back"
 #~ msgstr "Назад"
+
+#~ msgid "The downloaded update record is invalid. Download the update again."
+#~ msgstr "Запис завантаженого оновлення недійсний. Завантажте оновлення ще раз."

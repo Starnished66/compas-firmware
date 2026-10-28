@@ -2334,11 +2334,13 @@ msgid ""
 "off until it restarts."
 msgstr ""
 
-msgid "The downloaded update record is invalid. Download the update again."
+msgid ""
+"Cannot read the update record on the SD card. Check the card and try again."
 msgstr ""
 
 msgid ""
-"Cannot read the update record on the SD card. Check the card and try again."
+"The previous download is incomplete or invalid. Remove the update file from "
+"the SD card, tap Install from SD card, then copy the new file and try again."
 msgstr ""
 
 msgid "Checking for updates"

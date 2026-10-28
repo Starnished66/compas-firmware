@@ -2431,11 +2431,11 @@ msgstr ""
 "Installer maintenant ? L’appareil redémarre en mode de récupération pour la flasher. Ne l’éteignez pas avant son redémarrage."
 
 #, fuzzy
-msgid "The downloaded update record is invalid. Download the update again."
-msgstr "La mise à jour téléchargée a changé sur la carte SD et a été mise de côté. Téléchargez-la de nouveau."
-
 msgid "Cannot read the update record on the SD card. Check the card and try again."
 msgstr "Impossible de lire l'enregistrement de mise à jour sur la carte SD. Vérifiez la carte et réessayez."
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "Le téléchargement précédent est incomplet ou invalide. Retirez le fichier de mise à jour de la carte SD, touchez Installer depuis la carte SD, puis copiez le nouveau fichier et réessayez."
 
 msgid "Checking for updates"
 msgstr "Recherche de mises à jour"
@@ -3957,3 +3957,6 @@ msgstr "Copiez une application dans le dossier .apps de la carte SD, un dossier 
 
 #~ msgid "Finish setup"
 #~ msgstr "Terminer la configuration"
+
+#~ msgid "The downloaded update record is invalid. Download the update again."
+#~ msgstr "La mise à jour téléchargée a changé sur la carte SD et a été mise de côté. Téléchargez-la de nouveau."

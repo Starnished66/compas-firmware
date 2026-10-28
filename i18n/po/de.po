@@ -2341,11 +2341,11 @@ msgstr ""
 "\n"
 "Jetzt installieren? Das Gerät startet zum Flashen im Wiederherstellungsmodus neu. Schalte es bis zum Neustart nicht aus."
 
-msgid "The downloaded update record is invalid. Download the update again."
-msgstr "Der heruntergeladene Update-Eintrag ist ungültig. Lade das Update erneut herunter."
-
 msgid "Cannot read the update record on the SD card. Check the card and try again."
 msgstr "Update-Eintrag auf der SD-Karte kann nicht gelesen werden. Prüfe die Karte und versuche es erneut."
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "Der vorherige Download ist unvollständig oder ungültig. Entferne die Update-Datei von der SD-Karte, tippe auf „Von SD-Karte installieren“ und kopiere dann die neue Datei auf die Karte. Versuche es danach erneut."
 
 msgid "Checking for updates"
 msgstr "Suche nach Updates"
@@ -3757,3 +3757,6 @@ msgstr "Kopiere eine App in den Ordner .apps auf der SD-Karte, ein Ordner pro Ap
 
 #~ msgid "Back"
 #~ msgstr "Zurück"
+
+#~ msgid "The downloaded update record is invalid. Download the update again."
+#~ msgstr "Der heruntergeladene Update-Eintrag ist ungültig. Lade das Update erneut herunter."

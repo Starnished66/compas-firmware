@@ -2356,11 +2356,11 @@ msgstr ""
 "\n"
 "Instalar agora? O dispositivo será reiniciado no modo de recuperação para a instalar. Não o desligue até reiniciar."
 
-msgid "The downloaded update record is invalid. Download the update again."
-msgstr "O registo da atualização transferida é inválido. Transfira novamente a atualização."
-
 msgid "Cannot read the update record on the SD card. Check the card and try again."
 msgstr "Não foi possível ler o registo da atualização no cartão SD. Verifique o cartão e tente novamente."
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "A transferência anterior está incompleta ou inválida. Remova o ficheiro de atualização do cartão SD, toque em Instalar a partir do cartão SD, copie depois o novo ficheiro e tente novamente."
 
 msgid "Checking for updates"
 msgstr "A procurar atualizações"
@@ -3774,3 +3774,6 @@ msgstr "Copie uma app para a pasta .apps do cartão SD, uma pasta por app com um
 
 #~ msgid "Back"
 #~ msgstr "Voltar"
+
+#~ msgid "The downloaded update record is invalid. Download the update again."
+#~ msgstr "O registo da atualização transferida é inválido. Transfira novamente a atualização."

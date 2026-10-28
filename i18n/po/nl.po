@@ -2353,11 +2353,11 @@ msgstr ""
 "\n"
 "Nu installeren? Het apparaat start opnieuw op in herstelmodus om deze te installeren. Schakel het niet uit tot het opnieuw is gestart."
 
-msgid "The downloaded update record is invalid. Download the update again."
-msgstr "De gedownloade updateregistratie is ongeldig. Download de update opnieuw."
-
 msgid "Cannot read the update record on the SD card. Check the card and try again."
 msgstr "Kan de updateregistratie op de SD-kaart niet lezen. Controleer de kaart en probeer opnieuw."
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "De vorige download is onvolledig of ongeldig. Verwijder het updatebestand van de SD-kaart, tik op Installeren vanaf SD-kaart, kopieer daarna het nieuwe bestand en probeer het opnieuw."
 
 msgid "Checking for updates"
 msgstr "Controleren op updates"
@@ -3771,3 +3771,6 @@ msgstr "Kopieer een app naar de map .apps op de SD-kaart, één map per app met 
 
 #~ msgid "Back"
 #~ msgstr "Terug"
+
+#~ msgid "The downloaded update record is invalid. Download the update again."
+#~ msgstr "De gedownloade updateregistratie is ongeldig. Download de update opnieuw."

@@ -2431,11 +2431,11 @@ msgstr ""
 "Installarla ora? Il dispositivo si riavvia in recovery per installarla. Non spegnerlo finché non si riavvia."
 
 #, fuzzy
-msgid "The downloaded update record is invalid. Download the update again."
-msgstr "L'aggiornamento scaricato è cambiato sulla scheda SD ed è stato messo da parte. Scaricalo di nuovo."
-
 msgid "Cannot read the update record on the SD card. Check the card and try again."
 msgstr "Impossibile leggere il registro dell'aggiornamento sulla scheda SD. Controlla la scheda e riprova."
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "Il download precedente è incompleto o non valido. Rimuovi il file di aggiornamento dalla scheda SD, tocca Installa da scheda SD, poi copia il nuovo file e riprova."
 
 msgid "Checking for updates"
 msgstr "Controllo degli aggiornamenti"
@@ -3957,3 +3957,6 @@ msgstr "Copia un’app nella cartella .apps della scheda SD, una cartella per ap
 
 #~ msgid "Finish setup"
 #~ msgstr "Completa configurazione"
+
+#~ msgid "The downloaded update record is invalid. Download the update again."
+#~ msgstr "L'aggiornamento scaricato è cambiato sulla scheda SD ed è stato messo da parte. Scaricalo di nuovo."
