@@ -2504,9 +2504,8 @@ msgstr ""
 msgid "Buy Me a Coffee"
 msgstr "Me pague um café"
 
-msgid "Scan with your phone to support Compás Player on PayPal"
-msgstr "Escaneie com o celular para apoiar o Compás Player no PayPal"
-
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "Escaneie com o celular para apoiar o Compás Player no Ko-fi"
 msgid "Scan for the full guide"
 msgstr ""
 

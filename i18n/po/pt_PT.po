@@ -2428,9 +2428,8 @@ msgstr "Guias de criação"
 msgid "Buy Me a Coffee"
 msgstr "Ofereça-me um café"
 
-msgid "Scan with your phone to support Compás Player on PayPal"
-msgstr "Leia com o telemóvel para apoiar o Compás Player através do PayPal"
-
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "Leia com o telemóvel para apoiar o Compás Player através do Ko-fi"
 msgid "Scan for the full guide"
 msgstr "Leia o código para abrir o guia completo"
 

@@ -2413,9 +2413,8 @@ msgstr "Anleitungen für Entwickler"
 msgid "Buy Me a Coffee"
 msgstr "Buy Me a Coffee"
 
-msgid "Scan with your phone to support Compás Player on PayPal"
-msgstr "Scanne den Code mit deinem Smartphone, um Compás Player über PayPal zu unterstützen"
-
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "Scanne den Code mit deinem Smartphone, um Compás Player über Ko-fi zu unterstützen"
 msgid "Scan for the full guide"
 msgstr "Scanne den QR-Code, um die vollständige Anleitung zu öffnen."
 

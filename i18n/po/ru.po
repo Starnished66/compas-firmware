@@ -2457,9 +2457,8 @@ msgstr "Руководства для создателей"
 msgid "Buy Me a Coffee"
 msgstr "Купи мне кофе"
 
-msgid "Scan with your phone to support Compás Player on PayPal"
-msgstr "Сканируйте с помощью телефона, чтобы поддержать Compás Player на PayPal."
-
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "Сканируйте с помощью телефона, чтобы поддержать Compás Player на Ko-fi."
 msgid "Scan for the full guide"
 msgstr "Отсканируйте QR-код, чтобы открыть полное руководство."
 

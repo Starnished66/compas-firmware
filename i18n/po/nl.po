@@ -2425,9 +2425,8 @@ msgstr "Handleidingen voor makers"
 msgid "Buy Me a Coffee"
 msgstr "Trakteer me op koffie"
 
-msgid "Scan with your phone to support Compás Player on PayPal"
-msgstr "Scan met je telefoon om Compás Player via PayPal te steunen"
-
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "Scan met je telefoon om Compás Player via Ko-fi te steunen"
 msgid "Scan for the full guide"
 msgstr "Scan voor de volledige handleiding"
 

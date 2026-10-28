@@ -2427,9 +2427,8 @@ msgstr "Tekijän oppaat"
 msgid "Buy Me a Coffee"
 msgstr "Tarjoa kahvi"
 
-msgid "Scan with your phone to support Compás Player on PayPal"
-msgstr "Tue Compás Playeria PayPalin kautta skannaamalla puhelimella"
-
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "Tue Compás Playeria Ko-fin kautta skannaamalla puhelimella"
 msgid "Scan for the full guide"
 msgstr "Skannaa avataksesi koko oppaan"
 

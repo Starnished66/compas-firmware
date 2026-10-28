@@ -2434,9 +2434,8 @@ msgstr "Посібники для розробників"
 msgid "Buy Me a Coffee"
 msgstr "Buy Me a Coffee"
 
-msgid "Scan with your phone to support Compás Player on PayPal"
-msgstr "Відскануйте телефоном, щоб підтримати Compás Player через PayPal"
-
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "Відскануйте телефоном, щоб підтримати Compás Player через Ko-fi"
 msgid "Scan for the full guide"
 msgstr "Скануйте QR-код, щоб відкрити повний посібник."
 
