@@ -1019,6 +1019,18 @@ msgid_plural "%d songs"
 msgstr[0] "%d kappale"
 msgstr[1] "%d kappaletta"
 
+#, c-format
+msgid "%d album"
+msgid_plural "%d albums"
+msgstr[0] "%d albumi"
+msgstr[1] "%d albumia"
+
+#, c-format
+msgid "All %d song"
+msgid_plural "All %d songs"
+msgstr[0] "%d kappale"
+msgstr[1] "Kaikki %d kappaletta"
+
 msgid "Recently Played"
 msgstr "Äskettäin toistetut"
 

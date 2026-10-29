@@ -1019,6 +1019,18 @@ msgid_plural "%d songs"
 msgstr[0] "%d nummer"
 msgstr[1] "%d nummers"
 
+#, c-format
+msgid "%d album"
+msgid_plural "%d albums"
+msgstr[0] "%d album"
+msgstr[1] "%d albums"
+
+#, c-format
+msgid "All %d song"
+msgid_plural "All %d songs"
+msgstr[0] "%d nummer"
+msgstr[1] "Alle %d nummers"
+
 msgid "Recently Played"
 msgstr "Recent afgespeeld"
 

@@ -23,7 +23,7 @@ checking for Rockbox. If a valid matching installation is missing and no
 selector request is pending, it skips the menu and enters the shared Compás
 loader directly. Otherwise the native Compás menu opens before Rockbox
 initialization. Compás is always the initial selection. With a valid Rockbox
-installation and no forced selector request, Compás starts after a one-second
+installation and no forced selector request, Compás starts after a three-second
 countdown; volume input, touch input, or opening Tools cancels that countdown
 for the rest of the selection session. A forced selector request opens the
 menu without a countdown. Selecting Compás re-enters loader mode in the same

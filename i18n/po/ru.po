@@ -1044,6 +1044,20 @@ msgstr[0] "%d песня"
 msgstr[1] "%d песни"
 msgstr[2] "%d песен"
 
+#, c-format
+msgid "%d album"
+msgid_plural "%d albums"
+msgstr[0] "%d альбом"
+msgstr[1] "%d альбома"
+msgstr[2] "%d альбомов"
+
+#, c-format
+msgid "All %d song"
+msgid_plural "All %d songs"
+msgstr[0] "Всего: %d песня"
+msgstr[1] "Всего: %d песни"
+msgstr[2] "Всего: %d песен"
+
 msgid "Recently Played"
 msgstr "Недавно прослушаные"
 

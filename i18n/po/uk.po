@@ -1025,6 +1025,20 @@ msgstr[0] "%d композиція"
 msgstr[1] "%d композиції"
 msgstr[2] "%d композицій"
 
+#, c-format
+msgid "%d album"
+msgid_plural "%d albums"
+msgstr[0] "%d альбом"
+msgstr[1] "%d альбоми"
+msgstr[2] "%d альбомів"
+
+#, c-format
+msgid "All %d song"
+msgid_plural "All %d songs"
+msgstr[0] "Всього: %d композиція"
+msgstr[1] "Всього: %d композиції"
+msgstr[2] "Всього: %d композицій"
+
 msgid "Recently Played"
 msgstr "Нещодавно відтворені"
 
