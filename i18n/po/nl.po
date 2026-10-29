@@ -2422,8 +2422,30 @@ msgstr "Thema maken"
 msgid "Creator guides"
 msgstr "Handleidingen voor makers"
 
-msgid "Buy Me a Coffee"
-msgstr "Trakteer me op koffie"
+msgid "Version"
+msgstr "Versie"
+
+msgctxt "device info"
+msgid "Build"
+msgstr "Build"
+
+msgid "Device"
+msgstr "Apparaat"
+
+msgid "Memory"
+msgstr "Geheugen"
+
+msgid "Internal"
+msgstr "Intern"
+
+msgid "SD card"
+msgstr "SD-kaart"
+
+msgid "%s free of %s"
+msgstr "%s vrij van %s"
+
+msgid "Support Compás"
+msgstr "Steun Compás"
 
 msgid "Scan with your phone to support Compás Player on Ko-fi"
 msgstr "Scan met je telefoon om Compás Player via Ko-fi te steunen"
@@ -3774,3 +3796,6 @@ msgstr "Kopieer een app naar de map .apps op de SD-kaart, één map per app met 
 
 #~ msgid "The downloaded update record is invalid. Download the update again."
 #~ msgstr "De gedownloade updateregistratie is ongeldig. Download de update opnieuw."
+
+#~ msgid "Buy Me a Coffee"
+#~ msgstr "Trakteer me op koffie"

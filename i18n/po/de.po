@@ -2410,8 +2410,30 @@ msgstr "Theme erstellen"
 msgid "Creator guides"
 msgstr "Anleitungen für Entwickler"
 
-msgid "Buy Me a Coffee"
-msgstr "Buy Me a Coffee"
+msgid "Version"
+msgstr "Version"
+
+msgctxt "device info"
+msgid "Build"
+msgstr "Build"
+
+msgid "Device"
+msgstr "Gerät"
+
+msgid "Memory"
+msgstr "Speicher"
+
+msgid "Internal"
+msgstr "Intern"
+
+msgid "SD card"
+msgstr "SD-Karte"
+
+msgid "%s free of %s"
+msgstr "%s frei von %s"
+
+msgid "Support Compás"
+msgstr "Compás unterstützen"
 
 msgid "Scan with your phone to support Compás Player on Ko-fi"
 msgstr "Scanne den Code mit deinem Smartphone, um Compás Player über Ko-fi zu unterstützen"
@@ -3760,3 +3782,6 @@ msgstr "Kopiere eine App in den Ordner .apps auf der SD-Karte, ein Ordner pro Ap
 
 #~ msgid "The downloaded update record is invalid. Download the update again."
 #~ msgstr "Der heruntergeladene Update-Eintrag ist ungültig. Lade das Update erneut herunter."
+
+#~ msgid "Buy Me a Coffee"
+#~ msgstr "Buy Me a Coffee"

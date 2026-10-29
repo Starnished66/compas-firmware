@@ -2424,8 +2424,30 @@ msgstr "Luo teema"
 msgid "Creator guides"
 msgstr "Tekijän oppaat"
 
-msgid "Buy Me a Coffee"
-msgstr "Tarjoa kahvi"
+msgid "Version"
+msgstr "Versio"
+
+msgctxt "device info"
+msgid "Build"
+msgstr "Koontiversio"
+
+msgid "Device"
+msgstr "Laite"
+
+msgid "Memory"
+msgstr "Muisti"
+
+msgid "Internal"
+msgstr "Sisäinen"
+
+msgid "SD card"
+msgstr "SD-kortti"
+
+msgid "%s free of %s"
+msgstr "%s vapaana, yhteensä %s"
+
+msgid "Support Compás"
+msgstr "Tue Compásia"
 
 msgid "Scan with your phone to support Compás Player on Ko-fi"
 msgstr "Tue Compás Playeria Ko-fin kautta skannaamalla puhelimella"
@@ -3776,3 +3798,6 @@ msgstr "Kopioi sovellus SD-kortin kansioon .apps, yksi kansio sovellusta kohden 
 
 #~ msgid "The downloaded update record is invalid. Download the update again."
 #~ msgstr "Ladattu päivitystietue on virheellinen. Lataa päivitys uudelleen."
+
+#~ msgid "Buy Me a Coffee"
+#~ msgstr "Tarjoa kahvi"

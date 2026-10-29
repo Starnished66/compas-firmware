@@ -2502,8 +2502,30 @@ msgstr ""
 msgid "Creator guides"
 msgstr ""
 
-msgid "Buy Me a Coffee"
-msgstr "Offrez-moi un café"
+msgid "Version"
+msgstr "Version"
+
+msgctxt "device info"
+msgid "Build"
+msgstr "Build"
+
+msgid "Device"
+msgstr "Appareil"
+
+msgid "Memory"
+msgstr "Mémoire"
+
+msgid "Internal"
+msgstr "Interne"
+
+msgid "SD card"
+msgstr "Carte SD"
+
+msgid "%s free of %s"
+msgstr "%s libres sur %s"
+
+msgid "Support Compás"
+msgstr "Soutenir Compás"
 
 msgid "Scan with your phone to support Compás Player on Ko-fi"
 msgstr "Scannez avec votre téléphone pour soutenir Compás Player sur Ko-fi"
@@ -3960,3 +3982,6 @@ msgstr "Copiez une application dans le dossier .apps de la carte SD, un dossier 
 
 #~ msgid "The downloaded update record is invalid. Download the update again."
 #~ msgstr "La mise à jour téléchargée a changé sur la carte SD et a été mise de côté. Téléchargez-la de nouveau."
+
+#~ msgid "Buy Me a Coffee"
+#~ msgstr "Offrez-moi un café"

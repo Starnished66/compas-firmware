@@ -2402,10 +2402,29 @@ msgstr ""
 msgid "Creator guides"
 msgstr ""
 
-msgid "Buy Me a Coffee"
+msgid "Version"
 msgstr ""
 
-msgid "Scan with your phone to support Compás Player on PayPal"
+msgctxt "device info"
+msgid "Build"
+msgstr ""
+
+msgid "Device"
+msgstr ""
+
+msgid "Memory"
+msgstr ""
+
+msgid "Internal"
+msgstr ""
+
+msgid "SD card"
+msgstr ""
+
+msgid "%s free of %s"
+msgstr ""
+
+msgid "Support Compás"
 msgstr ""
 
 msgid "Scan for the full guide"

@@ -2431,8 +2431,30 @@ msgstr "Створити тему"
 msgid "Creator guides"
 msgstr "Посібники для розробників"
 
-msgid "Buy Me a Coffee"
-msgstr "Buy Me a Coffee"
+msgid "Version"
+msgstr "Версія"
+
+msgctxt "device info"
+msgid "Build"
+msgstr "Збірка"
+
+msgid "Device"
+msgstr "Пристрій"
+
+msgid "Memory"
+msgstr "Пам’ять"
+
+msgid "Internal"
+msgstr "Внутрішня"
+
+msgid "SD card"
+msgstr "SD-карта"
+
+msgid "%s free of %s"
+msgstr "вільно %s з %s"
+
+msgid "Support Compás"
+msgstr "Підтримати Compás"
 
 msgid "Scan with your phone to support Compás Player on Ko-fi"
 msgstr "Відскануйте телефоном, щоб підтримати Compás Player через Ko-fi"
@@ -3783,3 +3805,6 @@ msgstr "Скопіюйте застосунок до теки .apps на SD-ка
 
 #~ msgid "The downloaded update record is invalid. Download the update again."
 #~ msgstr "Запис завантаженого оновлення недійсний. Завантажте оновлення ще раз."
+
+#~ msgid "Buy Me a Coffee"
+#~ msgstr "Buy Me a Coffee"
