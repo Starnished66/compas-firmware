@@ -3750,6 +3750,18 @@ msgstr "Ei asennettuja sovelluksia"
 msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
 msgstr "Kopioi sovellus SD-kortin kansioon .apps, yksi kansio sovellusta kohden ja app.json-tiedosto."
 
+msgid "Play"
+msgstr "Toista"
+
+msgid "Shuffle"
+msgstr "Sekoita"
+
+msgid "Mixed"
+msgstr "Sekalainen"
+
+msgid "Hi-Res"
+msgstr "Hi-Res"
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Tallennetut pelit säilyvät SD-kortilla."
 

@@ -3831,6 +3831,18 @@ msgstr "Aucune application installée"
 msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
 msgstr "Copiez une application dans le dossier .apps de la carte SD, un dossier par application avec un fichier app.json."
 
+msgid "Play"
+msgstr "Lire"
+
+msgid "Shuffle"
+msgstr "Aléatoire"
+
+msgid "Mixed"
+msgstr "Mixte"
+
+msgid "Hi-Res"
+msgstr "Hi-Res"
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Les sauvegardes restent sur la carte SD."
 

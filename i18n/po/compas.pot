@@ -3651,3 +3651,15 @@ msgstr ""
 
 msgid "USB DSD Output"
 msgstr ""
+
+msgid "Play"
+msgstr ""
+
+msgid "Shuffle"
+msgstr ""
+
+msgid "Mixed"
+msgstr ""
+
+msgid "Hi-Res"
+msgstr ""

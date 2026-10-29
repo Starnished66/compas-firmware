@@ -3779,6 +3779,18 @@ msgstr "Нет установленных приложений"
 msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
 msgstr "Скопируйте приложение в папку .apps на SD-карте: одна папка на приложение с файлом app.json."
 
+msgid "Play"
+msgstr "Воспроизвести"
+
+msgid "Shuffle"
+msgstr "Перемешать"
+
+msgid "Mixed"
+msgstr "Разные"
+
+msgid "Hi-Res"
+msgstr "Hi-Res"
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Сохранения остаются на SD-карте."
 
