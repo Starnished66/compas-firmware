@@ -395,6 +395,7 @@ def build(args, m: dict, work: pathlib.Path):
         "weekly_repack_userspace": weekly_userspace(m, userspace),
         "weekly_repack_edits": {
             "/module_driver/cst8xx_touch.sh": "cst_max_touch_number 1 -> 2",
+            "/module_driver/keyboard_adc_multifunc.sh": "adc_key_detectime 100 -> 20",
             "/module_driver/driver_default_init_script.sh": "startup-trace instrumentation",
         },
         "vendor_ota_compatibility_not_shipped": (work / "ota_compatibility.in").read_text().strip(),

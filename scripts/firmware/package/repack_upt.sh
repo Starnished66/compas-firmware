@@ -53,6 +53,31 @@ path.write_text(text)
 PY
 }
 
+# Poll the R1 button ADC every 20 ms instead of the stock 100 ms (R1 only). The
+# play/pause switch often makes contact for only 20-60 ms, so at 100 ms many
+# presses fall between samples and are lost. Same fail-closed rules as the
+# touch edit; an existing value of 20 is accepted so the edit is idempotent.
+set_key_poll_interval() {
+    local driver_dir=$1
+    python3 - "$driver_dir/keyboard_adc_multifunc.sh" keyboard_adc_multifunc.ko adc_key_detectime 20 <<'PY'
+import pathlib, re, sys
+
+path, module, key, value = pathlib.Path(sys.argv[1]), sys.argv[2], sys.argv[3], sys.argv[4]
+if path.is_symlink() or not path.is_file():
+    raise SystemExit(f"Key loader is missing or not a regular file: {path}")
+text = path.read_text()
+if len(re.findall(r"(?:^|\s)insmod\s+" + re.escape(module) + r"(?=\s|$)", text)) != 1:
+    raise SystemExit(f"Unsupported key loader (expected one insmod {module}): {path}")
+pattern = r"((?:^|\s)" + key + r"=)([0-9]+)(?=\s|$)"
+if len(re.findall(pattern, text)) != 1:
+    raise SystemExit(f"Missing or duplicate {key} in {path}")
+text, count = re.subn(pattern, r"\g<1>" + value, text)
+if count != 1:
+    raise SystemExit(f"Could not set {key}={value} in {path}")
+path.write_text(text)
+PY
+}
+
 # Production R1 packages must retain HiBy's closed cywdhd Wi-Fi stack. A
 # candidate built with the experimental brcmfmac backend is packaged separately
 # and must never pass through this general production repacker.
@@ -1040,13 +1065,14 @@ fi
 # the vendor refresh and is covered by its whole-tree check above.)
 touch_files=()
 touch_hash_r1=""
+key_hash_r1=""
 if [[ -z $vendor_drivers ]]; then
     [[ -d "$work/root/module_driver" && ! -L "$work/root/module_driver" ]] || {
         echo "Base OTA has an unsafe or missing /module_driver directory" >&2
         exit 1
     }
     case $board in
-        r1) touch_files=(cst8xx_touch.sh) ;;
+        r1) touch_files=(cst8xx_touch.sh keyboard_adc_multifunc.sh) ;;
         r3proii) touch_files=(gt9xx_touch.ko gt9xx_touch.sh utils.ko) ;;
         # R3 II 2025 keeps its stock touch loader unchanged
         # (gtp_max_touch_number=1). Its OEM gt9xx_touch.ko drops multi-contact
@@ -1068,6 +1094,8 @@ if [[ -z $vendor_drivers ]]; then
         r1)
             raise_touch_contact_limit "$work/root/module_driver"
             touch_hash_r1=$(sha256sum "$work/root/module_driver/cst8xx_touch.sh" | awk '{print $1}')
+            set_key_poll_interval "$work/root/module_driver"
+            key_hash_r1=$(sha256sum "$work/root/module_driver/keyboard_adc_multifunc.sh" | awk '{print $1}')
             ;;
         r3proii) open_touch_module install "$work/root" "$work/xImage" ;;
     esac
@@ -1291,6 +1319,10 @@ if [[ -z $vendor_drivers ]]; then
                 echo "cst8xx_touch.sh changed after the contact limit was raised" >&2
                 exit 1
             }
+            [[ $(sha256sum "$work/root/module_driver/keyboard_adc_multifunc.sh" | awk '{print $1}') == "$key_hash_r1" ]] || {
+                echo "keyboard_adc_multifunc.sh changed after the key poll interval was set" >&2
+                exit 1
+            }
             ;;
         r3proii) open_touch_module verify "$work/root" "$work/xImage" ;;
     esac
@@ -1321,8 +1353,8 @@ install -D -m 0644 "$usb_overlay_asset" "$usb_overlay_dest"
 }
 
 # A base built by scripts/base_image/build_r1_base_v2.py records every driver and firmware file it
-# carries. Check that the weekly repack changed none of them except the two edits the record lists,
-# and write the final hashes of those two next to the base ones.
+# carries. Check that the weekly repack changed none of them except the edits the record lists,
+# and write the final hashes of those next to the base ones.
 base_provenance="$work/root/usr/share/compas/vendor-driver-provenance.json"
 if [[ -z $vendor_drivers && $board == r1 && -f $base_provenance && ! -L $base_provenance ]]; then
     python3 - "$work/root" "$work/xImage" "$base_provenance" <<'PY'
@@ -1351,7 +1383,8 @@ for rel in ("module_driver", "lib/firmware"):
             elif path.is_file():
                 actual[key] = {"sha256": digest(path), "size": path.stat().st_size}
 recorded = {k: {f: v for f, v in e.items() if f != "origin"} for k, e in record["installed_files"].items()}
-allowed = set(record.get("weekly_repack_edits", {}))
+# Bases built before the key poll edit do not list it; the repack makes it itself.
+allowed = set(record.get("weekly_repack_edits", {})) | {"/module_driver/keyboard_adc_multifunc.sh"}
 changed = {k for k in set(actual) | set(recorded) if actual.get(k) != recorded.get(k)}
 if changed - allowed:
     raise SystemExit("Driver or firmware files differ from the base provenance record: " + ", ".join(sorted(changed - allowed)))

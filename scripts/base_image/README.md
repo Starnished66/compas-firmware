@@ -156,7 +156,7 @@ and undefined symbols against `System.map` and the other shipped modules. The ba
 the complete module set. The fixes: cw2015 (a displayed capacity cannot rise off the charger; the charger state is read
 before the capacity), soc_aic (no enable-count underflow, count reset at controller init, a start or stop is dropped
 when the stream is already started or stopped) and lcd_lg35583 (halt and power-off notifier, 300 ms hold-off before a
-power-on, vccio 50 ms and vcc 5 ms power-on delays, display-off and sleep-in on power-off for the ST7701S, vcc off
+power-on, vccio and vcc 5 ms power-on delays, display-off and sleep-in on power-off for the ST7701S, vcc off
 50 ms before vccio).
 
 Every input is pinned by SHA-256 in `firmware/r1_base_v2.json`: HiBy's 2.0 UPT, the staging base `r1.upt`
@@ -186,7 +186,7 @@ The Wi-Fi/Bluetooth drivers (`cywdhd.ko`, `soc_msc.ko`, `aic8800_*.ko`), their l
 `/lib/firmware` must be HiBy's bytes: the builder compares each against the 2.0 root and fails otherwise.
 
 The weekly `repack_upt.sh` checks the final image against that record and fails if a driver or firmware file other
-than the two it edits itself (`cst8xx_touch.sh`, `driver_default_init_script.sh`) differs.
+than the three it edits itself (`cst8xx_touch.sh`, `keyboard_adc_multifunc.sh`, `driver_default_init_script.sh`) differs.
 `repack_upt.sh --vendor-drivers HIBY_UPT --keep-kernel` is the older whole-tree path: it swaps in all vendor
 modules (dropping the Compás rebuilds) but leaves the base's kernel; the approved UPTs are listed in
 `firmware/vendor_drivers.json`.
