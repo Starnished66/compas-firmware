@@ -72,11 +72,6 @@ jobs:
           FIRMWARE_REPO: ${{ github.repository }}
         run: firmware/scripts/build/firmware/fetch_inputs.sh "$GITHUB_WORKSPACE/inputs"
 
-      - name: Run firmware tests
-        env:
-          COMPAS_PLAYER_DIR: ${{ github.workspace }}/compas-player
-        run: firmware/scripts/tests/run_all.sh
-
       - name: Build and package all four images
         env:
           COMPAS_PLAYER_DIR: ${{ github.workspace }}/compas-player

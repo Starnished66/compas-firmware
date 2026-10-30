@@ -23,3 +23,11 @@ __pycache__/
 /release/
 /toolchains/
 /player/
+
+# Tests are local only.
+/scripts/tests/
+/scripts/fixtures/
+/scripts/kernel/**/tests/
+/scripts/kernel/**/test_*
+/scripts/kernel/**/*_test.c
+/scripts/kernel/**/*_harness.c

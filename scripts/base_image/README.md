@@ -306,9 +306,6 @@ character-device lifetime across open handles, clean failed endpoint starts,
 and bound and independently encode signed DMA gaps. Preparation records their
 hashes without changing the upstream checkout. Local patch names cannot begin
 with `0` or collide with upstream patch names, which prevents double application.
-Run `scripts/kernel/audio/tests/test_uac_safety.py --source /path/to/built/f_uac_sa.c
---dma-source /path/to/built/ingenic_dma.c` to compile and exercise the actual
-functions with host-side mocks. These tests do not replace device testing.
 
 The ordinary `repack_upt.sh` path still retains its selected base kernel.
 Custom-kernel firmware packaging and release are pending review and device

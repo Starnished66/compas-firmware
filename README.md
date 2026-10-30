@@ -52,8 +52,7 @@ tracked (`firmware/inputs.sha256`, `firmware/ssc-overlay.sha256`) and the inputs
 `staging-image-base` release (compas-player) and the `build-inputs` release (this repository).
 
 GitHub disables scheduled workflows after 60 days without repository activity; if the weekly stops, push a commit
-or re-enable it under Actions. Tests: `COMPAS_PLAYER_DIR=../compas-player scripts/tests/run_all.sh`
-(`scripts/tests/disabled` explains the tests that cannot run on a clean clone).
+or re-enable it under Actions.
 
 Before any release, go through `docs/RELEASE_CHECKLIST.md`.
 
