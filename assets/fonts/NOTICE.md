@@ -223,3 +223,32 @@ are present. It renames the derivative **Compas Arabic** to comply with the
 OFL reserved-name terms. The result uses static TrueType outlines supported
 by LVGL's `tiny_ttf` fallback renderer. Arabic shaping and bidirectional
 layout remain the responsibility of LVGL; this font only supplies glyphs.
+
+# chinese.ttf -- Noto Sans SC
+
+This subset is derived from **Noto Sans SC** by The Noto Project Authors
+(https://github.com/notofonts/noto-cjk), distributed under the SIL Open Font
+License 1.1. The unmodified source is the Google Fonts file
+`NotoSansSC[wght].ttf` in `ofl/notosanssc` at google/fonts commit
+`2894aab31764f10f29c421bdfd2340d3b382d384`; the source used here has SHA-256
+`a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da`. The full
+license text is in `Noto-Sans-SC-OFL.txt`.
+
+## Modifications made for this project
+
+`scripts/generators/fonts/generate_chinese_fallback_font` reproducibly instantiates the
+variable source at `wght=350` (matching the Noto Sans CJK DemiLight in
+`cjk_cyrillic.ttf`) and subsets it to the ideographs of GB2312, Big5 level 1
+(0xA440-0xC67E) and JIS X 0208, derived by decoding those legacy encodings,
+plus Bopomofo (U+3105-312F, U+31A0-31BB). It then subtracts every code point
+already mapped by `cjk_cyrillic.ttf`, which stays ahead of it in the fallback
+chain, to keep the file small. Hinting and the layout tables LVGL's `tiny_ttf`
+cannot use (GSUB, GPOS, GDEF, BASE, vhea, vmtx, STAT) are dropped. The script
+requires the pinned source SHA-256 and fails if any wanted code point is
+missing from the source. It renames the derivative **Compas Chinese** to comply
+with the OFL reserved-name terms. The result uses static TrueType outlines and
+is byte-reproducible.
+
+Together with `cjk_cyrillic.ttf` it covers common Simplified and Traditional
+Chinese text and the Japanese kokuji that JIS X 0208 adds, such as 雫, 凪 and
+辻.

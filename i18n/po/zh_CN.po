@@ -1,0 +1,3763 @@
+# Simplified Chinese translation for compas-player.
+#
+# Contributed by VangerXiao (compas-player issue #200): partly machine
+# translated, reviewed by a native speaker. Strings added since then were
+# translated by the maintainers.
+#
+# Kept in English as product or technical names: Wi-Fi, AirPlay, DLNA,
+# Subsonic, ReplayGain, DAC, USB, ADB, LDAC, aptX, AAC, SBC, PEQ, PIN, Hi-Res.
+msgid ""
+msgstr ""
+"Project-Id-Version: compas-player\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-17 10:56-0600\n"
+"Language: zh_CN\n"
+"X-Native-Name: 简体中文\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "File unavailable"
+msgstr "文件不可用"
+
+msgid "Unsupported audio format"
+msgstr "不支持的音频格式"
+
+msgid "Too many audio channels"
+msgstr "音频声道过多"
+
+msgid "Audio output failed"
+msgstr "音频输出失败"
+
+msgid "Audio could not be decoded"
+msgstr "音频无法解码"
+
+msgid "Playback error"
+msgstr "播放错误"
+
+msgid "No SD card is mounted."
+msgstr "未挂载 SD 卡。"
+
+msgid "The firmware path is too long."
+msgstr "固件路径过长。"
+
+#, c-format
+msgid "Use a regular %s file in the SD card root."
+msgstr "请使用 SD 卡根目录中的常规 %s 文件。"
+
+#, c-format
+msgid "Could not prepare update helper: %s"
+msgstr "无法准备更新助手：%s"
+
+#, c-format
+msgid "Could not start update helper: %s"
+msgstr "无法启动更新助手：%s"
+
+#, c-format
+msgid "Update helper failed (%s, status %d). See .compas/ota/update.log."
+msgstr "更新助手失败（%s，状态 %d）。请查看 .compas/ota/update.log。"
+
+#, c-format
+msgid "Cannot read update helper status: %s"
+msgstr "无法读取更新辅助状态：%s"
+
+msgid "Still working. Do not turn off the player or retry."
+msgstr "仍在处理中，请勿关闭播放器或重试。"
+
+msgid "Recovery flag partition does not match this firmware."
+msgstr "恢复标志分区与此固件不匹配。"
+
+msgid "Cannot safely access the recovery flag block."
+msgstr "无法安全访问恢复标志区。"
+
+msgid ""
+"Recovery flag erase failed. Do not reboot; check .compas/ota/update.log."
+msgstr "恢复标志擦除失败。请勿重启；请检查 .compas/ota/update.log。"
+
+msgid ""
+"Recovery flag write failed. Do not reboot; check .compas/ota/update.log."
+msgstr "恢复标志写入失败。请勿重启；请检查 .compas/ota/update.log。"
+
+msgid "Recovery flag verification failed. Do not reboot; check the update log."
+msgstr "恢复标志验证失败。请勿重启；请检查更新日志。"
+
+msgid "The selected update file changed. Select it again."
+msgstr "所选更新文件已改变，请重新选择。"
+
+msgid "Cannot read the selected update file."
+msgstr "无法读取所选更新文件。"
+
+msgid "Cannot create the update log directory."
+msgstr "无法创建更新日志目录。"
+
+msgid "Update diagnostics must be stored on the SD card."
+msgstr "更新诊断信息必须存储在 SD 卡上。"
+
+msgid "Cannot save update diagnostics on the SD card."
+msgstr "无法将更新诊断保存到 SD 卡。"
+
+msgid "The update file changed during verification. Select it again."
+msgstr "校验期间更新文件已改变，请重新选择。"
+
+msgid "Could not move other .upt files aside on the SD card."
+msgstr "无法将 SD 卡上的其他 .upt 文件移开。"
+
+msgid "A required recovery helper is missing. Update preparation stopped."
+msgstr "缺少必要的恢复辅助程序，更新准备已停止。"
+
+msgid "Cannot save update diagnostics. Update preparation stopped."
+msgstr "无法保存更新诊断，更新准备已停止。"
+
+msgid "Recovery boot flag failed."
+msgstr "恢复启动标志失败。"
+
+msgid ""
+"Recovery remains selected. Keep the update file; saving diagnostics failed."
+msgstr "恢复仍处于选中状态。请保留更新文件；诊断信息保存失败。"
+
+msgid ""
+"Saving data failed. Recovery remains selected; keep the update file and "
+"check .compas/ota/update.log."
+msgstr ""
+"保存数据失败。恢复模式仍被选中；请保留更新文件并检查 .compas/ota/update.log。"
+
+#, c-format
+msgid "Recovery remains selected but reboot failed: %s. Keep the update file."
+msgstr "恢复仍处于选中状态，但重启失败：%s。请保留更新文件。"
+
+msgid "An update is already in progress."
+msgstr "更新已在进行中。"
+
+#, c-format
+msgid "Charge to at least 30%% or connect power before updating."
+msgstr "更新前请将电量充至至少 30%% 或连接电源。"
+
+msgid "Invalid update path."
+msgstr "更新路径无效。"
+
+msgid "Could not start the update."
+msgstr "无法开始更新。"
+
+msgid "Update failed."
+msgstr "更新失败。"
+
+msgid "Could not prepare secure update storage."
+msgstr "无法准备安全更新存储空间。"
+
+msgid "Could not download the release checksums."
+msgstr "无法下载发行版校验和。"
+
+msgid "The release does not provide a valid player checksum."
+msgstr "该版本未提供有效的播放器校验和。"
+
+msgid "The release checksum does not match the published asset digest."
+msgstr "版本校验和与已发布的资源摘要不匹配。"
+
+msgid "The latest player release changed. Check again."
+msgstr "最新播放器版本已变更。请重新检查。"
+
+msgid "The player image exceeds the safe size limit."
+msgstr "播放器镜像超出安全大小限制。"
+
+msgid "Not enough internal storage for the player update."
+msgstr "内部存储空间不足，无法进行播放器更新。"
+
+msgid "The player download did not complete."
+msgstr "播放器下载未完成。"
+
+msgid "The downloaded player failed SHA-256 verification."
+msgstr "已下载的播放器未通过 SHA-256 校验。"
+
+msgid "Place a valid player executable at SD/.compas/compas_player."
+msgstr "请将有效的播放器可执行文件放置到 SD/.compas/compas_player。"
+
+msgid "Could not start the player update check."
+msgstr "无法启动播放器更新检查。"
+
+msgid "Another update is already active."
+msgstr "另一个更新已在进行中。"
+
+msgid "Check for a player update first."
+msgstr "请先检查播放器更新。"
+
+msgid "Not enough memory."
+msgstr "内存不足。"
+
+msgid "Could not start the player download."
+msgstr "无法启动播放器下载。"
+
+msgid "Could not start the SD player update."
+msgstr "无法启动 SD 卡播放器更新。"
+
+msgid "Screenshots unavailable"
+msgstr "截图不可用"
+
+msgid "Screenshot needs an SD card"
+msgstr "截图需要 SD 卡"
+
+msgid "Disconnect USB storage first"
+msgstr "请先断开 USB 存储"
+
+msgid "Screenshot failed (framebuffer)"
+msgstr "截图失败（帧缓冲）"
+
+msgid "Screenshot failed (worker)"
+msgstr "截图失败（工作线程）"
+
+msgid "Files"
+msgstr "文件"
+
+msgid "Artists"
+msgstr "艺术家"
+
+msgid "Albums"
+msgstr "专辑"
+
+msgid "Album Artist"
+msgstr "专辑艺术家"
+
+msgid "Genres"
+msgstr "流派"
+
+msgid "All Songs"
+msgstr "全部歌曲"
+
+msgid "Playlists"
+msgstr "播放列表"
+
+msgid "Sound"
+msgstr "声音"
+
+msgid "Playback"
+msgstr "播放"
+
+msgid "Library"
+msgstr "媒体库"
+
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+msgid "Bluetooth"
+msgstr "蓝牙"
+
+msgid "Sleep Timer"
+msgstr "定时关机"
+
+msgid "Crossfade"
+msgstr "淡入淡出"
+
+msgid "AirPlay"
+msgstr "AirPlay"
+
+msgid "DLNA"
+msgstr "DLNA"
+
+msgid "Gapless"
+msgstr "无缝播放"
+
+msgid "Remote Control"
+msgstr "遥控控制"
+
+msgid "Car Mode"
+msgstr "车载模式"
+
+msgid "Plugins"
+msgstr "插件"
+
+#, c-format
+msgid "Page %d of %d"
+msgstr "第 %d 页，共 %d 页"
+
+msgid "Go to page"
+msgstr "跳转到页"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Previous"
+msgstr "上一页"
+
+msgid "Next"
+msgstr "下一步"
+
+msgid "Folder too large to index (tap Back)"
+msgstr "文件夹过大，无法索引（点按返回）"
+
+msgid "Unable to read folder (tap Back and retry)"
+msgstr "无法读取文件夹（点击返回重试）"
+
+msgid "This folder is empty"
+msgstr "此文件夹为空"
+
+msgid "No playable files here"
+msgstr "此处无可播放文件"
+
+msgid "No playable audio files found"
+msgstr "未找到可播放的音频文件"
+
+msgid "Open a folder containing supported audio files."
+msgstr "打开包含受支持音频文件的文件夹。"
+
+msgid "Unexpected reply from GitHub."
+msgstr "GitHub 返回异常响应。"
+
+msgid "Insert an SD card to change emulators."
+msgstr "插入 SD 卡以更换模拟器。"
+
+msgid "Cannot create the emulator folder."
+msgstr "无法创建模拟器文件夹。"
+
+msgid "The emulator folder is not writable."
+msgstr "模拟器文件夹不可写。"
+
+msgid "Not enough free space on the player."
+msgstr "播放器可用空间不足。"
+
+msgid "Could not read the emulator list from GitHub."
+msgstr "无法从 GitHub 读取模拟器列表。"
+
+msgid "This emulator needs a newer player version."
+msgstr "此模拟器需要更新版本的播放器。"
+
+msgid "Disconnect USB storage from the host before changing emulators."
+msgstr "更改模拟器前请从主机断开 USB 存储。"
+
+msgid "Could not install the emulator."
+msgstr "无法安装模拟器。"
+
+msgid "The emulator download failed verification. Try again."
+msgstr "模拟器下载校验失败，请重试。"
+
+msgid "Could not start the emulator operation"
+msgstr "无法启动模拟器操作"
+
+msgid "Could not remove the emulator."
+msgstr "无法移除模拟器。"
+
+msgid "Unexpected reply from GitHub"
+msgstr "GitHub 返回异常响应"
+
+msgid "GitHub's latest release is not a supported firmware release."
+msgstr "GitHub 最新版本不是受支持的固件版本。"
+
+#, c-format
+msgid "GitHub's latest release has no valid %s image and checksum."
+msgstr "GitHub 最新版本缺少有效的 %s 镜像和校验和。"
+
+msgid "Secure connection failed. Check Wi-Fi and the date and time."
+msgstr "安全连接失败，请检查 Wi-Fi 和日期时间。"
+
+msgid "Cannot reach GitHub. Check the Wi-Fi connection."
+msgstr "无法连接 GitHub，请检查 Wi-Fi 连接。"
+
+msgid "GitHub did not respond in time. Try again."
+msgstr "GitHub 响应超时，请重试。"
+
+msgid "Could not read the release list from GitHub."
+msgstr "无法从 GitHub 读取发行版列表。"
+
+msgid "GitHub is limiting requests. Try again later."
+msgstr "GitHub 请求受限，请稍后重试。"
+
+#, c-format
+msgid "GitHub returned HTTP %d."
+msgstr "GitHub 返回 HTTP %d。"
+
+msgid "Cannot read the SD card."
+msgstr "无法读取 SD 卡。"
+
+msgid ""
+"A newer or changed release is available. Check for updates again before "
+"downloading."
+msgstr "有更新或变更的版本可用，下载前请重新检查更新。"
+
+msgid "Insert an SD card to download the update."
+msgstr "插入 SD 卡以下载更新。"
+
+msgid "The release has no checksum for this device's image."
+msgstr "该发行版没有此设备镜像的校验和。"
+
+msgid ""
+"This release's image does not match its checksums. Try again after the next "
+"weekly release."
+msgstr "此发行版的镜像与其校验和不匹配。请在下次每周发布后重试。"
+
+msgid "Not enough free space on the SD card for the update."
+msgstr "SD 卡可用空间不足以进行更新。"
+
+msgid "The download did not complete. Check Wi-Fi and try again."
+msgstr "下载未完成。请检查 Wi-Fi 后重试。"
+
+msgid "The downloaded image failed verification and was deleted."
+msgstr "下载的镜像校验失败，已被删除。"
+
+msgid "The SD card changed during the download."
+msgstr "下载期间 SD 卡发生了更换。"
+
+msgid "Could not record the verified update on the SD card."
+msgstr "无法在 SD 卡上记录已验证的更新。"
+
+msgid "Could not place the update on the SD card."
+msgstr "无法将更新放入 SD 卡。"
+
+msgid "Could not start the update check."
+msgstr "无法开始检查更新。"
+
+msgid "Could not start the download."
+msgstr "无法开始下载。"
+
+msgid "No verified update is on this SD card. Download it again."
+msgstr "此 SD 卡上没有已验证的更新。请重新下载。"
+
+msgid ""
+"Cannot read the update file on the SD card. Check the card and try again."
+msgstr "无法读取 SD 卡上的更新文件，请检查存储卡后重试。"
+
+msgid "The update file on the SD card changed. Download it again."
+msgstr "SD 卡上的更新文件已改变，请重新下载。"
+
+msgid ""
+"This update is no longer the latest release. Check for updates and download "
+"the latest image."
+msgstr "此更新已不再是最新发行版。请检查更新并下载最新镜像。"
+
+msgid "Could not verify the latest release checksums."
+msgstr "无法校验最新发行版的校验和。"
+
+msgid ""
+"This update no longer matches the latest release. Download the latest image "
+"again."
+msgstr "此更新与最新发行版不再匹配。请重新下载最新镜像。"
+
+msgid "Could not enter recovery mode."
+msgstr "无法进入恢复模式。"
+
+#, c-format
+msgid "Charge to at least %d%% or connect power before updating."
+msgstr "更新前请将电量充至至少 %d%% 或连接电源。"
+
+msgid "A firmware update is already in progress."
+msgstr "固件更新已在进行中。"
+
+msgid "Could not start the installation."
+msgstr "无法开始安装。"
+
+msgid "Disconnect USB storage from the host before changing plugins."
+msgstr "更改插件前请从主机断开 USB 存储。"
+
+msgid "Cannot check plugin storage write access."
+msgstr "无法检查插件存储写入权限。"
+
+msgid "The SD card is read-only. Check its write protection."
+msgstr "SD 卡为只读。请检查其写保护。"
+
+msgid "Plugin storage is unavailable."
+msgstr "插件存储不可用。"
+
+msgid "The SD card changed during the operation."
+msgstr "操作期间 SD 卡发生了更换。"
+
+msgid "Could not read the plugin list from GitHub."
+msgstr "无法从 GitHub 读取插件列表。"
+
+msgid "Insert an SD card to install plugins."
+msgstr "插入 SD 卡以安装插件。"
+
+msgid "Could not read installed plugins."
+msgstr "无法读取已安装的插件。"
+
+msgid "This plugin needs a newer player version."
+msgstr "此插件需要更新版本的播放器。"
+
+msgid "Too many plugins are installed. Remove one and try again."
+msgstr "已安装的插件过多。请移除一个后重试。"
+
+msgid "This plugin is already installed by the store."
+msgstr "此插件已由商店安装。"
+
+msgid "This plugin has no update available."
+msgstr "此插件没有可用更新。"
+
+msgid "Not enough free space on the SD card."
+msgstr "SD 卡可用空间不足。"
+
+msgid "The plugin download failed verification. Try again."
+msgstr "插件下载校验失败，请重试。"
+
+msgid "A local plugin file will be replaced. Confirm to continue."
+msgstr "将替换本地插件文件，确认后继续。"
+
+msgid "Could not install the plugin on the SD card."
+msgstr "无法在 SD 卡上安装该插件。"
+
+msgid "Insert an SD card to change plugins."
+msgstr "插入 SD 卡以更换插件。"
+
+msgid "Could not start the plugin operation."
+msgstr "无法启动插件操作。"
+
+msgid "Could not start the plugin refresh."
+msgstr "无法开始刷新插件。"
+
+msgid "Insert an SD card to remove plugins."
+msgstr "插入 SD 卡以移除插件。"
+
+msgid "This plugin is not installed by the store."
+msgstr "此插件不是由商店安装的。"
+
+msgid "Could not prepare plugin removal."
+msgstr "无法准备卸载插件。"
+
+msgid "Could not remove a plugin file."
+msgstr "无法删除插件文件。"
+
+msgid "Could not update the installed plugin record."
+msgstr "无法更新已安装插件的记录。"
+
+msgid "Insert an SD card to update plugins."
+msgstr "插入 SD 卡以更新插件。"
+
+msgid "A plugin download failed verification. Try again."
+msgstr "插件下载校验失败，请重试。"
+
+msgid "Could not install a plugin on the SD card."
+msgstr "无法在 SD 卡上安装插件。"
+
+msgid "Some updates need confirmation before replacing local files."
+msgstr "部分更新需确认后才能替换本地文件。"
+
+msgid "Could not start the plugin update."
+msgstr "无法开始更新插件。"
+
+msgid "Unexpected library response"
+msgstr "媒体库响应异常"
+
+msgid "On"
+msgstr "开启"
+
+msgid "Off"
+msgstr "关闭"
+
+msgid "Screenshot saved"
+msgstr "截图已保存"
+
+#, c-format
+msgid "Screenshot failed (%s)"
+msgstr "截图失败（%s）"
+
+msgid "unknown"
+msgstr "未知"
+
+msgid "Cannot play folder"
+msgstr "无法播放文件夹"
+
+msgid "Paused: headphones disconnected"
+msgstr "已暂停：耳机已断开"
+
+msgid "Queue checkpoint failed; storage may be read-only"
+msgstr "队列检查点失败；存储可能为只读"
+
+msgid "Playback history could not be saved"
+msgstr "无法保存播放历史"
+
+msgid "Subsonic"
+msgstr "Subsonic"
+
+msgid "Stream Media"
+msgstr "流媒体"
+
+msgid "Could not open this file."
+msgstr "无法打开此文件。"
+
+#, c-format
+msgid ""
+"[File truncated at %d KB -- showing the first part only]\n"
+"\n"
+"%s"
+msgstr ""
+"[文件已在 %d KB 处截断——仅显示第一部分]\n"
+"\n"
+"%s"
+
+msgid "Books refreshed"
+msgstr "电子书已刷新"
+
+msgid "Could not read the Books folder"
+msgstr "无法读取 Books 文件夹"
+
+msgid "Could not refresh books"
+msgstr "无法刷新图书"
+
+msgid "Favorites"
+msgstr "收藏"
+
+msgid "Books"
+msgstr "电子书"
+
+msgid "No favorites yet"
+msgstr "暂无收藏"
+
+msgid "No books found"
+msgstr "未找到书籍"
+
+msgid "Open a book and tap the bookmark icon to save it here."
+msgstr "打开一本书并点击书签图标即可保存到此处。"
+
+msgid "Add .txt files to the Books folder, then refresh the library."
+msgstr "将 .txt 文件放入 Books 文件夹，然后刷新媒体库。"
+
+msgid "Needs newer firmware"
+msgstr "需要更新的固件"
+
+#, c-format
+msgid "Update available · %s"
+msgstr "有可用更新 · %s"
+
+#, c-format
+msgid "Installed · %s"
+msgstr "已安装 · %s"
+
+#, c-format
+msgid "Available · %s"
+msgstr "可用 · %s"
+
+msgid "Install"
+msgstr "安装"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid ""
+"Bundled games and their saves will be removed. Games in SD/Games are kept."
+msgstr "内置游戏及其存档将被移除，SD/Games 中的游戏会保留。"
+
+msgid "No description"
+msgstr "无描述"
+
+#, c-format
+msgid "By %s"
+msgstr "由 %s"
+
+#, c-format
+msgid "License: %s"
+msgstr "许可证：%s"
+
+#, c-format
+msgid "Size: %s"
+msgstr "大小：%s"
+
+msgid ""
+"Updating replaces bundled games and their saves. Games in SD/Games are kept."
+msgstr "更新会替换内置游戏及其存档，SD/Games 中的游戏会保留。"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "No emulators are available in the catalog."
+msgstr "目录中没有可用的模拟器。"
+
+msgid "Refresh emulator catalog"
+msgstr "刷新模拟器目录"
+
+msgid "Updates"
+msgstr "更新"
+
+msgid "Installed"
+msgstr "已安装"
+
+msgid "Available"
+msgstr "可用"
+
+msgid "Installing emulator"
+msgstr "正在安装模拟器"
+
+msgid "Updating emulator"
+msgstr "正在更新模拟器"
+
+msgid "Removing emulator"
+msgstr "正在移除模拟器"
+
+msgid "This may take a while"
+msgstr "这可能需要一些时间"
+
+#, c-format
+msgid "Remove %s?"
+msgstr "移除 %s？"
+
+msgid "No network detected. Connect to a network to download emulators."
+msgstr "未检测到网络。请连接网络以下载模拟器。"
+
+msgid "Turn on Wi-Fi and connect first"
+msgstr "请先开启 Wi-Fi 并连接"
+
+msgid "Emulator operation failed"
+msgstr "模拟器操作失败"
+
+msgid "An emulator operation is already in progress"
+msgstr "模拟器操作已在进行中"
+
+msgid "Loading emulators"
+msgstr "正在加载模拟器"
+
+msgid "Download emulators"
+msgstr "下载模拟器"
+
+msgid "Games run on the player only."
+msgstr "游戏仅在播放器上运行。"
+
+msgid "Emulator store is busy."
+msgstr "模拟器商店正忙。"
+
+msgid "Check the SD card and disconnect USB storage before playing."
+msgstr "播放前请检查 SD 卡并断开 USB 存储。"
+
+msgid "Turn off DAC mode to play games."
+msgstr "请关闭 DAC 模式以玩游戏。"
+
+msgid "USB storage is busy."
+msgstr "USB 存储忙。"
+
+msgid "Audio is still active; cannot start the game."
+msgstr "音频仍在播放，无法启动游戏。"
+
+msgid "Could not start the game."
+msgstr "无法启动游戏。"
+
+msgid "The game closed unexpectedly."
+msgstr "游戏意外关闭。"
+
+#, c-format
+msgid "Copy games to the %s folder on the SD card."
+msgstr "将游戏复制到 SD 卡的 %s 文件夹。"
+
+msgid "No games found"
+msgstr "未找到游戏"
+
+msgid "Emulators"
+msgstr "模拟器"
+
+msgid "No emulators installed"
+msgstr "未安装模拟器"
+
+msgid "Download an emulator to play games."
+msgstr "下载模拟器以玩游戏。"
+
+msgid "Disconnect USB storage from the computer before changing files."
+msgstr "更改文件前请从电脑断开 USB 存储。"
+
+msgid "File Manager"
+msgstr "文件管理器"
+
+#, c-format
+msgid "%d selected"
+msgid_plural "%d selected"
+msgstr[0] "已选 %d 项"
+
+msgid "Could not open this file"
+msgstr "无法打开此文件"
+
+msgid "This type of file cannot be opened"
+msgstr "无法打开此类型文件"
+
+#, c-format
+msgid ""
+"%u of %u\n"
+"%s"
+msgstr ""
+"%u / %u\n"
+"%s"
+
+msgid "Stopped"
+msgstr "已停止"
+
+#, c-format
+msgid "%u item could not be completed"
+msgid_plural "%u items could not be completed"
+msgstr[0] "%u 个项目无法完成"
+
+msgid "Done. Update the music database to see the changes in your library."
+msgstr "完成。请更新音乐数据库以在媒体库中查看更改。"
+
+msgid "Done"
+msgstr "完成"
+
+msgid "Stopping..."
+msgstr "正在停止..."
+
+msgid "Working..."
+msgstr "处理中..."
+
+msgid "Stop"
+msgstr "停止"
+
+msgid "Another file operation is still running"
+msgstr "另一个文件操作仍在进行"
+
+msgid "Open the destination folder, then choose Paste here from the menu."
+msgstr "打开目标文件夹，然后从菜单中选择“粘贴到此处”。"
+
+#, c-format
+msgid "Move %d item?"
+msgid_plural "Move %d items?"
+msgstr[0] "移动 %d 项？"
+
+#, c-format
+msgid "Delete %d item?"
+msgid_plural "Delete %d items?"
+msgstr[0] "删除 %d 项？"
+
+msgid "Move"
+msgstr "移动"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid ""
+"This includes the player's own data (.compas or .plugins). Deleting or "
+"moving it can break features, lose data such as settings and installed "
+"plugins, and may require a restart."
+msgstr ""
+"其中包含播放器自身的数据（.compas 或 .plugins）。删除或移动它可能导致功能异"
+"常、丢失设置和已安装插件等数据，并且可能需要重启。"
+
+msgid "This cannot be undone."
+msgstr "此操作无法撤销。"
+
+msgid "That name cannot be used"
+msgstr "该名称不可用"
+
+msgid "Could not rename"
+msgstr "无法重命名"
+
+msgid "An item with that name already exists"
+msgstr "该名称的项目已存在"
+
+msgid "Rename"
+msgstr "重命名"
+
+msgid "Could not create the folder"
+msgstr "无法创建文件夹"
+
+msgid "Nothing to select here"
+msgstr "此处无可选项"
+
+msgid "New folder"
+msgstr "新建文件夹"
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "Select all"
+msgstr "全选"
+
+#, c-format
+msgid "Paste %d item here"
+msgid_plural "Paste %d items here"
+msgstr[0] "在此粘贴 %d 项"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Hide hidden files"
+msgstr "隐藏隐藏文件"
+
+msgid "Show hidden files"
+msgstr "显示隐藏文件"
+
+msgid "Playlist selection expired"
+msgstr "播放列表选择已过期"
+
+msgid "Playlist name is too long"
+msgstr "播放列表名称过长"
+
+msgid "Playlist created"
+msgstr "播放列表已创建"
+
+msgid "Failed to create playlist"
+msgstr "无法创建播放列表"
+
+msgid "Playlist Name"
+msgstr "播放列表名称"
+
+msgid "Song already added"
+msgstr "歌曲已添加"
+
+msgid "Added to playlist"
+msgstr "已加入播放列表"
+
+msgid "Failed to add to playlist"
+msgstr "无法添加到播放列表"
+
+msgid "Added folder to playlist"
+msgstr "已将文件夹加入播放列表"
+
+msgid "Failed to add folder to playlist"
+msgstr "无法将文件夹添加到播放列表"
+
+msgid "Folder is too large to add to queue"
+msgstr "文件夹过大，无法加入播放队列"
+
+msgid "Playback changed before folder was ready"
+msgstr "文件夹就绪前播放已改变"
+
+msgid "Cannot add folder within queue memory limit"
+msgstr "无法在队列内存限制内添加文件夹"
+
+msgid "Cannot play this folder"
+msgstr "无法播放此文件夹"
+
+msgid "Folder action is still running"
+msgstr "文件夹操作仍在进行"
+
+msgid "Cannot start folder action"
+msgstr "无法启动文件夹操作"
+
+msgid "Adding folder to queue"
+msgstr "正在将文件夹加入队列"
+
+msgid "Adding folder to playlist"
+msgstr "正在将文件夹加入播放列表"
+
+msgid "Preparing folder playback"
+msgstr "正在准备文件夹播放"
+
+msgid "Scanning playable files"
+msgstr "正在扫描可播放文件"
+
+msgid "File path is too long"
+msgstr "文件路径过长"
+
+msgid "Play All (Sequential)"
+msgstr "全部播放（顺序）"
+
+msgid "Play All (Shuffle)"
+msgstr "全部播放（随机）"
+
+msgid "Add to Queue"
+msgstr "加入播放队列"
+
+msgid "Add to Playlist"
+msgstr "加入播放列表"
+
+msgid "+ New Playlist"
+msgstr "+ 新建播放列表"
+
+msgid "Audio"
+msgstr "音频"
+
+msgid "Unknown artist"
+msgstr "未知艺术家"
+
+msgid "Unknown album"
+msgstr "未知专辑"
+
+msgid "Play All"
+msgstr "全部播放"
+
+#, c-format
+msgid "%lld track"
+msgid_plural "%lld tracks"
+msgstr[0] "%lld 首曲目"
+
+msgid "Recently Added"
+msgstr "最近添加"
+
+msgid "Playlist changed. Select a song again."
+msgstr "播放列表已更改。请重新选择歌曲。"
+
+msgid "Playlist is empty"
+msgstr "播放列表为空"
+
+msgid "Start sequentially"
+msgstr "顺序开始"
+
+msgid "Shuffle from a random song"
+msgstr "从随机歌曲开始随机播放"
+
+msgid "Edit"
+msgstr "编辑"
+
+#, c-format
+msgid "%d track"
+msgid_plural "%d tracks"
+msgstr[0] "%d 首曲目"
+
+msgid "Loading tracks…"
+msgstr "正在加载曲目…"
+
+msgid "Add songs from a song menu."
+msgstr "从歌曲菜单中添加歌曲。"
+
+msgid "No tracks found"
+msgstr "未找到曲目"
+
+msgid "Refresh the music database to update this list."
+msgstr "刷新音乐数据库以更新此列表。"
+
+#, c-format
+msgid "Previous  •  %d–%d of %d"
+msgstr "上一页  •  %d–%d，共 %d 项"
+
+#, c-format
+msgid "Disc %d"
+msgstr "光盘 %d"
+
+#, c-format
+msgid "Next  •  %d–%d of %d"
+msgstr "下一页  •  %d–%d，共 %d"
+
+msgid "Most Played"
+msgstr "最常播放"
+
+msgid "Library changed. Open the album again."
+msgstr "媒体库已变更，请重新打开专辑。"
+
+msgid "Cannot load album tracks"
+msgstr "无法加载专辑曲目"
+
+#, c-format
+msgid "%d song"
+msgid_plural "%d songs"
+msgstr[0] "%d 首歌曲"
+
+#, c-format
+msgid "%d album"
+msgid_plural "%d albums"
+msgstr[0] "%d 张专辑"
+
+#, c-format
+msgid "All %d song"
+msgid_plural "All %d songs"
+msgstr[0] "全部 %d 首歌曲"
+
+msgid "Recently Played"
+msgstr "最近播放"
+
+msgid "Cannot read playlist"
+msgstr "无法读取播放列表"
+
+msgid "Playlist changed. Try again."
+msgstr "播放列表已更改。请重试。"
+
+msgid "Cannot reorder playlist"
+msgstr "无法重新排序播放列表"
+
+msgid "Cannot remove entry"
+msgstr "无法移除该项目"
+
+msgid "Removed from playlist"
+msgstr "已从播放列表移除"
+
+msgid "Playlist unavailable or unreadable"
+msgstr "播放列表不可用或无法读取"
+
+msgid "Cannot delete playlist"
+msgstr "无法删除播放列表"
+
+msgid "Playlist deleted"
+msgstr "播放列表已删除"
+
+msgid "Cannot rename: invalid name or file exists"
+msgstr "无法重命名：名称无效或文件已存在"
+
+msgid "Playlist renamed"
+msgstr "播放列表已重命名"
+
+msgid "Rename Playlist"
+msgstr "重命名播放列表"
+
+msgid "Delete playlist?"
+msgstr "删除播放列表？"
+
+msgid "The playlist file will be deleted. Music files are kept."
+msgstr "播放列表文件将被删除，音乐文件会保留。"
+
+msgid "Delete Playlist"
+msgstr "删除播放列表"
+
+msgid "System playlists"
+msgstr "系统播放列表"
+
+msgid "Queue"
+msgstr "播放队列"
+
+msgid "User playlists"
+msgstr "用户播放列表"
+
+msgid "No user playlists"
+msgstr "无用户播放列表"
+
+msgid "Create a playlist above or copy one to the SD card's Playlists folder."
+msgstr "在上方创建播放列表，或将其复制到 SD 卡的 Playlists 文件夹。"
+
+msgid "SD card not available"
+msgstr "SD 卡不可用"
+
+msgid "Not enough memory to load CUE tracks"
+msgstr "内存不足，无法加载 CUE 曲目"
+
+#, c-format
+msgid "Track %d"
+msgstr "曲目 %d"
+
+msgid "Tracks"
+msgstr "曲目"
+
+msgid "Couldn't read this .cue file"
+msgstr "无法读取此 .cue 文件"
+
+msgid "Library recovered. Use Settings > Update Music Database to save"
+msgstr "媒体库已恢复。请使用 设置 > 更新音乐数据库 保存"
+
+msgid "No music database"
+msgstr "无音乐数据库"
+
+msgid "Build it now? Large libraries can take several minutes."
+msgstr "立即构建？大型媒体库可能需要数分钟。"
+
+msgid "Build"
+msgstr "编译版本"
+
+msgid "Music database unavailable"
+msgstr "音乐数据库不可用"
+
+msgid "It could not be loaded. Rebuild it now?"
+msgstr "无法加载。现在重建？"
+
+msgid "Rebuild"
+msgstr "重建"
+
+msgid "Update music database?"
+msgstr "更新音乐数据库？"
+
+msgid "Files on the card may have changed."
+msgstr "卡上的文件可能已更改。"
+
+msgid "Use Settings > Update Music Database"
+msgstr "请使用 设置 > 更新音乐数据库"
+
+msgid "Later"
+msgstr "稍后"
+
+msgid "No SD card"
+msgstr "无 SD 卡"
+
+msgid "Library loaded"
+msgstr "媒体库已加载"
+
+msgid ""
+"Refreshing\n"
+"all metadata..."
+msgstr ""
+"正在刷新\n"
+"所有元数据..."
+
+msgid ""
+"Refreshing\n"
+"metadata..."
+msgstr ""
+"正在刷新\n"
+"元数据..."
+
+msgid ""
+"Updating\n"
+"music database..."
+msgstr ""
+"正在更新\n"
+"音乐数据库..."
+
+msgid "Preparing metadata refresh..."
+msgstr "正在准备刷新元数据..."
+
+msgid "Preparing music library..."
+msgstr "正在准备媒体库..."
+
+msgid "Thread launch failed"
+msgstr "线程启动失败"
+
+msgid "No songs to refresh"
+msgstr "无歌曲可刷新"
+
+msgid "Library is busy"
+msgstr "媒体库忙"
+
+msgid "Album unavailable"
+msgstr "专辑不可用"
+
+msgid ""
+"Refreshing\n"
+"all covers..."
+msgstr ""
+"正在刷新\n"
+"所有封面..."
+
+msgid ""
+"Reloading\n"
+"cover..."
+msgstr ""
+"正在重新加载\n"
+"封面..."
+
+msgid "Preparing cover refresh..."
+msgstr "正在准备刷新封面..."
+
+msgid "Refresh all covers?"
+msgstr "刷新全部封面？"
+
+msgid "Removes saved covers and extracts them again. This may take a while."
+msgstr "删除已保存的封面并重新提取，可能需要一段时间。"
+
+msgid "Refresh"
+msgstr "刷新"
+
+msgid "Refresh all metadata?"
+msgstr "刷新全部元数据？"
+
+msgid "Reads the tags of every song again. This may take a while."
+msgstr "重新读取每首歌曲的标签。这可能需要一些时间。"
+
+msgid "Some covers could not be refreshed"
+msgstr "部分封面无法刷新"
+
+msgid "Could not reload cover"
+msgstr "无法重新加载封面"
+
+msgid "Covers refreshed"
+msgstr "封面已刷新"
+
+msgid "Cover reloaded"
+msgstr "封面已重新加载"
+
+#, c-format
+msgid ""
+"Refreshing covers\n"
+"%d of %d (%d%%)"
+msgstr ""
+"正在刷新封面\n"
+"第 %d / %d 个 (%d%%)"
+
+#, c-format
+msgid ""
+"Reloading cover\n"
+"%d of %d (%d%%)"
+msgstr ""
+"正在重新加载封面\n"
+"第 %d / %d 个 (%d%%)"
+
+msgid "Refreshing covers"
+msgstr "正在刷新封面"
+
+msgid "Reloading cover"
+msgstr "正在重新加载封面"
+
+msgid "Preparing metadata refresh"
+msgstr "正在准备刷新元数据"
+
+#, c-format
+msgid ""
+"Looking for music files\n"
+"%d items checked"
+msgstr ""
+"正在查找音乐文件\n"
+"已检查 %d 项"
+
+msgid "Looking for music files"
+msgstr "正在查找音乐文件"
+
+#, c-format
+msgid ""
+"Reading tags\n"
+"%d of %d songs (%d%%)"
+msgstr ""
+"正在读取标签\n"
+"第 %d / %d 首歌曲 (%d%%)"
+
+msgid "Saving music database"
+msgstr "正在保存音乐数据库"
+
+msgid ""
+"Saving music database\n"
+"This can take a while on large libraries"
+msgstr ""
+"正在保存音乐数据库\n"
+"媒体库较大时可能需要一些时间"
+
+msgid "Library unavailable. Use Settings > Update Music Database to rebuild"
+msgstr "媒体库不可用。请使用 设置 > 更新音乐数据库 重建"
+
+msgid "Library update failed. Check SD card and retry"
+msgstr "媒体库更新失败。请检查 SD 卡后重试"
+
+msgid "Some songs could not be read"
+msgstr "部分歌曲无法读取"
+
+msgid "Metadata refreshed"
+msgstr "元数据已刷新"
+
+msgid "Library recovered and saved, some folders could not be read"
+msgstr "媒体库已恢复并保存，部分文件夹无法读取"
+
+msgid "Library recovered and saved"
+msgstr "媒体库已恢复并保存"
+
+msgid "Library updated, some folders could not be read"
+msgstr "媒体库已更新，部分文件夹无法读取"
+
+msgid "Library updated"
+msgstr "媒体库已更新"
+
+msgid "Checking the SD card. This may take a while"
+msgstr "正在检查 SD 卡，可能需要一些时间"
+
+msgid "SD card repaired"
+msgstr "SD 卡已修复"
+
+msgid "SD card is still read-only"
+msgstr "SD 卡仍为只读"
+
+msgid "Could not repair the SD card"
+msgstr "无法修复 SD 卡"
+
+msgid "SD card may have errors. Check it on a computer"
+msgstr "SD 卡可能有错误，请在电脑上检查"
+
+msgid "SD card is read-only. Check it on a computer"
+msgstr "SD 卡为只读，请在电脑上检查"
+
+msgid "SD card repair is still running"
+msgstr "SD 卡修复仍在进行"
+
+msgid ""
+"Formatting\n"
+"SD Card..."
+msgstr ""
+"正在格式化\n"
+"SD 卡..."
+
+msgid "SD card formatted"
+msgstr "SD 卡已格式化"
+
+msgid "SD card format failed"
+msgstr "SD 卡格式化失败"
+
+msgid "SD card couldn't be read"
+msgstr "无法读取 SD 卡"
+
+msgid ""
+"It may have no partition table or a file system this player can't use. "
+"Formatting will erase it and set it up for this player."
+msgstr ""
+"它可能没有分区表，或文件系统不受本播放器支持。格式化会清空它并为本播放器做好"
+"准备。"
+
+msgid "Format SD Card"
+msgstr "格式化 SD 卡"
+
+msgid "Dismiss"
+msgstr "忽略"
+
+msgid "Erase and format SD card?"
+msgstr "擦除并格式化 SD 卡？"
+
+msgid "This permanently deletes everything on the card. This cannot be undone."
+msgstr "这将永久删除卡上的全部内容，且无法撤销。"
+
+msgid "Format"
+msgstr "格式化"
+
+msgid "Could not restart into the boot selector"
+msgstr "无法重启进入启动选择器"
+
+msgid "An update is in progress. Please wait."
+msgstr "正在更新，请稍候。"
+
+msgid "Tap Power off again to confirm"
+msgstr "再次点击关机以确认"
+
+msgid "Tap Restart again to confirm"
+msgstr "再次点击重启以确认"
+
+#, c-format
+msgid "Sleep timer: %d min remaining"
+msgstr "定时关机：剩余 %d 分钟"
+
+msgid "Sleep timer: Off"
+msgstr "定时关机：关闭"
+
+msgid "Music"
+msgstr "音乐"
+
+#, c-format
+msgid "Showing first %d of %d songs"
+msgstr "显示前 %d 首，共 %d 首"
+
+msgid "Play all shuffled"
+msgstr "随机播放全部"
+
+msgid "Play sequentially"
+msgstr "顺序播放"
+
+msgid "Add a random song to queue"
+msgstr "添加随机歌曲到队列"
+
+msgid "Refresh metadata"
+msgstr "刷新元数据"
+
+msgid "Add album to queue"
+msgstr "将专辑加入队列"
+
+msgid "Reload cover"
+msgstr "重新加载封面"
+
+msgid "Playlists refreshed"
+msgstr "播放列表已刷新"
+
+msgid "Some playlists could not be read"
+msgstr "部分播放列表无法读取"
+
+msgid "Sunday"
+msgstr "星期日"
+
+msgid "Monday"
+msgstr "星期一"
+
+msgid "Tuesday"
+msgstr "星期二"
+
+msgid "Wednesday"
+msgstr "星期三"
+
+msgid "Thursday"
+msgstr "星期四"
+
+msgid "Friday"
+msgstr "星期五"
+
+msgid "Saturday"
+msgstr "星期六"
+
+msgid "January"
+msgstr "一月"
+
+msgid "February"
+msgstr "二月"
+
+msgid "March"
+msgstr "三月"
+
+msgid "April"
+msgstr "四月"
+
+msgid "May"
+msgstr "五月"
+
+msgid "June"
+msgstr "六月"
+
+msgid "July"
+msgstr "七月"
+
+msgid "August"
+msgstr "八月"
+
+msgid "September"
+msgstr "九月"
+
+msgid "October"
+msgstr "十月"
+
+msgid "November"
+msgstr "十一月"
+
+msgid "December"
+msgstr "十二月"
+
+msgid "Could not load lock screen photo"
+msgstr "无法加载锁屏照片"
+
+msgid "Swipe up to unlock"
+msgstr "上滑解锁"
+
+msgid "No synchronized lyrics found"
+msgstr "未找到同步歌词"
+
+msgid "Medium"
+msgstr "中"
+
+msgid "Large"
+msgstr "大"
+
+msgid "Could not apply lyrics text size"
+msgstr "无法应用歌词字号"
+
+msgid "Lyrics Text Size"
+msgstr "歌词字号"
+
+msgid "Wi-Fi is busy"
+msgstr "Wi-Fi 忙"
+
+msgid "Connecting to"
+msgstr "正在连接到"
+
+msgid "Couldn't connect to Wi-Fi network"
+msgstr "无法连接 Wi-Fi 网络"
+
+msgid "Wi-Fi Password"
+msgstr "Wi-Fi 密码"
+
+msgid "Secured · Connected"
+msgstr "加密 · 已连接"
+
+msgid "Open · Connected"
+msgstr "已开放 · 已连接"
+
+msgid "Saved network"
+msgstr "已保存的网络"
+
+msgid "Secured network"
+msgstr "加密网络"
+
+msgid "Open network"
+msgstr "开放网络"
+
+msgid "Wi-Fi could not be enabled"
+msgstr "无法启用 Wi-Fi"
+
+msgid "Check the wireless switch and try again."
+msgstr "请检查无线开关后重试。"
+
+msgid "Turning Wi-Fi on"
+msgstr "正在开启 Wi-Fi"
+
+msgid "Nearby networks will appear when Wi-Fi is ready."
+msgstr "Wi-Fi 就绪后，附近的网络将显示在此处。"
+
+msgid "Searching for networks"
+msgstr "正在搜索网络"
+
+msgid "This can take a few seconds."
+msgstr "这可能需要几秒钟。"
+
+msgid "No networks found"
+msgstr "未找到网络"
+
+msgid "Try scanning again or add a hidden network."
+msgstr "请重新扫描或添加隐藏网络。"
+
+msgid "SSID must be 1 to 32 bytes"
+msgstr "SSID 必须为 1 到 32 字节"
+
+msgid "Wi-Fi is still starting"
+msgstr "Wi-Fi 仍在启动"
+
+msgid "Network Name (SSID)"
+msgstr "网络名称（SSID）"
+
+msgid "Connect"
+msgstr "连接"
+
+msgid "Forget"
+msgstr "忘记"
+
+msgid "Disconnect"
+msgstr "断开连接"
+
+msgid "Loading..."
+msgstr "正在加载..."
+
+msgid "Not connected"
+msgstr "未连接"
+
+msgid "Weak"
+msgstr "弱"
+
+msgid "Fair"
+msgstr "一般"
+
+msgid "Good"
+msgstr "良好"
+
+msgid "Excellent"
+msgstr "极佳"
+
+#, c-format
+msgid "SSID: %s"
+msgstr "SSID：%s"
+
+#, c-format
+msgid "IP Address: %s"
+msgstr "IP 地址：%s"
+
+#, c-format
+msgid "Gateway: %s"
+msgstr "网关：%s"
+
+#, c-format
+msgid "MAC Address: %s"
+msgstr "MAC 地址：%s"
+
+#, c-format
+msgid "Signal: %s"
+msgstr "信号：%s"
+
+msgid "Wi-Fi Info"
+msgstr "Wi-Fi 信息"
+
+msgid "Primary DNS"
+msgstr "主 DNS"
+
+msgid "Secondary DNS"
+msgstr "备用 DNS"
+
+msgid "Not set"
+msgstr "未设置"
+
+msgid "DNS Settings"
+msgstr "DNS 设置"
+
+msgid "Manual SSID Entry"
+msgstr "手动输入 SSID"
+
+msgid "Memorized Networks"
+msgstr "已保存的网络"
+
+msgid "No memorized networks"
+msgstr "无已保存网络"
+
+msgid "Networks you connect to will appear here."
+msgstr "已连接的网络将显示在此处。"
+
+msgid "Loading Wi-Fi settings"
+msgstr "正在加载 Wi-Fi 设置"
+
+msgid "Saved network details are being checked."
+msgstr "正在检查已保存的网络详情。"
+
+msgid "Connected"
+msgstr "已连接"
+
+msgid "Available Networks"
+msgstr "可用网络"
+
+msgid "Scanning for networks"
+msgstr "正在扫描网络"
+
+msgid "Nearby Wi-Fi networks will appear here."
+msgstr "附近的 Wi-Fi 网络将显示在此处。"
+
+msgid "No other networks found"
+msgstr "未找到其他网络"
+
+msgid "All visible networks are already saved."
+msgstr "所有可见网络均已保存。"
+
+msgid "Check that Wi-Fi is enabled, then rescan."
+msgstr "请确认 Wi-Fi 已开启，然后重新扫描。"
+
+msgid "Connecting"
+msgstr "连接中"
+
+msgid "Connection failed"
+msgstr "连接失败"
+
+msgid "Paired"
+msgstr "已配对"
+
+msgid ""
+"When on, this device stays visible and pairable to other Bluetooth devices, "
+"so a phone or computer can stream audio TO it and play through this device's "
+"own output -- using it as an external DAC."
+msgstr ""
+"开启后，此设备将持续可被发现并可与其他蓝牙设备配对，手机或电脑可向其串流音"
+"频，并通过本设备自身的输出播放——即作为外置 DAC 使用。"
+
+msgid "Enable Bluetooth DAC"
+msgstr "启用蓝牙 DAC"
+
+msgid "Bluetooth DAC"
+msgstr "蓝牙 DAC"
+
+msgid "Enable Bluetooth in settings to use BT DAC mode"
+msgstr "在设置中启用蓝牙以使用 BT DAC 模式"
+
+msgid "Leave Bluetooth DAC mode?"
+msgstr "退出蓝牙 DAC 模式？"
+
+msgid "Leave"
+msgstr "退出"
+
+msgid "Bluetooth DAC mode"
+msgstr "蓝牙 DAC 模式"
+
+msgid "This device is now receiving Bluetooth audio"
+msgstr "此设备正在接收蓝牙音频"
+
+msgid "Waiting for Bluetooth stream…"
+msgstr "正在等待蓝牙串流…"
+
+msgid "Auto"
+msgstr "自动"
+
+msgid "LDAC Quality"
+msgstr "LDAC 音质优先"
+
+msgid "LDAC Standard"
+msgstr "LDAC 标准"
+
+msgid "Could not save Bluetooth codec"
+msgstr "无法保存蓝牙编解码器"
+
+msgid "Turn Bluetooth off and on to apply"
+msgstr "关闭再开启蓝牙以生效"
+
+msgid "Automatic (44.1 kHz)"
+msgstr "自动（44.1 kHz）"
+
+msgid "Reading supported rates..."
+msgstr "正在读取支持的速率..."
+
+msgid "Connect a device to see its supported rates"
+msgstr "连接设备以查看支持的采样率"
+
+msgid "Still applying the previous choice"
+msgstr "仍在应用上一选择"
+
+msgid "Headset may disconnect, manual reconnection might be required"
+msgstr "耳机可能断开，可能需要手动重连"
+
+msgid "Sample Rate"
+msgstr "采样率"
+
+msgid "Bluetooth Volume Sync"
+msgstr "蓝牙音量同步"
+
+msgid "Codec"
+msgstr "编解码器"
+
+msgid "Speex Resampling"
+msgstr "Speex 重采样"
+
+msgid "Hide Unnamed Devices"
+msgstr "隐藏未命名设备"
+
+msgid "Advanced"
+msgstr "高级"
+
+msgid "Resume and Play"
+msgstr "继续并播放"
+
+msgid "Resume, but Paused"
+msgstr "继续但保持暂停"
+
+msgid "Applies next time you launch the app"
+msgstr "下次启动应用时生效"
+
+msgid "Resume Last Track"
+msgstr "继续上次曲目"
+
+msgid "Small"
+msgstr "小"
+
+msgid "Could not apply font size"
+msgstr "无法应用字体大小"
+
+msgid "Font Size"
+msgstr "字体大小"
+
+msgid "Per Track"
+msgstr "按曲目"
+
+msgid "Per Album"
+msgstr "按专辑"
+
+msgid "ReplayGain"
+msgstr "回放增益"
+
+msgid "Storage"
+msgstr "存储"
+
+msgid "USB DAC"
+msgstr "USB DAC"
+
+msgid "ADB"
+msgstr "ADB"
+
+msgid "Could not start USB mode switch"
+msgstr "无法启动 USB 模式切换"
+
+msgid "An update is already in progress"
+msgstr "更新已在进行中"
+
+msgid "USB mode"
+msgstr "USB 模式"
+
+#, c-format
+msgid "Failed to switch to %s"
+msgstr "无法切换到 %s"
+
+msgid "USB Mode"
+msgstr "USB 模式"
+
+msgid "Failed to update USB charging"
+msgstr "更新 USB 充电失败"
+
+msgid "USB charging setting is busy"
+msgstr "USB 充电设置忙"
+
+msgid "Could not start USB charging update"
+msgstr "无法启动 USB 充电更新"
+
+msgid "Leave USB DAC mode?"
+msgstr "退出 USB DAC 模式？"
+
+msgid "USB DAC mode"
+msgstr "USB DAC 模式"
+
+msgid "Waiting for USB audio…"
+msgstr "正在等待 USB 音频…"
+
+msgid "Unknown rate"
+msgstr "未知采样率"
+
+msgid "Unknown format"
+msgstr "未知格式"
+
+msgid "Unknown codec"
+msgstr "未知编码"
+
+msgid "This device is now a USB sound card"
+msgstr "此设备现为 USB 声卡"
+
+#, c-format
+msgid "USB input: %s · %u-bit"
+msgstr "USB 输入：%s · %u-bit"
+
+#, c-format
+msgid "DAC path: %s · %u-bit"
+msgstr "DAC 路径：%s · %u 位"
+
+msgid "Bluetooth is off"
+msgstr "蓝牙已关闭"
+
+msgid "Turn on Bluetooth to see paired and nearby devices."
+msgstr "开启蓝牙以查看已配对和附近的设备。"
+
+msgid "Paired Devices"
+msgstr "已配对设备"
+
+msgid "No paired devices"
+msgstr "无已配对设备"
+
+msgid "Previously connected accessories will appear here."
+msgstr "之前连接过的配件将显示在此处。"
+
+msgid "Available Devices"
+msgstr "可用设备"
+
+msgid "No nearby devices"
+msgstr "无附近设备"
+
+msgid "Make an accessory discoverable, then tap Rescan."
+msgstr "让配件进入可发现状态，然后点按“重新扫描”。"
+
+msgid "Connect to Wi-Fi first"
+msgstr "请先连接 Wi-Fi"
+
+msgid "Open this address on your phone or computer:"
+msgstr "在手机或电脑上打开此地址："
+
+msgid ""
+"Closing\n"
+"Web Server..."
+msgstr ""
+"正在关闭\n"
+"Web 服务器..."
+
+msgid "Import via Wi-Fi"
+msgstr "通过 Wi-Fi 导入"
+
+msgid "Enable WiFi to access"
+msgstr "启用 WiFi 以访问"
+
+msgid "Web Server is busy"
+msgstr "Web 服务器忙"
+
+msgid ""
+"When on, this device is visible to AirPlay senders on your Wi-Fi network -- "
+"stream audio from an iPhone, iPad, or Mac to be played through this device's "
+"own output."
+msgstr ""
+"开启后，此设备将可在 Wi-Fi 网络中被 AirPlay 发送端发现——可将 iPhone、iPad 或 "
+"Mac 的音频串流至此设备自身的输出播放。"
+
+msgid "Failed to enable AirPlay"
+msgstr "无法启用 AirPlay"
+
+msgid "AirPlay stopped unexpectedly"
+msgstr "AirPlay 意外停止"
+
+msgid "DLNA Renderer"
+msgstr "DLNA 渲染器"
+
+msgid ""
+"When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi "
+"network -- cast a track from one to play it here. Pause, mute, volume, and "
+"seek from the controller app aren't supported; use this device's own "
+"controls instead once a track starts."
+msgstr ""
+"开启后，此设备将可在 Wi-Fi 网络中被 DLNA/UPnP 控制端应用发现——可从控制端投放"
+"曲目在此播放。不支持从控制端暂停、静音、调节音量和跳转；曲目开始播放后请改用"
+"本设备自身的控制。"
+
+msgid "Service is busy"
+msgstr "服务繁忙"
+
+msgid "Unavailable"
+msgstr "不可用"
+
+msgid "Turn this on to see the address here."
+msgstr "开启后在此显示地址。"
+
+msgid "Bluetooth remote service is unavailable; retrying."
+msgstr "蓝牙遥控服务不可用，正在重试。"
+
+msgid "Bluetooth remote service is starting…"
+msgstr "蓝牙遥控服务正在启动…"
+
+msgid "Enable Wi-Fi or Bluetooth to connect."
+msgstr "启用 Wi-Fi 或蓝牙以连接。"
+
+msgid "Bluetooth: registration failed; retrying"
+msgstr "蓝牙：注册失败，正在重试"
+
+msgid "Bluetooth: waiting for service registration"
+msgstr "蓝牙：等待服务注册"
+
+msgid "Connect using either available route:"
+msgstr "使用任一可用方式连接："
+
+msgid "Bluetooth: Compas Remote Control"
+msgstr "蓝牙：Compas 遥控"
+
+msgid "Could not generate a new PIN"
+msgstr "无法生成新的 PIN"
+
+msgid "New PIN generated"
+msgstr "已生成新 PIN"
+
+msgid "Generate a new PIN?"
+msgstr "生成新的 PIN？"
+
+msgid ""
+"Apps and browsers using the current PIN will need the new one to reconnect."
+msgstr "使用当前 PIN 的应用和浏览器需用新 PIN 重新连接。"
+
+msgid "Generate"
+msgstr "生成"
+
+msgid "Connection PIN"
+msgstr "连接 PIN"
+
+msgid ""
+"Connect over Wi-Fi or Bluetooth to see what's playing, control playback, and "
+"browse your library. Enter this PIN when the app or browser asks for it; "
+"Bluetooth also requires pairing."
+msgstr ""
+"通过 Wi-Fi 或蓝牙连接，即可查看正在播放的内容、控制播放并浏览媒体库。当应用或"
+"浏览器提示时输入此 PIN；蓝牙还需配对。"
+
+msgid "Remote"
+msgstr "遥控"
+
+msgid "Import"
+msgstr "导入"
+
+msgid "Wireless"
+msgstr "无线"
+
+msgid "No track loaded"
+msgstr "未加载曲目"
+
+msgid "Song deleted"
+msgstr "歌曲已删除"
+
+#, c-format
+msgid ""
+"Delete %s?\n"
+"This cannot be undone."
+msgstr ""
+"删除 %s？\n"
+"此操作无法撤销。"
+
+msgid "Information"
+msgstr "信息"
+
+msgid "EQ"
+msgstr "EQ"
+
+msgid "Queue ready. Press Play to start."
+msgstr "队列已就绪。按播放开始。"
+
+#, c-format
+msgid "Added %d song to queue"
+msgid_plural "Added %d songs to queue"
+msgstr[0] "已添加 %d 首歌曲到队列"
+
+msgid "Removed from queue"
+msgstr "已从播放队列移除"
+
+msgid "Queue cleared"
+msgstr "队列已清空"
+
+msgid "Turn off Bluetooth DAC to play music on this device"
+msgstr "请关闭蓝牙 DAC 以在此设备上播放音乐"
+
+msgid "Exit USB DAC mode to play music on this device"
+msgstr "退出 USB DAC 模式以在本设备上播放音乐"
+
+msgid "Playback error: audio output failed"
+msgstr "播放错误：音频输出失败"
+
+#, c-format
+msgid "Playback stopped: %s"
+msgstr "播放已停止：%s"
+
+#, c-format
+msgid "Skipped: %s"
+msgstr "已跳过：%s"
+
+#, c-format
+msgid "%s · Not loaded: limit reached"
+msgstr "%s · 未加载：已达上限"
+
+#, c-format
+msgid "%s · Not loaded"
+msgstr "%s · 未加载"
+
+msgid "Refreshing plugins..."
+msgstr "正在刷新插件..."
+
+msgid "Couldn't save -- plugin change was not applied"
+msgstr "无法保存 -- 插件更改未生效"
+
+msgid "Plugin Store"
+msgstr "插件商店"
+
+msgid "Refresh Plugins"
+msgstr "刷新插件"
+
+msgid "Plugin Manager"
+msgstr "插件管理"
+
+msgid "Download layouts"
+msgstr "下载布局"
+
+msgid "Download themes"
+msgstr "下载主题"
+
+msgid "Extension updates"
+msgstr "扩展更新"
+
+msgid "Replace"
+msgstr "替换"
+
+msgid "Its settings stay on the card."
+msgstr "其设置保留在卡上。"
+
+msgid "Update individually"
+msgstr "逐个更新"
+
+msgid "Choose plugins"
+msgstr "选择插件"
+
+msgid "Update available"
+msgstr "有可用更新"
+
+msgid "Removed"
+msgstr "已移除"
+
+msgid "Installed manually"
+msgstr "手动安装"
+
+#, c-format
+msgid "Version %s · %s"
+msgstr "版本 %s · %s"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "No longer in the catalog"
+msgstr "已不在目录中"
+
+msgid "Already installed"
+msgstr "已安装"
+
+msgid "No plugins are available in the catalog."
+msgstr "目录中没有可用的插件。"
+
+msgid "A plugin operation is already in progress"
+msgstr "插件操作已在进行中"
+
+msgid "Updating plugins"
+msgstr "正在更新插件"
+
+msgid "No network detected. Connect to a network to download plugins."
+msgstr "未检测到网络。请连接网络以下载插件。"
+
+msgid "No updates available."
+msgstr "无可用更新。"
+
+msgid "Refresh plugin catalog"
+msgstr "刷新插件目录"
+
+msgid "Update All"
+msgstr "全部更新"
+
+msgid "Review updates"
+msgstr "查看更新"
+
+msgid "No layouts are available in the catalog."
+msgstr "目录中没有可用的布局。"
+
+msgid "No themes are available in the catalog."
+msgstr "目录中没有可用的主题。"
+
+msgid "Could not start the plugin operation"
+msgstr "无法启动插件操作"
+
+msgid "Installing plugin"
+msgstr "正在安装插件"
+
+msgid "Removing plugin"
+msgstr "正在移除插件"
+
+msgid "Update these plugins individually"
+msgstr "逐个更新这些插件"
+
+msgid "Not enough memory to load the plugin store"
+msgstr "内存不足，无法加载插件商店"
+
+msgid "Could not start the plugin refresh"
+msgstr "无法开始刷新插件"
+
+msgid "Loading layouts"
+msgstr "正在加载布局"
+
+msgid "Loading themes"
+msgstr "正在加载主题"
+
+msgid "Loading updates"
+msgstr "正在加载更新"
+
+msgid "Loading plugins"
+msgstr "正在加载插件"
+
+msgid "Could not load the plugin catalog."
+msgstr "无法加载插件目录。"
+
+msgid "Some plugin files were changed on the card. Replace them?"
+msgstr "卡上的部分插件文件已更改，是否替换？"
+
+msgid "Plugin operation failed"
+msgstr "插件操作失败"
+
+msgid "No entries to display"
+msgstr "无可显示条目"
+
+msgid "No plugin settings available"
+msgstr "无可用插件设置"
+
+msgid "Plugin"
+msgstr "插件"
+
+msgid "Plugin Settings"
+msgstr "插件设置"
+
+msgid "Select a file"
+msgstr "选择文件"
+
+msgid "Played"
+msgstr "已播放"
+
+msgid "Playing"
+msgstr "播放中"
+
+msgid "Queued"
+msgstr "已加入队列"
+
+msgid "Queue changed. Try again."
+msgstr "播放队列已更改。请重试。"
+
+msgid "Cannot move this entry"
+msgstr "无法移动此项目"
+
+msgid "Queue is empty"
+msgstr "播放队列为空"
+
+msgid "Play an album or playlist to see its songs here."
+msgstr "播放专辑或播放列表后，其歌曲将显示在此处。"
+
+msgid "Previous page"
+msgstr "上一页"
+
+msgid "Next page"
+msgstr "下一页"
+
+msgid "Cannot start queue"
+msgstr "无法启动队列"
+
+msgid "Saving playlist…"
+msgstr "正在保存播放列表…"
+
+msgid "Cannot save playlist"
+msgstr "无法保存播放列表"
+
+msgid "Save Queue as Playlist"
+msgstr "将播放队列保存为播放列表"
+
+msgid "Edit / Done"
+msgstr "编辑 / 完成"
+
+msgid "Clear Queue"
+msgstr "清空队列"
+
+msgid "Save as Playlist"
+msgstr "保存为播放列表"
+
+msgid "Playlist saved"
+msgstr "播放列表已保存"
+
+msgid "Cannot save: invalid or streaming entries"
+msgstr "无法保存：含无效或流媒体项目"
+
+msgid "Play Next"
+msgstr "下一首播放"
+
+msgid "Custom"
+msgstr "自定义"
+
+#, c-format
+msgid "%d min remaining"
+msgstr "剩余 %d 分钟"
+
+msgid "Crossfeed: Off"
+msgstr "交叉馈送：关闭"
+
+#, c-format
+msgid "Crossfeed: %d%%"
+msgstr "交叉馈送：%d%%"
+
+#, c-format
+msgid "%+.2f dB"
+msgstr "%+.2f dB"
+
+#, c-format
+msgid "%.0f Hz"
+msgstr "%.0f Hz"
+
+msgid "Pre-Amp (dB, -12 to 12)"
+msgstr "前置放大（dB，-12 至 12）"
+
+msgid "Crossfeed (0 to 100)"
+msgstr "交叉馈送（0 到 100）"
+
+msgid "Frequency (Hz, 20 to 20000)"
+msgstr "频率（Hz，20 到 20000）"
+
+msgid "Gain (dB, -12 to 12)"
+msgstr "增益（dB，-12 到 12）"
+
+msgid "OFF"
+msgstr "关"
+
+msgid "ON"
+msgstr "开"
+
+msgid "EQ curve"
+msgstr "EQ 曲线"
+
+#, c-format
+msgid "Band %d / %d"
+msgstr "频段 %d / %d"
+
+msgid ""
+"Wait for USB mode switching to finish and disconnect USB storage before "
+"updating."
+msgstr "请等待 USB 模式切换完成，并在更新前断开 USB 存储。"
+
+msgid "Preparing update"
+msgstr "正在准备更新"
+
+msgid "Checking the file on the SD card"
+msgstr "正在检查 SD 卡上的文件"
+
+msgid "Update & Reboot"
+msgstr "更新并重启"
+
+#, c-format
+msgid ""
+"Update using %s?\n"
+"Device will reboot into recovery mode."
+msgstr ""
+"使用 %s 更新？\n"
+"设备将重启进入恢复模式。"
+
+msgid ""
+"Install the player update from the SD card?\n"
+"\n"
+"Updates the player and restarts the device. Firmware, fonts, and artwork are "
+"unchanged."
+msgstr ""
+"要从 SD 卡安装播放器更新吗？\n"
+"\n"
+"将更新播放器并重启设备。固件、字体和封面均不会更改。"
+
+msgid "Could not start the player update"
+msgstr "无法启动播放器更新"
+
+msgid "Updating player"
+msgstr "正在更新播放器"
+
+msgid "Starting update"
+msgstr "正在开始更新"
+
+msgid "Connect to Wi-Fi before downloading the player update"
+msgstr "请先连接 Wi-Fi 再下载播放器更新"
+
+msgid "Starting download"
+msgstr "开始下载"
+
+msgid "Could not start the player update check"
+msgstr "无法启动播放器更新检查"
+
+msgid "Checking for player updates"
+msgstr "正在检查播放器更新"
+
+msgid "Check for online update"
+msgstr "检查在线更新"
+
+msgid "Install from SD card"
+msgstr "从 SD 卡安装"
+
+msgid ""
+"Update the Player only, retaining current drivers, kernel and bootloader."
+msgstr "仅更新播放器，保留当前驱动、内核和引导程序。"
+
+msgid "Download & Install"
+msgstr "下载并安装"
+
+msgid "Install & Restart"
+msgstr "安装并重启"
+
+msgid "Downloading player update"
+msgstr "正在下载播放器更新"
+
+msgid "Installing player update"
+msgstr "正在安装播放器更新"
+
+msgid "Checking the latest release"
+msgstr "正在检查最新版本"
+
+msgid "Replacing the player and preparing to restart"
+msgstr "正在替换播放器并准备重启"
+
+#, c-format
+msgid ""
+"Available player release: %s.\n"
+"Installed: %s\n"
+"\n"
+"Download and install? This updates the player and restarts the device. "
+"Firmware, fonts, and artwork are unchanged."
+msgstr ""
+"可用播放器版本：%s。\n"
+"已安装：%s\n"
+"\n"
+"要下载并安装吗？此操作会更新播放器并重启设备。固件、字体和封面均不会更改。"
+
+msgid "Player updated successfully"
+msgstr "播放器更新成功"
+
+msgid "Player update failed"
+msgstr "播放器更新失败"
+
+#, c-format
+msgid ""
+"Firmware release %s is downloaded and verified.\n"
+"\n"
+"Install now? The device reboots into recovery to flash it. Do not turn it "
+"off until it restarts."
+msgstr ""
+"固件版本 %s 已下载并通过校验。\n"
+"\n"
+"立即安装？设备将重启进入恢复模式进行刷写。重启完成前请勿关机。"
+
+msgid ""
+"Cannot read the update record on the SD card. Check the card and try again."
+msgstr "无法读取 SD 卡上的更新记录，请检查存储卡后重试。"
+
+msgid ""
+"The previous download is incomplete or invalid. Remove the update file from "
+"the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr ""
+"上次下载不完整或无效。请从 SD 卡中移除更新文件，点击“从 SD 卡安装”，然后复制"
+"新文件并重试。"
+
+msgid "Checking for updates"
+msgstr "正在检查更新"
+
+msgid "Could not start the download"
+msgstr "无法开始下载"
+
+msgid "Downloading update"
+msgstr "正在下载更新"
+
+msgid ""
+"Update saved. Connect to Wi-Fi, then install from Firmware Update > Install "
+"from SD card."
+msgstr "更新已保存。请连接 Wi-Fi，然后从 固件更新 > 从 SD 卡安装。"
+
+msgid ""
+"Update the entire CompásOS. Flashing firmware contains Bootloader, Player, "
+"Kernel and Drivers."
+msgstr "更新整个 CompásOS。刷写固件包含引导程序、播放器、内核和驱动。"
+
+msgid "Download"
+msgstr "下载"
+
+msgid "Install & Reboot"
+msgstr "安装并重启"
+
+msgid "Preparing and verifying recovery mode"
+msgstr "正在准备并验证恢复模式"
+
+msgid "Saving data before reboot"
+msgstr "重启前正在保存数据"
+
+msgid "Restarting into recovery. Do not turn off the player."
+msgstr "正在重启进入恢复模式，请勿关闭播放器。"
+
+#, c-format
+msgid ""
+"Firmware release %s is available.\n"
+"Installed: %s\n"
+"\n"
+"Download it now? This may take a while."
+msgstr ""
+"有可用的固件版本 %s。\n"
+"已安装：%s\n"
+"\n"
+"立即下载？这可能需要一些时间。"
+
+#, c-format
+msgid ""
+"Installed version: %s\n"
+"Available release: %s\n"
+"\n"
+"Download and reinstall it anyway? This may take a while."
+msgstr ""
+"已安装版本：%s\n"
+"可用版本：%s\n"
+"\n"
+"仍要下载并重新安装？这可能需要一些时间。"
+
+msgid "Create a plugin"
+msgstr "创建插件"
+
+msgid "Create a theme"
+msgstr "创建主题"
+
+msgid "Creator guides"
+msgstr "创建者指南"
+
+msgid "Version"
+msgstr "版本"
+
+msgctxt "device info"
+msgid "Build"
+msgstr "构建版本"
+
+msgid "Device"
+msgstr "设备"
+
+msgid "Memory"
+msgstr "内存"
+
+msgid "Internal"
+msgstr "内部存储"
+
+msgid "SD card"
+msgstr "SD 卡"
+
+msgid "%s free of %s"
+msgstr "%s 可用，共 %s"
+
+msgid "Support Compás"
+msgstr "支持 Compás"
+
+msgid "Scan for the full guide"
+msgstr "扫码查看完整指南"
+
+msgid "github.com/Starnished66/compas-player"
+msgstr "github.com/Starnished66/compas-player"
+
+msgid "Guide: docs/development/CREATING.md"
+msgstr "指南：docs/development/CREATING.md"
+
+msgid ""
+"Write a Lua plugin on your computer. Copy its .lua file to the .plugins "
+"folder on your SD card."
+msgstr ""
+"在电脑上编写 Lua 插件，将其 .lua 文件复制到 SD 卡上的 .plugins 文件夹。"
+
+msgid ""
+"Open More > Plugins > Refresh Plugins. Scan for a working example and the "
+"full API guide."
+msgstr "打开 更多 > 插件 > 刷新插件，扫描后可查看示例与完整 API 指南。"
+
+msgid ""
+"Edit a .theme text file on your computer. Copy it to the Themes folder on "
+"your SD card, then select it in More > Themes."
+msgstr ""
+"在电脑上编辑 .theme 文本文件，将其复制到 SD 卡的 Themes 文件夹，然后在“更多” "
+"> “主题”中选择。"
+
+msgid ""
+"Scan for a starter theme and instructions. To redesign the player screen, "
+"see the XML layout guide linked there."
+msgstr ""
+"扫码获取入门主题和说明。要重新设计播放器界面，请查看其中的 XML 布局指南。"
+
+msgid "Compás Player"
+msgstr "Compás 播放器"
+
+msgid "Create plugins & themes"
+msgstr "创建插件和主题"
+
+msgid "Developer Options"
+msgstr "开发者选项"
+
+msgid "About"
+msgstr "关于"
+
+msgid "Screenshots (Power + Previous)"
+msgstr "截图（电源 + 上一曲）"
+
+msgid "Screenshots (Power + Vol Down)"
+msgstr "截图（电源 + 音量减）"
+
+msgid "Enable debug logging"
+msgstr "启用调试日志"
+
+msgid "Reboot to bootloader"
+msgstr "重启到引导程序"
+
+msgid "Custom color"
+msgstr "自定义颜色"
+
+msgid "From album art"
+msgstr "来自专辑封面"
+
+msgid "From album art (no cover, using custom)"
+msgstr "来自专辑封面（无封面，使用自定义）"
+
+msgid "Accent Color"
+msgstr "强调色"
+
+msgid "Accent Options"
+msgstr "强调色选项"
+
+msgid "Match album art"
+msgstr "匹配专辑封面"
+
+msgid "Takes its color from the cover of the playing track"
+msgstr "颜色取自正在播放曲目的封面"
+
+msgid "Tint startup image"
+msgstr "启动画面着色"
+
+msgid "Uses the accent color for the default splash."
+msgstr "默认启动画面使用强调色。"
+
+msgid "Tint title bar icons"
+msgstr "标题栏图标着色"
+
+msgid "Uses the accent color for the icons next to screen titles."
+msgstr "屏幕标题旁的图标使用强调色。"
+
+msgid "Presets"
+msgstr "预设"
+
+msgid "Default (Built-in)"
+msgstr "默认（内置）"
+
+msgid "No .ttf fonts found in /Fonts"
+msgstr "/Fonts 中未找到 .ttf 字体"
+
+msgid "Font selection is no longer available"
+msgstr "字体选择已不可用"
+
+msgid "Failed to load font. Check format & memory."
+msgstr "无法加载字体。请检查格式和内存。"
+
+msgid "Font"
+msgstr "字体"
+
+msgid "Preview"
+msgstr "预览"
+
+msgid "The quick brown fox jumps 123"
+msgstr "华夏风韵 洛水天依 123"
+
+msgid "Custom fonts affect Latin text only."
+msgstr "自定义字体仅影响拉丁文本。"
+
+msgid "Place .ttf fonts in SD /Fonts folder."
+msgstr "将 .ttf 字体放入 SD 的 /Fonts 文件夹。"
+
+msgid "Screen Timeout"
+msgstr "屏幕超时"
+
+msgid "Turn off screen automatically"
+msgstr "自动关闭屏幕"
+
+msgid "Screen Dimming"
+msgstr "屏幕变暗"
+
+msgid "Dim screen before timeout"
+msgstr "超时前调暗屏幕"
+
+msgid "Startup Volume"
+msgstr "开机音量"
+
+msgid "Launch at a fixed volume"
+msgstr "以固定音量启动"
+
+msgid "Max Volume"
+msgstr "最大音量"
+
+msgid ""
+"Limits the player volume, including buttons, remote controls and plugins."
+msgstr "限制播放器音量，包括按键、遥控和插件。"
+
+msgid "Car Mode is disabled."
+msgstr "车载模式已禁用。"
+
+msgid "Car Mode Volume"
+msgstr "车载模式音量"
+
+msgid "Auto-resume"
+msgstr "自动续播"
+
+msgid "Resume playback when external power turns the player on."
+msgstr "外部电源开机时继续播放。"
+
+msgid "Gain"
+msgstr "增益"
+
+msgid ""
+"Low\n"
+"High"
+msgstr ""
+"低\n"
+"高"
+
+#, c-format
+msgid "%d min"
+msgstr "%d 分钟"
+
+#, c-format
+msgid "%d hr"
+msgstr "%d 小时"
+
+#, c-format
+msgid "%d hr %d min"
+msgstr "%d 小时 %d 分钟"
+
+#, c-format
+msgid "Time remaining: %d:%02d:%02d"
+msgstr "剩余时间：%d:%02d:%02d"
+
+#, c-format
+msgid "Time remaining: %d:%02d"
+msgstr "剩余时间：%d:%02d"
+
+msgid "Enable Sleep Timer"
+msgstr "启用定时关机"
+
+msgid "Show Time Remaining"
+msgstr "显示剩余时间"
+
+msgid "Idle Shutdown"
+msgstr "空闲关机"
+
+msgid "Automatically go idle"
+msgstr "自动待机"
+
+msgid "Choose what happens when idle:"
+msgstr "选择待机时的行为："
+
+msgid "Power Off"
+msgstr "关机"
+
+msgid "Suspend to RAM"
+msgstr "挂起到内存"
+
+msgid "Idle timeout:"
+msgstr "空闲超时："
+
+msgid "Africa"
+msgstr "非洲"
+
+msgid "America"
+msgstr "美洲"
+
+msgid "Antarctica"
+msgstr "南极洲"
+
+msgid "Arctic"
+msgstr "北极"
+
+msgid "Asia"
+msgstr "亚洲"
+
+msgid "Atlantic"
+msgstr "大西洋"
+
+msgid "Australia"
+msgstr "澳大利亚"
+
+msgid "Europe"
+msgstr "欧洲"
+
+msgid "Indian"
+msgstr "印度语"
+
+msgid "Pacific"
+msgstr "太平洋"
+
+msgid "Not selected (UTC)"
+msgstr "未选择 (UTC)"
+
+msgid "Failed to apply time zone"
+msgstr "无法应用时区"
+
+#, c-format
+msgid "%s (current)"
+msgstr "%s（当前）"
+
+msgid "Time Zone"
+msgstr "时区"
+
+msgid "Sound Effects"
+msgstr "音效"
+
+msgid "Download Profiles"
+msgstr "下载配置文件"
+
+msgid "Buttons & Remote"
+msgstr "按键与遥控"
+
+msgid "Playback & Controls"
+msgstr "播放与控制"
+
+msgid "Equalizer"
+msgstr "均衡器"
+
+msgid "Crossfeed"
+msgstr "交叉馈送"
+
+msgid "Power"
+msgstr "电源"
+
+msgid "Play/Pause"
+msgstr "播放/暂停"
+
+msgid "Next Track"
+msgstr "下一曲"
+
+msgid "Previous Track"
+msgstr "上一曲"
+
+msgid "Clockwise"
+msgstr "顺时针"
+
+msgid "Counterclockwise"
+msgstr "逆时针"
+
+msgid "Volume Up"
+msgstr "音量加"
+
+msgid "Volume Down"
+msgstr "音量减"
+
+msgid "Button"
+msgstr "按键"
+
+msgid "Default (native behavior)"
+msgstr "默认（原生行为）"
+
+msgid "Seek Forward"
+msgstr "快进"
+
+msgid "Seek Backward"
+msgstr "快退"
+
+msgid "Toggle Screen"
+msgstr "切换屏幕"
+
+msgid "Power Menu"
+msgstr "电源菜单"
+
+msgid "Do Nothing"
+msgstr "不执行操作"
+
+msgid "Single press"
+msgstr "单击"
+
+msgid "Double press"
+msgstr "双击按下"
+
+msgid "Long press"
+msgstr "长按"
+
+msgid "Single"
+msgstr "单曲"
+
+msgid "Double"
+msgstr "双击"
+
+msgid "Long"
+msgstr "长"
+
+msgid "Default"
+msgstr "默认"
+
+msgid "Disabled"
+msgstr "已禁用"
+
+msgid "Reset All"
+msgstr "全部重置"
+
+msgid "Button Mapping"
+msgstr "按键映射"
+
+msgid "Keep a button assigned to Toggle Screen or Power Menu"
+msgstr "请保留一个按键用于“开关屏幕”或“电源菜单”"
+
+msgid "Reset all button mappings?"
+msgstr "重置所有按键映射？"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Volume Lock (Screen Off)"
+msgstr "音量锁定（息屏）"
+
+msgid "In-line Remote"
+msgstr "线控"
+
+msgid "Update Music Database to enable this album order"
+msgstr "更新音乐数据库以启用此专辑排序"
+
+msgid "Sorting"
+msgstr "排序"
+
+msgid "Files (folders stay first)"
+msgstr "文件（文件夹优先）"
+
+msgid "Name (A–Z)"
+msgstr "名称（A–Z）"
+
+msgid "Newest Modified"
+msgstr "最近修改"
+
+msgid "Release Year (oldest first)"
+msgstr "发行年份（最早优先）"
+
+msgid ""
+"Files use modification dates. Albums use the newest track added; missing "
+"release years sort last. Update Music Database once to read years from "
+"existing files."
+msgstr ""
+"文件按修改日期排序。专辑按最新添加的曲目排序，缺少发行年份的排在最后。请执行"
+"一次“更新音乐数据库”以读取现有文件中的年份。"
+
+msgid "Update Music Database"
+msgstr "更新音乐数据库"
+
+msgid "Refresh All Metadata"
+msgstr "刷新全部元数据"
+
+msgid "Refresh All Covers"
+msgstr "刷新全部封面"
+
+msgid "Animation Speed"
+msgstr "动画速度"
+
+msgid "T9"
+msgstr "T9"
+
+msgid "QWERTY"
+msgstr "QWERTY"
+
+msgid "Keyboard"
+msgstr "键盘"
+
+msgid "Plugins can override these saved preferences."
+msgstr "插件可以覆盖这些已保存的偏好设置。"
+
+msgid "Quick Drawer"
+msgstr "快捷抽屉"
+
+msgid "Plugin Order"
+msgstr "插件顺序"
+
+msgid "Enabled"
+msgstr "已启用"
+
+msgid "Volume Slider"
+msgstr "音量滑块"
+
+msgid "Reorder Items"
+msgstr "重新排序项目"
+
+msgid "Volume"
+msgstr "音量"
+
+msgid "Clock"
+msgstr "时钟"
+
+msgid "Wired Headphones"
+msgstr "有线耳机"
+
+msgid "Bluetooth Audio (A2DP)"
+msgstr "蓝牙音频 (A2DP)"
+
+msgid "USB Audio"
+msgstr "USB 音频"
+
+msgid "Playback Status"
+msgstr "播放状态"
+
+msgid "Bluetooth Codec"
+msgstr "蓝牙编解码器"
+
+msgid "Battery Icon"
+msgstr "电池图标"
+
+msgid "Left"
+msgstr "左"
+
+msgid "Center"
+msgstr "居中"
+
+msgid "Right"
+msgstr "右"
+
+msgid "Clock Position"
+msgstr "时钟位置"
+
+msgid "Battery Percentage"
+msgstr "电池百分比"
+
+msgid "Top Bar"
+msgstr "顶栏"
+
+msgid "Artist Images"
+msgstr "艺术家图片"
+
+msgid "Themes"
+msgstr "主题"
+
+msgid "Appearance"
+msgstr "外观"
+
+msgid "Applying layout, this may take a while"
+msgstr "正在应用布局，请稍候"
+
+msgid "Layout"
+msgstr "布局"
+
+msgid "Lyrics"
+msgstr "歌词"
+
+msgid "Hide Player/Lyrics Top Bar"
+msgstr "隐藏播放/歌词顶栏"
+
+msgid "Player Layout"
+msgstr "播放器布局"
+
+msgid "Swipe Up for Home"
+msgstr "上滑返回主屏幕"
+
+msgid "Upside Down Screen"
+msgstr "倒置屏幕"
+
+msgid "Gestures & Orientation"
+msgstr "手势与方向"
+
+msgid "Display"
+msgstr "显示"
+
+msgid "Charge Limit (85%)"
+msgstr "充电上限（85%）"
+
+msgid "Safe Charging (500mA)"
+msgstr "安全充电（500mA）"
+
+msgid "LED charge indicator"
+msgstr "LED 充电指示灯"
+
+msgid ""
+"Disable charging\n"
+"in USB DAC mode"
+msgstr ""
+"在 USB DAC 模式下\n"
+"禁用充电"
+
+msgid "Charging"
+msgstr "充电"
+
+msgid "Additional Tools"
+msgstr "其他工具"
+
+msgid "Turn off Automatic to set the clock"
+msgstr "关闭自动以设置时钟"
+
+msgid "Automatic"
+msgstr "自动"
+
+msgid "Set Time"
+msgstr "设置时间"
+
+msgid "24-Hour Clock"
+msgstr "24 小时制"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Hostname"
+msgstr "主机名"
+
+msgid "Factory Reset"
+msgstr "恢复出厂设置"
+
+msgid "Maintenance"
+msgstr "维护"
+
+msgid "Firmware Update"
+msgstr "固件更新"
+
+msgid "Player Update"
+msgstr "播放器更新"
+
+msgid "Plugins & Layouts"
+msgstr "插件与布局"
+
+msgid "Applying language, this may take a while"
+msgstr "正在应用语言，请稍候"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "System"
+msgstr "系统"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid ""
+"Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from "
+"here."
+msgstr "请先关闭 ADB（设置 > 系统 > USB 模式），然后在此启用 USB DAC。"
+
+msgid "Now Playing layouts"
+msgstr "正在播放布局"
+
+msgid "More"
+msgstr "更多"
+
+msgid "0 dB"
+msgstr "0 dB"
+
+msgid "Combined response (dB) · EQ off"
+msgstr "合成响应（dB）· EQ 关闭"
+
+msgid "Combined response (dB)"
+msgstr "合成响应（dB）"
+
+msgid "PEQ reset to defaults"
+msgstr "PEQ 已重置为默认值"
+
+msgid "Reset PEQ to defaults?"
+msgstr "将 PEQ 重置为默认值？"
+
+msgid "Reset all settings and reboot?"
+msgstr "重置所有设置并重启？"
+
+msgid "Restart now to apply the new hostname?"
+msgstr "立即重启以应用新主机名？"
+
+msgid "Restart Now"
+msgstr "立即重启"
+
+msgid "Hostname can only use letters, numbers, and hyphens"
+msgstr "主机名只能使用字母、数字和连字符"
+
+msgid "Invalid profile name"
+msgstr "配置名称无效"
+
+msgid "Failed to save profile"
+msgstr "无法保存配置文件"
+
+msgid "Profile saved"
+msgstr "配置已保存"
+
+msgid "Failed to load profile"
+msgstr "无法加载配置文件"
+
+msgid "Profile loaded"
+msgstr "配置已加载"
+
+msgid "Failed to delete profile"
+msgstr "无法删除配置文件"
+
+msgid "Profile deleted"
+msgstr "配置已删除"
+
+msgid "Failed to rename profile"
+msgstr "无法重命名配置文件"
+
+msgid "Profile renamed"
+msgstr "配置已重命名"
+
+msgid "Rename Profile"
+msgstr "重命名配置"
+
+msgid "Replace Profile"
+msgstr "替换配置"
+
+msgid "Profiles"
+msgstr "配置"
+
+msgid "No saved profiles"
+msgstr "无已保存配置"
+
+msgid "Download profiles"
+msgstr "下载配置文件"
+
+msgid "Delete this profile?"
+msgstr "删除此配置文件？"
+
+msgid "Save Profile As"
+msgstr "配置另存为"
+
+msgid "Profile Name"
+msgstr "配置名称"
+
+msgid "Save Profile"
+msgstr "保存配置"
+
+msgid "Save as a new profile, or replace one that already exists?"
+msgstr "保存为新配置，或替换已有配置？"
+
+msgid "Replace Existing"
+msgstr "替换现有"
+
+msgid "New Profile"
+msgstr "新建配置"
+
+msgid "Band options"
+msgstr "频段选项"
+
+msgid "Filter type"
+msgstr "筛选类型"
+
+msgid ""
+"Peaking\n"
+"Low Shelf\n"
+"High Shelf"
+msgstr ""
+"峰值\n"
+"低架\n"
+"高架"
+
+msgid "Enable band"
+msgstr "启用该频段"
+
+msgid "Crossfeed angle"
+msgstr "交叉馈送角度"
+
+msgid ""
+"No delay\n"
+"30°\n"
+"45°\n"
+"60°\n"
+"90°"
+msgstr ""
+"无延迟\n"
+"30°\n"
+"45°\n"
+"60°\n"
+"90°"
+
+msgid ""
+"Crossfeed blends a filtered signal from the opposite channel and works "
+"independently of PEQ. With No delay, identical left and right signals are "
+"affected very little."
+msgstr ""
+"交叉馈送会混入来自对侧声道的滤波信号，且独立于 PEQ 工作。选择“无延迟”时，左右"
+"完全相同的信号几乎不受影响。"
+
+msgid "PEQ"
+msgstr "PEQ"
+
+msgid "Frequency"
+msgstr "频率"
+
+msgid "Pre-Amp"
+msgstr "前置放大"
+
+msgid "Reset to defaults"
+msgstr "恢复默认值"
+
+msgid "48 kHz reference"
+msgstr "48 kHz 基准"
+
+msgid "Flat"
+msgstr "平铺"
+
+msgid "Please wait for the library scan to finish"
+msgstr "请等待媒体库扫描完成"
+
+msgid "Please wait for plugin installation to finish"
+msgstr "请等待插件安装完成"
+
+msgid "Connect to a Wi-Fi network before continuing."
+msgstr "请先连接 Wi-Fi 网络再继续。"
+
+msgid "Select at least one plugin to continue."
+msgstr "请至少选择一个插件以继续。"
+
+msgid "Could not start the library scan. Please try again."
+msgstr "无法开始扫描媒体库。请重试。"
+
+msgid "Plugin is unavailable in the catalog"
+msgstr "插件在目录中不可用"
+
+msgid "Insert an SD card to scan for music, or turn off Scan for music."
+msgstr "插入 SD 卡以扫描音乐，或关闭“扫描音乐”。"
+
+msgid "Choose a language"
+msgstr "选择语言"
+
+msgid "Could not load the plugin catalog. Tap More to retry."
+msgstr "无法加载插件目录。点按“更多”重试。"
+
+msgid "Loading plugin catalog..."
+msgstr "正在加载插件目录..."
+
+msgid "No network detected"
+msgstr "未检测到网络"
+
+msgid "Time zone"
+msgstr "时区"
+
+msgid "Quick setup"
+msgstr "快速设置"
+
+msgid "Skip for now"
+msgstr "暂时跳过"
+
+msgid "Your setup journey"
+msgstr "入门引导"
+
+msgid "Welcome to Compás"
+msgstr "欢迎使用 Compás"
+
+msgid "Get started"
+msgstr "开始使用"
+
+msgid "Quick Setup Complete"
+msgstr "快速设置完成"
+
+msgid "Continue"
+msgstr "继续"
+
+#, c-format
+msgid "Step %d of %d"
+msgstr "第 %d 步，共 %d 步"
+
+msgid "Your music"
+msgstr "你的音乐"
+
+msgid "Choose the language for your player."
+msgstr "选择播放器的语言。"
+
+msgid "Set your local time zone so the clock is right."
+msgstr "设置本地时区以确保时钟准确。"
+
+msgid "Connect to Wi-Fi for streaming, updates, and online services."
+msgstr "连接 Wi-Fi 以使用流媒体、更新和在线服务。"
+
+msgid "Start with these suggestions, or explore more plugins."
+msgstr "从这些推荐开始，或浏览更多插件。"
+
+msgid ""
+"Insert your SD card with music files. Compas Player can scan it and build "
+"your library."
+msgstr "插入含音乐文件的 SD 卡。Compas Player 可扫描并建立媒体库。"
+
+msgid "Choose time zone"
+msgstr "选择时区"
+
+msgid "Add hidden network"
+msgstr "添加隐藏网络"
+
+msgid "Rescan"
+msgstr "重新扫描"
+
+msgid "Connect to a network to download plugins."
+msgstr "连接网络以下载插件。"
+
+msgid "Connect to Wi-Fi"
+msgstr "连接 Wi-Fi"
+
+msgid "AutoEQ"
+msgstr "AutoEQ"
+
+msgid "Gain Mode"
+msgstr "增益模式"
+
+msgid "Scan for music"
+msgstr "扫描音乐"
+
+msgid "No SD card detected. You can scan later from Library settings."
+msgstr "未检测到 SD 卡。您可以稍后在媒体库设置中扫描。"
+
+msgid "You can select up to 32 plugins"
+msgstr "最多可选择 32 个插件"
+
+msgid "Plugin setup complete"
+msgstr "插件设置完成"
+
+msgid "Continue setup"
+msgstr "继续设置"
+
+#, c-format
+msgid "Retrying plugins %zu/%zu"
+msgstr "正在重试插件 %zu/%zu"
+
+#, c-format
+msgid "Downloading and installing plugins %zu/%zu"
+msgstr "正在下载并安装插件 %zu/%zu"
+
+msgid "Failed plugins:\n"
+msgstr "失败的插件：\n"
+
+msgid "Selected plugins are ready.\n"
+msgstr "所选插件已就绪。\n"
+
+msgid ""
+"Manage plugins later in Settings > System > Plugin Manager to search, "
+"update, or remove them."
+msgstr "之后可在 设置 > 系统 > 插件管理器 中搜索、更新或移除插件。"
+
+msgid "Plugin setup needs attention"
+msgstr "插件设置需要处理"
+
+msgid "Could not replace plugin files."
+msgstr "无法替换插件文件。"
+
+msgid "Could not start refreshing the plugin catalog."
+msgstr "无法开始刷新插件目录。"
+
+msgid "AM"
+msgstr "上午"
+
+msgid "USB audio device detected"
+msgstr "检测到 USB 音频设备"
+
+#, c-format
+msgid "%dm"
+msgstr "%dm"
+
+msgid "Wi-Fi failed to change state"
+msgstr "Wi-Fi 状态切换失败"
+
+msgid "Turn off Bluetooth to use Wi-Fi"
+msgstr "关闭蓝牙以使用 Wi-Fi"
+
+msgid "Turn off Wi-Fi to use Bluetooth"
+msgstr "关闭 Wi-Fi 以使用蓝牙"
+
+msgid "Failed to toggle Bluetooth"
+msgstr "无法切换蓝牙"
+
+msgid "Sleep"
+msgstr "睡眠"
+
+msgid "RC"
+msgstr "RC"
+
+msgid "PM"
+msgstr "下午"
+
+msgid "Downloading"
+msgstr "下载中"
+
+msgid "Not enough memory to start download"
+msgstr "内存不足，无法开始下载"
+
+msgid "Invalid download folder"
+msgstr "下载文件夹无效"
+
+msgid "Download failed"
+msgstr "下载失败"
+
+msgid "Original"
+msgstr "原始"
+
+msgid "Low"
+msgstr "低"
+
+msgid "High"
+msgstr "高"
+
+#, c-format
+msgid "Stream quality: %s"
+msgstr "流媒体音质：%s"
+
+msgid "Stream Quality"
+msgstr "流媒体音质"
+
+msgid "Applies to new streaming queues"
+msgstr "适用于新的流媒体队列"
+
+msgid "Low (96 kbps)"
+msgstr "低（96 kbps）"
+
+msgid "Medium (192 kbps)"
+msgstr "中（192 kbps）"
+
+msgid "High (320 kbps)"
+msgstr "高（320 kbps）"
+
+#, c-format
+msgid "Download folder: %s"
+msgstr "下载文件夹：%s"
+
+msgid "Download folder: SD root"
+msgstr "下载文件夹：SD 卡根目录"
+
+msgid "Invalid download folder name"
+msgstr "下载文件夹名称无效"
+
+msgid "Download subfolder"
+msgstr "下载子文件夹"
+
+msgid "Download Settings"
+msgstr "下载设置"
+
+msgid "Subfolder: SD root"
+msgstr "子文件夹：SD 根目录"
+
+msgid ""
+"Subfolder is relative to SD root (example: Music/Offline); empty uses SD root"
+msgstr "子文件夹相对于 SD 根目录（例如 Music/Offline）；留空则使用 SD 根目录"
+
+msgid "Folder layout for downloaded albums"
+msgstr "下载专辑的文件夹结构"
+
+msgid "Album Artist / Album"
+msgstr "专辑艺术家 / 专辑"
+
+msgid "Album Artist - Album"
+msgstr "专辑艺术家 - 专辑"
+
+msgid "Failed to load from server"
+msgstr "无法从服务器加载"
+
+msgid "Previous request still finishing"
+msgstr "上一个请求仍在完成中"
+
+msgid "Not enough memory to load from server"
+msgstr "内存不足，无法从服务器加载"
+
+msgid "Loading from server..."
+msgstr "正在从服务器加载..."
+
+msgid "Server request timed out after 30 seconds"
+msgstr "服务器请求 30 秒后超时"
+
+msgid "Not enough memory to load artists"
+msgstr "内存不足，无法加载艺术家"
+
+#, c-format
+msgid ""
+"Downloading\n"
+"%s..."
+msgstr ""
+"正在下载\n"
+"%s..."
+
+#, c-format
+msgid "Download \"%s\"?"
+msgstr "下载“%s”？"
+
+#, c-format
+msgid "Download every album from \"%s\"?"
+msgstr "下载“%s”的全部专辑？"
+
+msgid "Failed to load artists"
+msgstr "无法加载艺术家"
+
+msgid "Failed to connect to server"
+msgstr "无法连接到服务器"
+
+msgid "Connection timed out after 30 seconds"
+msgstr "连接在 30 秒后超时"
+
+#, c-format
+msgid "Failed to load artists: %s"
+msgstr "无法加载艺术家：%s"
+
+msgid "Not enough memory to connect"
+msgstr "内存不足，无法连接"
+
+msgid "Connecting to server..."
+msgstr "正在连接服务器..."
+
+msgid "Failed to start connection"
+msgstr "无法启动连接"
+
+msgid "No saved servers"
+msgstr "无已保存服务器"
+
+msgid "Go back and choose New Connection to add one."
+msgstr "请返回并选择“新建连接”来添加。"
+
+msgid "Saved Servers"
+msgstr "已保存的服务器"
+
+#, c-format
+msgid "Server URL (e.g. %s)"
+msgstr "服务器 URL（例如 %s）"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Password"
+msgstr "密码"
+
+#, c-format
+msgid "Server URL: %s"
+msgstr "服务器 URL：%s"
+
+msgid "Verify server certificate"
+msgstr "验证服务器证书"
+
+#, c-format
+msgid "Username: %s"
+msgstr "用户名：%s"
+
+msgid "Password: Set"
+msgstr "密码：已设置"
+
+msgid "Password: Not set"
+msgstr "密码：未设置"
+
+msgid "Connect & Browse"
+msgstr "连接并浏览"
+
+msgid "New Connection"
+msgstr "新建连接"
+
+msgid "Download settings"
+msgstr "下载设置"
+
+msgid "Songs"
+msgstr "歌曲"
+
+msgid "Could not apply theme"
+msgstr "无法应用主题"
+
+#, c-format
+msgid "%llu bytes"
+msgstr "%llu 字节"
+
+msgid "Container"
+msgstr "容器"
+
+msgid "Source"
+msgstr "来源"
+
+#, c-format
+msgid "Native DSD (DoP) / %.4g MHz"
+msgstr "原生 DSD (DoP) / %.4g MHz"
+
+msgid "Output"
+msgstr "输出"
+
+msgid "Mono (1 channel)"
+msgstr "单声道（1 声道）"
+
+msgid "Stereo (2 channels)"
+msgstr "立体声（2 声道）"
+
+#, c-format
+msgid "%u channels"
+msgstr "%u 声道"
+
+msgid "Channels"
+msgstr "声道"
+
+msgid "Bitrate"
+msgstr "比特率"
+
+msgid "Duration"
+msgstr "时长"
+
+msgid "File size"
+msgstr "文件大小"
+
+msgid "Track"
+msgstr "曲目"
+
+#, c-format
+msgid "Disc %d / Track %d"
+msgstr "光盘 %d / 曲目 %d"
+
+msgid "Position"
+msgstr "位置"
+
+#, c-format
+msgid "Applied %+.1f dB"
+msgstr "已应用 %+.1f dB"
+
+#, c-format
+msgid "Album %+.1f dB"
+msgstr "专辑 %+.1f dB"
+
+#, c-format
+msgid "Track %+.1f dB"
+msgstr "曲目 %+.1f dB"
+
+msgid "Provider"
+msgstr "提供商"
+
+#, c-format
+msgid "Radio / %s"
+msgstr "收音机 / %s"
+
+msgid "Radio"
+msgstr "收音机"
+
+msgid "Network stream"
+msgstr "网络串流"
+
+msgid "Location"
+msgstr "位置"
+
+msgid ""
+"Track details are not available yet. Keep playback open and check again."
+msgstr "曲目详情尚不可用。请保持播放页面打开后再查看。"
+
+msgid "No items"
+msgstr "无项目"
+
+msgid "Unable to load items"
+msgstr "无法加载项目"
+
+msgid "There are no entries in this view."
+msgstr "此视图中没有条目。"
+
+msgid "Your library is being loaded."
+msgstr "正在加载媒体库。"
+
+msgid "Leave this view and try again."
+msgstr "请离开此界面后重试。"
+
+msgid "Power off"
+msgstr "关机"
+
+msgid "Restart"
+msgstr "重启"
+
+msgid "Screen off"
+msgstr "息屏"
+
+msgid "Sleep timer"
+msgstr "定时关机"
+
+msgid "Power controls"
+msgstr "电源控制"
+
+msgid "Playback and device actions"
+msgstr "播放与设备操作"
+
+msgid "Not available in your subscription"
+msgstr "您的订阅中不可用"
+
+msgid "This track is unavailable"
+msgstr "此曲目不可用"
+
+msgid "This quality is unavailable for this track"
+msgstr "此曲目无法提供该音质"
+
+msgid "This track is copy-protected"
+msgstr "此曲目受版权保护"
+
+msgid "Could not reach the streaming service"
+msgstr "无法访问流媒体服务"
+
+msgid "Sign in to the streaming service again"
+msgstr "请重新登录流媒体服务"
+
+msgid "Could not get a stream link"
+msgstr "无法获取流链接"
+
+msgid "The streaming service did not answer"
+msgstr "流媒体服务无响应"
+
+msgid "The streaming plugin is not available"
+msgstr "流媒体插件不可用"
+
+msgid "TXT Reader"
+msgstr "TXT 阅读器"
+
+#: src/ui/settings/gui_settings.c
+msgid "Keep Lyrics Screen On"
+msgstr "歌词界面保持常亮"
+
+msgid "PCM"
+msgstr "PCM"
+
+msgid "Native DSD"
+msgstr "原生 DSD"
+
+msgid "DoP"
+msgstr "DoP"
+
+msgid ""
+"Native DSD and DoP bypass software volume and DSP. Use DoP only with a "
+"compatible DAC. Unavailable formats or rates use PCM."
+msgstr ""
+"原生 DSD 和 DoP 会绕过软件音量和 DSP。仅在兼容的 DAC 上使用 DoP。不支持的格式"
+"或采样率将使用 PCM。"
+
+msgid "USB DSD Output"
+msgstr "USB DSD 输出"
+
+msgid "Play"
+msgstr "播放"
+
+msgid "Shuffle"
+msgstr "随机播放"
+
+msgid "Mixed"
+msgstr "混合"
+
+msgid "Hi-Res"
+msgstr "Hi-Res"

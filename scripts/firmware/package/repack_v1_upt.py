@@ -47,7 +47,7 @@ FONT_FILES = (
     "montserrat_24.bin", "montserrat_26.bin", "montserrat_28.bin",
     "montserrat_30.bin", "montserrat_32.bin", "montserrat_34.bin",
     "montserrat_40.bin", "unscii_16.bin", "Montserrat-Medium.ttf",
-    "arabic.ttf", "cjk_cyrillic.ttf", "emoji.ttf",
+    "arabic.ttf", "chinese.ttf", "cjk_cyrillic.ttf", "emoji.ttf",
 )
 
 RUNTIME_FILES = (
