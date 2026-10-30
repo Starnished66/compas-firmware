@@ -3717,9 +3717,6 @@ msgstr "Нативный DSD и DoP обходят программную рег
 msgid "USB DSD Output"
 msgstr "Вывод DSD через USB"
 
-msgid "Allow remote settings changes"
-msgstr "Разрешить удалённое изменение настроек"
-
 msgid "%s changed from the remote"
 msgstr "%s изменено удалённо"
 
@@ -3728,9 +3725,6 @@ msgstr "Настройки изменены удалённо"
 
 msgid "Music scan started from the remote"
 msgstr "Сканирование музыки запущено удалённо"
-
-msgid "Remote settings changes turned off"
-msgstr "Удалённое изменение настроек выключено"
 
 msgid "Brightness"
 msgstr "Яркость"

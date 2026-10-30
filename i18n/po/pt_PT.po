@@ -3687,9 +3687,6 @@ msgstr "O DSD nativo e o DoP contornam o volume por software e o DSP. Use DoP ap
 msgid "USB DSD Output"
 msgstr "Saída DSD USB"
 
-msgid "Allow remote settings changes"
-msgstr "Permitir alterações remotas de definições"
-
 msgid "%s changed from the remote"
 msgstr "%s alterado remotamente"
 
@@ -3698,9 +3695,6 @@ msgstr "Definições alteradas remotamente"
 
 msgid "Music scan started from the remote"
 msgstr "Pesquisa de música iniciada remotamente"
-
-msgid "Remote settings changes turned off"
-msgstr "Alterações remotas de definições desativadas"
 
 msgid "Brightness"
 msgstr "Brilho"

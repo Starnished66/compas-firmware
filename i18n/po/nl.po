@@ -3684,9 +3684,6 @@ msgstr "Native DSD en DoP omzeilen softwarevolume en DSP. Gebruik DoP alleen met
 msgid "USB DSD Output"
 msgstr "USB DSD-uitvoer"
 
-msgid "Allow remote settings changes"
-msgstr "Wijzigingen van instellingen op afstand toestaan"
-
 msgid "%s changed from the remote"
 msgstr "%s gewijzigd op afstand"
 
@@ -3695,9 +3692,6 @@ msgstr "Instellingen gewijzigd op afstand"
 
 msgid "Music scan started from the remote"
 msgstr "Muziekscan gestart op afstand"
-
-msgid "Remote settings changes turned off"
-msgstr "Wijzigingen op afstand uitgeschakeld"
 
 msgid "Brightness"
 msgstr "Helderheid"

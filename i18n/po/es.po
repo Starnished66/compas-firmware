@@ -3761,9 +3761,6 @@ msgstr "DSD nativo y DoP omiten el volumen por software y el DSP. Usa DoP solo c
 msgid "USB DSD Output"
 msgstr "Salida DSD USB"
 
-msgid "Allow remote settings changes"
-msgstr "Permitir cambios de ajustes remotos"
-
 msgid "%s changed from the remote"
 msgstr "%s cambiado desde el mando remoto"
 
@@ -3772,9 +3769,6 @@ msgstr "Ajustes cambiados desde el mando remoto"
 
 msgid "Music scan started from the remote"
 msgstr "Análisis de música iniciado desde el mando remoto"
-
-msgid "Remote settings changes turned off"
-msgstr "Cambios de ajustes remotos desactivados"
 
 msgid "Brightness"
 msgstr "Brillo"

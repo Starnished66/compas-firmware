@@ -3686,9 +3686,6 @@ msgstr "Natiivi DSD ja DoP ohittavat ohjelmiston äänenvoimakkuuden ja DSP:n. K
 msgid "USB DSD Output"
 msgstr "USB DSD -lähtö"
 
-msgid "Allow remote settings changes"
-msgstr "Salli asetusten etämuutokset"
-
 msgid "%s changed from the remote"
 msgstr "%s muutettu etäohjauksesta"
 
@@ -3697,9 +3694,6 @@ msgstr "Asetuksia muutettu etäohjauksesta"
 
 msgid "Music scan started from the remote"
 msgstr "Musiikin haku käynnistetty etäohjauksesta"
-
-msgid "Remote settings changes turned off"
-msgstr "Asetusten etämuutokset poistettu käytöstä"
 
 msgid "Brightness"
 msgstr "Kirkkaus"

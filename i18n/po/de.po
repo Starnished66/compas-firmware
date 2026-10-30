@@ -3672,9 +3672,6 @@ msgstr "Natives DSD und DoP umgehen Softwarelautstärke und DSP. DoP nur mit ein
 msgid "USB DSD Output"
 msgstr "USB-DSD-Ausgabe"
 
-msgid "Allow remote settings changes"
-msgstr "Remote-Einstellungsänderungen erlauben"
-
 msgid "%s changed from the remote"
 msgstr "%s von der Fernbedienung geändert"
 
@@ -3683,9 +3680,6 @@ msgstr "Einstellungen von der Fernbedienung geändert"
 
 msgid "Music scan started from the remote"
 msgstr "Musik-Scan von der Fernbedienung gestartet"
-
-msgid "Remote settings changes turned off"
-msgstr "Remote-Einstellungsänderungen ausgeschaltet"
 
 msgid "Brightness"
 msgstr "Helligkeit"
