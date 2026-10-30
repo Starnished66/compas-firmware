@@ -19,6 +19,8 @@ set_target_properties(ssc_native PROPERTIES POSITION_INDEPENDENT_CODE ON)
 option(SSC_STATIC "Build and install libssc.a instead of libssc.so" OFF)
 if(SSC_STATIC)
     add_library(ssc STATIC ssc_encoder_wrapper.c $<TARGET_OBJECTS:ssc_native>)
+    # Same position-independent code as the shared build, so the daemon's SSC code is laid out as before.
+    set_target_properties(ssc PROPERTIES POSITION_INDEPENDENT_CODE ON)
     set(SSC_PC_LIBS "-l:libssc.a")
 else()
     add_library(ssc SHARED ssc_encoder_wrapper.c $<TARGET_OBJECTS:ssc_native>)

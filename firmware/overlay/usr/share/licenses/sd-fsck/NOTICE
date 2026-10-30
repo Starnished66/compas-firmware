@@ -25,5 +25,5 @@ ntfs-3g mount a volume read-only. It is not a full Windows chkdsk.
 
 Committed runtime hashes:
   39cd259a3347ee19e0b69ba1b71288472f3144896dc8fa0e73f3e7990fbdd332  fsck.fat
-  7606465ad12691687adcd179acfc6aef0463009a9670675acc3f84f0a1115cb0  fsck.exfat
-  9cf2e6c95741bc38a3af658244e6453a4d0010df6a1f0075d6b9429ffb599ed2  ntfsfix
+  e427e8ed1af9052e367166e73ee629a5a2a946c14930cf1b08968ca464f1537a  fsck.exfat
+  cef1a89eff5d8f8607b64a50d30c5f8dcd85cb00625241ee6ad5ace83ea0283f  ntfsfix

@@ -6,6 +6,7 @@ SHA-256 that is tracked in this repository (no secrets are involved).
 | Input | Used for | Source | Pin |
 | --- | --- | --- | --- |
 | `r1.upt`, `r3proii.upt`, `r3ii_2025.upt` | prepared base images (kernel, drivers, base system) | public `compas-player` release `staging-image-base` | `firmware/inputs.sha256` (equal to the release asset digests) |
+| `r1.upt` base on HiBy R1 2.0 | next R1 base: Compás kernel, 23 rebuilt modules, HiBy 2.0 vendor modules and AIC8800 support | built by `scripts/base_image/build_r1_base_v2.py` from the vendor UPT and the current staging base | `firmware/r1_base_v2.json` (HiBy 2.0 UPT `0fec88bb...`) |
 | `bluealsad` | Samsung SSC Bluetooth (BlueALSA 5.0.0 + `bluealsa-ssc.patch`, libssc linked statically) | release `build-inputs` of this repository, asset `bluealsad` | `firmware/ssc-overlay.sha256` |
 | `bluetoothd`, `obexd` | BlueZ 5.87 daemon with the repository patches (AVDTP endpoint rediscovery, AVRCP cover art) and the cover-art-only OBEX daemon | release `build-inputs` of this repository, assets `bluetoothd` and `obexd` | `firmware/ssc-overlay.sha256` |
 | `v1-stock.upt` | official TempoTec V1 1.2 firmware (kernel, recovery, stock rootfs) | release `build-inputs` of this repository, asset `v1-stock.upt` (a byte-identical mirror of the vendor download) | `firmware/inputs.sha256` (`9f929a92...`) |
@@ -13,14 +14,23 @@ SHA-256 that is tracked in this repository (no secrets are involved).
 
 `scripts/build/firmware/fetch_inputs.sh DEST` downloads and verifies all of them.
 
+The R1 base on HiBy 2.0 is not downloaded: build it with `scripts/base_image/build_r1_base_v2.py` (see
+`scripts/base_image/README.md`) from HiBy's public 2.0 firmware (`firmware/vendor_drivers.json` has the URL and
+SHA-256) and the staging base `r1.upt` pinned in `firmware/inputs.sha256`. Until the new base is published to
+`staging-image-base` and its hash replaces the R1 line there, `fetch_inputs.sh` still delivers the 1.8.b2-driver base.
+
 Exact assets of release `build-inputs` (tag `build-inputs`):
 
 | Asset name | SHA-256 | Size |
 | --- | --- | --- |
-| `bluealsad` | `d683e3389fbfb3e35351d3b44f9dafbbc4007136c1f2ee510702280415cc11c4` | 1 file, mode 0755 as installed |
+| `bluealsad` | `37d95a5821a27e5a9df42c45d19e97f7b496038022dfb5ef90f54349ac13beb4` | 1 file, mode 0755 as installed (clean, stripped rebuild) |
 | `bluetoothd` | `eb5de0da28f1b370768231259c917b9db60364f8a0b306fb0c8b919256a197aa` | stripped MIPS ELF, mode 0755 as installed |
 | `obexd` | `45b34a14f92290c513f9e6804cc38eb9c355fd00e0c30e25912e25fddfaa0b7f` | stripped MIPS ELF, mode 0755 as installed |
 | `v1-stock.upt` | `9f929a92319a05a81bbd16cbf0fb8a886a9bb2def192f5a6786b6ea7032fa05d` | 39,907,328 bytes |
+
+**Before merging:** the `build-inputs` release still holds the previous `bluealsad` (`d683e338...`, which carries the
+builder's home path). Re-upload the clean daemon above as asset `bluealsad` together with the commit that changes
+`firmware/ssc-overlay.sha256`, or `fetch_inputs.sh` and every weekly build will refuse it. This is not done yet.
 
 The staging bases predate SSC and AVRCP cover art; the three daemons are applied at repack time through
 `R1_RUNTIME_OVERLAY` / `R3_RUNTIME_OVERLAY` (a directory holding `usr/bin/bluealsad`,
@@ -53,6 +63,10 @@ Needs the Ingenic glibc 2.22 toolchain (see `scripts/base_image/README.md`). Run
 `SSC_STATIC=ON` for `build_base_bt_codecs.sh`, then `build_base_bluealsa.sh`; the resulting
 `stage/usr/bin/bluealsad` is the overlay. The published v1.3.0 daemon was built from BlueALSA
 `1935d6dcb8975f2d7a51aaafe61538d157224623` with `scripts/base_image/patches/bluealsa/bluealsa-ssc.patch`.
+Strip the daemon before using it (`mips-linux-gnu-strip stage/usr/bin/bluealsad` from the Ingenic toolchain): the
+build scripts configure through relative paths so no `__FILE__` string names the build machine, and stripping drops
+the static glibc's toolchain file symbols. Since 2026-10-29 the daemon is built this way; its instruction stream equals
+the earlier one's apart from address immediates.
 A rebuild is not guaranteed to be byte-identical; if you replace the daemon, update `firmware/ssc-overlay.sha256`
 (the only place the hash lives) and re-upload the `build-inputs` asset.
 
@@ -109,3 +123,20 @@ transport plus the BIP image-pull responder, no client or phonebook plugins).
 * V1: `repack_v1_upt.py` on the stock V1 image with the R1 image as resource/runtime source.
 * The released players were later exchanged and relabelled with the tools in
   `scripts/firmware/package/history/`. `build_all_upt.sh` produces the same result directly.
+
+## Image checks that depend on local files
+
+`scripts/build/firmware/validate_images.sh` runs `check_no_build_paths.py` on every HiBy-board image. Besides the
+generic rule (no `/home/<name>/` path, in file contents, entry names or absolute symlink targets, except the HiBy
+vendor files pinned by hash in `scripts/build/firmware/vendor_home_paths.txt`) it rejects the builder's own names.
+Those words are not tracked: put them, one per line, in `~/.config/compas/forbidden-words`,
+`<git dir>/info/forbidden-words` or the `COMPAS_FORBIDDEN_WORDS` environment variable (comma separated). Without such a
+list only the generic rule runs, so keep one on every machine that builds weekly images.
+
+TODO: the `/home/` rule is enforced for `r1` only. The r3proii, r3ii_2025 and V1 bases still carry HiBy vendor files
+with toolchain paths (`scripts/build/firmware/vendor_home_paths_pending.txt` lists them by hash); for those boards
+the findings are warnings. Pin the files or rebuild the bases, then drop `--warn-only` in `validate_images.sh`.
+The forbidden words always fail, on every board.
+
+The weekly image never carries `ota_v0/ota_compatibility.in` (HiBy 2.0 bases have it): the player's OTA validator
+rejects unknown records, and players already in the field cannot be changed. `check_ota_entries.py` enforces this.

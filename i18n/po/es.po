@@ -3403,6 +3403,12 @@ msgstr "%d min"
 msgid "Wi-Fi failed to change state"
 msgstr "El Wi-Fi no pudo cambiar de estado"
 
+msgid "Turn off Bluetooth to use Wi-Fi"
+msgstr "Apaga Bluetooth para usar el Wi-Fi"
+
+msgid "Turn off Wi-Fi to use Bluetooth"
+msgstr "Apaga el Wi-Fi para usar Bluetooth"
+
 msgid "Failed to toggle Bluetooth"
 msgstr "No se pudo cambiar Bluetooth"
 

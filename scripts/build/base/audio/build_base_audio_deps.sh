@@ -8,7 +8,11 @@ mkdir -p "$work/downloads" "$work/src" "$work/build" "$work/stage"
 work=$(cd -- "$work" && pwd)
 export CC="${cross}gcc" AR="${cross}ar" RANLIB="${cross}ranlib" STRIP="${cross}strip"
 export NM="${cross}nm" LD="${cross}ld" OBJDUMP="${cross}objdump"
-export CFLAGS='-Os -EL -mips32r2 -mabi=32 -mhard-float -mfp32'
+# The Ingenic GCC 5.2 has no -ffile-prefix-map/-fmacro-prefix-map, so __FILE__ keeps whatever source path
+# the compiler is given. Every configure below therefore runs through a relative path (the same approach
+# as build_base_bluez.sh) and -fdebug-prefix-map covers debug info; no absolute path of this workstation
+# reaches a binary.
+export CFLAGS="-Os -EL -mips32r2 -mabi=32 -mhard-float -mfp32 -fdebug-prefix-map=$work=."
 # The staged lib dir is on the link path so packages built later here can
 # link the ones built earlier (alsa-plugins needs -lasound and -lspeexdsp).
 export LDFLAGS="-EL -mips32r2 -mabi=32 -mhard-float -mfp32 -L$work/stage/usr/lib"
@@ -34,7 +38,7 @@ build_autoconf() {
     mkdir -p "$work/build/$package"
     (
         cd "$work/build/$package"
-        "$work/src/$package/configure" --host=mips-linux-gnu --prefix=/usr \
+        "$(realpath --relative-to=. "$work/src/$package")/configure" --host=mips-linux-gnu --prefix=/usr \
             --libdir=/usr/lib --sysconfdir=/etc --disable-static "$@"
         make -j"${JOBS:-4}"
         make DESTDIR="$work/stage" install

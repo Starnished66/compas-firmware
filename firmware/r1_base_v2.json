@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "board": "r1",
+  "description": "Comp\u00e1s R1 base on HiBy R1 v2.0: Comp\u00e1s kernel and 23 rebuilt modules, v2.0 vendor modules, scripts and firmware, Comp\u00e1s base-system layer. Built by scripts/base_image/build_r1_base_v2.py.",
+  "hiby_v2_upt": {
+    "version": "2.0",
+    "sha256": "0fec88bb3ad0baa55a703e4e2b1038560d4a526f0dd024d2ed037f1560ed09f9",
+    "md5": "c9577de224859fc76272ca340ed6eb82",
+    "source_url": "https://oss.hiby.com/HiBy%20R1/en-us/2.0/17918591029925z1p5n0e9d5j4r1m4n6.upt"
+  },
+  "staging_base_upt": {
+    "sha256": "cedb0b05699b14cf71206728379f1bff2d03436405f53b53c4bb703e2cc5a668",
+    "note": "current staging-image-base r1.upt; supplies the kernel, the 23 rebuilt modules and the base-system layer"
+  },
+  "kernel": {
+    "xImage_sha256": "2105616e27468bb869f7cb5da6e615204c1a2cf83a586f07dd036b5f88394efd",
+    "xImage_bytes": 3149888,
+    "config_sha256": "02f4645490ba261c903ea19057507eef36389a9b17e644825ba5f5122642c572",
+    "system_map_sha256": "3975b9395fdc5555bb70ce077eb60dd5a3b3dd8cf89fcf1b30c43922d78465ea",
+    "vmlinux_sha256": "9204d9f16f0265c7e83fbe7e6e81eb7502ee544f991f92397ee1ec81fa5cfed1",
+    "dtb_sha256": "8e99b1a2a0b18c18ba4bfd7240689c570a629e665147249ac2d2095974b33751",
+    "origin": "Comp\u00e1s build of the pinned hiby-custom-kernel source (firmware/kernel/upstream.json) with firmware/kernel/diagnostic-patches/compas-oops-code-alias.patch"
+  },
+  "compas_modules": {
+    "codec_cs43131.ko": "4a50e6091fd596146dce541a0b8808dcc65d5808cba069df439eb972ebe1d3cc",
+    "cst8xx_touch.ko": "0e8bd24c325be102d03e2dc222410057a70c0ad909b367f79c58457c149499b0",
+    "i2c_gpio_add.ko": "32bdba4667b540f1e4eae8e9fdd8065683a5bd89ab55cc08620cb2e9781e9959",
+    "keyboard_adc_multifunc.ko": "606ed3331a40f3b1f0d331a119526ab19844504cd4e7803f9bcb72e3e6fba9cc",
+    "keyboard_gpio_add.ko": "baf8e36da4d2dced17cb7cbbe05a00133b62586d822c4ab99e3ccf4243e7229a",
+    "leds_pwm_add.ko": "247bf74ab8d9e2ae8d31549d90b8872afa2cc9f44ce7eadcd929a53898eac297",
+    "pwm_backlight.ko": "3b3ae47cbebddf8d70c2e1071c7bdaa31a72f20cf491e273158f64aa96c58400",
+    "rmem_manager.ko": "eb48cc30a6b35ce2ab635f7a5ccfac5941d319eb3c0c4deef9def245015273be",
+    "sa_config_module.ko": "c4b28577ea71ff0cfa63f3091036e12f0e9dda606c30c9a5a173f8d90e3b5827",
+    "sa_earpods_adc.ko": "92aabb5e52da32852b3a5fae8ed5d8d73960618df8b59c7e8d939ce3e312992c",
+    "sa_hgl_dma.ko": "65c7ae1de1c9bc628c317396c09110933675bbc94adcdef9dbfff1bd3bab636e",
+    "sa_sound_switch.ko": "b0a1e5332adba5fd75a58fc8e21310502bd81bbd233b1ebc7f4e0ae4afa691c4",
+    "soc_adc.ko": "795fc2d6ae493b33110e6e1ddf8110e400e865e6a690a50744d5610a1d246157",
+    "soc_efuse.ko": "028da77a3174581c5dc37fb336026b328fa557d852abe427a980679463653f86",
+    "soc_fb.ko": "4fc601b994080843428cc5f3755631bf30781f85d2e3574a77056bf4e5803c41",
+    "soc_gpio.ko": "bb730fdfcd347eb7d3e79c3b2c3b854008da9e21fd474f2cce46a503edb67900",
+    "soc_utils.ko": "f5a2ee14c25084b52296da3ccf2dd4029540e1c8ab7bc4cd0903f90a8bac9936",
+    "tcs1421_add.ko": "941c237a31b568864766351270d4c10040a6a59a717be661e14294528e836254",
+    "utils.ko": "a69497eebbf5cdaa1539085f90ae7404125fdc4d53c60c3f9b54681d9fbf4b24",
+    "x1600_hiby_r1_sound_card.ko": "388117aa8f3b78989127f2064f7563ddfd1e293bb8d7d6ad1f7bbfa5e0af6952"
+  },
+  "module_build": {
+    "note": "cw2015, soc_aic and lcd_lg35583 are rebuilt from the reconstructed sources with the safety patch and the HiBy v2.0 fixes patch; scripts/kernel/modules/build/build_r1_v2_modules.py reproduces them",
+    "kernel_config_sha256": "02f4645490ba261c903ea19057507eef36389a9b17e644825ba5f5122642c572",
+    "system_map_sha256": "3975b9395fdc5555bb70ce077eb60dd5a3b3dd8cf89fcf1b30c43922d78465ea",
+    "toolchain": {
+      "gcc": "7307398fa8fd0b6cba783c6e9dacf38eb6ae4a0452416f835666436a062564af",
+      "as": "544bb988c61887e343d25df8925ae216d9a76814dabff082f671f349513ffdbb",
+      "ld": "c4f1b8dbed94e661b09982a420ed3b9e950c00db228b9e82c557632a3524fa2b",
+      "cc1": "fee341745f25cfee6121880b63d63e03f2e682d3574988ecdc525edaffc03c39"
+    },
+    "toolchain_note": "Ingenic Linux-Release5.1.4.1 GCC 7.2.0, SDK ingenic-linux-kernel4.4.94-x1600-v6.0-20240606, prebuilts/toolchains/mips-gcc720-glibc229",
+    "patches": {
+      "compas-reconstructed-drivers-safety.patch": "c4566a2061be9b87ab6caded1963cc46220894c5dd1d05ac40c400bfbbe7f8da",
+      "compas-reconstructed-drivers-v2-fixes.patch": "d683557af7411c7dfa9e5978980ab26f0788a8ef6471fcc49f196ffee0afeb2a"
+    },
+    "modules": {
+      "cw2015": "e7f6f2b49bcb417ff714fdd77611c97b4c055fe9c42cdf00de1890e640d50b0d",
+      "lcd_lg35583": "85e9d51a9350ca5e056a927a16ab36b6034cc153aa5eb0ad1438d6a228d38e14",
+      "soc_aic": "ddf1e01075a5365f66d318cde4dcf9d076d8ea3224151776b4df15b78753da34"
+    },
+    "previous_base_sha256": {
+      "cw2015.ko": "96fbab18849f43d997282d83cd9f727a5c96cae27f16eb5975f24c6f78615131",
+      "soc_aic.ko": "a97885bda220b02243cb20a6f881f6741e0db9a8fa003d732617dec544876898",
+      "lcd_lg35583.ko": "24e159ffa930c6a85ff5e26891a85ce2420c850120de342682079a4ae62a5dbf"
+    }
+  },
+  "vendor_modules_from_v2": [
+    "axp2101.ko",
+    "cywdhd.ko",
+    "sau.ko",
+    "soc_i2c.ko",
+    "soc_msc.ko",
+    "soc_pwm.ko",
+    "aic8800_bsp.ko",
+    "aic8800_btlpm.ko",
+    "aic8800_fdrv.ko"
+  ],
+  "userspace_from_v2": [
+    "etc/init.d/S52wifi_aic_init_config",
+    "usr/bin/aic_radio.sh",
+    "usr/bin/bt_enable_aic.sh",
+    "usr/bin/bt_test",
+    "usr/bin/bt_enable",
+    "usr/bin/bt_disable",
+    "usr/bin/wifi_off.sh"
+  ],
+  "vendor_wifi_on": {
+    "from": "usr/bin/wifi_on.sh",
+    "to": "usr/libexec/compas/wifi_on.vendor.sh"
+  },
+  "kept_from_base": [
+    "lib/firmware/brcm"
+  ],
+  "script_patches": [
+    {
+      "path": "usr/bin/bt_init",
+      "patch": "scripts/base_image/r1_v2/patches/bt_init.patch",
+      "pre_sha256": "4b8e592bf5f3491542b975a9a47ee700413c487b2b048fc785333d369e113cb6",
+      "post_sha256": "17b4c1cab3f0f4a764aa6aa51b00792c6295575edf011b9bbc3df04e93de78ee"
+    },
+    {
+      "path": "usr/bin/bt_resume",
+      "patch": "scripts/base_image/r1_v2/patches/bt_resume.patch",
+      "pre_sha256": "020109a0e0cb9c4786ad29ad46115a756e8d06eb0532bedc94c67ae098bc99ef",
+      "post_sha256": "90241a7f44527f2357f68a5810338958eef31716f7479ab39ea075e9ed869968"
+    },
+    {
+      "path": "usr/bin/bt_suspend",
+      "patch": "scripts/base_image/r1_v2/patches/bt_suspend.patch",
+      "pre_sha256": "ab654bc40d885c679f9f4aba5edeb203c0fc2a2ee2c24bc98aade6a6770550e3",
+      "post_sha256": "8bc6e7865d4b54803ca4c2cd6402bb6ed8a9377b536a6a173b418ed45d335f02"
+    }
+  ],
+  "base_layer_clean_rebuilds": {
+    "note": "Rebuilds of base-system layer binaries whose __FILE__ strings carried the build machine's home path. Same versions, configure options and patches as the staging base; built with the Ingenic GCC 5.2 toolchain by scripts/build/base/* (relative configure path, -fdebug-prefix-map), then stripped with --strip-unneeded. Instruction streams equal the staging base's apart from address immediates. build_r1_base_v2.py --clean-binaries DIR supplies them.",
+    "files": {
+      "usr/bin/amixer": {
+        "pre_sha256": "016f43bfecb3a8793a6d3c996a928c847bffa43968d89a85f55ee15747a9db64",
+        "post_sha256": "297d435943bf65081c7aff9864448d185a6eaaea911bb4f5272d4114efe241c3"
+      },
+      "usr/bin/aplay": {
+        "pre_sha256": "b280c1e64c3d9375edf7baab5589a53f73d7d36ef57e28c08738711c22a3d89a",
+        "post_sha256": "07b7d2cabf6ac1aa34d02d42d67e8f3c0021c5a404e63921f237a0ee1def8532"
+      },
+      "usr/bin/bluealsa-aplay": {
+        "pre_sha256": "f93126e5744cf4449723e7aef55228bc882ae4ed213d7757addc1b7bf00c582c",
+        "post_sha256": "6a3ea72b185de45a99c19b02b958469131d79a80291e4a60abf7c361bec05c17"
+      },
+      "usr/bin/bluetoothctl": {
+        "pre_sha256": "c7827d6f19e803622cca2de4d1ea3b6300965863752f9c02d94966c3c5a00c17",
+        "post_sha256": "a312eeb89fb42bb91c95d8ccfe02ec6ed227b3f6936151e06c5f6236069b1d8e"
+      },
+      "usr/bin/btmon": {
+        "pre_sha256": "77a9538fce2ef4412950520bab953ab408cb1588c53bec1fdf1c39d3ce2ae704",
+        "post_sha256": "67474ebbe3be71f434d274c5e8123d2df5145e8b8280359ee10656e56a1cdf69"
+      },
+      "usr/lib/alsa-lib/libasound_module_ctl_bluealsa.so": {
+        "pre_sha256": "959cdbf9862610da682662d1d34288401a7a1d18f7a0020467830f133d3e8446",
+        "post_sha256": "dd1e421f8b8684e4ca3f34a37eed353f2afa7a599fa10760c513594930014b90"
+      },
+      "usr/lib/alsa-lib/libasound_module_pcm_bluealsa.so": {
+        "pre_sha256": "cbf6ab76f2aefdf9d6428ced1ca2189f253ad94c176d8c2be38857419b0d7004",
+        "post_sha256": "f630af681c3b1e172c3ce0188667cccdb567831118a830b4d51e1afa8b4e6dc6"
+      },
+      "usr/lib/libasound.so.2.0.0": {
+        "pre_sha256": "aed04ac891336725c7d1d32005270415a52ae38fb26ff9a12389eeff184d0d8b",
+        "post_sha256": "002629317b5edb6649ae41e7d407921f69854ba30192b6fc570d2df5559f8238"
+      },
+      "usr/lib/libatopology.so.2.0.0": {
+        "pre_sha256": "4618204c11af4334cbc2b38ed9081d3e97c4924c88117539b1e41ebf347c0a3e",
+        "post_sha256": "caa40fbe8d168eba92ed9e644fc9ae522038a4f8ba53a616195b2f19b56573fc"
+      },
+      "usr/lib/libnl-3.so.200.26.0": {
+        "pre_sha256": "77d949ed5d802fc4c61570d1f15b5be18fa6f9e0bf3c7342ad2cab6e03a9ee3b",
+        "post_sha256": "f2f482b013eb4ec58a19faa120b119dd5a6cd8703bdf4acb35ff216255a3d1cf"
+      },
+      "usr/lib/libnl-genl-3.so.200.26.0": {
+        "pre_sha256": "ebf832e70972ea68989f1304e68bf7929db9c1e722cee940adb4a77f7724c3fc",
+        "post_sha256": "71e6a240c39397690f759e35aae995e3bbc13f38c28d46b1a10b92b3a03be06c"
+      }
+    }
+  },
+  "weekly_repack_userspace": {
+    "note": "userspace files the weekly repack rewrites; repack_upt.sh requires exactly these final hashes",
+    "/usr/bin/bt_init": {
+      "edit": "Bluetooth alias footer (clean_os.py) and boot-pipeline standardization",
+      "final_sha256": "180d03032c823308dd866d548e092c7c862c2ee0e8ae525440b89331f9fc5a90"
+    },
+    "/usr/bin/bt_resume": {
+      "edit": "Bluetooth alias footer (clean_os.py) and boot-pipeline standardization",
+      "final_sha256": "f9991f8cf7cb83f00dd671e971bf308ab643044218e562e7d520d522f0428898"
+    },
+    "/usr/libexec/compas/wifi_on.vendor.sh": {
+      "edit": "Wi-Fi MAC guard on the Broadcom branch (standardize_boot_pipeline.sh)",
+      "final_sha256": "91f97e904ad86cd55f29d081138dbf7e137ece417be7670cf5046024d206bad4"
+    }
+  },
+  "policy": {
+    "charge_voltage_limit": 4350,
+    "charge_term_current": 70,
+    "bldo_work_voltage_uv": 2800000,
+    "msc0_max_frequency_aic": 40000000,
+    "msc0_probe": false
+  }
+}

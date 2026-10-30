@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # Validate the images in a build output directory. For every image: it unpacks,
 # ota_update.in satisfies the player's strict parser (firmware_image.c parse_manifest) and the
-# kernel/rootfs chunk chains and chain files exist. HiBy boards: branding assets match the tracked
-# sources and the shipped player is the one in OUT_DIR. V1: the player carries its board marker,
+# kernel/rootfs chunk chains and chain files exist and the image holds no record the player's OTA validator rejects
+# (such as ota_compatibility.in). HiBy boards: branding assets match the tracked
+# sources, the shipped player is the one in OUT_DIR and no file carries the build machine's paths or forbidden
+# words (the path rule is report-only except for r1, see check_no_build_paths below). R1: the Compas Bluetooth stack,
+# not HiBy's stock one. V1: the player carries its board marker,
 # USB overlay and boot animation match the tracked assets, v1_md5.txt matches.
 # Usage: validate_images.sh OUT_DIR
 set -euo pipefail
@@ -163,6 +166,59 @@ check_bluetooth_overlay() {
         echo "$label: libbluetooth.so.3 does not point at the BlueZ 5.87 library" >&2; exit 1; }
 }
 
+# check_ota_entries UPT_DIR LABEL: the unpacked image holds only records the player's OTA validator accepts.
+check_ota_entries() {
+    python3 -I "$repo/scripts/build/firmware/check_ota_entries.py" "$1" || {
+        echo "$2: the image carries a record the player's OTA validator rejects" >&2; exit 1; }
+}
+
+# check_bluetooth_stack ROOT LABEL: R1 keeps the Compas Bluetooth stack (BlueZ 5.87, GLib 2.84, D-Bus 1.16,
+# SSC BlueALSA, codec libraries), never HiBy's stock one, and both bt_init branches and bt_resume launch
+# bluealsad with the Compas flags.
+check_bluetooth_stack() {
+    local root=$1 label=$2 flags='-p a2dp-source --a2dp-force-audio-cd --all-codecs' want link f
+    for want in 'usr/lib/libbluetooth.so.3 libbluetooth.so.3.19.16' 'usr/lib/libglib-2.0.so.0 libglib-2.0.so.0.8400.4' \
+                'usr/lib/libdbus-1.so.3 libdbus-1.so.3.38.3'; do
+        link=${want% *}
+        [[ $(readlink "$root/$link") == "${want#* }" && -f $root/usr/lib/${want#* } ]] || {
+            echo "$label: /$link does not point at ${want#* }" >&2; exit 1; }
+    done
+    for f in libfdk-aac.so.2.0.3 libldacBT_enc.so.2 libldacBT_abr.so.2 libldacdec.so.1 libopenaptx.so.0 libsbc.so.1.3.2 \
+             libspeexdsp.so.1; do
+        [[ -e $root/usr/lib/$f ]] || { echo "$label: codec library $f is missing" >&2; exit 1; }
+    done
+    [[ $(readlink "$root/usr/lib/libfdk-aac.so.2") == libfdk-aac.so.2.0.3 &&
+       $(readlink "$root/usr/lib/libsbc.so.1") == libsbc.so.1.3.2 ]] || {
+        echo "$label: libfdk-aac.so.2 or libsbc.so.1 does not point at the Compas build" >&2; exit 1; }
+    grep -aq 'ssc_native_' "$root/usr/bin/bluealsad" && grep -aq -- '--ssc-auto-profile' "$root/usr/bin/bluealsad" || {
+        echo "$label: bluealsad lacks the SSC support (ssc_native_*, --ssc-auto-profile)" >&2; exit 1; }
+    [[ $(grep -c "^[[:space:]]*/usr/bin/bluealsad $flags &\$" "$root/usr/bin/bt_init") -ge 2 ]] || {
+        echo "$label: bt_init does not start bluealsad with the Compas flags in both branches" >&2; exit 1; }
+    grep -q "^[[:space:]]*/usr/bin/bluealsad $flags &\$" "$root/usr/bin/bt_resume" || {
+        echo "$label: bt_resume does not start bluealsad with the Compas flags" >&2; exit 1; }
+    ! grep -Eq '/usr/bin/bluealsa( |$)' "$root/usr/bin/bt_init" "$root/usr/bin/bt_resume" || {
+        echo "$label: bt_init or bt_resume still start HiBy's stock bluealsa" >&2; exit 1; }
+    grep -qx 'AutoEnable=false' "$root/etc/bluetooth/main.conf" || {
+        echo "$label: main.conf lacks AutoEnable=false" >&2; exit 1; }
+    # AIC units get the device name from bt_enable_aic.sh (which the player runs to power Bluetooth), reading
+    # /usr/resource/bt_name, the file the user's device name is bind-mounted over.
+    grep -q 'bt-adapter --set "Alias" "\$bt_name"' "$root/usr/bin/bt_enable_aic.sh" || {
+        echo "$label: bt_enable_aic.sh does not set the Bluetooth alias from bt_name" >&2; exit 1; }
+}
+
+# check_no_build_paths ROOT LABEL [ENFORCE]: no file, file name or symlink target of the rootfs carries the
+# build machine's home path, user or host name (see check_no_build_paths.py; unmodified HiBy vendor files are
+# pinned by hash; extra forbidden words come from an untracked local list). The forbidden words always fail.
+# TODO: the /home/ rule is enforced for r1 only. r3proii, r3ii_2025 and V1 still carry HiBy vendor files with
+# /home/ paths that vendor_home_paths.txt does not list yet (scripts/build/firmware/vendor_home_paths_pending.txt);
+# they are reported as warnings until those bases are rebuilt or their vendor files are pinned. Then drop ENFORCE.
+check_no_build_paths() {
+    local mode=--warn-only
+    [[ ${3:-} != enforce ]] || mode=
+    python3 -I "$repo/scripts/build/firmware/check_no_build_paths.py" ${mode:+"$mode"} "$1" || {
+        echo "$2: the image carries build machine paths or names" >&2; exit 1; }
+}
+
 for board in r1 r3proii r3ii_2025; do
     [[ -f $out/$board.upt ]] || continue
     theme_src=$repo/assets/theme2
@@ -171,6 +227,7 @@ for board in r1 r3proii r3ii_2025; do
     unpack_root "$out/$board.upt" "$work/$board"
     root=$work/$board/root
     check_manifest "$work/$board/upt/ota_v0"
+    check_ota_entries "$work/$board/upt" "$board.upt"
     cmp -- "$logo_src" "$root/etc/logo1.jpeg"
     cmp -- "$theme_src/boot_animation/en/0.jpg" "$root/usr/resource/litegui/theme2/boot_animation/en/0.jpg"
     cmp -- "$theme_src/boot_animation/en/0.png" "$root/usr/resource/litegui/theme2/boot_animation/en/0.png"
@@ -178,13 +235,16 @@ for board in r1 r3proii r3ii_2025; do
     cmp -- "$out/compas_player$suffix" "$root/usr/bin/compas_player"
     check_icons "$root"
     check_bluetooth_overlay "$root" "$board.upt"
-    echo "$board.upt: branding assets, icon set, player and overlay daemons verified"
+    enforce=; [[ $board != r1 ]] || { enforce=enforce; check_bluetooth_stack "$root" "$board.upt"; }
+    check_no_build_paths "$root" "$board.upt" $enforce
+    echo "$board.upt: branding assets, icon set, player, overlay daemons and build paths verified"
 done
 
 if [[ -f $out/v1.upt ]]; then
     unpack_root "$out/v1.upt" "$work/v1"
     root=$work/v1/root
     check_manifest "$work/v1/upt/ota_v0"
+    check_ota_entries "$work/v1/upt" v1.upt
     grep -aq 'COMPAS_PLAYER_BOARD:tempotec_v1' "$root/usr/bin/compas_player"
     cmp -- "$repo/assets/v1/theme2/usb/usb.png" "$root/usr/resource/litegui/theme2/usb/usb.png"
     # Panel-sized (240x320) artwork, not the shared 480x800 one.
@@ -200,6 +260,7 @@ if [[ -f $out/v1.upt ]]; then
         echo "v1.upt: boot animation is not 240x320" >&2; exit 1; }
     check_icons "$root"
     check_bluetooth_overlay "$root" v1.upt
+    check_no_build_paths "$root" v1.upt
     grep -qx 'DiscoverableTimeout = 0' "$root/etc/bluetooth/main.conf" &&
         grep -qx 'AutoEnable=false' "$root/etc/bluetooth/main.conf" || {
         echo "v1.upt: main.conf lacks the V1 Bluetooth options" >&2; exit 1; }

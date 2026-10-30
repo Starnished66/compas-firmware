@@ -7,7 +7,7 @@ set -euo pipefail
 umask 022
 
 usage() {
-    echo "Usage: $0 [--board r1|r3proii|r3ii_2025] [--vendor-drivers VENDOR_UPT] [--early-splash EARLY_SPLASH_BINARY] BASE_UPT PLAYER_BINARY BOOTLOADER_BINARY OUTPUT_UPT" >&2
+    echo "Usage: $0 [--board r1|r3proii|r3ii_2025] [--vendor-drivers VENDOR_UPT [--keep-kernel]] [--early-splash EARLY_SPLASH_BINARY] BASE_UPT PLAYER_BINARY BOOTLOADER_BINARY OUTPUT_UPT" >&2
     echo "       BOARD=r3proii $0 BASE_UPT PLAYER_BINARY BOOTLOADER_BINARY OUTPUT_UPT" >&2
     exit 2
 }
@@ -73,7 +73,6 @@ def regular(rel, label):
     return path
 
 regular("module_driver/cywdhd.ko", "vendor cywdhd module")
-loader = regular("module_driver/cywdhd.sh", "vendor cywdhd loader")
 init = regular("module_driver/driver_default_init_script.sh", "vendor module startup script")
 
 def active_text(path):
@@ -81,12 +80,34 @@ def active_text(path):
     return "\n".join(line for line in path.read_text(errors="replace").splitlines()
                      if not re.match(r"^\s*#", line))
 
-loader_text = active_text(loader)
 init_text = active_text(init)
-if len(re.findall(r"(?:^|\s)insmod\s+cywdhd\.ko(?=\s|$)", loader_text)) != 1:
-    raise SystemExit("Closed R1 Wi-Fi gate: cywdhd.sh must load cywdhd.ko exactly once")
-if len(re.findall(r"(?:^|\s)sh\s+cywdhd\.sh(?=\s|$)", init_text)) != 1:
-    raise SystemExit("Closed R1 Wi-Fi gate: driver startup must invoke cywdhd.sh exactly once")
+def loads_once(loader_rel, label):
+    loader = active_text(regular(loader_rel, label))
+    if len(re.findall(r"(?:^|\s)insmod\s+cywdhd\.ko(?=\s|$)", loader)) != 1:
+        raise SystemExit(f"Closed R1 Wi-Fi gate: {loader_rel} must load cywdhd.ko exactly once")
+
+direct = len(re.findall(r"(?:^|\s)sh\s+cywdhd\.sh(?=\s|$)", init_text))
+select = len(re.findall(r"(?:^|\s)sh\s+r1_wireless_select\.sh(?=\s|$)", init_text))
+if direct == 1 and select == 0:
+    # HiBy 1.8 layout: the startup script runs the Broadcom loader itself.
+    loads_once("module_driver/cywdhd.sh", "vendor cywdhd loader")
+elif select == 1 and direct == 0:
+    # HiBy 2.0 layout: r1_wireless_select.sh picks Broadcom (cywdhd.r1) or AIC8800 at boot. Broadcom
+    # must stay reachable and be the fallback; the AIC branch may only load the AIC modules.
+    chooser = active_text(regular("module_driver/r1_wireless_select.sh", "vendor wireless selector"))
+    if len(re.findall(r"(?:^|\s)r1_wireless_run\s+cywdhd\.r1(?=\s|$)", chooser)) != 1:
+        raise SystemExit("Closed R1 Wi-Fi gate: r1_wireless_select.sh must run cywdhd.r1 exactly once")
+    if "wireless_type=bcm" not in chooser or "fallback=BCM" not in chooser:
+        raise SystemExit("Closed R1 Wi-Fi gate: r1_wireless_select.sh has no Broadcom fallback")
+    loads_once("module_driver/cywdhd.r1", "vendor cywdhd loader")
+    for rel in ("module_driver/aic8800_bsp.ko", "module_driver/aic8800_fdrv.ko",
+                "module_driver/aic8800_btlpm.ko", "module_driver/aic8800_bsp.r1",
+                "module_driver/aic8800_fdrv.load"):
+        regular(rel, "AIC8800 driver file")
+    if len(re.findall(r"(?:^|\s)insmod\s+aic8800_bsp\.ko(?=\s|$)", active_text(root / "module_driver/aic8800_bsp.r1"))) != 1:
+        raise SystemExit("Closed R1 Wi-Fi gate: aic8800_bsp.r1 must load aic8800_bsp.ko exactly once")
+else:
+    raise SystemExit("Closed R1 Wi-Fi gate: driver startup must invoke cywdhd.sh or r1_wireless_select.sh exactly once")
 if re.search(r"(?:^|\s)sh\s+bcm_wlbt_power\.sh(?=\s|$)", init_text):
     raise SystemExit("Closed R1 Wi-Fi gate: driver startup invokes the experimental bcm_wlbt_power helper")
 
@@ -272,10 +293,16 @@ PY
 
 board=${BOARD:-r1}
 vendor_drivers=""
+keep_kernel=0
 early_splash=""
 board_seen=0
-while [[ ${1:-} == --board || ${1:-} == --vendor-drivers || ${1:-} == --early-splash ]]; do
+while [[ ${1:-} == --board || ${1:-} == --vendor-drivers || ${1:-} == --keep-kernel || ${1:-} == --early-splash ]]; do
     case $1 in
+        --keep-kernel)
+            # Take the vendor driver tree but leave the base's kernel in place.
+            keep_kernel=1
+            shift
+            ;;
         --board)
             [[ $# -ge 2 && -n $2 && $board_seen == 0 ]] || usage
             board_seen=1
@@ -305,6 +332,7 @@ case $board in
         ;;
 esac
 [[ $# -eq 4 ]] || usage
+[[ $keep_kernel == 0 || -n $vendor_drivers ]] || { echo "--keep-kernel needs --vendor-drivers" >&2; exit 2; }
 
 validate_r1_runtime_overlay || exit 1
 
@@ -396,6 +424,12 @@ manifest_path, board, archive = sys.argv[1:]
 try:
     data = json.loads(pathlib.Path(manifest_path).read_text())
     entry = data["boards"][board]
+    if "versions" in entry:
+        # Several approved releases per board: the one whose pin matches the supplied UPT.
+        actual_sha = hashlib.sha256(pathlib.Path(archive).read_bytes()).hexdigest()
+        entry = next((e for e in entry["versions"] if e.get("sha256", "").lower() == actual_sha), None)
+        if entry is None:
+            raise SystemExit(f"Vendor-driver UPT is not one of the approved {board} releases ({actual_sha})")
     version = entry["version"]
     expected = entry["sha256"].lower()
     release_date = entry["release_date"]
@@ -474,7 +508,7 @@ text = pathlib.Path(sys.argv[1]).read_text(errors="replace")
 # subsequent entries with blank lines.
 blocks = re.split(r"\n\s*\n", text)
 allowed = re.compile(
-    r"(?:ota_config\.in|ota_v0|ota_v0/(?:ota_update\.in|ota_v0\.ok|"
+    r"(?:ota_config\.in|ota_v0|ota_v0/(?:ota_update\.in|ota_v0\.ok|ota_compatibility\.in|"
     r"ota_md5_(?:rootfs\.squashfs|xImage)\.[0-9a-f]{32}|"
     r"(?:rootfs\.squashfs|xImage)\.[0-9]{4}\.[0-9a-f]{32}))$"
 )
@@ -749,7 +783,9 @@ PY
         exit 1
     }
     previous_driver_init_sha256=$(sha256sum "$work/root/module_driver/driver_default_init_script.sh" | awk '{print $1}')
-    install -m 0644 "$vendor_kernel" "$work/xImage"
+    if [[ $keep_kernel == 0 ]]; then
+        install -m 0644 "$vendor_kernel" "$work/xImage"
+    fi
     rm -rf "$work/root/module_driver" "$work/root/lib/firmware"
     cp -a "$vendor_root/module_driver" "$work/root/module_driver"
     cp -a "$vendor_root/lib/firmware" "$work/root/lib/firmware"
@@ -1040,7 +1076,7 @@ fi
 if [[ -n $vendor_drivers ]]; then
     # Check the final tree after both overlays and boot standardization, then
     # write provenance from the exact bytes that will enter the squashfs.
-    python3 - "$work/root" "$work/xImage" "$vendor_driver_manifest" \
+    COMPAS_KEEP_KERNEL=$keep_kernel python3 - "$work/root" "$work/xImage" "$vendor_driver_manifest" \
         "$vendor_provenance" "$board" "$vendor_version" "$vendor_release_date" \
         "$vendor_sha256" "$vendor_kernel_sha256" "$vendor_source_url" "$vendor_archive_url" \
         "$preserved_charge_voltage" "$preserved_charge_current" "$repo/firmware/vendor_drivers.json" \
@@ -1111,6 +1147,7 @@ provenance = {
     "kernel_xImage_sha256": kernel_sha,
     "source_files": manifest["source_files"],
     "installed_files": actual,
+    "kernel_origin": "base image (--keep-kernel)" if os.environ.get("COMPAS_KEEP_KERNEL") == "1" else "vendor UPT",
     "driver_init_policy": "vendor initialization sequence replaces base sequence and diagnostic wrappers",
     "previous_driver_init_sha256": manifest["previous_driver_init_sha256"],
     "startup_trace": {
@@ -1121,6 +1158,8 @@ provenance = {
     },
 }
 pin = json.loads(pathlib.Path(pin_path).read_text())["boards"][board]
+if "versions" in pin:
+    pin = next((e for e in pin["versions"] if e.get("sha256") == upt_sha), {})
 if pin["sha256"] != upt_sha or pin["version"] != version:
     raise SystemExit("Vendor pin changed during packaging")
 provenance.update({key: pin[key] for key in ("source_note", "release_announcement_url", "archive_sha256") if key in pin})
@@ -1281,6 +1320,60 @@ install -D -m 0644 "$usb_overlay_asset" "$usb_overlay_dest"
     exit 1
 }
 
+# A base built by scripts/base_image/build_r1_base_v2.py records every driver and firmware file it
+# carries. Check that the weekly repack changed none of them except the two edits the record lists,
+# and write the final hashes of those two next to the base ones.
+base_provenance="$work/root/usr/share/compas/vendor-driver-provenance.json"
+if [[ -z $vendor_drivers && $board == r1 && -f $base_provenance && ! -L $base_provenance ]]; then
+    python3 - "$work/root" "$work/xImage" "$base_provenance" <<'PY'
+import hashlib, json, os, pathlib, sys
+
+root, kernel, record_path = map(pathlib.Path, sys.argv[1:])
+record = json.loads(record_path.read_text())
+if record.get("schema_version") != 2:
+    raise SystemExit(0)  # an older record describes a base without per-file origins
+def digest(path):
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(1 << 20), b""):
+            h.update(block)
+    return h.hexdigest()
+if digest(kernel) != record["kernel_xImage_sha256"]:
+    raise SystemExit("Base kernel differs from its provenance record")
+actual = {}
+for rel in ("module_driver", "lib/firmware"):
+    for parent, dirs, names in os.walk(root / rel, followlinks=False):
+        for name in sorted(dirs + names):
+            path = pathlib.Path(parent) / name
+            key = "/" + str(path.relative_to(root))
+            if path.is_symlink():
+                actual[key] = {"symlink": os.readlink(path)}
+            elif path.is_file():
+                actual[key] = {"sha256": digest(path), "size": path.stat().st_size}
+recorded = {k: {f: v for f, v in e.items() if f != "origin"} for k, e in record["installed_files"].items()}
+allowed = set(record.get("weekly_repack_edits", {}))
+changed = {k for k in set(actual) | set(recorded) if actual.get(k) != recorded.get(k)}
+if changed - allowed:
+    raise SystemExit("Driver or firmware files differ from the base provenance record: " + ", ".join(sorted(changed - allowed)))
+record["final_files"] = {k: actual[k] for k in sorted(changed)}
+# Userspace files: unchanged from the record, except the ones the weekly repack is known to rewrite, which
+# must carry exactly the pinned final hash (a missing or different transformation stops the build).
+rewritten = record.get("weekly_repack_userspace", {})
+for key, entry in sorted(record.get("userspace_files", {}).items()):
+    path = root / key.lstrip("/")
+    if path.is_symlink() or not path.is_file():
+        raise SystemExit(f"Base userspace file is missing or not a regular file: {key}")
+    now = digest(path)
+    if key in rewritten:
+        if now != rewritten[key]["final_sha256"]:
+            raise SystemExit(f"{key} is {now}, not the pinned weekly-repack result {rewritten[key]['final_sha256']}")
+        record["final_files"][key] = {"sha256": now, "size": path.stat().st_size}
+    elif now != entry["sha256"]:
+        raise SystemExit(f"Userspace file differs from the base provenance record: {key}")
+record_path.write_text(json.dumps(record, sort_keys=True, indent=2) + "\n")
+PY
+fi
+
 mksquashfs "$work/root" "$work/new-rootfs.squashfs" \
     -comp lzo -all-root -noappend -no-xattrs >/dev/null
 
@@ -1324,6 +1417,8 @@ img_name=$root_name
 img_size=$root_size
 img_md5=$root_md5
 EOF
+# HiBy 2.0 bases carry ota_v0/ota_compatibility.in. It is deliberately not copied: the player's
+# firmware_image.c rejects any entry it does not know, and players already in the field cannot change.
 : > "$work/new-iso/ota_v0/ota_v0.ok"
 echo 'current_version=0' > "$work/new-iso/ota_config.in"
 

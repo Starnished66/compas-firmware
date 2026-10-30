@@ -94,6 +94,17 @@ under `scratch/base-upgrade`; the overlay script does not install or flash.
 Keep the downloaded sources, notices and these recipes with release source
 materials. Runtime notices are included in the overlay.
 
+## Build machine paths
+
+The Ingenic GCC 5.2 has no `-ffile-prefix-map`/`-fmacro-prefix-map`, so `__FILE__` keeps whatever source path the
+compiler is given. Every autotools recipe here therefore runs `configure` through a relative path (as
+`build_base_bluez.sh` always did) and passes `-fdebug-prefix-map`; the musl recipes (`build_sd_fsck_tools.sh`, the
+player Makefile, the bootloader script) use `-ffile-prefix-map`. The prepare script strips `--strip-unneeded`, which
+also removes the toolchain's own file symbols. `scripts/build/firmware/validate_images.sh` fails an image whose rootfs
+carries `/home/<user>/` paths or the builder's names (unmodified HiBy files are pinned in
+`scripts/build/firmware/vendor_home_paths.txt`). `firmware/r1_base_v2.json` pins the rebuilt binaries
+(`base_layer_clean_rebuilds`); `build_r1_base_v2.py --clean-binaries DIR` swaps them into the base.
+
 ## Optional R1 vendor driver refresh
 
 The ordinary four-input `scripts/firmware/package/repack_upt.sh` flow keeps the base kernel and
@@ -118,6 +129,67 @@ log. Provenance records the previous loader hash and this replacement policy.
 Other boards have no approved vendor pin and are rejected if this option is
 used. This refresh replaces the R1 kernel and matching vendor driver payload;
 it is an explicit firmware change and should be hardware-tested before use.
+
+## R1 base on HiBy 2.0
+
+`scripts/base_image/build_r1_base_v2.py` turns the current R1 staging base into a base on HiBy R1 2.0:
+
+```sh
+python3 scripts/base_image/build_r1_base_v2.py --v2-upt r1-2.0.upt --base-upt r1-staging.upt \
+  --rebuilt-modules modules-v2-fixes --system-map System.map --output r1.upt
+```
+
+`modules-v2-fixes` holds `cw2015.ko`, `soc_aic.ko` and `lcd_lg35583.ko`, which carry the HiBy 2.0 driver fixes
+and replace the staging base's older builds of those three. They are built by
+`scripts/kernel/modules/build/build_r1_v2_modules.py` from the pinned hiby-custom-kernel commit with
+`compas-reconstructed-drivers-safety.patch` and then `compas-reconstructed-drivers-v2-fixes.patch`, against the
+recorded Compás kernel tree (`.config` `02f46454...`, `System.map` `3975b939...`) with the Ingenic GCC 7.2 of the SDK
+archive named in `firmware/kernel/upstream.json` (`prebuilts/toolchains/mips-gcc720-glibc229`):
+
+```sh
+python3 scripts/kernel/modules/build/build_r1_v2_modules.py --kit hiby-custom-kernel \
+  --kernel-tree kernel-tree-copy --toolchain sdk/prebuilts/toolchains/mips-gcc720-glibc229 --output modules-v2-fixes
+```
+
+The script checks the kernel tree, toolchain and patch pins, reproduces the pinned module hashes, and checks vermagic
+and undefined symbols against `System.map` and the other shipped modules. The base builder repeats that check on
+the complete module set. The fixes: cw2015 (a displayed capacity cannot rise off the charger; the charger state is read
+before the capacity), soc_aic (no enable-count underflow, count reset at controller init, a start or stop is dropped
+when the stream is already started or stopped) and lcd_lg35583 (halt and power-off notifier, 300 ms hold-off before a
+power-on, vccio 50 ms and vcc 5 ms power-on delays, display-off and sleep-in on power-off for the ST7701S, vcc off
+50 ms before vccio).
+
+Every input is pinned by SHA-256 in `firmware/r1_base_v2.json`: HiBy's 2.0 UPT, the staging base `r1.upt`
+(it supplies the Compás kernel `2105616e...`, 20 of the 23 rebuilt modules and the base-system layer) and each rebuilt
+module. The result keeps the Compás kernel, the 23 rebuilt modules and all base-system files, and takes from
+HiBy 2.0: the remaining module scripts and `.ko` files (`axp2101`, `cywdhd`, `sau`, `soc_i2c`, `soc_msc`, `soc_pwm`,
+`aic8800_*`), `r1_wireless_select.sh` and the loaders it runs, all of `/lib/firmware` (Broadcom and AIC8800
+firmware; the base's `brcm/` directory is kept), the AIC userspace (`aic_radio.sh`, `bt_enable_aic.sh`, `bt_test`,
+`S52wifi_aic_init_config`, `bt_enable`, `bt_disable`, `wifi_off.sh`), HiBy's `wifi_on.sh` as
+`usr/libexec/compas/wifi_on.vendor.sh`. HiBy 2.0's `ota_v0/ota_compatibility.in` stays in the base but the weekly image does not ship it: the player's OTA validator rejects unknown records. `bt_init`, `bt_resume` and `bt_suspend` stay the
+base's scripts (hardened rfkill handling, `bluealsad`) plus HiBy's AIC branches, applied with the patches in
+`scripts/base_image/r1_v2/patches` (the base script's hash is checked first). The base-system layer is reused
+from the staging base rather than rebuilt: HiBy 2.0 ships the same glibc 2.22, D-Bus, GLib, BlueZ, zlib and Expat
+libraries as 1.8.b2, so rebuilding with `BASE_STOCK_ROOT` set to the 2.0 root would produce the same files.
+
+Policy edits to HiBy's scripts, recorded in the image's `vendor-driver-provenance.json` (schema 2, with the origin
+and hash of every module and firmware file):
+
+* `axp2101.sh`: charging stays 4350 mV / 70 mA. `dcdc4_auto_x1600e_en_hn=1` is taken: it makes the PMIC identify the
+  SoC (needed for the AIC units to be recognised at all) and leaves DCDC4 at 1.2 V on X1600E; an unreadable or
+  unknown ID also leaves 1.2 V. HiBy's bldo1/bldo2 change from 2.8 V to 3.0 V (the LCD supplies) is not taken: it is
+  not needed for the radio and X1600E keeps the voltage it has always run at.
+* `soc_msc.sh` is HiBy's, unchanged: `msc0` (the radio SDIO bus) runs at 40 MHz on every unit. The builder can
+  instead pick 50 MHz on X1600E (`"msc0_probe": true` in the manifest policy); that is off.
+
+The Wi-Fi/Bluetooth drivers (`cywdhd.ko`, `soc_msc.ko`, `aic8800_*.ko`), their loaders and everything in
+`/lib/firmware` must be HiBy's bytes: the builder compares each against the 2.0 root and fails otherwise.
+
+The weekly `repack_upt.sh` checks the final image against that record and fails if a driver or firmware file other
+than the two it edits itself (`cst8xx_touch.sh`, `driver_default_init_script.sh`) differs.
+`repack_upt.sh --vendor-drivers HIBY_UPT --keep-kernel` is the older whole-tree path: it swaps in all vendor
+modules (dropping the Compás rebuilds) but leaves the base's kernel; the approved UPTs are listed in
+`firmware/vendor_drivers.json`.
 
 ## Local validation and installation
 

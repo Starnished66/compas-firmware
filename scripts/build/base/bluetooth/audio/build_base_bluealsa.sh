@@ -54,7 +54,8 @@ for archive in "$sysroot"/usr/lib/*.la; do
 done
 export CC="${cross}gcc" AR="${cross}ar" NM="${cross}nm" RANLIB="${cross}ranlib"
 export STRIP="${cross}strip" LD="${cross}ld" OBJDUMP="${cross}objdump"
-export CFLAGS='-Os -EL -mips32r2 -mabi=32 -mhard-float -mfp32'
+# Ingenic GCC 5.2 has no -ffile-prefix-map: configure through a relative path so __FILE__ stays relative.
+export CFLAGS="-Os -EL -mips32r2 -mabi=32 -mhard-float -mfp32 -fdebug-prefix-map=$run=."
 export CPPFLAGS="-I$sysroot/usr/include -I$sysroot/usr/include/ldac -include $repo/scripts/base_image/compat/ldac/ldac_decode_compat.h"
 export LDFLAGS="-EL -mips32r2 -mabi=32 -mhard-float -mfp32 -L$sysroot/usr/lib -Wl,-rpath-link,$sysroot/usr/lib -Wl,--no-undefined"
 export PKG_CONFIG_LIBDIR="$sysroot/usr/lib/pkgconfig:$sysroot/usr/share/pkgconfig"
@@ -68,7 +69,7 @@ if pkg-config --exists libfreeaptx; then aptx_option=--with-libfreeaptx; fi
 (cd "$run/src" && autoreconf --install)
 (
     cd "$run/build"
-    "$run/src/configure" --host=mips-linux-gnu --prefix=/usr --libdir=/usr/lib \
+    "$(realpath --relative-to=. "$run/src")/configure" --host=mips-linux-gnu --prefix=/usr --libdir=/usr/lib \
         --sysconfdir=/etc --localstatedir=/var --disable-static --disable-manpages \
         --with-alsaplugindir=/usr/lib/alsa-lib --with-alsaconfdir=/etc/alsa/conf.d \
         --with-dbusconfdir=/etc/dbus-1/system.d --with-dbus-iface-xml=/usr/share/dbus-1/interfaces \

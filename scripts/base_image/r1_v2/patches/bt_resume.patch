@@ -1,0 +1,136 @@
+--- a/usr/bin/bt_resume
++++ b/usr/bin/bt_resume
+@@ -1,5 +1,8 @@
+ #!/bin/sh
+ 
++# The application restores only the radios that the user enabled.
++[ ! -f /run/aic_combo_power_gate ] || exit 0
++
+ set_rfkill_named() {
+     requested=$1
+     value=$2
+@@ -33,6 +36,20 @@
+ set_rfkill_named bluetooth 1 || exit 1
+ sleep 1
+ 
++AIC_FDRV_SUSPEND_MARKER=/run/aic8800_fdrv_suspended
++if [ -f "$AIC_FDRV_SUSPEND_MARKER" ]; then
++    if [ -d /sys/module/aic8800_fdrv ]; then
++        rm -f "$AIC_FDRV_SUSPEND_MARKER"
++    elif [ -f /module_driver/aic8800_fdrv.r1 ]; then
++        # The R1 loader carries product-specific options such as disable_5g=1.
++        if (cd /module_driver && sh ./aic8800_fdrv.r1); then
++            rm -f "$AIC_FDRV_SUSPEND_MARKER"
++        fi
++    elif insmod /module_driver/aic8800_fdrv.ko; then
++        rm -f "$AIC_FDRV_SUSPEND_MARKER"
++    fi
++fi
++
+ # Delete the previous Bluetooth address storage file.
+ if [ -f /usr/data/btmacaddr.txt ]; then
+     rm -f /usr/data/btmacaddr.txt
+@@ -66,51 +83,63 @@
+ 
+ echo "BT_MACADDR $bt_addr"
+ 
+-SDIO_BASE=/sys/devices/platform/md_ingenic,mmc.0/mmc_host/mmc0/mmc0:0001
++SDIO_MMC0_ROOT=/sys/devices/platform/md_ingenic,mmc.0/mmc_host/mmc0
+ chip_type=""
+ firmware=""
+-# modalias (vendor/device ID) Distinguish
+-for func in 1 2; do
+-    MODALIAS_FILE="$SDIO_BASE/mmc0:0001:$func/modalias"
+-    [ -f "$MODALIAS_FILE" ] || continue
+-    modalias=$(cat "$MODALIAS_FILE")
+-    vendor_id=$(echo "$modalias" | sed -n 's/.*v\([0-9A-Fa-f]\{4\}\).*/\1/p' | tr '[:upper:]' '[:lower:]')
+-    device_id=$(echo "$modalias" | sed -n 's/.*d\([0-9A-Fa-f]\{4\}\).*/\1/p' | tr '[:upper:]' '[:lower:]')
+-    [ -n "$vendor_id" ] && [ -n "$device_id" ] || continue
+-    [ "$vendor_id" = "02d0" ] || continue
+-    case "$device_id" in
+-        # AP6255 ---- BCM4345C5
+-        a9bf|4345|0812)
+-            chip_type="bcm4345c5"
+-            firmware="BCM4345C5_003.006.006.0058.0135.hcd"
+-            break
+-            ;;
+-        # AP6212 / AW-NB372SM --- BCM4343A1
+-        a9a6|0726|4343)
+-            # chipvendor  Distinguish
+-            CHIPVENDOR="$SDIO_BASE/mmc0:0001:2/chipvendor"
+-            if [ -f "$CHIPVENDOR" ]; then
+-                chipvendor=$(cat "$CHIPVENDOR")
+-                case "$chipvendor" in
+-        0x81)
+-            #aw-nb372sm
++
++# Detect chip type via SDIO modalias.
++for sdio_path in "$SDIO_MMC0_ROOT"/mmc0:*; do
++    [ -d "$sdio_path" ] || continue
++    sdio_name=$(basename "$sdio_path")
++
++    for func in 1 2; do
++        MODALIAS_FILE="$sdio_path/$sdio_name:$func/modalias"
++        [ -f "$MODALIAS_FILE" ] || continue
++
++        modalias=$(cat "$MODALIAS_FILE")
++        vendor_id=$(echo "$modalias" | sed -n 's/.*v\([0-9A-Fa-f]\{4\}\).*/\1/p' | tr '[:upper:]' '[:lower:]')
++        device_id=$(echo "$modalias" | sed -n 's/.*d\([0-9A-Fa-f]\{4\}\).*/\1/p' | tr '[:upper:]' '[:lower:]')
++
++        [ -n "$vendor_id" ] && [ -n "$device_id" ] || continue
++
++        if [ "$vendor_id" = "c8a1" ]; then
++            chip_type="aic8800"
++            echo "Detected AIC8800 chip via SDIO (vid=$vendor_id, did=$device_id)"
++            break 2
++        elif [ "$vendor_id" = "02d0" ]; then
++            case "$device_id" in
++                # AP6255 ---- BCM4345C5
++                a9bf|4345|0812)
++                    chip_type="bcm4345c5"
++                    firmware="BCM4345C5_003.006.006.0058.0135.hcd"
++                    break 2
++                    ;;
++                # AP6212 / AW-NB372SM --- BCM4343A1
++                a9a6|0726|4343)
++                    CHIPVENDOR="$sdio_path/$sdio_name:2/chipvendor"
++                    if [ -f "$CHIPVENDOR" ]; then
++                        chipvendor=$(cat "$CHIPVENDOR")
++                        case "$chipvendor" in
++                            0x81)
++                                chip_type="bcm4343a1_aw"
++                                firmware="BCM4343A1_001.002.009.0122.0538.hcd"
++                                ;;
++                            *)
++                                chip_type="bcm4343a1"
++                                firmware="BCM4343A1_001.002.009.1010.1030.hcd"
++                                ;;
++                        esac
++                    else
+                         chip_type="bcm4343a1_aw"
+                         firmware="BCM4343A1_001.002.009.0122.0538.hcd"
+-            ;;
+-        *)
+-            #AP6212 
+-                        chip_type="bcm4343a1"
+-                        firmware="BCM4343A1_001.002.009.1010.1030.hcd"
+-            ;;
+-    esac
+-else
+-                chip_type="bcm4343a1_aw"
+-                firmware="BCM4343A1_001.002.009.0122.0538.hcd"
+-            fi
+-            break
+-            ;;
+-    esac
++                    fi
++                    break 2
++                    ;;
++            esac
++        fi
++    done
+ done
++
+ # --- Fallback ---
+ if [ -z "$chip_type" ]; then
+     echo "WARNING: Cannot detect chip, fallback to default"

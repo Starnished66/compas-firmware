@@ -4,6 +4,12 @@
 MAC_MANAGER=${COMPAS_WIFI_MAC_MANAGER:-/usr/bin/compas-wifi-mac}
 VENDOR_WIFI_ON=${COMPAS_WIFI_VENDOR_WIFI_ON:-/usr/libexec/compas/wifi_on.vendor.sh}
 
+# AIC8800 units: the MAC is applied by HiBy's radio scripts, so the Broadcom MAC manager is not
+# involved. The vendor script runs on its own (it ends in explicit exits).
+if [ -r /run/r1_wireless_type ] && [ "$(cat /run/r1_wireless_type)" = "aic" ]; then
+    exec /bin/sh "$VENDOR_WIFI_ON" "$@"
+fi
+
 if ! "$MAC_MANAGER" wait "${COMPAS_WIFI_MAC_TIMEOUT:-5}"; then
     echo "WiFi MAC is not ready; leaving wlan0 down" >&2
     exit 1

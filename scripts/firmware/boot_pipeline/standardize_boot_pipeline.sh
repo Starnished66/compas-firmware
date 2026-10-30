@@ -147,6 +147,18 @@ import pathlib, re, sys
 path = pathlib.Path(sys.argv[1])
 text = path.read_text()
 lines = text.splitlines(keepends=True)
+# HiBy 2.0 opens the script with a self-contained AIC8800 branch that ends in its own exits. It is
+# not sourced on Broadcom units and the wrapper runs it directly on AIC units (no Compás MAC
+# manager there), so leave it untouched and guard only the Broadcom part that follows.
+aic_start = next((i for i, line in enumerate(lines)
+                  if line.rstrip("\r\n") == "if [ -f /run/aic_combo_power_gate ]; then"), None)
+aic_block = []
+if aic_start is not None:
+    aic_end = next((i for i in range(aic_start + 1, len(lines)) if lines[i].rstrip("\r\n") == "fi"), None)
+    if aic_end is None or any("ifconfig $INTERFACE up" == line.strip() for line in lines[aic_start:aic_end + 1]):
+        raise SystemExit("Unrecognized AIC branch in vendor Wi-Fi script")
+    aic_block = lines[aic_start:aic_end + 1]
+    del lines[aic_start:aic_end + 1]
 marker = "# COMPAS_WIFI_MAC_PRE_WPA_GUARD"
 terminal_marker = "# COMPAS_WIFI_VENDOR_RETURN"
 marker_count = sum(line.rstrip("\r\n") == marker for line in lines)
@@ -198,6 +210,8 @@ else:
     lines[i:i + 1] = [terminal_marker + "\n", "return 0\n"]
 if any(re.match(r"^[ \t]*exit(?:[ \t]|$)", line) for line in lines):
     raise SystemExit("Unsupported exit statement in sourced vendor Wi-Fi script")
+if aic_block:
+    lines[aic_start:aic_start] = aic_block
 path.write_text("".join(lines))
 PY
 sh -n "$scratch/wifi_on.vendor.sh" || {

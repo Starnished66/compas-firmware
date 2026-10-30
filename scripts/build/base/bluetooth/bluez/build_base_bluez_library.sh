@@ -19,7 +19,8 @@ tar -xf "$archive" -C "$run"
 src="$run/bluez-5.87"
 stage="$run/stage"
 mkdir -p "$stage/usr/lib/pkgconfig" "$stage/usr/include/bluetooth" "$stage/usr/share/licenses/bluez-library"
-"${cross}gcc" -Os -fPIC -EL -mips32r2 -mabi=32 -mhard-float -mfp32 \
+# Ingenic GCC 5.2 has no -ffile-prefix-map; -fdebug-prefix-map keeps the run directory out of debug info.
+"${cross}gcc" -Os -fPIC -EL -mips32r2 -mabi=32 -mhard-float -mfp32 -fdebug-prefix-map="$run"=. \
     -shared -Wl,-soname,libbluetooth.so.3 -Wl,--no-undefined \
     -I"$src/lib" -I"$src/lib/bluetooth" \
     "$src/lib/bluetooth/bluetooth.c" "$src/lib/bluetooth/hci.c" "$src/lib/bluetooth/sdp.c" \

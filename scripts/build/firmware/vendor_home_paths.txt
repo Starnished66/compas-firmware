@@ -1,0 +1,23 @@
+# Vendor HiBy files that ship unmodified and carry their own toolchain or build host paths
+# (/home/toolchains/..., /home/leeo/...). They are not the builder's paths and cannot be fixed without
+# rebuilding HiBy's software. Format: SHA-256  rootfs path. Used by check_no_build_paths.py: a file is
+# excused only while its bytes match; the personal names are never excused.
+#
+# HiBy R1 v2.0 (r1-2.0.upt, SHA-256 0fec88bb3ad0baa55a703e4e2b1038560d4a526f0dd024d2ed037f1560ed09f9):
+# byte-identical to the file in that firmware.
+7a9d1863cd4118de24643a114654551a7ceb1797be68423fc53ae0e65f81f0a1  usr/bin/getevent
+c6b2984153c84c1a21375718c72940fb9fb7dd31a544880f566b6169fbe023b6  usr/bin/ntfs-3g
+20048ab7dfe3cc49fb60ad9d57fd7b6112b45820a005eb7d7724fe960d8c5d53  usr/bin/sdptool
+2d5c1cf7b59fc49033397eb65ae6ffce5b1926c8ad23aca225c755bb0200d026  usr/bin/udp_server
+26437a584fcdbb8197751052017d4b5761fb92b15c1b782491d3def5ea038849  usr/lib/libcurl.so.4.6.0
+c85efa5dc0550d96797d61ebae7072ffeddef6a8cdf6cef314fdad6736001551  usr/lib/libfuse.so.2.9.9
+7dde0188d10fd2dadc43720bb05a13cafe49c96799ac0419beff4da07e40607a  usr/lib/libjson-glib-1.0.so.0
+00b6073aa04ac9b4145b0891df263a3852f21f911a4c1b63640f37c419d4d834  usr/lib/libstdc++.so.6.0.21
+52435ddf052a9d933528d23dc8685f9bcd4f37d7568849a56c37fca0039b42b5  usr/share/web/cgi-bin/create.cgi
+64ec15302d89fd960af3e89cde856e47d68686ab7d5377bf0f822cf97fd0b41f  usr/share/web/cgi-bin/delete.cgi
+79713d67e8e95dc5a9671add600d054fffed760045431155b401e902a11f72b8  usr/share/web/cgi-bin/download.cgi
+75bc400673767c213942db7c9b65ea4ca188d878b15eec7b0b3c6800252b3a34  usr/share/web/cgi-bin/move.cgi
+78c0de2e6bac70075c5b1c2b5f26c39fa04fe390916fa4316521cb96e7964ec7  usr/share/web/cgi-bin/upload.cgi
+
+# HiBy R1 1.8.b2 (the Compás R1 base keeps HiBy's 1.8.b2 userspace): byte-identical to that firmware's file.
+2e2f609ab6675c859d5de63693801e093aea104a748ea23d8f3f68a0b885859c  usr/bin/dmrd

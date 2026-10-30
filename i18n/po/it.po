@@ -3409,6 +3409,12 @@ msgstr "%dm"
 msgid "Wi-Fi failed to change state"
 msgstr "Cambio stato del Wi-Fi non riuscito"
 
+msgid "Turn off Bluetooth to use Wi-Fi"
+msgstr "Disattiva il Bluetooth per usare il Wi-Fi"
+
+msgid "Turn off Wi-Fi to use Bluetooth"
+msgstr "Disattiva il Wi-Fi per usare il Bluetooth"
+
 msgid "Failed to toggle Bluetooth"
 msgstr "Cambio stato del Bluetooth non riuscito"
 

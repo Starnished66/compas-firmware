@@ -3328,6 +3328,12 @@ msgstr "%dm"
 msgid "Wi-Fi failed to change state"
 msgstr "Wi-Fi-tilan vaihto epäonnistui"
 
+msgid "Turn off Bluetooth to use Wi-Fi"
+msgstr "Poista Bluetooth käytöstä käyttääksesi Wi-Fiä"
+
+msgid "Turn off Wi-Fi to use Bluetooth"
+msgstr "Poista Wi-Fi käytöstä käyttääksesi Bluetoothia"
+
 msgid "Failed to toggle Bluetooth"
 msgstr "Bluetoothin vaihto epäonnistui"
 

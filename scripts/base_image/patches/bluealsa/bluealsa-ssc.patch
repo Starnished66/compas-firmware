@@ -586,9 +586,9 @@ diff -ruN a/src/ba-config.h b/src/ba-config.h
  
  	} a2dp;
  
-diff -ruN a/src/app/main.c b/src/app/main.c
---- a/src/app/main.c	2026-08-26 22:46:51.000000000 -0600
-+++ b/src/app/main.c	2026-10-22 07:45:28.136395889 -0600
+diff -ruN a/src/main.c b/src/main.c
+--- a/src/main.c	2026-08-26 22:46:51.000000000 -0600
++++ b/src/main.c	2026-10-22 07:45:28.136395889 -0600
 @@ -184,6 +184,7 @@
  		{ "disable-realtek-usb-fix", no_argument, NULL, 21 },
  		{ "a2dp-force-mono", no_argument, NULL, 6 },

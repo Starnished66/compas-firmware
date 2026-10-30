@@ -2,6 +2,12 @@
 
 MAC_MANAGER=/usr/bin/compas-wifi-mac
 
+# HiBy 2.0 selects the radio at boot: only a Broadcom unit has its MAC set here. The AIC8800 side is
+# configured by S52wifi_aic_init_config and the radio scripts after each driver load.
+if [ -r /run/r1_wireless_type ] && [ "$(cat /run/r1_wireless_type)" != "bcm" ]; then
+    exit 0
+fi
+
 case "$1" in
     start)
         # MAC setup runs asynchronously. WiFi activation is gated by wifi_on.

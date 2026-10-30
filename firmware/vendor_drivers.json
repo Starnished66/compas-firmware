@@ -1,15 +1,27 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "boards": {
     "r1": {
-      "version": "1.8.b2",
-      "sha256": "06b75e47633310c823bc5cc53f3a1b13b70f7c7bcce3ce76a62aa2d4312ddcca",
-      "release_date": "2026-08-04",
-      "source_url": "https://www.reddit.com/r/Hiby/comments/1uvdpkd/r1_official_firmware_beta_18b1/",
-      "archive_url": "https://www.dropbox.com/scl/fi/3tkwh3nbys5h54ch4hjp9/R1_1.8b2_20260804.zip?rlkey=y5507n8j13anbaqxvd8869k9s&dl=0",
-      "source_note": "HiBy representative confirms the 1.8 beta 2 download in the earlier beta 1 announcement thread.",
-      "release_announcement_url": "https://www.reddit.com/r/Hiby/comments/1vgdejc/for_r1_18_beta_2_available_for_download_link/",
-      "archive_sha256": "a11eef48cb12d79f4c027d443b3c019c15712f9af5a840ac4accad7114dcb56e"
+      "versions": [
+        {
+          "version": "1.8.b2",
+          "sha256": "06b75e47633310c823bc5cc53f3a1b13b70f7c7bcce3ce76a62aa2d4312ddcca",
+          "release_date": "2026-08-04",
+          "source_url": "https://www.reddit.com/r/Hiby/comments/1uvdpkd/r1_official_firmware_beta_18b1/",
+          "archive_url": "https://www.dropbox.com/scl/fi/3tkwh3nbys5h54ch4hjp9/R1_1.8b2_20260804.zip?rlkey=y5507n8j13anbaqxvd8869k9s&dl=0",
+          "source_note": "HiBy representative confirms the 1.8 beta 2 download in the earlier beta 1 announcement thread.",
+          "release_announcement_url": "https://www.reddit.com/r/Hiby/comments/1vgdejc/for_r1_18_beta_2_available_for_download_link/",
+          "archive_sha256": "a11eef48cb12d79f4c027d443b3c019c15712f9af5a840ac4accad7114dcb56e"
+        },
+        {
+          "version": "2.0",
+          "sha256": "0fec88bb3ad0baa55a703e4e2b1038560d4a526f0dd024d2ed037f1560ed09f9",
+          "release_date": "2026-10-08",
+          "source_url": "https://oss.hiby.com/HiBy%20R1/en-us/2.0/17918591029925z1p5n0e9d5j4r1m4n6.upt",
+          "archive_url": "https://oss.hiby.com/HiBy%20R1/en-us/2.0/17918591029925z1p5n0e9d5j4r1m4n6.upt",
+          "source_note": "HiBy's own download of R1 firmware 2.0 (X1600E Broadcom and X1600EN/HN AIC8800). release_date is the date stamp of the UPT's entries; the announcement date is not recorded."
+        }
+      ]
     }
   }
 }

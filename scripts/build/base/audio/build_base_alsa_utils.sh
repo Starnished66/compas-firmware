@@ -28,7 +28,8 @@ cp -a "$alsa"/usr/lib/libasound.so* "$deps/usr/lib/"
 cp -a "$alsa"/usr/lib/libatopology.so* "$deps/usr/lib/"
 cp "$alsa/usr/lib/pkgconfig/alsa.pc" "$deps/usr/lib/pkgconfig/"
 export CC="${cross}gcc" AR="${cross}ar" RANLIB="${cross}ranlib" STRIP="${cross}strip"
-export CFLAGS='-Os -EL -mips32r2 -mabi=32 -mhard-float -mfp32'
+# Ingenic GCC 5.2 has no -ffile-prefix-map: configure through a relative path so __FILE__ stays relative.
+export CFLAGS="-Os -EL -mips32r2 -mabi=32 -mhard-float -mfp32 -fdebug-prefix-map=$run=."
 export CPPFLAGS="-I$deps/usr/include"
 export LDFLAGS="-EL -mips32r2 -mabi=32 -mhard-float -mfp32 -L$deps/usr/lib -Wl,-rpath-link,$deps/usr/lib"
 export PKG_CONFIG_LIBDIR="$deps/usr/lib/pkgconfig"
@@ -36,7 +37,7 @@ export PKG_CONFIG_SYSROOT_DIR="$deps"
 unset PKG_CONFIG_PATH
 (
     cd "$run/build"
-    "$src/configure" --host=mips-linux-gnu --prefix=/usr --sysconfdir=/etc \
+    "$(realpath --relative-to=. "$src")/configure" --host=mips-linux-gnu --prefix=/usr --sysconfdir=/etc \
         --disable-nls --disable-alsamixer --disable-alsaconf --disable-alsaloop \
         --disable-bat --disable-nhlt --disable-xmlto --disable-rst2man
     # Do not install alsactl state restore, service units or generic sound

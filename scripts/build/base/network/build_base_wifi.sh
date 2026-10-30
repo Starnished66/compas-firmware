@@ -156,9 +156,10 @@ libnl_stage=$run_dir/libnl-stage
 mkdir -p -- "$libnl_build" "$libnl_stage"
 (
     cd "$libnl_build"
+    # Ingenic GCC 5.2 has no -ffile-prefix-map: configure through a relative path so __FILE__ stays relative.
     CC="$cc" CXX="${cross_prefix}g++" AR="$ar" RANLIB="$ranlib" STRIP="$strip" \
-    CFLAGS="$TARGET_FLAGS -Os -fPIC" CXXFLAGS="$TARGET_FLAGS -Os -fPIC" CPPFLAGS="$TARGET_FLAGS" LDFLAGS="$TARGET_FLAGS" \
-    "$libnl_src/configure" --host=mips-linux-gnu --build="$(gcc -dumpmachine)" \
+    CFLAGS="$TARGET_FLAGS -Os -fPIC -fdebug-prefix-map=$run_dir=." CXXFLAGS="$TARGET_FLAGS -Os -fPIC" CPPFLAGS="$TARGET_FLAGS" LDFLAGS="$TARGET_FLAGS" \
+    "$(realpath --relative-to=. "$libnl_src")/configure" --host=mips-linux-gnu --build="$(gcc -dumpmachine)" \
         --prefix="$PREFIX" --libdir=/usr/lib --disable-static --enable-cli=no \
         --disable-doxygen
     # Wi-Fi needs only core/generic netlink. Routing/NF modules would add

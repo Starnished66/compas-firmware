@@ -3337,6 +3337,12 @@ msgstr "%dм"
 msgid "Wi-Fi failed to change state"
 msgstr "Не вдалося змінити стан Wi-Fi"
 
+msgid "Turn off Bluetooth to use Wi-Fi"
+msgstr "Вимкніть Bluetooth, щоб користуватися Wi-Fi"
+
+msgid "Turn off Wi-Fi to use Bluetooth"
+msgstr "Вимкніть Wi-Fi, щоб користуватися Bluetooth"
+
 msgid "Failed to toggle Bluetooth"
 msgstr "Не вдалося перемкнути Bluetooth"
 

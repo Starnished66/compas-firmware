@@ -1,0 +1,18 @@
+# NOT LOADED by check_no_build_paths.py. HiBy vendor files of the r3proii, r3ii_2025 and V1 bases that carry
+# /home/ toolchain or build-host paths, listed so a reviewer can pin them (move the line to
+# vendor_home_paths.txt) once the files are confirmed to ship unmodified, or so the bases can be rebuilt without
+# them. Until then validate_images.sh reports them as warnings for those boards (TODO in validate_images.sh).
+# Extracted read-only on 2026-10-29 from the 2026-10-28 base inputs (r3proii.upt, r3ii_2025.upt, v1-stock.upt).
+# Format: SHA-256  rootfs path  # boards
+17c473f2fc52b30a86fbbda90e283daac087e2db4cd0e0802577d046d1a34ee6 usr/bin/bluealsa-cli  # r3proii, r3ii_2025, v1
+58dfc13879b56e42b2de3c9267e06e748596650ce7dbfabcaf2b15d137618afc usr/bin/bluealsa  # r3proii, r3ii_2025, v1
+2d7b1ae01d4b930b7a8a976802a11fd9a203c0285dc8c0e33b6a6e8695ac0873 usr/bin/bt-adapter  # r3proii, r3ii_2025, v1
+d485a3ccbf5af9c65efc1eaa8440739e59cc7d054202d99ce24cd28cd6f87c63 usr/bin/bt-connect  # r3proii
+b98354dea16bf5c50d4e611d8debc4a2767ba77610a0a3315a8cd888b19b49fe usr/bin/bt-device  # r3proii
+0dcdf419f0e5a6bad479ed4b311164ea39a1df548f166155528358768acf65d7 usr/bin/bt-media  # r3proii, r3ii_2025, v1
+2ca349b01d21cd40e7c8076abf5dbef16726f4093259d7e783926c2e33988b00 usr/bin/dmrd  # r3proii, r3ii_2025
+856ba6d297b1eb3c148e9cf7b9dad0a92fc96c9e6e04f918ed17e081fb04aa54 usr/bin/dmrd  # v1
+ba69c67d59a63e625bf32aab3fc7d1b4bdecee96f85e6b4acd3220034d685c20 usr/libexec/bluetooth/bluetoothd  # v1
+0bdef71700da1be2c3e7525ab45df90cdb8265cb41e1354a0a3e5e6cc61f08b4 usr/lib/libasound.so.2.0.0  # v1
+e8388e3cf4113bc1de280647af218c5f02046339e7accbfbc7557a5f74b5d439 usr/lib/libwpa_client.so  # r3proii, r3ii_2025, v1
+fca69d1d8a32d654665e72a1c9b6306535e80eab450793b4801cd0895670c62d usr/share/web/cgi-bin/list.cgi  # r3proii, r3ii_2025, v1

@@ -50,7 +50,7 @@ build_autoconf() {
         # selected explicitly, and the generic mipsel-linux triple only
         # satisfies autoconf's host check.
         CC=mipsel-linux-musl-gcc AR=mipsel-linux-musl-ar RANLIB=mipsel-linux-musl-ranlib \
-            CFLAGS='-Os -no-pie' LDFLAGS='-static -no-pie' \
+            CFLAGS="-Os -no-pie -ffile-prefix-map=$work=." LDFLAGS='-static -no-pie' \
             "$work/src/$package/configure" --host=mipsel-linux --prefix=/usr \
             --disable-shared --enable-static "$@"
         make -j"${JOBS:-4}"
@@ -71,7 +71,7 @@ require_static_mips() {
 relink() {
     local output=$1
     shift
-    mipsel-linux-musl-gcc -static -no-pie -Os -o "$output" "$@"
+    mipsel-linux-musl-gcc -static -no-pie -Os -ffile-prefix-map="$work"=. -o "$output" "$@"
 }
 
 fetch dosfstools-4.2 \

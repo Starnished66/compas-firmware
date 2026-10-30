@@ -15,6 +15,9 @@ CROSS_CC ?= mipsel-linux-musl-gcc
 CROSS_STRIP ?= mipsel-linux-musl-strip
 TARGET_CPU_FLAGS ?= -march=mips32r2 -mabi=32 -mfp32 -mno-odd-spreg -ffp-contract=off
 BOARD_DEFINE := -DBOARD_$(shell echo $(BOARD) | tr a-z A-Z)
+# GCC 11 (musl cross toolchain): keep the player checkout's and this checkout's absolute paths out of
+# __FILE__ strings and debug info. No effect on code generation.
+PATH_MAP_FLAGS := -ffile-prefix-map=$(PLAYER_DIR)=. -ffile-prefix-map=$(CURDIR)=.
 
 ifeq ($(BOARD),r1)
 EARLY_SPLASH_BIN := build/compas_early_splash
@@ -45,7 +48,7 @@ $(EARLY_SPLASH_BIN): FORCE $(PRIVATE_EARLY_SPLASH) Makefile | prepare-player
 	@mkdir -p $(dir $@)
 	@set -e; tmp="$@.tmp"; stripped="$@.strip.tmp"; \
 	  trap 'rm -f "$$tmp" "$$stripped"' EXIT; \
-	  $(CROSS_CC) $(TARGET_CPU_FLAGS) $(BOOTLOADER_CFLAGS) -static -no-pie \
+	  $(CROSS_CC) $(TARGET_CPU_FLAGS) $(PATH_MAP_FLAGS) $(BOOTLOADER_CFLAGS) -static -no-pie \
 	    $(EARLY_SPLASH_SRCS) -Wl,--gc-sections -lm -o "$$tmp"; \
 	  $(CROSS_STRIP) -s -o "$$stripped" "$$tmp"; \
 	  chmod 0755 "$$stripped"; mv -f "$$stripped" "$@"

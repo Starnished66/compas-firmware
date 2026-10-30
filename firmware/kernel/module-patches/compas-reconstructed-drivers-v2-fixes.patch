@@ -1,0 +1,208 @@
+--- a/boards/r1/modules/lcd_lg35583/lcd_lg35583.c
++++ b/boards/r1/modules/lcd_lg35583/lcd_lg35583.c
+@@ -20,6 +20,10 @@
+ // sets the value the LG35583's register C700 gets at the next power_on;
+ // reading prints the register and its value to the kernel log.
+ //
++// A halt or power-off switches the panel off before the supplies are cut
++// (a reboot notifier). A panel that was just switched off is given 300 ms
++// before it is switched on again.
++//
+ // The panel remains registered with soc_fb, which has no unregister API.
+ // This module intentionally has no module_exit handler and must stay loaded.
+ //
+@@ -28,11 +32,13 @@
+ #include <linux/delay.h>
+ #include <linux/fs.h>
+ #include <linux/gpio.h>
++#include <linux/jiffies.h>
+ #include <linux/kernel.h>
+ #include <linux/bug.h>
+ #include <linux/module.h>
+ #include <linux/moduleparam.h>
+ #include <linux/proc_fs.h>
++#include <linux/reboot.h>
+ #include <linux/regulator/consumer.h>
+ #include <linux/string.h>
+ #include <linux/uaccess.h>
+@@ -81,6 +87,7 @@
+ 
+ #define LCD_ID_CHANNEL		3
+ #define LCD_ID_ST7701S_MV	1000	// at or above: the ST7701S
++#define LCD_REPOWER_MS		300	// least time between power_off and power_on
+ 
+ static int spi_bus_num = -1;
+ static int gpio_spi_mosi = -1;
+@@ -106,6 +113,8 @@
+ static int lcd_id;		// 0: LG35583, 1: ST7701S
+ static struct proc_dir_entry *lcd_reg_entry;
+ static bool lcd_reg_done;	// creation tried
++static bool lcd_powered;	// between power_on and power_off
++static unsigned long lcd_power_off_jiffies;	// 0: never switched off
+ 
+ // The LG35583 register /proc/lcd_reg sets, and its value.
+ static struct {
+@@ -474,14 +483,22 @@
+ 
+ static int lg35583_power_on(void *unused)
+ {
+-	gpio_set_value(gpio_spi_cs, 1);
++	if (lcd_power_off_jiffies) {
++		unsigned long now = jiffies;	// one sample, as HiBy 2.0 does: a second read could pass ready
++		unsigned long ready = lcd_power_off_jiffies + msecs_to_jiffies(LCD_REPOWER_MS);
++
++		if (time_before(now, ready))
++			msleep(jiffies_to_msecs(ready - now));
++	}
++
+ 	if (gpio_lcd_power_en >= 0)
+ 		gpio_set_value(gpio_lcd_power_en, 1);
+ 
+ 	if (vccio_regulator) {
+ 		regulator_enable(vccio_regulator);
+ 		usleep_range(5000, 5000);
+ 	}
++	gpio_set_value(gpio_spi_cs, 1);
+ 	if (vcc_regulator) {
+ 		regulator_enable(vcc_regulator);
+ 		usleep_range(5000, 5000);
+@@ -513,12 +530,18 @@
+ 			printk("create_proc_entry %s failed\n", "lcd_reg");
+ 		lcd_reg_done = true;
+ 	}
++	lcd_powered = true;
+ 	return 0;
+ }
+ 
+ static int lg35583_power_off(void *unused)
+ {
+-	if (!lcd_id) {
++	if (lcd_id) {
++		m_spi_write_addr_8(CMD(0x28));	// Display Off
++		usleep_range(5000, 5000);
++		m_spi_write_addr_8(CMD(0x10));	// Sleep In
++		usleep_range(5000, 5000);
++	} else {
+ 		spi_writecomm(0x2800);		// Display Off
+ 		usleep_range(5000, 5000);
+ 		spi_writecomm(0x1000);		// Sleep In
+@@ -527,10 +550,12 @@
+ 
+ 	if (gpio_lcd_rst >= 0)
+ 		gpio_set_value(gpio_lcd_rst, 0);
++	if (vcc_regulator) {
++		regulator_disable(vcc_regulator);
++		usleep_range(50000, 50000);
++	}
+ 	if (vccio_regulator)
+ 		regulator_disable(vccio_regulator);
+-	if (vcc_regulator)
+-		regulator_disable(vcc_regulator);
+ 	if (gpio_lcd_power_en >= 0)
+ 		gpio_set_value(gpio_lcd_power_en, 0);
+ 
+@@ -538,9 +563,23 @@
+ 	gpio_set_value(gpio_spi_sck, 0);
+ 	gpio_set_value(gpio_spi_cs, 0);
+ 
++	lcd_power_off_jiffies = jiffies;
++	lcd_powered = false;
+ 	return 0;
+ }
+ 
++// Halt and power-off: the panel goes through its own power-off first.
++static int lg35583_reboot_notify(struct notifier_block *nb, unsigned long action, void *data)
++{
++	if ((action == SYS_HALT || action == SYS_POWER_OFF) && lcd_powered)
++		lg35583_power_off(NULL);
++	return 0;
++}
++
++static struct notifier_block lg35583_reboot_notifier = {
++	.notifier_call = lg35583_reboot_notify,
++};
++
+ struct lcdc_data lcdc_data = {
+ 	.name = "lg35583",
+ 	.refresh = 62,
+@@ -652,9 +691,15 @@
+ 	gpio_direction_output(gpio_spi_sck, 0);
+ 	gpio_direction_output(gpio_spi_mosi, 0);
+ 
++	ret = register_reboot_notifier(&lg35583_reboot_notifier);
++	if (ret)
++		goto err_mosi;
++
+ 	jzfb_register_lcd(&lcdc_data);
+ 	return 0;
+ 
++err_mosi:
++	gpio_free(gpio_spi_mosi);
+ err_sck:
+ 	gpio_free(gpio_spi_sck);
+ err_cs:
+--- a/modules/cw2015/cw2015.c
++++ b/modules/cw2015/cw2015.c
+@@ -506,14 +506,19 @@
+ 					break;
+ 		}
+ 
++		// The charger state must be current before the capacity is read:
++		// a capacity cannot rise while no charger gives current.
++		cw_update_charge_status(cw_bat);
++
+ 		capacity = cw_get_capacity(cw_bat);
++		if (cw_bat->charger_mode <= 0 && capacity > cw_bat->capacity)
++			capacity = cw_bat->capacity;
+ 		if (capacity >= 0 && capacity <= 100 && cw_bat->capacity != capacity) {
+ 			cw_bat->capacity = capacity;
+ 			cw_bat->change = 1;
+ 		}
+ 
+ 		cw_update_vol(cw_bat);
+-		cw_update_charge_status(cw_bat);
+ 		cw_update_status(cw_bat);
+ 		cw_update_time_to_empty(cw_bat);
+ 	}
+--- a/modules/soc_aic/soc_aic.c
++++ b/modules/soc_aic/soc_aic.c
+@@ -301,6 +301,9 @@
+ 
+ static void aic_disable(void)
+ {
++	// A disable with no enable behind it must not wrap the count.
++	if (!aic_dev.enable_cnt)
++		return;
+ 	if (!--aic_dev.enable_cnt)
+ 		aic_update(AICFR, AICFR_ENB, 0);
+ }
+@@ -372,6 +375,7 @@
+ 	fr = (fr & ~AICFR_SYNCD) | (aic_dev.master << 1 & AICFR_SYNCD);
+ 	fr &= ~AICFR_ENB;
+ 	aic_write(AICFR, fr);
++	aic_dev.enable_cnt = 0;		// the controller is off now
+ 
+ 	aic_update(AICFR, AICFR_RST, AICFR_RST);
+ 	t0 = local_clock_us();
+@@ -656,7 +660,9 @@
+ 	struct aic_stream *s = container_of(work, struct aic_stream, start_work);
+ 	struct task_struct *t;
+ 
+-	if (!s->running)
++	// A start for a stream that is not running, or that is already started,
++	// is dropped.
++	if (!s->running || s->busy)
+ 		return;
+ 	s->busy = 1;
+ 
+@@ -709,7 +715,9 @@
+ {
+ 	struct aic_stream *s = container_of(work, struct aic_stream, stop_work);
+ 
+-	if (s->running == 1)
++	// A stop for a stream that is running again, or was never started, is
++	// dropped.
++	if (s->running == 1 || !s->busy)
+ 		return;
+ 
+ 	if (s->substream->stream == SNDRV_PCM_STREAM_PLAYBACK) {

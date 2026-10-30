@@ -1,0 +1,24 @@
+--- a/usr/bin/bt_suspend
++++ b/usr/bin/bt_suspend
+@@ -1,5 +1,9 @@
+ #!/bin/sh
+ 
++if [ -f /run/aic_combo_power_gate ]; then
++    exec sh /usr/bin/bt_disable
++fi
++
+ set_rfkill_named() {
+     requested=$1
+     value=$2
+@@ -36,3 +40,11 @@
+ # bluetooth power off
+ set_rfkill_named bluetooth 0 || exit 1
+ sleep 1
++
++# AIC8800D40 keeps WLAN_REG_ON asserted while the Wi-Fi driver is loaded.
++AIC_FDRV_SUSPEND_MARKER=/run/aic8800_fdrv_suspended
++if [ -d /sys/module/aic8800_fdrv ]; then
++    if rmmod aic8800_fdrv; then
++        touch "$AIC_FDRV_SUSPEND_MARKER"
++    fi
++fi
