@@ -799,10 +799,12 @@ USB_OVERLAY_SHA256 = "fb7c7e98ce1efb7ef33f341c508e09c0110c1e09093cea7a9608602666
 
 def copy_current_assets(root: pathlib.Path) -> dict[str, object]:
     # Use the same tracked shared assets as the normal HiBy repacker.
-    tracked = run(["git", "-C", str(ASSET_REPO), "ls-files", "assets/theme1", "assets/theme2", "assets/fonts"], capture=True).stdout.splitlines()
+    tracked = run(["git", "-C", str(ASSET_REPO), "ls-files", "assets/theme1", "assets/theme2", "assets/fonts",
+                   "firmware/overlay/usr/share/licenses/speex-runtime"], capture=True).stdout.splitlines()
     mappings = (("assets/theme1/", "usr/resource/litegui/theme1/"),
                 ("assets/theme2/", "usr/resource/litegui/theme2/"),
-                ("assets/fonts/", "usr/resource/fonts/"))
+                ("assets/fonts/", "usr/resource/fonts/"),
+                ("firmware/overlay/usr/share/licenses/speex-runtime/", "usr/share/licenses/speex-runtime/"))
     copied = {}
     for rel in tracked:
         # Store layouts intentionally stay downloadable, as on HiBy images.
