@@ -66,8 +66,10 @@ BLUEZ_OVERLAY_FILES = (
     "usr/libexec/bluetooth/obexd",
 )
 BLUEZ_BASE_SHA256 = {
-    "usr/bin/bluetoothctl": "c7827d6f19e803622cca2de4d1ea3b6300965863752f9c02d94966c3c5a00c17",
-    "usr/bin/btmon": "77a9538fce2ef4412950520bab953ab408cb1588c53bec1fdf1c39d3ce2ae704",
+    # R1 v2 clean rebuilds remove absolute build paths; canonical output hashes
+    # are the post_sha256 values in firmware/r1_base_v2.json.
+    "usr/bin/bluetoothctl": "a312eeb89fb42bb91c95d8ccfe02ec6ed227b3f6936151e06c5f6236069b1d8e",
+    "usr/bin/btmon": "67474ebbe3be71f434d274c5e8123d2df5145e8b8280359ee10656e56a1cdf69",
     "usr/bin/hciconfig": "f048fb934eef02854dd275d78dc25010337337841633ae9122cbfb9a4bb38c4d",
     "usr/bin/hcitool": "9c5972aa72055788952bc83ecf1cf8eb8a7f046df8441017a4ae7cc4bd3803de",
     "usr/lib/libbluetooth.so.3.19.16": "21976de17255a7167fe671028f8294aefb2d96946086c05c019a99d7f3ac83cf",
@@ -120,7 +122,9 @@ RUNTIME_LIBRARY_SHA256 = {
     "usr/lib/libgthread-2.0.so.0.8400.4": "f38131427adba592ffb8fae56217853fccdc535092300691723028e887157f5e",
     "usr/lib/libffi.so.8.1.4": "b98e3be041d00cbff0fdf934e714990de20f53a7ec7746b065fb7e754519072f",
     "usr/lib/libpcre2-8.so.0.14.0": "845b310e6e04615c3c7357f8e63eec5f9df29d23cf4907b52356f06d426ce5fc",
-    "usr/lib/libasound.so.2.0.0": "aed04ac891336725c7d1d32005270415a52ae38fb26ff9a12389eeff184d0d8b",
+    # ALSA is rebuilt by the R1 v2 base build to remove build-path strings;
+    # use its canonical post_sha256 from firmware/r1_base_v2.json.
+    "usr/lib/libasound.so.2.0.0": "002629317b5edb6649ae41e7d407921f69854ba30192b6fc570d2df5559f8238",
 }
 
 OLD_GLIB_ALIAS_TARGETS = {
