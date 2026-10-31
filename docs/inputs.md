@@ -140,3 +140,20 @@ The forbidden words always fail, on every board.
 
 The weekly image never carries `ota_v0/ota_compatibility.in` (HiBy 2.0 bases have it): the player's OTA validator
 rejects unknown records, and players already in the field cannot be changed. `check_ota_entries.py` enforces this.
+
+## V1 zram kernel refresh
+
+The v1.4 V1 beta refresh uses `v1-zram-xImage` from this repository's `build-inputs` release.
+`firmware/v1-kernel.sha256` pins the download; `firmware/kernel/tempotec_v1.json` records
+the source commit, SDK, configuration, DTB and output hashes. The official `v1-stock.upt`
+remains the rootfs/recovery/module source. The packager accepts the replacement only when
+its pin, MIPS uImage checksums, stock size bound and exact stock DTB pass.
+
+`fetch_inputs.sh` places the kernel in `inputs/kernel/v1-zram-xImage`. Set `V1_KERNEL`
+to that file for `build_all_upt.sh`; V1 release builds require it. The direct V1 repacker
+retains its stock-kernel mode for comparisons when `--kernel` is omitted. With `--kernel`,
+it also installs the existing `compas-zram` helper and `S31compas_zram` init hook.
+
+The player executable and all vendor driver modules are unchanged by this refresh.
+The kernel was reviewed and statically checked; it is shipping for V1 beta-tester hardware
+validation, not as a claim that boot, audio, charging or suspend have already been verified.

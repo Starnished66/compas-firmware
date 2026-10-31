@@ -2,10 +2,11 @@
 """Host-only experimental TempoTec V1 repacker.
 
 This tool only accepts the verified public V1 1.2 stock UPT and a marked,
-static V1 MIPS32r2 Compas player. It preserves the stock kernel, update and
-recovery payloads, copies the explicitly required Compas theme/font files and
-the reviewed BlueALSA 5 SSC runtime, and changes only the two checked player
-launch lines plus the exact legacy BlueALSA startup blocks in bt_init/bt_resume.
+static V1 MIPS32r2 Compas player. By default it preserves the stock kernel;
+with --kernel it accepts only the separately pinned Tempotec V1 xImage and
+adds the two V1 zram overlay files. It preserves vendor update and recovery
+payloads, copies the explicitly required Compas theme/font files and reviewed
+BlueALSA 5 SSC runtime, and applies the checked V1 player/runtime changes.
 """
 
 from __future__ import annotations
@@ -38,6 +39,12 @@ SSC_DAEMON_SHA256 = next(
 )
 V1_MARKER = b"COMPAS_PLAYER_BOARD:tempotec_v1"
 IMAGE_CHUNK_SIZE = 512 * 1024
+REPO_ROOT = pathlib.Path(__file__).resolve().parents[3]
+V1_KERNEL_PIN = REPO_ROOT / "firmware/kernel/tempotec_v1.json"
+V1_ZRAM_OVERLAY_FILES = {
+    "usr/bin/compas-zram": REPO_ROOT / "firmware/overlay/usr/bin/compas-zram",
+    "etc/init.d/S31compas_zram": REPO_ROOT / "firmware/overlay/etc/init.d/S31compas_zram",
+}
 
 # The compiled UI fonts and fallback faces are the files the current player
 # opens by fixed path. Existing OEM Korean/Thai/default fonts stay untouched.
@@ -350,6 +357,137 @@ def extract_rootfs(upt: pathlib.Path, work: pathlib.Path) -> tuple[pathlib.Path,
     kernel_info = verify_image_chunks(ota, "kernel", "xImage", kernel)
     root_info = verify_image_chunks(ota, "rootfs", "rootfs.squashfs", rootfs)
     return ota, rootfs, {"xImage": kernel_info, "rootfs.squashfs": root_info}
+
+
+def load_v1_kernel_pin(path: pathlib.Path = V1_KERNEL_PIN) -> dict[str, object]:
+    try:
+        pin = json.loads(path.read_text())
+    except (OSError, json.JSONDecodeError) as exc:
+        raise RepackError("Tempotec V1 kernel pin is missing or unreadable") from exc
+    if not isinstance(pin, dict) or pin.get("schema_version") != 1 or pin.get("board") != "tempotec_v1":
+        raise RepackError("Tempotec V1 kernel pin has an unexpected schema or board")
+    for key in ("sha256", "dtb_sha256", "sdk_sha256", "config_sha256"):
+        value = pin.get(key)
+        if not isinstance(value, str) or not re.fullmatch(r"[0-9a-f]{64}", value):
+            raise RepackError(f"Tempotec V1 kernel pin has an invalid {key}")
+    for key in ("size_bytes",):
+        if not isinstance(pin.get(key), int) or pin[key] <= 0:
+            raise RepackError(f"Tempotec V1 kernel pin has an invalid {key}")
+    for key in ("kernel_release", "source_repo", "source_commit"):
+        if not isinstance(pin.get(key), str) or not pin[key]:
+            raise RepackError(f"Tempotec V1 kernel pin has an invalid {key}")
+    if not re.fullmatch(r"[0-9a-f]{40}", pin["source_commit"]):
+        raise RepackError("Tempotec V1 kernel pin has an invalid source_commit")
+    return pin
+
+
+def kernel_validation_helpers():
+    """Load the existing uImage CRC validator and embedded V1 DTB extractor."""
+    helper_paths = (
+        ("repack_kernel_upt", REPO_ROOT / "scripts/kernel/repack/kernel_upt/repack_kernel_upt.py"),
+        ("prepare_r1_kernel", REPO_ROOT / "scripts/kernel/prepare/prepare_r1_kernel.py"),
+    )
+    modules = []
+    for name, path in helper_paths:
+        spec = importlib.util.spec_from_file_location(name, path)
+        if spec is None or spec.loader is None:
+            raise RepackError(f"cannot load V1 kernel validation helper: {path}")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        modules.append(module)
+    return modules[0].validate_uimage, modules[1].embedded_dtb
+
+
+def validate_v1_kernel(kernel: pathlib.Path, stock_kernel: pathlib.Path, pin: dict[str, object],
+                        validate_uimage_fn=None, embedded_dtb_fn=None) -> dict[str, object]:
+    safe_regular(stock_kernel, "published stock V1 xImage")
+    if validate_uimage_fn is None or embedded_dtb_fn is None:
+        default_validator, default_dtb = kernel_validation_helpers()
+        validate_uimage_fn = validate_uimage_fn or default_validator
+        embedded_dtb_fn = embedded_dtb_fn or default_dtb
+    stock_size = stock_kernel.stat().st_size
+    if stock_size != 3_731_520:
+        raise RepackError(f"published stock V1 xImage has unexpected size: {stock_size}")
+    candidate_info = validate_pinned_v1_kernel(kernel, pin, validate_uimage_fn, embedded_dtb_fn)
+    stock_dtb = embedded_dtb_fn(stock_kernel)
+    candidate_dtb = embedded_dtb_fn(kernel)
+    if stock_dtb is None or candidate_dtb is None or candidate_dtb != stock_dtb:
+        raise RepackError("candidate V1 xImage does not embed the exact published stock V1 DTB")
+    return candidate_info
+
+
+def validate_pinned_v1_kernel(kernel: pathlib.Path, pin: dict[str, object],
+                              validate_uimage_fn=None, embedded_dtb_fn=None) -> dict[str, object]:
+    """Check the pinned candidate's bounds, image CRC/type, hash and registered DTB."""
+    safe_regular(kernel, "candidate V1 xImage")
+    if validate_uimage_fn is None or embedded_dtb_fn is None:
+        default_validator, default_dtb = kernel_validation_helpers()
+        validate_uimage_fn = validate_uimage_fn or default_validator
+        embedded_dtb_fn = embedded_dtb_fn or default_dtb
+    candidate_size = kernel.stat().st_size
+    if candidate_size <= 0 or candidate_size > 3_731_520:
+        raise RepackError(f"candidate V1 xImage exceeds stock size bound ({candidate_size} > 3731520)")
+    candidate_hash = digest(kernel)
+    if candidate_hash != pin["sha256"]:
+        raise RepackError("candidate V1 xImage SHA-256 does not match firmware/kernel/tempotec_v1.json")
+    if candidate_size != pin["size_bytes"]:
+        raise RepackError("candidate V1 xImage size does not match firmware/kernel/tempotec_v1.json")
+    try:
+        validate_uimage_fn(kernel)
+    except (OSError, ValueError, struct.error) as exc:
+        raise RepackError(f"candidate V1 xImage failed uImage CRC/type validation: {exc}") from exc
+    candidate_dtb = embedded_dtb_fn(kernel)
+    if candidate_dtb is None:
+        raise RepackError("candidate V1 xImage has no embedded device tree")
+    dtb_hash = hashlib.sha256(candidate_dtb).hexdigest()
+    if dtb_hash != pin["dtb_sha256"]:
+        raise RepackError("candidate V1 xImage DTB SHA-256 does not match firmware/kernel/tempotec_v1.json")
+    return {"sha256": candidate_hash, "size_bytes": candidate_size, "dtb_sha256": dtb_hash}
+
+
+def install_v1_zram_overlay(root: pathlib.Path) -> dict[str, dict[str, object]]:
+    installed = {}
+    for rel, source in V1_ZRAM_OVERLAY_FILES.items():
+        safe_regular(source, "V1 zram overlay file")
+        if source.stat().st_mode & 0o7777 != 0o755:
+            raise RepackError(f"V1 zram overlay source must have mode 755: {source}")
+        dest = root / rel
+        if dest.exists() or dest.is_symlink():
+            raise RepackError(f"refusing to overwrite existing V1 rootfs path: {rel}")
+        if not dest.parent.is_dir() or dest.parent.is_symlink():
+            raise RepackError(f"V1 zram destination directory is missing or linked: {dest.parent}")
+        shutil.copy2(source, dest)
+        if digest(dest) != digest(source) or dest.stat().st_mode & 0o7777 != 0o755:
+            raise RepackError(f"V1 zram overlay copy differs from its source: {rel}")
+        installed[rel] = {"sha256": digest(dest), "size_bytes": dest.stat().st_size}
+    return installed
+
+
+def write_image_chunks(ota: pathlib.Path, name: str, image: pathlib.Path) -> dict[str, object]:
+    """Replace one OTA payload chain and return its verified metadata values."""
+    for pattern in (f"{name}.[0-9][0-9][0-9][0-9].*", f"ota_md5_{name}.*"):
+        for path in ota.glob(pattern):
+            if path.is_symlink() or not path.is_file():
+                raise RepackError(f"unsafe old OTA image-chain member: {path.name}")
+            path.unlink()
+    image_md5 = digest(image, "md5")
+    chunk_hashes = []
+    previous = image_md5
+    with image.open("rb") as source:
+        index = 0
+        while True:
+            data = source.read(IMAGE_CHUNK_SIZE)
+            if not data:
+                break
+            part_md5 = hashlib.md5(data).hexdigest()
+            (ota / f"{name}.{index:04d}.{previous}").write_bytes(data)
+            chunk_hashes.append(part_md5)
+            previous = part_md5
+            index += 1
+    if not chunk_hashes:
+        raise RepackError(f"cannot package an empty OTA image: {name}")
+    (ota / f"ota_md5_{name}.{image_md5}").write_text("".join(value + "\n" for value in chunk_hashes))
+    return {"size_bytes": image.stat().st_size, "md5": image_md5, "sha256": digest(image), "chunks": len(chunk_hashes)}
 
 
 def patch_launcher_text(text: str) -> str:
@@ -1107,7 +1245,7 @@ def update_sidecar(template: pathlib.Path, output: pathlib.Path, md5_hex: str) -
 
 def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path, output: pathlib.Path,
            sidecar_template: pathlib.Path, sidecar_output: pathlib.Path, manifest_path: pathlib.Path,
-           tmp_parent: pathlib.Path) -> dict[str, object]:
+           tmp_parent: pathlib.Path, kernel: pathlib.Path | None = None) -> dict[str, object]:
     for cmd in ("7z", "unsquashfs", "mksquashfs", "genisoimage", "readelf", "sha256sum"):
         if shutil.which(cmd) is None:
             raise RepackError(f"missing required host tool: {cmd}")
@@ -1134,6 +1272,16 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         # Validate base image payload is the official kernel and V1 layout.
         if base_images["xImage"]["sha256"] != BASE_KERNEL_SHA256:
             raise RepackError("base kernel hash differs from verified official V1 kernel")
+        stock_kernel = work / "base" / "xImage"
+        kernel_pin = None
+        candidate_kernel_info = None
+        if kernel is not None:
+            kernel_pin = load_v1_kernel_pin()
+            candidate_kernel_info = validate_v1_kernel(kernel, stock_kernel, kernel_pin)
+            candidate_kernel_info.update({
+                key: kernel_pin[key]
+                for key in ("kernel_release", "source_repo", "source_commit", "sdk_sha256", "config_sha256")
+            })
         v1_root = work / "v1-root"
         run(["unsquashfs", "-no-xattrs", "-d", str(v1_root), str(rootfs)])
         device, dimensions = board_from_config(v1_root / "usr/resource/config.json")
@@ -1178,6 +1326,8 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         clean_os = clean_new_os(v1_root)
         current_assets.update(install_required_usb_overlay(v1_root))
         current_assets.update(install_v1_boot_artwork(v1_root))
+        zram_assets = install_v1_zram_overlay(v1_root) if kernel is not None else {}
+        current_assets.update(zram_assets)
         clean_paths = [item["path"].lstrip("/") for item in clean_os["removed"] + clean_os["naming_updates"]]
         allowed_paths = list(current_assets) + clean_paths + bluez_changed_paths()
         changed_paths = verify_only_allowed_changes(stock_inventory, tree_inventory(v1_root), allowed_paths)
@@ -1192,9 +1342,11 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
             raise RepackError("V1 rootfs exceeds the verified stock rootfs size")
 
         # Rewrite ota_update.in in the compact layout repack_upt.sh writes (no blank lines): the
-        # player's own parser (firmware_image.c parse_manifest) rejects the stock TempoTec
-        # layout. Only the rootfs size and MD5 change; kernel values come from the base.
+        # player's own parser (firmware_image.c parse_manifest) rejects the stock TempoTec layout.
+        # The optional V1 kernel is pinned and its chain is replaced only when --kernel is passed.
         k = base_images["xImage"]
+        if kernel is not None:
+            k = write_image_chunks(ota, "xImage", kernel)
         metadata_text = (
             "ota_version=0\n"
             f"img_type=kernel\nimg_name=xImage\nimg_size={k['size_bytes']}\nimg_md5={k['md5']}\n"
@@ -1230,12 +1382,12 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
             raise RepackError("rebuilt rootfs differs after chunk reconstruction")
         verified_kernel = work / "verified-xImage"
         final_kernel_info = verify_image_chunks(ota, "kernel", "xImage", verified_kernel)
-        if final_kernel_info["sha256"] != BASE_KERNEL_SHA256:
-            raise RepackError("kernel changed while repacking")
+        expected_kernel_sha256 = candidate_kernel_info["sha256"] if candidate_kernel_info else BASE_KERNEL_SHA256
+        if final_kernel_info["sha256"] != expected_kernel_sha256:
+            raise RepackError("kernel payload changed while repacking")
 
         # Keep the vendor's ISO metadata and files; write a new UPT next to the
-        # explicit candidate output. No init/recovery/kernel/module files are
-        # removed or replaced.
+        # explicit candidate output. No init/recovery/module files are removed or replaced.
         # Match the HiBy repacker and the published images: the marker file is empty
         # (the stock V1 file holds a single newline).
         (ota / "ota_v0.ok").write_bytes(b"")
@@ -1248,6 +1400,9 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
 
         # Ensure the rebuilt output contains no unexpected stock core changes.
         _, check_rootfs, result_images = extract_rootfs(package_temp, work / "verify-output")
+        verified_output_kernel = work / "verify-output" / "xImage"
+        if digest(verified_output_kernel) != expected_kernel_sha256:
+            raise RepackError("final UPT kernel differs from the verified kernel payload")
         result_root = work / "verify-root"
         run(["unsquashfs", "-no-xattrs", "-d", str(result_root), str(check_rootfs)])
         if digest(result_root / "etc/init.d/S92_03_start_music_player") != stock_init_hash:
@@ -1262,6 +1417,9 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
                     raise RepackError("final tracked asset alias mismatch: " + rel)
             elif not asset.is_file() or digest(asset) != record["sha256"]:
                 raise RepackError("final tracked asset hash mismatch: " + rel)
+        for rel in zram_assets:
+            if (result_root / rel).stat().st_mode & 0o7777 != 0o755:
+                raise RepackError("final V1 zram overlay mode differs from 755: " + rel)
         final_changed_paths = verify_only_allowed_changes(stock_inventory, tree_inventory(result_root), allowed_paths)
         if final_changed_paths != changed_paths:
             raise RepackError("final rootfs delta differs from the explicitly prepared file delta")
@@ -1292,6 +1450,7 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
             "screen": {"width": dimensions[0], "height": dimensions[1]},
             "base_upt": {"sha256": BASE_SHA256, "md5": BASE_MD5, "size_bytes": base.stat().st_size},
             "player": player_info,
+            "kernel": candidate_kernel_info or {"sha256": BASE_KERNEL_SHA256, "size_bytes": base_images["xImage"]["size_bytes"], "stock": True},
             "approved_r1_source_upt_sha256": r1_candidate_sha256,
             "base_components": base_images,
             "r1_source_components": r1_images,
@@ -1301,6 +1460,7 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
             "clean_os": clean_os,
             "assets": assets,
             "current_tracked_assets": current_assets,
+            "v1_zram_overlay": zram_assets,
             "bluealsa_ssc_runtime": runtime,
             "bluealsa_runtime_final_strong_symbol_closure": final_runtime_closure,
             "speex_runtime": speex_runtime,
@@ -1325,6 +1485,8 @@ def main() -> int:
     parser.add_argument("--md5-output", type=pathlib.Path, required=True, help="v1_md5.txt output path")
     parser.add_argument("--manifest", type=pathlib.Path, required=True, help="JSON evidence manifest output")
     parser.add_argument("--tmp", type=pathlib.Path, required=True, help="cache-owned temp directory")
+    parser.add_argument("--kernel", type=pathlib.Path, default=None,
+                        help="pinned Tempotec V1 xImage; also installs the V1 zram overlay")
     parser.add_argument("--md5-template", type=pathlib.Path, default=None,
                         help="v1_md5.txt format template (default: v1_md5.txt next to --base; "
                              "firmware/v1/v1_md5.template.txt is tracked)")
@@ -1333,7 +1495,7 @@ def main() -> int:
     try:
         result = repack(args.base.resolve(), args.player.resolve(), args.r1_candidate.resolve(),
                         args.output.resolve(), (args.md5_template or base_dir / "v1_md5.txt").resolve(), args.md5_output.resolve(),
-                        args.manifest.resolve(), args.tmp.resolve())
+                        args.manifest.resolve(), args.tmp.resolve(), args.kernel if args.kernel else None)
     except RepackError as exc:
         print(f"V1 repack rejected: {exc}", file=sys.stderr)
         return 1

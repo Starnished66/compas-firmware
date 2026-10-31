@@ -245,6 +245,8 @@ if [[ -f $out/v1.upt ]]; then
     root=$work/v1/root
     check_manifest "$work/v1/upt/ota_v0"
     check_ota_entries "$work/v1/upt" v1.upt
+    python3 -I "$repo/scripts/build/firmware/check_v1_kernel.py" \
+        --ota-dir "$work/v1/upt/ota_v0" --root "$root" --kernel-output "$work/v1/xImage"
     grep -aq 'COMPAS_PLAYER_BOARD:tempotec_v1' "$root/usr/bin/compas_player"
     cmp -- "$repo/assets/v1/theme2/usb/usb.png" "$root/usr/resource/litegui/theme2/usb/usb.png"
     # Panel-sized (240x320) artwork, not the shared 480x800 one.
@@ -265,5 +267,5 @@ if [[ -f $out/v1.upt ]]; then
         grep -qx 'AutoEnable=false' "$root/etc/bluetooth/main.conf" || {
         echo "v1.upt: main.conf lacks the V1 Bluetooth options" >&2; exit 1; }
     [[ $(awk '{print $1}' "$out/v1_md5.txt") == "$(md5sum "$out/v1.upt" | awk '{print $1}')" ]]
-    echo "v1.upt: player marker, assets, BlueZ stack and v1_md5.txt verified"
+    echo "v1.upt: player marker, assets, BlueZ stack, kernel mode, zram overlay and v1_md5.txt verified"
 fi

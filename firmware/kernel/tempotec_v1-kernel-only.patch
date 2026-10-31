@@ -1,0 +1,34 @@
+--- a/build.sh
++++ b/build.sh
+@@ -32,6 +32,7 @@
+ FRAGMENTS=()
+ PATCHES=()
+ MENUCONFIG=0
++KERNEL_ONLY=0
+ JOBS=$(nproc)
+ 
+ while [ $# -gt 0 ]; do
+@@ -41,6 +42,7 @@
+ 	--fragment) FRAGMENTS+=("$2"); shift ;;
+ 	--patch) PATCHES+=("$2"); shift ;;
+ 	--menuconfig) MENUCONFIG=1 ;;
++	--kernel-only) KERNEL_ONLY=1 ;;
+ 	--jobs) JOBS=$2; shift ;;
+ 	*) echo "unknown option: $1" >&2; exit 2 ;;
+ 	esac
+@@ -152,6 +154,15 @@
+ cp arch/mips/boot/zcompressed/xImage "$OUT/xImage-$NAME"
+ cp System.map "$OUT/System.map-$NAME"
+ cp .config "$OUT/config-$NAME"
++cp vmlinux "$OUT/vmlinux-$NAME"
++
++if [ "$KERNEL_ONLY" = 1 ]; then
++	echo "=== kernel-only build: skip modules ==="
++	python3 "$KIT/tools/compare.py" --kit "$KIT" --tree "$SRC" --name "$NAME" --model "$MODEL" | tee "$OUT/report-$NAME.txt"
++	echo
++	echo "BUILD_OK -> out/xImage-$NAME, out/report-$NAME.txt (kernel only)"
++	exit 0
++fi
+ 
+ # Modules: the options a fragment sets to m, the modules in modules/ and in
+ # boards/MODEL/modules/, built out of tree from a copy so that the repo stays

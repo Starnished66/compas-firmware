@@ -1,7 +1,9 @@
 # TempoTec Variations V1: hardware notes
 
 The V1 is HibyOS on an Ingenic X1600, the same class of machine as the R1 and R3 Pro II, with a 240x320
-panel. Compás does not replace its kernel or audio drivers. How the image is built is in
+panel. The v1.4 beta kernel refresh adds 24 MiB LZ4 zram swap while retaining the stock device tree,
+audio drivers and other vendor modules. The new kernel has passed static checks but awaits V1 beta-tester
+hardware validation. Build provenance is recorded in `firmware/kernel/tempotec_v1.json`. How the image is built is in
 [inputs.md](inputs.md) and `scripts/firmware/package/repack_v1_upt.py`.
 
 ## Attribution

@@ -77,6 +77,7 @@ jobs:
           COMPAS_PLAYER_DIR: ${{ github.workspace }}/compas-player
           BASE_DIR: ${{ github.workspace }}/inputs/base
           V1_STOCK_UPT: ${{ github.workspace }}/inputs/base/v1-stock.upt
+          V1_KERNEL: ${{ github.workspace }}/inputs/kernel/v1-zram-xImage
           SSC_OVERLAY_DIR: ${{ github.workspace }}/inputs/ssc
           OUT_DIR: ${{ github.workspace }}/release
           RELEASE_LABEL: ${{ steps.release.outputs.title }}

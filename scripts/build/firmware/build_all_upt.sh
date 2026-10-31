@@ -7,6 +7,7 @@
 #   OUT_DIR=...            receives the .upt files, standalone players and SHA256SUMS
 #   RELEASE_LABEL=...      vX.Y.Z or "Weekly Beta YYYY-MM-DD"
 #   V1_STOCK_UPT=...       official TempoTec V1 1.2 firmware (not committed); needed for tempotec_v1
+#   V1_KERNEL=...          pinned Tempotec V1 xImage from the prepared kernel input; required for tempotec_v1
 # BOARDS="r1 r3proii r3ii_2025 tempotec_v1" limits the build (tempotec_v1 needs r1).
 # scripts/build/firmware/fetch_inputs.sh downloads and verifies BASE_DIR, SSC_OVERLAY_DIR and the V1 stock image.
 set -euo pipefail
@@ -73,12 +74,15 @@ unset R1_RUNTIME_OVERLAY R3_RUNTIME_OVERLAY
 
 if [[ " $boards " == *" tempotec_v1 "* ]]; then
     : "${V1_STOCK_UPT:?set V1_STOCK_UPT for tempotec_v1}"
+    : "${V1_KERNEL:?set V1_KERNEL to the pinned Tempotec V1 xImage for tempotec_v1}"
+    [[ -s $V1_KERNEL ]] || { echo "Missing or empty V1_KERNEL: $V1_KERNEL" >&2; exit 1; }
     [[ -s $out_dir/r1.upt ]] || { echo "tempotec_v1 needs the freshly built r1.upt in OUT_DIR" >&2; exit 1; }
     build_player "$player_dir" tempotec_v1
     check_player "$player_dir/compas_player_target_tempotec_v1"
     rm -f "$out_dir/v1.upt" "$out_dir/v1_md5.txt" "$out_dir/v1-manifest.json"
     python3 -I "$repo/scripts/firmware/package/repack_v1_upt.py" \
         --base "$V1_STOCK_UPT" --player "$player_dir/compas_player_target_tempotec_v1" \
+        --kernel "$V1_KERNEL" \
         --r1-candidate "$out_dir/r1.upt" --output "$out_dir/v1.upt" \
         --md5-output "$out_dir/v1_md5.txt" --manifest "$out_dir/v1-manifest.json" \
         --tmp "$tmp" --md5-template "$repo/firmware/v1/v1_md5.template.txt"

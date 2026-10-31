@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 # Download and verify the build inputs (nothing is committed or republished).
 #   fetch_inputs.sh DEST   -> DEST/base/{r1,r3proii,r3ii_2025}.upt, DEST/base/v1-stock.upt,
-#                             DEST/ssc/usr/bin/bluealsad,
+#                             DEST/kernel/v1-zram-xImage, DEST/ssc/usr/bin/bluealsad,
 #                             DEST/ssc/usr/libexec/bluetooth/{bluetoothd,obexd}
 # Hashes: firmware/inputs.sha256 (base images, V1 stock) and firmware/ssc-overlay.sha256 (runtime
 # overlay daemons, paths relative to DEST/ssc).
 # Sources: compas-player release staging-image-base (public); compas-firmware release build-inputs
-# (assets bluealsad, bluetoothd, obexd and v1-stock.upt). Needs the gh CLI (GH_TOKEN in CI).
-# BUILD_INPUTS_DIR=DIR takes any of those four assets from DIR instead of the release (to try a new
+# (assets bluealsad, bluetoothd, obexd, v1-stock.upt and v1-zram-xImage). Needs the gh CLI (GH_TOKEN in CI).
+# BUILD_INPUTS_DIR=DIR takes any of those assets from DIR instead of the release (to try a new
 # asset before it is uploaded); the hash checks below still apply.
 set -euo pipefail
 repo=$(cd "$(dirname "$0")/../../.." && pwd)
 dest=$(realpath -m "${1:?usage: $0 DEST}")
 player_repo=${PLAYER_REPO:-Starnished66/compas-player}
 firmware_repo=${FIRMWARE_REPO:-Starnished66/compas-firmware}
-mkdir -p "$dest/base" "$dest/ssc/usr/bin" "$dest/ssc/usr/libexec/bluetooth"
+mkdir -p "$dest/base" "$dest/ssc/usr/bin" "$dest/ssc/usr/libexec/bluetooth" "$dest/kernel"
 
 check_pin() {   # check_pin PINFILE DIR NAME: verify one downloaded file against its tracked hash
     local line
@@ -35,6 +35,7 @@ build_input() {   # build_input ASSET DIR PINFILE PIN_ROOT PINNED_NAME
 }
 for image in r1.upt r3proii.upt r3ii_2025.upt; do base_input "$image"; done
 build_input v1-stock.upt "$dest/base" "$repo/firmware/inputs.sha256" "$dest/base" v1-stock.upt
+build_input v1-zram-xImage "$dest/kernel" "$repo/firmware/v1-kernel.sha256" "$dest/kernel" v1-zram-xImage
 overlay_pins="$repo/firmware/ssc-overlay.sha256"
 build_input bluealsad "$dest/ssc/usr/bin" "$overlay_pins" "$dest/ssc" usr/bin/bluealsad
 build_input bluetoothd "$dest/ssc/usr/libexec/bluetooth" "$overlay_pins" "$dest/ssc" usr/libexec/bluetooth/bluetoothd
