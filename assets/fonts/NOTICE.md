@@ -202,6 +202,12 @@ the source face for the player's compiled Montserrat UI fonts. It supplies
 reusable large display text through the existing runtime font registry.
 The accompanying license is in `Montserrat-OFL.txt`.
 
+`scripts/generators/fonts/generate_ui_fonts.py` subsets the source into the
+player's binary UI fonts and matching LVGL C fonts. The text ranges include
+Vietnamese precomposed letters U+01A0, U+01A1, U+01AF, U+01B0, and
+U+1EA0–U+1EF9 in addition to Latin Extended-A and the other ranges documented
+in that generator.
+
 # arabic.ttf -- Noto Sans Arabic
 
 This subset is derived from **Noto Sans Arabic** by The Noto Project Authors

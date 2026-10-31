@@ -1,0 +1,3437 @@
+# Vietnamese translation for compas-player.
+# Machine-translated draft reviewed and corrected for UI meaning; native-speaker review recommended.
+msgid ""
+msgstr ""
+"Project-Id-Version: compas-player\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-17 10:56-0600\n"
+"PO-Revision-Date: 2026-10-31 00:00+0000\n"
+"Last-Translator: Compas Player contributors (AI-assisted)\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"X-Native-Name: Tiếng Việt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "File unavailable"
+msgstr "Tệp không có sẵn"
+
+msgid "Unsupported audio format"
+msgstr "Định dạng âm thanh không được hỗ trợ"
+
+msgid "Too many audio channels"
+msgstr "Quá nhiều kênh âm thanh"
+
+msgid "Audio output failed"
+msgstr "Lỗi đầu ra âm thanh"
+
+msgid "Audio could not be decoded"
+msgstr "Không thể giải mã âm thanh"
+
+msgid "Playback error"
+msgstr "Lỗi phát lại"
+
+msgid "No SD card is mounted."
+msgstr "Chưa gắn thẻ SD."
+
+msgid "The firmware path is too long."
+msgstr "Đường dẫn firmware quá dài."
+
+msgid "Use a regular %s file in the SD card root."
+msgstr "Sử dụng tệp %s thông thường trong thư mục gốc của thẻ SD."
+
+msgid "Could not prepare update helper: %s"
+msgstr "Không thể chuẩn bị trình trợ giúp cập nhật: %s"
+
+msgid "Could not start update helper: %s"
+msgstr "Không thể bắt đầu trình trợ giúp cập nhật: %s"
+
+msgid "Update helper failed (%s, status %d). See .compas/ota/update.log."
+msgstr "Trình trợ giúp cập nhật không thành công (%s, trạng thái %d). Xem .compas/ota/update.log."
+
+msgid "Cannot read update helper status: %s"
+msgstr "Không thể đọc trạng thái trợ giúp cập nhật: %s"
+
+msgid "Still working. Do not turn off the player or retry."
+msgstr "Đang xử lý. Đừng tắt máy nghe nhạc và đừng thử lại."
+
+msgid "Recovery flag partition does not match this firmware."
+msgstr "Phân vùng cờ khôi phục không khớp với firmware này."
+
+msgid "Cannot safely access the recovery flag block."
+msgstr "Không thể truy cập an toàn vào vùng lưu cờ khôi phục."
+
+msgid "Recovery flag erase failed. Do not reboot; check .compas/ota/update.log."
+msgstr "Không thể xóa cờ khôi phục. Đừng khởi động lại; hãy xem .compas/ota/update.log."
+
+msgid "Recovery flag write failed. Do not reboot; check .compas/ota/update.log."
+msgstr "Không thể ghi cờ khôi phục. Đừng khởi động lại; hãy xem .compas/ota/update.log."
+
+msgid "Recovery flag verification failed. Do not reboot; check the update log."
+msgstr "Không thể xác minh cờ khôi phục. Đừng khởi động lại; hãy xem nhật ký cập nhật."
+
+msgid "The selected update file changed. Select it again."
+msgstr "Tệp cập nhật đã chọn đã thay đổi. Hãy chọn lại."
+
+msgid "Cannot read the selected update file."
+msgstr "Không thể đọc tệp cập nhật đã chọn."
+
+msgid "Cannot create the update log directory."
+msgstr "Không thể tạo thư mục nhật ký cập nhật."
+
+msgid "Update diagnostics must be stored on the SD card."
+msgstr "Chẩn đoán cập nhật phải được lưu trữ trên thẻ SD."
+
+msgid "Cannot save update diagnostics on the SD card."
+msgstr "Không thể lưu chẩn đoán cập nhật trên thẻ SD."
+
+msgid "The update file changed during verification. Select it again."
+msgstr "Tệp cập nhật đã thay đổi trong khi xác minh. Hãy chọn lại."
+
+msgid "Could not move other .upt files aside on the SD card."
+msgstr "Không thể di chuyển các tệp .upt khác sang một bên trên thẻ SD."
+
+msgid "A required recovery helper is missing. Update preparation stopped."
+msgstr "Thiếu trợ giúp khôi phục cần thiết. Quá trình chuẩn bị cập nhật đã dừng lại."
+
+msgid "Cannot save update diagnostics. Update preparation stopped."
+msgstr "Không thể lưu chẩn đoán cập nhật. Quá trình chuẩn bị cập nhật đã dừng lại."
+
+msgid "Recovery boot flag failed."
+msgstr "Cờ khởi động khôi phục không thành công."
+
+msgid "Recovery remains selected. Keep the update file; saving diagnostics failed."
+msgstr "Chế độ khôi phục vẫn được chọn. Giữ tệp cập nhật; không lưu được thông tin chẩn đoán."
+
+msgid "Saving data failed. Recovery remains selected; keep the update file and check .compas/ota/update.log."
+msgstr "Không thể lưu dữ liệu. Chế độ khôi phục vẫn được chọn; hãy giữ tệp cập nhật và xem .compas/ota/update.log."
+
+msgid "Recovery remains selected but reboot failed: %s. Keep the update file."
+msgstr "Chế độ khôi phục vẫn được chọn nhưng không khởi động lại được: %s. Giữ tệp cập nhật."
+
+msgid "An update is already in progress."
+msgstr "Đang có bản cập nhật khác."
+
+msgid "Charge to at least 30%% or connect power before updating."
+msgstr "Sạc tới ít nhất 30%% hoặc kết nối nguồn trước khi cập nhật."
+
+msgid "Invalid update path."
+msgstr "Đường dẫn cập nhật không hợp lệ."
+
+msgid "Could not start the update."
+msgstr "Không thể bắt đầu cập nhật."
+
+msgid "Update failed."
+msgstr "Cập nhật không thành công."
+
+msgid "Could not prepare secure update storage."
+msgstr "Không thể chuẩn bị bộ nhớ cập nhật an toàn."
+
+msgid "Could not download the release checksums."
+msgstr "Không thể tải xuống tổng kiểm tra bản phát hành."
+
+msgid "The release does not provide a valid player checksum."
+msgstr "Bản phát hành không có mã kiểm tra hợp lệ cho trình phát."
+
+msgid "The release checksum does not match the published asset digest."
+msgstr "Tổng kiểm tra bản phát hành không khớp với thông báo nội dung đã xuất bản."
+
+msgid "The latest player release changed. Check again."
+msgstr "Bản phát hành trình phát mới nhất đã thay đổi. Hãy kiểm tra lại."
+
+msgid "The player image exceeds the safe size limit."
+msgstr "Hình ảnh trình phát vượt quá giới hạn kích thước an toàn."
+
+msgid "Not enough internal storage for the player update."
+msgstr "Không đủ bộ nhớ trong để cập nhật trình phát."
+
+msgid "The player download did not complete."
+msgstr "Tải trình phát xuống chưa hoàn tất."
+
+msgid "The downloaded player failed SHA-256 verification."
+msgstr "Không xác minh được SHA-256 của trình phát đã tải xuống."
+
+msgid "Place a valid player executable at SD/.compas/compas_player."
+msgstr "Đặt trình phát thực thi hợp lệ tại SD/.compas/compas_player."
+
+msgid "Could not start the player update check."
+msgstr "Không thể bắt đầu kiểm tra cập nhật trình phát."
+
+msgid "Another update is already active."
+msgstr "Đang có bản cập nhật khác."
+
+msgid "Check for a player update first."
+msgstr "Trước tiên, hãy kiểm tra bản cập nhật cho trình phát."
+
+msgid "Not enough memory."
+msgstr "Không đủ bộ nhớ."
+
+msgid "Could not start the player download."
+msgstr "Không thể bắt đầu tải xuống trình phát."
+
+msgid "Could not start the SD player update."
+msgstr "Không thể bắt đầu cập nhật trình phát SD."
+
+msgid "Screenshots unavailable"
+msgstr "Không thể chụp ảnh màn hình"
+
+msgid "Screenshot needs an SD card"
+msgstr "Cần có thẻ SD để chụp ảnh màn hình"
+
+msgid "Disconnect USB storage first"
+msgstr "Trước tiên hãy ngắt kết nối bộ lưu trữ USB"
+
+msgid "Screenshot failed (framebuffer)"
+msgstr "Ảnh chụp màn hình không thành công (bộ đệm khung)"
+
+msgid "Screenshot failed (worker)"
+msgstr "Chụp ảnh màn hình thất bại (tiến trình nền)"
+
+msgid "Files"
+msgstr "Tập tin"
+
+msgid "Artists"
+msgstr "Nghệ sĩ"
+
+msgid "Albums"
+msgstr "Album"
+
+msgid "Album Artist"
+msgstr "Nghệ sĩ album"
+
+msgid "Genres"
+msgstr "Thể loại"
+
+msgid "All Songs"
+msgstr "Tất cả bài hát"
+
+msgid "Playlists"
+msgstr "Danh sách phát"
+
+msgid "Sound"
+msgstr "Âm thanh"
+
+msgid "Playback"
+msgstr "Phát lại"
+
+msgid "Library"
+msgstr "Thư viện"
+
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Sleep Timer"
+msgstr "Hẹn giờ ngủ"
+
+msgid "Crossfade"
+msgstr "Đan xen"
+
+msgid "AirPlay"
+msgstr "AirPlay"
+
+msgid "DLNA"
+msgstr "DLNA"
+
+msgid "Gapless"
+msgstr "Phát liền mạch"
+
+msgid "Remote Control"
+msgstr "Điều khiển từ xa"
+
+msgid "Car Mode"
+msgstr "Chế độ ô tô"
+
+msgid "Plugins"
+msgstr "Plugin"
+
+msgid "Page %d of %d"
+msgstr "%d/%d trang"
+
+msgid "Go to page"
+msgstr "Đi tới trang"
+
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+msgid "Previous"
+msgstr "Trước đó"
+
+msgid "Next"
+msgstr "Tiếp theo"
+
+msgid "Folder too large to index (tap Back)"
+msgstr "Thư mục quá lớn để lập chỉ mục (nhấn Quay lại)"
+
+msgid "Unable to read folder (tap Back and retry)"
+msgstr "Không thể đọc thư mục (nhấn Quay lại và thử lại)"
+
+msgid "This folder is empty"
+msgstr "Thư mục này trống"
+
+msgid "No playable files here"
+msgstr "Không có tệp nào có thể phát trong thư mục này"
+
+msgid "No playable audio files found"
+msgstr "Không tìm thấy tệp âm thanh có thể phát được"
+
+msgid "Open a folder containing supported audio files."
+msgstr "Mở thư mục chứa các tập tin âm thanh được hỗ trợ."
+
+msgid "Unexpected reply from GitHub."
+msgstr "GitHub phản hồi không hợp lệ."
+
+msgid "Insert an SD card to change emulators."
+msgstr "Lắp thẻ SD để thay đổi trình giả lập."
+
+msgid "Cannot create the emulator folder."
+msgstr "Không thể tạo thư mục giả lập."
+
+msgid "The emulator folder is not writable."
+msgstr "Thư mục giả lập không thể ghi được."
+
+msgid "Not enough free space on the player."
+msgstr "Không đủ dung lượng trống trên máy nghe nhạc."
+
+msgid "Could not read the emulator list from GitHub."
+msgstr "Không thể đọc danh sách trình giả lập từ GitHub."
+
+msgid "This emulator needs a newer player version."
+msgstr "Trình giả lập này cần phiên bản trình phát mới hơn."
+
+msgid "Disconnect USB storage from the host before changing emulators."
+msgstr "Ngắt bộ nhớ USB khỏi máy chủ trước khi đổi trình giả lập."
+
+msgid "Could not install the emulator."
+msgstr "Không thể cài đặt trình giả lập."
+
+msgid "The emulator download failed verification. Try again."
+msgstr "Không xác minh được tệp trình giả lập đã tải xuống. Hãy thử lại."
+
+msgid "Could not start the emulator operation"
+msgstr "Không thể bắt đầu thao tác với trình giả lập"
+
+msgid "Could not remove the emulator."
+msgstr "Không thể gỡ trình giả lập."
+
+msgid "Unexpected reply from GitHub"
+msgstr "GitHub phản hồi không hợp lệ"
+
+msgid "GitHub's latest release is not a supported firmware release."
+msgstr "Bản phát hành mới nhất của GitHub không phải là bản phát hành firmware được hỗ trợ."
+
+msgid "GitHub's latest release has no valid %s image and checksum."
+msgstr "Bản phát hành mới nhất của GitHub không có hình ảnh và tổng kiểm tra %s hợp lệ."
+
+msgid "Secure connection failed. Check Wi-Fi and the date and time."
+msgstr "Kết nối an toàn không thành công. Kiểm tra Wi-Fi và ngày giờ."
+
+msgid "Cannot reach GitHub. Check the Wi-Fi connection."
+msgstr "Không thể truy cập GitHub. Kiểm tra kết nối Wi-Fi."
+
+msgid "GitHub did not respond in time. Try again."
+msgstr "GitHub không phản hồi kịp thời. Hãy thử lại."
+
+msgid "Could not read the release list from GitHub."
+msgstr "Không thể đọc danh sách bản phát hành từ GitHub."
+
+msgid "GitHub is limiting requests. Try again later."
+msgstr "GitHub đang hạn chế yêu cầu. Hãy thử lại sau."
+
+msgid "GitHub returned HTTP %d."
+msgstr "GitHub trả về mã HTTP %d."
+
+msgid "Cannot read the SD card."
+msgstr "Không thể đọc thẻ SD."
+
+msgid "A newer or changed release is available. Check for updates again before downloading."
+msgstr "Đã có bản phát hành mới hơn hoặc đã thay đổi. Hãy kiểm tra cập nhật lần nữa trước khi tải xuống."
+
+msgid "Insert an SD card to download the update."
+msgstr "Lắp thẻ SD để tải xuống bản cập nhật."
+
+msgid "The release has no checksum for this device's image."
+msgstr "Bản phát hành không có tổng kiểm tra cho hình ảnh của thiết bị này."
+
+msgid "This release's image does not match its checksums. Try again after the next weekly release."
+msgstr "Hình ảnh của bản phát hành này không khớp với tổng kiểm tra của nó. Hãy thử lại sau lần phát hành hàng tuần tiếp theo."
+
+msgid "Not enough free space on the SD card for the update."
+msgstr "Không đủ dung lượng trống trên thẻ SD để cập nhật."
+
+msgid "The download did not complete. Check Wi-Fi and try again."
+msgstr "Quá trình tải xuống không hoàn tất. Hãy kiểm tra Wi-Fi và thử lại."
+
+msgid "The downloaded image failed verification and was deleted."
+msgstr "Hình ảnh đã tải xuống không được xác minh và đã bị xóa."
+
+msgid "The SD card changed during the download."
+msgstr "Thẻ SD đã thay đổi trong quá trình tải xuống."
+
+msgid "Could not record the verified update on the SD card."
+msgstr "Không thể ghi lại bản cập nhật đã xác minh trên thẻ SD."
+
+msgid "Could not place the update on the SD card."
+msgstr "Không thể đặt bản cập nhật vào thẻ SD."
+
+msgid "Could not start the update check."
+msgstr "Không thể bắt đầu kiểm tra cập nhật."
+
+msgid "Could not start the download."
+msgstr "Không thể bắt đầu tải xuống."
+
+msgid "No verified update is on this SD card. Download it again."
+msgstr "Không có bản cập nhật được xác minh nào trên thẻ SD này. Tải xuống lại."
+
+msgid "Cannot read the update file on the SD card. Check the card and try again."
+msgstr "Không thể đọc tệp cập nhật trên thẻ SD. Hãy kiểm tra thẻ và thử lại."
+
+msgid "The update file on the SD card changed. Download it again."
+msgstr "Tệp cập nhật trên thẻ SD đã thay đổi. Tải xuống lại."
+
+msgid "This update is no longer the latest release. Check for updates and download the latest image."
+msgstr "Bản cập nhật này không còn là bản phát hành mới nhất. Kiểm tra cập nhật và tải xuống hình ảnh mới nhất."
+
+msgid "Could not verify the latest release checksums."
+msgstr "Không thể xác minh tổng kiểm tra bản phát hành mới nhất."
+
+msgid "This update no longer matches the latest release. Download the latest image again."
+msgstr "Bản cập nhật này không còn phù hợp với bản phát hành mới nhất. Tải lại hình ảnh mới nhất một lần nữa."
+
+msgid "Could not enter recovery mode."
+msgstr "Không thể vào chế độ phục hồi."
+
+msgid "Charge to at least %d%% or connect power before updating."
+msgstr "Sạc tới ít nhất %d%% hoặc kết nối nguồn trước khi cập nhật."
+
+msgid "A firmware update is already in progress."
+msgstr "Một bản cập nhật firmware đang được tiến hành."
+
+msgid "Could not start the installation."
+msgstr "Không thể bắt đầu cài đặt."
+
+msgid "Disconnect USB storage from the host before changing plugins."
+msgstr "Ngắt kết nối bộ lưu trữ USB khỏi máy chủ trước khi thay đổi plugin."
+
+msgid "Cannot check plugin storage write access."
+msgstr "Không thể kiểm tra quyền truy cập ghi vào bộ nhớ plugin."
+
+msgid "The SD card is read-only. Check its write protection."
+msgstr "Thẻ SD ở chế độ chỉ đọc. Kiểm tra khả năng bảo vệ ghi của nó."
+
+msgid "Plugin storage is unavailable."
+msgstr "Bộ nhớ plugin không có sẵn."
+
+msgid "The SD card changed during the operation."
+msgstr "Thẻ SD đã thay đổi trong khi thao tác."
+
+msgid "Could not read the plugin list from GitHub."
+msgstr "Không thể đọc danh sách plugin từ GitHub."
+
+msgid "Insert an SD card to install plugins."
+msgstr "Lắp thẻ SD để cài đặt plugin."
+
+msgid "Could not read installed plugins."
+msgstr "Không thể đọc các plugin đã cài đặt."
+
+msgid "This plugin needs a newer player version."
+msgstr "Plugin này cần phiên bản trình phát mới hơn."
+
+msgid "Too many plugins are installed. Remove one and try again."
+msgstr "Quá nhiều plugin được cài đặt. Hãy xóa một cái và thử lại."
+
+msgid "This plugin is already installed by the store."
+msgstr "Plugin này đã được cài đặt từ cửa hàng."
+
+msgid "This plugin has no update available."
+msgstr "Plugin này không có bản cập nhật nào."
+
+msgid "Not enough free space on the SD card."
+msgstr "Không đủ dung lượng trống trên thẻ SD."
+
+msgid "The plugin download failed verification. Try again."
+msgstr "Việc tải xuống plugin không thể xác minh được. Hãy thử lại."
+
+msgid "A local plugin file will be replaced. Confirm to continue."
+msgstr "Tệp plugin trên thiết bị sẽ bị thay thế. Xác nhận để tiếp tục."
+
+msgid "Could not install the plugin on the SD card."
+msgstr "Không thể cài đặt plugin trên thẻ SD."
+
+msgid "Insert an SD card to change plugins."
+msgstr "Lắp thẻ SD để thay đổi plugin."
+
+msgid "Could not start the plugin operation."
+msgstr "Không thể bắt đầu hoạt động của plugin."
+
+msgid "Could not start the plugin refresh."
+msgstr "Không thể bắt đầu làm mới plugin."
+
+msgid "Insert an SD card to remove plugins."
+msgstr "Lắp thẻ SD để xóa plugin."
+
+msgid "This plugin is not installed by the store."
+msgstr "Plugin này không được cài đặt bởi cửa hàng."
+
+msgid "Could not prepare plugin removal."
+msgstr "Không thể chuẩn bị gỡ bỏ plugin."
+
+msgid "Could not remove a plugin file."
+msgstr "Không thể xóa tệp plugin."
+
+msgid "Could not update the installed plugin record."
+msgstr "Không thể cập nhật thông tin plugin đã cài đặt."
+
+msgid "Insert an SD card to update plugins."
+msgstr "Lắp thẻ SD để cập nhật plugin."
+
+msgid "A plugin download failed verification. Try again."
+msgstr "Quá trình xác minh tải xuống plugin không thành công. Hãy thử lại."
+
+msgid "Could not install a plugin on the SD card."
+msgstr "Không thể cài đặt plugin vào thẻ SD."
+
+msgid "Some updates need confirmation before replacing local files."
+msgstr "Cần xác nhận trước khi thay thế một số tệp trên thiết bị."
+
+msgid "Could not start the plugin update."
+msgstr "Không thể bắt đầu cập nhật plugin."
+
+msgid "Unexpected library response"
+msgstr "Phản hồi thư viện không mong đợi"
+
+msgid "On"
+msgstr "Bật"
+
+msgid "Off"
+msgstr "Tắt"
+
+msgid "Screenshot saved"
+msgstr "Đã lưu ảnh chụp màn hình"
+
+msgid "Screenshot failed (%s)"
+msgstr "Ảnh chụp màn hình không thành công (%s)"
+
+msgid "unknown"
+msgstr "Không rõ"
+
+msgid "Cannot play folder"
+msgstr "Không thể phát thư mục"
+
+msgid "Paused: headphones disconnected"
+msgstr "Đã tạm dừng: tai nghe đã bị ngắt kết nối"
+
+msgid "Queue checkpoint failed; storage may be read-only"
+msgstr "Điểm kiểm tra hàng đợi không thành công; bộ nhớ có thể ở chế độ chỉ đọc"
+
+msgid "Playback history could not be saved"
+msgstr "Không thể lưu lịch sử phát lại"
+
+msgid "Subsonic"
+msgstr "Subsonic"
+
+msgid "Stream Media"
+msgstr "Phát trực tuyến"
+
+msgid "Could not open this file."
+msgstr "Không thể mở tập tin này."
+
+msgid "[File truncated at %d KB -- showing the first part only]\n\n%s"
+msgstr "[Tệp bị cắt bớt ở %d KB - chỉ hiển thị phần đầu tiên]\n\n%s"
+
+msgid "Books refreshed"
+msgstr "Sách được làm mới"
+
+msgid "Could not read the Books folder"
+msgstr "Không thể đọc thư mục Books"
+
+msgid "Could not refresh books"
+msgstr "Không thể làm mới sách"
+
+msgid "Favorites"
+msgstr "Yêu thích"
+
+msgid "Books"
+msgstr "Sách"
+
+msgid "No favorites yet"
+msgstr "Chưa có mục yêu thích nào"
+
+msgid "No books found"
+msgstr "Không tìm thấy sách nào"
+
+msgid "Open a book and tap the bookmark icon to save it here."
+msgstr "Mở một cuốn sách và nhấn vào biểu tượng dấu trang để lưu nó ở đây."
+
+msgid "Add .txt files to the Books folder, then refresh the library."
+msgstr "Thêm tệp .txt vào thư mục Books, sau đó làm mới thư viện."
+
+msgid "Needs newer firmware"
+msgstr "Cần firmware mới hơn"
+
+msgid "Update available · %s"
+msgstr "Đã có bản cập nhật · %s"
+
+msgid "Installed · %s"
+msgstr "Đã cài đặt · %s"
+
+msgid "Available · %s"
+msgstr "Có sẵn · %s"
+
+msgid "Install"
+msgstr "Cài đặt"
+
+msgid "Remove"
+msgstr "Gỡ bỏ"
+
+msgid "Bundled games and their saves will be removed. Games in SD/Games are kept."
+msgstr "Các trò chơi cài sẵn và dữ liệu lưu của chúng sẽ bị xóa. Trò chơi trong SD/Games vẫn được giữ."
+
+msgid "No description"
+msgstr "Không có mô tả"
+
+msgid "By %s"
+msgstr "Của %s"
+
+msgid "License: %s"
+msgstr "Giấy phép: %s"
+
+msgid "Size: %s"
+msgstr "Kích thước: %s"
+
+msgid "Updating replaces bundled games and their saves. Games in SD/Games are kept."
+msgstr "Cập nhật sẽ thay thế trò chơi cài sẵn và dữ liệu lưu của chúng. Trò chơi trong SD/Games vẫn được giữ."
+
+msgid "Update"
+msgstr "Cập nhật"
+
+msgid "No emulators are available in the catalog."
+msgstr "Không có trình giả lập nào trong danh mục."
+
+msgid "Refresh emulator catalog"
+msgstr "Làm mới danh mục trình giả lập"
+
+msgid "Updates"
+msgstr "Cập nhật"
+
+msgid "Installed"
+msgstr "Đã cài đặt"
+
+msgid "Available"
+msgstr "Có sẵn"
+
+msgid "Installing emulator"
+msgstr "Đang cài đặt trình giả lập"
+
+msgid "Updating emulator"
+msgstr "Đang cập nhật trình giả lập"
+
+msgid "Removing emulator"
+msgstr "Đang gỡ trình giả lập"
+
+msgid "This may take a while"
+msgstr "Việc này có thể mất một lúc"
+
+msgid "Remove %s?"
+msgstr "Gỡ bỏ %s?"
+
+msgid "No network detected. Connect to a network to download emulators."
+msgstr "Không phát hiện thấy mạng nào. Kết nối với mạng để tải xuống trình giả lập."
+
+msgid "Turn on Wi-Fi and connect first"
+msgstr "Bật Wi-Fi và kết nối trước"
+
+msgid "Emulator operation failed"
+msgstr "Thao tác với trình giả lập thất bại"
+
+msgid "An emulator operation is already in progress"
+msgstr "Đang có thao tác khác với trình giả lập"
+
+msgid "Loading emulators"
+msgstr "Đang tải danh sách trình giả lập"
+
+msgid "Download emulators"
+msgstr "Tải trình giả lập xuống"
+
+msgid "Games run on the player only."
+msgstr "Trò chơi chỉ chạy trên trình phát."
+
+msgid "Emulator store is busy."
+msgstr "Cửa hàng giả lập đang bận."
+
+msgid "Check the SD card and disconnect USB storage before playing."
+msgstr "Kiểm tra thẻ SD và ngắt bộ nhớ USB trước khi chơi."
+
+msgid "Turn off DAC mode to play games."
+msgstr "Tắt chế độ DAC để chơi game."
+
+msgid "USB storage is busy."
+msgstr "Bộ lưu trữ USB đang bận."
+
+msgid "Audio is still active; cannot start the game."
+msgstr "Âm thanh vẫn hoạt động; không thể bắt đầu trò chơi."
+
+msgid "Could not start the game."
+msgstr "Không thể bắt đầu trò chơi."
+
+msgid "The game closed unexpectedly."
+msgstr "Trò chơi kết thúc bất ngờ."
+
+msgid "Copy games to the %s folder on the SD card."
+msgstr "Sao chép trò chơi vào thư mục %s trên thẻ SD."
+
+msgid "No games found"
+msgstr "Không tìm thấy trò chơi nào"
+
+msgid "Emulators"
+msgstr "Trình giả lập"
+
+msgid "No emulators installed"
+msgstr "Chưa cài trình giả lập nào"
+
+msgid "Download an emulator to play games."
+msgstr "Tải trình giả lập xuống để chơi trò chơi."
+
+msgid "Disconnect USB storage from the computer before changing files."
+msgstr "Ngắt bộ nhớ USB khỏi máy tính trước khi thay đổi tệp."
+
+msgid "File Manager"
+msgstr "Trình quản lý tệp"
+
+msgid "%d selected"
+msgid_plural "%d selected"
+msgstr[0] "%d đã chọn"
+
+msgid "Could not open this file"
+msgstr "Không thể mở tệp này"
+
+msgid "This type of file cannot be opened"
+msgstr "Không thể mở loại tệp này"
+
+msgid "%u of %u\n%s"
+msgstr "%u/%u\n%s"
+
+msgid "Stopped"
+msgstr "Đã dừng"
+
+msgid "%u item could not be completed"
+msgid_plural "%u items could not be completed"
+msgstr[0] "Không thể hoàn thành %u mục"
+
+msgid "Done. Update the music database to see the changes in your library."
+msgstr "Xong. Cập nhật cơ sở dữ liệu âm nhạc để xem những thay đổi trong thư viện của bạn."
+
+msgid "Done"
+msgstr "Xong"
+
+msgid "Stopping..."
+msgstr "Đang dừng..."
+
+msgid "Working..."
+msgstr "Đang làm việc..."
+
+msgid "Stop"
+msgstr "Dừng"
+
+msgid "Another file operation is still running"
+msgstr "Một thao tác tập tin khác vẫn đang chạy"
+
+msgid "Open the destination folder, then choose Paste here from the menu."
+msgstr "Mở thư mục đích, sau đó chọn Dán vào đây từ menu."
+
+msgid "Move %d item?"
+msgid_plural "Move %d items?"
+msgstr[0] "Di chuyển %d mục?"
+
+msgid "Delete %d item?"
+msgid_plural "Delete %d items?"
+msgstr[0] "Xóa %d mục?"
+
+msgid "Move"
+msgstr "Di chuyển"
+
+msgid "Delete"
+msgstr "Xóa bỏ"
+
+msgid "This includes the player's own data (.compas or .plugins). Deleting or moving it can break features, lose data such as settings and installed plugins, and may require a restart."
+msgstr "Bao gồm dữ liệu riêng của trình phát (.compas hoặc .plugins). Xóa hoặc di chuyển dữ liệu này có thể làm hỏng chức năng, mất cài đặt và plugin đã cài, đồng thời có thể cần khởi động lại."
+
+msgid "This cannot be undone."
+msgstr "Không thể hoàn tác thao tác này."
+
+msgid "That name cannot be used"
+msgstr "Không thể dùng tên này"
+
+msgid "Could not rename"
+msgstr "Không thể đổi tên"
+
+msgid "An item with that name already exists"
+msgstr "Đã có mục mang tên này"
+
+msgid "Rename"
+msgstr "Đổi tên"
+
+msgid "Could not create the folder"
+msgstr "Không thể tạo thư mục"
+
+msgid "Nothing to select here"
+msgstr "Không có gì để chọn tại đây"
+
+msgid "New folder"
+msgstr "Thư mục mới"
+
+msgid "Copy"
+msgstr "Sao chép"
+
+msgid "Select all"
+msgstr "Chọn tất cả"
+
+msgid "Paste %d item here"
+msgid_plural "Paste %d items here"
+msgstr[0] "Dán %d mục vào đây"
+
+msgid "Select"
+msgstr "Lựa chọn"
+
+msgid "Hide hidden files"
+msgstr "Ẩn tệp ẩn"
+
+msgid "Show hidden files"
+msgstr "Hiện tệp ẩn"
+
+msgid "Playlist selection expired"
+msgstr "Lựa chọn danh sách phát đã hết hạn"
+
+msgid "Playlist name is too long"
+msgstr "Tên danh sách phát quá dài"
+
+msgid "Playlist created"
+msgstr "Đã tạo danh sách phát"
+
+msgid "Failed to create playlist"
+msgstr "Không tạo được danh sách phát"
+
+msgid "Playlist Name"
+msgstr "Tên danh sách phát"
+
+msgid "Song already added"
+msgstr "Bài hát đã được thêm vào"
+
+msgid "Added to playlist"
+msgstr "Đã thêm vào danh sách phát"
+
+msgid "Failed to add to playlist"
+msgstr "Không thêm được vào danh sách phát"
+
+msgid "Added folder to playlist"
+msgstr "Đã thêm thư mục vào danh sách phát"
+
+msgid "Failed to add folder to playlist"
+msgstr "Không thêm được thư mục vào danh sách phát"
+
+msgid "Folder is too large to add to queue"
+msgstr "Thư mục quá lớn để thêm vào hàng đợi"
+
+msgid "Playback changed before folder was ready"
+msgstr "Phát lại đã thay đổi trước khi thư mục sẵn sàng"
+
+msgid "Cannot add folder within queue memory limit"
+msgstr "Không thể thêm thư mục do giới hạn bộ nhớ của hàng đợi"
+
+msgid "Cannot play this folder"
+msgstr "Không thể phát thư mục này"
+
+msgid "Folder action is still running"
+msgstr "Hành động thư mục vẫn đang chạy"
+
+msgid "Cannot start folder action"
+msgstr "Không thể bắt đầu hành động thư mục"
+
+msgid "Adding folder to queue"
+msgstr "Đang thêm thư mục vào hàng đợi"
+
+msgid "Adding folder to playlist"
+msgstr "Đang thêm thư mục vào danh sách phát"
+
+msgid "Preparing folder playback"
+msgstr "Đang chuẩn bị phát thư mục"
+
+msgid "Scanning playable files"
+msgstr "Đang tìm tệp có thể phát"
+
+msgid "File path is too long"
+msgstr "Đường dẫn tệp quá dài"
+
+msgid "Play All (Sequential)"
+msgstr "Phát tất cả (lần lượt)"
+
+msgid "Play All (Shuffle)"
+msgstr "Phát tất cả (ngẫu nhiên)"
+
+msgid "Add to Queue"
+msgstr "Thêm vào hàng đợi"
+
+msgid "Add to Playlist"
+msgstr "Thêm vào danh sách phát"
+
+msgid "+ New Playlist"
+msgstr "+ Danh sách phát mới"
+
+msgid "Audio"
+msgstr "Âm thanh"
+
+msgid "Unknown artist"
+msgstr "Nghệ sĩ không xác định"
+
+msgid "Unknown album"
+msgstr "Album không xác định"
+
+msgid "Play All"
+msgstr "Phát tất cả"
+
+msgid "%lld track"
+msgid_plural "%lld tracks"
+msgstr[0] "%lld bản nhạc"
+
+msgid "Recently Added"
+msgstr "Mới thêm gần đây"
+
+msgid "Playlist changed. Select a song again."
+msgstr "Danh sách phát đã thay đổi. Chọn lại một bài hát."
+
+msgid "Playlist is empty"
+msgstr "Danh sách phát trống"
+
+msgid "Start sequentially"
+msgstr "Phát lần lượt"
+
+msgid "Shuffle from a random song"
+msgstr "Phát ngẫu nhiên từ một bài hát"
+
+msgid "Edit"
+msgstr "Sửa"
+
+msgid "%d track"
+msgid_plural "%d tracks"
+msgstr[0] "%d bản nhạc"
+
+msgid "Loading tracks…"
+msgstr "Đang tải bản nhạc…"
+
+msgid "Add songs from a song menu."
+msgstr "Thêm bài hát từ menu bài hát."
+
+msgid "No tracks found"
+msgstr "Không tìm thấy bản nhạc nào"
+
+msgid "Refresh the music database to update this list."
+msgstr "Làm mới cơ sở dữ liệu âm nhạc để cập nhật danh sách này."
+
+msgid "Previous  •  %d–%d of %d"
+msgstr "Trước  •  %d–%d/%d"
+
+msgid "Disc %d"
+msgstr "Đĩa %d"
+
+msgid "Next  •  %d–%d of %d"
+msgstr "Tiếp  •  %d–%d/%d"
+
+msgid "Most Played"
+msgstr "Được phát nhiều nhất"
+
+msgid "Library changed. Open the album again."
+msgstr "Thư viện đã thay đổi. Hãy mở lại album."
+
+msgid "Cannot load album tracks"
+msgstr "Không thể tải các bản nhạc trong album"
+
+msgid "%d song"
+msgid_plural "%d songs"
+msgstr[0] "%d bài hát"
+
+msgid "%d album"
+msgid_plural "%d albums"
+msgstr[0] "%d album"
+
+msgid "All %d song"
+msgid_plural "All %d songs"
+msgstr[0] "Tất cả %d bài hát"
+
+msgid "Recently Played"
+msgstr "Đã phát gần đây"
+
+msgid "Cannot read playlist"
+msgstr "Không thể đọc danh sách phát"
+
+msgid "Playlist changed. Try again."
+msgstr "Danh sách phát đã thay đổi. Hãy thử lại."
+
+msgid "Cannot reorder playlist"
+msgstr "Không thể sắp xếp lại danh sách phát"
+
+msgid "Cannot remove entry"
+msgstr "Không thể xóa mục nhập"
+
+msgid "Removed from playlist"
+msgstr "Đã xóa khỏi danh sách phát"
+
+msgid "Playlist unavailable or unreadable"
+msgstr "Danh sách phát không có sẵn hoặc không thể đọc được"
+
+msgid "Cannot delete playlist"
+msgstr "Không thể xóa danh sách phát"
+
+msgid "Playlist deleted"
+msgstr "Đã xóa danh sách phát"
+
+msgid "Cannot rename: invalid name or file exists"
+msgstr "Không thể đổi tên: tên không hợp lệ hoặc tệp đã tồn tại"
+
+msgid "Playlist renamed"
+msgstr "Danh sách phát đã được đổi tên"
+
+msgid "Rename Playlist"
+msgstr "Đổi tên danh sách phát"
+
+msgid "Delete playlist?"
+msgstr "Xóa danh sách phát?"
+
+msgid "The playlist file will be deleted. Music files are kept."
+msgstr "Tệp danh sách phát sẽ bị xóa. Các tệp nhạc vẫn được giữ nguyên."
+
+msgid "Delete Playlist"
+msgstr "Xóa danh sách phát"
+
+msgid "System playlists"
+msgstr "Danh sách phát hệ thống"
+
+msgid "Queue"
+msgstr "Hàng đợi"
+
+msgid "User playlists"
+msgstr "Danh sách phát của người dùng"
+
+msgid "No user playlists"
+msgstr "Chưa có danh sách phát nào"
+
+msgid "Create a playlist above or copy one to the SD card's Playlists folder."
+msgstr "Tạo danh sách phát ở trên hoặc sao chép danh sách vào thư mục Playlists trên thẻ SD."
+
+msgid "SD card not available"
+msgstr "Thẻ SD không có sẵn"
+
+msgid "Not enough memory to load CUE tracks"
+msgstr "Không đủ bộ nhớ để tải các bản nhạc CUE"
+
+msgid "Track %d"
+msgstr "Bản nhạc %d"
+
+msgid "Tracks"
+msgstr "Bản nhạc"
+
+msgid "Couldn't read this .cue file"
+msgstr "Không thể đọc tệp .cue này"
+
+msgid "Library recovered. Use Settings > Update Music Database to save"
+msgstr "Thư viện đã được phục hồi. Sử dụng Cài đặt > Cập nhật cơ sở dữ liệu âm nhạc để lưu"
+
+msgid "No music database"
+msgstr "Không có cơ sở dữ liệu âm nhạc"
+
+msgid "Build it now? Large libraries can take several minutes."
+msgstr "Tạo ngay? Thư viện lớn có thể mất vài phút."
+
+msgid "Build"
+msgstr "Tạo"
+
+msgid "Music database unavailable"
+msgstr "Cơ sở dữ liệu âm nhạc không có sẵn"
+
+msgid "It could not be loaded. Rebuild it now?"
+msgstr "Không thể tải. Tạo lại ngay?"
+
+msgid "Rebuild"
+msgstr "Tạo lại"
+
+msgid "Update music database?"
+msgstr "Cập nhật cơ sở dữ liệu âm nhạc?"
+
+msgid "Files on the card may have changed."
+msgstr "Các tập tin trên thẻ có thể đã thay đổi."
+
+msgid "Use Settings > Update Music Database"
+msgstr "Sử dụng Cài đặt > Cập nhật cơ sở dữ liệu âm nhạc"
+
+msgid "Later"
+msgstr "Để sau"
+
+msgid "No SD card"
+msgstr "Không có thẻ SD"
+
+msgid "Library loaded"
+msgstr "Đã tải thư viện"
+
+msgid "Refreshing\nall metadata..."
+msgstr "Làm mới\ntất cả siêu dữ liệu..."
+
+msgid "Refreshing\nmetadata..."
+msgstr "Làm mới\nsiêu dữ liệu..."
+
+msgid "Updating\nmusic database..."
+msgstr "Đang cập nhật\ncơ sở dữ liệu âm nhạc..."
+
+msgid "Preparing metadata refresh..."
+msgstr "Đang chuẩn bị làm mới siêu dữ liệu..."
+
+msgid "Preparing music library..."
+msgstr "Đang chuẩn bị thư viện nhạc..."
+
+msgid "Thread launch failed"
+msgstr "Không thể khởi chạy luồng xử lý"
+
+msgid "No songs to refresh"
+msgstr "Không có bài hát nào để làm mới"
+
+msgid "Library is busy"
+msgstr "Thư viện đang bận"
+
+msgid "Album unavailable"
+msgstr "Album không có sẵn"
+
+msgid "Refreshing\nall covers..."
+msgstr "Đang làm mới\ntất cả ảnh bìa..."
+
+msgid "Reloading\ncover..."
+msgstr "Đang tải lại\nảnh bìa..."
+
+msgid "Preparing cover refresh..."
+msgstr "Đang chuẩn bị làm mới ảnh bìa..."
+
+msgid "Refresh all covers?"
+msgstr "Làm mới tất cả ảnh bìa?"
+
+msgid "Removes saved covers and extracts them again. This may take a while."
+msgstr "Xóa ảnh bìa đã lưu rồi trích xuất lại. Quá trình này có thể mất một lúc."
+
+msgid "Refresh"
+msgstr "Làm mới"
+
+msgid "Refresh all metadata?"
+msgstr "Làm mới tất cả siêu dữ liệu?"
+
+msgid "Reads the tags of every song again. This may take a while."
+msgstr "Đọc lại thẻ của mỗi bài hát. Điều này có thể mất một thời gian."
+
+msgid "Some covers could not be refreshed"
+msgstr "Không thể làm mới một số ảnh bìa"
+
+msgid "Could not reload cover"
+msgstr "Không thể tải lại ảnh bìa"
+
+msgid "Covers refreshed"
+msgstr "Đã làm mới ảnh bìa"
+
+msgid "Cover reloaded"
+msgstr "Đã tải lại ảnh bìa"
+
+msgid "Refreshing covers\n%d of %d (%d%%)"
+msgstr "Đang làm mới ảnh bìa\n%d/%d (%d%%)"
+
+msgid "Reloading cover\n%d of %d (%d%%)"
+msgstr "Đang tải lại ảnh bìa\n%d/%d (%d%%)"
+
+msgid "Refreshing covers"
+msgstr "Đang làm mới ảnh bìa"
+
+msgid "Reloading cover"
+msgstr "Đang tải lại ảnh bìa"
+
+msgid "Preparing metadata refresh"
+msgstr "Đang chuẩn bị làm mới siêu dữ liệu"
+
+msgid "Looking for music files\n%d items checked"
+msgstr "Đang tìm tệp nhạc\nĐã kiểm tra %d mục"
+
+msgid "Looking for music files"
+msgstr "Đang tìm tệp nhạc"
+
+msgid "Reading tags\n%d of %d songs (%d%%)"
+msgstr "Đang đọc tag\n%d/%d bài hát (%d%%)"
+
+msgid "Saving music database"
+msgstr "Lưu cơ sở dữ liệu âm nhạc"
+
+msgid "Saving music database\nThis can take a while on large libraries"
+msgstr "Lưu cơ sở dữ liệu âm nhạc\nViệc này có thể mất một lúc trên các thư viện lớn"
+
+msgid "Library unavailable. Use Settings > Update Music Database to rebuild"
+msgstr "Thư viện không có sẵn. Sử dụng Cài đặt > Cập nhật cơ sở dữ liệu âm nhạc để xây dựng lại"
+
+msgid "Library update failed. Check SD card and retry"
+msgstr "Cập nhật thư viện không thành công. Kiểm tra thẻ SD và thử lại"
+
+msgid "Some songs could not be read"
+msgstr "Một số bài hát không thể đọc được"
+
+msgid "Metadata refreshed"
+msgstr "Đã làm mới siêu dữ liệu"
+
+msgid "Library recovered and saved, some folders could not be read"
+msgstr "Thư viện đã được khôi phục và lưu, một số thư mục không thể đọc được"
+
+msgid "Library recovered and saved"
+msgstr "Thư viện đã được khôi phục và lưu"
+
+msgid "Library updated, some folders could not be read"
+msgstr "Đã cập nhật thư viện, một số thư mục không thể đọc được"
+
+msgid "Library updated"
+msgstr "Đã cập nhật thư viện"
+
+msgid "Checking the SD card. This may take a while"
+msgstr "Đang kiểm tra thẻ SD. Quá trình này có thể mất một lúc"
+
+msgid "SD card repaired"
+msgstr "Đã sửa thẻ SD"
+
+msgid "SD card is still read-only"
+msgstr "Thẻ SD vẫn ở chế độ chỉ đọc"
+
+msgid "Could not repair the SD card"
+msgstr "Không thể sửa chữa thẻ SD"
+
+msgid "SD card may have errors. Check it on a computer"
+msgstr "Thẻ SD có thể có lỗi. Kiểm tra nó trên máy tính"
+
+msgid "SD card is read-only. Check it on a computer"
+msgstr "Thẻ SD ở chế độ chỉ đọc. Kiểm tra nó trên máy tính"
+
+msgid "SD card repair is still running"
+msgstr "Sửa chữa thẻ SD vẫn đang chạy"
+
+msgid "Formatting\nSD Card..."
+msgstr "Đang định dạng\nthẻ SD..."
+
+msgid "SD card formatted"
+msgstr "Thẻ SD được định dạng"
+
+msgid "SD card format failed"
+msgstr "Định dạng thẻ SD không thành công"
+
+msgid "SD card couldn't be read"
+msgstr "Không thể đọc được thẻ SD"
+
+msgid "It may have no partition table or a file system this player can't use. Formatting will erase it and set it up for this player."
+msgstr "Nó có thể không có bảng phân vùng hoặc hệ thống tập tin mà trình phát này không thể sử dụng. Quá trình định dạng sẽ xóa nó và thiết lập nó cho trình phát này."
+
+msgid "Format SD Card"
+msgstr "Định dạng thẻ SD"
+
+msgid "Dismiss"
+msgstr "Đóng"
+
+msgid "Erase and format SD card?"
+msgstr "Xóa và định dạng thẻ SD?"
+
+msgid "This permanently deletes everything on the card. This cannot be undone."
+msgstr "Thao tác này sẽ xóa vĩnh viễn toàn bộ dữ liệu trên thẻ. Không thể hoàn tác."
+
+msgid "Format"
+msgstr "Định dạng"
+
+msgid "Could not restart into the boot selector"
+msgstr "Không thể khởi động lại vào bộ chọn khởi động"
+
+msgid "An update is in progress. Please wait."
+msgstr "Một bản cập nhật đang được tiến hành. Vui lòng chờ."
+
+msgid "Tap Power off again to confirm"
+msgstr "Nhấn Tắt nguồn lần nữa để xác nhận"
+
+msgid "Tap Restart again to confirm"
+msgstr "Nhấn Khởi động lại lần nữa để xác nhận"
+
+msgid "Sleep timer: %d min remaining"
+msgstr "Hẹn giờ ngủ: Còn lại %d phút"
+
+msgid "Sleep timer: Off"
+msgstr "Hẹn giờ ngủ: Tắt"
+
+msgid "Music"
+msgstr "Âm nhạc"
+
+msgid "Showing first %d of %d songs"
+msgstr "Hiển thị %d bài hát đầu tiên trong số %d"
+
+msgid "Play all shuffled"
+msgstr "Phát tất cả theo thứ tự ngẫu nhiên"
+
+msgid "Play sequentially"
+msgstr "Phát lần lượt"
+
+msgid "Add a random song to queue"
+msgstr "Thêm ngẫu nhiên một bài hát vào hàng đợi"
+
+msgid "Refresh metadata"
+msgstr "Làm mới siêu dữ liệu"
+
+msgid "Add album to queue"
+msgstr "Thêm album vào hàng đợi"
+
+msgid "Reload cover"
+msgstr "Tải lại bìa"
+
+msgid "Playlists refreshed"
+msgstr "Đã làm mới danh sách phát"
+
+msgid "Some playlists could not be read"
+msgstr "Không thể đọc được một số danh sách phát"
+
+msgid "Sunday"
+msgstr "Chủ Nhật"
+
+msgid "Monday"
+msgstr "Thứ Hai"
+
+msgid "Tuesday"
+msgstr "Thứ Ba"
+
+msgid "Wednesday"
+msgstr "Thứ Tư"
+
+msgid "Thursday"
+msgstr "Thứ Năm"
+
+msgid "Friday"
+msgstr "Thứ Sáu"
+
+msgid "Saturday"
+msgstr "Thứ Bảy"
+
+msgid "January"
+msgstr "Tháng 1"
+
+msgid "February"
+msgstr "Tháng 2"
+
+msgid "March"
+msgstr "Tháng 3"
+
+msgid "April"
+msgstr "Tháng 4"
+
+msgid "May"
+msgstr "Tháng 5"
+
+msgid "June"
+msgstr "Tháng 6"
+
+msgid "July"
+msgstr "Tháng 7"
+
+msgid "August"
+msgstr "Tháng 8"
+
+msgid "September"
+msgstr "Tháng 9"
+
+msgid "October"
+msgstr "Tháng 10"
+
+msgid "November"
+msgstr "Tháng 11"
+
+msgid "December"
+msgstr "Tháng 12"
+
+msgid "Could not load lock screen photo"
+msgstr "Không thể tải ảnh màn hình khóa"
+
+msgid "Swipe up to unlock"
+msgstr "Vuốt lên để mở khóa"
+
+msgid "No synchronized lyrics found"
+msgstr "Không tìm thấy lời bài hát được đồng bộ hóa"
+
+msgid "Medium"
+msgstr "Trung bình"
+
+msgid "Large"
+msgstr "Lớn"
+
+msgid "Could not apply lyrics text size"
+msgstr "Không thể áp dụng kích thước văn bản lời bài hát"
+
+msgid "Lyrics Text Size"
+msgstr "Kích thước văn bản lời bài hát"
+
+msgid "Wi-Fi is busy"
+msgstr "Wi-Fi đang bận"
+
+msgid "Connecting to"
+msgstr "Đang kết nối với"
+
+msgid "Couldn't connect to Wi-Fi network"
+msgstr "Không thể kết nối với mạng Wi-Fi"
+
+msgid "Wi-Fi Password"
+msgstr "Mật khẩu Wi-Fi"
+
+msgid "Secured · Connected"
+msgstr "Bảo mật · Đã kết nối"
+
+msgid "Open · Connected"
+msgstr "Mở · Đã kết nối"
+
+msgid "Saved network"
+msgstr "Mạng đã lưu"
+
+msgid "Secured network"
+msgstr "Mạng bảo mật"
+
+msgid "Open network"
+msgstr "Mạng mở"
+
+msgid "Wi-Fi could not be enabled"
+msgstr "Không thể bật Wi-Fi"
+
+msgid "Check the wireless switch and try again."
+msgstr "Hãy kiểm tra công tắc không dây và thử lại."
+
+msgid "Turning Wi-Fi on"
+msgstr "Đang bật Wi-Fi"
+
+msgid "Nearby networks will appear when Wi-Fi is ready."
+msgstr "Các mạng lân cận sẽ xuất hiện khi Wi-Fi sẵn sàng."
+
+msgid "Searching for networks"
+msgstr "Đang tìm mạng"
+
+msgid "This can take a few seconds."
+msgstr "Việc này có thể mất vài giây."
+
+msgid "No networks found"
+msgstr "Không tìm thấy mạng nào"
+
+msgid "Try scanning again or add a hidden network."
+msgstr "Hãy thử quét lại hoặc thêm mạng ẩn."
+
+msgid "SSID must be 1 to 32 bytes"
+msgstr "SSID phải từ 1 đến 32 byte"
+
+msgid "Wi-Fi is still starting"
+msgstr "Wi-Fi vẫn đang bắt đầu"
+
+msgid "Network Name (SSID)"
+msgstr "Tên mạng (SSID)"
+
+msgid "Connect"
+msgstr "Kết nối"
+
+msgid "Forget"
+msgstr "Quên"
+
+msgid "Disconnect"
+msgstr "Ngắt kết nối"
+
+msgid "Loading..."
+msgstr "Đang tải..."
+
+msgid "Not connected"
+msgstr "Không được kết nối"
+
+msgid "Weak"
+msgstr "Yếu"
+
+msgid "Fair"
+msgstr "Trung bình"
+
+msgid "Good"
+msgstr "Tốt"
+
+msgid "Excellent"
+msgstr "Xuất sắc"
+
+msgid "SSID: %s"
+msgstr "SSID: %s"
+
+msgid "IP Address: %s"
+msgstr "Địa chỉ IP: %s"
+
+msgid "Gateway: %s"
+msgstr "Cổng mặc định: %s"
+
+msgid "MAC Address: %s"
+msgstr "Địa chỉ MAC: %s"
+
+msgid "Signal: %s"
+msgstr "Tín hiệu: %s"
+
+msgid "Wi-Fi Info"
+msgstr "Thông tin Wi-Fi"
+
+msgid "Primary DNS"
+msgstr "DNS chính"
+
+msgid "Secondary DNS"
+msgstr "DNS phụ"
+
+msgid "Not set"
+msgstr "Chưa đặt"
+
+msgid "DNS Settings"
+msgstr "Cài đặt DNS"
+
+msgid "Manual SSID Entry"
+msgstr "Nhập SSID thủ công"
+
+msgid "Memorized Networks"
+msgstr "Mạng được ghi nhớ"
+
+msgid "No memorized networks"
+msgstr "Không có mạng ghi nhớ"
+
+msgid "Networks you connect to will appear here."
+msgstr "Các mạng bạn kết nối sẽ xuất hiện ở đây."
+
+msgid "Loading Wi-Fi settings"
+msgstr "Đang tải cài đặt Wi-Fi"
+
+msgid "Saved network details are being checked."
+msgstr "Chi tiết mạng đã lưu đang được kiểm tra."
+
+msgid "Connected"
+msgstr "Đã kết nối"
+
+msgid "Available Networks"
+msgstr "Mạng có sẵn"
+
+msgid "Scanning for networks"
+msgstr "Đang quét mạng"
+
+msgid "Nearby Wi-Fi networks will appear here."
+msgstr "Các mạng Wi-Fi lân cận sẽ xuất hiện ở đây."
+
+msgid "No other networks found"
+msgstr "Không tìm thấy mạng nào khác"
+
+msgid "All visible networks are already saved."
+msgstr "Tất cả các mạng hiển thị đã được lưu."
+
+msgid "Check that Wi-Fi is enabled, then rescan."
+msgstr "Kiểm tra xem Wi-Fi đã được bật chưa, sau đó quét lại."
+
+msgid "Connecting"
+msgstr "Đang kết nối"
+
+msgid "Connection failed"
+msgstr "Kết nối không thành công"
+
+msgid "Paired"
+msgstr "Đã ghép nối"
+
+msgid "When on, this device stays visible and pairable to other Bluetooth devices, so a phone or computer can stream audio TO it and play through this device's own output -- using it as an external DAC."
+msgstr "Khi bật, thiết bị này vẫn hiển thị và có thể ghép nối với các thiết bị Bluetooth khác, do đó, điện thoại hoặc máy tính có thể truyền âm thanh ĐẾN thiết bị này và phát qua đầu ra của chính thiết bị này -- sử dụng thiết bị này làm DAC bên ngoài."
+
+msgid "Enable Bluetooth DAC"
+msgstr "Kích hoạt Bluetooth DAC"
+
+msgid "Bluetooth DAC"
+msgstr "DAC Bluetooth"
+
+msgid "Enable Bluetooth in settings to use BT DAC mode"
+msgstr "Bật Bluetooth trong cài đặt để sử dụng chế độ BT DAC"
+
+msgid "Leave Bluetooth DAC mode?"
+msgstr "Rời khỏi chế độ Bluetooth DAC?"
+
+msgid "Leave"
+msgstr "Rời khỏi"
+
+msgid "Bluetooth DAC mode"
+msgstr "Chế độ Bluetooth DAC"
+
+msgid "This device is now receiving Bluetooth audio"
+msgstr "Thiết bị này hiện đang nhận âm thanh Bluetooth"
+
+msgid "Waiting for Bluetooth stream…"
+msgstr "Đang chờ luồng Bluetooth…"
+
+msgid "Auto"
+msgstr "Tự động"
+
+msgid "LDAC Quality"
+msgstr "Chất lượng LDAC"
+
+msgid "LDAC Standard"
+msgstr "Tiêu chuẩn LDAC"
+
+msgid "Could not save Bluetooth codec"
+msgstr "Không thể lưu codec Bluetooth"
+
+msgid "Turn Bluetooth off and on to apply"
+msgstr "Tắt và bật Bluetooth để áp dụng"
+
+msgid "Automatic (44.1 kHz)"
+msgstr "Tự động (44,1 kHz)"
+
+msgid "Reading supported rates..."
+msgstr "Đang đọc các tần số lấy mẫu được hỗ trợ..."
+
+msgid "Connect a device to see its supported rates"
+msgstr "Kết nối thiết bị để xem các tần số lấy mẫu được hỗ trợ"
+
+msgid "Still applying the previous choice"
+msgstr "Vẫn áp dụng lựa chọn trước đó"
+
+msgid "Headset may disconnect, manual reconnection might be required"
+msgstr "Tai nghe có thể bị ngắt kết nối, có thể phải kết nối lại theo cách thủ công"
+
+msgid "Sample Rate"
+msgstr "Tần số lấy mẫu"
+
+msgid "Bluetooth Volume Sync"
+msgstr "Đồng bộ hóa âm lượng Bluetooth"
+
+msgid "Codec"
+msgstr "Codec"
+
+msgid "Speex Resampling"
+msgstr "Lấy mẫu lại Speex"
+
+msgid "Hide Unnamed Devices"
+msgstr "Ẩn thiết bị chưa được đặt tên"
+
+msgid "Advanced"
+msgstr "Nâng cao"
+
+msgid "Resume and Play"
+msgstr "Tiếp tục và phát"
+
+msgid "Resume, but Paused"
+msgstr "Tiếp tục nhưng vẫn tạm dừng"
+
+msgid "Applies next time you launch the app"
+msgstr "Áp dụng vào lần tiếp theo bạn khởi chạy ứng dụng"
+
+msgid "Resume Last Track"
+msgstr "Tiếp tục lần phát trước"
+
+msgid "Small"
+msgstr "Nhỏ"
+
+msgid "Could not apply font size"
+msgstr "Không thể áp dụng cỡ chữ"
+
+msgid "Font Size"
+msgstr "Cỡ chữ"
+
+msgid "Per Track"
+msgstr "Theo bản nhạc"
+
+msgid "Per Album"
+msgstr "Theo album"
+
+msgid "ReplayGain"
+msgstr "ReplayGain"
+
+msgid "Storage"
+msgstr "Bộ lưu trữ"
+
+msgid "USB DAC"
+msgstr "USB DAC"
+
+msgid "ADB"
+msgstr "ADB"
+
+msgid "Could not start USB mode switch"
+msgstr "Không thể khởi động chuyển đổi chế độ USB"
+
+msgid "An update is already in progress"
+msgstr "Một bản cập nhật đang được tiến hành"
+
+msgid "USB mode"
+msgstr "Chế độ USB"
+
+msgid "Failed to switch to %s"
+msgstr "Không thể chuyển sang %s"
+
+msgid "USB Mode"
+msgstr "Chế độ USB"
+
+msgid "Failed to update USB charging"
+msgstr "Không thể cập nhật sạc USB"
+
+msgid "USB charging setting is busy"
+msgstr "Cài đặt sạc USB đang bận"
+
+msgid "Could not start USB charging update"
+msgstr "Không thể bắt đầu cập nhật sạc USB"
+
+msgid "Leave USB DAC mode?"
+msgstr "Rời khỏi chế độ USB DAC?"
+
+msgid "USB DAC mode"
+msgstr "Chế độ USB DAC"
+
+msgid "Waiting for USB audio…"
+msgstr "Đang chờ âm thanh USB…"
+
+msgid "Unknown rate"
+msgstr "Tần số lấy mẫu không xác định"
+
+msgid "Unknown format"
+msgstr "Định dạng không xác định"
+
+msgid "Unknown codec"
+msgstr "Codec không xác định"
+
+msgid "This device is now a USB sound card"
+msgstr "Thiết bị này bây giờ là một card âm thanh USB"
+
+msgid "USB input: %s · %u-bit"
+msgstr "Đầu vào USB: %s · %u-bit"
+
+msgid "DAC path: %s · %u-bit"
+msgstr "Đường dẫn DAC: %s · %u-bit"
+
+msgid "Bluetooth is off"
+msgstr "Bluetooth đã tắt"
+
+msgid "Turn on Bluetooth to see paired and nearby devices."
+msgstr "Bật Bluetooth để xem thiết bị đã ghép nối và các thiết bị ở gần."
+
+msgid "Paired Devices"
+msgstr "Thiết bị được ghép nối"
+
+msgid "No paired devices"
+msgstr "Không có thiết bị nào được ghép nối"
+
+msgid "Previously connected accessories will appear here."
+msgstr "Các phụ kiện đã kết nối trước đó sẽ xuất hiện ở đây."
+
+msgid "Available Devices"
+msgstr "Thiết bị có sẵn"
+
+msgid "No nearby devices"
+msgstr "Không có thiết bị nào ở gần"
+
+msgid "Make an accessory discoverable, then tap Rescan."
+msgstr "Đặt phụ kiện ở chế độ có thể phát hiện được, sau đó chạm vào Quét lại."
+
+msgid "Connect to Wi-Fi first"
+msgstr "Trước tiên hãy kết nối với Wi-Fi"
+
+msgid "Open this address on your phone or computer:"
+msgstr "Mở địa chỉ này trên điện thoại hoặc máy tính của bạn:"
+
+msgid "Closing\nWeb Server..."
+msgstr "Đang đóng\nmáy chủ web..."
+
+msgid "Import via Wi-Fi"
+msgstr "Nhập qua Wi-Fi"
+
+msgid "Enable WiFi to access"
+msgstr "Kích hoạt WiFi để truy cập"
+
+msgid "Web Server is busy"
+msgstr "Máy chủ Web đang bận"
+
+msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network -- stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
+msgstr "Khi bật, thiết bị này hiển thị với người gửi AirPlay trên mạng Wi-Fi của bạn -- truyền phát âm thanh từ iPhone, iPad hoặc Mac để phát qua đầu ra của chính thiết bị này."
+
+msgid "Failed to enable AirPlay"
+msgstr "Không bật được AirPlay"
+
+msgid "AirPlay stopped unexpectedly"
+msgstr "AirPlay dừng đột ngột"
+
+msgid "DLNA Renderer"
+msgstr "Trình kết xuất DLNA"
+
+msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network -- cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
+msgstr "Khi bật, thiết bị này hiển thị trong các ứng dụng điều khiển DLNA/UPnP trên mạng Wi-Fi của bạn -- truyền một bản nhạc từ ứng dụng để phát tại đây. Ứng dụng điều khiển không hỗ trợ tạm dừng, tắt tiếng, chỉnh âm lượng hoặc tua; hãy dùng các nút điều khiển trên thiết bị sau khi nhạc bắt đầu phát."
+
+msgid "Service is busy"
+msgstr "Dịch vụ đang bận"
+
+msgid "Unavailable"
+msgstr "Không có sẵn"
+
+msgid "Turn this on to see the address here."
+msgstr "Bật cái này lên để xem địa chỉ ở đây."
+
+msgid "Bluetooth remote service is unavailable; retrying."
+msgstr "Dịch vụ từ xa Bluetooth không khả dụng; đang thử lại."
+
+msgid "Bluetooth remote service is starting…"
+msgstr "Dịch vụ từ xa Bluetooth đang bắt đầu…"
+
+msgid "Enable Wi-Fi or Bluetooth to connect."
+msgstr "Kích hoạt Wi-Fi hoặc Bluetooth để kết nối."
+
+msgid "Bluetooth: registration failed; retrying"
+msgstr "Bluetooth: đăng ký không thành công; thử lại"
+
+msgid "Bluetooth: waiting for service registration"
+msgstr "Bluetooth: chờ đăng ký dịch vụ"
+
+msgid "Connect using either available route:"
+msgstr "Kết nối bằng một trong hai tuyến có sẵn:"
+
+msgid "Bluetooth: Compas Remote Control"
+msgstr "Bluetooth: Compas Remote Control"
+
+msgid "Could not generate a new PIN"
+msgstr "Không thể tạo mã PIN mới"
+
+msgid "New PIN generated"
+msgstr "Đã tạo mã PIN mới"
+
+msgid "Generate a new PIN?"
+msgstr "Tạo mã PIN mới?"
+
+msgid "Apps and browsers using the current PIN will need the new one to reconnect."
+msgstr "Các ứng dụng và trình duyệt sử dụng mã PIN hiện tại sẽ cần mã PIN mới để kết nối lại."
+
+msgid "Generate"
+msgstr "Tạo"
+
+msgid "Connection PIN"
+msgstr "Mã PIN kết nối"
+
+msgid "Connect over Wi-Fi or Bluetooth to see what's playing, control playback, and browse your library. Enter this PIN when the app or browser asks for it; Bluetooth also requires pairing."
+msgstr "Kết nối qua Wi-Fi hoặc Bluetooth để xem nội dung đang phát, điều khiển quá trình phát lại và duyệt thư viện của bạn. Nhập mã PIN này khi ứng dụng hoặc trình duyệt yêu cầu; Bluetooth cũng yêu cầu ghép nối."
+
+msgid "Remote"
+msgstr "Điều khiển từ xa"
+
+msgid "Import"
+msgstr "Nhập"
+
+msgid "Wireless"
+msgstr "Không dây"
+
+msgid "No track loaded"
+msgstr "Không có bản nhạc nào được tải"
+
+msgid "Song deleted"
+msgstr "Đã xóa bài hát"
+
+msgid "Delete %s?\nThis cannot be undone."
+msgstr "Xóa %s?\nKhông thể hoàn tác thao tác này."
+
+msgid "Information"
+msgstr "Thông tin"
+
+msgid "EQ"
+msgstr "EQ"
+
+msgid "Queue ready. Press Play to start."
+msgstr "Hàng đợi đã sẵn sàng. Nhấn Phát để bắt đầu."
+
+msgid "Added %d song to queue"
+msgid_plural "Added %d songs to queue"
+msgstr[0] "Đã thêm %d bài hát vào hàng đợi"
+
+msgid "Removed from queue"
+msgstr "Đã xóa khỏi hàng đợi"
+
+msgid "Queue cleared"
+msgstr "Đã xóa hàng đợi"
+
+msgid "Turn off Bluetooth DAC to play music on this device"
+msgstr "Tắt Bluetooth DAC để phát nhạc trên thiết bị này"
+
+msgid "Exit USB DAC mode to play music on this device"
+msgstr "Thoát chế độ USB DAC để phát nhạc trên thiết bị này"
+
+msgid "Playback error: audio output failed"
+msgstr "Lỗi phát lại: đầu ra âm thanh không thành công"
+
+msgid "Playback stopped: %s"
+msgstr "Đã dừng phát lại: %s"
+
+msgid "Skipped: %s"
+msgstr "Đã bỏ qua: %s"
+
+msgid "%s · Not loaded: limit reached"
+msgstr "%s · Chưa tải: đã đạt đến giới hạn"
+
+msgid "%s · Not loaded"
+msgstr "%s · Chưa được tải"
+
+msgid "Refreshing plugins..."
+msgstr "Đang làm mới plugin..."
+
+msgid "Couldn't save -- plugin change was not applied"
+msgstr "Không thể lưu -- thay đổi plugin không được áp dụng"
+
+msgid "Plugin Store"
+msgstr "Cửa hàng plugin"
+
+msgid "Refresh Plugins"
+msgstr "Làm mới plugin"
+
+msgid "Plugin Manager"
+msgstr "Trình quản lý plugin"
+
+msgid "Download layouts"
+msgstr "Tải xuống bố cục"
+
+msgid "Download themes"
+msgstr "Tải xuống chủ đề"
+
+msgid "Extension updates"
+msgstr "Cập nhật tiện ích mở rộng"
+
+msgid "Replace"
+msgstr "Thay thế"
+
+msgid "Its settings stay on the card."
+msgstr "Cài đặt của nó vẫn còn trên thẻ."
+
+msgid "Update individually"
+msgstr "Cập nhật riêng lẻ"
+
+msgid "Choose plugins"
+msgstr "Chọn plugin"
+
+msgid "Update available"
+msgstr "Đã có bản cập nhật"
+
+msgid "Removed"
+msgstr "Đã gỡ bỏ"
+
+msgid "Installed manually"
+msgstr "Được cài đặt thủ công"
+
+msgid "Version %s · %s"
+msgstr "Phiên bản %s · %s"
+
+msgid "Close"
+msgstr "Đóng"
+
+msgid "No longer in the catalog"
+msgstr "Không còn trong danh mục"
+
+msgid "Already installed"
+msgstr "Đã được cài đặt"
+
+msgid "No plugins are available in the catalog."
+msgstr "Không có plugin nào có sẵn trong danh mục."
+
+msgid "A plugin operation is already in progress"
+msgstr "Một hoạt động plugin đang được tiến hành"
+
+msgid "Updating plugins"
+msgstr "Đang cập nhật plugin"
+
+msgid "No network detected. Connect to a network to download plugins."
+msgstr "Không phát hiện thấy mạng nào. Kết nối với mạng để tải xuống plugin."
+
+msgid "No updates available."
+msgstr "Không có bản cập nhật có sẵn."
+
+msgid "Refresh plugin catalog"
+msgstr "Làm mới danh mục plugin"
+
+msgid "Update All"
+msgstr "Cập nhật tất cả"
+
+msgid "Review updates"
+msgstr "Xem lại thông tin cập nhật"
+
+msgid "No layouts are available in the catalog."
+msgstr "Không có bố cục có sẵn trong danh mục."
+
+msgid "No themes are available in the catalog."
+msgstr "Không có chủ đề nào có sẵn trong danh mục."
+
+msgid "Could not start the plugin operation"
+msgstr "Không thể bắt đầu hoạt động của plugin"
+
+msgid "Installing plugin"
+msgstr "Đang cài đặt plugin"
+
+msgid "Removing plugin"
+msgstr "Đang gỡ plugin"
+
+msgid "Update these plugins individually"
+msgstr "Cập nhật từng plugin này"
+
+msgid "Not enough memory to load the plugin store"
+msgstr "Không đủ bộ nhớ để tải kho plugin"
+
+msgid "Could not start the plugin refresh"
+msgstr "Không thể bắt đầu làm mới plugin"
+
+msgid "Loading layouts"
+msgstr "Đang tải bố cục"
+
+msgid "Loading themes"
+msgstr "Đang tải chủ đề"
+
+msgid "Loading updates"
+msgstr "Đang tải bản cập nhật"
+
+msgid "Loading plugins"
+msgstr "Đang tải plugin"
+
+msgid "Could not load the plugin catalog."
+msgstr "Không thể tải danh mục plugin."
+
+msgid "Some plugin files were changed on the card. Replace them?"
+msgstr "Một số tệp plugin đã được thay đổi trên thẻ. Thay thế chúng?"
+
+msgid "Plugin operation failed"
+msgstr "Thao tác plugin không thành công"
+
+msgid "No entries to display"
+msgstr "Không có mục nào để hiển thị"
+
+msgid "No plugin settings available"
+msgstr "Không có cài đặt plugin nào"
+
+msgid "Plugin"
+msgstr "Plugin"
+
+msgid "Plugin Settings"
+msgstr "Cài đặt plugin"
+
+msgid "Select a file"
+msgstr "Chọn một tập tin"
+
+msgid "Played"
+msgstr "Đã phát"
+
+msgid "Playing"
+msgstr "Đang phát"
+
+msgid "Queued"
+msgstr "Đã thêm"
+
+msgid "Queue changed. Try again."
+msgstr "Hàng đợi đã thay đổi. Hãy thử lại."
+
+msgid "Cannot move this entry"
+msgstr "Không thể di chuyển mục này"
+
+msgid "Queue is empty"
+msgstr "Hàng đợi trống"
+
+msgid "Play an album or playlist to see its songs here."
+msgstr "Phát một album hoặc danh sách phát để xem các bài hát tại đây."
+
+msgid "Previous page"
+msgstr "Trang trước"
+
+msgid "Next page"
+msgstr "Trang tiếp theo"
+
+msgid "Cannot start queue"
+msgstr "Không thể bắt đầu hàng đợi"
+
+msgid "Saving playlist…"
+msgstr "Đang lưu danh sách phát…"
+
+msgid "Cannot save playlist"
+msgstr "Không thể lưu danh sách phát"
+
+msgid "Save Queue as Playlist"
+msgstr "Lưu hàng đợi làm danh sách phát"
+
+msgid "Edit / Done"
+msgstr "Chỉnh sửa/Xong"
+
+msgid "Clear Queue"
+msgstr "Xóa hàng đợi"
+
+msgid "Save as Playlist"
+msgstr "Lưu dưới dạng danh sách phát"
+
+msgid "Playlist saved"
+msgstr "Đã lưu danh sách phát"
+
+msgid "Cannot save: invalid or streaming entries"
+msgstr "Không thể lưu: mục không hợp lệ hoặc là nội dung phát trực tuyến"
+
+msgid "Play Next"
+msgstr "Phát tiếp theo"
+
+msgid "Custom"
+msgstr "Tùy chỉnh"
+
+msgid "%d min remaining"
+msgstr "%d phút còn lại"
+
+msgid "Crossfeed: Off"
+msgstr "Crossfeed: Tắt"
+
+msgid "Crossfeed: %d%%"
+msgstr "Crossfeed: %d%%"
+
+msgid "%+.2f dB"
+msgstr "%+.2f dB"
+
+msgid "%.0f Hz"
+msgstr "%.0f Hz"
+
+msgid "Pre-Amp (dB, -12 to 12)"
+msgstr "Tiền khuếch đại (dB, -12 đến 12)"
+
+msgid "Crossfeed (0 to 100)"
+msgstr "Crossfeed (0 đến 100)"
+
+msgid "Frequency (Hz, 20 to 20000)"
+msgstr "Tần số (Hz, 20 đến 20000)"
+
+msgid "Gain (dB, -12 to 12)"
+msgstr "Độ lợi (dB, -12 đến 12)"
+
+msgid "OFF"
+msgstr "TẮT"
+
+msgid "ON"
+msgstr "BẬT"
+
+msgid "EQ curve"
+msgstr "Đường cong EQ"
+
+msgid "Band %d / %d"
+msgstr "Dải tần %d / %d"
+
+msgid "Wait for USB mode switching to finish and disconnect USB storage before updating."
+msgstr "Đợi quá trình chuyển đổi chế độ USB hoàn tất và ngắt kết nối bộ lưu trữ USB trước khi cập nhật."
+
+msgid "Preparing update"
+msgstr "Đang chuẩn bị cập nhật"
+
+msgid "Checking the file on the SD card"
+msgstr "Đang kiểm tra tệp trên thẻ SD"
+
+msgid "Update & Reboot"
+msgstr "Cập nhật & Khởi động lại"
+
+msgid "Update using %s?\nDevice will reboot into recovery mode."
+msgstr "Cập nhật bằng %s?\nThiết bị sẽ khởi động lại vào chế độ recovery."
+
+msgid "Install the player update from the SD card?\n\nUpdates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
+msgstr "Cài đặt bản cập nhật trình phát từ thẻ SD?\n\nCập nhật trình phát và khởi động lại thiết bị. Firmware, phông chữ và tác phẩm nghệ thuật không thay đổi."
+
+msgid "Could not start the player update"
+msgstr "Không thể bắt đầu cập nhật trình phát"
+
+msgid "Updating player"
+msgstr "Đang cập nhật trình phát"
+
+msgid "Starting update"
+msgstr "Đang bắt đầu cập nhật"
+
+msgid "Connect to Wi-Fi before downloading the player update"
+msgstr "Kết nối với Wi-Fi trước khi tải xuống bản cập nhật trình phát"
+
+msgid "Starting download"
+msgstr "Bắt đầu tải xuống"
+
+msgid "Could not start the player update check"
+msgstr "Không thể bắt đầu kiểm tra cập nhật trình phát"
+
+msgid "Checking for player updates"
+msgstr "Đang kiểm tra cập nhật trình phát"
+
+msgid "Check for online update"
+msgstr "Kiểm tra cập nhật trực tuyến"
+
+msgid "Install from SD card"
+msgstr "Cài đặt từ thẻ SD"
+
+msgid "Update the Player only, retaining current drivers, kernel and bootloader."
+msgstr "Chỉ cập nhật Trình phát, giữ lại trình điều khiển, kernel và bộ tải khởi động hiện tại."
+
+msgid "Download & Install"
+msgstr "Tải xuống và cài đặt"
+
+msgid "Install & Restart"
+msgstr "Cài đặt và khởi động lại"
+
+msgid "Downloading player update"
+msgstr "Đang tải xuống bản cập nhật trình phát"
+
+msgid "Installing player update"
+msgstr "Đang cài đặt bản cập nhật trình phát"
+
+msgid "Checking the latest release"
+msgstr "Kiểm tra bản phát hành mới nhất"
+
+msgid "Replacing the player and preparing to restart"
+msgstr "Đang thay thế trình phát và chuẩn bị khởi động lại"
+
+msgid "Available player release: %s.\nInstalled: %s\n\nDownload and install? This updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
+msgstr "Bản phát hành trình phát có sẵn: %s.\nĐã cài đặt: %s\n\nTải xuống và cài đặt? Thao tác này sẽ cập nhật trình phát và khởi động lại thiết bị. Firmware, phông chữ và tác phẩm nghệ thuật không thay đổi."
+
+msgid "Player updated successfully"
+msgstr "Đã cập nhật trình phát thành công"
+
+msgid "Player update failed"
+msgstr "Không cập nhật được trình phát"
+
+msgid "Firmware release %s is downloaded and verified.\n\nInstall now? The device reboots into recovery to flash it. Do not turn it off until it restarts."
+msgstr "Đã tải xuống và xác minh bản phát hành firmware %s.\n\nCài đặt ngay? Thiết bị sẽ khởi động vào chế độ khôi phục để cài đặt. Đừng tắt thiết bị cho đến khi máy khởi động lại."
+
+msgid "Cannot read the update record on the SD card. Check the card and try again."
+msgstr "Không thể đọc bản ghi cập nhật trên thẻ SD. Hãy kiểm tra thẻ và thử lại."
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "Bản tải xuống trước đó không đầy đủ hoặc không hợp lệ. Xóa tệp cập nhật khỏi thẻ SD, nhấn Cài đặt từ thẻ SD, sau đó sao chép tệp mới và thử lại."
+
+msgid "Checking for updates"
+msgstr "Kiểm tra cập nhật"
+
+msgid "Could not start the download"
+msgstr "Không thể bắt đầu tải xuống"
+
+msgid "Downloading update"
+msgstr "Đang tải xuống bản cập nhật"
+
+msgid "Update saved. Connect to Wi-Fi, then install from Firmware Update > Install from SD card."
+msgstr "Đã lưu bản cập nhật. Kết nối với Wi-Fi, sau đó cài đặt từ Cập nhật firmware > Cài đặt từ thẻ SD."
+
+msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
+msgstr "Cập nhật toàn bộ CompásOS. Firmware được ghi gồm Bootloader, Player, Kernel và Driver."
+
+msgid "Download"
+msgstr "Tải xuống"
+
+msgid "Install & Reboot"
+msgstr "Cài đặt và khởi động lại"
+
+msgid "Preparing and verifying recovery mode"
+msgstr "Chuẩn bị và xác minh chế độ khôi phục"
+
+msgid "Saving data before reboot"
+msgstr "Lưu dữ liệu trước khi khởi động lại"
+
+msgid "Restarting into recovery. Do not turn off the player."
+msgstr "Đang khởi động lại vào chế độ khôi phục. Đừng tắt máy nghe nhạc."
+
+msgid "Firmware release %s is available.\nInstalled: %s\n\nDownload it now? This may take a while."
+msgstr "Đã có bản phát hành firmware %s.\nĐã cài đặt: %s\n\nTải xuống ngay? Quá trình này có thể mất một lúc."
+
+msgid "Installed version: %s\nAvailable release: %s\n\nDownload and reinstall it anyway? This may take a while."
+msgstr "Phiên bản đã cài: %s\nBản phát hành hiện có: %s\n\nBạn vẫn muốn tải xuống và cài đặt lại? Quá trình này có thể mất một lúc."
+
+msgid "Create a plugin"
+msgstr "Tạo plugin"
+
+msgid "Create a theme"
+msgstr "Tạo chủ đề"
+
+msgid "Creator guides"
+msgstr "Hướng dẫn dành cho người sáng tạo"
+
+msgid "Version"
+msgstr "Phiên bản"
+
+msgctxt "device info"
+msgid "Build"
+msgstr "Bản dựng"
+
+msgid "Device"
+msgstr "Thiết bị"
+
+msgid "Memory"
+msgstr "Bộ nhớ"
+
+msgid "Internal"
+msgstr "Bộ nhớ trong"
+
+msgid "SD card"
+msgstr "Thẻ SD"
+
+msgid "%s free of %s"
+msgstr "Còn trống %s / %s"
+
+msgid "Support Compás"
+msgstr "Hỗ trợ Compás"
+
+msgid "Scan for the full guide"
+msgstr "Quét để có hướng dẫn đầy đủ"
+
+msgid "github.com/Starnished66/compas-player"
+msgstr "github.com/Starnished66/compas-player"
+
+msgid "Guide: docs/development/CREATING.md"
+msgstr "Hướng dẫn: docs/development/CREATING.md"
+
+msgid "Write a Lua plugin on your computer. Copy its .lua file to the .plugins folder on your SD card."
+msgstr "Viết plugin Lua trên máy tính của bạn. Sao chép tệp .lua của nó vào thư mục .plugins trên thẻ SD của bạn."
+
+msgid "Open More > Plugins > Refresh Plugins. Scan for a working example and the full API guide."
+msgstr "Mở Thêm > Plugin > Làm mới plugin. Quét để tìm ví dụ hoạt động và hướng dẫn API đầy đủ."
+
+msgid "Edit a .theme text file on your computer. Copy it to the Themes folder on your SD card, then select it in More > Themes."
+msgstr "Sửa tệp văn bản .theme trên máy tính. Sao chép tệp vào thư mục Themes trên thẻ SD, sau đó chọn tại Thêm > Chủ đề."
+
+msgid "Scan for a starter theme and instructions. To redesign the player screen, see the XML layout guide linked there."
+msgstr "Quét tìm chủ đề khởi đầu và hướng dẫn. Để thiết kế lại màn hình trình phát, hãy xem hướng dẫn bố cục XML được liên kết ở đó."
+
+msgid "Compás Player"
+msgstr "Compás Player"
+
+msgid "Create plugins & themes"
+msgstr "Tạo plugin và chủ đề"
+
+msgid "Developer Options"
+msgstr "Tùy chọn nhà phát triển"
+
+msgid "About"
+msgstr "Giới thiệu"
+
+msgid "Screenshots (Power + Previous)"
+msgstr "Ảnh chụp màn hình (Nguồn + Trước)"
+
+msgid "Screenshots (Power + Vol Down)"
+msgstr "Ảnh chụp màn hình (Nguồn + Giảm âm lượng)"
+
+msgid "Enable debug logging"
+msgstr "Bật ghi nhật ký gỡ lỗi"
+
+msgid "Reboot to bootloader"
+msgstr "Khởi động lại vào bộ nạp khởi động"
+
+msgid "Custom color"
+msgstr "Màu tùy chỉnh"
+
+msgid "From album art"
+msgstr "Lấy từ ảnh bìa album"
+
+msgid "From album art (no cover, using custom)"
+msgstr "Lấy từ ảnh bìa album (nếu không có ảnh bìa thì dùng màu tùy chỉnh)"
+
+msgid "Accent Color"
+msgstr "Màu nhấn"
+
+msgid "Accent Options"
+msgstr "Tùy chọn màu nhấn"
+
+msgid "Match album art"
+msgstr "Theo màu ảnh bìa album"
+
+msgid "Takes its color from the cover of the playing track"
+msgstr "Lấy màu từ bìa của bản nhạc đang phát"
+
+msgid "Tint startup image"
+msgstr "Tô màu ảnh khởi động"
+
+msgid "Uses the accent color for the default splash."
+msgstr "Dùng màu nhấn cho màn hình khởi động mặc định."
+
+msgid "Tint title bar icons"
+msgstr "Tô màu biểu tượng thanh tiêu đề"
+
+msgid "Uses the accent color for the icons next to screen titles."
+msgstr "Sử dụng màu nhấn cho các biểu tượng bên cạnh tiêu đề màn hình."
+
+msgid "Presets"
+msgstr "Cài đặt sẵn"
+
+msgid "Default (Built-in)"
+msgstr "Mặc định (Tích hợp)"
+
+msgid "No .ttf fonts found in /Fonts"
+msgstr "Không tìm thấy phông chữ .ttf trong /Fonts"
+
+msgid "Font selection is no longer available"
+msgstr "Lựa chọn phông chữ không còn khả dụng"
+
+msgid "Failed to load font. Check format & memory."
+msgstr "Không tải được phông chữ. Kiểm tra định dạng và bộ nhớ."
+
+msgid "Font"
+msgstr "Phông chữ"
+
+msgid "Preview"
+msgstr "Xem trước"
+
+msgid "The quick brown fox jumps 123"
+msgstr "Cáo nâu nhanh nhẹn nhảy 123"
+
+msgid "Custom fonts affect Latin text only."
+msgstr "Phông chữ tùy chỉnh chỉ ảnh hưởng đến văn bản Latinh."
+
+msgid "Place .ttf fonts in SD /Fonts folder."
+msgstr "Đặt phông chữ .ttf vào thư mục SD /Fonts."
+
+msgid "Screen Timeout"
+msgstr "Thời gian tắt màn hình"
+
+msgid "Turn off screen automatically"
+msgstr "Tắt màn hình tự động"
+
+msgid "Screen Dimming"
+msgstr "Làm mờ màn hình"
+
+msgid "Dim screen before timeout"
+msgstr "Làm mờ màn hình trước khi hết thời gian chờ"
+
+msgid "Startup Volume"
+msgstr "Âm lượng khi khởi động"
+
+msgid "Launch at a fixed volume"
+msgstr "Khởi chạy với âm lượng cố định"
+
+msgid "Max Volume"
+msgstr "Âm lượng tối đa"
+
+msgid "Limits the player volume, including buttons, remote controls and plugins."
+msgstr "Giới hạn âm lượng của trình phát, bao gồm các nút, điều khiển từ xa và plugin."
+
+msgid "Car Mode is disabled."
+msgstr "Chế độ ô tô đang tắt."
+
+msgid "Car Mode Volume"
+msgstr "Âm lượng chế độ ô tô"
+
+msgid "Auto-resume"
+msgstr "Tự động tiếp tục"
+
+msgid "Resume playback when external power turns the player on."
+msgstr "Tiếp tục phát khi nguồn ngoài bật máy nghe nhạc."
+
+msgid "Gain"
+msgstr "Độ lợi"
+
+msgid "Low\nHigh"
+msgstr "Thấp\nCao"
+
+msgid "%d min"
+msgstr "%d phút"
+
+msgid "%d hr"
+msgstr "%d giờ"
+
+msgid "%d hr %d min"
+msgstr "%d giờ %d phút"
+
+msgid "Time remaining: %d:%02d:%02d"
+msgstr "Thời gian còn lại: %d:%02d:%02d"
+
+msgid "Time remaining: %d:%02d"
+msgstr "Thời gian còn lại: %d:%02d"
+
+msgid "Enable Sleep Timer"
+msgstr "Bật hẹn giờ ngủ"
+
+msgid "Show Time Remaining"
+msgstr "Hiển thị thời gian còn lại"
+
+msgid "Idle Shutdown"
+msgstr "Tắt nguồn khi không hoạt động"
+
+msgid "Automatically go idle"
+msgstr "Tự động nhàn rỗi"
+
+msgid "Choose what happens when idle:"
+msgstr "Chọn điều gì sẽ xảy ra khi không hoạt động:"
+
+msgid "Power Off"
+msgstr "Tắt nguồn"
+
+msgid "Suspend to RAM"
+msgstr "Tạm ngưng vào RAM"
+
+msgid "Idle timeout:"
+msgstr "Thời gian chờ:"
+
+msgid "Africa"
+msgstr "Châu Phi"
+
+msgid "America"
+msgstr "Châu Mỹ"
+
+msgid "Antarctica"
+msgstr "Nam Cực"
+
+msgid "Arctic"
+msgstr "Bắc Cực"
+
+msgid "Asia"
+msgstr "Châu Á"
+
+msgid "Atlantic"
+msgstr "Đại Tây Dương"
+
+msgid "Australia"
+msgstr "Úc"
+
+msgid "Europe"
+msgstr "Châu Âu"
+
+msgid "Indian"
+msgstr "Ấn Độ Dương"
+
+msgid "Pacific"
+msgstr "Thái Bình Dương"
+
+msgid "Not selected (UTC)"
+msgstr "Chưa được chọn (UTC)"
+
+msgid "Failed to apply time zone"
+msgstr "Không thể áp dụng múi giờ"
+
+msgid "%s (current)"
+msgstr "%s (hiện tại)"
+
+msgid "Time Zone"
+msgstr "Múi giờ"
+
+msgid "Sound Effects"
+msgstr "Hiệu ứng âm thanh"
+
+msgid "Download Profiles"
+msgstr "Tải xuống hồ sơ"
+
+msgid "Buttons & Remote"
+msgstr "Nút và điều khiển từ xa"
+
+msgid "Playback & Controls"
+msgstr "Phát & điều khiển"
+
+msgid "Equalizer"
+msgstr "Bộ chỉnh âm"
+
+msgid "Crossfeed"
+msgstr "Crossfeed"
+
+msgid "Power"
+msgstr "Nguồn"
+
+msgid "Play/Pause"
+msgstr "Phát/Tạm dừng"
+
+msgid "Next Track"
+msgstr "Bản nhạc tiếp theo"
+
+msgid "Previous Track"
+msgstr "Bản nhạc trước"
+
+msgid "Clockwise"
+msgstr "Theo chiều kim đồng hồ"
+
+msgid "Counterclockwise"
+msgstr "Ngược chiều kim đồng hồ"
+
+msgid "Volume Up"
+msgstr "Tăng âm lượng"
+
+msgid "Volume Down"
+msgstr "Giảm âm lượng"
+
+msgid "Button"
+msgstr "Nút"
+
+msgid "Default (native behavior)"
+msgstr "Mặc định (chức năng gốc)"
+
+msgid "Seek Forward"
+msgstr "Tua tới"
+
+msgid "Seek Backward"
+msgstr "Tua lùi"
+
+msgid "Toggle Screen"
+msgstr "Bật/tắt màn hình"
+
+msgid "Power Menu"
+msgstr "Menu nguồn"
+
+msgid "Do Nothing"
+msgstr "Không làm gì"
+
+msgid "Single press"
+msgstr "Nhấn một lần"
+
+msgid "Double press"
+msgstr "Nhấn hai lần"
+
+msgid "Long press"
+msgstr "Nhấn giữ"
+
+msgid "Single"
+msgstr "Nhấn một lần"
+
+msgid "Double"
+msgstr "Nhấn đúp"
+
+msgid "Long"
+msgstr "Nhấn giữ"
+
+msgid "Default"
+msgstr "Mặc định"
+
+msgid "Disabled"
+msgstr "Đã tắt"
+
+msgid "Reset All"
+msgstr "Đặt lại tất cả"
+
+msgid "Button Mapping"
+msgstr "Ánh xạ nút"
+
+msgid "Keep a button assigned to Toggle Screen or Power Menu"
+msgstr "Giữ lại ít nhất một nút được gán cho Bật/tắt màn hình hoặc Menu nguồn"
+
+msgid "Reset all button mappings?"
+msgstr "Đặt lại toàn bộ chức năng nút?"
+
+msgid "Reset"
+msgstr "Đặt lại"
+
+msgid "Volume Lock (Screen Off)"
+msgstr "Khóa âm lượng khi tắt màn hình"
+
+msgid "In-line Remote"
+msgstr "Điều khiển trên dây"
+
+msgid "Update Music Database to enable this album order"
+msgstr "Cập nhật cơ sở dữ liệu nhạc để bật thứ tự album này"
+
+msgid "Sorting"
+msgstr "Sắp xếp"
+
+msgid "Files (folders stay first)"
+msgstr "Tệp (thư mục luôn ở trên cùng)"
+
+msgid "Name (A–Z)"
+msgstr "Tên (A–Z)"
+
+msgid "Newest Modified"
+msgstr "Sửa đổi gần đây nhất"
+
+msgid "Release Year (oldest first)"
+msgstr "Năm phát hành (cũ nhất xếp trước)"
+
+msgid "Files use modification dates. Albums use the newest track added; missing release years sort last. Update Music Database once to read years from existing files."
+msgstr "Tệp được sắp xếp theo ngày sửa đổi. Album dùng ngày thêm của bản nhạc mới nhất; album thiếu năm phát hành sẽ xếp cuối. Cập nhật cơ sở dữ liệu nhạc một lần để đọc năm từ các tệp hiện có."
+
+msgid "Update Music Database"
+msgstr "Cập nhật cơ sở dữ liệu nhạc"
+
+msgid "Refresh All Metadata"
+msgstr "Làm mới toàn bộ siêu dữ liệu"
+
+msgid "Refresh All Covers"
+msgstr "Làm mới toàn bộ ảnh bìa"
+
+msgid "Animation Speed"
+msgstr "Tốc độ hoạt ảnh"
+
+msgid "T9"
+msgstr "T9"
+
+msgid "QWERTY"
+msgstr "QWERTY"
+
+msgid "Keyboard"
+msgstr "Bàn phím"
+
+msgid "Plugins can override these saved preferences."
+msgstr "Các plugin có thể ghi đè các tùy chọn đã lưu này."
+
+msgid "Quick Drawer"
+msgstr "Ngăn Kéo Nhanh"
+
+msgid "Plugin Order"
+msgstr "Thứ tự plugin"
+
+msgid "Enabled"
+msgstr "Bật"
+
+msgid "Volume Slider"
+msgstr "Thanh trượt âm lượng"
+
+msgid "Reorder Items"
+msgstr "Sắp xếp lại mục"
+
+msgid "Volume"
+msgstr "Âm lượng"
+
+msgid "Clock"
+msgstr "Đồng hồ"
+
+msgid "Wired Headphones"
+msgstr "Tai nghe có dây"
+
+msgid "Bluetooth Audio (A2DP)"
+msgstr "Âm thanh Bluetooth (A2DP)"
+
+msgid "USB Audio"
+msgstr "Âm thanh USB"
+
+msgid "Playback Status"
+msgstr "Trạng thái phát lại"
+
+msgid "Bluetooth Codec"
+msgstr "Bluetooth Codec"
+
+msgid "Battery Icon"
+msgstr "Biểu tượng pin"
+
+msgid "Left"
+msgstr "Bên trái"
+
+msgid "Center"
+msgstr "Ở giữa"
+
+msgid "Right"
+msgstr "Phải"
+
+msgid "Clock Position"
+msgstr "Vị trí đồng hồ"
+
+msgid "Battery Percentage"
+msgstr "Phần trăm pin"
+
+msgid "Top Bar"
+msgstr "Thanh trên cùng"
+
+msgid "Artist Images"
+msgstr "Ảnh nghệ sĩ"
+
+msgid "Themes"
+msgstr "Chủ đề"
+
+msgid "Appearance"
+msgstr "Giao diện"
+
+msgid "Applying layout, this may take a while"
+msgstr "Đang áp dụng bố cục. Quá trình này có thể mất một lúc."
+
+msgid "Layout"
+msgstr "Bố cục"
+
+msgid "Lyrics"
+msgstr "Lời bài hát"
+
+msgid "Hide Player/Lyrics Top Bar"
+msgstr "Ẩn thanh trên cùng của trình phát/lời bài hát"
+
+msgid "Player Layout"
+msgstr "Bố cục trình phát"
+
+msgid "Swipe Up for Home"
+msgstr "Vuốt lên để về màn hình chính"
+
+msgid "Upside Down Screen"
+msgstr "Xoay ngược màn hình"
+
+msgid "Gestures & Orientation"
+msgstr "Cử chỉ và hướng màn hình"
+
+msgid "Display"
+msgstr "Màn hình"
+
+msgid "Charge Limit (85%)"
+msgstr "Giới hạn sạc (85%)"
+
+msgid "Safe Charging (500mA)"
+msgstr "Sạc an toàn (500mA)"
+
+msgid "LED charge indicator"
+msgstr "Chỉ báo sạc LED"
+
+msgid "Disable charging\nin USB DAC mode"
+msgstr "Tắt sạc\nở chế độ USB DAC"
+
+msgid "Charging"
+msgstr "Sạc"
+
+msgid "Additional Tools"
+msgstr "Công cụ bổ sung"
+
+msgid "Turn off Automatic to set the clock"
+msgstr "Tắt chế độ Tự động để chỉnh giờ"
+
+msgid "Automatic"
+msgstr "Tự động"
+
+msgid "Set Time"
+msgstr "Đặt giờ"
+
+msgid "24-Hour Clock"
+msgstr "Đồng hồ 24 giờ"
+
+msgid "Save"
+msgstr "Lưu"
+
+msgid "Hostname"
+msgstr "Tên máy chủ"
+
+msgid "Factory Reset"
+msgstr "Khôi phục cài đặt gốc"
+
+msgid "Maintenance"
+msgstr "Bảo trì"
+
+msgid "Firmware Update"
+msgstr "Cập nhật firmware"
+
+msgid "Player Update"
+msgstr "Cập nhật trình phát"
+
+msgid "Plugins & Layouts"
+msgstr "Plugin & Bố cục"
+
+msgid "Applying language, this may take a while"
+msgstr "Đang áp dụng ngôn ngữ. Quá trình này có thể mất một lúc."
+
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+msgid "System"
+msgstr "Hệ thống"
+
+msgid "Settings"
+msgstr "Cài đặt"
+
+msgid "Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from here."
+msgstr "Trước tiên, tắt ADB (Cài đặt > Hệ thống > Chế độ USB), sau đó bật USB DAC tại đây."
+
+msgid "Now Playing layouts"
+msgstr "Bố cục Đang phát"
+
+msgid "More"
+msgstr "Thêm"
+
+msgid "0 dB"
+msgstr "0dB"
+
+msgid "Combined response (dB) · EQ off"
+msgstr "Phản hồi kết hợp (dB) · Tắt EQ"
+
+msgid "Combined response (dB)"
+msgstr "Phản hồi kết hợp (dB)"
+
+msgid "PEQ reset to defaults"
+msgstr "Đặt lại PEQ về mặc định"
+
+msgid "Reset PEQ to defaults?"
+msgstr "Đặt lại PEQ về mặc định?"
+
+msgid "Reset all settings and reboot?"
+msgstr "Đặt lại tất cả cài đặt và khởi động lại?"
+
+msgid "Restart now to apply the new hostname?"
+msgstr "Khởi động lại ngay bây giờ để áp dụng tên máy chủ mới?"
+
+msgid "Restart Now"
+msgstr "Khởi động lại ngay"
+
+msgid "Hostname can only use letters, numbers, and hyphens"
+msgstr "Tên máy chủ chỉ có thể sử dụng chữ cái, số và dấu gạch nối"
+
+msgid "Invalid profile name"
+msgstr "Tên hồ sơ không hợp lệ"
+
+msgid "Failed to save profile"
+msgstr "Không lưu được hồ sơ"
+
+msgid "Profile saved"
+msgstr "Đã lưu hồ sơ"
+
+msgid "Failed to load profile"
+msgstr "Không tải được hồ sơ"
+
+msgid "Profile loaded"
+msgstr "Đã tải hồ sơ"
+
+msgid "Failed to delete profile"
+msgstr "Không xóa được hồ sơ"
+
+msgid "Profile deleted"
+msgstr "Đã xóa hồ sơ"
+
+msgid "Failed to rename profile"
+msgstr "Không đổi tên được hồ sơ"
+
+msgid "Profile renamed"
+msgstr "Đã đổi tên hồ sơ"
+
+msgid "Rename Profile"
+msgstr "Đổi tên hồ sơ"
+
+msgid "Replace Profile"
+msgstr "Thay thế hồ sơ"
+
+msgid "Profiles"
+msgstr "Hồ sơ"
+
+msgid "No saved profiles"
+msgstr "Chưa lưu hồ sơ nào"
+
+msgid "Download profiles"
+msgstr "Tải hồ sơ xuống"
+
+msgid "Delete this profile?"
+msgstr "Xóa hồ sơ này?"
+
+msgid "Save Profile As"
+msgstr "Lưu hồ sơ với tên"
+
+msgid "Profile Name"
+msgstr "Tên hồ sơ"
+
+msgid "Save Profile"
+msgstr "Lưu hồ sơ"
+
+msgid "Save as a new profile, or replace one that already exists?"
+msgstr "Lưu thành hồ sơ mới hay thay thế hồ sơ hiện có?"
+
+msgid "Replace Existing"
+msgstr "Thay thế hồ sơ hiện có"
+
+msgid "New Profile"
+msgstr "Hồ sơ mới"
+
+msgid "Band options"
+msgstr "Tùy chọn dải tần"
+
+msgid "Filter type"
+msgstr "Loại bộ lọc"
+
+msgid "Peaking\nLow Shelf\nHigh Shelf"
+msgstr "Peaking\nLow Shelf\nHigh Shelf"
+
+msgid "Enable band"
+msgstr "Bật dải tần"
+
+msgid "Crossfeed angle"
+msgstr "Góc Crossfeed"
+
+msgid "No delay\n30°\n45°\n60°\n90°"
+msgstr "Không trễ\n30°\n45°\n60°\n90°"
+
+msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
+msgstr "Crossfeed trộn tín hiệu đã lọc từ kênh đối diện và hoạt động độc lập với PEQ. Khi chọn Không trễ, tín hiệu giống nhau ở hai kênh trái và phải hầu như không bị ảnh hưởng."
+
+msgid "PEQ"
+msgstr "PEQ"
+
+msgid "Frequency"
+msgstr "Tần số"
+
+msgid "Pre-Amp"
+msgstr "Tiền khuếch đại"
+
+msgid "Reset to defaults"
+msgstr "Đặt lại về mặc định"
+
+msgid "48 kHz reference"
+msgstr "Tham chiếu 48 kHz"
+
+msgid "Flat"
+msgstr "Phẳng"
+
+msgid "Please wait for the library scan to finish"
+msgstr "Vui lòng đợi quá trình quét thư viện kết thúc"
+
+msgid "Please wait for plugin installation to finish"
+msgstr "Vui lòng đợi quá trình cài đặt plugin hoàn tất"
+
+msgid "Connect to a Wi-Fi network before continuing."
+msgstr "Kết nối với mạng Wi-Fi trước khi tiếp tục."
+
+msgid "Select at least one plugin to continue."
+msgstr "Chọn ít nhất một plugin để tiếp tục."
+
+msgid "Could not start the library scan. Please try again."
+msgstr "Không thể bắt đầu quét thư viện. Vui lòng thử lại."
+
+msgid "Plugin is unavailable in the catalog"
+msgstr "Plugin không có sẵn trong danh mục"
+
+msgid "Insert an SD card to scan for music, or turn off Scan for music."
+msgstr "Lắp thẻ SD để quét tìm nhạc hoặc tắt Quét tìm nhạc."
+
+msgid "Choose a language"
+msgstr "Chọn một ngôn ngữ"
+
+msgid "Could not load the plugin catalog. Tap More to retry."
+msgstr "Không thể tải danh mục plugin. Nhấn vào Thêm để thử lại."
+
+msgid "Loading plugin catalog..."
+msgstr "Đang tải danh mục plugin..."
+
+msgid "No network detected"
+msgstr "Không phát hiện thấy mạng"
+
+msgid "Time zone"
+msgstr "Múi giờ"
+
+msgid "Quick setup"
+msgstr "Thiết lập nhanh"
+
+msgid "Skip for now"
+msgstr "Bỏ qua bây giờ"
+
+msgid "Your setup journey"
+msgstr "Các bước thiết lập"
+
+msgid "Welcome to Compás"
+msgstr "Chào mừng đến với Compás"
+
+msgid "Get started"
+msgstr "Bắt đầu"
+
+msgid "Quick Setup Complete"
+msgstr "Hoàn tất thiết lập nhanh"
+
+msgid "Continue"
+msgstr "Tiếp tục"
+
+msgid "Step %d of %d"
+msgstr "Bước %d/%d"
+
+msgid "Your music"
+msgstr "Nhạc của bạn"
+
+msgid "Choose the language for your player."
+msgstr "Chọn ngôn ngữ cho máy nghe nhạc của bạn."
+
+msgid "Set your local time zone so the clock is right."
+msgstr "Đặt múi giờ địa phương của bạn để đồng hồ chính xác."
+
+msgid "Connect to Wi-Fi for streaming, updates, and online services."
+msgstr "Kết nối với Wi-Fi để phát trực tuyến, cập nhật và các dịch vụ trực tuyến."
+
+msgid "Start with these suggestions, or explore more plugins."
+msgstr "Bắt đầu với những đề xuất này hoặc khám phá thêm plugin."
+
+msgid "Insert your SD card with music files. Compas Player can scan it and build your library."
+msgstr "Lắp thẻ SD của bạn với các tệp nhạc. Compas Player có thể quét nó và xây dựng thư viện của bạn."
+
+msgid "Choose time zone"
+msgstr "Chọn múi giờ"
+
+msgid "Add hidden network"
+msgstr "Thêm mạng ẩn"
+
+msgid "Rescan"
+msgstr "Quét lại"
+
+msgid "Connect to a network to download plugins."
+msgstr "Kết nối với mạng để tải xuống plugin."
+
+msgid "Connect to Wi-Fi"
+msgstr "Kết nối với Wi-Fi"
+
+msgid "AutoEQ"
+msgstr "AutoEQ"
+
+msgid "Gain Mode"
+msgstr "Chế độ độ lợi"
+
+msgid "Scan for music"
+msgstr "Quét nhạc"
+
+msgid "No SD card detected. You can scan later from Library settings."
+msgstr "Không phát hiện thấy thẻ SD. Bạn có thể quét sau từ cài đặt Thư viện."
+
+msgid "You can select up to 32 plugins"
+msgstr "Bạn có thể chọn tối đa 32 plugin"
+
+msgid "Plugin setup complete"
+msgstr "Quá trình thiết lập plugin đã hoàn tất"
+
+msgid "Continue setup"
+msgstr "Tiếp tục thiết lập"
+
+msgid "Retrying plugins %zu/%zu"
+msgstr "Đang thử lại plugin %zu/%zu"
+
+msgid "Downloading and installing plugins %zu/%zu"
+msgstr "Tải xuống và cài đặt plugin %zu/%zu"
+
+msgid "Failed plugins:\n"
+msgstr "Plugin không cài đặt được:\n"
+
+msgid "Selected plugins are ready.\n"
+msgstr "Các plugin đã chọn đã sẵn sàng.\n"
+
+msgid "Manage plugins later in Settings > System > Plugin Manager to search, update, or remove them."
+msgstr "Quản lý plugin sau trong Cài đặt > Hệ thống > Trình quản lý plugin để tìm kiếm, cập nhật hoặc xóa chúng."
+
+msgid "Plugin setup needs attention"
+msgstr "Thiết lập plugin cần chú ý"
+
+msgid "Could not replace plugin files."
+msgstr "Không thể thay thế các tập tin plugin."
+
+msgid "Could not start refreshing the plugin catalog."
+msgstr "Không thể bắt đầu làm mới danh mục plugin."
+
+msgid "AM"
+msgstr "SA"
+
+msgid "USB audio device detected"
+msgstr "Đã phát hiện thấy thiết bị âm thanh USB"
+
+msgid "%dm"
+msgstr "%dm"
+
+msgid "Wi-Fi failed to change state"
+msgstr "Wi-Fi không thể thay đổi trạng thái"
+
+msgid "Turn off Bluetooth to use Wi-Fi"
+msgstr "Tắt Bluetooth để sử dụng Wi-Fi"
+
+msgid "Turn off Wi-Fi to use Bluetooth"
+msgstr "Tắt Wi-Fi để sử dụng Bluetooth"
+
+msgid "Failed to toggle Bluetooth"
+msgstr "Không thể chuyển đổi Bluetooth"
+
+msgid "Sleep"
+msgstr "Ngủ"
+
+msgid "RC"
+msgstr "RC"
+
+msgid "PM"
+msgstr "CH"
+
+msgid "Downloading"
+msgstr "Đang tải xuống"
+
+msgid "Not enough memory to start download"
+msgstr "Không đủ bộ nhớ để bắt đầu tải xuống"
+
+msgid "Invalid download folder"
+msgstr "Thư mục tải xuống không hợp lệ"
+
+msgid "Download failed"
+msgstr "Tải xuống không thành công"
+
+msgid "Original"
+msgstr "Gốc"
+
+msgid "Low"
+msgstr "Thấp"
+
+msgid "High"
+msgstr "Cao"
+
+msgid "Stream quality: %s"
+msgstr "Chất lượng phát trực tiếp: %s"
+
+msgid "Stream Quality"
+msgstr "Chất lượng luồng"
+
+msgid "Applies to new streaming queues"
+msgstr "Áp dụng cho hàng đợi phát trực tuyến mới"
+
+msgid "Low (96 kbps)"
+msgstr "Thấp (96 kbps)"
+
+msgid "Medium (192 kbps)"
+msgstr "Trung bình (192 kbps)"
+
+msgid "High (320 kbps)"
+msgstr "Cao (320 kbps)"
+
+msgid "Download folder: %s"
+msgstr "Thư mục tải xuống: %s"
+
+msgid "Download folder: SD root"
+msgstr "Thư mục tải xuống: thư mục gốc thẻ SD"
+
+msgid "Invalid download folder name"
+msgstr "Tên thư mục tải xuống không hợp lệ"
+
+msgid "Download subfolder"
+msgstr "Thư mục con tải xuống"
+
+msgid "Download Settings"
+msgstr "Cài đặt tải xuống"
+
+msgid "Subfolder: SD root"
+msgstr "Thư mục con: thư mục gốc thẻ SD"
+
+msgid "Subfolder is relative to SD root (example: Music/Offline); empty uses SD root"
+msgstr "Đường dẫn thư mục con tính từ thư mục gốc thẻ SD (ví dụ: Music/Offline); để trống sẽ dùng thư mục gốc thẻ SD."
+
+msgid "Folder layout for downloaded albums"
+msgstr "Bố cục thư mục cho album đã tải xuống"
+
+msgid "Album Artist / Album"
+msgstr "Nghệ sĩ album / Album"
+
+msgid "Album Artist - Album"
+msgstr "Nghệ sĩ album - Album"
+
+msgid "Failed to load from server"
+msgstr "Không thể tải từ máy chủ"
+
+msgid "Previous request still finishing"
+msgstr "Yêu cầu trước đó vẫn đang hoàn tất"
+
+msgid "Not enough memory to load from server"
+msgstr "Không đủ bộ nhớ để tải từ máy chủ"
+
+msgid "Loading from server..."
+msgstr "Đang tải từ máy chủ..."
+
+msgid "Server request timed out after 30 seconds"
+msgstr "Yêu cầu máy chủ hết thời gian chờ sau 30 giây"
+
+msgid "Not enough memory to load artists"
+msgstr "Không đủ bộ nhớ để tải nghệ sĩ"
+
+msgid "Downloading\n%s..."
+msgstr "Đang tải xuống\n%s..."
+
+msgid "Download \"%s\"?"
+msgstr "Tải xuống \"%s\"?"
+
+msgid "Download every album from \"%s\"?"
+msgstr "Tải xuống mọi album từ \"%s\"?"
+
+msgid "Failed to load artists"
+msgstr "Không tải được nghệ sĩ"
+
+msgid "Failed to connect to server"
+msgstr "Không thể kết nối với máy chủ"
+
+msgid "Connection timed out after 30 seconds"
+msgstr "Hết thời gian kết nối sau 30 giây"
+
+msgid "Failed to load artists: %s"
+msgstr "Không tải được nghệ sĩ: %s"
+
+msgid "Not enough memory to connect"
+msgstr "Không đủ bộ nhớ để kết nối"
+
+msgid "Connecting to server..."
+msgstr "Đang kết nối với máy chủ..."
+
+msgid "Failed to start connection"
+msgstr "Không thể bắt đầu kết nối"
+
+msgid "No saved servers"
+msgstr "Không có máy chủ nào được lưu"
+
+msgid "Go back and choose New Connection to add one."
+msgstr "Quay lại và chọn Kết nối mới để thêm một kết nối."
+
+msgid "Saved Servers"
+msgstr "Máy chủ đã lưu"
+
+msgid "Server URL (e.g. %s)"
+msgstr "URL máy chủ (ví dụ: %s)"
+
+msgid "Username"
+msgstr "Tên người dùng"
+
+msgid "Password"
+msgstr "Mật khẩu"
+
+msgid "Server URL: %s"
+msgstr "URL máy chủ: %s"
+
+msgid "Verify server certificate"
+msgstr "Xác minh chứng chỉ máy chủ"
+
+msgid "Username: %s"
+msgstr "Tên người dùng: %s"
+
+msgid "Password: Set"
+msgstr "Mật khẩu: Đã đặt"
+
+msgid "Password: Not set"
+msgstr "Mật khẩu: Chưa đặt"
+
+msgid "Connect & Browse"
+msgstr "Kết nối và duyệt"
+
+msgid "New Connection"
+msgstr "Kết nối mới"
+
+msgid "Download settings"
+msgstr "Cài đặt tải xuống"
+
+msgid "Songs"
+msgstr "Bài hát"
+
+msgid "Could not apply theme"
+msgstr "Không thể áp dụng chủ đề"
+
+msgid "%llu bytes"
+msgstr "%llu byte"
+
+msgid "Container"
+msgstr "Định dạng chứa"
+
+msgid "Source"
+msgstr "Nguồn"
+
+msgid "Native DSD (DoP) / %.4g MHz"
+msgstr "DSD gốc (DoP) / %.4g MHz"
+
+msgid "Output"
+msgstr "Đầu ra"
+
+msgid "Mono (1 channel)"
+msgstr "Đơn âm (1 kênh)"
+
+msgid "Stereo (2 channels)"
+msgstr "Âm thanh nổi (2 kênh)"
+
+msgid "%u channels"
+msgstr "%u kênh"
+
+msgid "Channels"
+msgstr "Kênh"
+
+msgid "Bitrate"
+msgstr "Tốc độ bit"
+
+msgid "Duration"
+msgstr "Thời lượng"
+
+msgid "File size"
+msgstr "Kích thước tệp"
+
+msgid "Track"
+msgstr "Bản nhạc"
+
+msgid "Disc %d / Track %d"
+msgstr "Đĩa %d / Bản nhạc %d"
+
+msgid "Position"
+msgstr "Vị trí"
+
+msgid "Applied %+.1f dB"
+msgstr "Đã áp dụng %+.1f dB"
+
+msgid "Album %+.1f dB"
+msgstr "Album %+.1f dB"
+
+msgid "Track %+.1f dB"
+msgstr "Bản nhạc %+.1f dB"
+
+msgid "Provider"
+msgstr "Nhà cung cấp"
+
+msgid "Radio / %s"
+msgstr "Đài phát thanh / %s"
+
+msgid "Radio"
+msgstr "Đài phát thanh"
+
+msgid "Network stream"
+msgstr "Luồng mạng"
+
+msgid "Location"
+msgstr "Vị trí"
+
+msgid "Track details are not available yet. Keep playback open and check again."
+msgstr "Thông tin bản nhạc chưa có. Hãy để màn hình phát nhạc mở và kiểm tra lại."
+
+msgid "No items"
+msgstr "Không có mục nào"
+
+msgid "Unable to load items"
+msgstr "Không thể tải các mục"
+
+msgid "There are no entries in this view."
+msgstr "Không có mục nào trong chế độ xem này."
+
+msgid "Your library is being loaded."
+msgstr "Thư viện của bạn đang được tải."
+
+msgid "Leave this view and try again."
+msgstr "Hãy rời khỏi chế độ xem này và thử lại."
+
+msgid "Power off"
+msgstr "Tắt nguồn"
+
+msgid "Restart"
+msgstr "Khởi động lại"
+
+msgid "Screen off"
+msgstr "Tắt màn hình"
+
+msgid "Sleep timer"
+msgstr "Hẹn giờ ngủ"
+
+msgid "Power controls"
+msgstr "Điều khiển nguồn"
+
+msgid "Playback and device actions"
+msgstr "Điều khiển phát nhạc và thiết bị"
+
+msgid "Not available in your subscription"
+msgstr "Không có trong gói thuê bao của bạn"
+
+msgid "This track is unavailable"
+msgstr "Bản nhạc này không khả dụng"
+
+msgid "This quality is unavailable for this track"
+msgstr "Chất lượng này không khả dụng cho bản nhạc này"
+
+msgid "This track is copy-protected"
+msgstr "Bản nhạc này được bảo vệ chống sao chép"
+
+msgid "Could not reach the streaming service"
+msgstr "Không thể truy cập dịch vụ phát trực tuyến"
+
+msgid "Sign in to the streaming service again"
+msgstr "Đăng nhập lại vào dịch vụ phát trực tuyến"
+
+msgid "Could not get a stream link"
+msgstr "Không thể lấy liên kết luồng"
+
+msgid "The streaming service did not answer"
+msgstr "Dịch vụ phát trực tuyến không phản hồi"
+
+msgid "The streaming plugin is not available"
+msgstr "Plugin phát trực tuyến không có sẵn"
+
+msgid "TXT Reader"
+msgstr "Trình đọc TXT"
+
+msgid "Keep Lyrics Screen On"
+msgstr "Luôn bật màn hình lời bài hát"
+
+msgid "PCM"
+msgstr "PCM"
+
+msgid "Native DSD"
+msgstr "DSD gốc"
+
+msgid "DoP"
+msgstr "DoP"
+
+msgid "Native DSD and DoP bypass software volume and DSP. Use DoP only with a compatible DAC. Unavailable formats or rates use PCM."
+msgstr "Native DSD và DoP bỏ qua âm lượng phần mềm và DSP. Chỉ dùng DoP với DAC tương thích. Định dạng hoặc tần số không hỗ trợ sẽ dùng PCM."
+
+msgid "USB DSD Output"
+msgstr "Đầu ra USB DSD"
+
+msgid "Play"
+msgstr "Phát"
+
+msgid "Shuffle"
+msgstr "Phát ngẫu nhiên"
+
+msgid "Mixed"
+msgstr "Hỗn hợp"
+
+msgid "Hi-Res"
+msgstr "Độ phân giải cao"
+

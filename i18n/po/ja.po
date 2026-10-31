@@ -1,0 +1,3436 @@
+# Japanese translation for compas-player.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: compas-player\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-17 10:56-0600\n"
+"PO-Revision-Date: 2026-10-31 00:00+0000\n"
+"Last-Translator: Compas Player localization contributors\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"X-Native-Name: 日本語\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "File unavailable"
+msgstr "ファイルを利用できません"
+
+msgid "Unsupported audio format"
+msgstr "対応していない音声形式です"
+
+msgid "Too many audio channels"
+msgstr "音声チャンネル数が多すぎます"
+
+msgid "Audio output failed"
+msgstr "音声出力に失敗しました"
+
+msgid "Audio could not be decoded"
+msgstr "音声をデコードできませんでした"
+
+msgid "Playback error"
+msgstr "再生エラー"
+
+msgid "No SD card is mounted."
+msgstr "SDカードがマウントされていません。"
+
+msgid "The firmware path is too long."
+msgstr "ファームウェアのパスが長すぎます。"
+
+msgid "Use a regular %s file in the SD card root."
+msgstr "SDカードのルートにある通常の%sファイルを使用してください。"
+
+msgid "Could not prepare update helper: %s"
+msgstr "更新ヘルパーを準備できませんでした：%s"
+
+msgid "Could not start update helper: %s"
+msgstr "更新ヘルパーを起動できませんでした：%s"
+
+msgid "Update helper failed (%s, status %d). See .compas/ota/update.log."
+msgstr "更新ヘルパーが失敗しました（%s、ステータス%d）。.compas/ota/update.logを確認してください。"
+
+msgid "Cannot read update helper status: %s"
+msgstr "更新ヘルパーの状態を読み取れません：%s"
+
+msgid "Still working. Do not turn off the player or retry."
+msgstr "処理中です。プレーヤーの電源を切ったり、再試行したりしないでください。"
+
+msgid "Recovery flag partition does not match this firmware."
+msgstr "リカバリーフラグのパーティションがこのファームウェアと一致しません。"
+
+msgid "Cannot safely access the recovery flag block."
+msgstr "リカバリーフラグのブロックに安全にアクセスできません。"
+
+msgid "Recovery flag erase failed. Do not reboot; check .compas/ota/update.log."
+msgstr "リカバリーフラグの消去に失敗しました。再起動せず、.compas/ota/update.logを確認してください。"
+
+msgid "Recovery flag write failed. Do not reboot; check .compas/ota/update.log."
+msgstr "リカバリーフラグの書き込みに失敗しました。再起動せず、.compas/ota/update.logを確認してください。"
+
+msgid "Recovery flag verification failed. Do not reboot; check the update log."
+msgstr "リカバリーフラグを検証できませんでした。再起動せず、更新ログを確認してください。"
+
+msgid "The selected update file changed. Select it again."
+msgstr "選択した更新ファイルが変更されています。もう一度選択してください。"
+
+msgid "Cannot read the selected update file."
+msgstr "選択した更新ファイルを読み取れません。"
+
+msgid "Cannot create the update log directory."
+msgstr "更新ログのディレクトリを作成できません。"
+
+msgid "Update diagnostics must be stored on the SD card."
+msgstr "更新診断情報はSDカードに保存する必要があります。"
+
+msgid "Cannot save update diagnostics on the SD card."
+msgstr "更新診断情報をSDカードに保存できません。"
+
+msgid "The update file changed during verification. Select it again."
+msgstr "検証中に更新ファイルが変更されました。もう一度選択してください。"
+
+msgid "Could not move other .upt files aside on the SD card."
+msgstr "SDカード上の他の.uptファイルを退避できませんでした。"
+
+msgid "A required recovery helper is missing. Update preparation stopped."
+msgstr "必要なリカバリーヘルパーがありません。更新準備を中止しました。"
+
+msgid "Cannot save update diagnostics. Update preparation stopped."
+msgstr "更新診断情報を保存できません。更新準備を中止しました。"
+
+msgid "Recovery boot flag failed."
+msgstr "リカバリー起動フラグの設定に失敗しました。"
+
+msgid "Recovery remains selected. Keep the update file; saving diagnostics failed."
+msgstr "リカバリーが選択されたままです。診断情報の保存に失敗したため、更新ファイルを残してください。"
+
+msgid "Saving data failed. Recovery remains selected; keep the update file and check .compas/ota/update.log."
+msgstr "データの保存に失敗しました。リカバリーが選択されたままです。更新ファイルを残し、.compas/ota/update.logを確認してください。"
+
+msgid "Recovery remains selected but reboot failed: %s. Keep the update file."
+msgstr "リカバリーが選択されたままですが、再起動に失敗しました：%s。更新ファイルを残してください。"
+
+msgid "An update is already in progress."
+msgstr "更新はすでに進行中です。"
+
+msgid "Charge to at least 30%% or connect power before updating."
+msgstr "更新するには、充電を30%%以上にするか電源に接続してください。"
+
+msgid "Invalid update path."
+msgstr "更新パスが無効です。"
+
+msgid "Could not start the update."
+msgstr "更新を開始できませんでした。"
+
+msgid "Update failed."
+msgstr "更新に失敗しました。"
+
+msgid "Could not prepare secure update storage."
+msgstr "安全な更新用ストレージを準備できませんでした。"
+
+msgid "Could not download the release checksums."
+msgstr "リリースのチェックサムをダウンロードできませんでした。"
+
+msgid "The release does not provide a valid player checksum."
+msgstr "リリースに有効なプレーヤーのチェックサムがありません。"
+
+msgid "The release checksum does not match the published asset digest."
+msgstr "リリースのチェックサムが公開アセットのダイジェストと一致しません。"
+
+msgid "The latest player release changed. Check again."
+msgstr "最新のプレーヤーリリースが変更されました。もう一度確認してください。"
+
+msgid "The player image exceeds the safe size limit."
+msgstr "プレーヤーイメージが安全なサイズ上限を超えています。"
+
+msgid "Not enough internal storage for the player update."
+msgstr "プレーヤーの更新に必要な内部ストレージが不足しています。"
+
+msgid "The player download did not complete."
+msgstr "プレーヤーのダウンロードが完了しませんでした。"
+
+msgid "The downloaded player failed SHA-256 verification."
+msgstr "ダウンロードしたプレーヤーのSHA-256検証に失敗しました。"
+
+msgid "Place a valid player executable at SD/.compas/compas_player."
+msgstr "SD/.compas/compas_playerに有効なプレーヤー実行ファイルを配置してください。"
+
+msgid "Could not start the player update check."
+msgstr "プレーヤーの更新確認を開始できませんでした。"
+
+msgid "Another update is already active."
+msgstr "別の更新がすでに実行中です。"
+
+msgid "Check for a player update first."
+msgstr "最初にプレーヤーの更新を確認してください。"
+
+msgid "Not enough memory."
+msgstr "メモリが不足しています。"
+
+msgid "Could not start the player download."
+msgstr "プレーヤーのダウンロードを開始できませんでした。"
+
+msgid "Could not start the SD player update."
+msgstr "SDカードからのプレーヤー更新を開始できませんでした。"
+
+msgid "Screenshots unavailable"
+msgstr "スクリーンショットを利用できません"
+
+msgid "Screenshot needs an SD card"
+msgstr "スクリーンショットにはSDカードが必要です"
+
+msgid "Disconnect USB storage first"
+msgstr "先にUSBストレージを取り外してください"
+
+msgid "Screenshot failed (framebuffer)"
+msgstr "スクリーンショットに失敗しました（フレームバッファー）"
+
+msgid "Screenshot failed (worker)"
+msgstr "スクリーンショットに失敗しました（ワーカー）"
+
+msgid "Files"
+msgstr "ファイル"
+
+msgid "Artists"
+msgstr "アーティスト"
+
+msgid "Albums"
+msgstr "アルバム"
+
+msgid "Album Artist"
+msgstr "アルバムアーティスト"
+
+msgid "Genres"
+msgstr "ジャンル"
+
+msgid "All Songs"
+msgstr "すべての曲"
+
+msgid "Playlists"
+msgstr "プレイリスト"
+
+msgid "Sound"
+msgstr "サウンド"
+
+msgid "Playback"
+msgstr "再生"
+
+msgid "Library"
+msgstr "ライブラリ"
+
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Sleep Timer"
+msgstr "スリープタイマー"
+
+msgid "Crossfade"
+msgstr "クロスフェード"
+
+msgid "AirPlay"
+msgstr "AirPlay"
+
+msgid "DLNA"
+msgstr "DLNA"
+
+msgid "Gapless"
+msgstr "ギャップレス再生"
+
+msgid "Remote Control"
+msgstr "リモコン"
+
+msgid "Car Mode"
+msgstr "車載モード"
+
+msgid "Plugins"
+msgstr "プラグイン"
+
+msgid "Page %d of %d"
+msgstr "%d / %dページ"
+
+msgid "Go to page"
+msgstr "ページへ移動"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Previous"
+msgstr "前へ"
+
+msgid "Next"
+msgstr "次へ"
+
+msgid "Folder too large to index (tap Back)"
+msgstr "フォルダーが大きすぎてインデックスを作成できません（戻るをタップ）"
+
+msgid "Unable to read folder (tap Back and retry)"
+msgstr "フォルダーを読み取れません（戻るをタップして再試行）"
+
+msgid "This folder is empty"
+msgstr "このフォルダーは空です"
+
+msgid "No playable files here"
+msgstr "再生できるファイルがありません"
+
+msgid "No playable audio files found"
+msgstr "再生可能な音声ファイルが見つかりません"
+
+msgid "Open a folder containing supported audio files."
+msgstr "対応する音声ファイルがあるフォルダーを開いてください。"
+
+msgid "Unexpected reply from GitHub."
+msgstr "GitHubから予期しない応答がありました。"
+
+msgid "Insert an SD card to change emulators."
+msgstr "エミュレーターを変更するにはSDカードを挿入してください。"
+
+msgid "Cannot create the emulator folder."
+msgstr "エミュレーターフォルダーを作成できません。"
+
+msgid "The emulator folder is not writable."
+msgstr "エミュレーターフォルダーに書き込めません。"
+
+msgid "Not enough free space on the player."
+msgstr "プレーヤーの空き容量が不足しています。"
+
+msgid "Could not read the emulator list from GitHub."
+msgstr "GitHubからエミュレーター一覧を読み取れませんでした。"
+
+msgid "This emulator needs a newer player version."
+msgstr "このエミュレーターには、より新しいプレーヤーのバージョンが必要です。"
+
+msgid "Disconnect USB storage from the host before changing emulators."
+msgstr "エミュレーターを変更する前に、ホストからUSBストレージを取り外してください。"
+
+msgid "Could not install the emulator."
+msgstr "エミュレーターをインストールできませんでした。"
+
+msgid "The emulator download failed verification. Try again."
+msgstr "エミュレーターのダウンロード検証に失敗しました。もう一度お試しください。"
+
+msgid "Could not start the emulator operation"
+msgstr "エミュレーター操作を開始できませんでした"
+
+msgid "Could not remove the emulator."
+msgstr "エミュレーターを削除できませんでした。"
+
+msgid "Unexpected reply from GitHub"
+msgstr "GitHubから予期しない応答がありました"
+
+msgid "GitHub's latest release is not a supported firmware release."
+msgstr "GitHubの最新リリースは、対応するファームウェアリリースではありません。"
+
+msgid "GitHub's latest release has no valid %s image and checksum."
+msgstr "GitHubの最新リリースに有効な%sイメージとチェックサムがありません。"
+
+msgid "Secure connection failed. Check Wi-Fi and the date and time."
+msgstr "セキュアな接続に失敗しました。Wi-Fiと日付・時刻を確認してください。"
+
+msgid "Cannot reach GitHub. Check the Wi-Fi connection."
+msgstr "GitHubに接続できません。Wi-Fi接続を確認してください。"
+
+msgid "GitHub did not respond in time. Try again."
+msgstr "GitHubから時間内に応答がありませんでした。もう一度お試しください。"
+
+msgid "Could not read the release list from GitHub."
+msgstr "GitHubからリリース一覧を読み取れませんでした。"
+
+msgid "GitHub is limiting requests. Try again later."
+msgstr "GitHubがリクエストを制限しています。しばらくしてから再試行してください。"
+
+msgid "GitHub returned HTTP %d."
+msgstr "GitHubがHTTP %dを返しました。"
+
+msgid "Cannot read the SD card."
+msgstr "SDカードを読み取れません。"
+
+msgid "A newer or changed release is available. Check for updates again before downloading."
+msgstr "新しいリリースまたは変更されたリリースがあります。ダウンロードする前に、もう一度更新を確認してください。"
+
+msgid "Insert an SD card to download the update."
+msgstr "更新をダウンロードするにはSDカードを挿入してください。"
+
+msgid "The release has no checksum for this device's image."
+msgstr "このリリースには、このデバイス用イメージのチェックサムがありません。"
+
+msgid "This release's image does not match its checksums. Try again after the next weekly release."
+msgstr "このリリースのイメージはチェックサムと一致しません。次回の週次リリース後にもう一度お試しください。"
+
+msgid "Not enough free space on the SD card for the update."
+msgstr "更新に必要なSDカードの空き容量が不足しています。"
+
+msgid "The download did not complete. Check Wi-Fi and try again."
+msgstr "ダウンロードが完了しませんでした。Wi-Fiを確認して再試行してください。"
+
+msgid "The downloaded image failed verification and was deleted."
+msgstr "ダウンロードしたイメージの検証に失敗したため、削除しました。"
+
+msgid "The SD card changed during the download."
+msgstr "ダウンロード中にSDカードが変更されました。"
+
+msgid "Could not record the verified update on the SD card."
+msgstr "検証済みの更新をSDカードに記録できませんでした。"
+
+msgid "Could not place the update on the SD card."
+msgstr "更新ファイルをSDカードに配置できませんでした。"
+
+msgid "Could not start the update check."
+msgstr "更新確認を開始できませんでした。"
+
+msgid "Could not start the download."
+msgstr "ダウンロードを開始できませんでした。"
+
+msgid "No verified update is on this SD card. Download it again."
+msgstr "このSDカードに検証済みの更新がありません。もう一度ダウンロードしてください。"
+
+msgid "Cannot read the update file on the SD card. Check the card and try again."
+msgstr "SDカード上の更新ファイルを読み取れません。カードを確認して再試行してください。"
+
+msgid "The update file on the SD card changed. Download it again."
+msgstr "SDカード上の更新ファイルが変更されています。もう一度ダウンロードしてください。"
+
+msgid "This update is no longer the latest release. Check for updates and download the latest image."
+msgstr "この更新は最新リリースではなくなりました。更新を確認し、最新のイメージをダウンロードしてください。"
+
+msgid "Could not verify the latest release checksums."
+msgstr "最新リリースのチェックサムを検証できませんでした。"
+
+msgid "This update no longer matches the latest release. Download the latest image again."
+msgstr "この更新は最新リリースと一致しなくなりました。最新のイメージをもう一度ダウンロードしてください。"
+
+msgid "Could not enter recovery mode."
+msgstr "リカバリーモードに入れませんでした。"
+
+msgid "Charge to at least %d%% or connect power before updating."
+msgstr "更新するには、充電を%d%%以上にするか電源に接続してください。"
+
+msgid "A firmware update is already in progress."
+msgstr "ファームウェアの更新はすでに進行中です。"
+
+msgid "Could not start the installation."
+msgstr "インストールを開始できませんでした。"
+
+msgid "Disconnect USB storage from the host before changing plugins."
+msgstr "プラグインを変更する前に、ホストからUSBストレージを取り外してください。"
+
+msgid "Cannot check plugin storage write access."
+msgstr "プラグインストレージの書き込み権限を確認できません。"
+
+msgid "The SD card is read-only. Check its write protection."
+msgstr "SDカードは読み取り専用です。書き込み禁止スイッチを確認してください。"
+
+msgid "Plugin storage is unavailable."
+msgstr "プラグインストレージを利用できません。"
+
+msgid "The SD card changed during the operation."
+msgstr "操作中にSDカードが変更されました。"
+
+msgid "Could not read the plugin list from GitHub."
+msgstr "GitHubからプラグイン一覧を読み取れませんでした。"
+
+msgid "Insert an SD card to install plugins."
+msgstr "プラグインをインストールするにはSDカードを挿入してください。"
+
+msgid "Could not read installed plugins."
+msgstr "インストール済みプラグインを読み取れませんでした。"
+
+msgid "This plugin needs a newer player version."
+msgstr "このプラグインには、より新しいプレーヤーのバージョンが必要です。"
+
+msgid "Too many plugins are installed. Remove one and try again."
+msgstr "インストール済みのプラグインが多すぎます。1つ削除して、もう一度お試しください。"
+
+msgid "This plugin is already installed by the store."
+msgstr "このプラグインはストアからすでにインストールされています。"
+
+msgid "This plugin has no update available."
+msgstr "このプラグインに利用可能な更新はありません。"
+
+msgid "Not enough free space on the SD card."
+msgstr "SDカードの空き容量が不足しています。"
+
+msgid "The plugin download failed verification. Try again."
+msgstr "プラグインのダウンロード検証に失敗しました。もう一度お試しください。"
+
+msgid "A local plugin file will be replaced. Confirm to continue."
+msgstr "ローカルのプラグインファイルが置き換えられます。続行するには確認してください。"
+
+msgid "Could not install the plugin on the SD card."
+msgstr "プラグインをSDカードにインストールできませんでした。"
+
+msgid "Insert an SD card to change plugins."
+msgstr "プラグインを変更するにはSDカードを挿入してください。"
+
+msgid "Could not start the plugin operation."
+msgstr "プラグイン操作を開始できませんでした。"
+
+msgid "Could not start the plugin refresh."
+msgstr "プラグイン一覧の更新を開始できませんでした。"
+
+msgid "Insert an SD card to remove plugins."
+msgstr "プラグインを削除するにはSDカードを挿入してください。"
+
+msgid "This plugin is not installed by the store."
+msgstr "このプラグインはストアからインストールされていません。"
+
+msgid "Could not prepare plugin removal."
+msgstr "プラグインの削除を準備できませんでした。"
+
+msgid "Could not remove a plugin file."
+msgstr "プラグインファイルを削除できませんでした。"
+
+msgid "Could not update the installed plugin record."
+msgstr "インストール済みプラグインの記録を更新できませんでした。"
+
+msgid "Insert an SD card to update plugins."
+msgstr "プラグインを更新するにはSDカードを挿入してください。"
+
+msgid "A plugin download failed verification. Try again."
+msgstr "プラグインのダウンロード検証に失敗しました。もう一度お試しください。"
+
+msgid "Could not install a plugin on the SD card."
+msgstr "プラグインをSDカードにインストールできませんでした。"
+
+msgid "Some updates need confirmation before replacing local files."
+msgstr "一部の更新では、ローカルファイルを置き換える前に確認が必要です。"
+
+msgid "Could not start the plugin update."
+msgstr "プラグインの更新を開始できませんでした。"
+
+msgid "Unexpected library response"
+msgstr "ライブラリから予期しない応答がありました"
+
+msgid "On"
+msgstr "オン"
+
+msgid "Off"
+msgstr "オフ"
+
+msgid "Screenshot saved"
+msgstr "スクリーンショットを保存しました"
+
+msgid "Screenshot failed (%s)"
+msgstr "スクリーンショットに失敗しました（%s）"
+
+msgid "unknown"
+msgstr "不明"
+
+msgid "Cannot play folder"
+msgstr "フォルダーを再生できません"
+
+msgid "Paused: headphones disconnected"
+msgstr "一時停止中：ヘッドホンが切断されました"
+
+msgid "Queue checkpoint failed; storage may be read-only"
+msgstr "キューのチェックポイント保存に失敗しました。ストレージが読み取り専用の可能性があります"
+
+msgid "Playback history could not be saved"
+msgstr "再生履歴を保存できませんでした"
+
+msgid "Subsonic"
+msgstr "Subsonic"
+
+msgid "Stream Media"
+msgstr "ストリーミングメディア"
+
+msgid "Could not open this file."
+msgstr "このファイルを開けませんでした。"
+
+msgid "[File truncated at %d KB -- showing the first part only]\n\n%s"
+msgstr "[ファイルは%d KBで切り詰められました。先頭部分のみ表示します]\n\n%s"
+
+msgid "Books refreshed"
+msgstr "書籍を更新しました"
+
+msgid "Could not read the Books folder"
+msgstr "Booksフォルダーを読み取れませんでした"
+
+msgid "Could not refresh books"
+msgstr "書籍を更新できませんでした"
+
+msgid "Favorites"
+msgstr "お気に入り"
+
+msgid "Books"
+msgstr "書籍"
+
+msgid "No favorites yet"
+msgstr "お気に入りはまだありません"
+
+msgid "No books found"
+msgstr "書籍が見つかりません"
+
+msgid "Open a book and tap the bookmark icon to save it here."
+msgstr "書籍を開き、ブックマークアイコンをタップするとここに保存できます。"
+
+msgid "Add .txt files to the Books folder, then refresh the library."
+msgstr "Booksフォルダーに.txtファイルを追加し、ライブラリを更新してください。"
+
+msgid "Needs newer firmware"
+msgstr "新しいファームウェアが必要です"
+
+msgid "Update available · %s"
+msgstr "更新あり · %s"
+
+msgid "Installed · %s"
+msgstr "インストール済み · %s"
+
+msgid "Available · %s"
+msgstr "利用可能 · %s"
+
+msgid "Install"
+msgstr "インストール"
+
+msgid "Remove"
+msgstr "削除"
+
+msgid "Bundled games and their saves will be removed. Games in SD/Games are kept."
+msgstr "付属ゲームとそのセーブデータは削除されます。SD/Games内のゲームは残ります。"
+
+msgid "No description"
+msgstr "説明はありません"
+
+msgid "By %s"
+msgstr "作者：%s"
+
+msgid "License: %s"
+msgstr "ライセンス：%s"
+
+msgid "Size: %s"
+msgstr "サイズ：%s"
+
+msgid "Updating replaces bundled games and their saves. Games in SD/Games are kept."
+msgstr "更新すると、付属ゲームとそのセーブデータが置き換えられます。SD/Games内のゲームは残ります。"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "No emulators are available in the catalog."
+msgstr "カタログに利用可能なエミュレーターはありません。"
+
+msgid "Refresh emulator catalog"
+msgstr "エミュレーターカタログを更新"
+
+msgid "Updates"
+msgstr "更新"
+
+msgid "Installed"
+msgstr "インストール済み"
+
+msgid "Available"
+msgstr "利用可能"
+
+msgid "Installing emulator"
+msgstr "エミュレーターをインストール中"
+
+msgid "Updating emulator"
+msgstr "エミュレーターを更新中"
+
+msgid "Removing emulator"
+msgstr "エミュレーターを削除中"
+
+msgid "This may take a while"
+msgstr "しばらく時間がかかる場合があります"
+
+msgid "Remove %s?"
+msgstr "%sを削除しますか？"
+
+msgid "No network detected. Connect to a network to download emulators."
+msgstr "ネットワークが検出されません。エミュレーターをダウンロードするにはネットワークに接続してください。"
+
+msgid "Turn on Wi-Fi and connect first"
+msgstr "Wi-Fiをオンにして接続してください"
+
+msgid "Emulator operation failed"
+msgstr "エミュレーター操作に失敗しました"
+
+msgid "An emulator operation is already in progress"
+msgstr "エミュレーター操作はすでに進行中です"
+
+msgid "Loading emulators"
+msgstr "エミュレーターを読み込み中"
+
+msgid "Download emulators"
+msgstr "エミュレーターをダウンロード"
+
+msgid "Games run on the player only."
+msgstr "ゲームはプレーヤー本体でのみ実行できます。"
+
+msgid "Emulator store is busy."
+msgstr "エミュレーターストアは処理中です。"
+
+msgid "Check the SD card and disconnect USB storage before playing."
+msgstr "ゲームをプレイする前にSDカードを確認し、USBストレージを取り外してください。"
+
+msgid "Turn off DAC mode to play games."
+msgstr "ゲームをプレイするにはDACモードをオフにしてください。"
+
+msgid "USB storage is busy."
+msgstr "USBストレージは使用中です。"
+
+msgid "Audio is still active; cannot start the game."
+msgstr "音声がまだ再生中のため、ゲームを開始できません。"
+
+msgid "Could not start the game."
+msgstr "ゲームを開始できませんでした。"
+
+msgid "The game closed unexpectedly."
+msgstr "ゲームが予期せず終了しました。"
+
+msgid "Copy games to the %s folder on the SD card."
+msgstr "ゲームをSDカードの%sフォルダーにコピーしてください。"
+
+msgid "No games found"
+msgstr "ゲームが見つかりません"
+
+msgid "Emulators"
+msgstr "エミュレーター"
+
+msgid "No emulators installed"
+msgstr "エミュレーターがインストールされていません"
+
+msgid "Download an emulator to play games."
+msgstr "ゲームをプレイするにはエミュレーターをダウンロードしてください。"
+
+msgid "Disconnect USB storage from the computer before changing files."
+msgstr "ファイルを変更する前に、コンピューターからUSBストレージを取り外してください。"
+
+msgid "File Manager"
+msgstr "ファイルマネージャー"
+
+msgid "%d selected"
+msgid_plural "%d selected"
+msgstr[0] "%d件選択中"
+
+msgid "Could not open this file"
+msgstr "このファイルを開けませんでした"
+
+msgid "This type of file cannot be opened"
+msgstr "この種類のファイルは開けません"
+
+msgid "%u of %u\n%s"
+msgstr "%u / %u\n%s"
+
+msgid "Stopped"
+msgstr "停止しました"
+
+msgid "%u item could not be completed"
+msgid_plural "%u items could not be completed"
+msgstr[0] "%u件の項目を完了できませんでした"
+
+msgid "Done. Update the music database to see the changes in your library."
+msgstr "完了しました。ライブラリに変更を反映するには音楽データベースを更新してください。"
+
+msgid "Done"
+msgstr "完了"
+
+msgid "Stopping..."
+msgstr "停止中…"
+
+msgid "Working..."
+msgstr "処理中…"
+
+msgid "Stop"
+msgstr "停止"
+
+msgid "Another file operation is still running"
+msgstr "別のファイル操作がまだ実行中です"
+
+msgid "Open the destination folder, then choose Paste here from the menu."
+msgstr "移動先フォルダーを開き、メニューから「ここに貼り付け」を選択してください。"
+
+msgid "Move %d item?"
+msgid_plural "Move %d items?"
+msgstr[0] "%d件の項目を移動しますか？"
+
+msgid "Delete %d item?"
+msgid_plural "Delete %d items?"
+msgstr[0] "%d件の項目を削除しますか？"
+
+msgid "Move"
+msgstr "移動"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "This includes the player's own data (.compas or .plugins). Deleting or moving it can break features, lose data such as settings and installed plugins, and may require a restart."
+msgstr "プレーヤー自身のデータ（.compasまたは.plugins）も含まれます。削除や移動を行うと機能が使えなくなったり、設定やインストール済みプラグインなどのデータが失われたりすることがあり、再起動が必要になる場合があります。"
+
+msgid "This cannot be undone."
+msgstr "元に戻せません。"
+
+msgid "That name cannot be used"
+msgstr "その名前は使用できません"
+
+msgid "Could not rename"
+msgstr "名前を変更できませんでした"
+
+msgid "An item with that name already exists"
+msgstr "同じ名前の項目がすでにあります"
+
+msgid "Rename"
+msgstr "名前を変更"
+
+msgid "Could not create the folder"
+msgstr "フォルダーを作成できませんでした"
+
+msgid "Nothing to select here"
+msgstr "ここには選択できるものがありません"
+
+msgid "New folder"
+msgstr "新しいフォルダー"
+
+msgid "Copy"
+msgstr "コピー"
+
+msgid "Select all"
+msgstr "すべて選択"
+
+msgid "Paste %d item here"
+msgid_plural "Paste %d items here"
+msgstr[0] "%d件の項目をここに貼り付け"
+
+msgid "Select"
+msgstr "選択"
+
+msgid "Hide hidden files"
+msgstr "隠しファイルを非表示"
+
+msgid "Show hidden files"
+msgstr "隠しファイルを表示"
+
+msgid "Playlist selection expired"
+msgstr "プレイリストの選択期限が切れました"
+
+msgid "Playlist name is too long"
+msgstr "プレイリスト名が長すぎます"
+
+msgid "Playlist created"
+msgstr "プレイリストを作成しました"
+
+msgid "Failed to create playlist"
+msgstr "プレイリストの作成に失敗しました"
+
+msgid "Playlist Name"
+msgstr "プレイリスト名"
+
+msgid "Song already added"
+msgstr "この曲はすでに追加されています"
+
+msgid "Added to playlist"
+msgstr "プレイリストに追加しました"
+
+msgid "Failed to add to playlist"
+msgstr "プレイリストへの追加に失敗しました"
+
+msgid "Added folder to playlist"
+msgstr "フォルダーをプレイリストに追加しました"
+
+msgid "Failed to add folder to playlist"
+msgstr "フォルダーのプレイリストへの追加に失敗しました"
+
+msgid "Folder is too large to add to queue"
+msgstr "フォルダーが大きすぎてキューに追加できません"
+
+msgid "Playback changed before folder was ready"
+msgstr "フォルダーの準備中に再生状態が変更されました"
+
+msgid "Cannot add folder within queue memory limit"
+msgstr "キューのメモリ上限を超えるためフォルダーを追加できません"
+
+msgid "Cannot play this folder"
+msgstr "このフォルダーを再生できません"
+
+msgid "Folder action is still running"
+msgstr "フォルダーの処理がまだ実行中です"
+
+msgid "Cannot start folder action"
+msgstr "フォルダーの処理を開始できません"
+
+msgid "Adding folder to queue"
+msgstr "フォルダーをキューに追加中"
+
+msgid "Adding folder to playlist"
+msgstr "フォルダーをプレイリストに追加中"
+
+msgid "Preparing folder playback"
+msgstr "フォルダーの再生を準備中"
+
+msgid "Scanning playable files"
+msgstr "再生可能なファイルをスキャン中"
+
+msgid "File path is too long"
+msgstr "ファイルパスが長すぎます"
+
+msgid "Play All (Sequential)"
+msgstr "すべて再生（順番）"
+
+msgid "Play All (Shuffle)"
+msgstr "すべて再生（シャッフル）"
+
+msgid "Add to Queue"
+msgstr "キューに追加"
+
+msgid "Add to Playlist"
+msgstr "プレイリストに追加"
+
+msgid "+ New Playlist"
+msgstr "＋ 新しいプレイリスト"
+
+msgid "Audio"
+msgstr "オーディオ"
+
+msgid "Unknown artist"
+msgstr "不明なアーティスト"
+
+msgid "Unknown album"
+msgstr "不明なアルバム"
+
+msgid "Play All"
+msgstr "すべて再生"
+
+msgid "%lld track"
+msgid_plural "%lld tracks"
+msgstr[0] "%lld曲"
+
+msgid "Recently Added"
+msgstr "最近追加"
+
+msgid "Playlist changed. Select a song again."
+msgstr "プレイリストが変更されました。曲をもう一度選択してください。"
+
+msgid "Playlist is empty"
+msgstr "プレイリストは空です"
+
+msgid "Start sequentially"
+msgstr "順番に再生"
+
+msgid "Shuffle from a random song"
+msgstr "ランダムな曲からシャッフル再生"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "%d track"
+msgid_plural "%d tracks"
+msgstr[0] "%d曲"
+
+msgid "Loading tracks…"
+msgstr "曲を読み込み中…"
+
+msgid "Add songs from a song menu."
+msgstr "曲のメニューから曲を追加してください。"
+
+msgid "No tracks found"
+msgstr "曲が見つかりません"
+
+msgid "Refresh the music database to update this list."
+msgstr "一覧を更新するには音楽データベースを更新してください。"
+
+msgid "Previous  •  %d–%d of %d"
+msgstr "前へ  •  %d～%d / %d"
+
+msgid "Disc %d"
+msgstr "ディスク%d"
+
+msgid "Next  •  %d–%d of %d"
+msgstr "次へ  •  %d～%d / %d"
+
+msgid "Most Played"
+msgstr "再生回数の多い曲"
+
+msgid "Library changed. Open the album again."
+msgstr "ライブラリが変更されました。アルバムをもう一度開いてください。"
+
+msgid "Cannot load album tracks"
+msgstr "アルバムの曲を読み込めません"
+
+msgid "%d song"
+msgid_plural "%d songs"
+msgstr[0] "%d曲"
+
+msgid "%d album"
+msgid_plural "%d albums"
+msgstr[0] "%dアルバム"
+
+msgid "All %d song"
+msgid_plural "All %d songs"
+msgstr[0] "全%d曲"
+
+msgid "Recently Played"
+msgstr "最近再生"
+
+msgid "Cannot read playlist"
+msgstr "プレイリストを読み取れません"
+
+msgid "Playlist changed. Try again."
+msgstr "プレイリストが変更されました。もう一度お試しください。"
+
+msgid "Cannot reorder playlist"
+msgstr "プレイリストの順序を変更できません"
+
+msgid "Cannot remove entry"
+msgstr "項目を削除できません"
+
+msgid "Removed from playlist"
+msgstr "プレイリストから削除しました"
+
+msgid "Playlist unavailable or unreadable"
+msgstr "プレイリストを利用できないか、読み取れません"
+
+msgid "Cannot delete playlist"
+msgstr "プレイリストを削除できません"
+
+msgid "Playlist deleted"
+msgstr "プレイリストを削除しました"
+
+msgid "Cannot rename: invalid name or file exists"
+msgstr "名前を変更できません：名前が無効か、ファイルがすでに存在します"
+
+msgid "Playlist renamed"
+msgstr "プレイリストの名前を変更しました"
+
+msgid "Rename Playlist"
+msgstr "プレイリスト名を変更"
+
+msgid "Delete playlist?"
+msgstr "プレイリストを削除しますか？"
+
+msgid "The playlist file will be deleted. Music files are kept."
+msgstr "プレイリストファイルが削除されます。音楽ファイルは残ります。"
+
+msgid "Delete Playlist"
+msgstr "プレイリストを削除"
+
+msgid "System playlists"
+msgstr "システムプレイリスト"
+
+msgid "Queue"
+msgstr "キュー"
+
+msgid "User playlists"
+msgstr "ユーザープレイリスト"
+
+msgid "No user playlists"
+msgstr "ユーザープレイリストはありません"
+
+msgid "Create a playlist above or copy one to the SD card's Playlists folder."
+msgstr "上でプレイリストを作成するか、SDカードのPlaylistsフォルダーにコピーしてください。"
+
+msgid "SD card not available"
+msgstr "SDカードを利用できません"
+
+msgid "Not enough memory to load CUE tracks"
+msgstr "CUEトラックの読み込みに必要なメモリが不足しています"
+
+msgid "Track %d"
+msgstr "トラック%d"
+
+msgid "Tracks"
+msgstr "曲"
+
+msgid "Couldn't read this .cue file"
+msgstr "この.cueファイルを読み取れませんでした"
+
+msgid "Library recovered. Use Settings > Update Music Database to save"
+msgstr "ライブラリを復旧しました。設定 > 音楽データベースを更新から保存してください"
+
+msgid "No music database"
+msgstr "音楽データベースがありません"
+
+msgid "Build it now? Large libraries can take several minutes."
+msgstr "今すぐ作成しますか？大きなライブラリでは数分かかることがあります。"
+
+msgid "Build"
+msgstr "作成"
+
+msgid "Music database unavailable"
+msgstr "音楽データベースを利用できません"
+
+msgid "It could not be loaded. Rebuild it now?"
+msgstr "読み込めませんでした。今すぐ再構築しますか？"
+
+msgid "Rebuild"
+msgstr "再構築"
+
+msgid "Update music database?"
+msgstr "音楽データベースを更新しますか？"
+
+msgid "Files on the card may have changed."
+msgstr "カード上のファイルが変更されている可能性があります。"
+
+msgid "Use Settings > Update Music Database"
+msgstr "設定 > 音楽データベースを更新を選択してください"
+
+msgid "Later"
+msgstr "後で"
+
+msgid "No SD card"
+msgstr "SDカードがありません"
+
+msgid "Library loaded"
+msgstr "ライブラリを読み込みました"
+
+msgid "Refreshing\nall metadata..."
+msgstr "すべてのメタデータを\n更新中…"
+
+msgid "Refreshing\nmetadata..."
+msgstr "メタデータを\n更新中…"
+
+msgid "Updating\nmusic database..."
+msgstr "音楽データベースを\n更新中…"
+
+msgid "Preparing metadata refresh..."
+msgstr "メタデータの更新を準備中…"
+
+msgid "Preparing music library..."
+msgstr "音楽ライブラリを準備中…"
+
+msgid "Thread launch failed"
+msgstr "スレッドの起動に失敗しました"
+
+msgid "No songs to refresh"
+msgstr "更新する曲がありません"
+
+msgid "Library is busy"
+msgstr "ライブラリは使用中です"
+
+msgid "Album unavailable"
+msgstr "アルバムを利用できません"
+
+msgid "Refreshing\nall covers..."
+msgstr "すべてのアートワークを\n更新中…"
+
+msgid "Reloading\ncover..."
+msgstr "アートワークを\n再読み込み中…"
+
+msgid "Preparing cover refresh..."
+msgstr "アートワークの更新を準備中…"
+
+msgid "Refresh all covers?"
+msgstr "すべてのアートワークを更新しますか？"
+
+msgid "Removes saved covers and extracts them again. This may take a while."
+msgstr "保存済みのアートワークを削除して再抽出します。時間がかかる場合があります。"
+
+msgid "Refresh"
+msgstr "更新"
+
+msgid "Refresh all metadata?"
+msgstr "すべてのメタデータを更新しますか？"
+
+msgid "Reads the tags of every song again. This may take a while."
+msgstr "すべての曲のタグを再読み込みします。時間がかかる場合があります。"
+
+msgid "Some covers could not be refreshed"
+msgstr "一部のアートワークを更新できませんでした"
+
+msgid "Could not reload cover"
+msgstr "アートワークを再読み込みできませんでした"
+
+msgid "Covers refreshed"
+msgstr "アートワークを更新しました"
+
+msgid "Cover reloaded"
+msgstr "アートワークを再読み込みしました"
+
+msgid "Refreshing covers\n%d of %d (%d%%)"
+msgstr "アートワークを更新中\n%d / %d（%d%%）"
+
+msgid "Reloading cover\n%d of %d (%d%%)"
+msgstr "アートワークを再読み込み中\n%d / %d（%d%%）"
+
+msgid "Refreshing covers"
+msgstr "アートワークを更新中"
+
+msgid "Reloading cover"
+msgstr "アートワークを再読み込み中"
+
+msgid "Preparing metadata refresh"
+msgstr "メタデータの更新を準備中"
+
+msgid "Looking for music files\n%d items checked"
+msgstr "音楽ファイルを検索中\n%d項目を確認"
+
+msgid "Looking for music files"
+msgstr "音楽ファイルを検索中"
+
+msgid "Reading tags\n%d of %d songs (%d%%)"
+msgstr "タグを読み込み中\n%d / %d曲（%d%%）"
+
+msgid "Saving music database"
+msgstr "音楽データベースを保存中"
+
+msgid "Saving music database\nThis can take a while on large libraries"
+msgstr "音楽データベースを保存中\n大きなライブラリでは時間がかかることがあります"
+
+msgid "Library unavailable. Use Settings > Update Music Database to rebuild"
+msgstr "ライブラリを利用できません。設定 > 音楽データベースを更新から再構築してください"
+
+msgid "Library update failed. Check SD card and retry"
+msgstr "ライブラリの更新に失敗しました。SDカードを確認して再試行してください"
+
+msgid "Some songs could not be read"
+msgstr "一部の曲を読み取れませんでした"
+
+msgid "Metadata refreshed"
+msgstr "メタデータを更新しました"
+
+msgid "Library recovered and saved, some folders could not be read"
+msgstr "ライブラリを復旧して保存しましたが、一部のフォルダーを読み取れませんでした"
+
+msgid "Library recovered and saved"
+msgstr "ライブラリを復旧して保存しました"
+
+msgid "Library updated, some folders could not be read"
+msgstr "ライブラリを更新しましたが、一部のフォルダーを読み取れませんでした"
+
+msgid "Library updated"
+msgstr "ライブラリを更新しました"
+
+msgid "Checking the SD card. This may take a while"
+msgstr "SDカードを確認中です。しばらく時間がかかる場合があります"
+
+msgid "SD card repaired"
+msgstr "SDカードを修復しました"
+
+msgid "SD card is still read-only"
+msgstr "SDカードはまだ読み取り専用です"
+
+msgid "Could not repair the SD card"
+msgstr "SDカードを修復できませんでした"
+
+msgid "SD card may have errors. Check it on a computer"
+msgstr "SDカードにエラーがある可能性があります。コンピューターで確認してください"
+
+msgid "SD card is read-only. Check it on a computer"
+msgstr "SDカードは読み取り専用です。コンピューターで確認してください"
+
+msgid "SD card repair is still running"
+msgstr "SDカードの修復はまだ実行中です"
+
+msgid "Formatting\nSD Card..."
+msgstr "SDカードを\nフォーマット中…"
+
+msgid "SD card formatted"
+msgstr "SDカードをフォーマットしました"
+
+msgid "SD card format failed"
+msgstr "SDカードのフォーマットに失敗しました"
+
+msgid "SD card couldn't be read"
+msgstr "SDカードを読み取れませんでした"
+
+msgid "It may have no partition table or a file system this player can't use. Formatting will erase it and set it up for this player."
+msgstr "パーティションテーブルがないか、このプレーヤーで使えないファイルシステムの可能性があります。フォーマットするとカードの内容は消去され、このプレーヤー用に設定されます。"
+
+msgid "Format SD Card"
+msgstr "SDカードをフォーマット"
+
+msgid "Dismiss"
+msgstr "閉じる"
+
+msgid "Erase and format SD card?"
+msgstr "SDカードを消去してフォーマットしますか？"
+
+msgid "This permanently deletes everything on the card. This cannot be undone."
+msgstr "カード上のすべてのデータが完全に削除されます。元に戻せません。"
+
+msgid "Format"
+msgstr "フォーマット"
+
+msgid "Could not restart into the boot selector"
+msgstr "ブートセレクターで再起動できませんでした"
+
+msgid "An update is in progress. Please wait."
+msgstr "更新中です。お待ちください。"
+
+msgid "Tap Power off again to confirm"
+msgstr "確認するには、もう一度電源オフをタップしてください"
+
+msgid "Tap Restart again to confirm"
+msgstr "確認するには、もう一度再起動をタップしてください"
+
+msgid "Sleep timer: %d min remaining"
+msgstr "スリープタイマー：残り%d分"
+
+msgid "Sleep timer: Off"
+msgstr "スリープタイマー：オフ"
+
+msgid "Music"
+msgstr "音楽"
+
+msgid "Showing first %d of %d songs"
+msgstr "最初の%d曲を表示（全%d曲）"
+
+msgid "Play all shuffled"
+msgstr "すべてシャッフル再生"
+
+msgid "Play sequentially"
+msgstr "順番に再生"
+
+msgid "Add a random song to queue"
+msgstr "ランダムな曲をキューに追加"
+
+msgid "Refresh metadata"
+msgstr "メタデータを更新"
+
+msgid "Add album to queue"
+msgstr "アルバムをキューに追加"
+
+msgid "Reload cover"
+msgstr "アートワークを再読み込み"
+
+msgid "Playlists refreshed"
+msgstr "プレイリストを更新しました"
+
+msgid "Some playlists could not be read"
+msgstr "一部のプレイリストを読み取れませんでした"
+
+msgid "Sunday"
+msgstr "日曜日"
+
+msgid "Monday"
+msgstr "月曜日"
+
+msgid "Tuesday"
+msgstr "火曜日"
+
+msgid "Wednesday"
+msgstr "水曜日"
+
+msgid "Thursday"
+msgstr "木曜日"
+
+msgid "Friday"
+msgstr "金曜日"
+
+msgid "Saturday"
+msgstr "土曜日"
+
+msgid "January"
+msgstr "1月"
+
+msgid "February"
+msgstr "2月"
+
+msgid "March"
+msgstr "3月"
+
+msgid "April"
+msgstr "4月"
+
+msgid "May"
+msgstr "5月"
+
+msgid "June"
+msgstr "6月"
+
+msgid "July"
+msgstr "7月"
+
+msgid "August"
+msgstr "8月"
+
+msgid "September"
+msgstr "9月"
+
+msgid "October"
+msgstr "10月"
+
+msgid "November"
+msgstr "11月"
+
+msgid "December"
+msgstr "12月"
+
+msgid "Could not load lock screen photo"
+msgstr "ロック画面の写真を読み込めませんでした"
+
+msgid "Swipe up to unlock"
+msgstr "上にスワイプしてロックを解除"
+
+msgid "No synchronized lyrics found"
+msgstr "同期された歌詞が見つかりません"
+
+msgid "Medium"
+msgstr "中"
+
+msgid "Large"
+msgstr "大"
+
+msgid "Could not apply lyrics text size"
+msgstr "歌詞の文字サイズを適用できませんでした"
+
+msgid "Lyrics Text Size"
+msgstr "歌詞の文字サイズ"
+
+msgid "Wi-Fi is busy"
+msgstr "Wi-Fiは使用中です"
+
+msgid "Connecting to"
+msgstr "接続先："
+
+msgid "Couldn't connect to Wi-Fi network"
+msgstr "Wi-Fiネットワークに接続できませんでした"
+
+msgid "Wi-Fi Password"
+msgstr "Wi-Fiパスワード"
+
+msgid "Secured · Connected"
+msgstr "保護あり・接続済み"
+
+msgid "Open · Connected"
+msgstr "オープン・接続済み"
+
+msgid "Saved network"
+msgstr "保存済みネットワーク"
+
+msgid "Secured network"
+msgstr "保護ありネットワーク"
+
+msgid "Open network"
+msgstr "オープンネットワーク"
+
+msgid "Wi-Fi could not be enabled"
+msgstr "Wi-Fiを有効にできませんでした"
+
+msgid "Check the wireless switch and try again."
+msgstr "ワイヤレススイッチを確認して、もう一度お試しください。"
+
+msgid "Turning Wi-Fi on"
+msgstr "Wi-Fiをオンにしています"
+
+msgid "Nearby networks will appear when Wi-Fi is ready."
+msgstr "Wi-Fiの準備ができると、近くのネットワークが表示されます。"
+
+msgid "Searching for networks"
+msgstr "ネットワークを検索中"
+
+msgid "This can take a few seconds."
+msgstr "数秒かかる場合があります。"
+
+msgid "No networks found"
+msgstr "ネットワークが見つかりません"
+
+msgid "Try scanning again or add a hidden network."
+msgstr "もう一度スキャンするか、非公開ネットワークを追加してください。"
+
+msgid "SSID must be 1 to 32 bytes"
+msgstr "SSIDは1～32バイトで指定してください"
+
+msgid "Wi-Fi is still starting"
+msgstr "Wi-Fiはまだ起動中です"
+
+msgid "Network Name (SSID)"
+msgstr "ネットワーク名（SSID）"
+
+msgid "Connect"
+msgstr "接続"
+
+msgid "Forget"
+msgstr "削除"
+
+msgid "Disconnect"
+msgstr "切断"
+
+msgid "Loading..."
+msgstr "読み込み中…"
+
+msgid "Not connected"
+msgstr "未接続"
+
+msgid "Weak"
+msgstr "弱い"
+
+msgid "Fair"
+msgstr "普通"
+
+msgid "Good"
+msgstr "良好"
+
+msgid "Excellent"
+msgstr "非常に良好"
+
+msgid "SSID: %s"
+msgstr "SSID：%s"
+
+msgid "IP Address: %s"
+msgstr "IPアドレス：%s"
+
+msgid "Gateway: %s"
+msgstr "ゲートウェイ：%s"
+
+msgid "MAC Address: %s"
+msgstr "MACアドレス：%s"
+
+msgid "Signal: %s"
+msgstr "電波強度：%s"
+
+msgid "Wi-Fi Info"
+msgstr "Wi-Fi情報"
+
+msgid "Primary DNS"
+msgstr "優先DNS"
+
+msgid "Secondary DNS"
+msgstr "代替DNS"
+
+msgid "Not set"
+msgstr "未設定"
+
+msgid "DNS Settings"
+msgstr "DNS設定"
+
+msgid "Manual SSID Entry"
+msgstr "SSIDを手動で入力"
+
+msgid "Memorized Networks"
+msgstr "保存済みネットワーク"
+
+msgid "No memorized networks"
+msgstr "保存済みネットワークはありません"
+
+msgid "Networks you connect to will appear here."
+msgstr "接続したネットワークがここに表示されます。"
+
+msgid "Loading Wi-Fi settings"
+msgstr "Wi-Fi設定を読み込み中"
+
+msgid "Saved network details are being checked."
+msgstr "保存済みネットワークの詳細を確認しています。"
+
+msgid "Connected"
+msgstr "接続済み"
+
+msgid "Available Networks"
+msgstr "利用可能なネットワーク"
+
+msgid "Scanning for networks"
+msgstr "ネットワークをスキャン中"
+
+msgid "Nearby Wi-Fi networks will appear here."
+msgstr "近くのWi-Fiネットワークがここに表示されます。"
+
+msgid "No other networks found"
+msgstr "他のネットワークが見つかりません"
+
+msgid "All visible networks are already saved."
+msgstr "表示されているネットワークはすべて保存済みです。"
+
+msgid "Check that Wi-Fi is enabled, then rescan."
+msgstr "Wi-Fiが有効になっていることを確認してから、再スキャンしてください。"
+
+msgid "Connecting"
+msgstr "接続中"
+
+msgid "Connection failed"
+msgstr "接続に失敗しました"
+
+msgid "Paired"
+msgstr "ペアリング済み"
+
+msgid "When on, this device stays visible and pairable to other Bluetooth devices, so a phone or computer can stream audio TO it and play through this device's own output -- using it as an external DAC."
+msgstr "オンにすると、このデバイスは他のBluetooth機器から検出・ペアリング可能になります。スマートフォンやコンピューターから本機に音声をストリーミングし、本機の出力で再生できます。外部DACとして使用できます。"
+
+msgid "Enable Bluetooth DAC"
+msgstr "Bluetooth DACを有効にする"
+
+msgid "Bluetooth DAC"
+msgstr "Bluetooth DAC"
+
+msgid "Enable Bluetooth in settings to use BT DAC mode"
+msgstr "BT DACモードを使用するには設定でBluetoothを有効にしてください"
+
+msgid "Leave Bluetooth DAC mode?"
+msgstr "Bluetooth DACモードを終了しますか？"
+
+msgid "Leave"
+msgstr "終了"
+
+msgid "Bluetooth DAC mode"
+msgstr "Bluetooth DACモード"
+
+msgid "This device is now receiving Bluetooth audio"
+msgstr "このデバイスはBluetooth音声を受信しています"
+
+msgid "Waiting for Bluetooth stream…"
+msgstr "Bluetoothストリームを待機中…"
+
+msgid "Auto"
+msgstr "自動"
+
+msgid "LDAC Quality"
+msgstr "LDAC高音質"
+
+msgid "LDAC Standard"
+msgstr "LDAC標準"
+
+msgid "Could not save Bluetooth codec"
+msgstr "Bluetoothコーデックを保存できませんでした"
+
+msgid "Turn Bluetooth off and on to apply"
+msgstr "適用するにはBluetoothを一度オフにしてからオンにしてください"
+
+msgid "Automatic (44.1 kHz)"
+msgstr "自動（44.1 kHz）"
+
+msgid "Reading supported rates..."
+msgstr "対応サンプルレートを読み込み中…"
+
+msgid "Connect a device to see its supported rates"
+msgstr "対応サンプルレートを確認するにはデバイスを接続してください"
+
+msgid "Still applying the previous choice"
+msgstr "前の選択をまだ適用中です"
+
+msgid "Headset may disconnect, manual reconnection might be required"
+msgstr "ヘッドセットが切断される場合があります。手動で再接続が必要になることがあります"
+
+msgid "Sample Rate"
+msgstr "サンプルレート"
+
+msgid "Bluetooth Volume Sync"
+msgstr "Bluetooth音量同期"
+
+msgid "Codec"
+msgstr "コーデック"
+
+msgid "Speex Resampling"
+msgstr "Speexリサンプリング"
+
+msgid "Hide Unnamed Devices"
+msgstr "名前のないデバイスを非表示"
+
+msgid "Advanced"
+msgstr "詳細設定"
+
+msgid "Resume and Play"
+msgstr "続きから再生"
+
+msgid "Resume, but Paused"
+msgstr "続きから（一時停止）"
+
+msgid "Applies next time you launch the app"
+msgstr "アプリを次回起動したときに適用されます"
+
+msgid "Resume Last Track"
+msgstr "前回の再生を再開"
+
+msgid "Small"
+msgstr "小"
+
+msgid "Could not apply font size"
+msgstr "フォントサイズを適用できませんでした"
+
+msgid "Font Size"
+msgstr "フォントサイズ"
+
+msgid "Per Track"
+msgstr "トラックごと"
+
+msgid "Per Album"
+msgstr "アルバムごと"
+
+msgid "ReplayGain"
+msgstr "ReplayGain"
+
+msgid "Storage"
+msgstr "ストレージ"
+
+msgid "USB DAC"
+msgstr "USB DAC"
+
+msgid "ADB"
+msgstr "ADB"
+
+msgid "Could not start USB mode switch"
+msgstr "USBモードの切り替えを開始できませんでした"
+
+msgid "An update is already in progress"
+msgstr "更新はすでに進行中です"
+
+msgid "USB mode"
+msgstr "USBモード"
+
+msgid "Failed to switch to %s"
+msgstr "%sへの切り替えに失敗しました"
+
+msgid "USB Mode"
+msgstr "USBモード"
+
+msgid "Failed to update USB charging"
+msgstr "USB充電設定の更新に失敗しました"
+
+msgid "USB charging setting is busy"
+msgstr "USB充電設定は使用中です"
+
+msgid "Could not start USB charging update"
+msgstr "USB充電設定の更新を開始できませんでした"
+
+msgid "Leave USB DAC mode?"
+msgstr "USB DACモードを終了しますか？"
+
+msgid "USB DAC mode"
+msgstr "USB DACモード"
+
+msgid "Waiting for USB audio…"
+msgstr "USBオーディオを待機中…"
+
+msgid "Unknown rate"
+msgstr "不明なサンプルレート"
+
+msgid "Unknown format"
+msgstr "不明な形式"
+
+msgid "Unknown codec"
+msgstr "不明なコーデック"
+
+msgid "This device is now a USB sound card"
+msgstr "このデバイスはUSBサウンドカードになりました"
+
+msgid "USB input: %s · %u-bit"
+msgstr "USB入力：%s・%uビット"
+
+msgid "DAC path: %s · %u-bit"
+msgstr "DAC経路：%s・%uビット"
+
+msgid "Bluetooth is off"
+msgstr "Bluetoothはオフです"
+
+msgid "Turn on Bluetooth to see paired and nearby devices."
+msgstr "ペアリング済みまたは近くのデバイスを表示するにはBluetoothをオンにしてください。"
+
+msgid "Paired Devices"
+msgstr "ペアリング済みデバイス"
+
+msgid "No paired devices"
+msgstr "ペアリング済みデバイスはありません"
+
+msgid "Previously connected accessories will appear here."
+msgstr "以前接続したアクセサリーがここに表示されます。"
+
+msgid "Available Devices"
+msgstr "利用可能なデバイス"
+
+msgid "No nearby devices"
+msgstr "近くにデバイスがありません"
+
+msgid "Make an accessory discoverable, then tap Rescan."
+msgstr "アクセサリーを検出可能にしてから「再スキャン」をタップしてください。"
+
+msgid "Connect to Wi-Fi first"
+msgstr "先にWi-Fiに接続してください"
+
+msgid "Open this address on your phone or computer:"
+msgstr "スマートフォンまたはコンピューターで次のアドレスを開いてください："
+
+msgid "Closing\nWeb Server..."
+msgstr "Webサーバーを\n終了中…"
+
+msgid "Import via Wi-Fi"
+msgstr "Wi-Fi経由でインポート"
+
+msgid "Enable WiFi to access"
+msgstr "アクセスするにはWi-Fiを有効にしてください"
+
+msgid "Web Server is busy"
+msgstr "Webサーバーは使用中です"
+
+msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network -- stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
+msgstr "オンにすると、このデバイスはWi-Fiネットワーク上のAirPlay送信元から見えるようになります。iPhone、iPad、Macから音声をストリーミングし、本機の出力で再生できます。"
+
+msgid "Failed to enable AirPlay"
+msgstr "AirPlayを有効にできませんでした"
+
+msgid "AirPlay stopped unexpectedly"
+msgstr "AirPlayが予期せず停止しました"
+
+msgid "DLNA Renderer"
+msgstr "DLNAレンダラー"
+
+msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network -- cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
+msgstr "オンにすると、このデバイスはWi-Fiネットワーク上のDLNA/UPnPコントローラーアプリから見えるようになります。コントローラーアプリから曲をキャストして再生できます。再生開始後は、本機の操作を使用してください。コントローラーアプリからの一時停止、ミュート、音量、シークには対応していません。"
+
+msgid "Service is busy"
+msgstr "サービスは使用中です"
+
+msgid "Unavailable"
+msgstr "利用できません"
+
+msgid "Turn this on to see the address here."
+msgstr "オンにすると、ここにアドレスが表示されます。"
+
+msgid "Bluetooth remote service is unavailable; retrying."
+msgstr "Bluetoothリモートサービスを利用できません。再試行しています。"
+
+msgid "Bluetooth remote service is starting…"
+msgstr "Bluetoothリモートサービスを起動中…"
+
+msgid "Enable Wi-Fi or Bluetooth to connect."
+msgstr "接続するにはWi-FiまたはBluetoothを有効にしてください。"
+
+msgid "Bluetooth: registration failed; retrying"
+msgstr "Bluetooth：登録に失敗しました。再試行しています"
+
+msgid "Bluetooth: waiting for service registration"
+msgstr "Bluetooth：サービス登録を待機中"
+
+msgid "Connect using either available route:"
+msgstr "次のいずれかの方法で接続してください："
+
+msgid "Bluetooth: Compas Remote Control"
+msgstr "Bluetooth：Compas Remote Control"
+
+msgid "Could not generate a new PIN"
+msgstr "新しいPINを生成できませんでした"
+
+msgid "New PIN generated"
+msgstr "新しいPINを生成しました"
+
+msgid "Generate a new PIN?"
+msgstr "新しいPINを生成しますか？"
+
+msgid "Apps and browsers using the current PIN will need the new one to reconnect."
+msgstr "現在のPINを使用しているアプリやブラウザーは、新しいPINで再接続する必要があります。"
+
+msgid "Generate"
+msgstr "生成"
+
+msgid "Connection PIN"
+msgstr "接続PIN"
+
+msgid "Connect over Wi-Fi or Bluetooth to see what's playing, control playback, and browse your library. Enter this PIN when the app or browser asks for it; Bluetooth also requires pairing."
+msgstr "Wi-FiまたはBluetoothで接続すると、再生中の曲の確認、再生操作、ライブラリの閲覧ができます。アプリまたはブラウザーから求められたら、このPINを入力してください。Bluetoothではペアリングも必要です。"
+
+msgid "Remote"
+msgstr "リモート"
+
+msgid "Import"
+msgstr "インポート"
+
+msgid "Wireless"
+msgstr "ワイヤレス"
+
+msgid "No track loaded"
+msgstr "曲が読み込まれていません"
+
+msgid "Song deleted"
+msgstr "曲を削除しました"
+
+msgid "Delete %s?\nThis cannot be undone."
+msgstr "%sを削除しますか？\n元に戻せません。"
+
+msgid "Information"
+msgstr "情報"
+
+msgid "EQ"
+msgstr "イコライザー"
+
+msgid "Queue ready. Press Play to start."
+msgstr "キューの準備ができました。再生ボタンを押して開始してください。"
+
+msgid "Added %d song to queue"
+msgid_plural "Added %d songs to queue"
+msgstr[0] "%d曲をキューに追加しました"
+
+msgid "Removed from queue"
+msgstr "キューから削除しました"
+
+msgid "Queue cleared"
+msgstr "キューを空にしました"
+
+msgid "Turn off Bluetooth DAC to play music on this device"
+msgstr "このデバイスで音楽を再生するにはBluetooth DACをオフにしてください"
+
+msgid "Exit USB DAC mode to play music on this device"
+msgstr "このデバイスで音楽を再生するにはUSB DACモードを終了してください"
+
+msgid "Playback error: audio output failed"
+msgstr "再生エラー：音声出力に失敗しました"
+
+msgid "Playback stopped: %s"
+msgstr "再生を停止しました：%s"
+
+msgid "Skipped: %s"
+msgstr "スキップしました：%s"
+
+msgid "%s · Not loaded: limit reached"
+msgstr "%s・読み込みなし：上限に達しました"
+
+msgid "%s · Not loaded"
+msgstr "%s・読み込みなし"
+
+msgid "Refreshing plugins..."
+msgstr "プラグインを更新中…"
+
+msgid "Couldn't save -- plugin change was not applied"
+msgstr "保存できませんでした。プラグインの変更は適用されませんでした"
+
+msgid "Plugin Store"
+msgstr "プラグインストア"
+
+msgid "Refresh Plugins"
+msgstr "プラグインを更新"
+
+msgid "Plugin Manager"
+msgstr "プラグインマネージャー"
+
+msgid "Download layouts"
+msgstr "レイアウトをダウンロード"
+
+msgid "Download themes"
+msgstr "テーマをダウンロード"
+
+msgid "Extension updates"
+msgstr "拡張機能の更新"
+
+msgid "Replace"
+msgstr "置き換え"
+
+msgid "Its settings stay on the card."
+msgstr "設定はカードに保存されます。"
+
+msgid "Update individually"
+msgstr "個別に更新"
+
+msgid "Choose plugins"
+msgstr "プラグインを選択"
+
+msgid "Update available"
+msgstr "更新があります"
+
+msgid "Removed"
+msgstr "削除済み"
+
+msgid "Installed manually"
+msgstr "手動でインストール済み"
+
+msgid "Version %s · %s"
+msgstr "バージョン%s・%s"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "No longer in the catalog"
+msgstr "カタログにありません"
+
+msgid "Already installed"
+msgstr "インストール済み"
+
+msgid "No plugins are available in the catalog."
+msgstr "カタログに利用可能なプラグインはありません。"
+
+msgid "A plugin operation is already in progress"
+msgstr "プラグイン操作はすでに進行中です"
+
+msgid "Updating plugins"
+msgstr "プラグインを更新中"
+
+msgid "No network detected. Connect to a network to download plugins."
+msgstr "ネットワークが検出されません。プラグインをダウンロードするにはネットワークに接続してください。"
+
+msgid "No updates available."
+msgstr "利用可能な更新はありません。"
+
+msgid "Refresh plugin catalog"
+msgstr "プラグインカタログを更新"
+
+msgid "Update All"
+msgstr "すべて更新"
+
+msgid "Review updates"
+msgstr "更新内容を確認"
+
+msgid "No layouts are available in the catalog."
+msgstr "カタログに利用可能なレイアウトはありません。"
+
+msgid "No themes are available in the catalog."
+msgstr "カタログに利用可能なテーマはありません。"
+
+msgid "Could not start the plugin operation"
+msgstr "プラグイン操作を開始できませんでした"
+
+msgid "Installing plugin"
+msgstr "プラグインをインストール中"
+
+msgid "Removing plugin"
+msgstr "プラグインを削除中"
+
+msgid "Update these plugins individually"
+msgstr "これらのプラグインを個別に更新"
+
+msgid "Not enough memory to load the plugin store"
+msgstr "プラグインストアの読み込みに必要なメモリが不足しています"
+
+msgid "Could not start the plugin refresh"
+msgstr "プラグインの更新を開始できませんでした"
+
+msgid "Loading layouts"
+msgstr "レイアウトを読み込み中"
+
+msgid "Loading themes"
+msgstr "テーマを読み込み中"
+
+msgid "Loading updates"
+msgstr "更新を読み込み中"
+
+msgid "Loading plugins"
+msgstr "プラグインを読み込み中"
+
+msgid "Could not load the plugin catalog."
+msgstr "プラグインカタログを読み込めませんでした。"
+
+msgid "Some plugin files were changed on the card. Replace them?"
+msgstr "カード上の一部のプラグインファイルが変更されています。置き換えますか？"
+
+msgid "Plugin operation failed"
+msgstr "プラグイン操作に失敗しました"
+
+msgid "No entries to display"
+msgstr "表示する項目がありません"
+
+msgid "No plugin settings available"
+msgstr "利用可能なプラグイン設定はありません"
+
+msgid "Plugin"
+msgstr "プラグイン"
+
+msgid "Plugin Settings"
+msgstr "プラグイン設定"
+
+msgid "Select a file"
+msgstr "ファイルを選択"
+
+msgid "Played"
+msgstr "再生済み"
+
+msgid "Playing"
+msgstr "再生中"
+
+msgid "Queued"
+msgstr "追加済み"
+
+msgid "Queue changed. Try again."
+msgstr "キューが変更されました。もう一度お試しください。"
+
+msgid "Cannot move this entry"
+msgstr "この項目を移動できません"
+
+msgid "Queue is empty"
+msgstr "キューは空です"
+
+msgid "Play an album or playlist to see its songs here."
+msgstr "アルバムまたはプレイリストを再生すると、曲がここに表示されます。"
+
+msgid "Previous page"
+msgstr "前のページ"
+
+msgid "Next page"
+msgstr "次のページ"
+
+msgid "Cannot start queue"
+msgstr "キューを開始できません"
+
+msgid "Saving playlist…"
+msgstr "プレイリストを保存中…"
+
+msgid "Cannot save playlist"
+msgstr "プレイリストを保存できません"
+
+msgid "Save Queue as Playlist"
+msgstr "キューをプレイリストとして保存"
+
+msgid "Edit / Done"
+msgstr "編集 / 完了"
+
+msgid "Clear Queue"
+msgstr "キューを消去"
+
+msgid "Save as Playlist"
+msgstr "プレイリストとして保存"
+
+msgid "Playlist saved"
+msgstr "プレイリストを保存しました"
+
+msgid "Cannot save: invalid or streaming entries"
+msgstr "保存できません：無効な項目またはストリーミング項目が含まれています"
+
+msgid "Play Next"
+msgstr "次に再生"
+
+msgid "Custom"
+msgstr "カスタム"
+
+msgid "%d min remaining"
+msgstr "残り%d分"
+
+msgid "Crossfeed: Off"
+msgstr "クロスフィード：オフ"
+
+msgid "Crossfeed: %d%%"
+msgstr "クロスフィード：%d%%"
+
+msgid "%+.2f dB"
+msgstr "%+.2f dB"
+
+msgid "%.0f Hz"
+msgstr "%.0f Hz"
+
+msgid "Pre-Amp (dB, -12 to 12)"
+msgstr "プリアンプ（dB、-12～12）"
+
+msgid "Crossfeed (0 to 100)"
+msgstr "クロスフィード（0～100）"
+
+msgid "Frequency (Hz, 20 to 20000)"
+msgstr "周波数（Hz、20～20000）"
+
+msgid "Gain (dB, -12 to 12)"
+msgstr "ゲイン（dB、-12～12）"
+
+msgid "OFF"
+msgstr "オフ"
+
+msgid "ON"
+msgstr "オン"
+
+msgid "EQ curve"
+msgstr "EQカーブ"
+
+msgid "Band %d / %d"
+msgstr "%d / %dバンド"
+
+msgid "Wait for USB mode switching to finish and disconnect USB storage before updating."
+msgstr "USBモードの切り替えが完了するまで待ち、更新前にUSBストレージを取り外してください。"
+
+msgid "Preparing update"
+msgstr "更新を準備中"
+
+msgid "Checking the file on the SD card"
+msgstr "SDカード上のファイルを確認中"
+
+msgid "Update & Reboot"
+msgstr "更新して再起動"
+
+msgid "Update using %s?\nDevice will reboot into recovery mode."
+msgstr "%sを使って更新しますか？\nデバイスはリカバリーモードで再起動します。"
+
+msgid "Install the player update from the SD card?\n\nUpdates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
+msgstr "SDカードからプレーヤーの更新をインストールしますか？\n\nプレーヤーを更新してデバイスを再起動します。ファームウェア、フォント、アートワークは変更されません。"
+
+msgid "Could not start the player update"
+msgstr "プレーヤーの更新を開始できませんでした"
+
+msgid "Updating player"
+msgstr "プレーヤーを更新中"
+
+msgid "Starting update"
+msgstr "更新を開始中"
+
+msgid "Connect to Wi-Fi before downloading the player update"
+msgstr "プレーヤーの更新をダウンロードする前にWi-Fiに接続してください"
+
+msgid "Starting download"
+msgstr "ダウンロードを開始中"
+
+msgid "Could not start the player update check"
+msgstr "プレーヤーの更新確認を開始できませんでした"
+
+msgid "Checking for player updates"
+msgstr "プレーヤーの更新を確認中"
+
+msgid "Check for online update"
+msgstr "オンライン更新を確認"
+
+msgid "Install from SD card"
+msgstr "SDカードからインストール"
+
+msgid "Update the Player only, retaining current drivers, kernel and bootloader."
+msgstr "ドライバー、カーネル、ブートローダーを維持して、プレーヤーのみを更新します。"
+
+msgid "Download & Install"
+msgstr "ダウンロードしてインストール"
+
+msgid "Install & Restart"
+msgstr "インストールして再起動"
+
+msgid "Downloading player update"
+msgstr "プレーヤーの更新をダウンロード中"
+
+msgid "Installing player update"
+msgstr "プレーヤーの更新をインストール中"
+
+msgid "Checking the latest release"
+msgstr "最新リリースを確認中"
+
+msgid "Replacing the player and preparing to restart"
+msgstr "プレーヤーを置き換えて再起動を準備中"
+
+msgid "Available player release: %s.\nInstalled: %s\n\nDownload and install? This updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
+msgstr "利用可能なプレーヤーリリース：%s。\nインストール済み：%s\n\nダウンロードしてインストールしますか？プレーヤーを更新してデバイスを再起動します。ファームウェア、フォント、アートワークは変更されません。"
+
+msgid "Player updated successfully"
+msgstr "プレーヤーを正常に更新しました"
+
+msgid "Player update failed"
+msgstr "プレーヤーの更新に失敗しました"
+
+msgid "Firmware release %s is downloaded and verified.\n\nInstall now? The device reboots into recovery to flash it. Do not turn it off until it restarts."
+msgstr "ファームウェアリリース%sをダウンロードして検証しました。\n\n今すぐインストールしますか？デバイスはリカバリーで再起動して書き込みを行います。再起動するまで電源を切らないでください。"
+
+msgid "Cannot read the update record on the SD card. Check the card and try again."
+msgstr "SDカード上の更新記録を読み取れません。カードを確認して再試行してください。"
+
+msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
+msgstr "前回のダウンロードが未完了か無効です。SDカードから更新ファイルを削除し、「SDカードからインストール」をタップしてから、新しいファイルをコピーして再試行してください。"
+
+msgid "Checking for updates"
+msgstr "更新を確認中"
+
+msgid "Could not start the download"
+msgstr "ダウンロードを開始できませんでした"
+
+msgid "Downloading update"
+msgstr "更新をダウンロード中"
+
+msgid "Update saved. Connect to Wi-Fi, then install from Firmware Update > Install from SD card."
+msgstr "更新を保存しました。Wi-Fiに接続してから、「ファームウェア更新」>「SDカードからインストール」を選択してください。"
+
+msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
+msgstr "CompásOS全体を更新します。ファームウェアの書き込みにはブートローダー、プレーヤー、カーネル、ドライバーが含まれます。"
+
+msgid "Download"
+msgstr "ダウンロード"
+
+msgid "Install & Reboot"
+msgstr "インストールして再起動"
+
+msgid "Preparing and verifying recovery mode"
+msgstr "リカバリーモードを準備・検証中"
+
+msgid "Saving data before reboot"
+msgstr "再起動前にデータを保存中"
+
+msgid "Restarting into recovery. Do not turn off the player."
+msgstr "リカバリーで再起動しています。プレーヤーの電源を切らないでください。"
+
+msgid "Firmware release %s is available.\nInstalled: %s\n\nDownload it now? This may take a while."
+msgstr "ファームウェアリリース%sを利用できます。\nインストール済み：%s\n\n今すぐダウンロードしますか？時間がかかる場合があります。"
+
+msgid "Installed version: %s\nAvailable release: %s\n\nDownload and reinstall it anyway? This may take a while."
+msgstr "インストール済みバージョン：%s\n利用可能なリリース：%s\n\nダウンロードして再インストールしますか？時間がかかる場合があります。"
+
+msgid "Create a plugin"
+msgstr "プラグインを作成"
+
+msgid "Create a theme"
+msgstr "テーマを作成"
+
+msgid "Creator guides"
+msgstr "作成ガイド"
+
+msgid "Version"
+msgstr "バージョン"
+
+msgctxt "device info"
+msgid "Build"
+msgstr "ビルド"
+
+msgid "Device"
+msgstr "デバイス"
+
+msgid "Memory"
+msgstr "メモリ"
+
+msgid "Internal"
+msgstr "内部"
+
+msgid "SD card"
+msgstr "SDカード"
+
+msgid "%s free of %s"
+msgstr "空き %s / %s"
+
+msgid "Support Compás"
+msgstr "Compásをサポート"
+
+msgid "Scan for the full guide"
+msgstr "ガイド全文を見るにはスキャンしてください"
+
+msgid "github.com/Starnished66/compas-player"
+msgstr "github.com/Starnished66/compas-player"
+
+msgid "Guide: docs/development/CREATING.md"
+msgstr "ガイド：docs/development/CREATING.md"
+
+msgid "Write a Lua plugin on your computer. Copy its .lua file to the .plugins folder on your SD card."
+msgstr "コンピューターでLuaプラグインを作成します。.luaファイルをSDカードの.pluginsフォルダーにコピーしてください。"
+
+msgid "Open More > Plugins > Refresh Plugins. Scan for a working example and the full API guide."
+msgstr "その他 > プラグイン > プラグインを更新を開きます。動作するサンプルとAPIガイド全文を確認するにはスキャンしてください。"
+
+msgid "Edit a .theme text file on your computer. Copy it to the Themes folder on your SD card, then select it in More > Themes."
+msgstr "コンピューターで.themeテキストファイルを編集します。SDカードのThemesフォルダーにコピーし、その他 > テーマから選択してください。"
+
+msgid "Scan for a starter theme and instructions. To redesign the player screen, see the XML layout guide linked there."
+msgstr "サンプルテーマと手順を確認するにはスキャンしてください。プレーヤー画面の再設計については、リンク先のXMLレイアウトガイドを参照してください。"
+
+msgid "Compás Player"
+msgstr "Compás Player"
+
+msgid "Create plugins & themes"
+msgstr "プラグインとテーマを作成"
+
+msgid "Developer Options"
+msgstr "開発者向けオプション"
+
+msgid "About"
+msgstr "このデバイスについて"
+
+msgid "Screenshots (Power + Previous)"
+msgstr "スクリーンショット（電源＋前へ）"
+
+msgid "Screenshots (Power + Vol Down)"
+msgstr "スクリーンショット（電源＋音量ダウン）"
+
+msgid "Enable debug logging"
+msgstr "デバッグログを有効にする"
+
+msgid "Reboot to bootloader"
+msgstr "ブートローダーで再起動"
+
+msgid "Custom color"
+msgstr "カスタムカラー"
+
+msgid "From album art"
+msgstr "アートワークから"
+
+msgid "From album art (no cover, using custom)"
+msgstr "アートワークから（アートワークがない場合はカスタムカラーを使用）"
+
+msgid "Accent Color"
+msgstr "アクセントカラー"
+
+msgid "Accent Options"
+msgstr "アクセント設定"
+
+msgid "Match album art"
+msgstr "アートワークに合わせる"
+
+msgid "Takes its color from the cover of the playing track"
+msgstr "再生中の曲のアートワークから色を取得します"
+
+msgid "Tint startup image"
+msgstr "起動画面に色を付ける"
+
+msgid "Uses the accent color for the default splash."
+msgstr "デフォルトの起動画面にアクセントカラーを使用します。"
+
+msgid "Tint title bar icons"
+msgstr "タイトルバーのアイコンに色を付ける"
+
+msgid "Uses the accent color for the icons next to screen titles."
+msgstr "画面タイトル横のアイコンにアクセントカラーを使用します。"
+
+msgid "Presets"
+msgstr "プリセット"
+
+msgid "Default (Built-in)"
+msgstr "デフォルト（内蔵）"
+
+msgid "No .ttf fonts found in /Fonts"
+msgstr "/Fontsに.ttfフォントが見つかりません"
+
+msgid "Font selection is no longer available"
+msgstr "フォントを選択できなくなりました"
+
+msgid "Failed to load font. Check format & memory."
+msgstr "フォントを読み込めませんでした。形式とメモリを確認してください。"
+
+msgid "Font"
+msgstr "フォント"
+
+msgid "Preview"
+msgstr "プレビュー"
+
+msgid "The quick brown fox jumps 123"
+msgstr "The quick brown fox jumps 123"
+
+msgid "Custom fonts affect Latin text only."
+msgstr "カスタムフォントはラテン文字にのみ適用されます。"
+
+msgid "Place .ttf fonts in SD /Fonts folder."
+msgstr ".ttfフォントをSDカードの/Fontsフォルダーに配置してください。"
+
+msgid "Screen Timeout"
+msgstr "画面タイムアウト"
+
+msgid "Turn off screen automatically"
+msgstr "画面を自動的にオフにする"
+
+msgid "Screen Dimming"
+msgstr "画面の減光"
+
+msgid "Dim screen before timeout"
+msgstr "タイムアウト前に画面を暗くする"
+
+msgid "Startup Volume"
+msgstr "起動時の音量"
+
+msgid "Launch at a fixed volume"
+msgstr "一定の音量で起動"
+
+msgid "Max Volume"
+msgstr "最大音量"
+
+msgid "Limits the player volume, including buttons, remote controls and plugins."
+msgstr "ボタン、リモコン、プラグインを含め、プレーヤーの音量を制限します。"
+
+msgid "Car Mode is disabled."
+msgstr "車載モードは無効です。"
+
+msgid "Car Mode Volume"
+msgstr "車載モードの音量"
+
+msgid "Auto-resume"
+msgstr "自動再開"
+
+msgid "Resume playback when external power turns the player on."
+msgstr "外部電源でプレーヤーが起動したときに再生を再開します。"
+
+msgid "Gain"
+msgstr "ゲイン"
+
+msgid "Low\nHigh"
+msgstr "低\n高"
+
+msgid "%d min"
+msgstr "%d分"
+
+msgid "%d hr"
+msgstr "%d時間"
+
+msgid "%d hr %d min"
+msgstr "%d時間%d分"
+
+msgid "Time remaining: %d:%02d:%02d"
+msgstr "残り時間：%d:%02d:%02d"
+
+msgid "Time remaining: %d:%02d"
+msgstr "残り時間：%d:%02d"
+
+msgid "Enable Sleep Timer"
+msgstr "スリープタイマーを有効にする"
+
+msgid "Show Time Remaining"
+msgstr "残り時間を表示"
+
+msgid "Idle Shutdown"
+msgstr "アイドル時のシャットダウン"
+
+msgid "Automatically go idle"
+msgstr "自動的にアイドル状態にする"
+
+msgid "Choose what happens when idle:"
+msgstr "アイドル時の動作を選択："
+
+msgid "Power Off"
+msgstr "電源オフ"
+
+msgid "Suspend to RAM"
+msgstr "RAMにサスペンド"
+
+msgid "Idle timeout:"
+msgstr "アイドルタイムアウト："
+
+msgid "Africa"
+msgstr "アフリカ"
+
+msgid "America"
+msgstr "アメリカ"
+
+msgid "Antarctica"
+msgstr "南極"
+
+msgid "Arctic"
+msgstr "北極"
+
+msgid "Asia"
+msgstr "アジア"
+
+msgid "Atlantic"
+msgstr "大西洋"
+
+msgid "Australia"
+msgstr "オーストラリア"
+
+msgid "Europe"
+msgstr "ヨーロッパ"
+
+msgid "Indian"
+msgstr "インド洋"
+
+msgid "Pacific"
+msgstr "太平洋"
+
+msgid "Not selected (UTC)"
+msgstr "未選択（UTC）"
+
+msgid "Failed to apply time zone"
+msgstr "タイムゾーンを適用できませんでした"
+
+msgid "%s (current)"
+msgstr "%s（現在）"
+
+msgid "Time Zone"
+msgstr "タイムゾーン"
+
+msgid "Sound Effects"
+msgstr "効果音"
+
+msgid "Download Profiles"
+msgstr "プロファイルをダウンロード"
+
+msgid "Buttons & Remote"
+msgstr "ボタンとリモコン"
+
+msgid "Playback & Controls"
+msgstr "再生と操作"
+
+msgid "Equalizer"
+msgstr "イコライザー"
+
+msgid "Crossfeed"
+msgstr "クロスフィード"
+
+msgid "Power"
+msgstr "電源"
+
+msgid "Play/Pause"
+msgstr "再生／一時停止"
+
+msgid "Next Track"
+msgstr "次の曲"
+
+msgid "Previous Track"
+msgstr "前の曲"
+
+msgid "Clockwise"
+msgstr "時計回り"
+
+msgid "Counterclockwise"
+msgstr "反時計回り"
+
+msgid "Volume Up"
+msgstr "音量を上げる"
+
+msgid "Volume Down"
+msgstr "音量を下げる"
+
+msgid "Button"
+msgstr "ボタン"
+
+msgid "Default (native behavior)"
+msgstr "デフォルト（本来の動作）"
+
+msgid "Seek Forward"
+msgstr "早送り"
+
+msgid "Seek Backward"
+msgstr "巻き戻し"
+
+msgid "Toggle Screen"
+msgstr "画面の切り替え"
+
+msgid "Power Menu"
+msgstr "電源メニュー"
+
+msgid "Do Nothing"
+msgstr "何もしない"
+
+msgid "Single press"
+msgstr "1回押し"
+
+msgid "Double press"
+msgstr "2回押し"
+
+msgid "Long press"
+msgstr "長押し"
+
+msgid "Single"
+msgstr "シングル"
+
+msgid "Double"
+msgstr "ダブル"
+
+msgid "Long"
+msgstr "長押し"
+
+msgid "Default"
+msgstr "デフォルト"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Reset All"
+msgstr "すべてリセット"
+
+msgid "Button Mapping"
+msgstr "ボタン割り当て"
+
+msgid "Keep a button assigned to Toggle Screen or Power Menu"
+msgstr "「画面の切り替え」または「電源メニュー」に割り当てたボタンを残してください"
+
+msgid "Reset all button mappings?"
+msgstr "すべてのボタン割り当てをリセットしますか？"
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "Volume Lock (Screen Off)"
+msgstr "画面オフ時の音量ロック"
+
+msgid "In-line Remote"
+msgstr "有線リモコン"
+
+msgid "Update Music Database to enable this album order"
+msgstr "アルバム順を有効にするには音楽データベースを更新してください"
+
+msgid "Sorting"
+msgstr "並べ替え"
+
+msgid "Files (folders stay first)"
+msgstr "ファイル（フォルダーを先に表示）"
+
+msgid "Name (A–Z)"
+msgstr "名前（A～Z）"
+
+msgid "Newest Modified"
+msgstr "更新日の新しい順"
+
+msgid "Release Year (oldest first)"
+msgstr "リリース年（古い順）"
+
+msgid "Files use modification dates. Albums use the newest track added; missing release years sort last. Update Music Database once to read years from existing files."
+msgstr "ファイルは更新日時で並べ替えます。アルバムは追加された最新のトラックを基準にし、リリース年がないものは最後に並びます。既存ファイルから年を読み取るには、音楽データベースを一度更新してください。"
+
+msgid "Update Music Database"
+msgstr "音楽データベースを更新"
+
+msgid "Refresh All Metadata"
+msgstr "すべてのメタデータを更新"
+
+msgid "Refresh All Covers"
+msgstr "全アートワークを更新"
+
+msgid "Animation Speed"
+msgstr "アニメーション速度"
+
+msgid "T9"
+msgstr "T9"
+
+msgid "QWERTY"
+msgstr "QWERTY"
+
+msgid "Keyboard"
+msgstr "キーボード"
+
+msgid "Plugins can override these saved preferences."
+msgstr "プラグインは保存済みの設定を上書きする場合があります。"
+
+msgid "Quick Drawer"
+msgstr "クイックドロワー"
+
+msgid "Plugin Order"
+msgstr "プラグインの順序"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "Volume Slider"
+msgstr "音量スライダー"
+
+msgid "Reorder Items"
+msgstr "項目を並べ替え"
+
+msgid "Volume"
+msgstr "音量"
+
+msgid "Clock"
+msgstr "時計"
+
+msgid "Wired Headphones"
+msgstr "有線ヘッドホン"
+
+msgid "Bluetooth Audio (A2DP)"
+msgstr "Bluetoothオーディオ（A2DP）"
+
+msgid "USB Audio"
+msgstr "USBオーディオ"
+
+msgid "Playback Status"
+msgstr "再生状態"
+
+msgid "Bluetooth Codec"
+msgstr "Bluetoothコーデック"
+
+msgid "Battery Icon"
+msgstr "バッテリーアイコン"
+
+msgid "Left"
+msgstr "左"
+
+msgid "Center"
+msgstr "中央"
+
+msgid "Right"
+msgstr "右"
+
+msgid "Clock Position"
+msgstr "時計の位置"
+
+msgid "Battery Percentage"
+msgstr "バッテリー残量の割合"
+
+msgid "Top Bar"
+msgstr "トップバー"
+
+msgid "Artist Images"
+msgstr "アーティスト画像"
+
+msgid "Themes"
+msgstr "テーマ"
+
+msgid "Appearance"
+msgstr "外観"
+
+msgid "Applying layout, this may take a while"
+msgstr "レイアウトを適用中です。時間がかかる場合があります"
+
+msgid "Layout"
+msgstr "レイアウト"
+
+msgid "Lyrics"
+msgstr "歌詞"
+
+msgid "Hide Player/Lyrics Top Bar"
+msgstr "プレーヤー／歌詞のトップバーを隠す"
+
+msgid "Player Layout"
+msgstr "プレーヤーレイアウト"
+
+msgid "Swipe Up for Home"
+msgstr "上にスワイプしてホームへ"
+
+msgid "Upside Down Screen"
+msgstr "画面を上下反転"
+
+msgid "Gestures & Orientation"
+msgstr "ジェスチャーと向き"
+
+msgid "Display"
+msgstr "ディスプレイ"
+
+msgid "Charge Limit (85%)"
+msgstr "充電上限（85%）"
+
+msgid "Safe Charging (500mA)"
+msgstr "安全充電（500mA）"
+
+msgid "LED charge indicator"
+msgstr "充電LEDインジケーター"
+
+msgid "Disable charging\nin USB DAC mode"
+msgstr "USB DACモードで\n充電を無効にする"
+
+msgid "Charging"
+msgstr "充電"
+
+msgid "Additional Tools"
+msgstr "追加ツール"
+
+msgid "Turn off Automatic to set the clock"
+msgstr "時計を設定するには自動をオフにしてください"
+
+msgid "Automatic"
+msgstr "自動"
+
+msgid "Set Time"
+msgstr "時刻を設定"
+
+msgid "24-Hour Clock"
+msgstr "24時間表示"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Hostname"
+msgstr "ホスト名"
+
+msgid "Factory Reset"
+msgstr "工場出荷時の状態にリセット"
+
+msgid "Maintenance"
+msgstr "メンテナンス"
+
+msgid "Firmware Update"
+msgstr "ファームウェア更新"
+
+msgid "Player Update"
+msgstr "プレーヤー更新"
+
+msgid "Plugins & Layouts"
+msgstr "プラグインとレイアウト"
+
+msgid "Applying language, this may take a while"
+msgstr "言語を適用中です。時間がかかる場合があります"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "System"
+msgstr "システム"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from here."
+msgstr "最初にADBをオフにしてください（設定 > システム > USBモード）。その後、ここからUSB DACを有効にしてください。"
+
+msgid "Now Playing layouts"
+msgstr "再生中レイアウト"
+
+msgid "More"
+msgstr "その他"
+
+msgid "0 dB"
+msgstr "0 dB"
+
+msgid "Combined response (dB) · EQ off"
+msgstr "合成応答（dB）・EQオフ"
+
+msgid "Combined response (dB)"
+msgstr "合成応答（dB）"
+
+msgid "PEQ reset to defaults"
+msgstr "PEQを初期設定に戻しました"
+
+msgid "Reset PEQ to defaults?"
+msgstr "PEQを初期設定に戻しますか？"
+
+msgid "Reset all settings and reboot?"
+msgstr "すべての設定をリセットして再起動しますか？"
+
+msgid "Restart now to apply the new hostname?"
+msgstr "新しいホスト名を適用するために今すぐ再起動しますか？"
+
+msgid "Restart Now"
+msgstr "今すぐ再起動"
+
+msgid "Hostname can only use letters, numbers, and hyphens"
+msgstr "ホスト名には英字、数字、ハイフンのみ使用できます"
+
+msgid "Invalid profile name"
+msgstr "プロファイル名が無効です"
+
+msgid "Failed to save profile"
+msgstr "プロファイルを保存できませんでした"
+
+msgid "Profile saved"
+msgstr "プロファイルを保存しました"
+
+msgid "Failed to load profile"
+msgstr "プロファイルを読み込めませんでした"
+
+msgid "Profile loaded"
+msgstr "プロファイルを読み込みました"
+
+msgid "Failed to delete profile"
+msgstr "プロファイルを削除できませんでした"
+
+msgid "Profile deleted"
+msgstr "プロファイルを削除しました"
+
+msgid "Failed to rename profile"
+msgstr "プロファイル名を変更できませんでした"
+
+msgid "Profile renamed"
+msgstr "プロファイル名を変更しました"
+
+msgid "Rename Profile"
+msgstr "プロファイル名を変更"
+
+msgid "Replace Profile"
+msgstr "プロファイルを置き換え"
+
+msgid "Profiles"
+msgstr "プロファイル"
+
+msgid "No saved profiles"
+msgstr "保存済みプロファイルはありません"
+
+msgid "Download profiles"
+msgstr "プロファイルをダウンロード"
+
+msgid "Delete this profile?"
+msgstr "このプロファイルを削除しますか？"
+
+msgid "Save Profile As"
+msgstr "プロファイルに名前を付けて保存"
+
+msgid "Profile Name"
+msgstr "プロファイル名"
+
+msgid "Save Profile"
+msgstr "プロファイルを保存"
+
+msgid "Save as a new profile, or replace one that already exists?"
+msgstr "新しいプロファイルとして保存しますか？それとも既存のものを置き換えますか？"
+
+msgid "Replace Existing"
+msgstr "既存のプロファイルを置き換える"
+
+msgid "New Profile"
+msgstr "新しいプロファイル"
+
+msgid "Band options"
+msgstr "バンドのオプション"
+
+msgid "Filter type"
+msgstr "フィルターの種類"
+
+msgid "Peaking\nLow Shelf\nHigh Shelf"
+msgstr "ピーキング\nローシェルフ\nハイシェルフ"
+
+msgid "Enable band"
+msgstr "バンドを有効にする"
+
+msgid "Crossfeed angle"
+msgstr "クロスフィード角度"
+
+msgid "No delay\n30°\n45°\n60°\n90°"
+msgstr "遅延なし\n30°\n45°\n60°\n90°"
+
+msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
+msgstr "クロスフィードは反対チャンネルのフィルター処理済み信号を混合します。PEQとは独立して動作します。「遅延なし」では、左右の信号が同じ場合、影響はごくわずかです。"
+
+msgid "PEQ"
+msgstr "PEQ"
+
+msgid "Frequency"
+msgstr "周波数"
+
+msgid "Pre-Amp"
+msgstr "プリアンプ"
+
+msgid "Reset to defaults"
+msgstr "初期設定に戻す"
+
+msgid "48 kHz reference"
+msgstr "48 kHz基準"
+
+msgid "Flat"
+msgstr "フラット"
+
+msgid "Please wait for the library scan to finish"
+msgstr "ライブラリのスキャンが終わるまでお待ちください"
+
+msgid "Please wait for plugin installation to finish"
+msgstr "プラグインのインストールが終わるまでお待ちください"
+
+msgid "Connect to a Wi-Fi network before continuing."
+msgstr "続行する前にWi-Fiネットワークに接続してください。"
+
+msgid "Select at least one plugin to continue."
+msgstr "続行するにはプラグインを1つ以上選択してください。"
+
+msgid "Could not start the library scan. Please try again."
+msgstr "ライブラリのスキャンを開始できませんでした。もう一度お試しください。"
+
+msgid "Plugin is unavailable in the catalog"
+msgstr "プラグインがカタログにありません"
+
+msgid "Insert an SD card to scan for music, or turn off Scan for music."
+msgstr "音楽をスキャンするにはSDカードを挿入してください。スキャンしない場合は「音楽をスキャン」をオフにしてください。"
+
+msgid "Choose a language"
+msgstr "言語を選択"
+
+msgid "Could not load the plugin catalog. Tap More to retry."
+msgstr "プラグインカタログを読み込めませんでした。再試行するには「その他」をタップしてください。"
+
+msgid "Loading plugin catalog..."
+msgstr "プラグインカタログを読み込み中…"
+
+msgid "No network detected"
+msgstr "ネットワークが検出されません"
+
+msgid "Time zone"
+msgstr "タイムゾーン"
+
+msgid "Quick setup"
+msgstr "クイック設定"
+
+msgid "Skip for now"
+msgstr "今はスキップ"
+
+msgid "Your setup journey"
+msgstr "セットアップの流れ"
+
+msgid "Welcome to Compás"
+msgstr "Compásへようこそ"
+
+msgid "Get started"
+msgstr "始める"
+
+msgid "Quick Setup Complete"
+msgstr "クイックセットアップ完了"
+
+msgid "Continue"
+msgstr "続行"
+
+msgid "Step %d of %d"
+msgstr "%d / %dステップ"
+
+msgid "Your music"
+msgstr "音楽"
+
+msgid "Choose the language for your player."
+msgstr "プレーヤーの言語を選択してください。"
+
+msgid "Set your local time zone so the clock is right."
+msgstr "時計を正しく表示するため、現地のタイムゾーンを設定してください。"
+
+msgid "Connect to Wi-Fi for streaming, updates, and online services."
+msgstr "ストリーミング、更新、オンラインサービスを利用するにはWi-Fiに接続してください。"
+
+msgid "Start with these suggestions, or explore more plugins."
+msgstr "おすすめから始めるか、他のプラグインを探してください。"
+
+msgid "Insert your SD card with music files. Compas Player can scan it and build your library."
+msgstr "音楽ファイルが入ったSDカードを挿入してください。Compas Playerがスキャンしてライブラリを作成します。"
+
+msgid "Choose time zone"
+msgstr "タイムゾーンを選択"
+
+msgid "Add hidden network"
+msgstr "非公開ネットワークを追加"
+
+msgid "Rescan"
+msgstr "再スキャン"
+
+msgid "Connect to a network to download plugins."
+msgstr "プラグインをダウンロードするにはネットワークに接続してください。"
+
+msgid "Connect to Wi-Fi"
+msgstr "Wi-Fiに接続"
+
+msgid "AutoEQ"
+msgstr "AutoEQ"
+
+msgid "Gain Mode"
+msgstr "ゲインモード"
+
+msgid "Scan for music"
+msgstr "音楽をスキャン"
+
+msgid "No SD card detected. You can scan later from Library settings."
+msgstr "SDカードが検出されません。ライブラリ設定から後でスキャンできます。"
+
+msgid "You can select up to 32 plugins"
+msgstr "最大32個のプラグインを選択できます"
+
+msgid "Plugin setup complete"
+msgstr "プラグインのセットアップが完了しました"
+
+msgid "Continue setup"
+msgstr "セットアップを続ける"
+
+msgid "Retrying plugins %zu/%zu"
+msgstr "プラグインを再試行中 %zu/%zu"
+
+msgid "Downloading and installing plugins %zu/%zu"
+msgstr "プラグインをダウンロード・インストール中 %zu/%zu"
+
+msgid "Failed plugins:\n"
+msgstr "失敗したプラグイン：\n"
+
+msgid "Selected plugins are ready.\n"
+msgstr "選択したプラグインを利用できます。\n"
+
+msgid "Manage plugins later in Settings > System > Plugin Manager to search, update, or remove them."
+msgstr "プラグインの検索、更新、削除は、後で設定 > システム > プラグインマネージャーから行えます。"
+
+msgid "Plugin setup needs attention"
+msgstr "プラグインのセットアップに対応が必要です"
+
+msgid "Could not replace plugin files."
+msgstr "プラグインファイルを置き換えられませんでした。"
+
+msgid "Could not start refreshing the plugin catalog."
+msgstr "プラグインカタログの更新を開始できませんでした。"
+
+msgid "AM"
+msgstr "午前"
+
+msgid "USB audio device detected"
+msgstr "USBオーディオデバイスを検出しました"
+
+msgid "%dm"
+msgstr "%dm"
+
+msgid "Wi-Fi failed to change state"
+msgstr "Wi-Fiの状態を変更できませんでした"
+
+msgid "Turn off Bluetooth to use Wi-Fi"
+msgstr "Wi-Fiを使うにはBluetoothをオフにしてください"
+
+msgid "Turn off Wi-Fi to use Bluetooth"
+msgstr "Bluetoothを使うにはWi-Fiをオフにしてください"
+
+msgid "Failed to toggle Bluetooth"
+msgstr "Bluetoothを切り替えられませんでした"
+
+msgid "Sleep"
+msgstr "スリープ"
+
+msgid "RC"
+msgstr "RC"
+
+msgid "PM"
+msgstr "午後"
+
+msgid "Downloading"
+msgstr "ダウンロード中"
+
+msgid "Not enough memory to start download"
+msgstr "ダウンロードの開始に必要なメモリが不足しています"
+
+msgid "Invalid download folder"
+msgstr "ダウンロードフォルダーが無効です"
+
+msgid "Download failed"
+msgstr "ダウンロードに失敗しました"
+
+msgid "Original"
+msgstr "オリジナル"
+
+msgid "Low"
+msgstr "低"
+
+msgid "High"
+msgstr "高"
+
+msgid "Stream quality: %s"
+msgstr "ストリーム音質：%s"
+
+msgid "Stream Quality"
+msgstr "ストリーム音質"
+
+msgid "Applies to new streaming queues"
+msgstr "新しいストリーミングキューに適用されます"
+
+msgid "Low (96 kbps)"
+msgstr "低（96 kbps）"
+
+msgid "Medium (192 kbps)"
+msgstr "中（192 kbps）"
+
+msgid "High (320 kbps)"
+msgstr "高（320 kbps）"
+
+msgid "Download folder: %s"
+msgstr "ダウンロードフォルダー：%s"
+
+msgid "Download folder: SD root"
+msgstr "ダウンロードフォルダー：SDカードのルート"
+
+msgid "Invalid download folder name"
+msgstr "ダウンロードフォルダー名が無効です"
+
+msgid "Download subfolder"
+msgstr "ダウンロード用サブフォルダー"
+
+msgid "Download Settings"
+msgstr "ダウンロード設定"
+
+msgid "Subfolder: SD root"
+msgstr "サブフォルダー：SDカードのルート"
+
+msgid "Subfolder is relative to SD root (example: Music/Offline); empty uses SD root"
+msgstr "サブフォルダーはSDカードのルートからの相対パスです（例：Music/Offline）。空欄の場合はSDカードのルートを使用します"
+
+msgid "Folder layout for downloaded albums"
+msgstr "ダウンロードしたアルバムのフォルダー構成"
+
+msgid "Album Artist / Album"
+msgstr "アルバムアーティスト / アルバム"
+
+msgid "Album Artist - Album"
+msgstr "アルバムアーティスト - アルバム"
+
+msgid "Failed to load from server"
+msgstr "サーバーから読み込めませんでした"
+
+msgid "Previous request still finishing"
+msgstr "前のリクエストはまだ処理中です"
+
+msgid "Not enough memory to load from server"
+msgstr "サーバーからの読み込みに必要なメモリが不足しています"
+
+msgid "Loading from server..."
+msgstr "サーバーから読み込み中…"
+
+msgid "Server request timed out after 30 seconds"
+msgstr "サーバーのリクエストが30秒後にタイムアウトしました"
+
+msgid "Not enough memory to load artists"
+msgstr "アーティストの読み込みに必要なメモリが不足しています"
+
+msgid "Downloading\n%s..."
+msgstr "ダウンロード中\n%s…"
+
+msgid "Download \"%s\"?"
+msgstr "「%s」をダウンロードしますか？"
+
+msgid "Download every album from \"%s\"?"
+msgstr "「%s」のアルバムをすべてダウンロードしますか？"
+
+msgid "Failed to load artists"
+msgstr "アーティストを読み込めませんでした"
+
+msgid "Failed to connect to server"
+msgstr "サーバーに接続できませんでした"
+
+msgid "Connection timed out after 30 seconds"
+msgstr "接続が30秒後にタイムアウトしました"
+
+msgid "Failed to load artists: %s"
+msgstr "アーティストを読み込めませんでした：%s"
+
+msgid "Not enough memory to connect"
+msgstr "接続に必要なメモリが不足しています"
+
+msgid "Connecting to server..."
+msgstr "サーバーに接続中…"
+
+msgid "Failed to start connection"
+msgstr "接続を開始できませんでした"
+
+msgid "No saved servers"
+msgstr "保存済みサーバーはありません"
+
+msgid "Go back and choose New Connection to add one."
+msgstr "戻って「新しい接続」を選択し、サーバーを追加してください。"
+
+msgid "Saved Servers"
+msgstr "保存済みサーバー"
+
+msgid "Server URL (e.g. %s)"
+msgstr "サーバーURL（例：%s）"
+
+msgid "Username"
+msgstr "ユーザー名"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Server URL: %s"
+msgstr "サーバーURL：%s"
+
+msgid "Verify server certificate"
+msgstr "サーバー証明書を検証"
+
+msgid "Username: %s"
+msgstr "ユーザー名：%s"
+
+msgid "Password: Set"
+msgstr "パスワード：設定済み"
+
+msgid "Password: Not set"
+msgstr "パスワード：未設定"
+
+msgid "Connect & Browse"
+msgstr "接続して閲覧"
+
+msgid "New Connection"
+msgstr "新しい接続"
+
+msgid "Download settings"
+msgstr "ダウンロード設定"
+
+msgid "Songs"
+msgstr "曲"
+
+msgid "Could not apply theme"
+msgstr "テーマを適用できませんでした"
+
+msgid "%llu bytes"
+msgstr "%lluバイト"
+
+msgid "Container"
+msgstr "コンテナ"
+
+msgid "Source"
+msgstr "ソース"
+
+msgid "Native DSD (DoP) / %.4g MHz"
+msgstr "ネイティブDSD（DoP）/ %.4g MHz"
+
+msgid "Output"
+msgstr "出力"
+
+msgid "Mono (1 channel)"
+msgstr "モノラル（1チャンネル）"
+
+msgid "Stereo (2 channels)"
+msgstr "ステレオ（2チャンネル）"
+
+msgid "%u channels"
+msgstr "%uチャンネル"
+
+msgid "Channels"
+msgstr "チャンネル数"
+
+msgid "Bitrate"
+msgstr "ビットレート"
+
+msgid "Duration"
+msgstr "再生時間"
+
+msgid "File size"
+msgstr "ファイルサイズ"
+
+msgid "Track"
+msgstr "トラック"
+
+msgid "Disc %d / Track %d"
+msgstr "ディスク%d / トラック%d"
+
+msgid "Position"
+msgstr "位置"
+
+msgid "Applied %+.1f dB"
+msgstr "適用値 %+.1f dB"
+
+msgid "Album %+.1f dB"
+msgstr "アルバム %+.1f dB"
+
+msgid "Track %+.1f dB"
+msgstr "トラック %+.1f dB"
+
+msgid "Provider"
+msgstr "プロバイダー"
+
+msgid "Radio / %s"
+msgstr "ラジオ / %s"
+
+msgid "Radio"
+msgstr "ラジオ"
+
+msgid "Network stream"
+msgstr "ネットワークストリーム"
+
+msgid "Location"
+msgstr "場所"
+
+msgid "Track details are not available yet. Keep playback open and check again."
+msgstr "トラックの詳細はまだ利用できません。再生画面を開いたままにして、もう一度確認してください。"
+
+msgid "No items"
+msgstr "項目がありません"
+
+msgid "Unable to load items"
+msgstr "項目を読み込めません"
+
+msgid "There are no entries in this view."
+msgstr "この表示には項目がありません。"
+
+msgid "Your library is being loaded."
+msgstr "ライブラリを読み込み中です。"
+
+msgid "Leave this view and try again."
+msgstr "この画面を閉じて、もう一度お試しください。"
+
+msgid "Power off"
+msgstr "電源オフ"
+
+msgid "Restart"
+msgstr "再起動"
+
+msgid "Screen off"
+msgstr "画面オフ"
+
+msgid "Sleep timer"
+msgstr "スリープタイマー"
+
+msgid "Power controls"
+msgstr "電源操作"
+
+msgid "Playback and device actions"
+msgstr "再生とデバイスの操作"
+
+msgid "Not available in your subscription"
+msgstr "サブスクリプションでは利用できません"
+
+msgid "This track is unavailable"
+msgstr "このトラックは利用できません"
+
+msgid "This quality is unavailable for this track"
+msgstr "このトラックではこの音質を利用できません"
+
+msgid "This track is copy-protected"
+msgstr "このトラックはコピー保護されています"
+
+msgid "Could not reach the streaming service"
+msgstr "ストリーミングサービスに接続できませんでした"
+
+msgid "Sign in to the streaming service again"
+msgstr "ストリーミングサービスに再度サインインしてください"
+
+msgid "Could not get a stream link"
+msgstr "ストリームリンクを取得できませんでした"
+
+msgid "The streaming service did not answer"
+msgstr "ストリーミングサービスから応答がありませんでした"
+
+msgid "The streaming plugin is not available"
+msgstr "ストリーミングプラグインを利用できません"
+
+msgid "TXT Reader"
+msgstr "TXTリーダー"
+
+msgid "Keep Lyrics Screen On"
+msgstr "歌詞画面をオンのままにする"
+
+msgid "PCM"
+msgstr "PCM"
+
+msgid "Native DSD"
+msgstr "ネイティブDSD"
+
+msgid "DoP"
+msgstr "DoP"
+
+msgid "Native DSD and DoP bypass software volume and DSP. Use DoP only with a compatible DAC. Unavailable formats or rates use PCM."
+msgstr "ネイティブDSDとDoPではソフトウェア音量調整とDSPがバイパスされます。DoPは対応DACでのみ使用してください。利用できない形式やサンプルレートではPCMが使用されます。"
+
+msgid "USB DSD Output"
+msgstr "USB DSD出力"
+
+msgid "Play"
+msgstr "再生"
+
+msgid "Shuffle"
+msgstr "シャッフル"
+
+msgid "Mixed"
+msgstr "ミックス"
+
+msgid "Hi-Res"
+msgstr "ハイレゾ"

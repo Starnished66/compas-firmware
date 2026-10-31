@@ -47,6 +47,37 @@ gettext.
 The language list in Settings > System > Language comes from the catalogs, so
 no UI code changes.
 
+## Vietnamese and Japanese audio terminology
+
+Use established player terminology consistently, while checking the actual UI
+context. A library song count is not a metadata track number; the startup resume
+setting means the last playback session, not the final track of an album.
+
+| Meaning | Vietnamese | Japanese |
+| --- | --- | --- |
+| Play / playback | Phát / Phát lại | 再生 |
+| Queue / playlist | Hàng đợi / Danh sách phát | キュー / プレイリスト |
+| Shuffle | Phát ngẫu nhiên | シャッフル |
+| Crossfade | Đan xen | クロスフェード |
+| Equalizer / EQ band | Bộ chỉnh âm / Dải tần | イコライザー / バンド |
+| Preamp / gain | Tiền khuếch đại / Độ lợi | プリアンプ / ゲイン |
+| Sample rate | Tần số lấy mẫu | サンプルレート |
+| Lyrics | Lời bài hát | 歌詞 |
+| Album artwork | Ảnh bìa album | アートワーク |
+
+Keep ReplayGain, PEQ, codec names, and protocol identifiers intact. Crossfeed
+(クロスフィード in Japanese) is a separate DSP feature from crossfade. Japanese
+library counts and next/previous-song controls use 曲; technical metadata and
+ReplayGain track mode retain トラック. Keep translated labels concise enough for
+the V1, and preserve printf argument order even when the conversions are identical.
+
+Terminology references: [Apple Music Vietnamese playback settings](https://support.apple.com/vi-vn/guide/music-windows/musdf855a1b/windows),
+[Vietnamese shuffle/repeat](https://support.apple.com/vi-vn/109332),
+[Sony Vietnamese EQ bands](https://www.sony.com.vn/electronics/support/articles/00241283),
+[Apple Music Japanese queue](https://support.apple.com/ja-jp/109336),
+[Japanese EQ/preamp](https://support.apple.com/ja-jp/guide/music-windows/museb684a3de/windows),
+and [Japanese artwork](https://support.apple.com/ja-jp/guide/music-windows/musa6e18cc25/windows).
+
 ## Regenerating the player catalog from this repository
 
 ```sh
@@ -54,4 +85,4 @@ COMPAS_PLAYER_DIR=../compas-player python3 i18n/po2c.py        # writes the play
 COMPAS_PLAYER_DIR=../compas-player python3 i18n/po2c.py --check # fails if it is stale
 ```
 
-Verified: the output is byte-identical to the catalog committed at player commit `fb61b7cdd`.
+Run `--check` before packaging to verify that the player catalog matches these translations.
