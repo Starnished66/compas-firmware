@@ -1,0 +1,33 @@
+R3 runtime binaries: reproducible clean replacements
+
+These files replace the same paths in the pinned HiBy R3 Pro II and R3 II
+2025 base images. The replacements remove build-directory strings while
+preserving their runtime ELF interface. Firmware packaging verifies each
+SHA-256 against firmware/r3-runtime.sha256 and applies this tree only to R3
+boards.
+
+Seven files are the canonical clean rebuilds recorded by
+firmware/r1_base_v2.json under base_layer_clean_rebuilds.files. Their source
+versions, configure options, patches, Ingenic GCC 5.2 toolchain, and
+-fdebug-prefix-map handling are documented by that build record and the
+scripts/build/base recipes. Their pre- and post-build hashes are listed in
+firmware/r3-runtime.sha256's companion provenance in the repository.
+
+usr/bin/gatttool is BlueZ 5.87's deprecated command-line tool. It was built
+from the pinned upstream archive (SHA-256
+26bdcf2cebd7310c6f598850606b037ef0c515fe6608ebc54d22c50c4c32b35f) using
+scripts/build/base/bluetooth/build_base_bluez.sh. The build recipe targets
+MIPS32r2 O32 hard-float and configures through a relative source path. The
+staged binary is stripped with MIPS-target strip --strip-unneeded to remove
+residual generic toolchain strings. The vendor version, source archive, and
+final replacement hash are recorded in firmware/r3-runtime-provenance.json
+and firmware/r3-runtime.sha256.
+
+ABI comparison against both R3 board images found identical ELF class,
+endianness, MIPS32r2 O32 hard-float flags, interpreter, dynamic dependencies,
+SONAMEs where present, and versioned dynamic symbol tables for all eight
+replacements. No replacement has RPATH or RUNPATH. This is static ABI evidence;
+device runtime validation remains part of firmware release verification.
+
+License texts for ALSA and BlueALSA are provided beside this notice. BlueZ
+5.87's COPYING and COPYING.LIB are provided in /usr/share/licenses/bluez.

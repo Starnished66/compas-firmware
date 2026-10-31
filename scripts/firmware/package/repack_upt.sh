@@ -1022,6 +1022,22 @@ if [[ -e "$work/root/usr/bin/compas-radio" ]]; then
     radio_startup="$work/radio-S43"
     cp -p "$work/root/etc/init.d/S43wifi_bcm_init_config" "$radio_startup"
 fi
+# These clean runtime binaries are required by both R3 base images. Keep them
+# in a dedicated tracked tree so the R1 and V1 packaging paths never inherit
+# the R3-only gatttool or other board-specific runtime replacements.
+r3_runtime_overlay="$repo/firmware/r3-runtime"
+r3_runtime_pins="$repo/firmware/r3-runtime.sha256"
+if [[ $board == r3proii || $board == r3ii_2025 ]]; then
+    [[ -d $r3_runtime_overlay && -f $r3_runtime_pins ]] || {
+        echo 'R3 clean runtime overlay or pin manifest is missing' >&2
+        exit 1
+    }
+    (cd "$r3_runtime_overlay" && sha256sum --check --status "$r3_runtime_pins") || {
+        echo 'R3 clean runtime overlay does not match its pinned hashes' >&2
+        exit 1
+    }
+    cp -a "$r3_runtime_overlay"/. "$work/root/"
+fi
 overlay="$repo/firmware/overlay"
 if [[ -d "$overlay" ]]; then
     cp -a "$overlay"/. "$work/root/"
@@ -1043,6 +1059,12 @@ if [[ $board != r1 && -n ${R3_RUNTIME_OVERLAY:-} ]]; then
     runtime_overlay=$(realpath "$R3_RUNTIME_OVERLAY")
     cp -a "$runtime_overlay"/. "$work/root/"
 fi
+if [[ $board == r3proii || $board == r3ii_2025 ]]; then
+    (cd "$work/root" && sha256sum --check --status "$r3_runtime_pins") || {
+        echo 'Installed R3 clean runtime files differ from their pinned hashes' >&2
+        exit 1
+    }
+fi
 
 apply_r1_runtime_overlay "$work/root"
 
@@ -1056,6 +1078,14 @@ cp -p "$stock_splash_snapshot" "$stock_splash"
 
 if [[ $board == r1 ]]; then
     require_closed_r1_wifi "$work/root"
+    [[ -d "$work/root/module_driver" && ! -L "$work/root/module_driver" ]] || {
+        echo "Base OTA has an unsafe or missing /module_driver directory" >&2
+        exit 1
+    }
+    # The R1 v2 base carries this directory as group-writable. Keep module
+    # contents from the selected base, but use the standard non-group-writable
+    # directory mode in every packaged R1 image.
+    chmod 0755 "$work/root/module_driver"
 fi
 
 # Touch policy for a base image that keeps its own driver tree. This is the

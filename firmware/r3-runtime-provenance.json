@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "scope": [
+    "r3proii",
+    "r3ii_2025"
+  ],
+  "purpose": "Replace eight R3 base binaries containing private build paths with ABI-matched clean builds.",
+  "clean_rebuild_manifest": "firmware/r1_base_v2.json:base_layer_clean_rebuilds.files",
+  "abi_review": {
+    "boards_compared": [
+      "r3proii",
+      "r3ii_2025"
+    ],
+    "dynamic_dependencies_equal": true,
+    "versioned_dynamic_symbols_equal": true,
+    "sonames_equal": true,
+    "mips_elf_flags_equal": true,
+    "rpath_or_runpath_added": false,
+    "instruction_stream_note": "For gatttool, the instruction count and opcode sequence match; only addresses/immediates vary."
+  },
+  "files": {
+    "usr/bin/bluealsa-aplay": {
+      "pre_sha256": "f93126e5744cf4449723e7aef55228bc882ae4ed213d7757addc1b7bf00c582c",
+      "post_sha256": "6a3ea72b185de45a99c19b02b958469131d79a80291e4a60abf7c361bec05c17",
+      "pre_size_bytes": 63428,
+      "post_size_bytes": 63428
+    },
+    "usr/bin/bluetoothctl": {
+      "pre_sha256": "c7827d6f19e803622cca2de4d1ea3b6300965863752f9c02d94966c3c5a00c17",
+      "post_sha256": "a312eeb89fb42bb91c95d8ccfe02ec6ed227b3f6936151e06c5f6236069b1d8e",
+      "pre_size_bytes": 459976,
+      "post_size_bytes": 459784
+    },
+    "usr/bin/btmon": {
+      "pre_sha256": "77a9538fce2ef4412950520bab953ab408cb1588c53bec1fdf1c39d3ce2ae704",
+      "post_sha256": "67474ebbe3be71f434d274c5e8123d2df5145e8b8280359ee10656e56a1cdf69",
+      "pre_size_bytes": 920808,
+      "post_size_bytes": 920808
+    },
+    "usr/bin/gatttool": {
+      "pre_sha256": "b7f35956cd84bc0dca3892c4bfed2aedffa9faa9894a0f6e35477131ac160b18",
+      "post_sha256": "c9f2ab02e0dfdfb0a1c60e284f701866540d1338d24441a297182d0fafe51e63",
+      "pre_size_bytes": 179576,
+      "post_size_bytes": 177256
+    },
+    "usr/lib/alsa-lib/libasound_module_ctl_bluealsa.so": {
+      "pre_sha256": "959cdbf9862610da682662d1d34288401a7a1d18f7a0020467830f133d3e8446",
+      "post_sha256": "dd1e421f8b8684e4ca3f34a37eed353f2afa7a599fa10760c513594930014b90",
+      "pre_size_bytes": 64512,
+      "post_size_bytes": 64432
+    },
+    "usr/lib/alsa-lib/libasound_module_pcm_bluealsa.so": {
+      "pre_sha256": "cbf6ab76f2aefdf9d6428ced1ca2189f253ad94c176d8c2be38857419b0d7004",
+      "post_sha256": "f630af681c3b1e172c3ce0188667cccdb567831118a830b4d51e1afa8b4e6dc6",
+      "pre_size_bytes": 64732,
+      "post_size_bytes": 64652
+    },
+    "usr/lib/libasound.so.2.0.0": {
+      "pre_sha256": "aed04ac891336725c7d1d32005270415a52ae38fb26ff9a12389eeff184d0d8b",
+      "post_sha256": "002629317b5edb6649ae41e7d407921f69854ba30192b6fc570d2df5559f8238",
+      "pre_size_bytes": 1105276,
+      "post_size_bytes": 1098908
+    },
+    "usr/lib/libatopology.so.2.0.0": {
+      "pre_sha256": "4618204c11af4334cbc2b38ed9081d3e97c4924c88117539b1e41ebf347c0a3e",
+      "post_sha256": "caa40fbe8d168eba92ed9e644fc9ae522038a4f8ba53a616195b2f19b56573fc",
+      "pre_size_bytes": 120048,
+      "post_size_bytes": 120048
+    }
+  },
+  "gatttool_build": {
+    "upstream_version": "BlueZ 5.87",
+    "upstream_url": "https://www.kernel.org/pub/linux/bluetooth/bluez-5.87.tar.xz",
+    "source_archive_sha256": "26bdcf2cebd7310c6f598850606b037ef0c515fe6608ebc54d22c50c4c32b35f",
+    "build_script": "scripts/build/base/bluetooth/build_base_bluez.sh",
+    "build_script_config": "MIPS32r2 O32 little-endian hard-float target; the recipe configures via a relative source path",
+    "stage_sha256_before_strip": "e4e9aa7296d35c5b0cd347a046626542fd5974a6b5d6fba7fcadda0be9583bf1",
+    "final_strip": "MIPS-target strip --strip-unneeded",
+    "note": "gatttool is a deprecated BlueZ noinst utility; the recipe installs only this staged binary."
+  }
+}
