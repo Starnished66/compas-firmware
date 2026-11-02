@@ -3855,6 +3855,12 @@ msgstr "Mixte"
 msgid "Hi-Res"
 msgstr "Hi-Res"
 
+msgid "Join albums without Album Artist"
+msgstr "Regrouper les albums sans artiste de l'album"
+
+msgid "Could not open this image"
+msgstr "Impossible d'ouvrir cette image"
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Les sauvegardes restent sur la carte SD."
 

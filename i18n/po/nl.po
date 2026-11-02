@@ -3772,6 +3772,12 @@ msgstr "Gemengd"
 msgid "Hi-Res"
 msgstr "Hi-Res"
 
+msgid "Join albums without Album Artist"
+msgstr "Albums zonder albumartiest samenvoegen"
+
+msgid "Could not open this image"
+msgstr "Kan deze afbeelding niet openen"
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Opgeslagen games blijven op de SD-kaart staan."
 

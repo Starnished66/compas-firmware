@@ -3761,3 +3761,9 @@ msgstr "混合"
 
 msgid "Hi-Res"
 msgstr "Hi-Res"
+
+msgid "Join albums without Album Artist"
+msgstr "合并没有专辑艺术家的专辑"
+
+msgid "Could not open this image"
+msgstr "无法打开此图片"

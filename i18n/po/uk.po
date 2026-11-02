@@ -3783,6 +3783,12 @@ msgstr "Різні"
 msgid "Hi-Res"
 msgstr "Hi-Res"
 
+msgid "Join albums without Album Artist"
+msgstr "Об'єднувати альбоми без виконавця альбому"
+
+msgid "Could not open this image"
+msgstr "Не вдалося відкрити це зображення"
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Збереження залишаються на SD-картці."
 

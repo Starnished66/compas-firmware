@@ -3681,3 +3681,9 @@ msgstr ""
 
 msgid "Hi-Res"
 msgstr ""
+
+msgid "Join albums without Album Artist"
+msgstr ""
+
+msgid "Could not open this image"
+msgstr ""

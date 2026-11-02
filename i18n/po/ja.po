@@ -3434,3 +3434,9 @@ msgstr "ミックス"
 
 msgid "Hi-Res"
 msgstr "ハイレゾ"
+
+msgid "Join albums without Album Artist"
+msgstr "アルバムアーティストのないアルバムを結合"
+
+msgid "Could not open this image"
+msgstr "この画像を開けませんでした"

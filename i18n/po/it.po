@@ -3855,6 +3855,12 @@ msgstr "Misto"
 msgid "Hi-Res"
 msgstr "Hi-Res"
 
+msgid "Join albums without Album Artist"
+msgstr "Unisci album senza artista album"
+
+msgid "Could not open this image"
+msgstr "Impossibile aprire questa immagine"
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "I salvataggi restano sulla scheda SD."
 

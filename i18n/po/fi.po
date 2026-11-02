@@ -3774,6 +3774,12 @@ msgstr "Sekalainen"
 msgid "Hi-Res"
 msgstr "Hi-Res"
 
+msgid "Join albums without Album Artist"
+msgstr "Yhdistä albumit, joilla ei ole albumin esittäjää"
+
+msgid "Could not open this image"
+msgstr "Tätä kuvaa ei voitu avata"
+
 #~ msgid "Saved games stay on the SD card."
 #~ msgstr "Tallennetut pelit säilyvät SD-kortilla."
 

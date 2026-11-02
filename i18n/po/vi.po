@@ -3435,3 +3435,9 @@ msgstr "Hỗn hợp"
 msgid "Hi-Res"
 msgstr "Độ phân giải cao"
 
+
+msgid "Join albums without Album Artist"
+msgstr "Gộp album không có nghệ sĩ album"
+
+msgid "Could not open this image"
+msgstr "Không thể mở hình ảnh này"
