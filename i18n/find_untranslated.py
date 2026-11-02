@@ -241,7 +241,7 @@ def main(argv):
     if not files:
         for dp, _, fns in os.walk(os.path.join(ROOT, "src")):
             for fn in fns:
-                if fn.endswith(".c") and not re.search(r"_(test|check|regression)\.c$", fn) and fn != "i18n_catalog.c":
+                if fn.endswith(".c") and not re.search(r"_(test|check|regression)\.c$", fn) and not fn.startswith("i18n_catalog"):
                     files.append(os.path.join(dp, fn))
     register_label_structs()
     allow = load_allow()

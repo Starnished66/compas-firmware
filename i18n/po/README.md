@@ -3,14 +3,14 @@
 UI text is translated with gettext catalogs. English text in the C source is the
 key: `TR("Text")` returns the translation for the active language, or the
 English text when there is none. The catalogs live here (in compas-firmware, `i18n/po/`); the player's `src/ui/text/i18n/i18n_catalog.c`
-is generated from them with `i18n/po2c.py` and checked in there, so a normal build needs no Python or
+(language list) and `i18n_catalog_<code>.c` (one table per language) are generated from them with `i18n/po2c.py` and checked in there, so a normal build needs no Python or
 gettext.
 
 ## Updating or adding strings
 
 1. Wrap user-visible text in the source (see "Rules" below).
 2. In the player checkout `make i18n` extracts `po/compas.pot`, merges it into every `po/*.po` and
-   regenerates `src/ui/text/i18n/i18n_catalog.c`.
+   regenerates `src/ui/text/i18n/i18n_catalog*.c`.
 3. Translate the new (empty or fuzzy) entries in `po/<lang>.po`.
    Fuzzy entries are skipped until you remove the `fuzzy` flag.
 4. `make i18n` again, then `make i18n-check` (stale template, bad printf
@@ -81,7 +81,7 @@ and [Japanese artwork](https://support.apple.com/ja-jp/guide/music-windows/musa6
 ## Regenerating the player catalog from this repository
 
 ```sh
-COMPAS_PLAYER_DIR=../compas-player python3 i18n/po2c.py        # writes the player's i18n_catalog.c
+COMPAS_PLAYER_DIR=../compas-player python3 i18n/po2c.py        # writes the player's i18n_catalog*.c
 COMPAS_PLAYER_DIR=../compas-player python3 i18n/po2c.py --check # fails if it is stale
 ```
 

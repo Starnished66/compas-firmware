@@ -59,8 +59,8 @@ Before any release, go through `docs/RELEASE_CHECKLIST.md`.
 ## Translations
 
 `i18n/po/` holds the gettext catalogs for the player's UI and `i18n/po2c.py` generates the player's
-`src/ui/text/i18n/i18n_catalog.c` from them (see `i18n/po/README.md`). They are kept here on purpose; the player only
-carries the generated C file. They are not used by the firmware build.
+`src/ui/text/i18n/i18n_catalog*.c` from them (see `i18n/po/README.md`). They are kept here on purpose; the player only
+carries the generated C files. They are not used by the firmware build.
 
 ## Licences and provenance
 
