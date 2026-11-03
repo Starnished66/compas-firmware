@@ -3037,6 +3037,18 @@ msgstr "Gesamtfrequenzgang (dB) · EQ aus"
 msgid "Combined response (dB)"
 msgstr "Gesamtfrequenzgang (dB)"
 
+msgid "EQ correction (dB)"
+msgstr "EQ-Korrektur (dB)"
+
+msgid "EQ correction (dB) · EQ off"
+msgstr "EQ-Korrektur (dB) · EQ aus"
+
+msgid "48 kHz · Preamp excluded (%+.1f dB)"
+msgstr "48 kHz · Vorverstärkung ausgeschlossen (%+.1f dB)"
+
+msgid "Include preamp"
+msgstr "Vorverstärkung einbeziehen"
+
 msgid "PEQ reset to defaults"
 msgstr "PEQ auf Standardwerte zurückgesetzt"
 

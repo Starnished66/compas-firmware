@@ -3078,6 +3078,18 @@ msgstr "Комбинированный отклик (дБ) · Эквалайзе
 msgid "Combined response (dB)"
 msgstr "Комбинированный отклик (дБ)"
 
+msgid "EQ correction (dB)"
+msgstr "Коррекция эквалайзера (дБ)"
+
+msgid "EQ correction (dB) · EQ off"
+msgstr "Коррекция эквалайзера (дБ) · Эквалайзер выключен"
+
+msgid "48 kHz · Preamp excluded (%+.1f dB)"
+msgstr "48 кГц · Предусилитель исключён (%+.1f дБ)"
+
+msgid "Include preamp"
+msgstr "Учитывать предусилитель"
+
 msgid "PEQ reset to defaults"
 msgstr "Сброс PEQ к настройкам по умолчанию"
 

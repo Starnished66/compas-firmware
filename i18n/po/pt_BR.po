@@ -3130,6 +3130,18 @@ msgstr "Resposta combinada (dB) · EQ desligado"
 msgid "Combined response (dB)"
 msgstr "Resposta combinada (dB)"
 
+msgid "EQ correction (dB)"
+msgstr "Correção do EQ (dB)"
+
+msgid "EQ correction (dB) · EQ off"
+msgstr "Correção do EQ (dB) · EQ desligado"
+
+msgid "48 kHz · Preamp excluded (%+.1f dB)"
+msgstr "48 kHz · Pré-amp excluído (%+.1f dB)"
+
+msgid "Include preamp"
+msgstr "Incluir pré-amp"
+
 msgid "PEQ reset to defaults"
 msgstr "PEQ restaurado ao padrão"
 

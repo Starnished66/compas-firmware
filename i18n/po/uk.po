@@ -3060,6 +3060,18 @@ msgstr "Сумарна характеристика (дБ) · еквалайзе
 msgid "Combined response (dB)"
 msgstr "Сумарна характеристика (дБ)"
 
+msgid "EQ correction (dB)"
+msgstr "Корекція еквалайзера (дБ)"
+
+msgid "EQ correction (dB) · EQ off"
+msgstr "Корекція еквалайзера (дБ) · еквалайзер вимкнено"
+
+msgid "48 kHz · Preamp excluded (%+.1f dB)"
+msgstr "48 кГц · Передпідсилення виключено (%+.1f дБ)"
+
+msgid "Include preamp"
+msgstr "Враховувати передпідсилення"
+
 msgid "PEQ reset to defaults"
 msgstr "Параметричний еквалайзер скинуто до типових налаштувань"
 

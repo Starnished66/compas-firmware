@@ -3030,6 +3030,18 @@ msgstr ""
 msgid "Combined response (dB)"
 msgstr ""
 
+msgid "EQ correction (dB)"
+msgstr ""
+
+msgid "EQ correction (dB) · EQ off"
+msgstr ""
+
+msgid "48 kHz · Preamp excluded (%+.1f dB)"
+msgstr ""
+
+msgid "Include preamp"
+msgstr ""
+
 msgid "PEQ reset to defaults"
 msgstr ""
 

@@ -2826,6 +2826,18 @@ msgstr "合成応答（dB）・EQオフ"
 msgid "Combined response (dB)"
 msgstr "合成応答（dB）"
 
+msgid "EQ correction (dB)"
+msgstr "EQ補正（dB）"
+
+msgid "EQ correction (dB) · EQ off"
+msgstr "EQ補正（dB）・EQオフ"
+
+msgid "48 kHz · Preamp excluded (%+.1f dB)"
+msgstr "48 kHz・プリアンプ除外（%+.1f dB）"
+
+msgid "Include preamp"
+msgstr "プリアンプを含める"
+
 msgid "PEQ reset to defaults"
 msgstr "PEQを初期設定に戻しました"
 

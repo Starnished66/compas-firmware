@@ -3051,6 +3051,18 @@ msgstr "Yhdistetty vaste (dB) · taajuuskorjain pois"
 msgid "Combined response (dB)"
 msgstr "Yhdistetty vaste (dB)"
 
+msgid "EQ correction (dB)"
+msgstr "Taajuuskorjaus (dB)"
+
+msgid "EQ correction (dB) · EQ off"
+msgstr "Taajuuskorjaus (dB) · taajuuskorjain pois"
+
+msgid "48 kHz · Preamp excluded (%+.1f dB)"
+msgstr "48 kHz · Esivahvistus ei mukana (%+.1f dB)"
+
+msgid "Include preamp"
+msgstr "Sisällytä esivahvistus"
+
 msgid "PEQ reset to defaults"
 msgstr "PEQ palautettu oletusarvoihin"
 

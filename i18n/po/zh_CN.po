@@ -3096,6 +3096,18 @@ msgstr "合成响应（dB）· EQ 关闭"
 msgid "Combined response (dB)"
 msgstr "合成响应（dB）"
 
+msgid "EQ correction (dB)"
+msgstr "EQ 校正（dB）"
+
+msgid "EQ correction (dB) · EQ off"
+msgstr "EQ 校正（dB）· EQ 关闭"
+
+msgid "48 kHz · Preamp excluded (%+.1f dB)"
+msgstr "48 kHz · 不含前置放大（%+.1f dB）"
+
+msgid "Include preamp"
+msgstr "包含前置放大"
+
 msgid "PEQ reset to defaults"
 msgstr "PEQ 已重置为默认值"
 
