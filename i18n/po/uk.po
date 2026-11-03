@@ -2163,6 +2163,15 @@ msgstr "Налаштування плагіна"
 msgid "Select a file"
 msgstr "Виберіть файл"
 
+msgid "Select a color"
+msgstr "Виберіть колір"
+
+msgid "Hex code"
+msgstr "Hex-код"
+
+msgid "Invalid hex code"
+msgstr "Недійсний hex-код"
+
 msgid "Played"
 msgstr "Відтворено"
 

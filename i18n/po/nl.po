@@ -2152,6 +2152,15 @@ msgstr "Plugininstellingen"
 msgid "Select a file"
 msgstr "Selecteer een bestand"
 
+msgid "Select a color"
+msgstr "Kies een kleur"
+
+msgid "Hex code"
+msgstr "Hexcode"
+
+msgid "Invalid hex code"
+msgstr "Ongeldige hexcode"
+
 msgid "Played"
 msgstr "Afgespeeld"
 

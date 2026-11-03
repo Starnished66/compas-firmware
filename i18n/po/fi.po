@@ -2154,6 +2154,15 @@ msgstr "Liitännäisasetukset"
 msgid "Select a file"
 msgstr "Valitse tiedosto"
 
+msgid "Select a color"
+msgstr "Valitse väri"
+
+msgid "Hex code"
+msgstr "Heksakoodi"
+
+msgid "Invalid hex code"
+msgstr "Virheellinen heksakoodi"
+
 msgid "Played"
 msgstr "Toistettu"
 

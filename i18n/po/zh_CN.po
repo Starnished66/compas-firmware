@@ -2177,6 +2177,15 @@ msgstr "插件设置"
 msgid "Select a file"
 msgstr "选择文件"
 
+msgid "Select a color"
+msgstr "选择颜色"
+
+msgid "Hex code"
+msgstr "十六进制代码"
+
+msgid "Invalid hex code"
+msgstr "十六进制代码无效"
+
 msgid "Played"
 msgstr "已播放"
 

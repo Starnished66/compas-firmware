@@ -2143,6 +2143,15 @@ msgstr ""
 msgid "Select a file"
 msgstr ""
 
+msgid "Select a color"
+msgstr ""
+
+msgid "Hex code"
+msgstr ""
+
+msgid "Invalid hex code"
+msgstr ""
+
 msgid "Played"
 msgstr ""
 

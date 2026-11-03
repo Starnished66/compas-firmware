@@ -2228,6 +2228,15 @@ msgstr "Impostazioni plugin"
 msgid "Select a file"
 msgstr "Seleziona tutto"
 
+msgid "Select a color"
+msgstr "Seleziona un colore"
+
+msgid "Hex code"
+msgstr "Codice esadecimale"
+
+msgid "Invalid hex code"
+msgstr "Codice esadecimale non valido"
+
 msgid "Played"
 msgstr "Riprodotto"
 

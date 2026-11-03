@@ -2140,6 +2140,15 @@ msgstr "Plugin-Einstellungen"
 msgid "Select a file"
 msgstr "Datei auswählen"
 
+msgid "Select a color"
+msgstr "Farbe auswählen"
+
+msgid "Hex code"
+msgstr "Hex-Code"
+
+msgid "Invalid hex code"
+msgstr "Ungültiger Hex-Code"
+
 msgid "Played"
 msgstr "Wiedergegeben"
 

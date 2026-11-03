@@ -2179,6 +2179,15 @@ msgstr "Настройки плагина"
 msgid "Select a file"
 msgstr "Выберите файл"
 
+msgid "Select a color"
+msgstr "Выберите цвет"
+
+msgid "Hex code"
+msgstr "Hex-код"
+
+msgid "Invalid hex code"
+msgstr "Недопустимый hex-код"
+
 msgid "Played"
 msgstr "Проигран"
 

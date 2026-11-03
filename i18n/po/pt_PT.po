@@ -2155,6 +2155,15 @@ msgstr "Definições do módulo"
 msgid "Select a file"
 msgstr "Selecionar um ficheiro"
 
+msgid "Select a color"
+msgstr "Selecionar uma cor"
+
+msgid "Hex code"
+msgstr "Código hexadecimal"
+
+msgid "Invalid hex code"
+msgstr "Código hexadecimal inválido"
+
 msgid "Played"
 msgstr "Reproduzido"
 

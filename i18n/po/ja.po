@@ -2006,6 +2006,15 @@ msgstr "プラグイン設定"
 msgid "Select a file"
 msgstr "ファイルを選択"
 
+msgid "Select a color"
+msgstr "色を選択"
+
+msgid "Hex code"
+msgstr "16進コード"
+
+msgid "Invalid hex code"
+msgstr "16進コードが無効です"
+
 msgid "Played"
 msgstr "再生済み"
 

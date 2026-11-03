@@ -2006,6 +2006,15 @@ msgstr "Cài đặt plugin"
 msgid "Select a file"
 msgstr "Chọn một tập tin"
 
+msgid "Select a color"
+msgstr "Chọn màu"
+
+msgid "Hex code"
+msgstr "Mã hex"
+
+msgid "Invalid hex code"
+msgstr "Mã hex không hợp lệ"
+
 msgid "Played"
 msgstr "Đã phát"
 
