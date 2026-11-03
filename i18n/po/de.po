@@ -131,68 +131,56 @@ msgstr "Ungültiger Update-Pfad."
 msgid "Could not start the update."
 msgstr "Update konnte nicht gestartet werden."
 
-#, fuzzy
 msgid "Update failed."
-msgstr "Update verfügbar"
+msgstr "Update fehlgeschlagen."
 
 msgid "Could not prepare secure update storage."
-msgstr ""
+msgstr "Sicherer Update-Speicher konnte nicht vorbereitet werden."
 
 msgid "Could not download the release checksums."
 msgstr "Release-Prüfsummen konnten nicht heruntergeladen werden."
 
 msgid "The release does not provide a valid player checksum."
-msgstr ""
+msgstr "Das Release enthält keine gültige Player-Prüfsumme."
 
-#, fuzzy
 msgid "The release checksum does not match the published asset digest."
-msgstr "Für das Image dieses Geräts gibt es keine Prüfsumme in diesem Release."
+msgstr "Die Release-Prüfsumme stimmt nicht mit dem veröffentlichten Asset-Digest überein."
 
-#, fuzzy
 msgid "The latest player release changed. Check again."
-msgstr "Die ausgewählte Update-Datei wurde geändert. Wähle sie erneut aus."
+msgstr "Das neueste Player-Release hat sich geändert. Suche erneut."
 
 msgid "The player image exceeds the safe size limit."
-msgstr ""
+msgstr "Das Player-Image überschreitet die sichere Größenbeschränkung."
 
-#, fuzzy
 msgid "Not enough internal storage for the player update."
-msgstr "Nicht genug freier Speicherplatz für das Update auf der SD-Karte."
+msgstr "Nicht genug interner Speicher für das Player-Update."
 
-#, fuzzy
 msgid "The player download did not complete."
-msgstr "Der Download wurde nicht abgeschlossen. Prüfe WLAN und versuche es erneut."
+msgstr "Der Player-Download wurde nicht abgeschlossen."
 
-#, fuzzy
 msgid "The downloaded player failed SHA-256 verification."
-msgstr "Die heruntergeladene Image-Datei hat die Überprüfung nicht bestanden und wurde gelöscht."
+msgstr "Der heruntergeladene Player hat die SHA-256-Prüfung nicht bestanden."
 
 msgid "Place a valid player executable at SD/.compas/compas_player."
-msgstr ""
+msgstr "Lege eine gültige Player-Programmdatei unter SD/.compas/compas_player ab."
 
-#, fuzzy
 msgid "Could not start the player update check."
-msgstr "Update-Suche konnte nicht gestartet werden."
+msgstr "Update-Suche für den Player konnte nicht gestartet werden."
 
-#, fuzzy
 msgid "Another update is already active."
-msgstr "Ein Update läuft bereits."
+msgstr "Ein anderes Update läuft bereits."
 
-#, fuzzy
 msgid "Check for a player update first."
-msgstr "Online nach Updates suchen"
+msgstr "Suche zuerst nach einem Player-Update."
 
-#, fuzzy
 msgid "Not enough memory."
-msgstr "Nicht genug Speicher zum Verbinden"
+msgstr "Nicht genug Speicher."
 
-#, fuzzy
 msgid "Could not start the player download."
-msgstr "Download konnte nicht gestartet werden."
+msgstr "Player-Download konnte nicht gestartet werden."
 
-#, fuzzy
 msgid "Could not start the SD player update."
-msgstr "Plugin-Update konnte nicht gestartet werden."
+msgstr "Player-Update von der SD-Karte konnte nicht gestartet werden."
 
 msgid "Screenshots unavailable"
 msgstr "Screenshots nicht verfügbar"
@@ -624,7 +612,7 @@ msgid "Remove"
 msgstr "Entfernen"
 
 msgid "Bundled games and their saves will be removed. Games in SD/Games are kept."
-msgstr ""
+msgstr "Mitgelieferte Spiele und ihre Spielstände werden entfernt. Spiele in SD/Games bleiben erhalten."
 
 msgid "No description"
 msgstr "Keine Beschreibung"
@@ -642,7 +630,7 @@ msgid "Size: %s"
 msgstr "Größe: %s"
 
 msgid "Updating replaces bundled games and their saves. Games in SD/Games are kept."
-msgstr ""
+msgstr "Beim Update werden mitgelieferte Spiele und ihre Spielstände ersetzt. Spiele in SD/Games bleiben erhalten."
 
 msgid "Update"
 msgstr "Aktualisieren"
@@ -1348,9 +1336,8 @@ msgstr "Dadurch wird alles auf der Karte dauerhaft gelöscht. Dies kann nicht r�
 msgid "Format"
 msgstr "Formatieren"
 
-#, fuzzy
 msgid "Could not restart into the boot selector"
-msgstr "Ordner konnte nicht erstellt werden"
+msgstr "Neustart in die Startauswahl fehlgeschlagen"
 
 msgid "An update is in progress. Please wait."
 msgstr "Ein Update läuft. Bitte warten."
@@ -1777,16 +1764,14 @@ msgstr "Wechsel zu %s fehlgeschlagen"
 msgid "USB Mode"
 msgstr "USB-Modus"
 
-#, fuzzy
 msgid "Failed to update USB charging"
-msgstr "Profil konnte nicht gelöscht werden"
+msgstr "USB-Laden konnte nicht aktualisiert werden"
 
 msgid "USB charging setting is busy"
-msgstr ""
+msgstr "USB-Ladeeinstellung wird gerade geändert"
 
-#, fuzzy
 msgid "Could not start USB charging update"
-msgstr "Plugin-Update konnte nicht gestartet werden."
+msgstr "Aktualisierung des USB-Ladens konnte nicht gestartet werden"
 
 msgid "Leave USB DAC mode?"
 msgstr "USB-DAC-Modus verlassen?"
@@ -2278,32 +2263,30 @@ msgid ""
 "\n"
 "Updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Player-Update von der SD-Karte installieren?\n"
+"\n"
+"Aktualisiert den Player und startet das Gerät neu. Firmware, Schriften und Artwork bleiben unverändert."
 
-#, fuzzy
 msgid "Could not start the player update"
-msgstr "Update konnte nicht gestartet werden."
+msgstr "Player-Update konnte nicht gestartet werden"
 
-#, fuzzy
 msgid "Updating player"
-msgstr "Plugins werden aktualisiert"
+msgstr "Player wird aktualisiert"
 
-#, fuzzy
 msgid "Starting update"
-msgstr "Update wird vorbereitet"
+msgstr "Update wird gestartet"
 
 msgid "Connect to Wi-Fi before downloading the player update"
-msgstr ""
+msgstr "Verbinde dich mit dem WLAN, bevor du das Player-Update herunterlädst"
 
 msgid "Starting download"
-msgstr ""
+msgstr "Download wird gestartet"
 
-#, fuzzy
 msgid "Could not start the player update check"
-msgstr "Update-Suche konnte nicht gestartet werden."
+msgstr "Update-Suche für den Player konnte nicht gestartet werden"
 
-#, fuzzy
 msgid "Checking for player updates"
-msgstr "Suche nach Updates"
+msgstr "Suche nach Player-Updates"
 
 msgid "Check for online update"
 msgstr "Online nach Updates suchen"
@@ -2314,28 +2297,23 @@ msgstr "Von SD-Karte installieren"
 msgid "Update the Player only, retaining current drivers, kernel and bootloader."
 msgstr "Aktualisiert nur den Player. Aktuelle Treiber, Kernel und Bootloader bleiben erhalten."
 
-#, fuzzy
 msgid "Download & Install"
-msgstr "Download fehlgeschlagen"
+msgstr "Herunterladen und installieren"
 
-#, fuzzy
 msgid "Install & Restart"
 msgstr "Installieren und neu starten"
 
-#, fuzzy
 msgid "Downloading player update"
-msgstr "Update wird heruntergeladen"
+msgstr "Player-Update wird heruntergeladen"
 
-#, fuzzy
 msgid "Installing player update"
-msgstr "Plugin wird installiert"
+msgstr "Player-Update wird installiert"
 
-#, fuzzy
 msgid "Checking the latest release"
-msgstr "Datei auf der SD-Karte wird geprüft"
+msgstr "Neuestes Release wird geprüft"
 
 msgid "Replacing the player and preparing to restart"
-msgstr ""
+msgstr "Player wird ersetzt, Neustart wird vorbereitet"
 
 #, c-format
 msgid ""
@@ -2344,13 +2322,16 @@ msgid ""
 "\n"
 "Download and install? This updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Verfügbares Player-Release: %s.\n"
+"Installiert: %s\n"
+"\n"
+"Herunterladen und installieren? Dadurch wird der Player aktualisiert und das Gerät neu gestartet. Firmware, Schriften und Artwork bleiben unverändert."
 
 msgid "Player updated successfully"
-msgstr ""
+msgstr "Player erfolgreich aktualisiert"
 
-#, fuzzy
 msgid "Player update failed"
-msgstr "Wiedergabefehler: Audioausgabe fehlgeschlagen"
+msgstr "Player-Update fehlgeschlagen"
 
 #, c-format
 msgid ""
@@ -2501,7 +2482,7 @@ msgid "Enable debug logging"
 msgstr "Debug-Protokollierung aktivieren"
 
 msgid "Reboot to bootloader"
-msgstr ""
+msgstr "In den Bootloader neu starten"
 
 msgid "Custom color"
 msgstr "Benutzerdefinierte Farbe"
@@ -2714,9 +2695,8 @@ msgstr "Wiedergabe und Steuerung"
 msgid "Equalizer"
 msgstr "Equalizer"
 
-#, fuzzy
 msgid "Crossfeed"
-msgstr "Crossfeed: Aus"
+msgstr "Crossfeed"
 
 msgid "Power"
 msgstr "Stromversorgung"
@@ -2868,54 +2848,47 @@ msgstr "Lautstärkeregler"
 msgid "Reorder Items"
 msgstr "Elemente neu anordnen"
 
-#, fuzzy
 msgid "Volume"
-msgstr "Lauter"
+msgstr "Lautstärke"
 
 msgid "Clock"
 msgstr "Uhr"
 
 msgid "Wired Headphones"
-msgstr ""
+msgstr "Kabelgebundene Kopfhörer"
 
-#, fuzzy
 msgid "Bluetooth Audio (A2DP)"
-msgstr "Bluetooth ist ausgeschaltet"
+msgstr "Bluetooth-Audio (A2DP)"
 
-#, fuzzy
 msgid "USB Audio"
-msgstr "Audio"
+msgstr "USB-Audio"
 
-#, fuzzy
 msgid "Playback Status"
-msgstr "Wiedergabe"
+msgstr "Wiedergabestatus"
 
-#, fuzzy
 msgid "Bluetooth Codec"
-msgstr "Bluetooth-DAC-Modus"
+msgstr "Bluetooth-Codec"
 
-#, fuzzy
 msgid "Battery Icon"
-msgstr "Akkustand in Prozent"
+msgstr "Akkusymbol"
 
 msgid "Left"
-msgstr ""
+msgstr "Links"
 
 msgid "Center"
-msgstr ""
+msgstr "Mitte"
 
 msgid "Right"
-msgstr ""
+msgstr "Rechts"
 
-#, fuzzy
 msgid "Clock Position"
-msgstr "Position"
+msgstr "Uhrposition"
 
 msgid "Battery Percentage"
 msgstr "Akkustand in Prozent"
 
 msgid "Top Bar"
-msgstr ""
+msgstr "Obere Leiste"
 
 msgid "Artist Images"
 msgstr "Interpretenbilder"
@@ -2966,6 +2939,8 @@ msgid ""
 "Disable charging\n"
 "in USB DAC mode"
 msgstr ""
+"Laden deaktivieren\n"
+"im USB-DAC-Modus"
 
 msgid "Charging"
 msgstr "Laden"
@@ -3000,9 +2975,8 @@ msgstr "Wartung"
 msgid "Firmware Update"
 msgstr "Firmware-Update"
 
-#, fuzzy
 msgid "Player Update"
-msgstr "Player-Layout"
+msgstr "Player-Update"
 
 msgid "Plugins & Layouts"
 msgstr "Plugins und Layouts"
@@ -3148,9 +3122,8 @@ msgstr ""
 msgid "Enable band"
 msgstr "Band aktivieren"
 
-#, fuzzy
 msgid "Crossfeed angle"
-msgstr "Crossfeed: Aus"
+msgstr "Crossfeed-Winkel"
 
 msgid ""
 "No delay\n"
@@ -3159,9 +3132,14 @@ msgid ""
 "60°\n"
 "90°"
 msgstr ""
+"Keine Verzögerung\n"
+"30°\n"
+"45°\n"
+"60°\n"
+"90°"
 
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
-msgstr ""
+msgstr "Crossfeed mischt ein gefiltertes Signal vom gegenüberliegenden Kanal bei und arbeitet unabhängig vom PEQ. Bei „Keine Verzögerung“ werden identische linke und rechte Signale kaum beeinflusst."
 
 msgid "PEQ"
 msgstr "PEQ"
@@ -3676,7 +3654,7 @@ msgstr "TXT-Reader"
 
 #: src/ui/settings/gui_settings.c
 msgid "Keep Lyrics Screen On"
-msgstr ""
+msgstr "Bildschirm bei Songtexten eingeschaltet lassen"
 
 msgid "PCM"
 msgstr "PCM"
@@ -3786,53 +3764,3 @@ msgstr "Alben ohne Albuminterpret zusammenführen"
 
 msgid "Could not open this image"
 msgstr "Dieses Bild kann nicht geöffnet werden"
-
-#~ msgid "Saved games stay on the SD card."
-#~ msgstr "Spielstände bleiben auf der SD-Karte."
-
-#~ msgid "Parametric EQ"
-#~ msgstr "Parametrischer EQ"
-
-#~ msgid "Library migration pending. Favourites and play history will be kept"
-#~ msgstr "Bibliotheksmigration ausstehend. Favoriten und Wiedergabeverlauf bleiben erhalten"
-
-#~ msgid ""
-#~ "Migrating\n"
-#~ "music database..."
-#~ msgstr "Musikdatenbank wird migriert …"
-
-#~ msgid "Preparing database migration..."
-#~ msgstr "Datenbankmigration wird vorbereitet …"
-
-#~ msgid "Library migration failed. Old library intact. Use Settings > Update Music Database to retry"
-#~ msgstr "Bibliotheksmigration fehlgeschlagen. Alte Bibliothek intakt. Zum erneuten Versuch: Einstellungen > Musikdatenbank aktualisieren"
-
-#~ msgid "Library migrated. Old database cleanup will retry"
-#~ msgstr "Bibliothek migriert. Bereinigung der alten Datenbank wird erneut versucht"
-
-#~ msgid "Library migrated. Favourites and play history kept"
-#~ msgstr "Bibliothek migriert. Favoriten und Wiedergabeverlauf bleiben erhalten"
-
-#~ msgid "Load covers during playback (Experimental)"
-#~ msgstr "Cover während der Wiedergabe laden (Experimentell)"
-
-#~ msgid "Albums (main list)"
-#~ msgstr "Alben (Hauptliste)"
-
-#~ msgid "Visible"
-#~ msgstr "Sichtbar"
-
-#~ msgid "Move Up"
-#~ msgstr "Nach oben"
-
-#~ msgid "Move Down"
-#~ msgstr "Nach unten"
-
-#~ msgid "Back"
-#~ msgstr "Zurück"
-
-#~ msgid "The downloaded update record is invalid. Download the update again."
-#~ msgstr "Der heruntergeladene Update-Eintrag ist ungültig. Lade das Update erneut herunter."
-
-#~ msgid "Buy Me a Coffee"
-#~ msgstr "Buy Me a Coffee"

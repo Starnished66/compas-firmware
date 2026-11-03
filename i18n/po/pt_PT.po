@@ -134,68 +134,56 @@ msgstr "Caminho de atualização inválido."
 msgid "Could not start the update."
 msgstr "Não foi possível iniciar a atualização."
 
-#, fuzzy
 msgid "Update failed."
-msgstr "Atualização disponível"
+msgstr "A atualização falhou."
 
 msgid "Could not prepare secure update storage."
-msgstr ""
+msgstr "Não foi possível preparar o armazenamento seguro da atualização."
 
 msgid "Could not download the release checksums."
 msgstr "Não foi possível transferir as somas de verificação da versão."
 
 msgid "The release does not provide a valid player checksum."
-msgstr ""
+msgstr "A versão não inclui uma soma de verificação válida do leitor."
 
-#, fuzzy
 msgid "The release checksum does not match the published asset digest."
-msgstr "A versão não inclui a soma de verificação da imagem deste dispositivo."
+msgstr "A soma de verificação da versão não corresponde ao resumo do ficheiro publicado."
 
-#, fuzzy
 msgid "The latest player release changed. Check again."
-msgstr "O ficheiro de atualização selecionado foi alterado. Selecione-o novamente."
+msgstr "A versão mais recente do leitor foi alterada. Volte a verificar."
 
 msgid "The player image exceeds the safe size limit."
-msgstr ""
+msgstr "A imagem do leitor excede o limite de tamanho seguro."
 
-#, fuzzy
 msgid "Not enough internal storage for the player update."
-msgstr "Não há espaço livre suficiente no cartão SD para a atualização."
+msgstr "Armazenamento interno insuficiente para a atualização do leitor."
 
-#, fuzzy
 msgid "The player download did not complete."
-msgstr "A transferência não foi concluída. Verifique o Wi-Fi e tente novamente."
+msgstr "A transferência do leitor não foi concluída."
 
-#, fuzzy
 msgid "The downloaded player failed SHA-256 verification."
-msgstr "A imagem transferida não passou na verificação e foi eliminada."
+msgstr "O leitor transferido falhou a verificação SHA-256."
 
 msgid "Place a valid player executable at SD/.compas/compas_player."
-msgstr ""
+msgstr "Coloque um executável do leitor válido em SD/.compas/compas_player."
 
-#, fuzzy
 msgid "Could not start the player update check."
-msgstr "Não foi possível iniciar a procura de atualizações."
+msgstr "Não foi possível iniciar a procura de atualizações do leitor."
 
-#, fuzzy
 msgid "Another update is already active."
-msgstr "Já está a decorrer uma atualização."
+msgstr "Já está ativa outra atualização."
 
-#, fuzzy
 msgid "Check for a player update first."
-msgstr "Procurar atualização online"
+msgstr "Procure primeiro uma atualização do leitor."
 
-#, fuzzy
 msgid "Not enough memory."
-msgstr "Memória insuficiente para ligar"
+msgstr "Memória insuficiente."
 
-#, fuzzy
 msgid "Could not start the player download."
-msgstr "Não foi possível iniciar a transferência."
+msgstr "Não foi possível iniciar a transferência do leitor."
 
-#, fuzzy
 msgid "Could not start the SD player update."
-msgstr "Não foi possível iniciar a atualização dos módulos."
+msgstr "Não foi possível iniciar a atualização do leitor a partir do cartão SD."
 
 msgid "Screenshots unavailable"
 msgstr "Capturas de ecrã indisponíveis"
@@ -627,7 +615,7 @@ msgid "Remove"
 msgstr "Remover"
 
 msgid "Bundled games and their saves will be removed. Games in SD/Games are kept."
-msgstr ""
+msgstr "Os jogos incluídos e os respetivos jogos guardados serão removidos. Os jogos em SD/Games são mantidos."
 
 msgid "No description"
 msgstr "Sem descrição"
@@ -645,7 +633,7 @@ msgid "Size: %s"
 msgstr "Tamanho: %s"
 
 msgid "Updating replaces bundled games and their saves. Games in SD/Games are kept."
-msgstr ""
+msgstr "A atualização substitui os jogos incluídos e os respetivos jogos guardados. Os jogos em SD/Games são mantidos."
 
 msgid "Update"
 msgstr "Atualizar"
@@ -1363,9 +1351,8 @@ msgstr "Esta ação elimina permanentemente tudo o que está no cartão. Não po
 msgid "Format"
 msgstr "Formatar"
 
-#, fuzzy
 msgid "Could not restart into the boot selector"
-msgstr "Não foi possível criar a pasta"
+msgstr "Não foi possível reiniciar para o seletor de arranque"
 
 msgid "An update is in progress. Please wait."
 msgstr "Está a decorrer uma atualização. Aguarde."
@@ -1792,16 +1779,14 @@ msgstr "Falha ao mudar para %s"
 msgid "USB Mode"
 msgstr "Modo USB"
 
-#, fuzzy
 msgid "Failed to update USB charging"
-msgstr "Falha ao eliminar o perfil"
+msgstr "Falha ao atualizar o carregamento USB"
 
 msgid "USB charging setting is busy"
-msgstr ""
+msgstr "A definição de carregamento USB está ocupada"
 
-#, fuzzy
 msgid "Could not start USB charging update"
-msgstr "Não foi possível iniciar a atualização dos módulos."
+msgstr "Não foi possível iniciar a atualização do carregamento USB"
 
 msgid "Leave USB DAC mode?"
 msgstr "Sair do modo DAC USB?"
@@ -2293,32 +2278,30 @@ msgid ""
 "\n"
 "Updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Instalar a atualização do leitor a partir do cartão SD?\n"
+"\n"
+"Atualiza o leitor e reinicia o dispositivo. O firmware, os tipos de letra e as ilustrações não são alterados."
 
-#, fuzzy
 msgid "Could not start the player update"
-msgstr "Não foi possível iniciar a atualização."
+msgstr "Não foi possível iniciar a atualização do leitor"
 
-#, fuzzy
 msgid "Updating player"
-msgstr "A atualizar módulos"
+msgstr "A atualizar o leitor"
 
-#, fuzzy
 msgid "Starting update"
-msgstr "A preparar atualização"
+msgstr "A iniciar a atualização"
 
 msgid "Connect to Wi-Fi before downloading the player update"
-msgstr ""
+msgstr "Ligue-se ao Wi-Fi antes de transferir a atualização do leitor"
 
 msgid "Starting download"
-msgstr ""
+msgstr "A iniciar a transferência"
 
-#, fuzzy
 msgid "Could not start the player update check"
-msgstr "Não foi possível iniciar a procura de atualizações."
+msgstr "Não foi possível iniciar a procura de atualizações do leitor"
 
-#, fuzzy
 msgid "Checking for player updates"
-msgstr "A procurar atualizações"
+msgstr "A procurar atualizações do leitor"
 
 msgid "Check for online update"
 msgstr "Procurar atualização online"
@@ -2329,28 +2312,23 @@ msgstr "Instalar do cartão SD"
 msgid "Update the Player only, retaining current drivers, kernel and bootloader."
 msgstr "Atualiza apenas o leitor, mantendo os controladores, o kernel e o bootloader atuais."
 
-#, fuzzy
 msgid "Download & Install"
-msgstr "Falha na transferência"
+msgstr "Transferir e instalar"
 
-#, fuzzy
 msgid "Install & Restart"
 msgstr "Instalar e reiniciar"
 
-#, fuzzy
 msgid "Downloading player update"
-msgstr "A transferir atualização"
+msgstr "A transferir a atualização do leitor"
 
-#, fuzzy
 msgid "Installing player update"
-msgstr "A instalar módulo"
+msgstr "A instalar a atualização do leitor"
 
-#, fuzzy
 msgid "Checking the latest release"
-msgstr "A verificar o ficheiro no cartão SD"
+msgstr "A verificar a versão mais recente"
 
 msgid "Replacing the player and preparing to restart"
-msgstr ""
+msgstr "A substituir o leitor e a preparar o reinício"
 
 #, c-format
 msgid ""
@@ -2359,13 +2337,16 @@ msgid ""
 "\n"
 "Download and install? This updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Versão do leitor disponível: %s.\n"
+"Instalada: %s\n"
+"\n"
+"Transferir e instalar? Isto atualiza o leitor e reinicia o dispositivo. O firmware, os tipos de letra e as ilustrações não são alterados."
 
 msgid "Player updated successfully"
-msgstr ""
+msgstr "Leitor atualizado com êxito"
 
-#, fuzzy
 msgid "Player update failed"
-msgstr "Erro de reprodução: falha na saída de áudio"
+msgstr "Falha na atualização do leitor"
 
 #, c-format
 msgid ""
@@ -2516,7 +2497,7 @@ msgid "Enable debug logging"
 msgstr "Ativar registo de depuração"
 
 msgid "Reboot to bootloader"
-msgstr ""
+msgstr "Reiniciar para o bootloader"
 
 msgid "Custom color"
 msgstr "Cor personalizada"
@@ -2729,9 +2710,8 @@ msgstr "Reprodução e controlos"
 msgid "Equalizer"
 msgstr "Equalizador"
 
-#, fuzzy
 msgid "Crossfeed"
-msgstr "Crossfeed: desligado"
+msgstr "Crossfeed"
 
 msgid "Power"
 msgstr "Energia"
@@ -2883,54 +2863,47 @@ msgstr "Controlo deslizante do volume"
 msgid "Reorder Items"
 msgstr "Reordenar itens"
 
-#, fuzzy
 msgid "Volume"
-msgstr "Aumentar volume"
+msgstr "Volume"
 
 msgid "Clock"
 msgstr "Relógio"
 
 msgid "Wired Headphones"
-msgstr ""
+msgstr "Auscultadores com fio"
 
-#, fuzzy
 msgid "Bluetooth Audio (A2DP)"
-msgstr "O Bluetooth está desligado"
+msgstr "Áudio Bluetooth (A2DP)"
 
-#, fuzzy
 msgid "USB Audio"
-msgstr "Áudio"
+msgstr "Áudio USB"
 
-#, fuzzy
 msgid "Playback Status"
-msgstr "Reprodução"
+msgstr "Estado da reprodução"
 
-#, fuzzy
 msgid "Bluetooth Codec"
-msgstr "Modo DAC Bluetooth"
+msgstr "Codec Bluetooth"
 
-#, fuzzy
 msgid "Battery Icon"
-msgstr "Percentagem da bateria"
+msgstr "Ícone da bateria"
 
 msgid "Left"
-msgstr ""
+msgstr "Esquerda"
 
 msgid "Center"
-msgstr ""
+msgstr "Centro"
 
 msgid "Right"
-msgstr ""
+msgstr "Direita"
 
-#, fuzzy
 msgid "Clock Position"
-msgstr "Posição"
+msgstr "Posição do relógio"
 
 msgid "Battery Percentage"
 msgstr "Percentagem da bateria"
 
 msgid "Top Bar"
-msgstr ""
+msgstr "Barra superior"
 
 msgid "Artist Images"
 msgstr "Imagens dos artistas"
@@ -2981,6 +2954,8 @@ msgid ""
 "Disable charging\n"
 "in USB DAC mode"
 msgstr ""
+"Desativar o carregamento\n"
+"no modo DAC USB"
 
 msgid "Charging"
 msgstr "A carregar"
@@ -3015,9 +2990,8 @@ msgstr "Manutenção"
 msgid "Firmware Update"
 msgstr "Atualização de firmware"
 
-#, fuzzy
 msgid "Player Update"
-msgstr "Esquema do leitor"
+msgstr "Atualização do leitor"
 
 msgid "Plugins & Layouts"
 msgstr "Módulos e esquemas"
@@ -3163,9 +3137,8 @@ msgstr ""
 msgid "Enable band"
 msgstr "Ativar banda"
 
-#, fuzzy
 msgid "Crossfeed angle"
-msgstr "Crossfeed: desligado"
+msgstr "Ângulo do crossfeed"
 
 msgid ""
 "No delay\n"
@@ -3174,9 +3147,14 @@ msgid ""
 "60°\n"
 "90°"
 msgstr ""
+"Sem atraso\n"
+"30°\n"
+"45°\n"
+"60°\n"
+"90°"
 
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
-msgstr ""
+msgstr "O crossfeed mistura um sinal filtrado do canal oposto e funciona independentemente do PEQ. Com Sem atraso, os sinais esquerdo e direito idênticos são muito pouco afetados."
 
 msgid "PEQ"
 msgstr "PEQ"
@@ -3691,7 +3669,7 @@ msgstr "Leitor TXT"
 
 #: src/ui/settings/gui_settings.c
 msgid "Keep Lyrics Screen On"
-msgstr ""
+msgstr "Manter o ecrã ligado nas letras"
 
 msgid "PCM"
 msgstr "PCM"
@@ -3801,55 +3779,3 @@ msgstr "Juntar álbuns sem artista do álbum"
 
 msgid "Could not open this image"
 msgstr "Não foi possível abrir esta imagem"
-
-#~ msgid "Saved games stay on the SD card."
-#~ msgstr "Os jogos guardados permanecem no cartão SD."
-
-#~ msgid "Parametric EQ"
-#~ msgstr "Equalizador paramétrico"
-
-#~ msgid "Library migration pending. Favourites and play history will be kept"
-#~ msgstr "Migração da biblioteca pendente. Os favoritos e o histórico de reprodução serão mantidos"
-
-#~ msgid ""
-#~ "Migrating\n"
-#~ "music database..."
-#~ msgstr ""
-#~ "A migrar a\n"
-#~ "base de dados de música..."
-
-#~ msgid "Preparing database migration..."
-#~ msgstr "A preparar a migração da base de dados..."
-
-#~ msgid "Library migration failed. Old library intact. Use Settings > Update Music Database to retry"
-#~ msgstr "Falha na migração da biblioteca. A biblioteca antiga está intacta. Tente novamente em Definições > Atualizar base de dados de música"
-
-#~ msgid "Library migrated. Old database cleanup will retry"
-#~ msgstr "Biblioteca migrada. A limpeza da base de dados antiga será repetida"
-
-#~ msgid "Library migrated. Favourites and play history kept"
-#~ msgstr "Biblioteca migrada. Os favoritos e o histórico de reprodução foram mantidos"
-
-#~ msgid "Load covers during playback (Experimental)"
-#~ msgstr "Carregar capas durante a reprodução (experimental)"
-
-#~ msgid "Albums (main list)"
-#~ msgstr "Álbuns (lista principal)"
-
-#~ msgid "Visible"
-#~ msgstr "Visível"
-
-#~ msgid "Move Up"
-#~ msgstr "Mover para cima"
-
-#~ msgid "Move Down"
-#~ msgstr "Mover para baixo"
-
-#~ msgid "Back"
-#~ msgstr "Voltar"
-
-#~ msgid "The downloaded update record is invalid. Download the update again."
-#~ msgstr "O registo da atualização transferida é inválido. Transfira novamente a atualização."
-
-#~ msgid "Buy Me a Coffee"
-#~ msgstr "Ofereça-me um café"

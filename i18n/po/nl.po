@@ -133,68 +133,56 @@ msgstr "Ongeldig updatepad."
 msgid "Could not start the update."
 msgstr "Kan de update niet starten."
 
-#, fuzzy
 msgid "Update failed."
-msgstr "Update beschikbaar"
+msgstr "Update mislukt."
 
 msgid "Could not prepare secure update storage."
-msgstr ""
+msgstr "Kan de beveiligde updateopslag niet voorbereiden."
 
 msgid "Could not download the release checksums."
 msgstr "Kan de controlesommen van de uitgave niet downloaden."
 
 msgid "The release does not provide a valid player checksum."
-msgstr ""
+msgstr "De uitgave bevat geen geldige controlesom voor de speler."
 
-#, fuzzy
 msgid "The release checksum does not match the published asset digest."
-msgstr "De uitgave bevat geen controlesom voor de image van dit apparaat."
+msgstr "De controlesom van de uitgave komt niet overeen met de gepubliceerde asset-digest."
 
-#, fuzzy
 msgid "The latest player release changed. Check again."
-msgstr "Het geselecteerde updatebestand is gewijzigd. Selecteer het opnieuw."
+msgstr "De nieuwste uitgave van de speler is gewijzigd. Controleer opnieuw."
 
 msgid "The player image exceeds the safe size limit."
-msgstr ""
+msgstr "De image van de speler overschrijdt de veilige groottelimiet."
 
-#, fuzzy
 msgid "Not enough internal storage for the player update."
-msgstr "Onvoldoende vrije ruimte op de SD-kaart voor de update."
+msgstr "Onvoldoende interne opslag voor de update van de speler."
 
-#, fuzzy
 msgid "The player download did not complete."
-msgstr "Download is niet voltooid. Controleer wifi en probeer opnieuw."
+msgstr "Het downloaden van de speler is niet voltooid."
 
-#, fuzzy
 msgid "The downloaded player failed SHA-256 verification."
-msgstr "De gedownloade image is niet goedgekeurd en is verwijderd."
+msgstr "De gedownloade speler is niet door de SHA-256-controle gekomen."
 
 msgid "Place a valid player executable at SD/.compas/compas_player."
-msgstr ""
+msgstr "Plaats een geldig uitvoerbaar bestand van de speler op SD/.compas/compas_player."
 
-#, fuzzy
 msgid "Could not start the player update check."
-msgstr "Kan de updatecontrole niet starten."
+msgstr "Kan de updatecontrole voor de speler niet starten."
 
-#, fuzzy
 msgid "Another update is already active."
-msgstr "Er wordt al een update uitgevoerd."
+msgstr "Er wordt al een andere update uitgevoerd."
 
-#, fuzzy
 msgid "Check for a player update first."
-msgstr "Online-update controleren"
+msgstr "Controleer eerst op een update voor de speler."
 
-#, fuzzy
 msgid "Not enough memory."
-msgstr "Onvoldoende geheugen om verbinding te maken"
+msgstr "Onvoldoende geheugen."
 
-#, fuzzy
 msgid "Could not start the player download."
-msgstr "Kan de download niet starten."
+msgstr "Kan het downloaden van de speler niet starten."
 
-#, fuzzy
 msgid "Could not start the SD player update."
-msgstr "Kan de plugin-update niet starten."
+msgstr "Kan de update van de speler vanaf de SD-kaart niet starten."
 
 msgid "Screenshots unavailable"
 msgstr "Schermafbeeldingen niet beschikbaar"
@@ -626,7 +614,7 @@ msgid "Remove"
 msgstr "Verwijderen"
 
 msgid "Bundled games and their saves will be removed. Games in SD/Games are kept."
-msgstr ""
+msgstr "Meegeleverde games en hun opgeslagen voortgang worden verwijderd. Games in SD/Games blijven behouden."
 
 msgid "No description"
 msgstr "Geen beschrijving"
@@ -644,7 +632,7 @@ msgid "Size: %s"
 msgstr "Grootte: %s"
 
 msgid "Updating replaces bundled games and their saves. Games in SD/Games are kept."
-msgstr ""
+msgstr "Bijwerken vervangt meegeleverde games en hun opgeslagen voortgang. Games in SD/Games blijven behouden."
 
 msgid "Update"
 msgstr "Bijwerken"
@@ -1362,9 +1350,8 @@ msgstr "Hiermee wordt alles op de kaart permanent verwijderd. Dit kan niet onged
 msgid "Format"
 msgstr "Formatteren"
 
-#, fuzzy
 msgid "Could not restart into the boot selector"
-msgstr "Kan de map niet maken"
+msgstr "Kan niet opnieuw starten naar de opstartkeuze"
 
 msgid "An update is in progress. Please wait."
 msgstr "Er wordt een update uitgevoerd. Even geduld."
@@ -1791,16 +1778,14 @@ msgstr "Omschakelen naar %s mislukt"
 msgid "USB Mode"
 msgstr "USB-modus"
 
-#, fuzzy
 msgid "Failed to update USB charging"
-msgstr "Profiel verwijderen mislukt"
+msgstr "Kan USB-opladen niet bijwerken"
 
 msgid "USB charging setting is busy"
-msgstr ""
+msgstr "USB-laadinstelling is bezig"
 
-#, fuzzy
 msgid "Could not start USB charging update"
-msgstr "Kan de plugin-update niet starten."
+msgstr "Kan de update van USB-opladen niet starten"
 
 msgid "Leave USB DAC mode?"
 msgstr "USB-DAC-modus verlaten?"
@@ -2290,32 +2275,30 @@ msgid ""
 "\n"
 "Updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Update van de speler installeren vanaf de SD-kaart?\n"
+"\n"
+"Werkt de speler bij en start het apparaat opnieuw op. Firmware, lettertypen en artwork blijven ongewijzigd."
 
-#, fuzzy
 msgid "Could not start the player update"
-msgstr "Kan de update niet starten."
+msgstr "Kan de update van de speler niet starten"
 
-#, fuzzy
 msgid "Updating player"
-msgstr "Plugins bijwerken"
+msgstr "Speler bijwerken"
 
-#, fuzzy
 msgid "Starting update"
-msgstr "Update voorbereiden"
+msgstr "Update starten"
 
 msgid "Connect to Wi-Fi before downloading the player update"
-msgstr ""
+msgstr "Maak verbinding met wifi voordat je de update van de speler downloadt"
 
 msgid "Starting download"
-msgstr ""
+msgstr "Download starten"
 
-#, fuzzy
 msgid "Could not start the player update check"
-msgstr "Kan de updatecontrole niet starten."
+msgstr "Kan de updatecontrole voor de speler niet starten"
 
-#, fuzzy
 msgid "Checking for player updates"
-msgstr "Controleren op updates"
+msgstr "Controleren op updates voor de speler"
 
 msgid "Check for online update"
 msgstr "Online-update controleren"
@@ -2326,28 +2309,23 @@ msgstr "Installeren vanaf SD-kaart"
 msgid "Update the Player only, retaining current drivers, kernel and bootloader."
 msgstr "Werkt alleen de speler bij. Huidige stuurprogramma's, kernel en bootloader blijven behouden."
 
-#, fuzzy
 msgid "Download & Install"
-msgstr "Download mislukt"
+msgstr "Downloaden en installeren"
 
-#, fuzzy
 msgid "Install & Restart"
 msgstr "Installeren en opnieuw starten"
 
-#, fuzzy
 msgid "Downloading player update"
-msgstr "Update downloaden"
+msgstr "Update van de speler downloaden"
 
-#, fuzzy
 msgid "Installing player update"
-msgstr "Plugin installeren"
+msgstr "Update van de speler installeren"
 
-#, fuzzy
 msgid "Checking the latest release"
-msgstr "Bestand op SD-kaart controleren"
+msgstr "Nieuwste uitgave controleren"
 
 msgid "Replacing the player and preparing to restart"
-msgstr ""
+msgstr "Speler vervangen en opnieuw starten voorbereiden"
 
 #, c-format
 msgid ""
@@ -2356,13 +2334,16 @@ msgid ""
 "\n"
 "Download and install? This updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Beschikbare uitgave van de speler: %s.\n"
+"Geïnstalleerd: %s\n"
+"\n"
+"Downloaden en installeren? Hiermee wordt de speler bijgewerkt en start het apparaat opnieuw op. Firmware, lettertypen en artwork blijven ongewijzigd."
 
 msgid "Player updated successfully"
-msgstr ""
+msgstr "Speler is bijgewerkt"
 
-#, fuzzy
 msgid "Player update failed"
-msgstr "Afspeelfout: audio-uitvoer mislukt"
+msgstr "Update van de speler mislukt"
 
 #, c-format
 msgid ""
@@ -2513,7 +2494,7 @@ msgid "Enable debug logging"
 msgstr "Foutopsporingslogboek inschakelen"
 
 msgid "Reboot to bootloader"
-msgstr ""
+msgstr "Opnieuw starten naar bootloader"
 
 msgid "Custom color"
 msgstr "Aangepaste kleur"
@@ -2726,9 +2707,8 @@ msgstr "Afspelen en bediening"
 msgid "Equalizer"
 msgstr "Equalizer"
 
-#, fuzzy
 msgid "Crossfeed"
-msgstr "Crossfeed: uit"
+msgstr "Crossfeed"
 
 msgid "Power"
 msgstr "Voeding"
@@ -2880,54 +2860,47 @@ msgstr "Volumeschuifregelaar"
 msgid "Reorder Items"
 msgstr "Items herschikken"
 
-#, fuzzy
 msgid "Volume"
-msgstr "Volume omhoog"
+msgstr "Volume"
 
 msgid "Clock"
 msgstr "Klok"
 
 msgid "Wired Headphones"
-msgstr ""
+msgstr "Bedrade koptelefoon"
 
-#, fuzzy
 msgid "Bluetooth Audio (A2DP)"
-msgstr "Bluetooth is uitgeschakeld"
+msgstr "Bluetooth-audio (A2DP)"
 
-#, fuzzy
 msgid "USB Audio"
-msgstr "Audio"
+msgstr "USB-audio"
 
-#, fuzzy
 msgid "Playback Status"
-msgstr "Afspelen"
+msgstr "Afspeelstatus"
 
-#, fuzzy
 msgid "Bluetooth Codec"
-msgstr "Bluetooth-DAC-modus"
+msgstr "Bluetooth-codec"
 
-#, fuzzy
 msgid "Battery Icon"
-msgstr "Batterijpercentage"
+msgstr "Batterijpictogram"
 
 msgid "Left"
-msgstr ""
+msgstr "Links"
 
 msgid "Center"
-msgstr ""
+msgstr "Midden"
 
 msgid "Right"
-msgstr ""
+msgstr "Rechts"
 
-#, fuzzy
 msgid "Clock Position"
-msgstr "Positie"
+msgstr "Klokpositie"
 
 msgid "Battery Percentage"
 msgstr "Batterijpercentage"
 
 msgid "Top Bar"
-msgstr ""
+msgstr "Bovenbalk"
 
 msgid "Artist Images"
 msgstr "Artiestenafbeeldingen"
@@ -2978,6 +2951,8 @@ msgid ""
 "Disable charging\n"
 "in USB DAC mode"
 msgstr ""
+"Opladen uitschakelen\n"
+"in USB-DAC-modus"
 
 msgid "Charging"
 msgstr "Opladen"
@@ -3012,9 +2987,8 @@ msgstr "Onderhoud"
 msgid "Firmware Update"
 msgstr "Firmware-update"
 
-#, fuzzy
 msgid "Player Update"
-msgstr "Spelerindeling"
+msgstr "Spelerupdate"
 
 msgid "Plugins & Layouts"
 msgstr "Plugins en indelingen"
@@ -3160,9 +3134,8 @@ msgstr ""
 msgid "Enable band"
 msgstr "Band inschakelen"
 
-#, fuzzy
 msgid "Crossfeed angle"
-msgstr "Crossfeed: uit"
+msgstr "Crossfeed-hoek"
 
 msgid ""
 "No delay\n"
@@ -3171,9 +3144,14 @@ msgid ""
 "60°\n"
 "90°"
 msgstr ""
+"Geen vertraging\n"
+"30°\n"
+"45°\n"
+"60°\n"
+"90°"
 
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
-msgstr ""
+msgstr "Crossfeed mengt een gefilterd signaal van het tegenoverliggende kanaal bij en werkt los van PEQ. Bij Geen vertraging worden identieke linker- en rechtersignalen nauwelijks beïnvloed."
 
 msgid "PEQ"
 msgstr "PEQ"
@@ -3688,7 +3666,7 @@ msgstr "TXT-lezer"
 
 #: src/ui/settings/gui_settings.c
 msgid "Keep Lyrics Screen On"
-msgstr ""
+msgstr "Scherm aan houden bij songteksten"
 
 msgid "PCM"
 msgstr "PCM"
@@ -3798,55 +3776,3 @@ msgstr "Albums zonder albumartiest samenvoegen"
 
 msgid "Could not open this image"
 msgstr "Kan deze afbeelding niet openen"
-
-#~ msgid "Saved games stay on the SD card."
-#~ msgstr "Opgeslagen games blijven op de SD-kaart staan."
-
-#~ msgid "Parametric EQ"
-#~ msgstr "Parametrische equalizer"
-
-#~ msgid "Library migration pending. Favourites and play history will be kept"
-#~ msgstr "Bibliotheekmigratie in afwachting. Favorieten en afspeelgeschiedenis blijven behouden"
-
-#~ msgid ""
-#~ "Migrating\n"
-#~ "music database..."
-#~ msgstr ""
-#~ "Bezig met migreren van\n"
-#~ "muziekdatabase..."
-
-#~ msgid "Preparing database migration..."
-#~ msgstr "Database migratie voorbereiden..."
-
-#~ msgid "Library migration failed. Old library intact. Use Settings > Update Music Database to retry"
-#~ msgstr "Bibliotheekmigratie mislukt. Oude bibliotheek is intact. Probeer opnieuw via Instellingen > Muziekdatabase bijwerken"
-
-#~ msgid "Library migrated. Old database cleanup will retry"
-#~ msgstr "Bibliotheek gemigreerd. Opruimen van oude database wordt opnieuw geprobeerd"
-
-#~ msgid "Library migrated. Favourites and play history kept"
-#~ msgstr "Bibliotheek gemigreerd. Favorieten en afspeelgeschiedenis zijn behouden"
-
-#~ msgid "Load covers during playback (Experimental)"
-#~ msgstr "Covers laden tijdens afspelen (experimenteel)"
-
-#~ msgid "Albums (main list)"
-#~ msgstr "Albums (hoofdlijst)"
-
-#~ msgid "Visible"
-#~ msgstr "Zichtbaar"
-
-#~ msgid "Move Up"
-#~ msgstr "Omhoog verplaatsen"
-
-#~ msgid "Move Down"
-#~ msgstr "Omlaag verplaatsen"
-
-#~ msgid "Back"
-#~ msgstr "Terug"
-
-#~ msgid "The downloaded update record is invalid. Download the update again."
-#~ msgstr "De gedownloade updateregistratie is ongeldig. Download de update opnieuw."
-
-#~ msgid "Buy Me a Coffee"
-#~ msgstr "Trakteer me op koffie"

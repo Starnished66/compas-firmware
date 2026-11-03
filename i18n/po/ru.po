@@ -150,68 +150,56 @@ msgstr "Неверный путь обновления."
 msgid "Could not start the update."
 msgstr "Не удалось запустить обновление."
 
-#, fuzzy
 msgid "Update failed."
-msgstr "Доступно обновление"
+msgstr "Ошибка обновления."
 
 msgid "Could not prepare secure update storage."
-msgstr ""
+msgstr "Не удалось подготовить защищенное хранилище обновления."
 
 msgid "Could not download the release checksums."
 msgstr "Не удалось загрузить контрольные суммы выпуска."
 
 msgid "The release does not provide a valid player checksum."
-msgstr ""
+msgstr "В выпуске нет действительной контрольной суммы плеера."
 
-#, fuzzy
 msgid "The release checksum does not match the published asset digest."
-msgstr "В релизе нет контрольной суммы для образа этого устройства."
+msgstr "Контрольная сумма выпуска не совпадает с опубликованным дайджестом файла."
 
-#, fuzzy
 msgid "The latest player release changed. Check again."
-msgstr "Выбранный файл обновления изменился. Выберите его снова."
+msgstr "Последний выпуск плеера изменился. Проверьте еще раз."
 
 msgid "The player image exceeds the safe size limit."
-msgstr ""
+msgstr "Образ плеера превышает безопасный предел размера."
 
-#, fuzzy
 msgid "Not enough internal storage for the player update."
-msgstr "Недостаточно свободного места на SD-карте для обновления."
+msgstr "Недостаточно внутренней памяти для обновления плеера."
 
-#, fuzzy
 msgid "The player download did not complete."
-msgstr "Загрузка не завершилась. Проверьте Wi-Fi и повторите попытку."
+msgstr "Загрузка плеера не завершена."
 
-#, fuzzy
 msgid "The downloaded player failed SHA-256 verification."
-msgstr "Проверка загруженного образа не пройдена; файл удален."
+msgstr "Скачанный плеер не прошел проверку SHA-256."
 
 msgid "Place a valid player executable at SD/.compas/compas_player."
-msgstr ""
+msgstr "Поместите допустимый исполняемый файл плеера в SD/.compas/compas_player."
 
-#, fuzzy
 msgid "Could not start the player update check."
-msgstr "Не удалось запустить проверку обновлений."
+msgstr "Не удалось запустить проверку обновлений плеера."
 
-#, fuzzy
 msgid "Another update is already active."
-msgstr "Обновление уже выполняется."
+msgstr "Другое обновление уже выполняется."
 
-#, fuzzy
 msgid "Check for a player update first."
-msgstr "Проверьте наличие онлайн-обновлений"
+msgstr "Сначала проверьте наличие обновления плеера."
 
-#, fuzzy
 msgid "Not enough memory."
-msgstr "Недостаточно памяти для подключения"
+msgstr "Недостаточно памяти."
 
-#, fuzzy
 msgid "Could not start the player download."
-msgstr "Не удалось начать загрузку."
+msgstr "Не удалось начать загрузку плеера."
 
-#, fuzzy
 msgid "Could not start the SD player update."
-msgstr "Не удалось запустить обновление плагина."
+msgstr "Не удалось запустить обновление плеера с SD-карты."
 
 msgid "Screenshots unavailable"
 msgstr "Скриншоты недоступны"
@@ -2321,17 +2309,14 @@ msgstr ""
 "\n"
 "Обновляет плеер и перезагружает его. Прошивка, шрифты и альбом-арты не удаляются."
 
-#, fuzzy
 msgid "Could not start the player update"
-msgstr "Не удалось запустить обновление."
+msgstr "Не удалось запустить обновление плеера"
 
-#, fuzzy
 msgid "Updating player"
-msgstr "Обновление плагинов"
+msgstr "Обновление плеера"
 
-#, fuzzy
 msgid "Starting update"
-msgstr "Подготовка обновления"
+msgstr "Запуск обновления"
 
 msgid "Connect to Wi-Fi before downloading the player update"
 msgstr "Подключитесь к Wi-Fi перед скачиванием обновления"
@@ -2339,13 +2324,11 @@ msgstr "Подключитесь к Wi-Fi перед скачиванием об
 msgid "Starting download"
 msgstr "Начинаю загрузку"
 
-#, fuzzy
 msgid "Could not start the player update check"
-msgstr "Не удалось запустить проверку обновлений."
+msgstr "Не удалось запустить проверку обновлений плеера"
 
-#, fuzzy
 msgid "Checking for player updates"
-msgstr "Проверка обновлений"
+msgstr "Проверка обновлений плеера"
 
 msgid "Check for online update"
 msgstr "Проверьте наличие онлайн-обновлений"
@@ -2356,25 +2339,20 @@ msgstr "Установить с SD-карты"
 msgid "Update the Player only, retaining current drivers, kernel and bootloader."
 msgstr "Обновляет только плеер, сохраняя текущие драйверы, ядро и загрузчик."
 
-#, fuzzy
 msgid "Download & Install"
-msgstr "Загрузка не удалась"
+msgstr "Скачать и установить"
 
-#, fuzzy
 msgid "Install & Restart"
 msgstr "Установить и перезагрузить"
 
-#, fuzzy
 msgid "Downloading player update"
-msgstr "Загрузка обновления"
+msgstr "Загрузка обновления плеера"
 
-#, fuzzy
 msgid "Installing player update"
-msgstr "Установка плагина"
+msgstr "Установка обновления плеера"
 
-#, fuzzy
 msgid "Checking the latest release"
-msgstr "Проверка файла на SD-карте"
+msgstr "Проверка последнего выпуска"
 
 msgid "Replacing the player and preparing to restart"
 msgstr "Заменяю плеер и готовлюсь к рестарту"
@@ -2394,9 +2372,8 @@ msgstr ""
 msgid "Player updated successfully"
 msgstr "Плеер успешно обновлен"
 
-#, fuzzy
 msgid "Player update failed"
-msgstr "Ошибка воспроизведения: сбой вывода звука"
+msgstr "Не удалось обновить плеер"
 
 #, c-format
 msgid ""
@@ -2913,9 +2890,8 @@ msgstr "Ползунок громкости"
 msgid "Reorder Items"
 msgstr "Изменить порядок"
 
-#, fuzzy
 msgid "Volume"
-msgstr "Увеличение громкости"
+msgstr "Громкость"
 
 msgid "Clock"
 msgstr "Часы"
@@ -3041,9 +3017,8 @@ msgstr "Техническое обслуживание"
 msgid "Firmware Update"
 msgstr "Обновление прошивки"
 
-#, fuzzy
 msgid "Player Update"
-msgstr "Расположение проигрывателя"
+msgstr "Обновление плеера"
 
 msgid "Plugins & Layouts"
 msgstr "Плагины и макеты"
@@ -3206,7 +3181,7 @@ msgstr ""
 "90°"
 
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
-msgstr "Кросфид смешивает отфильтрованый сигнал другого канала и работает независимо от PEQ. Без задержки - идентичные левый и правый каналы затронуты очень слабо."
+msgstr "Кроссфид смешивает отфильтрованый сигнал другого канала и работает независимо от PEQ. Без задержки - идентичные левый и правый каналы затронуты очень слабо."
 
 msgid "PEQ"
 msgstr "PEQ"
@@ -3721,7 +3696,7 @@ msgstr "Просмотр TXT"
 
 #: src/ui/settings/gui_settings.c
 msgid "Keep Lyrics Screen On"
-msgstr "Держать экран текста песен включеным"
+msgstr "Держать экран текста песен включенным"
 
 msgid "PCM"
 msgstr "PCM"
@@ -3831,55 +3806,3 @@ msgstr "Объединять альбомы без исполнителя аль
 
 msgid "Could not open this image"
 msgstr "Не удалось открыть это изображение"
-
-#~ msgid "Saved games stay on the SD card."
-#~ msgstr "Сохранения остаются на SD-карте."
-
-#~ msgid "Parametric EQ"
-#~ msgstr "Параметрический эквалайзер"
-
-#~ msgid "Library migration pending. Favourites and play history will be kept"
-#~ msgstr "Ожидается перенос библиотеки. Избранное и история игр будут сохранены."
-
-#~ msgid ""
-#~ "Migrating\n"
-#~ "music database..."
-#~ msgstr ""
-#~ "Миграция музыкальной базы данных\n"
-#~ "..."
-
-#~ msgid "Preparing database migration..."
-#~ msgstr "Подготовка миграции базы данных..."
-
-#~ msgid "Library migration failed. Old library intact. Use Settings > Update Music Database to retry"
-#~ msgstr "Миграция библиотеки не удалась. Старая библиотека нетронута. Используйте «Настройки» > «Обновить музыкальную базу данных», чтобы повторить попытку."
-
-#~ msgid "Library migrated. Old database cleanup will retry"
-#~ msgstr "Библиотека перенесена. Очистка старой базы данных будет повторена."
-
-#~ msgid "Library migrated. Favourites and play history kept"
-#~ msgstr "Библиотека перенесена. Избранное и история игр сохраняются."
-
-#~ msgid "Load covers during playback (Experimental)"
-#~ msgstr "Загрузка обложек во время воспроизведения (экспериментально)"
-
-#~ msgid "Albums (main list)"
-#~ msgstr "Альбомы (основной список)"
-
-#~ msgid "Visible"
-#~ msgstr "Показывать"
-
-#~ msgid "Move Up"
-#~ msgstr "Переместить вверх"
-
-#~ msgid "Move Down"
-#~ msgstr "Переместить вниз"
-
-#~ msgid "Back"
-#~ msgstr "Назад"
-
-#~ msgid "The downloaded update record is invalid. Download the update again."
-#~ msgstr "Загруженная запись обновления недействительна. Загрузите обновление еще раз."
-
-#~ msgid "Buy Me a Coffee"
-#~ msgstr "Купи мне кофе"

@@ -133,68 +133,56 @@ msgstr "Virheellinen päivityspolku."
 msgid "Could not start the update."
 msgstr "Päivityksen käynnistys epäonnistui."
 
-#, fuzzy
 msgid "Update failed."
-msgstr "Päivitys saatavilla"
+msgstr "Päivitys epäonnistui."
 
 msgid "Could not prepare secure update storage."
-msgstr ""
+msgstr "Suojatun päivitystallennustilan valmistelu epäonnistui."
 
 msgid "Could not download the release checksums."
 msgstr "Julkaisun tarkistussummien lataus epäonnistui."
 
 msgid "The release does not provide a valid player checksum."
-msgstr ""
+msgstr "Julkaisussa ei ole kelvollista soittimen tarkistussummaa."
 
-#, fuzzy
 msgid "The release checksum does not match the published asset digest."
-msgstr "Julkaisussa ei ole tämän laitteen levykuvan tarkistussummaa."
+msgstr "Julkaisun tarkistussumma ei vastaa julkaistun tiedoston tiivistettä."
 
-#, fuzzy
 msgid "The latest player release changed. Check again."
-msgstr "Valittu päivitystiedosto muuttui. Valitse se uudelleen."
+msgstr "Uusin soittimen julkaisu on muuttunut. Tarkista uudelleen."
 
 msgid "The player image exceeds the safe size limit."
-msgstr ""
+msgstr "Soittimen levykuva ylittää turvallisen kokorajan."
 
-#, fuzzy
 msgid "Not enough internal storage for the player update."
-msgstr "SD-kortilla ei ole riittävästi vapaata tilaa päivitykselle."
+msgstr "Sisäisessä tallennustilassa ei ole riittävästi tilaa soittimen päivitykselle."
 
-#, fuzzy
 msgid "The player download did not complete."
-msgstr "Lataus ei valmistunut. Tarkista Wi-Fi ja yritä uudelleen."
+msgstr "Soittimen lataus ei valmistunut."
 
-#, fuzzy
 msgid "The downloaded player failed SHA-256 verification."
-msgstr "Ladattu levykuva ei läpäissyt varmennusta ja se poistettiin."
+msgstr "Ladattu soitin ei läpäissyt SHA-256-varmennusta."
 
 msgid "Place a valid player executable at SD/.compas/compas_player."
-msgstr ""
+msgstr "Aseta kelvollinen soittimen suoritettava tiedosto polkuun SD/.compas/compas_player."
 
-#, fuzzy
 msgid "Could not start the player update check."
-msgstr "Päivitystarkistuksen käynnistys epäonnistui."
+msgstr "Soittimen päivitystarkistuksen käynnistys epäonnistui."
 
-#, fuzzy
 msgid "Another update is already active."
-msgstr "Päivitys on jo käynnissä."
+msgstr "Toinen päivitys on jo käynnissä."
 
-#, fuzzy
 msgid "Check for a player update first."
-msgstr "Tarkista verkkopäivitys"
+msgstr "Tarkista ensin soittimen päivitys."
 
-#, fuzzy
 msgid "Not enough memory."
-msgstr "Yhteyden muodostamiseen ei ole riittävästi muistia"
+msgstr "Muistia ei ole riittävästi."
 
-#, fuzzy
 msgid "Could not start the player download."
-msgstr "Latauksen käynnistys epäonnistui."
+msgstr "Soittimen latauksen käynnistys epäonnistui."
 
-#, fuzzy
 msgid "Could not start the SD player update."
-msgstr "Liitännäispäivityksen käynnistys epäonnistui."
+msgstr "Soittimen päivityksen käynnistys SD-kortilta epäonnistui."
 
 msgid "Screenshots unavailable"
 msgstr "Kuvakaappaukset eivät ole käytettävissä"
@@ -626,7 +614,7 @@ msgid "Remove"
 msgstr "Poista"
 
 msgid "Bundled games and their saves will be removed. Games in SD/Games are kept."
-msgstr ""
+msgstr "Mukana tulleet pelit ja niiden tallennukset poistetaan. Kansion SD/Games pelit säilyvät."
 
 msgid "No description"
 msgstr "Ei kuvausta"
@@ -644,7 +632,7 @@ msgid "Size: %s"
 msgstr "Koko: %s"
 
 msgid "Updating replaces bundled games and their saves. Games in SD/Games are kept."
-msgstr ""
+msgstr "Päivitys korvaa mukana tulleet pelit ja niiden tallennukset. Kansion SD/Games pelit säilyvät."
 
 msgid "Update"
 msgstr "Päivitä"
@@ -1362,9 +1350,8 @@ msgstr "Kaikki kortin tiedot poistetaan pysyvästi. Tätä ei voi kumota."
 msgid "Format"
 msgstr "Alusta"
 
-#, fuzzy
 msgid "Could not restart into the boot selector"
-msgstr "Kansion luominen epäonnistui"
+msgstr "Uudelleenkäynnistys käynnistysvalitsimeen epäonnistui"
 
 msgid "An update is in progress. Please wait."
 msgstr "Päivitys on käynnissä. Odota hetki."
@@ -1791,16 +1778,14 @@ msgstr "Vaihto tilaan %s epäonnistui"
 msgid "USB Mode"
 msgstr "USB-tila"
 
-#, fuzzy
 msgid "Failed to update USB charging"
-msgstr "Profiilin poistaminen epäonnistui"
+msgstr "USB-latauksen päivitys epäonnistui"
 
 msgid "USB charging setting is busy"
-msgstr ""
+msgstr "USB-latausasetus on varattu"
 
-#, fuzzy
 msgid "Could not start USB charging update"
-msgstr "Liitännäispäivityksen käynnistys epäonnistui."
+msgstr "USB-latauksen päivityksen käynnistys epäonnistui"
 
 msgid "Leave USB DAC mode?"
 msgstr "Poistutaanko USB-DAC-tilasta?"
@@ -2292,32 +2277,30 @@ msgid ""
 "\n"
 "Updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Asennetaanko soittimen päivitys SD-kortilta?\n"
+"\n"
+"Päivittää soittimen ja käynnistää laitteen uudelleen. Laiteohjelmisto, fontit ja kuvitus säilyvät ennallaan."
 
-#, fuzzy
 msgid "Could not start the player update"
-msgstr "Päivityksen käynnistys epäonnistui."
+msgstr "Soittimen päivityksen käynnistys epäonnistui"
 
-#, fuzzy
 msgid "Updating player"
-msgstr "Päivitetään liitännäisiä"
+msgstr "Päivitetään soitinta"
 
-#, fuzzy
 msgid "Starting update"
-msgstr "Valmistellaan päivitystä"
+msgstr "Käynnistetään päivitystä"
 
 msgid "Connect to Wi-Fi before downloading the player update"
-msgstr ""
+msgstr "Yhdistä Wi-Fi-verkkoon ennen soittimen päivityksen lataamista"
 
 msgid "Starting download"
-msgstr ""
+msgstr "Käynnistetään latausta"
 
-#, fuzzy
 msgid "Could not start the player update check"
-msgstr "Päivitystarkistuksen käynnistys epäonnistui."
+msgstr "Soittimen päivitystarkistuksen käynnistys epäonnistui"
 
-#, fuzzy
 msgid "Checking for player updates"
-msgstr "Tarkistetaan päivityksiä"
+msgstr "Tarkistetaan soittimen päivityksiä"
 
 msgid "Check for online update"
 msgstr "Tarkista verkkopäivitys"
@@ -2328,28 +2311,23 @@ msgstr "Asenna SD-kortilta"
 msgid "Update the Player only, retaining current drivers, kernel and bootloader."
 msgstr "Päivittää vain soittimen. Nykyiset ajurit, ydin ja käynnistyslatain säilyvät."
 
-#, fuzzy
 msgid "Download & Install"
-msgstr "Lataus epäonnistui"
+msgstr "Lataa ja asenna"
 
-#, fuzzy
 msgid "Install & Restart"
 msgstr "Asenna ja käynnistä uudelleen"
 
-#, fuzzy
 msgid "Downloading player update"
-msgstr "Ladataan päivitystä"
+msgstr "Ladataan soittimen päivitystä"
 
-#, fuzzy
 msgid "Installing player update"
-msgstr "Asennetaan liitännäistä"
+msgstr "Asennetaan soittimen päivitystä"
 
-#, fuzzy
 msgid "Checking the latest release"
-msgstr "Tarkistetaan SD-kortin tiedostoa"
+msgstr "Tarkistetaan uusinta julkaisua"
 
 msgid "Replacing the player and preparing to restart"
-msgstr ""
+msgstr "Korvataan soitinta ja valmistellaan uudelleenkäynnistystä"
 
 #, c-format
 msgid ""
@@ -2358,13 +2336,16 @@ msgid ""
 "\n"
 "Download and install? This updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Saatavilla oleva soittimen julkaisu: %s.\n"
+"Asennettu: %s\n"
+"\n"
+"Ladataanko ja asennetaanko? Tämä päivittää soittimen ja käynnistää laitteen uudelleen. Laiteohjelmisto, fontit ja kuvitus säilyvät ennallaan."
 
 msgid "Player updated successfully"
-msgstr ""
+msgstr "Soitin päivitetty onnistuneesti"
 
-#, fuzzy
 msgid "Player update failed"
-msgstr "Toistovirhe: äänentoisto epäonnistui"
+msgstr "Soittimen päivitys epäonnistui"
 
 #, c-format
 msgid ""
@@ -2515,7 +2496,7 @@ msgid "Enable debug logging"
 msgstr "Ota virheenkorjausloki käyttöön"
 
 msgid "Reboot to bootloader"
-msgstr ""
+msgstr "Käynnistä uudelleen käynnistyslataimeen"
 
 msgid "Custom color"
 msgstr "Mukautettu väri"
@@ -2728,9 +2709,8 @@ msgstr "Toisto ja ohjaimet"
 msgid "Equalizer"
 msgstr "Taajuuskorjain"
 
-#, fuzzy
 msgid "Crossfeed"
-msgstr "Crossfeed: pois"
+msgstr "Crossfeed"
 
 msgid "Power"
 msgstr "Virta"
@@ -2882,54 +2862,47 @@ msgstr "Äänenvoimakkuuden liukusäädin"
 msgid "Reorder Items"
 msgstr "Järjestä kohteet"
 
-#, fuzzy
 msgid "Volume"
-msgstr "Lisää äänenvoimakkuutta"
+msgstr "Äänenvoimakkuus"
 
 msgid "Clock"
 msgstr "Kello"
 
 msgid "Wired Headphones"
-msgstr ""
+msgstr "Langalliset kuulokkeet"
 
-#, fuzzy
 msgid "Bluetooth Audio (A2DP)"
-msgstr "Bluetooth ei ole käytössä"
+msgstr "Bluetooth-ääni (A2DP)"
 
-#, fuzzy
 msgid "USB Audio"
-msgstr "Ääni"
+msgstr "USB-ääni"
 
-#, fuzzy
 msgid "Playback Status"
-msgstr "Toisto"
+msgstr "Toiston tila"
 
-#, fuzzy
 msgid "Bluetooth Codec"
-msgstr "Bluetooth-DAC-tila"
+msgstr "Bluetooth-koodekki"
 
-#, fuzzy
 msgid "Battery Icon"
-msgstr "Akun varausprosentti"
+msgstr "Akun kuvake"
 
 msgid "Left"
-msgstr ""
+msgstr "Vasen"
 
 msgid "Center"
-msgstr ""
+msgstr "Keski"
 
 msgid "Right"
-msgstr ""
+msgstr "Oikea"
 
-#, fuzzy
 msgid "Clock Position"
-msgstr "Sijainti"
+msgstr "Kellon sijainti"
 
 msgid "Battery Percentage"
 msgstr "Akun varausprosentti"
 
 msgid "Top Bar"
-msgstr ""
+msgstr "Yläpalkki"
 
 msgid "Artist Images"
 msgstr "Esittäjien kuvat"
@@ -2980,6 +2953,8 @@ msgid ""
 "Disable charging\n"
 "in USB DAC mode"
 msgstr ""
+"Poista lataus käytöstä\n"
+"USB-DAC-tilassa"
 
 msgid "Charging"
 msgstr "Lataus"
@@ -3014,9 +2989,8 @@ msgstr "Ylläpito"
 msgid "Firmware Update"
 msgstr "Laiteohjelmistopäivitys"
 
-#, fuzzy
 msgid "Player Update"
-msgstr "Soittimen asettelu"
+msgstr "Soittimen päivitys"
 
 msgid "Plugins & Layouts"
 msgstr "Liitännäiset ja asettelut"
@@ -3162,9 +3136,8 @@ msgstr ""
 msgid "Enable band"
 msgstr "Ota kaista käyttöön"
 
-#, fuzzy
 msgid "Crossfeed angle"
-msgstr "Crossfeed: pois"
+msgstr "Crossfeed-kulma"
 
 msgid ""
 "No delay\n"
@@ -3173,9 +3146,14 @@ msgid ""
 "60°\n"
 "90°"
 msgstr ""
+"Ei viivettä\n"
+"30°\n"
+"45°\n"
+"60°\n"
+"90°"
 
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
-msgstr ""
+msgstr "Crossfeed sekoittaa vastakkaisen kanavan suodatetun signaalin ja toimii PEQ:sta riippumatta. Valinnalla Ei viivettä identtisiin vasemman ja oikean kanavan signaaleihin vaikutetaan hyvin vähän."
 
 msgid "PEQ"
 msgstr "PEQ"
@@ -3690,7 +3668,7 @@ msgstr "TXT-lukija"
 
 #: src/ui/settings/gui_settings.c
 msgid "Keep Lyrics Screen On"
-msgstr ""
+msgstr "Pidä näyttö päällä sanoituksissa"
 
 msgid "PCM"
 msgstr "PCM"
@@ -3800,55 +3778,3 @@ msgstr "Yhdistä albumit, joilla ei ole albumin esittäjää"
 
 msgid "Could not open this image"
 msgstr "Tätä kuvaa ei voitu avata"
-
-#~ msgid "Saved games stay on the SD card."
-#~ msgstr "Tallennetut pelit säilyvät SD-kortilla."
-
-#~ msgid "Parametric EQ"
-#~ msgstr "Parametrinen taajuuskorjain"
-
-#~ msgid "Library migration pending. Favourites and play history will be kept"
-#~ msgstr "Kirjaston siirto odottaa. Suosikit ja toistohistoria säilyvät"
-
-#~ msgid ""
-#~ "Migrating\n"
-#~ "music database..."
-#~ msgstr ""
-#~ "Siirretään\n"
-#~ "musiikkitietokantaa..."
-
-#~ msgid "Preparing database migration..."
-#~ msgstr "Valmistellaan tietokannan siirtoa..."
-
-#~ msgid "Library migration failed. Old library intact. Use Settings > Update Music Database to retry"
-#~ msgstr "Kirjaston siirto epäonnistui. Vanha kirjasto säilyi. Yritä uudelleen valitsemalla Asetukset > Päivitä musiikkitietokanta"
-
-#~ msgid "Library migrated. Old database cleanup will retry"
-#~ msgstr "Kirjasto siirretty. Vanhan tietokannan siivousta yritetään myöhemmin uudelleen"
-
-#~ msgid "Library migrated. Favourites and play history kept"
-#~ msgstr "Kirjasto siirretty. Suosikit ja toistohistoria säilyivät"
-
-#~ msgid "Load covers during playback (Experimental)"
-#~ msgstr "Lataa kansikuvat toiston aikana (kokeellinen)"
-
-#~ msgid "Albums (main list)"
-#~ msgstr "Albumit (pääluettelo)"
-
-#~ msgid "Visible"
-#~ msgstr "Näkyvissä"
-
-#~ msgid "Move Up"
-#~ msgstr "Siirrä ylös"
-
-#~ msgid "Move Down"
-#~ msgstr "Siirrä alas"
-
-#~ msgid "Back"
-#~ msgstr "Takaisin"
-
-#~ msgid "The downloaded update record is invalid. Download the update again."
-#~ msgstr "Ladattu päivitystietue on virheellinen. Lataa päivitys uudelleen."
-
-#~ msgid "Buy Me a Coffee"
-#~ msgstr "Tarjoa kahvi"

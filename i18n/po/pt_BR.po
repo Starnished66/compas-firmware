@@ -57,12 +57,11 @@ msgstr "Não foi possível decodificar o áudio"
 msgid "Playback error"
 msgstr "Erro de reprodução"
 
-#, fuzzy
 msgid "No SD card is mounted."
-msgstr "Sem cartão SD"
+msgstr "Nenhum cartão SD montado."
 
 msgid "The firmware path is too long."
-msgstr ""
+msgstr "O caminho do firmware é muito longo."
 
 #, c-format
 msgid "Use a regular %s file in the SD card root."
@@ -78,75 +77,69 @@ msgstr "Não foi possível iniciar o assistente de atualização: %s"
 
 #, c-format
 msgid "Update helper failed (%s, status %d). See .compas/ota/update.log."
-msgstr ""
+msgstr "Falha no assistente de atualização (%s, status %d). Veja .compas/ota/update.log."
 
 #, c-format
 msgid "Cannot read update helper status: %s"
 msgstr "Não foi possível ler o estado do assistente de atualização: %s"
 
 msgid "Still working. Do not turn off the player or retry."
-msgstr ""
+msgstr "Ainda em andamento. Não desligue o player nem tente novamente."
 
 msgid "Recovery flag partition does not match this firmware."
-msgstr ""
+msgstr "A partição do sinalizador de recuperação não corresponde a este firmware."
 
 msgid "Cannot safely access the recovery flag block."
-msgstr ""
+msgstr "Não foi possível acessar com segurança o bloco do sinalizador de recuperação."
 
 msgid "Recovery flag erase failed. Do not reboot; check .compas/ota/update.log."
-msgstr ""
+msgstr "Falha ao apagar o sinalizador de recuperação. Não reinicie; verifique .compas/ota/update.log."
 
 msgid "Recovery flag write failed. Do not reboot; check .compas/ota/update.log."
-msgstr ""
+msgstr "Falha ao gravar o sinalizador de recuperação. Não reinicie; verifique .compas/ota/update.log."
 
 msgid "Recovery flag verification failed. Do not reboot; check the update log."
-msgstr ""
+msgstr "Falha na verificação do sinalizador de recuperação. Não reinicie; verifique o log de atualização."
 
-#, fuzzy
 msgid "The selected update file changed. Select it again."
-msgstr "O arquivo de atualização no cartão SD mudou. Baixe de novo."
+msgstr "O arquivo de atualização selecionado mudou. Selecione-o novamente."
 
-#, fuzzy
 msgid "Cannot read the selected update file."
-msgstr "Não foi possível ler o cartão SD."
+msgstr "Não foi possível ler o arquivo de atualização selecionado."
 
-#, fuzzy
 msgid "Cannot create the update log directory."
-msgstr "Não foi possível colocar a atualização no cartão SD."
+msgstr "Não foi possível criar a pasta do log de atualização."
 
-#, fuzzy
 msgid "Update diagnostics must be stored on the SD card."
-msgstr "Não foi possível colocar a atualização no cartão SD."
+msgstr "Os diagnósticos da atualização devem ser salvos no cartão SD."
 
-#, fuzzy
 msgid "Cannot save update diagnostics on the SD card."
-msgstr "Não foi possível colocar a atualização no cartão SD."
+msgstr "Não foi possível salvar os diagnósticos da atualização no cartão SD."
 
-#, fuzzy
 msgid "The update file changed during verification. Select it again."
-msgstr "O download do plugin falhou na verificação. Tente de novo."
+msgstr "O arquivo de atualização mudou durante a verificação. Selecione-o novamente."
 
 msgid "Could not move other .upt files aside on the SD card."
 msgstr "Não foi possível separar os outros arquivos .upt no cartão SD."
 
 msgid "A required recovery helper is missing. Update preparation stopped."
-msgstr ""
+msgstr "Falta um assistente de recuperação necessário. A preparação da atualização foi interrompida."
 
 msgid "Cannot save update diagnostics. Update preparation stopped."
-msgstr ""
+msgstr "Não foi possível salvar os diagnósticos. A preparação da atualização foi interrompida."
 
 msgid "Recovery boot flag failed."
-msgstr ""
+msgstr "Falha no sinalizador de inicialização de recuperação."
 
 msgid "Recovery remains selected. Keep the update file; saving diagnostics failed."
-msgstr ""
+msgstr "A recuperação continua selecionada. Mantenha o arquivo de atualização; falha ao salvar os diagnósticos."
 
 msgid "Saving data failed. Recovery remains selected; keep the update file and check .compas/ota/update.log."
-msgstr ""
+msgstr "Falha ao salvar os dados. A recuperação continua selecionada; mantenha o arquivo de atualização e verifique .compas/ota/update.log."
 
 #, c-format
 msgid "Recovery remains selected but reboot failed: %s. Keep the update file."
-msgstr ""
+msgstr "A recuperação continua selecionada, mas a reinicialização falhou: %s. Mantenha o arquivo de atualização."
 
 msgid "An update is already in progress."
 msgstr "Já há uma atualização em andamento."
@@ -155,76 +148,62 @@ msgstr "Já há uma atualização em andamento."
 msgid "Charge to at least 30%% or connect power before updating."
 msgstr "Carregue até pelo menos 30%% ou conecte à energia antes de atualizar."
 
-#, fuzzy
 msgid "Invalid update path."
-msgstr "Nome de perfil inválido"
+msgstr "Caminho de atualização inválido."
 
-#, fuzzy
 msgid "Could not start the update."
-msgstr "Não foi possível iniciar a busca por atualização."
+msgstr "Não foi possível iniciar a atualização."
 
-#, fuzzy
 msgid "Update failed."
-msgstr "Atualização disponível"
+msgstr "Falha na atualização."
 
 msgid "Could not prepare secure update storage."
-msgstr ""
+msgstr "Não foi possível preparar o armazenamento seguro da atualização."
 
 msgid "Could not download the release checksums."
 msgstr "Não foi possível baixar os checksums da versão."
 
 msgid "The release does not provide a valid player checksum."
-msgstr ""
+msgstr "A versão não fornece uma soma de verificação válida do player."
 
-#, fuzzy
 msgid "The release checksum does not match the published asset digest."
-msgstr "A versão não tem checksum para a imagem deste aparelho."
+msgstr "A soma de verificação da versão não corresponde ao resumo publicado do arquivo."
 
-#, fuzzy
 msgid "The latest player release changed. Check again."
-msgstr "O arquivo de atualização no cartão SD mudou. Baixe de novo."
+msgstr "A versão mais recente do player mudou. Verifique novamente."
 
 msgid "The player image exceeds the safe size limit."
-msgstr ""
+msgstr "A imagem do player excede o limite de tamanho seguro."
 
-#, fuzzy
 msgid "Not enough internal storage for the player update."
-msgstr "Espaço livre insuficiente no cartão SD para a atualização."
+msgstr "Armazenamento interno insuficiente para a atualização do player."
 
-#, fuzzy
 msgid "The player download did not complete."
-msgstr "O download não foi concluído. Verifique o Wi-Fi e tente de novo."
+msgstr "O download do player não foi concluído."
 
-#, fuzzy
 msgid "The downloaded player failed SHA-256 verification."
-msgstr "A imagem baixada falhou na verificação e foi excluída."
+msgstr "O player baixado falhou na verificação SHA-256."
 
 msgid "Place a valid player executable at SD/.compas/compas_player."
-msgstr ""
+msgstr "Coloque um executável válido do player em SD/.compas/compas_player."
 
-#, fuzzy
 msgid "Could not start the player update check."
-msgstr "Não foi possível iniciar a busca por atualização."
+msgstr "Não foi possível iniciar a busca de atualizações do player."
 
-#, fuzzy
 msgid "Another update is already active."
-msgstr "Já há uma atualização em andamento."
+msgstr "Outra atualização já está em andamento."
 
-#, fuzzy
 msgid "Check for a player update first."
-msgstr "Buscar atualização online"
+msgstr "Busque primeiro uma atualização do player."
 
-#, fuzzy
 msgid "Not enough memory."
-msgstr "Memória insuficiente para conectar"
+msgstr "Memória insuficiente."
 
-#, fuzzy
 msgid "Could not start the player download."
-msgstr "Não foi possível iniciar o download."
+msgstr "Não foi possível iniciar o download do player."
 
-#, fuzzy
 msgid "Could not start the SD player update."
-msgstr "Não foi possível iniciar a atualização do plugin."
+msgstr "Não foi possível iniciar a atualização do player pelo SD."
 
 msgid "Screenshots unavailable"
 msgstr "Capturas indisponíveis"
@@ -301,13 +280,12 @@ msgstr "Modo carro"
 msgid "Plugins"
 msgstr "Plugins"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Page %d of %d"
-msgstr "Etapa %d de %d"
+msgstr "Página %d de %d"
 
-#, fuzzy
 msgid "Go to page"
-msgstr "Próxima página"
+msgstr "Ir para a página"
 
 msgid "Cancel"
 msgstr "Cancelar"
@@ -377,11 +355,11 @@ msgid "Unexpected reply from GitHub"
 msgstr "Resposta inesperada do GitHub"
 
 msgid "GitHub's latest release is not a supported firmware release."
-msgstr ""
+msgstr "A versão mais recente do GitHub não é uma versão de firmware compatível."
 
 #, c-format
 msgid "GitHub's latest release has no valid %s image and checksum."
-msgstr ""
+msgstr "A versão mais recente do GitHub não tem imagem %s e soma de verificação válidas."
 
 msgid "Secure connection failed. Check Wi-Fi and the date and time."
 msgstr "Falha na conexão segura. Verifique o Wi-Fi e a data e hora."
@@ -406,7 +384,7 @@ msgid "Cannot read the SD card."
 msgstr "Não foi possível ler o cartão SD."
 
 msgid "A newer or changed release is available. Check for updates again before downloading."
-msgstr ""
+msgstr "Há uma versão mais recente ou alterada disponível. Busque atualizações novamente antes de baixar."
 
 msgid "Insert an SD card to download the update."
 msgstr "Insira um cartão SD para baixar a atualização."
@@ -451,15 +429,13 @@ msgid "The update file on the SD card changed. Download it again."
 msgstr "O arquivo de atualização no cartão SD mudou. Baixe de novo."
 
 msgid "This update is no longer the latest release. Check for updates and download the latest image."
-msgstr ""
+msgstr "Esta atualização não é mais a versão mais recente. Busque atualizações e baixe a imagem mais recente."
 
-#, fuzzy
 msgid "Could not verify the latest release checksums."
-msgstr "Não foi possível baixar os checksums da versão."
+msgstr "Não foi possível verificar as somas de verificação da versão mais recente."
 
-#, fuzzy
 msgid "This update no longer matches the latest release. Download the latest image again."
-msgstr "O arquivo de atualização no cartão SD mudou. Baixe de novo."
+msgstr "Esta atualização não corresponde mais à versão mais recente. Baixe a imagem mais recente novamente."
 
 msgid "Could not enter recovery mode."
 msgstr "Não foi possível entrar no modo de recuperação."
@@ -468,9 +444,8 @@ msgstr "Não foi possível entrar no modo de recuperação."
 msgid "Charge to at least %d%% or connect power before updating."
 msgstr "Carregue até pelo menos %d%% ou conecte a energia antes de atualizar."
 
-#, fuzzy
 msgid "A firmware update is already in progress."
-msgstr "Já há uma atualização em andamento."
+msgstr "Uma atualização de firmware já está em andamento."
 
 msgid "Could not start the installation."
 msgstr "Não foi possível iniciar a instalação."
@@ -661,11 +636,10 @@ msgid "Remove"
 msgstr "Remover"
 
 msgid "Bundled games and their saves will be removed. Games in SD/Games are kept."
-msgstr ""
+msgstr "Os jogos incluídos e seus saves serão removidos. Os jogos em SD/Games são mantidos."
 
-#, fuzzy
 msgid "No description"
-msgstr "Posição"
+msgstr "Sem descrição"
 
 #, c-format
 msgid "By %s"
@@ -680,7 +654,7 @@ msgid "Size: %s"
 msgstr "Tamanho: %s"
 
 msgid "Updating replaces bundled games and their saves. Games in SD/Games are kept."
-msgstr ""
+msgstr "Atualizar substitui os jogos incluídos e seus saves. Os jogos em SD/Games são mantidos."
 
 msgid "Update"
 msgstr "Atualizar"
@@ -908,13 +882,11 @@ msgstr "Ocultar arquivos ocultos"
 msgid "Show hidden files"
 msgstr "Mostrar arquivos ocultos"
 
-#, fuzzy
 msgid "Playlist selection expired"
-msgstr "Playlist excluída"
+msgstr "A seleção da playlist expirou"
 
-#, fuzzy
 msgid "Playlist name is too long"
-msgstr "Playlist renomeada"
+msgstr "O nome da playlist é muito longo"
 
 msgid "Playlist created"
 msgstr "Playlist criada"
@@ -934,62 +906,51 @@ msgstr "Adicionada à playlist"
 msgid "Failed to add to playlist"
 msgstr "Falha ao adicionar à playlist"
 
-#, fuzzy
 msgid "Added folder to playlist"
-msgstr "Adicionada à playlist"
+msgstr "Pasta adicionada à playlist"
 
-#, fuzzy
 msgid "Failed to add folder to playlist"
-msgstr "Falha ao adicionar à playlist"
+msgstr "Falha ao adicionar a pasta à playlist"
 
-#, fuzzy
 msgid "Folder is too large to add to queue"
-msgstr "Pasta grande demais para indexar (toque em Voltar)"
+msgstr "A pasta é muito grande para adicionar à fila"
 
 msgid "Playback changed before folder was ready"
-msgstr ""
+msgstr "A reprodução mudou antes de a pasta ficar pronta"
 
 msgid "Cannot add folder within queue memory limit"
-msgstr ""
+msgstr "Não foi possível adicionar a pasta dentro do limite de memória da fila"
 
-#, fuzzy
 msgid "Cannot play this folder"
-msgstr "Não é possível tocar a pasta"
+msgstr "Não é possível tocar esta pasta"
 
 #
-#, fuzzy
 msgid "Folder action is still running"
-msgstr "Outra operação de arquivos ainda está em andamento"
+msgstr "A ação da pasta ainda está em andamento"
 
-#, fuzzy
 msgid "Cannot start folder action"
-msgstr "Não é possível tocar a pasta"
+msgstr "Não foi possível iniciar a ação da pasta"
 
-#, fuzzy
 msgid "Adding folder to queue"
-msgstr "Adicionar álbum à fila"
+msgstr "Adicionando pasta à fila"
 
-#, fuzzy
 msgid "Adding folder to playlist"
-msgstr "Adicionada à playlist"
+msgstr "Adicionando pasta à playlist"
 
 msgid "Preparing folder playback"
-msgstr ""
+msgstr "Preparando a reprodução da pasta"
 
-#, fuzzy
 msgid "Scanning playable files"
-msgstr "Nenhum arquivo reproduzível aqui"
+msgstr "Buscando arquivos reproduzíveis"
 
 msgid "File path is too long"
-msgstr ""
+msgstr "O caminho do arquivo é muito longo"
 
-#, fuzzy
 msgid "Play All (Sequential)"
-msgstr "Tocar em sequência"
+msgstr "Tocar tudo (em ordem)"
 
-#, fuzzy
 msgid "Play All (Shuffle)"
-msgstr "Tocar tudo em aleatório"
+msgstr "Tocar tudo (aleatório)"
 
 msgid "Add to Queue"
 msgstr "Adicionar à fila"
@@ -1425,13 +1386,11 @@ msgid "Format"
 msgstr "Formatar"
 
 #
-#, fuzzy
 msgid "Could not restart into the boot selector"
-msgstr "Não foi possível criar a pasta"
+msgstr "Não foi possível reiniciar no seletor de inicialização"
 
-#, fuzzy
 msgid "An update is in progress. Please wait."
-msgstr "Já há uma atualização em andamento."
+msgstr "Uma atualização está em andamento. Aguarde."
 
 msgid "Tap Power off again to confirm"
 msgstr "Toque em Desligar de novo para confirmar"
@@ -1582,40 +1541,35 @@ msgstr "Rede protegida"
 msgid "Open network"
 msgstr "Rede aberta"
 
-#, fuzzy
 msgid "Wi-Fi could not be enabled"
-msgstr "Não foi possível decodificar o áudio"
+msgstr "Não foi possível ativar o Wi-Fi"
 
-#, fuzzy
 msgid "Check the wireless switch and try again."
-msgstr "Saia desta tela e tente de novo."
+msgstr "Verifique a chave sem fio e tente novamente."
 
 msgid "Turning Wi-Fi on"
-msgstr ""
+msgstr "Ativando o Wi-Fi"
 
-#, fuzzy
 msgid "Nearby networks will appear when Wi-Fi is ready."
-msgstr "As redes Wi-Fi próximas aparecerão aqui."
+msgstr "As redes próximas aparecerão quando o Wi-Fi estiver pronto."
 
-#, fuzzy
 msgid "Searching for networks"
 msgstr "Buscando redes"
 
-#, fuzzy
 msgid "This can take a few seconds."
-msgstr "Isso pode demorar"
+msgstr "Pode levar alguns segundos."
 
 msgid "No networks found"
 msgstr "Nenhuma rede encontrada"
 
 msgid "Try scanning again or add a hidden network."
-msgstr ""
+msgstr "Busque novamente ou adicione uma rede oculta."
 
 msgid "SSID must be 1 to 32 bytes"
-msgstr ""
+msgstr "O SSID deve ter de 1 a 32 bytes"
 
 msgid "Wi-Fi is still starting"
-msgstr ""
+msgstr "O Wi-Fi ainda está iniciando"
 
 msgid "Network Name (SSID)"
 msgstr "Nome da rede (SSID)"
@@ -1860,16 +1814,14 @@ msgstr "Falha ao mudar para %s"
 msgid "USB Mode"
 msgstr "Modo USB"
 
-#, fuzzy
 msgid "Failed to update USB charging"
-msgstr "Falha ao excluir o perfil"
+msgstr "Falha ao atualizar o carregamento por USB"
 
 msgid "USB charging setting is busy"
-msgstr ""
+msgstr "A configuração de carregamento por USB está ocupada"
 
-#, fuzzy
 msgid "Could not start USB charging update"
-msgstr "Não foi possível iniciar a atualização do plugin."
+msgstr "Não foi possível iniciar a atualização do carregamento por USB"
 
 msgid "Leave USB DAC mode?"
 msgstr "Sair do modo DAC USB?"
@@ -2096,9 +2048,8 @@ msgstr "Atualizar plugins"
 msgid "Plugin Manager"
 msgstr "Gerenciar plugins"
 
-#, fuzzy
 msgid "Download layouts"
-msgstr "Carregando layouts"
+msgstr "Baixar layouts"
 
 msgid "Download themes"
 msgstr "Baixar temas"
@@ -2134,9 +2085,8 @@ msgstr "Versão %s · %s"
 msgid "Close"
 msgstr "Fechar"
 
-#, fuzzy
 msgid "No longer in the catalog"
-msgstr "Nenhum plugin disponível no catálogo."
+msgstr "Não está mais no catálogo"
 
 msgid "Already installed"
 msgstr "Já instalado"
@@ -2165,9 +2115,8 @@ msgstr "Atualizar tudo"
 msgid "Review updates"
 msgstr "Revisar atualizações"
 
-#, fuzzy
 msgid "No layouts are available in the catalog."
-msgstr "Nenhum plugin disponível no catálogo."
+msgstr "Nenhum layout disponível no catálogo."
 
 msgid "No themes are available in the catalog."
 msgstr "Nenhum tema disponível no catálogo."
@@ -2223,9 +2172,8 @@ msgstr "Plugin"
 msgid "Plugin Settings"
 msgstr "Configurações do plugin"
 
-#, fuzzy
 msgid "Select a file"
-msgstr "Selecionar tudo"
+msgstr "Selecionar um arquivo"
 
 msgid "Select a color"
 msgstr "Selecionar uma cor"
@@ -2300,13 +2248,12 @@ msgstr "Personalizado"
 msgid "%d min remaining"
 msgstr "%d min restantes"
 
-#, fuzzy
 msgid "Crossfeed: Off"
-msgstr "Crossfade"
+msgstr "Crossfeed: desativado"
 
 #, c-format
 msgid "Crossfeed: %d%%"
-msgstr ""
+msgstr "Crossfeed: %d%%"
 
 #, c-format
 msgid "%+.2f dB"
@@ -2320,7 +2267,7 @@ msgid "Pre-Amp (dB, -12 to 12)"
 msgstr "Pré-amp (dB, -12 a 12)"
 
 msgid "Crossfeed (0 to 100)"
-msgstr ""
+msgstr "Crossfeed (0 a 100)"
 
 msgid "Frequency (Hz, 20 to 20000)"
 msgstr "Frequência (Hz, 20 a 20000)"
@@ -2342,7 +2289,7 @@ msgid "Band %d / %d"
 msgstr "Banda %d / %d"
 
 msgid "Wait for USB mode switching to finish and disconnect USB storage before updating."
-msgstr ""
+msgstr "Aguarde o fim da troca de modo USB e desconecte o armazenamento USB antes de atualizar."
 
 msgid "Preparing update"
 msgstr "Preparando atualização"
@@ -2366,32 +2313,30 @@ msgid ""
 "\n"
 "Updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Instalar a atualização do player pelo cartão SD?\n"
+"\n"
+"Atualiza o player e reinicia o aparelho. Firmware, fontes e arte permanecem inalterados."
 
-#, fuzzy
 msgid "Could not start the player update"
-msgstr "Não foi possível iniciar a busca por atualização."
+msgstr "Não foi possível iniciar a atualização do player"
 
-#, fuzzy
 msgid "Updating player"
-msgstr "Atualizando plugins"
+msgstr "Atualizando o player"
 
-#, fuzzy
 msgid "Starting update"
-msgstr "Preparando atualização"
+msgstr "Iniciando a atualização"
 
 msgid "Connect to Wi-Fi before downloading the player update"
-msgstr ""
+msgstr "Conecte-se ao Wi-Fi antes de baixar a atualização do player"
 
 msgid "Starting download"
-msgstr ""
+msgstr "Iniciando o download"
 
-#, fuzzy
 msgid "Could not start the player update check"
-msgstr "Não foi possível iniciar a busca por atualização."
+msgstr "Não foi possível iniciar a busca de atualizações do player"
 
-#, fuzzy
 msgid "Checking for player updates"
-msgstr "Buscando atualizações"
+msgstr "Buscando atualizações do player"
 
 msgid "Check for online update"
 msgstr "Buscar atualização online"
@@ -2402,28 +2347,23 @@ msgstr "Instalar do cartão SD"
 msgid "Update the Player only, retaining current drivers, kernel and bootloader."
 msgstr "Atualiza apenas o player, mantendo os drivers, o kernel e o bootloader atuais."
 
-#, fuzzy
 msgid "Download & Install"
-msgstr "Falha no download"
+msgstr "Baixar e instalar"
 
-#, fuzzy
 msgid "Install & Restart"
 msgstr "Instalar e reiniciar"
 
-#, fuzzy
 msgid "Downloading player update"
-msgstr "Baixando atualização"
+msgstr "Baixando a atualização do player"
 
-#, fuzzy
 msgid "Installing player update"
-msgstr "Instalando plugin"
+msgstr "Instalando a atualização do player"
 
-#, fuzzy
 msgid "Checking the latest release"
-msgstr "Verificando o arquivo no cartão SD"
+msgstr "Verificando a versão mais recente"
 
 msgid "Replacing the player and preparing to restart"
-msgstr ""
+msgstr "Substituindo o player e preparando a reinicialização"
 
 #, c-format
 msgid ""
@@ -2432,13 +2372,16 @@ msgid ""
 "\n"
 "Download and install? This updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Versão do player disponível: %s.\n"
+"Instalada: %s\n"
+"\n"
+"Baixar e instalar? Isso atualiza o player e reinicia o aparelho. Firmware, fontes e arte permanecem inalterados."
 
 msgid "Player updated successfully"
-msgstr ""
+msgstr "Player atualizado com sucesso"
 
-#, fuzzy
 msgid "Player update failed"
-msgstr "Erro de reprodução: falha na saída de áudio"
+msgstr "Falha na atualização do player"
 
 #, c-format
 msgid ""
@@ -2450,9 +2393,8 @@ msgstr ""
 "\n"
 "Instalar agora? O aparelho reinicia na recuperação para gravá-la. Não o desligue até ele reiniciar."
 
-#, fuzzy
 msgid "Cannot read the update record on the SD card. Check the card and try again."
-msgstr "Não foi possível ler o registro da atualização no cartão SD. Verifique o cartão e tente de novo."
+msgstr "Não foi possível ler o registro de atualização no cartão SD. Verifique o cartão e tente novamente."
 
 msgid "The previous download is incomplete or invalid. Remove the update file from the SD card, tap Install from SD card, then copy the new file and try again."
 msgstr "O download anterior está incompleto ou inválido. Remova o arquivo de atualização do cartão SD, toque em Instalar do cartão SD, depois copie o novo arquivo e tente novamente."
@@ -2466,9 +2408,8 @@ msgstr "Não foi possível iniciar o download"
 msgid "Downloading update"
 msgstr "Baixando atualização"
 
-#, fuzzy
 msgid "Update saved. Connect to Wi-Fi, then install from Firmware Update > Install from SD card."
-msgstr "Atualização salva. Instale quando quiser em Atualização de firmware > Instalar do cartão SD."
+msgstr "Atualização salva. Conecte-se ao Wi-Fi e depois instale em Atualização de firmware > Instalar do cartão SD."
 
 msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
 msgstr "Atualiza todo o CompásOS. O firmware contém bootloader, player, kernel e drivers."
@@ -2480,13 +2421,13 @@ msgid "Install & Reboot"
 msgstr "Instalar e reiniciar"
 
 msgid "Preparing and verifying recovery mode"
-msgstr ""
+msgstr "Preparando e verificando o modo de recuperação"
 
 msgid "Saving data before reboot"
-msgstr ""
+msgstr "Salvando dados antes de reiniciar"
 
 msgid "Restarting into recovery. Do not turn off the player."
-msgstr ""
+msgstr "Reiniciando em recuperação. Não desligue o player."
 
 #, c-format
 msgid ""
@@ -2512,15 +2453,14 @@ msgstr ""
 "\n"
 "Baixar e reinstalar mesmo assim? Isso pode demorar."
 
-#, fuzzy
 msgid "Create a plugin"
-msgstr "Escolher plugins"
+msgstr "Criar um plugin"
 
 msgid "Create a theme"
-msgstr ""
+msgstr "Criar um tema"
 
 msgid "Creator guides"
-msgstr ""
+msgstr "Guias para criadores"
 
 msgid "Version"
 msgstr "Versão"
@@ -2549,32 +2489,33 @@ msgstr "Apoiar o Compás"
 
 msgid "Scan with your phone to support Compás Player on Ko-fi"
 msgstr "Escaneie com o celular para apoiar o Compás Player no Ko-fi"
+
 msgid "Scan for the full guide"
-msgstr ""
+msgstr "Escaneie para ver o guia completo"
 
 msgid "github.com/Starnished66/compas-player"
-msgstr ""
+msgstr "github.com/Starnished66/compas-player"
 
 msgid "Guide: docs/development/CREATING.md"
-msgstr ""
+msgstr "Guia: docs/development/CREATING.md"
 
 msgid "Write a Lua plugin on your computer. Copy its .lua file to the .plugins folder on your SD card."
-msgstr ""
+msgstr "Escreva um plugin Lua no computador. Copie o arquivo .lua para a pasta .plugins do cartão SD."
 
 msgid "Open More > Plugins > Refresh Plugins. Scan for a working example and the full API guide."
-msgstr ""
+msgstr "Abra Mais > Plugins > Atualizar plugins. Escaneie para ver um exemplo funcional e o guia completo da API."
 
 msgid "Edit a .theme text file on your computer. Copy it to the Themes folder on your SD card, then select it in More > Themes."
-msgstr ""
+msgstr "Edite um arquivo de texto .theme no computador. Copie-o para a pasta Themes do cartão SD e selecione-o em Mais > Temas."
 
 msgid "Scan for a starter theme and instructions. To redesign the player screen, see the XML layout guide linked there."
-msgstr ""
+msgstr "Escaneie para ver um tema inicial e instruções. Para redesenhar a tela do player, consulte o guia de layouts XML indicado lá."
 
 msgid "Compás Player"
 msgstr "Compás Player"
 
 msgid "Create plugins & themes"
-msgstr ""
+msgstr "Criar plugins e temas"
 
 msgid "Developer Options"
 msgstr "Opções do desenvolvedor"
@@ -2592,7 +2533,7 @@ msgid "Enable debug logging"
 msgstr "Ativar log de depuração"
 
 msgid "Reboot to bootloader"
-msgstr ""
+msgstr "Reiniciar no bootloader"
 
 msgid "Custom color"
 msgstr "Cor personalizada"
@@ -2675,12 +2616,11 @@ msgstr "Volume inicial"
 msgid "Launch at a fixed volume"
 msgstr "Iniciar com volume fixo"
 
-#, fuzzy
 msgid "Max Volume"
-msgstr "Volume inicial"
+msgstr "Volume máximo"
 
 msgid "Limits the player volume, including buttons, remote controls and plugins."
-msgstr ""
+msgstr "Limita o volume do player, incluindo botões, controles remotos e plugins."
 
 msgid "Car Mode is disabled."
 msgstr "O modo carro está desativado."
@@ -2806,9 +2746,8 @@ msgstr "Reprodução e controles"
 msgid "Equalizer"
 msgstr "Equalizador"
 
-#, fuzzy
 msgid "Crossfeed"
-msgstr "Crossfade"
+msgstr "Crossfeed"
 
 msgid "Power"
 msgstr "Energia"
@@ -2816,9 +2755,8 @@ msgstr "Energia"
 msgid "Play/Pause"
 msgstr "Tocar/Pausar"
 
-#, fuzzy
 msgid "Next Track"
-msgstr "Por faixa"
+msgstr "Próxima faixa"
 
 msgid "Previous Track"
 msgstr "Faixa anterior"
@@ -2961,54 +2899,47 @@ msgstr "Controle deslizante de volume"
 msgid "Reorder Items"
 msgstr "Reordenar itens"
 
-#, fuzzy
 msgid "Volume"
-msgstr "Aumentar volume"
+msgstr "Volume"
 
 msgid "Clock"
 msgstr "Relógio"
 
 msgid "Wired Headphones"
-msgstr ""
+msgstr "Fones com fio"
 
-#, fuzzy
 msgid "Bluetooth Audio (A2DP)"
-msgstr "Bluetooth desligado"
+msgstr "Áudio Bluetooth (A2DP)"
 
-#, fuzzy
 msgid "USB Audio"
-msgstr "Áudio"
+msgstr "Áudio USB"
 
-#, fuzzy
 msgid "Playback Status"
-msgstr "Reprodução"
+msgstr "Status da reprodução"
 
-#, fuzzy
 msgid "Bluetooth Codec"
-msgstr "Modo DAC Bluetooth"
+msgstr "Codec Bluetooth"
 
-#, fuzzy
 msgid "Battery Icon"
-msgstr "Porcentagem da bateria"
+msgstr "Ícone da bateria"
 
 msgid "Left"
-msgstr ""
+msgstr "Esquerda"
 
 msgid "Center"
-msgstr ""
+msgstr "Centro"
 
 msgid "Right"
-msgstr ""
+msgstr "Direita"
 
-#, fuzzy
 msgid "Clock Position"
-msgstr "Posição"
+msgstr "Posição do relógio"
 
 msgid "Battery Percentage"
 msgstr "Porcentagem da bateria"
 
 msgid "Top Bar"
-msgstr ""
+msgstr "Barra superior"
 
 msgid "Artist Images"
 msgstr "Imagens de artistas"
@@ -3059,6 +2990,8 @@ msgid ""
 "Disable charging\n"
 "in USB DAC mode"
 msgstr ""
+"Desativar o carregamento\n"
+"no modo DAC USB"
 
 msgid "Charging"
 msgstr "Carregamento"
@@ -3093,9 +3026,8 @@ msgstr "Manutenção"
 msgid "Firmware Update"
 msgstr "Atualização de firmware"
 
-#, fuzzy
 msgid "Player Update"
-msgstr "Layout do player"
+msgstr "Atualização do player"
 
 msgid "Plugins & Layouts"
 msgstr "Plugins e layouts"
@@ -3241,9 +3173,8 @@ msgstr ""
 msgid "Enable band"
 msgstr "Ativar banda"
 
-#, fuzzy
 msgid "Crossfeed angle"
-msgstr "Crossfade"
+msgstr "Ângulo do crossfeed"
 
 msgid ""
 "No delay\n"
@@ -3252,9 +3183,14 @@ msgid ""
 "60°\n"
 "90°"
 msgstr ""
+"Sem atraso\n"
+"30°\n"
+"45°\n"
+"60°\n"
+"90°"
 
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
-msgstr ""
+msgstr "O crossfeed mistura um sinal filtrado do canal oposto e funciona independentemente do PEQ. Com Sem atraso, sinais idênticos nos canais esquerdo e direito são pouco afetados."
 
 msgid "PEQ"
 msgstr "PEQ"
@@ -3409,15 +3345,14 @@ msgstr "Gerencie os plugins depois em Configurações > Sistema > Gerenciador de
 msgid "Plugin setup needs attention"
 msgstr "A configuração de plugins precisa de atenção"
 
-#, fuzzy
 msgid "Could not replace plugin files."
-msgstr "Não foi possível iniciar a substituição dos arquivos do plugin."
+msgstr "Não foi possível substituir os arquivos do plugin."
 
 msgid "Could not start refreshing the plugin catalog."
 msgstr "Não foi possível iniciar a atualização do catálogo de plugins."
 
 msgid "AM"
-msgstr ""
+msgstr "AM"
 
 msgid "USB audio device detected"
 msgstr "Dispositivo de áudio USB detectado"
@@ -3445,7 +3380,7 @@ msgid "RC"
 msgstr "RC"
 
 msgid "PM"
-msgstr ""
+msgstr "PM"
 
 msgid "Downloading"
 msgstr "Baixando"
@@ -3770,7 +3705,7 @@ msgstr "Leitor TXT"
 
 #: src/ui/settings/gui_settings.c
 msgid "Keep Lyrics Screen On"
-msgstr ""
+msgstr "Manter a tela de letras ligada"
 
 msgid "PCM"
 msgstr "PCM"
@@ -3880,158 +3815,3 @@ msgstr "Unir álbuns sem artista do álbum"
 
 msgid "Could not open this image"
 msgstr "Não foi possível abrir esta imagem"
-
-#~ msgid "Saved games stay on the SD card."
-#~ msgstr "Os jogos salvos ficam no cartão SD."
-
-#~ msgid "Parametric EQ"
-#~ msgstr "EQ paramétrico"
-
-#~ msgid "Library migration pending. Favourites and play history will be kept"
-#~ msgstr "Migração da biblioteca pendente. Favoritos e histórico serão mantidos"
-
-#~ msgid ""
-#~ "Migrating\n"
-#~ "music database..."
-#~ msgstr ""
-#~ "Migrando\n"
-#~ "banco de dados de música..."
-
-#~ msgid "Preparing database migration..."
-#~ msgstr "Preparando migração do banco de dados..."
-
-#~ msgid "Library migration failed. Old library intact. Use Settings > Update Music Database to retry"
-#~ msgstr "Falha na migração da biblioteca. A biblioteca antiga está intacta. Use Configurações > Atualizar banco de dados de música para tentar de novo"
-
-#~ msgid "Library migrated. Old database cleanup will retry"
-#~ msgstr "Biblioteca migrada. A limpeza do banco antigo será tentada de novo"
-
-#~ msgid "Library migrated. Favourites and play history kept"
-#~ msgstr "Biblioteca migrada. Favoritos e histórico mantidos"
-
-#~ msgid "Load covers during playback (Experimental)"
-#~ msgstr "Carregar capas durante a reprodução (Experimental)"
-
-#~ msgid "Albums (main list)"
-#~ msgstr "Álbuns (lista principal)"
-
-#~ msgid "Visible"
-#~ msgstr "Visível"
-
-#~ msgid "Move Up"
-#~ msgstr "Mover para cima"
-
-#~ msgid "Move Down"
-#~ msgstr "Mover para baixo"
-
-#~ msgid "Back"
-#~ msgstr "Voltar"
-
-#~ msgid "No .upt firmware file found on SD card"
-#~ msgstr "Nenhum arquivo de firmware .upt no cartão SD"
-
-#~ msgid "Download Themes"
-#~ msgstr "Baixar temas"
-
-#~ msgid "Add streaming services"
-#~ msgstr "Adicionar serviços de streaming"
-
-#~ msgid "Add book features"
-#~ msgstr "Adicionar recursos de livros"
-
-#~ msgid "Audiobooks"
-#~ msgstr "Audiolivros"
-
-#~ msgid "EPUB Reader"
-#~ msgstr "Leitor de EPUB"
-
-#~ msgid "Podcasts"
-#~ msgstr "Podcasts"
-
-#~ msgid "Net Radio"
-#~ msgstr "Rádio na Internet"
-
-#~ msgid "Last.fm Scrobbler"
-#~ msgstr "Scrobbler do Last.fm"
-
-#, fuzzy
-#~ msgid "Plugin is unavailable"
-#~ msgstr "O plugin não está disponível no catálogo"
-
-#~ msgid "Find Last.fm scrobbling"
-#~ msgstr "Encontrar scrobbling do Last.fm"
-
-#~ msgid "More appearance options"
-#~ msgstr "Mais opções de aparência"
-
-#~ msgid "DAC"
-#~ msgstr "DAC"
-
-#~ msgid "Find AutoEQ profiles"
-#~ msgstr "Encontrar perfis do AutoEQ"
-
-#~ msgid "Play/Pause + Previous Track (Double-Click)"
-#~ msgstr "Tocar/Pausar + Faixa anterior (clique duplo)"
-
-#~ msgid "Applies immediately"
-#~ msgstr "Aplica imediatamente"
-
-#~ msgid "Play/Pause Button"
-#~ msgstr "Botão Tocar/Pausar"
-
-#~ msgid "SD card checked"
-#~ msgstr "Cartão SD verificado"
-
-#~ msgid "LDAC in DAC mode (Experimental)"
-#~ msgstr "LDAC no modo DAC (Experimental)"
-
-#~ msgid "Scanning..."
-#~ msgstr "Buscando..."
-
-#, c-format
-#~ msgid "No weekly release has a %s image"
-#~ msgstr "Nenhuma versão semanal tem uma imagem %s"
-
-#~ msgid "Could not enter recovery. Restart the player and try again."
-#~ msgstr "Não foi possível entrar na recuperação. Reinicie o player e tente de novo."
-
-#, c-format
-#~ msgid "%s has local files that would be replaced."
-#~ msgstr "%s tem arquivos locais que serão substituídos."
-
-#~ msgid "Install selected plugins?"
-#~ msgstr "Instalar os plugins selecionados?"
-
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgid "Replace local plugin files?"
-#~ msgstr "Substituir os arquivos locais do plugin?"
-
-#~ msgid "Plugin selection could not be resumed."
-#~ msgstr "Não foi possível retomar a seleção de plugins."
-
-#~ msgid "A selected plugin is no longer available."
-#~ msgstr "Um plugin selecionado não está mais disponível."
-
-#~ msgid "Installation skipped. You can try it again later."
-#~ msgstr "Instalação ignorada. Você pode tentar novamente mais tarde."
-
-#~ msgid "Could not open plugin confirmation."
-#~ msgstr "Não foi possível abrir a confirmação dos plugins."
-
-#~ msgid "Your music, ready when you are."
-#~ msgstr "Sua música, pronta quando você estiver."
-
-#, fuzzy
-#~ msgid "Open plugin manager"
-#~ msgstr "Gerenciar plugins"
-
-#~ msgid "Finish setup"
-#~ msgstr "Concluir configuração"
-
-#~ msgid "The downloaded update record is invalid. Download the update again."
-#~ msgstr "A atualização baixada mudou no cartão SD e foi separada. Baixe de novo."
-
-#~ msgid "Buy Me a Coffee"
-#~ msgstr "Me pague um café"

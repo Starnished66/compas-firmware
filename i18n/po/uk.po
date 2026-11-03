@@ -131,68 +131,56 @@ msgstr "Неприпустимий шлях до оновлення."
 msgid "Could not start the update."
 msgstr "Не вдалося розпочати оновлення."
 
-#, fuzzy
 msgid "Update failed."
-msgstr "Доступне оновлення"
+msgstr "Помилка оновлення."
 
 msgid "Could not prepare secure update storage."
-msgstr ""
+msgstr "Не вдалося підготувати захищене сховище оновлення."
 
 msgid "Could not download the release checksums."
 msgstr "Не вдалося завантажити контрольні суми випуску."
 
 msgid "The release does not provide a valid player checksum."
-msgstr ""
+msgstr "Випуск не містить дійсної контрольної суми плеєра."
 
-#, fuzzy
 msgid "The release checksum does not match the published asset digest."
-msgstr "Для образу цього пристрою у випуску немає контрольної суми."
+msgstr "Контрольна сума випуску не збігається з опублікованим дайджестом файлу."
 
-#, fuzzy
 msgid "The latest player release changed. Check again."
-msgstr "Вибраний файл оновлення змінився. Виберіть його ще раз."
+msgstr "Останній випуск плеєра змінився. Перевірте ще раз."
 
 msgid "The player image exceeds the safe size limit."
-msgstr ""
+msgstr "Образ плеєра перевищує безпечне обмеження розміру."
 
-#, fuzzy
 msgid "Not enough internal storage for the player update."
-msgstr "На SD-картці недостатньо вільного місця для оновлення."
+msgstr "Недостатньо внутрішнього сховища для оновлення плеєра."
 
-#, fuzzy
 msgid "The player download did not complete."
-msgstr "Завантаження не завершено. Перевірте Wi-Fi та спробуйте ще раз."
+msgstr "Завантаження плеєра не завершено."
 
-#, fuzzy
 msgid "The downloaded player failed SHA-256 verification."
-msgstr "Завантажений образ не пройшов перевірку й був видалений."
+msgstr "Завантажений плеєр не пройшов перевірку SHA-256."
 
 msgid "Place a valid player executable at SD/.compas/compas_player."
-msgstr ""
+msgstr "Помістіть дійсний виконуваний файл плеєра в SD/.compas/compas_player."
 
-#, fuzzy
 msgid "Could not start the player update check."
-msgstr "Не вдалося розпочати перевірку оновлень."
+msgstr "Не вдалося розпочати перевірку оновлень плеєра."
 
-#, fuzzy
 msgid "Another update is already active."
-msgstr "Оновлення вже виконується."
+msgstr "Інше оновлення вже виконується."
 
-#, fuzzy
 msgid "Check for a player update first."
-msgstr "Перевірити оновлення онлайн"
+msgstr "Спочатку перевірте наявність оновлення плеєра."
 
-#, fuzzy
 msgid "Not enough memory."
-msgstr "Недостатньо пам’яті для з’єднання"
+msgstr "Недостатньо пам’яті."
 
-#, fuzzy
 msgid "Could not start the player download."
-msgstr "Не вдалося розпочати завантаження."
+msgstr "Не вдалося розпочати завантаження плеєра."
 
-#, fuzzy
 msgid "Could not start the SD player update."
-msgstr "Не вдалося розпочати оновлення плагіна."
+msgstr "Не вдалося розпочати оновлення плеєра з SD-картки."
 
 msgid "Screenshots unavailable"
 msgstr "Знімки екрана недоступні"
@@ -624,7 +612,7 @@ msgid "Remove"
 msgstr "Видалити"
 
 msgid "Bundled games and their saves will be removed. Games in SD/Games are kept."
-msgstr ""
+msgstr "Вбудовані ігри та їхні збереження буде видалено. Ігри в SD/Games залишаться."
 
 msgid "No description"
 msgstr "Немає опису"
@@ -642,7 +630,7 @@ msgid "Size: %s"
 msgstr "Розмір: %s"
 
 msgid "Updating replaces bundled games and their saves. Games in SD/Games are kept."
-msgstr ""
+msgstr "Оновлення замінить вбудовані ігри та їхні збереження. Ігри в SD/Games залишаться."
 
 msgid "Update"
 msgstr "Оновити"
@@ -1370,9 +1358,8 @@ msgstr "Усі дані на картці буде видалено без мо�
 msgid "Format"
 msgstr "Форматувати"
 
-#, fuzzy
 msgid "Could not restart into the boot selector"
-msgstr "Не вдалося створити папку"
+msgstr "Не вдалося перезавантажити в селектор завантаження"
 
 msgid "An update is in progress. Please wait."
 msgstr "Виконується оновлення. Зачекайте."
@@ -1799,16 +1786,14 @@ msgstr "Не вдалося перемкнутися на %s"
 msgid "USB Mode"
 msgstr "Режим USB"
 
-#, fuzzy
 msgid "Failed to update USB charging"
-msgstr "Не вдалося видалити профіль"
+msgstr "Не вдалося оновити заряджання через USB"
 
 msgid "USB charging setting is busy"
-msgstr ""
+msgstr "Налаштування заряджання USB зайняте"
 
-#, fuzzy
 msgid "Could not start USB charging update"
-msgstr "Не вдалося розпочати оновлення плагіна."
+msgstr "Не вдалося розпочати оновлення заряджання через USB"
 
 msgid "Leave USB DAC mode?"
 msgstr "Вийти з режиму USB DAC?"
@@ -2301,32 +2286,30 @@ msgid ""
 "\n"
 "Updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Установити оновлення плеєра з SD-картки?\n"
+"\n"
+"Оновлює плеєр і перезавантажує пристрій. Прошивка, шрифти й ілюстрації не змінюються."
 
-#, fuzzy
 msgid "Could not start the player update"
-msgstr "Не вдалося розпочати оновлення."
+msgstr "Не вдалося розпочати оновлення плеєра"
 
-#, fuzzy
 msgid "Updating player"
-msgstr "Оновлення плагінів"
+msgstr "Оновлення плеєра"
 
-#, fuzzy
 msgid "Starting update"
-msgstr "Підготовка оновлення"
+msgstr "Запуск оновлення"
 
 msgid "Connect to Wi-Fi before downloading the player update"
-msgstr ""
+msgstr "Під’єднайтеся до Wi-Fi перед завантаженням оновлення плеєра"
 
 msgid "Starting download"
-msgstr ""
+msgstr "Запуск завантаження"
 
-#, fuzzy
 msgid "Could not start the player update check"
-msgstr "Не вдалося розпочати перевірку оновлень."
+msgstr "Не вдалося розпочати перевірку оновлень плеєра"
 
-#, fuzzy
 msgid "Checking for player updates"
-msgstr "Перевірка оновлень"
+msgstr "Перевірка оновлень плеєра"
 
 msgid "Check for online update"
 msgstr "Перевірити оновлення онлайн"
@@ -2337,28 +2320,23 @@ msgstr "Установити із SD-картки"
 msgid "Update the Player only, retaining current drivers, kernel and bootloader."
 msgstr "Оновлює лише плеєр, зберігаючи поточні драйвери, ядро та завантажувач."
 
-#, fuzzy
 msgid "Download & Install"
-msgstr "Помилка завантаження"
+msgstr "Завантажити й установити"
 
-#, fuzzy
 msgid "Install & Restart"
 msgstr "Установити й перезавантажити"
 
-#, fuzzy
 msgid "Downloading player update"
-msgstr "Завантаження оновлення"
+msgstr "Завантаження оновлення плеєра"
 
-#, fuzzy
 msgid "Installing player update"
-msgstr "Встановлення плагіна"
+msgstr "Встановлення оновлення плеєра"
 
-#, fuzzy
 msgid "Checking the latest release"
-msgstr "Перевірка файла на SD-картці"
+msgstr "Перевірка останнього випуску"
 
 msgid "Replacing the player and preparing to restart"
-msgstr ""
+msgstr "Заміна плеєра та підготовка до перезавантаження"
 
 #, c-format
 msgid ""
@@ -2367,13 +2345,16 @@ msgid ""
 "\n"
 "Download and install? This updates the player and restarts the device. Firmware, fonts, and artwork are unchanged."
 msgstr ""
+"Доступний випуск плеєра: %s.\n"
+"Встановлено: %s\n"
+"\n"
+"Завантажити й установити? Це оновить плеєр і перезавантажить пристрій. Прошивка, шрифти й ілюстрації не змінюються."
 
 msgid "Player updated successfully"
-msgstr ""
+msgstr "Плеєр успішно оновлено"
 
-#, fuzzy
 msgid "Player update failed"
-msgstr "Помилка відтворення: не вдалося вивести звук"
+msgstr "Не вдалося оновити плеєр"
 
 #, c-format
 msgid ""
@@ -2524,7 +2505,7 @@ msgid "Enable debug logging"
 msgstr "Увімкнути журнал налагодження"
 
 msgid "Reboot to bootloader"
-msgstr ""
+msgstr "Перезавантажити в завантажувач"
 
 msgid "Custom color"
 msgstr "Власний колір"
@@ -2737,9 +2718,8 @@ msgstr "Відтворення та керування"
 msgid "Equalizer"
 msgstr "Еквалайзер"
 
-#, fuzzy
 msgid "Crossfeed"
-msgstr "Кросфід: вимкнено"
+msgstr "Кросфід"
 
 msgid "Power"
 msgstr "Живлення"
@@ -2891,54 +2871,47 @@ msgstr "Повзунок гучності"
 msgid "Reorder Items"
 msgstr "Змінити порядок"
 
-#, fuzzy
 msgid "Volume"
-msgstr "Збільшити гучність"
+msgstr "Гучність"
 
 msgid "Clock"
 msgstr "Годинник"
 
 msgid "Wired Headphones"
-msgstr ""
+msgstr "Дротові навушники"
 
-#, fuzzy
 msgid "Bluetooth Audio (A2DP)"
-msgstr "Bluetooth вимкнено"
+msgstr "Аудіо Bluetooth (A2DP)"
 
-#, fuzzy
 msgid "USB Audio"
-msgstr "Аудіо"
+msgstr "Аудіо USB"
 
-#, fuzzy
 msgid "Playback Status"
-msgstr "Відтворення"
+msgstr "Стан відтворення"
 
-#, fuzzy
 msgid "Bluetooth Codec"
-msgstr "Режим Bluetooth DAC"
+msgstr "Кодек Bluetooth"
 
-#, fuzzy
 msgid "Battery Icon"
-msgstr "Відсоток заряду"
+msgstr "Піктограма заряду"
 
 msgid "Left"
-msgstr ""
+msgstr "Ліворуч"
 
 msgid "Center"
-msgstr ""
+msgstr "Центр"
 
 msgid "Right"
-msgstr ""
+msgstr "Праворуч"
 
-#, fuzzy
 msgid "Clock Position"
-msgstr "Позиція"
+msgstr "Позиція годинника"
 
 msgid "Battery Percentage"
 msgstr "Відсоток заряду"
 
 msgid "Top Bar"
-msgstr ""
+msgstr "Верхня панель"
 
 msgid "Artist Images"
 msgstr "Зображення виконавців"
@@ -2989,6 +2962,8 @@ msgid ""
 "Disable charging\n"
 "in USB DAC mode"
 msgstr ""
+"Вимкнути заряджання\n"
+"в режимі USB DAC"
 
 msgid "Charging"
 msgstr "Заряджання"
@@ -3023,9 +2998,8 @@ msgstr "Обслуговування"
 msgid "Firmware Update"
 msgstr "Оновлення прошивки"
 
-#, fuzzy
 msgid "Player Update"
-msgstr "Макет плеєра"
+msgstr "Оновлення плеєра"
 
 msgid "Plugins & Layouts"
 msgstr "Плагіни та макети"
@@ -3171,9 +3145,8 @@ msgstr ""
 msgid "Enable band"
 msgstr "Увімкнути смугу"
 
-#, fuzzy
 msgid "Crossfeed angle"
-msgstr "Кросфід: вимкнено"
+msgstr "Кут кросфіду"
 
 msgid ""
 "No delay\n"
@@ -3182,9 +3155,14 @@ msgid ""
 "60°\n"
 "90°"
 msgstr ""
+"Без затримки\n"
+"30°\n"
+"45°\n"
+"60°\n"
+"90°"
 
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
-msgstr ""
+msgstr "Кросфід підмішує відфільтрований сигнал протилежного каналу та працює незалежно від PEQ. Із варіантом «Без затримки» ідентичні сигнали лівого й правого каналів змінюються дуже мало."
 
 msgid "PEQ"
 msgstr "PEQ"
@@ -3699,7 +3677,7 @@ msgstr "Перегляд TXT"
 
 #: src/ui/settings/gui_settings.c
 msgid "Keep Lyrics Screen On"
-msgstr ""
+msgstr "Не вимикати екран на текстах пісень"
 
 msgid "PCM"
 msgstr "PCM"
@@ -3809,55 +3787,3 @@ msgstr "Об'єднувати альбоми без виконавця альб�
 
 msgid "Could not open this image"
 msgstr "Не вдалося відкрити це зображення"
-
-#~ msgid "Saved games stay on the SD card."
-#~ msgstr "Збереження залишаються на SD-картці."
-
-#~ msgid "Parametric EQ"
-#~ msgstr "Параметричний еквалайзер"
-
-#~ msgid "Library migration pending. Favourites and play history will be kept"
-#~ msgstr "Очікується перенесення бібліотеки. Обране та історію відтворення буде збережено"
-
-#~ msgid ""
-#~ "Migrating\n"
-#~ "music database..."
-#~ msgstr ""
-#~ "Перенесення\n"
-#~ "музичної бази даних..."
-
-#~ msgid "Preparing database migration..."
-#~ msgstr "Підготовка до перенесення бази даних..."
-
-#~ msgid "Library migration failed. Old library intact. Use Settings > Update Music Database to retry"
-#~ msgstr "Не вдалося перенести бібліотеку. Стара бібліотека збережена. Щоб повторити, виберіть Налаштування > Оновити музичну базу даних"
-
-#~ msgid "Library migrated. Old database cleanup will retry"
-#~ msgstr "Бібліотеку перенесено. Очищення старої бази буде повторено"
-
-#~ msgid "Library migrated. Favourites and play history kept"
-#~ msgstr "Бібліотеку перенесено. Обране та історію відтворення збережено"
-
-#~ msgid "Load covers during playback (Experimental)"
-#~ msgstr "Завантажувати обкладинки під час відтворення (експериментально)"
-
-#~ msgid "Albums (main list)"
-#~ msgstr "Альбоми (основний список)"
-
-#~ msgid "Visible"
-#~ msgstr "Показувати"
-
-#~ msgid "Move Up"
-#~ msgstr "Перемістити вгору"
-
-#~ msgid "Move Down"
-#~ msgstr "Перемістити вниз"
-
-#~ msgid "Back"
-#~ msgstr "Назад"
-
-#~ msgid "The downloaded update record is invalid. Download the update again."
-#~ msgstr "Запис завантаженого оновлення недійсний. Завантажте оновлення ще раз."
-
-#~ msgid "Buy Me a Coffee"
-#~ msgstr "Buy Me a Coffee"

@@ -19,3 +19,9 @@ src/ui/settings/setup/gui_setup.c::Aa
 src/ui/appearance/fonts/gui_custom_font.c::Default
 src/ui/appearance/fonts/tests/gui_custom_font_spec.c::Default
 src/ui/settings/controls/tests/gui_shell_settings_spec.c::test category entry
+# Font-height probe text, never shown.
+src/ui/library/browse/gui_library_group_songs.c::Ag\nFLAC
+src/ui/library/browse/gui_library_group_songs.c::Ag
+# Remote Control API error strings (English API, like the file's other errors).
+src/ui/library/browse/gui_library_collections.c::Unable to start collection playback
+src/ui/library/browse/gui_library_collections.c::Playback request was cancelled
