@@ -3776,3 +3776,109 @@ msgstr "Albums zonder albumartiest samenvoegen"
 
 msgid "Could not open this image"
 msgstr "Kan deze afbeelding niet openen"
+
+msgid "Album Artist (A–Z)"
+msgstr "Albumartiest (A–Z)"
+
+msgid "Buttons locked"
+msgstr "Knoppen vergrendeld"
+
+msgid "Buttons unlocked"
+msgstr "Knoppen ontgrendeld"
+
+msgid "Cannot remove entries"
+msgstr "Kan items niet verwijderen"
+
+msgid "Cannot select playlist entries"
+msgstr "Kan afspeellijstitems niet selecteren"
+
+msgid "DRE"
+msgstr "DRE"
+
+msgid "DRE (Dynamic Range Enhancement) affects local PCM and DSD playback."
+msgstr "DRE (Dynamic Range Enhancement) werkt op lokale PCM- en DSD-weergave."
+
+msgid "Fast roll-off, low latency"
+msgstr "Snelle roll-off, lage latentie"
+
+msgid "Fast roll-off, phase compensated"
+msgstr "Snelle roll-off, fasegecompenseerd"
+
+msgid "Slow roll-off, low latency"
+msgstr "Langzame roll-off, lage latentie"
+
+msgid "Slow roll-off, phase compensated"
+msgstr "Langzame roll-off, fasegecompenseerd"
+
+msgid "Filters and NOS affect local PCM playback. NOS bypasses interpolation and ignores the selected filter. Changes apply when playback restarts."
+msgstr "Filters en NOS werken op lokale PCM-weergave. NOS slaat interpolatie over en negeert het gekozen filter. Wijzigingen gelden zodra de weergave opnieuw start."
+
+msgid "Local DAC Settings"
+msgstr "Lokale DAC-instellingen"
+
+msgid "Music menu"
+msgstr "Muziekmenu"
+
+msgid "NOS Mode"
+msgstr "NOS-modus"
+
+msgid "Out of memory"
+msgstr "Geheugen vol"
+
+#, c-format
+msgid "Select all (%d)"
+msgstr "Alles selecteren (%d)"
+
+msgid "Power + Volume Up to unlock"
+msgstr "Aan/uit + Volume omhoog om te ontgrendelen"
+
+msgid "Hold Power + turn volume up to unlock"
+msgstr "Houd Aan/uit ingedrukt en verhoog het volume om te ontgrendelen"
+
+msgid "Player image validation failed (ELF mismatch)."
+msgstr "Validatie van de spelerimage is mislukt (ELF komt niet overeen)."
+
+msgid "This player image is for a different device model or is missing its model marker."
+msgstr "Deze spelerimage is voor een ander apparaatmodel of mist de modelmarkering."
+
+msgid "This player is older than the installed firmware."
+msgstr "Deze speler is ouder dan de geïnstalleerde firmware."
+
+msgid "Invalid player image or checksum."
+msgstr "Ongeldige spelerimage of controlesom."
+
+msgid "Player image validation failed (ELF or SHA-256 mismatch)."
+msgstr "Validatie van de spelerimage is mislukt (ELF of SHA-256 komt niet overeen)."
+
+msgid "Internal storage is unavailable."
+msgstr "Interne opslag is niet beschikbaar."
+
+msgid "Installed player path is unsafe."
+msgstr "Het pad van de geïnstalleerde speler is onveilig."
+
+msgid "Player update temporary is unsafe."
+msgstr "Het tijdelijke bestand van de spelerupdate is onveilig."
+
+msgid "Cannot inspect player update storage."
+msgstr "Kan de opslag voor de spelerupdate niet controleren."
+
+msgid "Could not prepare the player update."
+msgstr "Kan de spelerupdate niet voorbereiden."
+
+msgid "Player copy could not be verified."
+msgstr "De kopie van de speler kon niet worden geverifieerd."
+
+msgid "Could not safely archive the SD player update."
+msgstr "Kan de SD-spelerupdate niet veilig archiveren."
+
+msgid "Player update could not be committed; the previous player remains installed."
+msgstr "De spelerupdate kon niet worden doorgevoerd; de vorige speler blijft geïnstalleerd."
+
+msgid "Repeat all"
+msgstr "Alles herhalen"
+
+msgid "Repeat one"
+msgstr "Eén nummer herhalen"
+
+msgid "Shuffle + repeat"
+msgstr "Willekeurig met herhaling"

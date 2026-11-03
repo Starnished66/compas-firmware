@@ -3462,3 +3462,186 @@ msgstr "Gộp album không có nghệ sĩ album"
 
 msgid "Could not open this image"
 msgstr "Không thể mở hình ảnh này"
+
+msgid "Album Artist (A–Z)"
+msgstr "Nghệ sĩ album (A–Z)"
+
+msgid "Buttons locked"
+msgstr "Đã khóa nút"
+
+msgid "Buttons unlocked"
+msgstr "Đã mở khóa nút"
+
+msgid "Cannot remove entries"
+msgstr "Không thể xóa các mục nhập"
+
+msgid "Cannot select playlist entries"
+msgstr "Không thể chọn các mục nhập của danh sách phát"
+
+msgid "DRE"
+msgstr "DRE"
+
+msgid "DRE (Dynamic Range Enhancement) affects local PCM and DSD playback."
+msgstr "DRE (Dynamic Range Enhancement) ảnh hưởng đến việc phát PCM và DSD cục bộ."
+
+msgid "Fast roll-off, low latency"
+msgstr "Roll-off nhanh, độ trễ thấp"
+
+msgid "Fast roll-off, phase compensated"
+msgstr "Roll-off nhanh, bù pha"
+
+msgid "Slow roll-off, low latency"
+msgstr "Roll-off chậm, độ trễ thấp"
+
+msgid "Slow roll-off, phase compensated"
+msgstr "Roll-off chậm, bù pha"
+
+msgid "Filters and NOS affect local PCM playback. NOS bypasses interpolation and ignores the selected filter. Changes apply when playback restarts."
+msgstr "Bộ lọc và NOS ảnh hưởng đến việc phát PCM cục bộ. NOS bỏ qua phép nội suy và bỏ qua bộ lọc đã chọn. Các thay đổi có hiệu lực khi phát lại được khởi động lại."
+
+msgid "Local DAC Settings"
+msgstr "Cài đặt DAC cục bộ"
+
+msgid "Music menu"
+msgstr "Menu Âm nhạc"
+
+msgid "NOS Mode"
+msgstr "Chế độ NOS"
+
+msgid "Out of memory"
+msgstr "Hết bộ nhớ"
+
+#, c-format
+msgid "Select all (%d)"
+msgstr "Chọn tất cả (%d)"
+
+msgid "Power + Volume Up to unlock"
+msgstr "Nguồn + Tăng âm lượng để mở khóa"
+
+msgid "Hold Power + turn volume up to unlock"
+msgstr "Giữ Nguồn và tăng âm lượng để mở khóa"
+
+msgid "Another app is waiting for approval."
+msgstr "Một ứng dụng khác đang chờ phê duyệt."
+
+msgid "Apps run on the player only."
+msgstr "Ứng dụng chỉ chạy trên máy phát."
+
+msgid "Audio is still active; cannot start the app."
+msgstr "Âm thanh vẫn đang hoạt động; không thể khởi chạy ứng dụng."
+
+msgid "Brightness"
+msgstr "Độ sáng"
+
+msgid "Check the SD card and disconnect USB storage before running apps."
+msgstr "Kiểm tra thẻ SD và ngắt bộ nhớ USB trước khi chạy ứng dụng."
+
+msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
+msgstr "Sao chép ứng dụng vào thư mục .apps trên thẻ SD, mỗi ứng dụng một thư mục có tệp app.json."
+
+msgid "Could not save the approval."
+msgstr "Không thể lưu phê duyệt."
+
+msgid "Could not start the app."
+msgstr "Không thể khởi chạy ứng dụng."
+
+msgid "External Apps"
+msgstr "Ứng dụng bên ngoài"
+
+msgid "External apps have full access to the player."
+msgstr "Ứng dụng bên ngoài có toàn quyền truy cập máy phát."
+
+msgid "Music scan started from the remote"
+msgstr "Đã bắt đầu quét nhạc từ điều khiển từ xa"
+
+msgid "No apps installed"
+msgstr "Chưa cài đặt ứng dụng nào"
+
+msgid "Play Mode"
+msgstr "Chế độ phát"
+
+msgid "Repeat All"
+msgstr "Lặp lại tất cả"
+
+msgid "Repeat One"
+msgstr "Lặp lại một bài"
+
+msgid "Run"
+msgstr "Chạy"
+
+#, c-format
+msgid "Run %s?"
+msgstr "Chạy %s?"
+
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "Quét bằng điện thoại để ủng hộ Compás Player trên Ko-fi"
+
+#, c-format
+msgid "%s changed from the remote"
+msgstr "%s đã được thay đổi từ điều khiển từ xa"
+
+msgid "Sequential"
+msgstr "Tuần tự"
+
+msgid "Settings changed from the remote"
+msgstr "Đã thay đổi cài đặt từ điều khiển từ xa"
+
+msgid "Shuffle once"
+msgstr "Phát ngẫu nhiên một lần"
+
+msgid "Shuffle with repeat"
+msgstr "Phát ngẫu nhiên có lặp lại"
+
+msgid "The app closed unexpectedly."
+msgstr "Ứng dụng đã đóng đột ngột."
+
+msgid "Turn off DAC mode to run apps."
+msgstr "Tắt chế độ DAC để chạy ứng dụng."
+
+msgid "Player image validation failed (ELF mismatch)."
+msgstr "Xác thực ảnh trình phát thất bại (ELF không khớp)."
+
+msgid "This player image is for a different device model or is missing its model marker."
+msgstr "Ảnh trình phát này dành cho kiểu thiết bị khác hoặc thiếu dấu hiệu kiểu máy."
+
+msgid "This player is older than the installed firmware."
+msgstr "Trình phát này cũ hơn firmware đã cài."
+
+msgid "Invalid player image or checksum."
+msgstr "Ảnh trình phát hoặc checksum không hợp lệ."
+
+msgid "Player image validation failed (ELF or SHA-256 mismatch)."
+msgstr "Xác thực ảnh trình phát thất bại (ELF hoặc SHA-256 không khớp)."
+
+msgid "Internal storage is unavailable."
+msgstr "Bộ nhớ trong không khả dụng."
+
+msgid "Installed player path is unsafe."
+msgstr "Đường dẫn trình phát đã cài không an toàn."
+
+msgid "Player update temporary is unsafe."
+msgstr "Tệp tạm của bản cập nhật trình phát không an toàn."
+
+msgid "Cannot inspect player update storage."
+msgstr "Không thể kiểm tra bộ nhớ của bản cập nhật trình phát."
+
+msgid "Could not prepare the player update."
+msgstr "Không thể chuẩn bị bản cập nhật trình phát."
+
+msgid "Player copy could not be verified."
+msgstr "Không thể xác minh bản sao trình phát."
+
+msgid "Could not safely archive the SD player update."
+msgstr "Không thể lưu trữ an toàn bản cập nhật trình phát từ thẻ SD."
+
+msgid "Player update could not be committed; the previous player remains installed."
+msgstr "Không thể hoàn tất bản cập nhật trình phát; trình phát trước đó vẫn được giữ lại."
+
+msgid "Repeat all"
+msgstr "Lặp lại tất cả"
+
+msgid "Repeat one"
+msgstr "Lặp lại một bài"
+
+msgid "Shuffle + repeat"
+msgstr "Phát ngẫu nhiên có lặp lại"

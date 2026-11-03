@@ -3806,3 +3806,109 @@ msgstr "Объединять альбомы без исполнителя аль
 
 msgid "Could not open this image"
 msgstr "Не удалось открыть это изображение"
+
+msgid "Album Artist (A–Z)"
+msgstr "Исполнитель альбома (А–Я)"
+
+msgid "Buttons locked"
+msgstr "Кнопки заблокированы"
+
+msgid "Buttons unlocked"
+msgstr "Кнопки разблокированы"
+
+msgid "Cannot remove entries"
+msgstr "Не удается удалить элементы"
+
+msgid "Cannot select playlist entries"
+msgstr "Не удается выбрать элементы плейлиста"
+
+msgid "DRE"
+msgstr "DRE"
+
+msgid "DRE (Dynamic Range Enhancement) affects local PCM and DSD playback."
+msgstr "DRE (Dynamic Range Enhancement) влияет на локальное воспроизведение PCM и DSD."
+
+msgid "Fast roll-off, low latency"
+msgstr "Быстрый спад, малая задержка"
+
+msgid "Fast roll-off, phase compensated"
+msgstr "Быстрый спад, с компенсацией фазы"
+
+msgid "Slow roll-off, low latency"
+msgstr "Медленный спад, малая задержка"
+
+msgid "Slow roll-off, phase compensated"
+msgstr "Медленный спад, с компенсацией фазы"
+
+msgid "Filters and NOS affect local PCM playback. NOS bypasses interpolation and ignores the selected filter. Changes apply when playback restarts."
+msgstr "Фильтры и NOS влияют на локальное воспроизведение PCM. NOS отключает интерполяцию и игнорирует выбранный фильтр. Изменения применяются при перезапуске воспроизведения."
+
+msgid "Local DAC Settings"
+msgstr "Настройки локального DAC"
+
+msgid "Music menu"
+msgstr "Меню «Музыка»"
+
+msgid "NOS Mode"
+msgstr "Режим NOS"
+
+msgid "Out of memory"
+msgstr "Недостаточно памяти"
+
+#, c-format
+msgid "Select all (%d)"
+msgstr "Выбрать все (%d)"
+
+msgid "Power + Volume Up to unlock"
+msgstr "Питание + Громкость вверх, чтобы разблокировать"
+
+msgid "Hold Power + turn volume up to unlock"
+msgstr "Удерживайте питание и увеличьте громкость, чтобы разблокировать"
+
+msgid "Player image validation failed (ELF mismatch)."
+msgstr "Не удалось проверить образ плеера (несовпадение ELF)."
+
+msgid "This player image is for a different device model or is missing its model marker."
+msgstr "Образ плеера для другой модели устройства или без метки модели."
+
+msgid "This player is older than the installed firmware."
+msgstr "Этот плеер старше установленной прошивки."
+
+msgid "Invalid player image or checksum."
+msgstr "Недопустимый образ плеера или контрольная сумма."
+
+msgid "Player image validation failed (ELF or SHA-256 mismatch)."
+msgstr "Не удалось проверить образ плеера (несовпадение ELF или SHA-256)."
+
+msgid "Internal storage is unavailable."
+msgstr "Внутренняя память недоступна."
+
+msgid "Installed player path is unsafe."
+msgstr "Путь установленного плеера небезопасен."
+
+msgid "Player update temporary is unsafe."
+msgstr "Временный файл обновления плеера небезопасен."
+
+msgid "Cannot inspect player update storage."
+msgstr "Не удаётся проверить хранилище обновления плеера."
+
+msgid "Could not prepare the player update."
+msgstr "Не удалось подготовить обновление плеера."
+
+msgid "Player copy could not be verified."
+msgstr "Не удалось проверить копию плеера."
+
+msgid "Could not safely archive the SD player update."
+msgstr "Не удалось безопасно архивировать обновление плеера с SD."
+
+msgid "Player update could not be committed; the previous player remains installed."
+msgstr "Не удалось зафиксировать обновление плеера; предыдущий плеер остаётся установленным."
+
+msgid "Repeat all"
+msgstr "Повторять все"
+
+msgid "Repeat one"
+msgstr "Повторять одну"
+
+msgid "Shuffle + repeat"
+msgstr "Вперемешку с повтором"

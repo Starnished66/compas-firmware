@@ -10,7 +10,7 @@ src/ui/library/browse/gui_library.c::Unknown Genre
 src/ui/network/subsonic/gui_subsonic.c::Unknown Artist
 src/ui/network/subsonic/gui_subsonic.c::Unknown Album
 src/ui/network/subsonic/gui_subsonic.c::Unknown Title
-src/ui/network/gui_network.c::44.1 kHz
+src/ui/network/gui_network_bt.c::44.1 kHz
 src/library/metadata/isolation/metadata_isolation.c::scan
 src/library/metadata/isolation/metadata_isolation.c::artwork
 1k

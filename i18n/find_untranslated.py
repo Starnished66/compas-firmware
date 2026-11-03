@@ -13,6 +13,14 @@ N_(). Intentional English goes in scripts/i18n/untranslated_allow.txt.
 --all  also lists every other text-looking literal (for manual audits).
 --fix  wraps reported literals in TR() (N_() outside function bodies) in place.
 Exits 1 when anything is reported (and --fix is not given).
+
+A full scan (no FILE arguments) also checks that every literal passed to TR(),
+N_(), TR_C() and TR_N() has a msgid (with msgctxt for TR_C) in every po/*.po,
+and that the entry is translated (msgstr not empty, not fuzzy, and every plural
+form the language's nplurals needs). Macros that expand to one of those calls
+(#define ERR(s) TR(s)) are detected in src/ and their literal arguments are
+checked too; a context or text given as an object-like string macro
+(#define CTX "device info") is resolved. Text inside #if 0 is ignored.
 """
 import os
 import re
@@ -79,6 +87,8 @@ def tokenize(src):
     toks = []
     i, n, line = 0, len(src), 1
     at_line_start = True
+    conds = []  # [parent_active, active, taken] per open #if
+    active = True
     while i < n:
         c = src[i]
         if c == "\n":
@@ -90,10 +100,31 @@ def tokenize(src):
             i += 1
             continue
         if c == "#" and at_line_start:
-            while i < n and src[i] != "\n":
-                if src[i] == "\\" and i + 1 < n and src[i + 1] == "\n":
+            j = i
+            while j < n and src[j] != "\n":
+                if src[j] == "\\" and j + 1 < n and src[j + 1] == "\n":
                     line += 1
-                    i += 1
+                    j += 1
+                j += 1
+            m = re.match(r"#[ \t]*(\w+)[ \t]*(\w*)", src[i:j])
+            word, arg = (m.group(1), m.group(2)) if m else ("", "")
+            if word in ("if", "ifdef", "ifndef"):
+                val = int(arg) if word == "if" and arg in ("0", "1") else None
+                conds.append([active, active and val != 0, val == 1])
+            elif word == "elif" and conds:
+                val = int(arg) if arg in ("0", "1") else None
+                conds[-1][1] = conds[-1][0] and not conds[-1][2] and val != 0
+                conds[-1][2] = conds[-1][2] or val == 1
+            elif word == "else" and conds:
+                conds[-1][1] = conds[-1][0] and not conds[-1][2]
+                conds[-1][2] = True
+            elif word == "endif" and conds:
+                conds.pop()
+            active = conds[-1][1] if conds else True
+            i = j
+            continue
+        if not active:
+            while i < n and src[i] != "\n":
                 i += 1
             continue
         at_line_start = False
@@ -234,10 +265,184 @@ def scan(path, show_all, rel=""):
     return src, findings
 
 
+def parse_po(path):
+    """Return {(msgctxt, msgid): usable} for a po file; keys are escaped as in C source.
+    An entry is not usable when it is fuzzy, any msgstr is empty, or a plural entry lacks
+    one of the nplurals forms (po2c skips those). Obsolete #~ entries are ignored."""
+    entries = {}
+    fields, field, fuzzy = {}, None, False
+    header = []
+
+    def flush():
+        if fields.get("msgid") == "" and "msgstr" in fields:
+            header.append(fields["msgstr"])
+        elif fields.get("msgid"):
+            strs = {k: v for k, v in fields.items() if k.startswith("msgstr")}
+            entries[(fields.get("msgctxt"), fields["msgid"])] = (bool(strs) and not fuzzy and all(strs.values()),
+                                                                 "msgid_plural" in fields, sorted(strs))
+
+    for line in open(path, encoding="utf-8"):
+        line = line.strip()
+        if line.startswith("#~"):
+            continue
+        if line.startswith("#,"):
+            if any(k.startswith("msgstr") for k in fields):
+                flush()
+                fields, field, fuzzy = {}, None, False
+            fuzzy = fuzzy or "fuzzy" in line
+            continue
+        m = re.match(r'(msgctxt|msgid_plural|msgid|msgstr(?:\[\d+\])?)\s*"(.*)"$', line)
+        if m:
+            field = m.group(1)
+            if field in ("msgctxt", "msgid") and any(k.startswith("msgstr") for k in fields):
+                flush()
+                fields, fuzzy = {}, False
+            fields[field] = m.group(2)
+        elif line.startswith('"') and field:
+            fields[field] += line[1:-1]
+    flush()
+    m = re.search(r"nplurals\s*=\s*(\d+)", header[0]) if header else None
+    nplurals = int(m.group(1)) if m else 2
+    need = ["msgstr[%d]" % k for k in range(nplurals)]
+    return {k: ok and (not plural or got == need) for k, (ok, plural, got) in entries.items()}
+
+
+def call_args(toks, i):
+    """toks[i] is '('. Return the argument token lists of that call."""
+    args, cur, depth = [], [], 0
+    for t in toks[i:]:
+        if t[0] == "p" and t[1] in "([{":
+            depth += 1
+            if depth == 1:
+                continue
+        elif t[0] == "p" and t[1] in ")]}":
+            depth -= 1
+            if depth == 0:
+                break
+        elif t[0] == "p" and t[1] == "," and depth == 1:
+            args.append(cur)
+            cur = []
+            continue
+        cur.append(t)
+    if cur or args:
+        args.append(cur)
+    return args
+
+
+def find_macros(root):
+    """Scan src/ for #defines. Returns (text_macros, str_macros): text_macros maps a function-like
+    macro that expands to TR/N_/TR_N/TR_C of its parameter to (ctx, text_index) where ctx is None,
+    ('lit', value) or ('arg', index); str_macros maps object-like string macros to their value."""
+    text_macros, str_macros = {}, {}
+    define = re.compile(r"^[ \t]*#[ \t]*define[ \t]+(\w+)(\(([^)]*)\))?[ \t]*(.*)$", re.M)
+    for dp, _, fns in os.walk(os.path.join(root, "src")):
+        for fn in sorted(fns):
+            if not fn.endswith((".c", ".h")) or fn.startswith("i18n_catalog"):
+                continue
+            src = open(os.path.join(dp, fn), encoding="utf-8", errors="replace").read().replace("\\\n", " ")
+            for m in define.finditer(src):
+                name, params, body = m.group(1), m.group(3), m.group(4)
+                if name in WRAPPERS:
+                    continue
+                toks = tokenize(body)
+                if params is None:
+                    if len(toks) == 1 and toks[0][0] == "str":
+                        str_macros[name] = toks[0][1]
+                    continue
+                plist = [x.strip() for x in params.split(",")]
+                for k, t in enumerate(toks):
+                    if t[0] == "id" and t[1] in WRAPPERS and k + 1 < len(toks) and toks[k + 1][1] == "(":
+                        args = call_args(toks, k + 1)
+                        ctx, ti = None, 0
+                        if t[1] == "TR_C" and len(args) >= 2:
+                            if len(args[0]) == 1 and args[0][0][0] == "id" and args[0][0][1] in plist:
+                                ctx = ("arg", plist.index(args[0][0][1]))
+                            elif args[0] and all(a[0] == "str" for a in args[0]):
+                                ctx = ("lit", "".join(a[1] for a in args[0]))
+                            else:
+                                continue
+                            ti = 1
+                        if len(args) > ti and len(args[ti]) == 1 and args[ti][0][0] == "id" and args[ti][0][1] in plist:
+                            text_macros[name] = (ctx, plist.index(args[ti][0][1]))
+                            break
+    return text_macros, str_macros
+
+
+def resolve(arg, str_macros):
+    """Value of an argument made only of string literals and string macros, else None."""
+    out = ""
+    for t in arg:
+        if t[0] == "str":
+            out += t[1]
+        elif t[0] == "id" and t[1] in str_macros:
+            out += str_macros[t[1]]
+        else:
+            return None
+    return out if arg else None
+
+
+def wrapped_literals(path, text_macros, str_macros):
+    """Yield (line, ctx, msgid) for every literal passed to TR/N_/TR_C/TR_N or to a macro that wraps one."""
+    toks = tokenize(open(path, encoding="utf-8", errors="replace").read())
+    for i, (kind, text, line, _, _) in enumerate(toks):
+        if kind != "id" or i + 1 >= len(toks) or toks[i + 1][1] != "(":
+            continue
+        if text in WRAPPERS - {"_"}:
+            args = call_args(toks, i + 1)
+            if text == "TR_C":
+                ctx = resolve(args[0], str_macros) if args else None
+                mid = resolve(args[1], str_macros) if len(args) > 1 else None
+                if ctx is not None and mid is not None:
+                    yield line, ctx, mid
+            elif args:
+                mid = resolve(args[0], str_macros)
+                if mid is not None:
+                    yield line, None, mid
+        elif text in text_macros:
+            ctxspec, ti = text_macros[text]
+            args = call_args(toks, i + 1)
+            if len(args) <= ti:
+                continue
+            ctx = None
+            if ctxspec and ctxspec[0] == "lit":
+                ctx = ctxspec[1]
+            elif ctxspec:
+                ctx = resolve(args[ctxspec[1]], str_macros) if len(args) > ctxspec[1] else None
+                if ctx is None:
+                    continue
+            mid = resolve(args[ti], str_macros)
+            if mid is not None:
+                yield line, ctx, mid
+
+
+def check_catalogs(files):
+    """Report wrapped literals that lack a usable msgid in some po file. Returns the count."""
+    po_dir = os.path.join(HERE, "po")
+    catalogs = {fn[:-3]: parse_po(os.path.join(po_dir, fn)) for fn in sorted(os.listdir(po_dir)) if fn.endswith(".po")}
+    total = 0
+    text_macros, str_macros = find_macros(ROOT)
+    for path in sorted(files):
+        rel = os.path.relpath(os.path.abspath(path), ROOT)
+        for line, ctx, mid in wrapped_literals(path, text_macros, str_macros):
+            missing = [lang for lang, keys in catalogs.items() if (ctx, mid) not in keys]
+            unusable = [lang for lang, keys in catalogs.items() if keys.get((ctx, mid)) is False]
+            if unusable:
+                print("%s:%d: empty, fuzzy or incomplete plural msgstr in %s: \"%s\"" % (rel, line, ",".join(unusable), mid))
+                total += 1
+            if missing:
+                what = 'TR_C("%s", "%s")' % (ctx, mid) if ctx is not None else '"%s"' % mid
+                print("%s:%d: no msgid in %s: %s" % (rel, line, ",".join(missing), what))
+                total += 1
+    if total:
+        sys.stderr.write("%d string(s) missing, empty, fuzzy or incomplete in the po catalogs\n" % total)
+    return total
+
+
 def main(argv):
     show_all = "--all" in argv
     fix = "--fix" in argv
     files = [a for a in argv[1:] if not a.startswith("--")]
+    full_scan = not files
     if not files:
         for dp, _, fns in os.walk(os.path.join(ROOT, "src")):
             for fn in fns:
@@ -262,6 +467,8 @@ def main(argv):
             total += 1
     if total:
         sys.stderr.write("%d unwrapped UI string(s)\n" % total)
+    if full_scan:
+        total += check_catalogs(files)
     return 0 if (fix or not total) else 1
 
 

@@ -3791,3 +3791,186 @@ msgstr "合并没有专辑艺术家的专辑"
 
 msgid "Could not open this image"
 msgstr "无法打开此图片"
+
+msgid "Album Artist (A–Z)"
+msgstr "专辑艺术家（A–Z）"
+
+msgid "Buttons locked"
+msgstr "按键已锁定"
+
+msgid "Buttons unlocked"
+msgstr "按键已解锁"
+
+msgid "Cannot remove entries"
+msgstr "无法移除这些项目"
+
+msgid "Cannot select playlist entries"
+msgstr "无法选择播放列表项目"
+
+msgid "DRE"
+msgstr "DRE"
+
+msgid "DRE (Dynamic Range Enhancement) affects local PCM and DSD playback."
+msgstr "DRE（Dynamic Range Enhancement）会影响本地 PCM 和 DSD 播放。"
+
+msgid "Fast roll-off, low latency"
+msgstr "快速滚降，低延迟"
+
+msgid "Fast roll-off, phase compensated"
+msgstr "快速滚降，相位补偿"
+
+msgid "Slow roll-off, low latency"
+msgstr "慢速滚降，低延迟"
+
+msgid "Slow roll-off, phase compensated"
+msgstr "慢速滚降，相位补偿"
+
+msgid "Filters and NOS affect local PCM playback. NOS bypasses interpolation and ignores the selected filter. Changes apply when playback restarts."
+msgstr "滤波器和 NOS 会影响本地 PCM 播放。NOS 会绕过插值并忽略所选滤波器。更改将在重新开始播放时生效。"
+
+msgid "Local DAC Settings"
+msgstr "本地 DAC 设置"
+
+msgid "Music menu"
+msgstr "音乐菜单"
+
+msgid "NOS Mode"
+msgstr "NOS 模式"
+
+msgid "Out of memory"
+msgstr "内存耗尽"
+
+#, c-format
+msgid "Select all (%d)"
+msgstr "全选（%d）"
+
+msgid "Power + Volume Up to unlock"
+msgstr "电源 + 音量加 解锁"
+
+msgid "Hold Power + turn volume up to unlock"
+msgstr "按住电源并调高音量解锁"
+
+msgid "Another app is waiting for approval."
+msgstr "另一个应用正在等待批准。"
+
+msgid "Apps run on the player only."
+msgstr "应用只能在播放器上运行。"
+
+msgid "Audio is still active; cannot start the app."
+msgstr "音频仍在运行，无法启动应用。"
+
+msgid "Brightness"
+msgstr "亮度"
+
+msgid "Check the SD card and disconnect USB storage before running apps."
+msgstr "运行应用前请检查 SD 卡并断开 USB 存储。"
+
+msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
+msgstr "将应用复制到 SD 卡的 .apps 文件夹，每个应用一个文件夹，其中包含 app.json 文件。"
+
+msgid "Could not save the approval."
+msgstr "无法保存批准。"
+
+msgid "Could not start the app."
+msgstr "无法启动应用。"
+
+msgid "External Apps"
+msgstr "外部应用"
+
+msgid "External apps have full access to the player."
+msgstr "外部应用拥有对播放器的完全访问权限。"
+
+msgid "Music scan started from the remote"
+msgstr "已从遥控端开始扫描音乐"
+
+msgid "No apps installed"
+msgstr "未安装任何应用"
+
+msgid "Play Mode"
+msgstr "播放模式"
+
+msgid "Repeat All"
+msgstr "全部循环"
+
+msgid "Repeat One"
+msgstr "单曲循环"
+
+msgid "Run"
+msgstr "运行"
+
+#, c-format
+msgid "Run %s?"
+msgstr "运行 %s？"
+
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "用手机扫描，在 Ko-fi 上支持 Compás Player"
+
+#, c-format
+msgid "%s changed from the remote"
+msgstr "%s 已从遥控端更改"
+
+msgid "Sequential"
+msgstr "顺序播放"
+
+msgid "Settings changed from the remote"
+msgstr "已从遥控端更改设置"
+
+msgid "Shuffle once"
+msgstr "随机播放一次"
+
+msgid "Shuffle with repeat"
+msgstr "随机循环播放"
+
+msgid "The app closed unexpectedly."
+msgstr "应用意外关闭。"
+
+msgid "Turn off DAC mode to run apps."
+msgstr "请关闭 DAC 模式以运行应用。"
+
+msgid "Player image validation failed (ELF mismatch)."
+msgstr "播放器镜像验证失败（ELF 不匹配）。"
+
+msgid "This player image is for a different device model or is missing its model marker."
+msgstr "此播放器镜像适用于其他设备型号，或缺少型号标记。"
+
+msgid "This player is older than the installed firmware."
+msgstr "此播放器比已安装的固件更旧。"
+
+msgid "Invalid player image or checksum."
+msgstr "播放器镜像或校验和无效。"
+
+msgid "Player image validation failed (ELF or SHA-256 mismatch)."
+msgstr "播放器镜像验证失败（ELF 或 SHA-256 不匹配）。"
+
+msgid "Internal storage is unavailable."
+msgstr "内部存储不可用。"
+
+msgid "Installed player path is unsafe."
+msgstr "已安装播放器的路径不安全。"
+
+msgid "Player update temporary is unsafe."
+msgstr "播放器更新的临时文件不安全。"
+
+msgid "Cannot inspect player update storage."
+msgstr "无法检查播放器更新的存储。"
+
+msgid "Could not prepare the player update."
+msgstr "无法准备播放器更新。"
+
+msgid "Player copy could not be verified."
+msgstr "无法验证播放器副本。"
+
+msgid "Could not safely archive the SD player update."
+msgstr "无法安全归档 SD 卡上的播放器更新。"
+
+msgid "Player update could not be committed; the previous player remains installed."
+msgstr "无法提交播放器更新；之前的播放器仍保持安装。"
+
+msgid "Repeat all"
+msgstr "全部循环"
+
+msgid "Repeat one"
+msgstr "单曲循环"
+
+msgid "Shuffle + repeat"
+msgstr "随机循环播放"

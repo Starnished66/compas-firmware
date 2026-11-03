@@ -3708,3 +3708,186 @@ msgstr ""
 
 msgid "Could not open this image"
 msgstr ""
+
+msgid "Album Artist (A–Z)"
+msgstr ""
+
+msgid "Buttons locked"
+msgstr ""
+
+msgid "Buttons unlocked"
+msgstr ""
+
+msgid "Cannot remove entries"
+msgstr ""
+
+msgid "Cannot select playlist entries"
+msgstr ""
+
+msgid "DRE"
+msgstr ""
+
+msgid "DRE (Dynamic Range Enhancement) affects local PCM and DSD playback."
+msgstr ""
+
+msgid "Fast roll-off, low latency"
+msgstr ""
+
+msgid "Fast roll-off, phase compensated"
+msgstr ""
+
+msgid "Slow roll-off, low latency"
+msgstr ""
+
+msgid "Slow roll-off, phase compensated"
+msgstr ""
+
+msgid "Filters and NOS affect local PCM playback. NOS bypasses interpolation and ignores the selected filter. Changes apply when playback restarts."
+msgstr ""
+
+msgid "Local DAC Settings"
+msgstr ""
+
+msgid "Music menu"
+msgstr ""
+
+msgid "NOS Mode"
+msgstr ""
+
+msgid "Out of memory"
+msgstr ""
+
+#, c-format
+msgid "Select all (%d)"
+msgstr ""
+
+msgid "Power + Volume Up to unlock"
+msgstr ""
+
+msgid "Hold Power + turn volume up to unlock"
+msgstr ""
+
+msgid "Another app is waiting for approval."
+msgstr ""
+
+msgid "Apps run on the player only."
+msgstr ""
+
+msgid "Audio is still active; cannot start the app."
+msgstr ""
+
+msgid "Brightness"
+msgstr ""
+
+msgid "Check the SD card and disconnect USB storage before running apps."
+msgstr ""
+
+msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
+msgstr ""
+
+msgid "Could not save the approval."
+msgstr ""
+
+msgid "Could not start the app."
+msgstr ""
+
+msgid "External Apps"
+msgstr ""
+
+msgid "External apps have full access to the player."
+msgstr ""
+
+msgid "Music scan started from the remote"
+msgstr ""
+
+msgid "No apps installed"
+msgstr ""
+
+msgid "Play Mode"
+msgstr ""
+
+msgid "Repeat All"
+msgstr ""
+
+msgid "Repeat One"
+msgstr ""
+
+msgid "Run"
+msgstr ""
+
+#, c-format
+msgid "Run %s?"
+msgstr ""
+
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr ""
+
+#, c-format
+msgid "%s changed from the remote"
+msgstr ""
+
+msgid "Sequential"
+msgstr ""
+
+msgid "Settings changed from the remote"
+msgstr ""
+
+msgid "Shuffle once"
+msgstr ""
+
+msgid "Shuffle with repeat"
+msgstr ""
+
+msgid "The app closed unexpectedly."
+msgstr ""
+
+msgid "Turn off DAC mode to run apps."
+msgstr ""
+
+msgid "Player image validation failed (ELF mismatch)."
+msgstr ""
+
+msgid "This player image is for a different device model or is missing its model marker."
+msgstr ""
+
+msgid "This player is older than the installed firmware."
+msgstr ""
+
+msgid "Invalid player image or checksum."
+msgstr ""
+
+msgid "Player image validation failed (ELF or SHA-256 mismatch)."
+msgstr ""
+
+msgid "Internal storage is unavailable."
+msgstr ""
+
+msgid "Installed player path is unsafe."
+msgstr ""
+
+msgid "Player update temporary is unsafe."
+msgstr ""
+
+msgid "Cannot inspect player update storage."
+msgstr ""
+
+msgid "Could not prepare the player update."
+msgstr ""
+
+msgid "Player copy could not be verified."
+msgstr ""
+
+msgid "Could not safely archive the SD player update."
+msgstr ""
+
+msgid "Player update could not be committed; the previous player remains installed."
+msgstr ""
+
+msgid "Repeat all"
+msgstr ""
+
+msgid "Repeat one"
+msgstr ""
+
+msgid "Shuffle + repeat"
+msgstr ""

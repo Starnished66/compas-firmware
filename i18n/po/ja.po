@@ -3461,3 +3461,186 @@ msgstr "アルバムアーティストのないアルバムを結合"
 
 msgid "Could not open this image"
 msgstr "この画像を開けませんでした"
+
+msgid "Album Artist (A–Z)"
+msgstr "アルバムアーティスト（A～Z）"
+
+msgid "Buttons locked"
+msgstr "ボタンをロックしました"
+
+msgid "Buttons unlocked"
+msgstr "ボタンのロックを解除しました"
+
+msgid "Cannot remove entries"
+msgstr "項目を削除できません"
+
+msgid "Cannot select playlist entries"
+msgstr "プレイリストの項目を選択できません"
+
+msgid "DRE"
+msgstr "DRE"
+
+msgid "DRE (Dynamic Range Enhancement) affects local PCM and DSD playback."
+msgstr "DRE（Dynamic Range Enhancement）はローカルのPCMおよびDSD再生に影響します。"
+
+msgid "Fast roll-off, low latency"
+msgstr "ファストロールオフ、低レイテンシー"
+
+msgid "Fast roll-off, phase compensated"
+msgstr "ファストロールオフ、位相補償"
+
+msgid "Slow roll-off, low latency"
+msgstr "スローロールオフ、低レイテンシー"
+
+msgid "Slow roll-off, phase compensated"
+msgstr "スローロールオフ、位相補償"
+
+msgid "Filters and NOS affect local PCM playback. NOS bypasses interpolation and ignores the selected filter. Changes apply when playback restarts."
+msgstr "フィルターとNOSはローカルのPCM再生に影響します。NOSは補間をバイパスし、選択したフィルターを無視します。変更は再生を再開したときに適用されます。"
+
+msgid "Local DAC Settings"
+msgstr "ローカルDAC設定"
+
+msgid "Music menu"
+msgstr "音楽メニュー"
+
+msgid "NOS Mode"
+msgstr "NOSモード"
+
+msgid "Out of memory"
+msgstr "メモリ不足です"
+
+#, c-format
+msgid "Select all (%d)"
+msgstr "すべて選択（%d）"
+
+msgid "Power + Volume Up to unlock"
+msgstr "電源 + 音量アップで解除"
+
+msgid "Hold Power + turn volume up to unlock"
+msgstr "電源を長押ししながら音量を上げて解除"
+
+msgid "Another app is waiting for approval."
+msgstr "別のアプリが承認待ちです。"
+
+msgid "Apps run on the player only."
+msgstr "アプリはプレーヤー上でのみ実行できます。"
+
+msgid "Audio is still active; cannot start the app."
+msgstr "オーディオがまだ動作中のため、アプリを起動できません。"
+
+msgid "Brightness"
+msgstr "明るさ"
+
+msgid "Check the SD card and disconnect USB storage before running apps."
+msgstr "アプリを実行する前に、SDカードを確認してUSBストレージを取り外してください。"
+
+msgid "Copy an app to the .apps folder on the SD card, one folder per app with an app.json file."
+msgstr "アプリをSDカードの.appsフォルダーにコピーしてください。アプリごとに1つのフォルダーを作成し、app.jsonファイルを入れます。"
+
+msgid "Could not save the approval."
+msgstr "承認を保存できませんでした。"
+
+msgid "Could not start the app."
+msgstr "アプリを起動できませんでした。"
+
+msgid "External Apps"
+msgstr "外部アプリ"
+
+msgid "External apps have full access to the player."
+msgstr "外部アプリはプレーヤーに完全にアクセスできます。"
+
+msgid "Music scan started from the remote"
+msgstr "リモートから音楽のスキャンを開始しました"
+
+msgid "No apps installed"
+msgstr "インストールされているアプリはありません"
+
+msgid "Play Mode"
+msgstr "再生モード"
+
+msgid "Repeat All"
+msgstr "すべてリピート"
+
+msgid "Repeat One"
+msgstr "1曲リピート"
+
+msgid "Run"
+msgstr "実行"
+
+#, c-format
+msgid "Run %s?"
+msgstr "%sを実行しますか？"
+
+msgid "Scan with your phone to support Compás Player on Ko-fi"
+msgstr "スマートフォンでスキャンして、Ko-fiでCompás Playerを応援してください"
+
+#, c-format
+msgid "%s changed from the remote"
+msgstr "リモートから%sが変更されました"
+
+msgid "Sequential"
+msgstr "順番に"
+
+msgid "Settings changed from the remote"
+msgstr "リモートから設定が変更されました"
+
+msgid "Shuffle once"
+msgstr "1回シャッフル"
+
+msgid "Shuffle with repeat"
+msgstr "リピートしてシャッフル"
+
+msgid "The app closed unexpectedly."
+msgstr "アプリが予期せず終了しました。"
+
+msgid "Turn off DAC mode to run apps."
+msgstr "アプリを実行するにはDACモードをオフにしてください。"
+
+msgid "Player image validation failed (ELF mismatch)."
+msgstr "プレーヤーイメージの検証に失敗しました（ELF の不一致）。"
+
+msgid "This player image is for a different device model or is missing its model marker."
+msgstr "このプレーヤーイメージは別のデバイスモデル用か、モデルマーカーがありません。"
+
+msgid "This player is older than the installed firmware."
+msgstr "このプレーヤーはインストール済みのファームウェアより古いものです。"
+
+msgid "Invalid player image or checksum."
+msgstr "プレーヤーイメージまたはチェックサムが無効です。"
+
+msgid "Player image validation failed (ELF or SHA-256 mismatch)."
+msgstr "プレーヤーイメージの検証に失敗しました（ELF または SHA-256 の不一致）。"
+
+msgid "Internal storage is unavailable."
+msgstr "内部ストレージを利用できません。"
+
+msgid "Installed player path is unsafe."
+msgstr "インストール済みプレーヤーのパスが安全ではありません。"
+
+msgid "Player update temporary is unsafe."
+msgstr "プレーヤー更新の一時ファイルが安全ではありません。"
+
+msgid "Cannot inspect player update storage."
+msgstr "プレーヤー更新用のストレージを確認できません。"
+
+msgid "Could not prepare the player update."
+msgstr "プレーヤーの更新を準備できませんでした。"
+
+msgid "Player copy could not be verified."
+msgstr "プレーヤーのコピーを検証できませんでした。"
+
+msgid "Could not safely archive the SD player update."
+msgstr "SD のプレーヤー更新を安全にアーカイブできませんでした。"
+
+msgid "Player update could not be committed; the previous player remains installed."
+msgstr "プレーヤーの更新を確定できませんでした。以前のプレーヤーがそのまま残ります。"
+
+msgid "Repeat all"
+msgstr "すべてリピート"
+
+msgid "Repeat one"
+msgstr "1曲リピート"
+
+msgid "Shuffle + repeat"
+msgstr "リピートしてシャッフル"

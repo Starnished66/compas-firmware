@@ -3778,3 +3778,109 @@ msgstr "Yhdistä albumit, joilla ei ole albumin esittäjää"
 
 msgid "Could not open this image"
 msgstr "Tätä kuvaa ei voitu avata"
+
+msgid "Album Artist (A–Z)"
+msgstr "Albumin esittäjä (A–Ö)"
+
+msgid "Buttons locked"
+msgstr "Painikkeet lukittu"
+
+msgid "Buttons unlocked"
+msgstr "Painikkeet avattu"
+
+msgid "Cannot remove entries"
+msgstr "Kohteiden poistaminen epäonnistui"
+
+msgid "Cannot select playlist entries"
+msgstr "Soittolistan kohteiden valinta epäonnistui"
+
+msgid "DRE"
+msgstr "DRE"
+
+msgid "DRE (Dynamic Range Enhancement) affects local PCM and DSD playback."
+msgstr "DRE (Dynamic Range Enhancement) vaikuttaa paikalliseen PCM- ja DSD-toistoon."
+
+msgid "Fast roll-off, low latency"
+msgstr "Nopea roll-off, pieni viive"
+
+msgid "Fast roll-off, phase compensated"
+msgstr "Nopea roll-off, vaihekompensoitu"
+
+msgid "Slow roll-off, low latency"
+msgstr "Hidas roll-off, pieni viive"
+
+msgid "Slow roll-off, phase compensated"
+msgstr "Hidas roll-off, vaihekompensoitu"
+
+msgid "Filters and NOS affect local PCM playback. NOS bypasses interpolation and ignores the selected filter. Changes apply when playback restarts."
+msgstr "Suodattimet ja NOS vaikuttavat paikalliseen PCM-toistoon. NOS ohittaa interpoloinnin ja jättää valitun suodattimen huomiotta. Muutokset otetaan käyttöön, kun toisto käynnistetään uudelleen."
+
+msgid "Local DAC Settings"
+msgstr "Paikalliset DAC-asetukset"
+
+msgid "Music menu"
+msgstr "Musiikkivalikko"
+
+msgid "NOS Mode"
+msgstr "NOS-tila"
+
+msgid "Out of memory"
+msgstr "Muisti loppui"
+
+#, c-format
+msgid "Select all (%d)"
+msgstr "Valitse kaikki (%d)"
+
+msgid "Power + Volume Up to unlock"
+msgstr "Avaa lukitus: virta + äänenvoimakkuus ylös"
+
+msgid "Hold Power + turn volume up to unlock"
+msgstr "Avaa lukitus: pidä virtaa painettuna ja nosta äänenvoimakkuutta"
+
+msgid "Player image validation failed (ELF mismatch)."
+msgstr "Soittimen levykuvan tarkistus epäonnistui (ELF ei täsmää)."
+
+msgid "This player image is for a different device model or is missing its model marker."
+msgstr "Tämä soittimen levykuva on toiselle laitemallille tai siitä puuttuu mallitunniste."
+
+msgid "This player is older than the installed firmware."
+msgstr "Tämä soitin on vanhempi kuin asennettu laiteohjelmisto."
+
+msgid "Invalid player image or checksum."
+msgstr "Virheellinen soittimen levykuva tai tarkistussumma."
+
+msgid "Player image validation failed (ELF or SHA-256 mismatch)."
+msgstr "Soittimen levykuvan tarkistus epäonnistui (ELF tai SHA-256 ei täsmää)."
+
+msgid "Internal storage is unavailable."
+msgstr "Sisäinen tallennustila ei ole käytettävissä."
+
+msgid "Installed player path is unsafe."
+msgstr "Asennetun soittimen polku ei ole turvallinen."
+
+msgid "Player update temporary is unsafe."
+msgstr "Soittimen päivityksen väliaikainen tiedosto ei ole turvallinen."
+
+msgid "Cannot inspect player update storage."
+msgstr "Soittimen päivityksen tallennustilaa ei voi tarkistaa."
+
+msgid "Could not prepare the player update."
+msgstr "Soittimen päivitystä ei voitu valmistella."
+
+msgid "Player copy could not be verified."
+msgstr "Soittimen kopiota ei voitu varmistaa."
+
+msgid "Could not safely archive the SD player update."
+msgstr "SD-kortin soittimen päivitystä ei voitu arkistoida turvallisesti."
+
+msgid "Player update could not be committed; the previous player remains installed."
+msgstr "Soittimen päivitystä ei voitu viimeistellä; edellinen soitin pysyy asennettuna."
+
+msgid "Repeat all"
+msgstr "Toista kaikki uudelleen"
+
+msgid "Repeat one"
+msgstr "Toista kappale uudelleen"
+
+msgid "Shuffle + repeat"
+msgstr "Sekoitus ja toisto"

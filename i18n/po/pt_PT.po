@@ -3779,3 +3779,109 @@ msgstr "Juntar álbuns sem artista do álbum"
 
 msgid "Could not open this image"
 msgstr "Não foi possível abrir esta imagem"
+
+msgid "Album Artist (A–Z)"
+msgstr "Artista do álbum (A–Z)"
+
+msgid "Buttons locked"
+msgstr "Botões bloqueados"
+
+msgid "Buttons unlocked"
+msgstr "Botões desbloqueados"
+
+msgid "Cannot remove entries"
+msgstr "Não foi possível remover as entradas"
+
+msgid "Cannot select playlist entries"
+msgstr "Não foi possível selecionar as entradas da lista de reprodução"
+
+msgid "DRE"
+msgstr "DRE"
+
+msgid "DRE (Dynamic Range Enhancement) affects local PCM and DSD playback."
+msgstr "DRE (Dynamic Range Enhancement) afeta a reprodução local de PCM e DSD."
+
+msgid "Fast roll-off, low latency"
+msgstr "Roll-off rápido, baixa latência"
+
+msgid "Fast roll-off, phase compensated"
+msgstr "Roll-off rápido, com compensação de fase"
+
+msgid "Slow roll-off, low latency"
+msgstr "Roll-off lento, baixa latência"
+
+msgid "Slow roll-off, phase compensated"
+msgstr "Roll-off lento, com compensação de fase"
+
+msgid "Filters and NOS affect local PCM playback. NOS bypasses interpolation and ignores the selected filter. Changes apply when playback restarts."
+msgstr "Os filtros e o NOS afetam a reprodução local de PCM. O NOS ignora a interpolação e o filtro selecionado. As alterações são aplicadas quando a reprodução é reiniciada."
+
+msgid "Local DAC Settings"
+msgstr "Definições do DAC local"
+
+msgid "Music menu"
+msgstr "Menu de música"
+
+msgid "NOS Mode"
+msgstr "Modo NOS"
+
+msgid "Out of memory"
+msgstr "Memória esgotada"
+
+#, c-format
+msgid "Select all (%d)"
+msgstr "Selecionar tudo (%d)"
+
+msgid "Power + Volume Up to unlock"
+msgstr "Ligar + Aumentar volume para desbloquear"
+
+msgid "Hold Power + turn volume up to unlock"
+msgstr "Mantenha Ligar premido e aumente o volume para desbloquear"
+
+msgid "Player image validation failed (ELF mismatch)."
+msgstr "Falha na validação da imagem do leitor (divergência de ELF)."
+
+msgid "This player image is for a different device model or is missing its model marker."
+msgstr "Esta imagem do leitor é de outro modelo de dispositivo ou não tem o marcador de modelo."
+
+msgid "This player is older than the installed firmware."
+msgstr "Este leitor é mais antigo do que o firmware instalado."
+
+msgid "Invalid player image or checksum."
+msgstr "Imagem do leitor ou soma de verificação inválida."
+
+msgid "Player image validation failed (ELF or SHA-256 mismatch)."
+msgstr "Falha na validação da imagem do leitor (divergência de ELF ou SHA-256)."
+
+msgid "Internal storage is unavailable."
+msgstr "O armazenamento interno não está disponível."
+
+msgid "Installed player path is unsafe."
+msgstr "O caminho do leitor instalado não é seguro."
+
+msgid "Player update temporary is unsafe."
+msgstr "O ficheiro temporário da atualização do leitor não é seguro."
+
+msgid "Cannot inspect player update storage."
+msgstr "Não foi possível inspecionar o armazenamento da atualização do leitor."
+
+msgid "Could not prepare the player update."
+msgstr "Não foi possível preparar a atualização do leitor."
+
+msgid "Player copy could not be verified."
+msgstr "Não foi possível verificar a cópia do leitor."
+
+msgid "Could not safely archive the SD player update."
+msgstr "Não foi possível arquivar em segurança a atualização do leitor do SD."
+
+msgid "Player update could not be committed; the previous player remains installed."
+msgstr "Não foi possível concluir a atualização do leitor; o leitor anterior continua instalado."
+
+msgid "Repeat all"
+msgstr "Repetir tudo"
+
+msgid "Repeat one"
+msgstr "Repetir uma"
+
+msgid "Shuffle + repeat"
+msgstr "Aleatório com repetição"
