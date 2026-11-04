@@ -2495,14 +2495,17 @@ msgstr "构建版本"
 msgid "Device"
 msgstr "设备"
 
-msgid "Memory"
-msgstr "内存"
+msgid "RAM"
+msgstr "RAM"
 
 msgid "Internal"
 msgstr "内部存储"
 
 msgid "SD card"
 msgstr "SD 卡"
+
+msgid "Plugin API"
+msgstr "插件 API"
 
 msgid "%s free of %s"
 msgstr "%s 可用，共 %s"

@@ -2256,14 +2256,17 @@ msgstr "Bản dựng"
 msgid "Device"
 msgstr "Thiết bị"
 
-msgid "Memory"
-msgstr "Bộ nhớ"
+msgid "RAM"
+msgstr "RAM"
 
 msgid "Internal"
 msgstr "Bộ nhớ trong"
 
 msgid "SD card"
 msgstr "Thẻ SD"
+
+msgid "Plugin API"
+msgstr "API plugin"
 
 msgid "%s free of %s"
 msgstr "Còn trống %s / %s"

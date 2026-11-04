@@ -2425,14 +2425,17 @@ msgstr "Build"
 msgid "Device"
 msgstr "Gerät"
 
-msgid "Memory"
-msgstr "Speicher"
+msgid "RAM"
+msgstr "RAM"
 
 msgid "Internal"
 msgstr "Intern"
 
 msgid "SD card"
 msgstr "SD-Karte"
+
+msgid "Plugin API"
+msgstr "Plugin-API"
 
 msgid "%s free of %s"
 msgstr "%s frei von %s"

@@ -2476,14 +2476,17 @@ msgstr "Build"
 msgid "Device"
 msgstr "Appareil"
 
-msgid "Memory"
-msgstr "Mémoire"
+msgid "RAM"
+msgstr "RAM"
 
 msgid "Internal"
 msgstr "Interne"
 
 msgid "SD card"
 msgstr "Carte SD"
+
+msgid "Plugin API"
+msgstr "API de plugins"
 
 msgid "%s free of %s"
 msgstr "%s libres sur %s"

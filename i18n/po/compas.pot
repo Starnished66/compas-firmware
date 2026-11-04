@@ -2436,13 +2436,16 @@ msgstr ""
 msgid "Device"
 msgstr ""
 
-msgid "Memory"
+msgid "RAM"
 msgstr ""
 
 msgid "Internal"
 msgstr ""
 
 msgid "SD card"
+msgstr ""
+
+msgid "Plugin API"
 msgstr ""
 
 msgid "%s free of %s"

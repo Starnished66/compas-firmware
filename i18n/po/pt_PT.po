@@ -2440,14 +2440,17 @@ msgstr "Compilação"
 msgid "Device"
 msgstr "Dispositivo"
 
-msgid "Memory"
-msgstr "Memória"
+msgid "RAM"
+msgstr "RAM"
 
 msgid "Internal"
 msgstr "Interna"
 
 msgid "SD card"
 msgstr "Cartão SD"
+
+msgid "Plugin API"
+msgstr "API de módulos"
 
 msgid "%s free of %s"
 msgstr "%s livres de %s"

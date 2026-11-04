@@ -2437,14 +2437,17 @@ msgstr "Build"
 msgid "Device"
 msgstr "Apparaat"
 
-msgid "Memory"
-msgstr "Geheugen"
+msgid "RAM"
+msgstr "RAM"
 
 msgid "Internal"
 msgstr "Intern"
 
 msgid "SD card"
 msgstr "SD-kaart"
+
+msgid "Plugin API"
+msgstr "Plugin-API"
 
 msgid "%s free of %s"
 msgstr "%s vrij van %s"

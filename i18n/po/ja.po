@@ -2256,14 +2256,17 @@ msgstr "ビルド"
 msgid "Device"
 msgstr "デバイス"
 
-msgid "Memory"
-msgstr "メモリ"
+msgid "RAM"
+msgstr "RAM"
 
 msgid "Internal"
 msgstr "内部"
 
 msgid "SD card"
 msgstr "SDカード"
+
+msgid "Plugin API"
+msgstr "プラグインAPI"
 
 msgid "%s free of %s"
 msgstr "空き %s / %s"

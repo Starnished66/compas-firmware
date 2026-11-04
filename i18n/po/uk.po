@@ -2448,14 +2448,17 @@ msgstr "Збірка"
 msgid "Device"
 msgstr "Пристрій"
 
-msgid "Memory"
-msgstr "Пам’ять"
+msgid "RAM"
+msgstr "RAM"
 
 msgid "Internal"
 msgstr "Внутрішня"
 
 msgid "SD card"
 msgstr "SD-карта"
+
+msgid "Plugin API"
+msgstr "API плагінів"
 
 msgid "%s free of %s"
 msgstr "вільно %s з %s"

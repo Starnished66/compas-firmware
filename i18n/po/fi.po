@@ -2439,14 +2439,17 @@ msgstr "Koontiversio"
 msgid "Device"
 msgstr "Laite"
 
-msgid "Memory"
-msgstr "Muisti"
+msgid "RAM"
+msgstr "RAM"
 
 msgid "Internal"
 msgstr "Sisäinen"
 
 msgid "SD card"
 msgstr "SD-kortti"
+
+msgid "Plugin API"
+msgstr "Liitännäis-API"
 
 msgid "%s free of %s"
 msgstr "%s vapaana, yhteensä %s"
