@@ -2591,8 +2591,6 @@ msgstr "Enimmäisäänenvoimakkuus"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Rajoittaa soittimen äänenvoimakkuutta, myös painikkeiden, kauko-ohjainten ja liitännäisten kautta."
 
-msgid "Car Mode is disabled."
-msgstr "Autotila ei ole käytössä."
 
 msgid "Car Mode Volume"
 msgstr "Autotilan äänenvoimakkuus"
@@ -2654,8 +2652,6 @@ msgstr "Sammuta"
 msgid "Suspend to RAM"
 msgstr "Valmiustila (RAM)"
 
-msgid "Idle timeout:"
-msgstr "Käyttämättömyyden aikakatkaisu:"
 
 msgid "Africa"
 msgstr "Afrikka"
@@ -2870,6 +2866,18 @@ msgstr "Järjestä kohteet"
 
 msgid "Volume"
 msgstr "Äänenvoimakkuus"
+
+msgid "Turn off after"
+msgstr "Sammutusviive"
+
+msgid "Dim after"
+msgstr "Himmennysviive"
+
+msgid "Stop after"
+msgstr "Pysäytysviive"
+
+msgid "Go idle after"
+msgstr "Lepotilaviive"
 
 msgid "Clock"
 msgstr "Kello"

@@ -2406,8 +2406,6 @@ msgstr "Âm lượng tối đa"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Giới hạn âm lượng của trình phát, bao gồm các nút, điều khiển từ xa và plugin."
 
-msgid "Car Mode is disabled."
-msgstr "Chế độ ô tô đang tắt."
 
 msgid "Car Mode Volume"
 msgstr "Âm lượng chế độ ô tô"
@@ -2460,8 +2458,6 @@ msgstr "Tắt nguồn"
 msgid "Suspend to RAM"
 msgstr "Tạm ngưng vào RAM"
 
-msgid "Idle timeout:"
-msgstr "Thời gian chờ:"
 
 msgid "Africa"
 msgstr "Châu Phi"
@@ -2675,6 +2671,18 @@ msgstr "Sắp xếp lại mục"
 
 msgid "Volume"
 msgstr "Âm lượng"
+
+msgid "Turn off after"
+msgstr "Tắt sau"
+
+msgid "Dim after"
+msgstr "Làm mờ sau"
+
+msgid "Stop after"
+msgstr "Dừng sau"
+
+msgid "Go idle after"
+msgstr "Nhàn rỗi sau"
 
 msgid "Clock"
 msgstr "Đồng hồ"

@@ -2619,8 +2619,6 @@ msgstr "Макс. громкость"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Ограничивает громкость плеера, включая кнопки, пульты дистанционного управления и плагины."
 
-msgid "Car Mode is disabled."
-msgstr "Режим автомобиля отключен."
 
 msgid "Car Mode Volume"
 msgstr "Громкость режима автомобиля"
@@ -2682,8 +2680,6 @@ msgstr "Выключить питание"
 msgid "Suspend to RAM"
 msgstr "Сон с сохранением в ОЗУ"
 
-msgid "Idle timeout:"
-msgstr "Тайм-аут простоя:"
 
 msgid "Africa"
 msgstr "Африка"
@@ -2898,6 +2894,18 @@ msgstr "Изменить порядок"
 
 msgid "Volume"
 msgstr "Громкость"
+
+msgid "Turn off after"
+msgstr "Выключить через"
+
+msgid "Dim after"
+msgstr "Затемнить через"
+
+msgid "Stop after"
+msgstr "Остановить через"
+
+msgid "Go idle after"
+msgstr "Режим ожидания через"
 
 msgid "Clock"
 msgstr "Часы"

@@ -2595,8 +2595,6 @@ msgid ""
 "Limits the player volume, including buttons, remote controls and plugins."
 msgstr ""
 
-msgid "Car Mode is disabled."
-msgstr ""
 
 msgid "Car Mode Volume"
 msgstr ""
@@ -2656,8 +2654,6 @@ msgstr ""
 msgid "Suspend to RAM"
 msgstr ""
 
-msgid "Idle timeout:"
-msgstr ""
 
 msgid "Africa"
 msgstr ""
@@ -2874,6 +2870,18 @@ msgid "Reorder Items"
 msgstr ""
 
 msgid "Volume"
+msgstr ""
+
+msgid "Turn off after"
+msgstr ""
+
+msgid "Dim after"
+msgstr ""
+
+msgid "Stop after"
+msgstr ""
+
+msgid "Go idle after"
 msgstr ""
 
 msgid "Clock"

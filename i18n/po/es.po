@@ -2623,8 +2623,6 @@ msgstr "Volumen máximo"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Limita el volumen del reproductor, incluidos los botones, los controles remotos y los plugins."
 
-msgid "Car Mode is disabled."
-msgstr "El modo auto está desactivado."
 
 msgid "Car Mode Volume"
 msgstr "Volumen del modo auto"
@@ -2686,8 +2684,6 @@ msgstr "Apagar"
 msgid "Suspend to RAM"
 msgstr "Suspender a RAM"
 
-msgid "Idle timeout:"
-msgstr "Tiempo de inactividad:"
 
 msgid "Africa"
 msgstr "África"
@@ -2902,6 +2898,18 @@ msgstr "Reordenar elementos"
 
 msgid "Volume"
 msgstr "Volumen"
+
+msgid "Turn off after"
+msgstr "Apagar después de"
+
+msgid "Dim after"
+msgstr "Atenuar después de"
+
+msgid "Stop after"
+msgstr "Detener después de"
+
+msgid "Go idle after"
+msgstr "Inactivo después de"
 
 msgid "Clock"
 msgstr "Reloj"

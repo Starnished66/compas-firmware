@@ -2406,8 +2406,6 @@ msgstr "最大音量"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "ボタン、リモコン、プラグインを含め、プレーヤーの音量を制限します。"
 
-msgid "Car Mode is disabled."
-msgstr "車載モードは無効です。"
 
 msgid "Car Mode Volume"
 msgstr "車載モードの音量"
@@ -2460,8 +2458,6 @@ msgstr "電源オフ"
 msgid "Suspend to RAM"
 msgstr "RAMにサスペンド"
 
-msgid "Idle timeout:"
-msgstr "アイドルタイムアウト："
 
 msgid "Africa"
 msgstr "アフリカ"
@@ -2675,6 +2671,18 @@ msgstr "項目を並べ替え"
 
 msgid "Volume"
 msgstr "音量"
+
+msgid "Turn off after"
+msgstr "オフまでの時間"
+
+msgid "Dim after"
+msgstr "暗くなるまでの時間"
+
+msgid "Stop after"
+msgstr "停止までの時間"
+
+msgid "Go idle after"
+msgstr "アイドルまでの時間"
 
 msgid "Clock"
 msgstr "時計"

@@ -2577,8 +2577,6 @@ msgstr "Maximale Lautstärke"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Begrenzt die Player-Lautstärke, einschließlich Tasten, Fernbedienungen und Plugins."
 
-msgid "Car Mode is disabled."
-msgstr "Auto-Modus ist deaktiviert."
 
 msgid "Car Mode Volume"
 msgstr "Lautstärke im Auto-Modus"
@@ -2640,8 +2638,6 @@ msgstr "Ausschalten"
 msgid "Suspend to RAM"
 msgstr "In den RAM-Ruhezustand wechseln"
 
-msgid "Idle timeout:"
-msgstr "Leerlauf-Timeout:"
 
 msgid "Africa"
 msgstr "Afrika"
@@ -2856,6 +2852,18 @@ msgstr "Elemente neu anordnen"
 
 msgid "Volume"
 msgstr "Lautstärke"
+
+msgid "Turn off after"
+msgstr "Ausschalten nach"
+
+msgid "Dim after"
+msgstr "Dimmen nach"
+
+msgid "Stop after"
+msgstr "Stoppen nach"
+
+msgid "Go idle after"
+msgstr "Ruhezustand nach"
 
 msgid "Clock"
 msgstr "Uhr"

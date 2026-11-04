@@ -2589,8 +2589,6 @@ msgstr "Maximaal volume"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Beperkt het volume van de speler, inclusief knoppen, afstandsbedieningen en plugins."
 
-msgid "Car Mode is disabled."
-msgstr "Automodus is uitgeschakeld."
 
 msgid "Car Mode Volume"
 msgstr "Automodusvolume"
@@ -2652,8 +2650,6 @@ msgstr "Uitschakelen"
 msgid "Suspend to RAM"
 msgstr "Slaapstand (RAM)"
 
-msgid "Idle timeout:"
-msgstr "Time-out voor inactiviteit:"
 
 msgid "Africa"
 msgstr "Afrika"
@@ -2868,6 +2864,18 @@ msgstr "Items herschikken"
 
 msgid "Volume"
 msgstr "Volume"
+
+msgid "Turn off after"
+msgstr "Uitschakelen na"
+
+msgid "Dim after"
+msgstr "Dimmen na"
+
+msgid "Stop after"
+msgstr "Stoppen na"
+
+msgid "Go idle after"
+msgstr "Inactief na"
 
 msgid "Clock"
 msgstr "Klok"

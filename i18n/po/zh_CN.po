@@ -2658,8 +2658,6 @@ msgid ""
 "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "限制播放器音量，包括按键、遥控和插件。"
 
-msgid "Car Mode is disabled."
-msgstr "车载模式已禁用。"
 
 msgid "Car Mode Volume"
 msgstr "车载模式音量"
@@ -2721,8 +2719,6 @@ msgstr "关机"
 msgid "Suspend to RAM"
 msgstr "挂起到内存"
 
-msgid "Idle timeout:"
-msgstr "空闲超时："
 
 msgid "Africa"
 msgstr "非洲"
@@ -2942,6 +2938,18 @@ msgstr "重新排序项目"
 
 msgid "Volume"
 msgstr "音量"
+
+msgid "Turn off after"
+msgstr "关闭延时"
+
+msgid "Dim after"
+msgstr "调暗延时"
+
+msgid "Stop after"
+msgstr "停止延时"
+
+msgid "Go idle after"
+msgstr "待机延时"
 
 msgid "Clock"
 msgstr "时钟"
