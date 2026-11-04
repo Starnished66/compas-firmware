@@ -438,6 +438,9 @@ msgstr "プラグインをインストールするにはSDカードを挿入し�
 msgid "Could not read installed plugins."
 msgstr "インストール済みプラグインを読み取れませんでした。"
 
+msgid "The installed plugins record is damaged. Remove or repair .plugins/.store_installed on the SD card."
+msgstr "インストール済みプラグインの記録が破損しています。SDカード上の .plugins/.store_installed を削除または修復してください。"
+
 msgid "This plugin needs a newer player version."
 msgstr "このプラグインには、より新しいプレーヤーのバージョンが必要です。"
 

@@ -474,6 +474,9 @@ msgstr "Insira um cartão SD para instalar plugins."
 msgid "Could not read installed plugins."
 msgstr "Não foi possível ler os plugins instalados."
 
+msgid "The installed plugins record is damaged. Remove or repair .plugins/.store_installed on the SD card."
+msgstr "O registro de plugins instalados está danificado. Remova ou repare .plugins/.store_installed no cartão SD."
+
 msgid "This plugin needs a newer player version."
 msgstr "Este plugin precisa de uma versão mais nova do player."
 

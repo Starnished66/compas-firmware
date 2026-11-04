@@ -450,6 +450,9 @@ msgstr "Вставте SD-картку, щоб установити плагін
 msgid "Could not read installed plugins."
 msgstr "Не вдалося прочитати список установлених плагінів."
 
+msgid "The installed plugins record is damaged. Remove or repair .plugins/.store_installed on the SD card."
+msgstr "Запис про встановлені плагіни пошкоджено. Видаліть або виправте .plugins/.store_installed на SD-карті."
+
 msgid "This plugin needs a newer player version."
 msgstr "Для цього плагіна потрібна новіша версія плеєра."
 

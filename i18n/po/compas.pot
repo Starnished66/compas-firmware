@@ -466,6 +466,9 @@ msgstr ""
 msgid "Could not read installed plugins."
 msgstr ""
 
+msgid "The installed plugins record is damaged. Remove or repair .plugins/.store_installed on the SD card."
+msgstr ""
+
 msgid "This plugin needs a newer player version."
 msgstr ""
 

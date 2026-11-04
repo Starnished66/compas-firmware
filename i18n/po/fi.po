@@ -452,6 +452,9 @@ msgstr "Aseta SD-kortti liitännäisten asentamista varten."
 msgid "Could not read installed plugins."
 msgstr "Asennettujen liitännäisten lukeminen epäonnistui."
 
+msgid "The installed plugins record is damaged. Remove or repair .plugins/.store_installed on the SD card."
+msgstr "Asennettujen pluginien tietue on vioittunut. Poista tai korjaa .plugins/.store_installed SD-kortilta."
+
 msgid "This plugin needs a newer player version."
 msgstr "Tämä liitännäinen vaatii soittimen uudemman version."
 

@@ -452,6 +452,9 @@ msgstr "Plaats een SD-kaart om plugins te installeren."
 msgid "Could not read installed plugins."
 msgstr "Kan geïnstalleerde plugins niet lezen."
 
+msgid "The installed plugins record is damaged. Remove or repair .plugins/.store_installed on the SD card."
+msgstr "Het register van geïnstalleerde plugins is beschadigd. Verwijder of herstel .plugins/.store_installed op de SD-kaart."
+
 msgid "This plugin needs a newer player version."
 msgstr "Deze plugin vereist een nieuwere versie van de speler."
 

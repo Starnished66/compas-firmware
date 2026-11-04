@@ -470,6 +470,9 @@ msgstr "插入 SD 卡以安装插件。"
 msgid "Could not read installed plugins."
 msgstr "无法读取已安装的插件。"
 
+msgid "The installed plugins record is damaged. Remove or repair .plugins/.store_installed on the SD card."
+msgstr "已安装插件的记录已损坏。请删除或修复 SD 卡上的 .plugins/.store_installed。"
+
 msgid "This plugin needs a newer player version."
 msgstr "此插件需要更新版本的播放器。"
 

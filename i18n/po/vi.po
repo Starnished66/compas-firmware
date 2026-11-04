@@ -438,6 +438,9 @@ msgstr "Lắp thẻ SD để cài đặt plugin."
 msgid "Could not read installed plugins."
 msgstr "Không thể đọc các plugin đã cài đặt."
 
+msgid "The installed plugins record is damaged. Remove or repair .plugins/.store_installed on the SD card."
+msgstr "Bản ghi plugin đã cài đặt bị hỏng. Hãy xóa hoặc sửa .plugins/.store_installed trên thẻ SD."
+
 msgid "This plugin needs a newer player version."
 msgstr "Plugin này cần phiên bản trình phát mới hơn."
 
