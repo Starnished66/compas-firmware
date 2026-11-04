@@ -3645,3 +3645,15 @@ msgstr "Lặp lại một bài"
 
 msgid "Shuffle + repeat"
 msgstr "Phát ngẫu nhiên có lặp lại"
+
+msgid "Bluetooth pairing"
+msgstr "Ghép nối Bluetooth"
+
+msgid "Pair"
+msgstr "Ghép nối"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "Xác nhận thiết bị kia hiển thị cùng mã này."
+
+msgid "Type this code on the other device."
+msgstr "Nhập mã này trên thiết bị kia."

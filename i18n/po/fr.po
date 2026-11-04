@@ -3922,3 +3922,15 @@ msgstr "Répéter un titre"
 
 msgid "Shuffle + repeat"
 msgstr "Aléatoire avec répétition"
+
+msgid "Bluetooth pairing"
+msgstr "Appairage Bluetooth"
+
+msgid "Pair"
+msgstr "Associer"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "Vérifiez que le même code s'affiche sur l'autre appareil."
+
+msgid "Type this code on the other device."
+msgstr "Saisissez ce code sur l'autre appareil."

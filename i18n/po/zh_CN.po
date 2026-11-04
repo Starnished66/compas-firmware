@@ -3974,3 +3974,15 @@ msgstr "单曲循环"
 
 msgid "Shuffle + repeat"
 msgstr "随机循环播放"
+
+msgid "Bluetooth pairing"
+msgstr "蓝牙配对"
+
+msgid "Pair"
+msgstr "配对"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "请确认另一台设备上显示相同的代码。"
+
+msgid "Type this code on the other device."
+msgstr "请在另一台设备上输入此代码。"

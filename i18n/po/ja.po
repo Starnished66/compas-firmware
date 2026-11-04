@@ -3644,3 +3644,15 @@ msgstr "1曲リピート"
 
 msgid "Shuffle + repeat"
 msgstr "リピートしてシャッフル"
+
+msgid "Bluetooth pairing"
+msgstr "Bluetoothペアリング"
+
+msgid "Pair"
+msgstr "ペアリング"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "もう一方のデバイスに同じコードが表示されていることを確認してください。"
+
+msgid "Type this code on the other device."
+msgstr "このコードをもう一方のデバイスに入力してください。"

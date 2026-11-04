@@ -3891,3 +3891,15 @@ msgstr ""
 
 msgid "Shuffle + repeat"
 msgstr ""
+
+msgid "Bluetooth pairing"
+msgstr ""
+
+msgid "Pair"
+msgstr ""
+
+msgid "Confirm the same code is shown on the other device."
+msgstr ""
+
+msgid "Type this code on the other device."
+msgstr ""

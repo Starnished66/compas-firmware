@@ -3870,3 +3870,15 @@ msgstr "Titel wiederholen"
 
 msgid "Shuffle + repeat"
 msgstr "Zufall mit Wiederholung"
+
+msgid "Bluetooth pairing"
+msgstr "Bluetooth-Kopplung"
+
+msgid "Pair"
+msgstr "Pairen"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "Bestätige, dass auf dem anderen Gerät derselbe Code angezeigt wird."
+
+msgid "Type this code on the other device."
+msgstr "Gib diesen Code auf dem anderen Gerät ein."

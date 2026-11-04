@@ -3882,3 +3882,15 @@ msgstr "Eén nummer herhalen"
 
 msgid "Shuffle + repeat"
 msgstr "Willekeurig met herhaling"
+
+msgid "Bluetooth pairing"
+msgstr "Bluetooth-koppeling"
+
+msgid "Pair"
+msgstr "Koppelen"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "Controleer of op het andere apparaat dezelfde code wordt getoond."
+
+msgid "Type this code on the other device."
+msgstr "Typ deze code op het andere apparaat."

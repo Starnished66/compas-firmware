@@ -3912,3 +3912,15 @@ msgstr "Повторять одну"
 
 msgid "Shuffle + repeat"
 msgstr "Вперемешку с повтором"
+
+msgid "Bluetooth pairing"
+msgstr "Сопряжение Bluetooth"
+
+msgid "Pair"
+msgstr "Сопрячь"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "Убедитесь, что на другом устройстве показан тот же код."
+
+msgid "Type this code on the other device."
+msgstr "Введите этот код на другом устройстве."

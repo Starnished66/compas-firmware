@@ -3884,3 +3884,15 @@ msgstr "Toista kappale uudelleen"
 
 msgid "Shuffle + repeat"
 msgstr "Sekoitus ja toisto"
+
+msgid "Bluetooth pairing"
+msgstr "Bluetooth-pariliitos"
+
+msgid "Pair"
+msgstr "Muodosta pariliitos"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "Varmista, että sama koodi näkyy toisessa laitteessa."
+
+msgid "Type this code on the other device."
+msgstr "Kirjoita tämä koodi toiseen laitteeseen."

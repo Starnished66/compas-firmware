@@ -3916,3 +3916,15 @@ msgstr "Repetir una"
 
 msgid "Shuffle + repeat"
 msgstr "Aleatorio con repetición"
+
+msgid "Bluetooth pairing"
+msgstr "Emparejamiento Bluetooth"
+
+msgid "Pair"
+msgstr "Emparejar"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "Confirma que se muestra el mismo código en el otro dispositivo."
+
+msgid "Type this code on the other device."
+msgstr "Escribe este código en el otro dispositivo."

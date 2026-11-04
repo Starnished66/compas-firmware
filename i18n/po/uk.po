@@ -3893,3 +3893,15 @@ msgstr "Повторювати одну"
 
 msgid "Shuffle + repeat"
 msgstr "Вперемішку з повтором"
+
+msgid "Bluetooth pairing"
+msgstr "Сполучення Bluetooth"
+
+msgid "Pair"
+msgstr "Сполучити"
+
+msgid "Confirm the same code is shown on the other device."
+msgstr "Переконайтеся, що на іншому пристрої показано той самий код."
+
+msgid "Type this code on the other device."
+msgstr "Введіть цей код на іншому пристрої."
