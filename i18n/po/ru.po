@@ -3932,3 +3932,29 @@ msgstr "Убедитесь, что на другом устройстве пок
 
 msgid "Type this code on the other device."
 msgstr "Введите этот код на другом устройстве."
+
+msgid "DSD Gain"
+msgstr "Усиление DSD"
+
+#, c-format
+msgid "+%d dB"
+msgstr "+%d dB"
+
+msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
+msgstr "Повышает громкость нативного DSD на выходах для наушников этого плеера. Не выше самого громкого шага громкости."
+
+msgid "Seek Step"
+msgstr "Шаг перемотки"
+
+#, c-format
+msgid "%d s"
+msgstr "%d с"
+
+msgid "Apodizing fast roll-off"
+msgstr "Быстрый спад с аподизацией"
+
+msgid "Linear phase fast roll-off"
+msgstr "Быстрый спад с линейной фазой"
+
+msgid "The filter affects local PCM playback. Changes apply when playback restarts."
+msgstr "Фильтр влияет на локальное воспроизведение PCM. Изменения применяются при перезапуске воспроизведения."

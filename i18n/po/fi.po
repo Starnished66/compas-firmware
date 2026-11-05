@@ -3904,3 +3904,29 @@ msgstr "Varmista, että sama koodi näkyy toisessa laitteessa."
 
 msgid "Type this code on the other device."
 msgstr "Kirjoita tämä koodi toiseen laitteeseen."
+
+msgid "DSD Gain"
+msgstr "DSD-vahvistus"
+
+#, c-format
+msgid "+%d dB"
+msgstr "+%d dB"
+
+msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
+msgstr "Nostaa natiivia DSD:tä tämän soittimen kuulokelähdöissä. Se ei voi ylittää voimakkainta äänenvoimakkuusportaaa."
+
+msgid "Seek Step"
+msgstr "Haun askel"
+
+#, c-format
+msgid "%d s"
+msgstr "%d s"
+
+msgid "Apodizing fast roll-off"
+msgstr "Apodisoiva nopea roll-off"
+
+msgid "Linear phase fast roll-off"
+msgstr "Lineaarivaiheinen nopea roll-off"
+
+msgid "The filter affects local PCM playback. Changes apply when playback restarts."
+msgstr "Suodatin vaikuttaa paikalliseen PCM-toistoon. Muutokset otetaan käyttöön, kun toisto käynnistetään uudelleen."

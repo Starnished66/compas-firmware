@@ -3942,3 +3942,29 @@ msgstr "Conferma che lo stesso codice è mostrato sull'altro dispositivo."
 
 msgid "Type this code on the other device."
 msgstr "Digita questo codice sull'altro dispositivo."
+
+msgid "DSD Gain"
+msgstr "Guadagno DSD"
+
+#, c-format
+msgid "+%d dB"
+msgstr "+%d dB"
+
+msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
+msgstr "Aumenta il DSD nativo sulle uscite cuffie di questo lettore. Non può superare il livello di volume più alto."
+
+msgid "Seek Step"
+msgstr "Passo di ricerca"
+
+#, c-format
+msgid "%d s"
+msgstr "%d s"
+
+msgid "Apodizing fast roll-off"
+msgstr "Roll-off veloce apodizzante"
+
+msgid "Linear phase fast roll-off"
+msgstr "Roll-off veloce a fase lineare"
+
+msgid "The filter affects local PCM playback. Changes apply when playback restarts."
+msgstr "Il filtro influisce sulla riproduzione locale PCM. Le modifiche si applicano al riavvio della riproduzione."

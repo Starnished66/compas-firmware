@@ -3911,3 +3911,29 @@ msgstr ""
 
 msgid "Type this code on the other device."
 msgstr ""
+
+msgid "DSD Gain"
+msgstr ""
+
+#, c-format
+msgid "+%d dB"
+msgstr ""
+
+msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
+msgstr ""
+
+msgid "Seek Step"
+msgstr ""
+
+#, c-format
+msgid "%d s"
+msgstr ""
+
+msgid "Apodizing fast roll-off"
+msgstr ""
+
+msgid "Linear phase fast roll-off"
+msgstr ""
+
+msgid "The filter affects local PCM playback. Changes apply when playback restarts."
+msgstr ""

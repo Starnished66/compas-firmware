@@ -3994,3 +3994,29 @@ msgstr "请确认另一台设备上显示相同的代码。"
 
 msgid "Type this code on the other device."
 msgstr "请在另一台设备上输入此代码。"
+
+msgid "DSD Gain"
+msgstr "DSD 增益"
+
+#, c-format
+msgid "+%d dB"
+msgstr "+%d dB"
+
+msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
+msgstr "提高本播放器耳机输出上原生 DSD 的音量。不会超过最大音量档。"
+
+msgid "Seek Step"
+msgstr "跳转步长"
+
+#, c-format
+msgid "%d s"
+msgstr "%d 秒"
+
+msgid "Apodizing fast roll-off"
+msgstr "切趾快速滚降"
+
+msgid "Linear phase fast roll-off"
+msgstr "线性相位快速滚降"
+
+msgid "The filter affects local PCM playback. Changes apply when playback restarts."
+msgstr "滤波器会影响本地 PCM 播放。更改将在重新开始播放时生效。"

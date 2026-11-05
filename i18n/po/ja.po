@@ -3664,3 +3664,29 @@ msgstr "もう一方のデバイスに同じコードが表示されているこ
 
 msgid "Type this code on the other device."
 msgstr "このコードをもう一方のデバイスに入力してください。"
+
+msgid "DSD Gain"
+msgstr "DSDゲイン"
+
+#, c-format
+msgid "+%d dB"
+msgstr "+%d dB"
+
+msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
+msgstr "このプレーヤーのヘッドホン出力でネイティブDSDの音量を上げます。最大の音量ステップを超えることはできません。"
+
+msgid "Seek Step"
+msgstr "シークステップ"
+
+#, c-format
+msgid "%d s"
+msgstr "%d 秒"
+
+msgid "Apodizing fast roll-off"
+msgstr "アポダイジングファストロールオフ"
+
+msgid "Linear phase fast roll-off"
+msgstr "リニアフェーズファストロールオフ"
+
+msgid "The filter affects local PCM playback. Changes apply when playback restarts."
+msgstr "フィルターはローカルのPCM再生に影響します。変更は再生を再開したときに適用されます。"

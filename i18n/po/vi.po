@@ -3665,3 +3665,29 @@ msgstr "Xác nhận thiết bị kia hiển thị cùng mã này."
 
 msgid "Type this code on the other device."
 msgstr "Nhập mã này trên thiết bị kia."
+
+msgid "DSD Gain"
+msgstr "Độ lợi DSD"
+
+#, c-format
+msgid "+%d dB"
+msgstr "+%d dB"
+
+msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
+msgstr "Tăng âm lượng DSD gốc trên các cổng tai nghe của máy này. Không thể vượt quá mức âm lượng lớn nhất."
+
+msgid "Seek Step"
+msgstr "Bước tua"
+
+#, c-format
+msgid "%d s"
+msgstr "%d giây"
+
+msgid "Apodizing fast roll-off"
+msgstr "Roll-off nhanh apodizing"
+
+msgid "Linear phase fast roll-off"
+msgstr "Roll-off nhanh pha tuyến tính"
+
+msgid "The filter affects local PCM playback. Changes apply when playback restarts."
+msgstr "Bộ lọc ảnh hưởng đến việc phát PCM cục bộ. Các thay đổi có hiệu lực khi phát lại được khởi động lại."
