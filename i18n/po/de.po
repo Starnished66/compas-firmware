@@ -3815,6 +3815,9 @@ msgstr "Lokale DAC-Einstellungen"
 msgid "Music menu"
 msgstr "Musikmenü"
 
+msgid "Cover Flow"
+msgstr "Cover Flow"
+
 msgid "NOS Mode"
 msgstr "NOS-Modus"
 

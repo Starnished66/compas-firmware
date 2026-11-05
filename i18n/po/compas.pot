@@ -3759,6 +3759,9 @@ msgstr ""
 msgid "Music menu"
 msgstr ""
 
+msgid "Cover Flow"
+msgstr ""
+
 msgid "NOS Mode"
 msgstr ""
 

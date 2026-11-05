@@ -3842,6 +3842,9 @@ msgstr "本地 DAC 设置"
 msgid "Music menu"
 msgstr "音乐菜单"
 
+msgid "Cover Flow"
+msgstr "Cover Flow"
+
 msgid "NOS Mode"
 msgstr "NOS 模式"
 

@@ -3513,6 +3513,9 @@ msgstr "Cài đặt DAC cục bộ"
 msgid "Music menu"
 msgstr "Menu Âm nhạc"
 
+msgid "Cover Flow"
+msgstr "Cover Flow"
+
 msgid "NOS Mode"
 msgstr "Chế độ NOS"
 

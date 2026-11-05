@@ -3512,6 +3512,9 @@ msgstr "ローカルDAC設定"
 msgid "Music menu"
 msgstr "音楽メニュー"
 
+msgid "Cover Flow"
+msgstr "Cover Flow"
+
 msgid "NOS Mode"
 msgstr "NOSモード"
 

@@ -3829,6 +3829,9 @@ msgstr "Paikalliset DAC-asetukset"
 msgid "Music menu"
 msgstr "Musiikkivalikko"
 
+msgid "Cover Flow"
+msgstr "Cover Flow"
+
 msgid "NOS Mode"
 msgstr "NOS-tila"
 
