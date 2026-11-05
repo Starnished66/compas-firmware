@@ -3345,12 +3345,6 @@ msgstr ""
 msgid "Wi-Fi failed to change state"
 msgstr ""
 
-msgid "Turn off Bluetooth to use Wi-Fi"
-msgstr ""
-
-msgid "Turn off Wi-Fi to use Bluetooth"
-msgstr ""
-
 msgid "Failed to toggle Bluetooth"
 msgstr ""
 

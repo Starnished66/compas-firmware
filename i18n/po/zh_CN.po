@@ -3424,12 +3424,6 @@ msgstr "%dm"
 msgid "Wi-Fi failed to change state"
 msgstr "Wi-Fi 状态切换失败"
 
-msgid "Turn off Bluetooth to use Wi-Fi"
-msgstr "关闭蓝牙以使用 Wi-Fi"
-
-msgid "Turn off Wi-Fi to use Bluetooth"
-msgstr "关闭 Wi-Fi 以使用蓝牙"
-
 msgid "Failed to toggle Bluetooth"
 msgstr "无法切换蓝牙"
 

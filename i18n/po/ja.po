@@ -3122,12 +3122,6 @@ msgstr "%dm"
 msgid "Wi-Fi failed to change state"
 msgstr "Wi-Fiの状態を変更できませんでした"
 
-msgid "Turn off Bluetooth to use Wi-Fi"
-msgstr "Wi-Fiを使うにはBluetoothをオフにしてください"
-
-msgid "Turn off Wi-Fi to use Bluetooth"
-msgstr "Bluetoothを使うにはWi-Fiをオフにしてください"
-
 msgid "Failed to toggle Bluetooth"
 msgstr "Bluetoothを切り替えられませんでした"
 

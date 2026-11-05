@@ -3122,12 +3122,6 @@ msgstr "%dm"
 msgid "Wi-Fi failed to change state"
 msgstr "Wi-Fi không thể thay đổi trạng thái"
 
-msgid "Turn off Bluetooth to use Wi-Fi"
-msgstr "Tắt Bluetooth để sử dụng Wi-Fi"
-
-msgid "Turn off Wi-Fi to use Bluetooth"
-msgstr "Tắt Wi-Fi để sử dụng Bluetooth"
-
 msgid "Failed to toggle Bluetooth"
 msgstr "Không thể chuyển đổi Bluetooth"
 
