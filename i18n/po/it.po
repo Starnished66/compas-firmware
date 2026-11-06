@@ -4009,3 +4009,12 @@ msgstr "Ascoltati di recente"
 msgctxt "albums"
 msgid "Most Played"
 msgstr "Più ascoltati"
+
+msgid "Restore at Startup"
+msgstr "Ripristina all’avvio"
+
+msgid "Restore Wi-Fi at Startup"
+msgstr "Ripristina Wi-Fi all’avvio"
+
+msgid "Restore Bluetooth at Startup"
+msgstr "Ripristina Bluetooth all’avvio"

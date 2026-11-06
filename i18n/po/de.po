@@ -3957,3 +3957,12 @@ msgstr "Zuletzt gespielt"
 msgctxt "albums"
 msgid "Most Played"
 msgstr "Meistgespielt"
+
+msgid "Restore at Startup"
+msgstr "Beim Start wiederherstellen"
+
+msgid "Restore Wi-Fi at Startup"
+msgstr "WLAN beim Start wiederherstellen"
+
+msgid "Restore Bluetooth at Startup"
+msgstr "Bluetooth beim Start wiederherstellen"

@@ -3766,3 +3766,12 @@ msgstr "最近再生"
 msgctxt "albums"
 msgid "Most Played"
 msgstr "再生回数の多い順"
+
+msgid "Restore at Startup"
+msgstr "起動時に復元"
+
+msgid "Restore Wi-Fi at Startup"
+msgstr "起動時にWi-Fiを復元"
+
+msgid "Restore Bluetooth at Startup"
+msgstr "起動時にBluetoothを復元"

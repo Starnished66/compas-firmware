@@ -4059,3 +4059,12 @@ msgstr "最近播放"
 msgctxt "albums"
 msgid "Most Played"
 msgstr "最常播放"
+
+msgid "Restore at Startup"
+msgstr "开机时恢复"
+
+msgid "Restore Wi-Fi at Startup"
+msgstr "开机时恢复 Wi-Fi"
+
+msgid "Restore Bluetooth at Startup"
+msgstr "开机时恢复蓝牙"

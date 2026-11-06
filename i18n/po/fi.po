@@ -3971,3 +3971,12 @@ msgstr "Äskettäin toistetut"
 msgctxt "albums"
 msgid "Most Played"
 msgstr "Eniten toistetut"
+
+msgid "Restore at Startup"
+msgstr "Palauta käynnistettäessä"
+
+msgid "Restore Wi-Fi at Startup"
+msgstr "Palauta Wi-Fi käynnistettäessä"
+
+msgid "Restore Bluetooth at Startup"
+msgstr "Palauta Bluetooth käynnistettäessä"

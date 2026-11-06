@@ -4003,3 +4003,12 @@ msgstr "Reproducidos recientemente"
 msgctxt "albums"
 msgid "Most Played"
 msgstr "Más reproducidos"
+
+msgid "Restore at Startup"
+msgstr "Restaurar al iniciar"
+
+msgid "Restore Wi-Fi at Startup"
+msgstr "Restaurar Wi-Fi al iniciar"
+
+msgid "Restore Bluetooth at Startup"
+msgstr "Restaurar Bluetooth al iniciar"

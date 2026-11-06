@@ -3999,3 +3999,12 @@ msgstr "Недавно прослушанные"
 msgctxt "albums"
 msgid "Most Played"
 msgstr "Часто воспроизводимые"
+
+msgid "Restore at Startup"
+msgstr "Восстанавливать при запуске"
+
+msgid "Restore Wi-Fi at Startup"
+msgstr "Восстанавливать Wi-Fi при запуске"
+
+msgid "Restore Bluetooth at Startup"
+msgstr "Восстанавливать Bluetooth при запуске"

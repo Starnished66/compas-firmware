@@ -3767,3 +3767,12 @@ msgstr "Đã phát gần đây"
 msgctxt "albums"
 msgid "Most Played"
 msgstr "Được phát nhiều nhất"
+
+msgid "Restore at Startup"
+msgstr "Khôi phục khi khởi động"
+
+msgid "Restore Wi-Fi at Startup"
+msgstr "Khôi phục Wi-Fi khi khởi động"
+
+msgid "Restore Bluetooth at Startup"
+msgstr "Khôi phục Bluetooth khi khởi động"

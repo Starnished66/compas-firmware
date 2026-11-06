@@ -3967,3 +3967,12 @@ msgstr ""
 msgctxt "albums"
 msgid "Most Played"
 msgstr ""
+
+msgid "Restore at Startup"
+msgstr ""
+
+msgid "Restore Wi-Fi at Startup"
+msgstr ""
+
+msgid "Restore Bluetooth at Startup"
+msgstr ""
