@@ -3775,3 +3775,21 @@ msgstr "起動時にWi-Fiを復元"
 
 msgid "Restore Bluetooth at Startup"
 msgstr "起動時にBluetoothを復元"
+
+msgid "Name (Z–A)"
+msgstr "名前（Z～A）"
+
+msgid "Oldest Modified"
+msgstr "更新日の古い順"
+
+msgid "Oldest Added"
+msgstr "追加日の古い順"
+
+msgid "Release Year (newest first)"
+msgstr "リリース年（新しい順）"
+
+msgid "Album Artist (Z–A)"
+msgstr "アルバムアーティスト（Z～A）"
+
+msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
+msgstr "ファイルは更新日を使います。アルバムは最後に追加された曲を使い、リリース年では年が不明な項目を最後に表示します。既存のファイルから年を読み取るには、音楽データベースを一度更新してください。"

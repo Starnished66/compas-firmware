@@ -3980,3 +3980,21 @@ msgstr "Palauta Wi-Fi käynnistettäessä"
 
 msgid "Restore Bluetooth at Startup"
 msgstr "Palauta Bluetooth käynnistettäessä"
+
+msgid "Name (Z–A)"
+msgstr "Nimi (Ö–A)"
+
+msgid "Oldest Modified"
+msgstr "Vanhimmat muokatut"
+
+msgid "Oldest Added"
+msgstr "Vanhimmat lisätyt"
+
+msgid "Release Year (newest first)"
+msgstr "Julkaisuvuosi (uusin ensin)"
+
+msgid "Album Artist (Z–A)"
+msgstr "Albumin esittäjä (Ö–A)"
+
+msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
+msgstr "Tiedostot käyttävät muokkauspäivää. Albumit käyttävät uusinta lisättyä kappaletta; Julkaisuvuosi pitää puuttuvat vuodet viimeisinä. Päivitä musiikkitietokanta kerran, jotta vuodet luetaan olemassa olevista tiedostoista."

@@ -3976,3 +3976,21 @@ msgstr ""
 
 msgid "Restore Bluetooth at Startup"
 msgstr ""
+
+msgid "Name (Z–A)"
+msgstr ""
+
+msgid "Oldest Modified"
+msgstr ""
+
+msgid "Oldest Added"
+msgstr ""
+
+msgid "Release Year (newest first)"
+msgstr ""
+
+msgid "Album Artist (Z–A)"
+msgstr ""
+
+msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
+msgstr ""

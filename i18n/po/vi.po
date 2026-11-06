@@ -3776,3 +3776,21 @@ msgstr "Khôi phục Wi-Fi khi khởi động"
 
 msgid "Restore Bluetooth at Startup"
 msgstr "Khôi phục Bluetooth khi khởi động"
+
+msgid "Name (Z–A)"
+msgstr "Tên (Z–A)"
+
+msgid "Oldest Modified"
+msgstr "Sửa đổi cũ nhất"
+
+msgid "Oldest Added"
+msgstr "Được thêm lâu nhất"
+
+msgid "Release Year (newest first)"
+msgstr "Năm phát hành (mới nhất xếp trước)"
+
+msgid "Album Artist (Z–A)"
+msgstr "Nghệ sĩ album (Z–A)"
+
+msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
+msgstr "Tệp dùng ngày sửa đổi. Album dùng bản nhạc được thêm gần đây nhất; Năm phát hành luôn xếp mục thiếu năm ở cuối. Cập nhật cơ sở dữ liệu nhạc một lần để đọc năm từ các tệp hiện có."

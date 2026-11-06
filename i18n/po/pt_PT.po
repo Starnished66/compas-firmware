@@ -3981,3 +3981,21 @@ msgstr "Restaurar Wi-Fi ao iniciar"
 
 msgid "Restore Bluetooth at Startup"
 msgstr "Restaurar Bluetooth ao iniciar"
+
+msgid "Name (Z–A)"
+msgstr "Nome (Z–A)"
+
+msgid "Oldest Modified"
+msgstr "Modificados há mais tempo"
+
+msgid "Oldest Added"
+msgstr "Adicionados há mais tempo"
+
+msgid "Release Year (newest first)"
+msgstr "Ano de lançamento (mais recente primeiro)"
+
+msgid "Album Artist (Z–A)"
+msgstr "Artista do álbum (Z–A)"
+
+msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
+msgstr "Os ficheiros usam as datas de modificação. Os álbuns usam a faixa adicionada mais recentemente; Ano de lançamento mantém os anos em falta no fim. Atualize a base de dados de música uma vez para ler os anos dos ficheiros existentes."

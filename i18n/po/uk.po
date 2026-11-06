@@ -3989,3 +3989,21 @@ msgstr "Відновлювати Wi-Fi під час запуску"
 
 msgid "Restore Bluetooth at Startup"
 msgstr "Відновлювати Bluetooth під час запуску"
+
+msgid "Name (Z–A)"
+msgstr "Назва (Я–А)"
+
+msgid "Oldest Modified"
+msgstr "Найстаріші за датою зміни"
+
+msgid "Oldest Added"
+msgstr "Найдавніше додані"
+
+msgid "Release Year (newest first)"
+msgstr "Рік випуску (від найновішого)"
+
+msgid "Album Artist (Z–A)"
+msgstr "Виконавець альбому (Я–А)"
+
+msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
+msgstr "Для файлів використовується дата зміни. Для альбомів — дата додавання найновішої композиції; під час сортування за роком випуску записи без року залишаються в кінці. Оновіть музичну базу один раз, щоб прочитати роки з наявних файлів."

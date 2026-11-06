@@ -4068,3 +4068,21 @@ msgstr "开机时恢复 Wi-Fi"
 
 msgid "Restore Bluetooth at Startup"
 msgstr "开机时恢复蓝牙"
+
+msgid "Name (Z–A)"
+msgstr "名称（Z–A）"
+
+msgid "Oldest Modified"
+msgstr "最早修改"
+
+msgid "Oldest Added"
+msgstr "最早添加"
+
+msgid "Release Year (newest first)"
+msgstr "发行年份（最新优先）"
+
+msgid "Album Artist (Z–A)"
+msgstr "专辑艺术家（Z–A）"
+
+msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
+msgstr "文件使用修改日期。专辑使用最近添加的曲目日期；按发行年份排序时，缺少年份的项目始终排在最后。请更新一次音乐数据库，以读取现有文件中的年份。"

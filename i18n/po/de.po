@@ -3966,3 +3966,21 @@ msgstr "WLAN beim Start wiederherstellen"
 
 msgid "Restore Bluetooth at Startup"
 msgstr "Bluetooth beim Start wiederherstellen"
+
+msgid "Name (Z–A)"
+msgstr "Name (Z–A)"
+
+msgid "Oldest Modified"
+msgstr "Älteste Änderungen"
+
+msgid "Oldest Added"
+msgstr "Am frühesten hinzugefügt"
+
+msgid "Release Year (newest first)"
+msgstr "Erscheinungsjahr (neueste zuerst)"
+
+msgid "Album Artist (Z–A)"
+msgstr "Albuminterpret (Z–A)"
+
+msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
+msgstr "Dateien verwenden das Änderungsdatum. Alben verwenden den zuletzt hinzugefügten Titel; beim Erscheinungsjahr stehen fehlende Jahre zuletzt. Aktualisiere die Musikdatenbank einmal, um Jahre aus vorhandenen Dateien einzulesen."
