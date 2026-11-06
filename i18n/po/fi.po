@@ -3430,6 +3430,9 @@ msgstr "Lataus palvelimelta epäonnistui"
 msgid "Previous request still finishing"
 msgstr "Edellistä pyyntöä viimeistellään vielä"
 
+msgid "Offline - showing saved library"
+msgstr "Ei yhteyttä - näytetään tallennettu kirjasto"
+
 msgid "Not enough memory to load from server"
 msgstr "Palvelimelta lataamiseen ei ole riittävästi muistia"
 
@@ -3458,18 +3461,11 @@ msgstr "Ladataanko ”%s”?"
 msgid "Download every album from \"%s\"?"
 msgstr "Ladataanko kaikki esittäjän ”%s” albumit?"
 
-msgid "Failed to load artists"
-msgstr "Esittäjien lataus epäonnistui"
-
 msgid "Failed to connect to server"
 msgstr "Yhteyden muodostaminen palvelimeen epäonnistui"
 
 msgid "Connection timed out after 30 seconds"
 msgstr "Yhteys aikakatkaistiin 30 sekunnin kuluttua"
-
-#, c-format
-msgid "Failed to load artists: %s"
-msgstr "Esittäjien lataus epäonnistui: %s"
 
 msgid "Not enough memory to connect"
 msgstr "Yhteyden muodostamiseen ei ole riittävästi muistia"
@@ -3933,3 +3929,27 @@ msgstr "Lineaarivaiheinen nopea roll-off"
 
 msgid "The filter affects local PCM playback. Changes apply when playback restarts."
 msgstr "Suodatin vaikuttaa paikalliseen PCM-toistoon. Muutokset otetaan käyttöön, kun toisto käynnistetään uudelleen."
+
+msgid "All Albums"
+msgstr "Kaikki albumit"
+
+msgid "Top Rated"
+msgstr "Parhaiten arvioidut"
+
+msgid "Random"
+msgstr "Satunnainen"
+
+msgid "Random Songs"
+msgstr "Satunnaiset kappaleet"
+
+msgctxt "albums"
+msgid "Recently Added"
+msgstr "Äskettäin lisätyt"
+
+msgctxt "albums"
+msgid "Recently Played"
+msgstr "Äskettäin toistetut"
+
+msgctxt "albums"
+msgid "Most Played"
+msgstr "Eniten toistetut"

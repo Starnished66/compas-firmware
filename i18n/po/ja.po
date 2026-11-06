@@ -3209,6 +3209,9 @@ msgstr "サーバーから読み込めませんでした"
 msgid "Previous request still finishing"
 msgstr "前のリクエストはまだ処理中です"
 
+msgid "Offline - showing saved library"
+msgstr "オフライン - 保存済みライブラリを表示中"
+
 msgid "Not enough memory to load from server"
 msgstr "サーバーからの読み込みに必要なメモリが不足しています"
 
@@ -3230,17 +3233,11 @@ msgstr "「%s」をダウンロードしますか？"
 msgid "Download every album from \"%s\"?"
 msgstr "「%s」のアルバムをすべてダウンロードしますか？"
 
-msgid "Failed to load artists"
-msgstr "アーティストを読み込めませんでした"
-
 msgid "Failed to connect to server"
 msgstr "サーバーに接続できませんでした"
 
 msgid "Connection timed out after 30 seconds"
 msgstr "接続が30秒後にタイムアウトしました"
-
-msgid "Failed to load artists: %s"
-msgstr "アーティストを読み込めませんでした：%s"
 
 msgid "Not enough memory to connect"
 msgstr "接続に必要なメモリが不足しています"
@@ -3693,3 +3690,27 @@ msgstr "リニアフェーズファストロールオフ"
 
 msgid "The filter affects local PCM playback. Changes apply when playback restarts."
 msgstr "フィルターはローカルのPCM再生に影響します。変更は再生を再開したときに適用されます。"
+
+msgid "All Albums"
+msgstr "すべてのアルバム"
+
+msgid "Top Rated"
+msgstr "高評価"
+
+msgid "Random"
+msgstr "ランダム"
+
+msgid "Random Songs"
+msgstr "ランダムな曲"
+
+msgctxt "albums"
+msgid "Recently Added"
+msgstr "最近追加"
+
+msgctxt "albums"
+msgid "Recently Played"
+msgstr "最近再生"
+
+msgctxt "albums"
+msgid "Most Played"
+msgstr "再生回数の多い順"

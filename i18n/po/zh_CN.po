@@ -3514,6 +3514,9 @@ msgstr "无法从服务器加载"
 msgid "Previous request still finishing"
 msgstr "上一个请求仍在完成中"
 
+msgid "Offline - showing saved library"
+msgstr "离线 - 显示已保存的媒体库"
+
 msgid "Not enough memory to load from server"
 msgstr "内存不足，无法从服务器加载"
 
@@ -3542,18 +3545,11 @@ msgstr "下载“%s”？"
 msgid "Download every album from \"%s\"?"
 msgstr "下载“%s”的全部专辑？"
 
-msgid "Failed to load artists"
-msgstr "无法加载艺术家"
-
 msgid "Failed to connect to server"
 msgstr "无法连接到服务器"
 
 msgid "Connection timed out after 30 seconds"
 msgstr "连接在 30 秒后超时"
-
-#, c-format
-msgid "Failed to load artists: %s"
-msgstr "无法加载艺术家：%s"
 
 msgid "Not enough memory to connect"
 msgstr "内存不足，无法连接"
@@ -4023,3 +4019,27 @@ msgstr "线性相位快速滚降"
 
 msgid "The filter affects local PCM playback. Changes apply when playback restarts."
 msgstr "滤波器会影响本地 PCM 播放。更改将在重新开始播放时生效。"
+
+msgid "All Albums"
+msgstr "所有专辑"
+
+msgid "Top Rated"
+msgstr "评分最高"
+
+msgid "Random"
+msgstr "随机"
+
+msgid "Random Songs"
+msgstr "随机歌曲"
+
+msgctxt "albums"
+msgid "Recently Added"
+msgstr "最近添加"
+
+msgctxt "albums"
+msgid "Recently Played"
+msgstr "最近播放"
+
+msgctxt "albums"
+msgid "Most Played"
+msgstr "最常播放"

@@ -3416,6 +3416,9 @@ msgstr "Laden vom Server fehlgeschlagen"
 msgid "Previous request still finishing"
 msgstr "Vorherige Anfrage wird noch abgeschlossen"
 
+msgid "Offline - showing saved library"
+msgstr "Offline - gespeicherte Mediathek wird angezeigt"
+
 msgid "Not enough memory to load from server"
 msgstr "Nicht genug Speicher zum Laden vom Server"
 
@@ -3444,18 +3447,11 @@ msgstr "„%s“ herunterladen?"
 msgid "Download every album from \"%s\"?"
 msgstr "Alle Alben von „%s“ herunterladen?"
 
-msgid "Failed to load artists"
-msgstr "Interpreten konnten nicht geladen werden"
-
 msgid "Failed to connect to server"
 msgstr "Verbindung zum Server fehlgeschlagen"
 
 msgid "Connection timed out after 30 seconds"
 msgstr "Zeitüberschreitung der Verbindung nach 30 Sekunden"
-
-#, c-format
-msgid "Failed to load artists: %s"
-msgstr "Interpreten konnten nicht geladen werden: %s"
 
 msgid "Not enough memory to connect"
 msgstr "Nicht genug Speicher zum Verbinden"
@@ -3919,3 +3915,27 @@ msgstr "Linearphasiger schneller Roll-off"
 
 msgid "The filter affects local PCM playback. Changes apply when playback restarts."
 msgstr "Der Filter wirkt sich auf die lokale PCM-Wiedergabe aus. Änderungen werden beim nächsten Start der Wiedergabe übernommen."
+
+msgid "All Albums"
+msgstr "Alle Alben"
+
+msgid "Top Rated"
+msgstr "Am besten bewertet"
+
+msgid "Random"
+msgstr "Zufällig"
+
+msgid "Random Songs"
+msgstr "Zufällige Titel"
+
+msgctxt "albums"
+msgid "Recently Added"
+msgstr "Zuletzt hinzugefügt"
+
+msgctxt "albums"
+msgid "Recently Played"
+msgstr "Zuletzt gespielt"
+
+msgctxt "albums"
+msgid "Most Played"
+msgstr "Meistgespielt"

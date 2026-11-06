@@ -3428,6 +3428,9 @@ msgstr "Laden van server mislukt"
 msgid "Previous request still finishing"
 msgstr "Vorige aanvraag wordt nog afgerond"
 
+msgid "Offline - showing saved library"
+msgstr "Offline - opgeslagen bibliotheek wordt getoond"
+
 msgid "Not enough memory to load from server"
 msgstr "Onvoldoende geheugen om van server te laden"
 
@@ -3456,18 +3459,11 @@ msgstr "‘%s’ downloaden?"
 msgid "Download every album from \"%s\"?"
 msgstr "Elk album van ‘%s’ downloaden?"
 
-msgid "Failed to load artists"
-msgstr "Artiesten laden mislukt"
-
 msgid "Failed to connect to server"
 msgstr "Kan geen verbinding maken met server"
 
 msgid "Connection timed out after 30 seconds"
 msgstr "Verbinding verlopen na 30 seconden"
-
-#, c-format
-msgid "Failed to load artists: %s"
-msgstr "Artiesten laden mislukt: %s"
 
 msgid "Not enough memory to connect"
 msgstr "Onvoldoende geheugen om verbinding te maken"
@@ -3931,3 +3927,27 @@ msgstr "Lineaire-fase snelle roll-off"
 
 msgid "The filter affects local PCM playback. Changes apply when playback restarts."
 msgstr "Het filter werkt op lokale PCM-weergave. Wijzigingen gelden zodra de weergave opnieuw start."
+
+msgid "All Albums"
+msgstr "Alle albums"
+
+msgid "Top Rated"
+msgstr "Hoogst beoordeeld"
+
+msgid "Random"
+msgstr "Willekeurig"
+
+msgid "Random Songs"
+msgstr "Willekeurige nummers"
+
+msgctxt "albums"
+msgid "Recently Added"
+msgstr "Recent toegevoegd"
+
+msgctxt "albums"
+msgid "Recently Played"
+msgstr "Recent afgespeeld"
+
+msgctxt "albums"
+msgid "Most Played"
+msgstr "Meest afgespeeld"

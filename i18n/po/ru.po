@@ -3458,6 +3458,9 @@ msgstr "Не удалось загрузить с сервера"
 msgid "Previous request still finishing"
 msgstr "Предыдущий запрос все еще завершается"
 
+msgid "Offline - showing saved library"
+msgstr "Нет связи - показана сохранённая библиотека"
+
 msgid "Not enough memory to load from server"
 msgstr "Недостаточно памяти для загрузки с сервера"
 
@@ -3486,18 +3489,11 @@ msgstr "Загрузить \"%s\"?"
 msgid "Download every album from \"%s\"?"
 msgstr "Загрузить все альбомы из \"%s\"?"
 
-msgid "Failed to load artists"
-msgstr "Не удалось загрузить исполнителей."
-
 msgid "Failed to connect to server"
 msgstr "Не удалось подключиться к серверу"
 
 msgid "Connection timed out after 30 seconds"
 msgstr "Тайм-аут соединения 30 секунд."
-
-#, c-format
-msgid "Failed to load artists: %s"
-msgstr "Не удалось загрузить исполнителей: %s."
 
 msgid "Not enough memory to connect"
 msgstr "Недостаточно памяти для подключения"
@@ -3961,3 +3957,27 @@ msgstr "Быстрый спад с линейной фазой"
 
 msgid "The filter affects local PCM playback. Changes apply when playback restarts."
 msgstr "Фильтр влияет на локальное воспроизведение PCM. Изменения применяются при перезапуске воспроизведения."
+
+msgid "All Albums"
+msgstr "Все альбомы"
+
+msgid "Top Rated"
+msgstr "Лучшие по рейтингу"
+
+msgid "Random"
+msgstr "Случайные"
+
+msgid "Random Songs"
+msgstr "Случайные песни"
+
+msgctxt "albums"
+msgid "Recently Added"
+msgstr "Недавно добавленные"
+
+msgctxt "albums"
+msgid "Recently Played"
+msgstr "Недавно прослушанные"
+
+msgctxt "albums"
+msgid "Most Played"
+msgstr "Часто воспроизводимые"

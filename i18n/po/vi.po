@@ -3209,6 +3209,9 @@ msgstr "Không thể tải từ máy chủ"
 msgid "Previous request still finishing"
 msgstr "Yêu cầu trước đó vẫn đang hoàn tất"
 
+msgid "Offline - showing saved library"
+msgstr "Ngoại tuyến - đang hiển thị thư viện đã lưu"
+
 msgid "Not enough memory to load from server"
 msgstr "Không đủ bộ nhớ để tải từ máy chủ"
 
@@ -3230,17 +3233,11 @@ msgstr "Tải xuống \"%s\"?"
 msgid "Download every album from \"%s\"?"
 msgstr "Tải xuống mọi album từ \"%s\"?"
 
-msgid "Failed to load artists"
-msgstr "Không tải được nghệ sĩ"
-
 msgid "Failed to connect to server"
 msgstr "Không thể kết nối với máy chủ"
 
 msgid "Connection timed out after 30 seconds"
 msgstr "Hết thời gian kết nối sau 30 giây"
-
-msgid "Failed to load artists: %s"
-msgstr "Không tải được nghệ sĩ: %s"
 
 msgid "Not enough memory to connect"
 msgstr "Không đủ bộ nhớ để kết nối"
@@ -3694,3 +3691,27 @@ msgstr "Roll-off nhanh pha tuyến tính"
 
 msgid "The filter affects local PCM playback. Changes apply when playback restarts."
 msgstr "Bộ lọc ảnh hưởng đến việc phát PCM cục bộ. Các thay đổi có hiệu lực khi phát lại được khởi động lại."
+
+msgid "All Albums"
+msgstr "Tất cả album"
+
+msgid "Top Rated"
+msgstr "Được đánh giá cao nhất"
+
+msgid "Random"
+msgstr "Ngẫu nhiên"
+
+msgid "Random Songs"
+msgstr "Bài hát ngẫu nhiên"
+
+msgctxt "albums"
+msgid "Recently Added"
+msgstr "Mới thêm gần đây"
+
+msgctxt "albums"
+msgid "Recently Played"
+msgstr "Đã phát gần đây"
+
+msgctxt "albums"
+msgid "Most Played"
+msgstr "Được phát nhiều nhất"
