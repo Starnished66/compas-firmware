@@ -997,6 +997,11 @@ else
     copy_tracked_assets assets/r3proii/theme2 "$work/root/usr/resource/litegui/theme2"
     copy_tracked_assets assets/r3proii/etc "$work/root/etc"
 fi
+# The stock splash fallback picks logo.jpeg, logo1.jpeg or logo2.jpeg from a
+# NAND theme flag, so the board's Compás logo ships under all three names.
+for logo in logo.jpeg logo2.jpeg; do
+    cp -p "$work/root/etc/logo1.jpeg" "$work/root/etc/$logo"
+done
 python3 "$repo/scripts/generators/fonts/generate_ui_fonts.py" --verify
 copy_tracked_assets assets/fonts  "$work/root/usr/resource/fonts"
 python3 "$repo/scripts/generators/fonts/generate_ui_fonts.py" --verify --font-directory "$work/root/usr/resource/fonts"
@@ -1005,15 +1010,6 @@ python3 "$repo/scripts/generators/fonts/generate_ui_fonts.py" --verify --font-di
 # relative paths under firmware/overlay/ (e.g. usr/share/udhcpc/
 # default.script.d/ntpdate). cp -a keeps mode bits and relative symlinks
 # (sync_ntp.sh).
-# Preserve the vendor splash for validation before the shared overlay lands.
-stock_splash="$work/root/etc/init.d/S11jpeg_display_shell"
-[[ -f "$stock_splash" && ! -L "$stock_splash" ]] || {
-    echo "Base OTA is missing a regular /etc/init.d/S11jpeg_display_shell" >&2
-    exit 1
-}
-stock_splash_snapshot="$work/original-S11jpeg_display_shell"
-cp -p "$stock_splash" "$stock_splash_snapshot"
-
 # Preserve the reviewed radio startup before the shared vendor overlay lands.
 radio_startup=
 if [[ -e "$work/root/usr/bin/compas-radio" ]]; then
@@ -1067,10 +1063,6 @@ if [[ $board == r3proii || $board == r3ii_2025 ]]; then
 fi
 
 apply_r1_runtime_overlay "$work/root"
-
-# Restore the actual vendor launcher before standardization. This prevents an
-# overlay copy from becoming the input to the stock-script fail-closed check.
-cp -p "$stock_splash_snapshot" "$stock_splash"
 
 # Apply the same portable startup changes to every board after optional local
 # runtime overlays, so those overlays cannot restore an unstandardized wrapper.

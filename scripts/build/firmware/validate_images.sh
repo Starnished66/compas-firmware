@@ -48,8 +48,9 @@ PY
 }
 
 # Per-board folders hold only what differs per board: the boot animation at the board's
-# resolution, etc/logo1.jpeg and a board-specific USB DAC overlay. Shared icons live in
-# assets/theme1 and assets/theme2 and are never duplicated per board.
+# resolution, etc/logo1.jpeg (also shipped as logo.jpeg and logo2.jpeg) and a board-specific
+# USB DAC overlay. Shared icons live in assets/theme1 and assets/theme2 and are never
+# duplicated per board.
 for dir in r1 r3proii r3ii_2025 v1; do
     while IFS= read -r f; do
         case $f in
@@ -228,7 +229,7 @@ for board in r1 r3proii r3ii_2025; do
     root=$work/$board/root
     check_manifest "$work/$board/upt/ota_v0"
     check_ota_entries "$work/$board/upt" "$board.upt"
-    cmp -- "$logo_src" "$root/etc/logo1.jpeg"
+    for logo in logo.jpeg logo1.jpeg logo2.jpeg; do cmp -- "$logo_src" "$root/etc/$logo"; done
     cmp -- "$theme_src/boot_animation/en/0.jpg" "$root/usr/resource/litegui/theme2/boot_animation/en/0.jpg"
     cmp -- "$theme_src/boot_animation/en/0.png" "$root/usr/resource/litegui/theme2/boot_animation/en/0.png"
     suffix=_$board; [[ $board != r1 ]] || suffix=
