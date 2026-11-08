@@ -3793,3 +3793,33 @@ msgstr "アルバムアーティスト（Z～A）"
 
 msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
 msgstr "ファイルは更新日を使います。アルバムは最後に追加された曲を使い、リリース年では年が不明な項目を最後に表示します。既存のファイルから年を読み取るには、音楽データベースを一度更新してください。"
+
+msgid "Now Playing"
+msgstr "再生中"
+
+msgid "In Queue"
+msgstr "キュー内"
+
+msgid "Continue Playing"
+msgstr "再生を続ける"
+
+msgid "Stop Bluetooth DAC"
+msgstr "Bluetooth DACを停止"
+
+msgid "Pause Bluetooth audio or stop Bluetooth DAC to play music on this device"
+msgstr "このデバイスで音楽を再生するには、Bluetooth音声を一時停止するか、Bluetooth DACを停止してください"
+
+msgid "Stream audio from another device over Bluetooth."
+msgstr "Bluetooth で別のデバイスから音声をストリーミングします。"
+
+msgid "Waiting for a device"
+msgstr "デバイスを待機中"
+
+msgid "Turn another item off first"
+msgstr "先に別の項目をオフにしてください"
+
+msgid "Receiving"
+msgstr "受信中"
+
+msgid "BT DAC"
+msgstr "BT DAC"

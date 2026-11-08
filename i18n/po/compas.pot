@@ -3994,3 +3994,30 @@ msgstr ""
 
 msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
 msgstr ""
+
+msgid "Now Playing"
+msgstr ""
+
+msgid "In Queue"
+msgstr ""
+
+msgid "Continue Playing"
+msgstr ""
+
+msgid "Pause Bluetooth audio or stop Bluetooth DAC to play music on this device"
+msgstr ""
+
+msgid "Stream audio from another device over Bluetooth."
+msgstr ""
+
+msgid "Waiting for a device"
+msgstr ""
+
+msgid "Turn another item off first"
+msgstr ""
+
+msgid "Receiving"
+msgstr ""
+
+msgid "BT DAC"
+msgstr ""

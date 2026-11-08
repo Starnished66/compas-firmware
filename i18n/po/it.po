@@ -4036,3 +4036,33 @@ msgstr "Artista album (Z–A)"
 
 msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
 msgstr "I file usano la data di modifica. Gli album usano l’ultima traccia aggiunta; Anno di uscita lascia gli anni mancanti in fondo. Aggiorna una volta il database musicale per leggere gli anni dai file esistenti."
+
+msgid "Now Playing"
+msgstr "In riproduzione"
+
+msgid "In Queue"
+msgstr "In coda"
+
+msgid "Continue Playing"
+msgstr "Continua la riproduzione"
+
+msgid "Stop Bluetooth DAC"
+msgstr "Interrompi DAC Bluetooth"
+
+msgid "Pause Bluetooth audio or stop Bluetooth DAC to play music on this device"
+msgstr "Metti in pausa l’audio Bluetooth o arresta DAC Bluetooth per riprodurre musica su questo dispositivo"
+
+msgid "Stream audio from another device over Bluetooth."
+msgstr "Trasmetti l'audio da un altro dispositivo tramite Bluetooth."
+
+msgid "Waiting for a device"
+msgstr "In attesa di un dispositivo"
+
+msgid "Turn another item off first"
+msgstr "Disattiva prima un altro elemento"
+
+msgid "Receiving"
+msgstr "In ricezione"
+
+msgid "BT DAC"
+msgstr "BT DAC"

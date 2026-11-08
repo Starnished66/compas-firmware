@@ -4026,3 +4026,33 @@ msgstr "Исполнитель альбома (Я–А)"
 
 msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
 msgstr "Для файлов используется дата изменения. Для альбомов — дата добавления самой новой композиции; при сортировке по году выпуска записи без года остаются в конце. Обновите музыкальную базу один раз, чтобы прочитать годы из существующих файлов."
+
+msgid "Now Playing"
+msgstr "Сейчас играет"
+
+msgid "In Queue"
+msgstr "В очереди"
+
+msgid "Continue Playing"
+msgstr "Продолжить воспроизведение"
+
+msgid "Stop Bluetooth DAC"
+msgstr "Остановить Bluetooth ЦАП"
+
+msgid "Pause Bluetooth audio or stop Bluetooth DAC to play music on this device"
+msgstr "Приостановите звук Bluetooth или остановите Bluetooth ЦАП, чтобы воспроизводить музыку на этом устройстве"
+
+msgid "Stream audio from another device over Bluetooth."
+msgstr "Потоковая передача звука с другого устройства по Bluetooth."
+
+msgid "Waiting for a device"
+msgstr "Ожидание устройства"
+
+msgid "Turn another item off first"
+msgstr "Сначала отключите другой элемент"
+
+msgid "Receiving"
+msgstr "Приём"
+
+msgid "BT DAC"
+msgstr "BT DAC"

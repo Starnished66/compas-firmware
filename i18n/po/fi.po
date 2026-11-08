@@ -3998,3 +3998,33 @@ msgstr "Albumin esittäjä (Ö–A)"
 
 msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
 msgstr "Tiedostot käyttävät muokkauspäivää. Albumit käyttävät uusinta lisättyä kappaletta; Julkaisuvuosi pitää puuttuvat vuodet viimeisinä. Päivitä musiikkitietokanta kerran, jotta vuodet luetaan olemassa olevista tiedostoista."
+
+msgid "Now Playing"
+msgstr "Nyt soi"
+
+msgid "In Queue"
+msgstr "Jonossa"
+
+msgid "Continue Playing"
+msgstr "Jatka toistoa"
+
+msgid "Stop Bluetooth DAC"
+msgstr "Pysäytä Bluetooth-DAC"
+
+msgid "Pause Bluetooth audio or stop Bluetooth DAC to play music on this device"
+msgstr "Keskeytä Bluetooth-ääni tai pysäytä Bluetooth DAC toistaaksesi musiikkia tällä laitteella"
+
+msgid "Stream audio from another device over Bluetooth."
+msgstr "Suoratoista ääntä toisesta laitteesta Bluetoothin kautta."
+
+msgid "Waiting for a device"
+msgstr "Odotetaan laitetta"
+
+msgid "Turn another item off first"
+msgstr "Poista ensin toinen kohde käytöstä"
+
+msgid "Receiving"
+msgstr "Vastaanotetaan"
+
+msgid "BT DAC"
+msgstr "BT DAC"

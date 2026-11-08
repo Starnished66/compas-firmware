@@ -4086,3 +4086,33 @@ msgstr "专辑艺术家（Z–A）"
 
 msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
 msgstr "文件使用修改日期。专辑使用最近添加的曲目日期；按发行年份排序时，缺少年份的项目始终排在最后。请更新一次音乐数据库，以读取现有文件中的年份。"
+
+msgid "Now Playing"
+msgstr "正在播放"
+
+msgid "In Queue"
+msgstr "队列中"
+
+msgid "Continue Playing"
+msgstr "继续播放"
+
+msgid "Stop Bluetooth DAC"
+msgstr "停止蓝牙 DAC"
+
+msgid "Pause Bluetooth audio or stop Bluetooth DAC to play music on this device"
+msgstr "请暂停蓝牙音频或停止蓝牙 DAC，以在此设备上播放音乐"
+
+msgid "Stream audio from another device over Bluetooth."
+msgstr "通过蓝牙从其他设备串流音频。"
+
+msgid "Waiting for a device"
+msgstr "正在等待设备"
+
+msgid "Turn another item off first"
+msgstr "请先关闭另一个项目"
+
+msgid "Receiving"
+msgstr "正在接收"
+
+msgid "BT DAC"
+msgstr "BT DAC"
