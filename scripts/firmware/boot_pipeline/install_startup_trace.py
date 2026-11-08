@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Install checked startup tracing into supported vendor boot scripts."""
+"""Install checked startup tracing and schedule the known R1 panel earlier."""
 
 from __future__ import annotations
 
@@ -225,6 +225,42 @@ def instrument_modules(text: str, checkpoint_block: str | None = None) -> str:
     return "".join(result)
 
 
+def prioritize_panel(text: str) -> str:
+    """Move the known R1 panel pair ahead of audio, MMC and wireless."""
+    modules = re.findall(r'^sh ([A-Za-z0-9_.+-]+\.sh)$', text, re.MULTILINE)
+    original = ["soc_fb.sh", "soc_aic.sh", "soc_msc.sh", "r1_wireless_select.sh",
+                "soc_adc.sh", "lcd_lg35583.sh"]
+    reordered = [original[0], *original[4:], *original[1:4]]
+    if "lcd_lg35583.sh" not in modules:
+        return text
+    # Keep unrecognized board layouts unchanged. All panel prerequisites must
+    # already precede the framebuffer, and every invocation must be unique.
+    prerequisites = {"utils.sh", "rmem_manager.sh", "soc_utils.sh", "soc_i2c.sh",
+                     "i2c_gpio_add.sh", "axp2101.sh",
+                     "soc_gpio.sh", "soc_pwm.sh", "pwm_backlight.sh"}
+    if len(modules) != len(set(modules)) or "soc_fb.sh" not in modules:
+        return text
+    start = modules.index("soc_fb.sh")
+    if not prerequisites.issubset(modules[:start]):
+        return text
+    if modules[start:start + len(original)] == reordered:
+        return text
+    if modules[start:start + len(original)] != original:
+        return text
+
+    def block(module: str) -> str:
+        return (f'compas_startup_checkpoint module-before "{module}" -\n'
+                f'sh {module}\n'
+                '_compas_module_status=$?\n'
+                f'compas_startup_checkpoint module-after "{module}" "$_compas_module_status"\n'
+                '(exit "$_compas_module_status")\n')
+
+    before = "".join(map(block, original))
+    if text.count(before) != 1:
+        return text
+    return text.replace(before, "".join(map(block, reordered)), 1)
+
+
 def main(root: pathlib.Path) -> None:
     repo = pathlib.Path(__file__).resolve().parents[3]
     helper = repo / "firmware/overlay/usr/libexec/compas/boot-trace.sh"
@@ -245,7 +281,7 @@ def main(root: pathlib.Path) -> None:
         staged_rcs = scratch / "rcS"
         staged_rcs.write_text(instrument_rcs(rcs.read_text(), checkpoint_block))
         staged_modules = scratch / "driver_default_init_script.sh"
-        staged_modules.write_text(instrument_modules(modules.read_text(), checkpoint_block))
+        staged_modules.write_text(prioritize_panel(instrument_modules(modules.read_text(), checkpoint_block)))
         for staged in (staged_helper, staged_rcs, staged_modules):
             validate_shell(staged)
         # Preserve vendor modes on the staged files.
