@@ -1,0 +1,25 @@
+Subject: [PATCH] Compas: contained bt-l2cap fixes
+Apply after compas-usb-native-dsd.patch.
+
+Upstream (net/bluetooth/l2cap_core.c): be8597239379f0f53c9710dd6ab551bbf535bec6 (queues); 3a9d54b1947ecea8eea9a902c0b7eb58a98add8a (configuration default).
+--- a/net/bluetooth/l2cap_core.c
++++ b/net/bluetooth/l2cap_core.c
+@@ -431,6 +431,8 @@
+ 	if (!chan)
+ 		return NULL;
+ 
++	skb_queue_head_init(&chan->tx_q);
++	skb_queue_head_init(&chan->srej_q);
+ 	mutex_init(&chan->lock);
+ 
+ 	/* Set default lock nesting level */
+@@ -496,7 +498,9 @@
+ 	chan->flush_to = L2CAP_DEFAULT_FLUSH_TO;
+ 	chan->retrans_timeout = L2CAP_DEFAULT_RETRANS_TO;
+ 	chan->monitor_timeout = L2CAP_DEFAULT_MONITOR_TO;
++
+ 	chan->conf_state = 0;
++	set_bit(CONF_NOT_COMPLETE, &chan->conf_state);
+ 
+ 	set_bit(FLAG_FORCE_ACTIVE, &chan->flags);
+ }

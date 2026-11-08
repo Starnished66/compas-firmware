@@ -65,3 +65,26 @@ Rebuild using `tempotec_v1-build.md`. Build metadata and the
 outer uImage timestamp are recorded in the registry. The `build-inputs` release contains
 `v1-zram-xImage`, verified by `firmware/v1-kernel.sha256`. V1 beta testers are responsible
 for the first hardware boot/audio/radio/suspend validation of this kernel refresh.
+
+### USB native DSD backport
+
+`patches/compas-usb-native-dsd.patch` backports current Linux USB DSD recognition and
+ITF mode switching (upstream `d48723711bae9b8cdc56719c448ba42fef28cbee`). It retains
+original fixed DAC entries, applies the upstream Playback Designs product boundary,
+and adds known vendor RAW_DATA rules with upstream device exclusions, device entries
+and Amanero firmware byte order. RAW_DATA from an unknown vendor is not assumed to
+be DSD. The parser passes its raw flag internally, keeping
+kernel structure layouts and exported interfaces unchanged.
+
+Candidate builds are kept outside the shipped kernel directory until device testing.
+PCM, DoP and native DSD transitions require hardware validation on each board; a DAC
+that accepts an incorrect native stream may need the player's DoP or PCM setting.
+
+`patches/compas-usb-audio-fixes.patch` adds contained USB clock, descriptor,
+endpoint, probe and suspend fixes, current dongle interface resets and missing
+MOONDROP/iBasso delays after DSD. Only built-in USB internals change; its private
+`snd_usb_audio` suspend field becomes a counter. Device testing is required.
+
+`patches/compas-bt-l2cap-fixes.patch` initializes L2CAP queues and preserves the
+incomplete-configuration default during channel setup. Exports and public
+structures stay unchanged; A2DP reconnect and suspend need device testing.
