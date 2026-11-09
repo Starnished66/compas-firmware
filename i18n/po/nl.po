@@ -4026,3 +4026,312 @@ msgstr "Ontvangen"
 
 msgid "BT DAC"
 msgstr "BT DAC"
+
+msgid "Controls"
+msgstr "Bediening"
+
+msgid "Developer"
+msgstr "Ontwikkelaar"
+
+msgid "Effects"
+msgstr "Effecten"
+
+msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
+msgstr "Schakel Bluetooth in via Draadloos of het snelpaneel om de BT-DAC-modus te gebruiken"
+
+msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgstr "Bibliotheek hersteld. Gebruik Instellingen > Bibliotheek > Muziekdatabase bijwerken om op te slaan"
+
+msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgstr "Bibliotheek niet beschikbaar. Gebruik Instellingen > Bibliotheek > Muziekdatabase bijwerken om deze opnieuw op te bouwen"
+
+msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
+msgstr "Beheer plugins later via Instellingen > Systeem > Plugins om te zoeken, bij te werken of te verwijderen."
+
+msgid "Personalize"
+msgstr "Personaliseren"
+
+msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
+msgstr "Schakel ADB eerst uit (Instellingen > Systeem > Geavanceerd) en schakel daarna hier USB-DAC in."
+
+msgid "Use Settings > Library > Update Music Database"
+msgstr "Gebruik Instellingen > Bibliotheek > Muziekdatabase bijwerken"
+
+msgid "%s: %d (outside ±%d)"
+msgstr "%s: %d (buiten ±%d)"
+
+msgid "A preset with that name already exists"
+msgstr "Er bestaat al een preset met die naam"
+
+msgid "About Play Through"
+msgstr "Over Doorblijven spelen"
+
+msgid "Adjustment Range"
+msgstr "Instelbereik"
+
+msgid "Air"
+msgstr "Luchtigheid"
+
+msgid "Album mode has priority when both options are enabled."
+msgstr "Albummodus heeft voorrang wanneer beide opties zijn ingeschakeld."
+
+msgid "Albums continue in the artist's alphabetical album order."
+msgstr "Albums gaan verder in alfabetische albumvolgorde van de artiest."
+
+msgid "Amount (%)"
+msgstr "Hoeveelheid (%)"
+
+msgid "Bass Extension"
+msgstr "Basbereik"
+
+msgid "Bass Texture"
+msgstr "Bastextuur"
+
+msgid "Bass frequency (Hz)"
+msgstr "Basfrequentie (Hz)"
+
+msgid "Bass width (dB)"
+msgstr "Basbreedte (dB)"
+
+msgid "Confirm"
+msgstr "Bevestigen"
+
+msgid "Continuing playback"
+msgstr "Afspelen wordt voortgezet"
+
+msgid "Could not apply Soundstage. Try again."
+msgstr "Kon klankbeeld niet toepassen. Probeer het opnieuw."
+
+msgid "Could not apply changes. Try again."
+msgstr "Kon wijzigingen niet toepassen. Probeer het opnieuw."
+
+msgid "Could not load preset. Try again."
+msgstr "Kon preset niet laden. Probeer het opnieuw."
+
+msgid "Could not load slot. Try again."
+msgstr "Kon geheugenplek niet laden. Probeer het opnieuw."
+
+msgid "Could not save preset. Try again."
+msgstr "Kon preset niet opslaan. Probeer het opnieuw."
+
+msgid "Could not save range. Try again."
+msgstr "Kon bereik niet opslaan. Probeer het opnieuw."
+
+msgid "Could not save slot. Try again."
+msgstr "Kon plek niet opslaan. Probeer het opnieuw."
+
+msgid "Damaged preset"
+msgstr "Beschadigde preset"
+
+msgid "Damaged preset %d"
+msgstr "Beschadigde preset %d"
+
+msgid "Damping (%)"
+msgstr "Demping (%)"
+
+msgid "Enter a short preset name without line breaks"
+msgstr "Voer een korte presetnaam in zonder regeleinden"
+
+msgid "Female Overtones"
+msgstr "Vrouwelijke boventonen"
+
+msgid "Focused center"
+msgstr "Gefocust midden"
+
+msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgstr "Mappen gaan verder in alfabetische volgorde van naastgelegen mappen."
+
+msgid "Hall"
+msgstr "Zaal"
+
+msgid "How It Works"
+msgstr "Hoe het werkt"
+
+msgid "Impulse Response"
+msgstr "Impulsrespons"
+
+msgid "Load"
+msgstr "Laden"
+
+msgid "Named Presets"
+msgstr "Presets met naam"
+
+msgid "Natural"
+msgstr "Natuurlijk"
+
+msgid "New preset name"
+msgstr "Nieuwe presetnaam"
+
+msgid "Note Thickness"
+msgstr "Nootdikte"
+
+msgid "Older MSEB controls are unsupported; preset was not loaded"
+msgstr "Oudere MSEB-regelaars worden niet ondersteund; preset niet geladen"
+
+msgid "Older MSEB controls are unsupported; slot was not loaded"
+msgstr "Oudere MSEB-regelaars worden niet ondersteund; geheugenplek niet geladen"
+
+msgid "Overall Temperature"
+msgstr "Algemene temperatuur"
+
+msgid "Overwrite"
+msgstr "Overschrijven"
+
+msgid "Overwrite preset?"
+msgstr "Preset overschrijven?"
+
+msgid "Play Through"
+msgstr "Doorblijven spelen"
+
+msgid "Play Through Albums"
+msgstr "Albums doorspelen"
+
+msgid "Play Through Folders"
+msgstr "Mappen doorspelen"
+
+msgid "Preset"
+msgstr "Preset"
+
+msgid "Preset changed; reopen the preset list"
+msgstr "Preset gewijzigd; heropen de presetlijst"
+
+msgid "Preset limit reached; delete one first"
+msgstr "Presetlimiet bereikt; verwijder er eerst een"
+
+msgid "Preset loaded"
+msgstr "Preset geladen"
+
+msgid "Reflections (%)"
+msgstr "Reflecties (%)"
+
+msgid "Rename preset"
+msgstr "Preset hernoemen"
+
+msgid "Reset Soundstage to defaults?"
+msgstr "Klankbeeld herstellen naar standaardwaarden?"
+
+msgid "Reset to Defaults"
+msgstr "Standaardwaarden herstellen"
+
+msgid "Room"
+msgstr "Ruimte"
+
+msgid "Room size (%)"
+msgstr "Ruimtegrootte (%)"
+
+msgid "Save Named Preset"
+msgstr "Preset met naam opslaan"
+
+msgid "Saved"
+msgstr "Opgeslagen"
+
+msgid "Saved to slot"
+msgstr "Opgeslagen op plek"
+
+msgid "Shuffle and repeat modes are left unchanged."
+msgstr "Shuffle- en herhaalmodi blijven ongewijzigd."
+
+msgid "Sibilance HF"
+msgstr "Sisklanken HF"
+
+msgid "Sibilance LF"
+msgstr "Sisklanken LF"
+
+msgid "Side EQ"
+msgstr "Side-EQ"
+
+msgid "Side level (dB)"
+msgstr "Side-niveau (dB)"
+
+msgid "Slot %d"
+msgstr "Slot %d"
+
+msgid "Slot is empty"
+msgstr "Geheugenplek is leeg"
+
+msgid "Slot loaded"
+msgstr "Geheugenplek geladen"
+
+msgid "Small room"
+msgstr "Kleine ruimte"
+
+msgid "Sound Stage"
+msgstr "Geluidsbeeld"
+
+msgid "Sound Tuning"
+msgstr "Geluidsafstemming"
+
+msgid "Soundstage"
+msgstr "Klankbeeld"
+
+msgid "Speaker angle (deg)"
+msgstr "Luidsprekerhoek (deg)"
+
+msgid "Stereo Width"
+msgstr "Stereobreedte"
+
+msgid "Stock MSEB width changes the channel mix."
+msgstr "Standaard MSEB-breedte verandert de kanaalmix."
+
+msgid "Studio monitors"
+msgstr "Studiomonitors"
+
+msgid "Switch to stock MSEB"
+msgstr "Omschakelen naar standaard MSEB"
+
+msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgstr "Deze opgeslagen indeling wordt niet ondersteund. Omschakelen vervangt Instrumentaanwezigheid, Bas-bite en Treble-bite door de standaardregelaars."
+
+msgid "Treble frequency (Hz)"
+msgstr "Treble-frequentie (Hz)"
+
+msgid "Treble width (dB)"
+msgstr "Treble-breedte (dB)"
+
+msgid "Virtual speakers"
+msgstr "Virtuele luidsprekers"
+
+msgid "Vocals"
+msgstr "Zang"
+
+msgid "Wide"
+msgstr "Breed"
+
+msgid "ADB did not change state. Check Settings > System > Advanced."
+msgstr "ADB-status is niet gewijzigd. Controleer Instellingen > Systeem > Geavanceerd."
+
+msgid "Delete damaged preset?"
+msgstr "Beschadigde preset verwijderen?"
+
+msgid "Delete preset?"
+msgstr "Preset verwijderen?"
+
+msgid "Load from Slot"
+msgstr "Laden van plek"
+
+msgid "MSEB"
+msgstr "MSEB"
+
+msgid "Preset renamed"
+msgstr "Preset hernoemd"
+
+msgid "Preset saved"
+msgstr "Preset opgeslagen"
+
+msgid "Restoring ADB…"
+msgstr "ADB herstellen…"
+
+msgid "Save to Slot"
+msgstr "Opslaan op plek"
+
+msgid "Stage"
+msgstr "Podium"
+
+msgid "Turn off Loudness Boost first"
+msgstr "Schakel eerst Loudness Boost uit"
+
+msgid "DAC"
+msgstr "DAC"
+
+msgid "USB Output"
+msgstr "USB-uitgang"

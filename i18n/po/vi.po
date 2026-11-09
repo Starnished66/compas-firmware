@@ -3824,3 +3824,312 @@ msgstr "Đang nhận"
 
 msgid "BT DAC"
 msgstr "BT DAC"
+
+msgid "Controls"
+msgstr "Điều khiển"
+
+msgid "Developer"
+msgstr "Nhà phát triển"
+
+msgid "Effects"
+msgstr "Hiệu ứng"
+
+msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
+msgstr "Bật Bluetooth trong Không dây hoặc Ngăn Kéo Nhanh để dùng chế độ DAC Bluetooth"
+
+msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgstr "Thư viện đã được phục hồi. Sử dụng Cài đặt > Cập nhật cơ sở dữ liệu âm nhạc để lưu"
+
+msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgstr "Thư viện không có sẵn. Sử dụng Cài đặt > Cập nhật cơ sở dữ liệu âm nhạc để xây dựng lại"
+
+msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
+msgstr "Quản lý plugin sau trong Cài đặt > Hệ thống > Plugin để tìm kiếm, cập nhật hoặc xóa chúng."
+
+msgid "Personalize"
+msgstr "Cá nhân hóa"
+
+msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
+msgstr "Trước tiên, tắt ADB (Cài đặt > Hệ thống > Nâng cao), sau đó bật USB DAC tại đây."
+
+msgid "Use Settings > Library > Update Music Database"
+msgstr "Sử dụng Cài đặt > Cập nhật cơ sở dữ liệu âm nhạc"
+
+msgid "%s: %d (outside ±%d)"
+msgstr "%s: %d (ngoài ±%d)"
+
+msgid "A preset with that name already exists"
+msgstr "Đã có cài đặt sẵn mang tên này"
+
+msgid "About Play Through"
+msgstr "Giới thiệu Phát nối tiếp"
+
+msgid "Adjustment Range"
+msgstr "Phạm vi điều chỉnh"
+
+msgid "Air"
+msgstr "Độ thoáng"
+
+msgid "Album mode has priority when both options are enabled."
+msgstr "Chế độ album được ưu tiên khi bật cả hai tùy chọn."
+
+msgid "Albums continue in the artist's alphabetical album order."
+msgstr "Các album tiếp tục theo thứ tự bảng chữ cái của nghệ sĩ."
+
+msgid "Amount (%)"
+msgstr "Mức độ (%)"
+
+msgid "Bass Extension"
+msgstr "Độ sâu âm trầm"
+
+msgid "Bass Texture"
+msgstr "Kết cấu âm trầm"
+
+msgid "Bass frequency (Hz)"
+msgstr "Tần số âm trầm (Hz)"
+
+msgid "Bass width (dB)"
+msgstr "Độ rộng âm trầm (dB)"
+
+msgid "Confirm"
+msgstr "Xác nhận"
+
+msgid "Continuing playback"
+msgstr "Đang tiếp tục phát"
+
+msgid "Could not apply Soundstage. Try again."
+msgstr "Không thể áp dụng âm trường. Hãy thử lại."
+
+msgid "Could not apply changes. Try again."
+msgstr "Không thể áp dụng thay đổi. Hãy thử lại."
+
+msgid "Could not load preset. Try again."
+msgstr "Không thể tải cài đặt sẵn. Hãy thử lại."
+
+msgid "Could not load slot. Try again."
+msgstr "Không thể tải ô nhớ. Hãy thử lại."
+
+msgid "Could not save preset. Try again."
+msgstr "Không thể lưu cài đặt sẵn. Hãy thử lại."
+
+msgid "Could not save range. Try again."
+msgstr "Không thể lưu phạm vi. Hãy thử lại."
+
+msgid "Could not save slot. Try again."
+msgstr "Không thể lưu vào ô nhớ. Hãy thử lại."
+
+msgid "Damaged preset"
+msgstr "Cấu hình sẵn bị hỏng"
+
+msgid "Damaged preset %d"
+msgstr "Cài đặt sẵn bị hỏng %d"
+
+msgid "Damping (%)"
+msgstr "Độ suy giảm (%)"
+
+msgid "Enter a short preset name without line breaks"
+msgstr "Nhập tên ngắn gọn không xuống dòng"
+
+msgid "Female Overtones"
+msgstr "Âm bồi giọng nữ"
+
+msgid "Focused center"
+msgstr "Tập trung trung tâm"
+
+msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgstr "Các thư mục tiếp tục theo thứ tự bảng chữ cái của thư mục cùng cấp."
+
+msgid "Hall"
+msgstr "Hội trường"
+
+msgid "How It Works"
+msgstr "Cách hoạt động"
+
+msgid "Impulse Response"
+msgstr "Đáp ứng xung"
+
+msgid "Load"
+msgstr "Tải"
+
+msgid "Named Presets"
+msgstr "Cài đặt sẵn có tên"
+
+msgid "Natural"
+msgstr "Tự nhiên"
+
+msgid "New preset name"
+msgstr "Tên cài đặt sẵn mới"
+
+msgid "Note Thickness"
+msgstr "Độ dày nốt nhạc"
+
+msgid "Older MSEB controls are unsupported; preset was not loaded"
+msgstr "Không hỗ trợ thanh chỉnh MSEB cũ; chưa tải cài đặt sẵn"
+
+msgid "Older MSEB controls are unsupported; slot was not loaded"
+msgstr "Không hỗ trợ thanh chỉnh MSEB cũ; chưa tải ô nhớ"
+
+msgid "Overall Temperature"
+msgstr "Độ ấm tổng thể"
+
+msgid "Overwrite"
+msgstr "Ghi đè"
+
+msgid "Overwrite preset?"
+msgstr "Ghi đè cài đặt sẵn?"
+
+msgid "Play Through"
+msgstr "Phát nối tiếp"
+
+msgid "Play Through Albums"
+msgstr "Phát tiếp qua các album"
+
+msgid "Play Through Folders"
+msgstr "Phát tiếp qua các thư mục"
+
+msgid "Preset"
+msgstr "Cài đặt sẵn"
+
+msgid "Preset changed; reopen the preset list"
+msgstr "Cài đặt sẵn đã đổi; hãy mở lại danh sách"
+
+msgid "Preset limit reached; delete one first"
+msgstr "Đã đạt giới hạn cấu hình; hãy xóa một cấu hình trước"
+
+msgid "Preset loaded"
+msgstr "Đã tải cài đặt sẵn"
+
+msgid "Reflections (%)"
+msgstr "Phản xạ (%)"
+
+msgid "Rename preset"
+msgstr "Đổi tên cài đặt sẵn"
+
+msgid "Reset Soundstage to defaults?"
+msgstr "Đặt lại âm trường về mặc định?"
+
+msgid "Reset to Defaults"
+msgstr "Khôi phục mặc định"
+
+msgid "Room"
+msgstr "Phòng"
+
+msgid "Room size (%)"
+msgstr "Kích thước phòng (%)"
+
+msgid "Save Named Preset"
+msgstr "Lưu cài đặt sẵn có tên"
+
+msgid "Saved"
+msgstr "Đã lưu"
+
+msgid "Saved to slot"
+msgstr "Đã lưu vào ô nhớ"
+
+msgid "Shuffle and repeat modes are left unchanged."
+msgstr "Chế độ phát ngẫu nhiên và lặp lại được giữ nguyên."
+
+msgid "Sibilance HF"
+msgstr "Âm xuýt tần cao"
+
+msgid "Sibilance LF"
+msgstr "Âm xuýt tần thấp"
+
+msgid "Side EQ"
+msgstr "EQ kênh bên"
+
+msgid "Side level (dB)"
+msgstr "Mức kênh bên (dB)"
+
+msgid "Slot %d"
+msgstr "Ô %d"
+
+msgid "Slot is empty"
+msgstr "Ô nhớ trống"
+
+msgid "Slot loaded"
+msgstr "Đã tải ô nhớ"
+
+msgid "Small room"
+msgstr "Phòng nhỏ"
+
+msgid "Sound Stage"
+msgstr "Âm trường"
+
+msgid "Sound Tuning"
+msgstr "Tinh chỉnh âm thanh"
+
+msgid "Soundstage"
+msgstr "Âm trường"
+
+msgid "Speaker angle (deg)"
+msgstr "Góc loa (deg)"
+
+msgid "Stereo Width"
+msgstr "Độ rộng stereo"
+
+msgid "Stock MSEB width changes the channel mix."
+msgstr "Độ rộng MSEB chuẩn làm thay đổi bản phối kênh."
+
+msgid "Studio monitors"
+msgstr "Loa kiểm âm"
+
+msgid "Switch to stock MSEB"
+msgstr "Chuyển sang MSEB chuẩn"
+
+msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgstr "Bố cục đã lưu này không được hỗ trợ. Chuyển đổi sẽ thay thế Độ nổi nhạc cụ, Độ sắc âm trầm và Độ sắc âm cao bằng các thanh chỉnh chuẩn."
+
+msgid "Treble frequency (Hz)"
+msgstr "Tần số âm cao (Hz)"
+
+msgid "Treble width (dB)"
+msgstr "Độ rộng âm cao (dB)"
+
+msgid "Virtual speakers"
+msgstr "Loa ảo"
+
+msgid "Vocals"
+msgstr "Giọng hát"
+
+msgid "Wide"
+msgstr "Rộng"
+
+msgid "ADB did not change state. Check Settings > System > Advanced."
+msgstr "Trạng thái ADB không thay đổi. Kiểm tra Cài đặt > Hệ thống > Nâng cao."
+
+msgid "Delete damaged preset?"
+msgstr "Xóa cài đặt sẵn bị hỏng?"
+
+msgid "Delete preset?"
+msgstr "Xóa cài đặt sẵn?"
+
+msgid "Load from Slot"
+msgstr "Tải từ ô nhớ"
+
+msgid "MSEB"
+msgstr "MSEB"
+
+msgid "Preset renamed"
+msgstr "Đã đổi tên cài đặt sẵn"
+
+msgid "Preset saved"
+msgstr "Đã lưu cài đặt sẵn"
+
+msgid "Restoring ADB…"
+msgstr "Đang khôi phục ADB…"
+
+msgid "Save to Slot"
+msgstr "Lưu vào ô nhớ"
+
+msgid "Stage"
+msgstr "Sân khấu"
+
+msgid "Turn off Loudness Boost first"
+msgstr "Hãy tắt Tăng âm lượng trước"
+
+msgid "DAC"
+msgstr "DAC"
+
+msgid "USB Output"
+msgstr "Đầu ra USB"

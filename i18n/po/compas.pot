@@ -4021,3 +4021,315 @@ msgstr ""
 
 msgid "BT DAC"
 msgstr ""
+
+msgid "Controls"
+msgstr ""
+
+msgid "Developer"
+msgstr ""
+
+msgid "Effects"
+msgstr ""
+
+msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
+msgstr ""
+
+msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgstr ""
+
+msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgstr ""
+
+msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
+msgstr ""
+
+msgid "Personalize"
+msgstr ""
+
+msgid "Stop Bluetooth DAC"
+msgstr ""
+
+msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
+msgstr ""
+
+msgid "Use Settings > Library > Update Music Database"
+msgstr ""
+
+msgid "%s: %d (outside ±%d)"
+msgstr ""
+
+msgid "A preset with that name already exists"
+msgstr ""
+
+msgid "About Play Through"
+msgstr ""
+
+msgid "Adjustment Range"
+msgstr ""
+
+msgid "Air"
+msgstr ""
+
+msgid "Album mode has priority when both options are enabled."
+msgstr ""
+
+msgid "Albums continue in the artist's alphabetical album order."
+msgstr ""
+
+msgid "Amount (%)"
+msgstr ""
+
+msgid "Bass Extension"
+msgstr ""
+
+msgid "Bass Texture"
+msgstr ""
+
+msgid "Bass frequency (Hz)"
+msgstr ""
+
+msgid "Bass width (dB)"
+msgstr ""
+
+msgid "Confirm"
+msgstr ""
+
+msgid "Continuing playback"
+msgstr ""
+
+msgid "Could not apply Soundstage. Try again."
+msgstr ""
+
+msgid "Could not apply changes. Try again."
+msgstr ""
+
+msgid "Could not load preset. Try again."
+msgstr ""
+
+msgid "Could not load slot. Try again."
+msgstr ""
+
+msgid "Could not save preset. Try again."
+msgstr ""
+
+msgid "Could not save range. Try again."
+msgstr ""
+
+msgid "Could not save slot. Try again."
+msgstr ""
+
+msgid "Damaged preset"
+msgstr ""
+
+msgid "Damaged preset %d"
+msgstr ""
+
+msgid "Damping (%)"
+msgstr ""
+
+msgid "Enter a short preset name without line breaks"
+msgstr ""
+
+msgid "Female Overtones"
+msgstr ""
+
+msgid "Focused center"
+msgstr ""
+
+msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgstr ""
+
+msgid "Hall"
+msgstr ""
+
+msgid "How It Works"
+msgstr ""
+
+msgid "Impulse Response"
+msgstr ""
+
+msgid "Load"
+msgstr ""
+
+msgid "Named Presets"
+msgstr ""
+
+msgid "Natural"
+msgstr ""
+
+msgid "New preset name"
+msgstr ""
+
+msgid "Note Thickness"
+msgstr ""
+
+msgid "Older MSEB controls are unsupported; preset was not loaded"
+msgstr ""
+
+msgid "Older MSEB controls are unsupported; slot was not loaded"
+msgstr ""
+
+msgid "Overall Temperature"
+msgstr ""
+
+msgid "Overwrite"
+msgstr ""
+
+msgid "Overwrite preset?"
+msgstr ""
+
+msgid "Play Through"
+msgstr ""
+
+msgid "Play Through Albums"
+msgstr ""
+
+msgid "Play Through Folders"
+msgstr ""
+
+msgid "Preset"
+msgstr ""
+
+msgid "Preset changed; reopen the preset list"
+msgstr ""
+
+msgid "Preset limit reached; delete one first"
+msgstr ""
+
+msgid "Preset loaded"
+msgstr ""
+
+msgid "Reflections (%)"
+msgstr ""
+
+msgid "Rename preset"
+msgstr ""
+
+msgid "Reset Soundstage to defaults?"
+msgstr ""
+
+msgid "Reset to Defaults"
+msgstr ""
+
+msgid "Room"
+msgstr ""
+
+msgid "Room size (%)"
+msgstr ""
+
+msgid "Save Named Preset"
+msgstr ""
+
+msgid "Saved"
+msgstr ""
+
+msgid "Saved to slot"
+msgstr ""
+
+msgid "Shuffle and repeat modes are left unchanged."
+msgstr ""
+
+msgid "Sibilance HF"
+msgstr ""
+
+msgid "Sibilance LF"
+msgstr ""
+
+msgid "Side EQ"
+msgstr ""
+
+msgid "Side level (dB)"
+msgstr ""
+
+msgid "Slot %d"
+msgstr ""
+
+msgid "Slot is empty"
+msgstr ""
+
+msgid "Slot loaded"
+msgstr ""
+
+msgid "Small room"
+msgstr ""
+
+msgid "Sound Stage"
+msgstr ""
+
+msgid "Sound Tuning"
+msgstr ""
+
+msgid "Soundstage"
+msgstr ""
+
+msgid "Speaker angle (deg)"
+msgstr ""
+
+msgid "Stereo Width"
+msgstr ""
+
+msgid "Stock MSEB width changes the channel mix."
+msgstr ""
+
+msgid "Studio monitors"
+msgstr ""
+
+msgid "Switch to stock MSEB"
+msgstr ""
+
+msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgstr ""
+
+msgid "Treble frequency (Hz)"
+msgstr ""
+
+msgid "Treble width (dB)"
+msgstr ""
+
+msgid "Virtual speakers"
+msgstr ""
+
+msgid "Vocals"
+msgstr ""
+
+msgid "Wide"
+msgstr ""
+
+msgid "ADB did not change state. Check Settings > System > Advanced."
+msgstr ""
+
+msgid "Delete damaged preset?"
+msgstr ""
+
+msgid "Delete preset?"
+msgstr ""
+
+msgid "Load from Slot"
+msgstr ""
+
+msgid "MSEB"
+msgstr ""
+
+msgid "Preset renamed"
+msgstr ""
+
+msgid "Preset saved"
+msgstr ""
+
+msgid "Restoring ADB…"
+msgstr ""
+
+msgid "Save to Slot"
+msgstr ""
+
+msgid "Stage"
+msgstr ""
+
+msgid "Turn off Loudness Boost first"
+msgstr ""
+
+msgid "DAC"
+msgstr ""
+
+msgid "USB Output"
+msgstr ""

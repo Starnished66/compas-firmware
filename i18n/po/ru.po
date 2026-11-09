@@ -4056,3 +4056,312 @@ msgstr "Приём"
 
 msgid "BT DAC"
 msgstr "BT DAC"
+
+msgid "Controls"
+msgstr "Управление"
+
+msgid "Developer"
+msgstr "Разработчик"
+
+msgid "Effects"
+msgstr "Эффекты"
+
+msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
+msgstr "Включите Bluetooth в разделе «Беспроводная связь» или на шторке для режима Bluetooth-ЦАП"
+
+msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgstr "Библиотека восстановлена. Используйте «Настройки» > «Библиотека» > «Обновить музыкальную базу данных», чтобы сохранить."
+
+msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgstr "Библиотека недоступна. Используйте «Настройки» > «Библиотека» > «Обновить музыкальную базу данных» для восстановления."
+
+msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
+msgstr "Управляйте плагинами позже в «Настройки» > «Система» > «Диспетчер плагинов», чтобы найти, обновить или удалить их."
+
+msgid "Personalize"
+msgstr "Персонализация"
+
+msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
+msgstr "Сначала отключите ADB («Настройки» > «Система» > «Режим USB»), затем включите USB-ЦАП здесь."
+
+msgid "Use Settings > Library > Update Music Database"
+msgstr "Используйте «Настройки» > «Библиотека» > «Обновить музыкальную базу данных»."
+
+msgid "%s: %d (outside ±%d)"
+msgstr "%s: %d (вне ±%d)"
+
+msgid "A preset with that name already exists"
+msgstr "Пресет с таким именем уже существует"
+
+msgid "About Play Through"
+msgstr "О сквозном воспроизведении"
+
+msgid "Adjustment Range"
+msgstr "Диапазон регулировки"
+
+msgid "Air"
+msgstr "Воздух"
+
+msgid "Album mode has priority when both options are enabled."
+msgstr "Режим альбомов имеет приоритет, когда включены оба параметра."
+
+msgid "Albums continue in the artist's alphabetical album order."
+msgstr "Альбомы продолжаются в алфавитном порядке альбомов исполнителя."
+
+msgid "Amount (%)"
+msgstr "Интенсивность (%)"
+
+msgid "Bass Extension"
+msgstr "Глубина баса"
+
+msgid "Bass Texture"
+msgstr "Текстура баса"
+
+msgid "Bass frequency (Hz)"
+msgstr "Частота баса (Hz)"
+
+msgid "Bass width (dB)"
+msgstr "Ширина баса (dB)"
+
+msgid "Confirm"
+msgstr "Подтвердить"
+
+msgid "Continuing playback"
+msgstr "Продолжение воспроизведения"
+
+msgid "Could not apply Soundstage. Try again."
+msgstr "Не удалось применить звуковую сцену. Повторите попытку."
+
+msgid "Could not apply changes. Try again."
+msgstr "Не удалось применить изменения. Повторите попытку."
+
+msgid "Could not load preset. Try again."
+msgstr "Не удалось загрузить пресет. Повторите попытку."
+
+msgid "Could not load slot. Try again."
+msgstr "Не удалось загрузить ячейку. Повторите попытку."
+
+msgid "Could not save preset. Try again."
+msgstr "Не удалось сохранить пресет. Повторите попытку."
+
+msgid "Could not save range. Try again."
+msgstr "Не удалось сохранить диапазон. Повторите попытку."
+
+msgid "Could not save slot. Try again."
+msgstr "Не удалось сохранить в ячейку. Повторите попытку."
+
+msgid "Damaged preset"
+msgstr "Повреждённый пресет"
+
+msgid "Damaged preset %d"
+msgstr "Повреждённый пресет %d"
+
+msgid "Damping (%)"
+msgstr "Демпфирование (%)"
+
+msgid "Enter a short preset name without line breaks"
+msgstr "Введите короткое имя без переносов строк"
+
+msgid "Female Overtones"
+msgstr "Женские обертоны"
+
+msgid "Focused center"
+msgstr "Сфокусированный центр"
+
+msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgstr "Папки продолжаются в алфавитном порядке соседних папок (без учёта регистра)."
+
+msgid "Hall"
+msgstr "Зал"
+
+msgid "How It Works"
+msgstr "Как это работает"
+
+msgid "Impulse Response"
+msgstr "Импульсный отклик"
+
+msgid "Load"
+msgstr "Загрузить"
+
+msgid "Named Presets"
+msgstr "Именные пресеты"
+
+msgid "Natural"
+msgstr "Естественный"
+
+msgid "New preset name"
+msgstr "Имя нового пресета"
+
+msgid "Note Thickness"
+msgstr "Плотность нот"
+
+msgid "Older MSEB controls are unsupported; preset was not loaded"
+msgstr "Старые регуляторы MSEB не поддерживаются; пресет не загружен"
+
+msgid "Older MSEB controls are unsupported; slot was not loaded"
+msgstr "Старые регуляторы MSEB не поддерживаются; ячейка не загружена"
+
+msgid "Overall Temperature"
+msgstr "Общая температура"
+
+msgid "Overwrite"
+msgstr "Перезаписать"
+
+msgid "Overwrite preset?"
+msgstr "Перезаписать пресет?"
+
+msgid "Play Through"
+msgstr "Сквозное воспроизведение"
+
+msgid "Play Through Albums"
+msgstr "Переходить к следующему альбому"
+
+msgid "Play Through Folders"
+msgstr "Переходить к следующей папке"
+
+msgid "Preset"
+msgstr "Пресет"
+
+msgid "Preset changed; reopen the preset list"
+msgstr "Пресет изменён; откройте список заново"
+
+msgid "Preset limit reached; delete one first"
+msgstr "Достигнут предел пресетов; сначала удалите один"
+
+msgid "Preset loaded"
+msgstr "Пресет загружен"
+
+msgid "Reflections (%)"
+msgstr "Отражения (%)"
+
+msgid "Rename preset"
+msgstr "Переименовать пресет"
+
+msgid "Reset Soundstage to defaults?"
+msgstr "Сбросить звуковую сцену по умолчанию?"
+
+msgid "Reset to Defaults"
+msgstr "Сбросить по умолчанию"
+
+msgid "Room"
+msgstr "Комната"
+
+msgid "Room size (%)"
+msgstr "Размер комнаты (%)"
+
+msgid "Save Named Preset"
+msgstr "Сохранить именной пресет"
+
+msgid "Saved"
+msgstr "Сохранено"
+
+msgid "Saved to slot"
+msgstr "Сохранено в ячейку"
+
+msgid "Shuffle and repeat modes are left unchanged."
+msgstr "Режимы перемешивания и повтора не изменяются."
+
+msgid "Sibilance HF"
+msgstr "Сибилянты ВЧ"
+
+msgid "Sibilance LF"
+msgstr "Сибилянты НЧ"
+
+msgid "Side EQ"
+msgstr "Боковой EQ"
+
+msgid "Side level (dB)"
+msgstr "Боковой уровень (dB)"
+
+msgid "Slot %d"
+msgstr "Слот %d"
+
+msgid "Slot is empty"
+msgstr "Ячейка пуста"
+
+msgid "Slot loaded"
+msgstr "Ячейка загружена"
+
+msgid "Small room"
+msgstr "Маленькая комната"
+
+msgid "Sound Stage"
+msgstr "Звуковая сцена"
+
+msgid "Sound Tuning"
+msgstr "Настройка звука"
+
+msgid "Soundstage"
+msgstr "Звуковая сцена"
+
+msgid "Speaker angle (deg)"
+msgstr "Угол динамиков (deg)"
+
+msgid "Stereo Width"
+msgstr "Ширина стерео"
+
+msgid "Stock MSEB width changes the channel mix."
+msgstr "Ширина штатного MSEB меняет микс каналов."
+
+msgid "Studio monitors"
+msgstr "Студийные мониторы"
+
+msgid "Switch to stock MSEB"
+msgstr "Переключить на штатный MSEB"
+
+msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgstr "Эта сохранённая схема не поддерживается. Переключение заменит Присутствие инструментов, Атаку баса и Атаку ВЧ штатными регуляторами."
+
+msgid "Treble frequency (Hz)"
+msgstr "Частота ВЧ (Hz)"
+
+msgid "Treble width (dB)"
+msgstr "Ширина ВЧ (dB)"
+
+msgid "Virtual speakers"
+msgstr "Виртуальные динамики"
+
+msgid "Vocals"
+msgstr "Вокал"
+
+msgid "Wide"
+msgstr "Широкий"
+
+msgid "ADB did not change state. Check Settings > System > Advanced."
+msgstr "Состояние ADB не изменилось. Проверьте Настройки > Система > Продвинутые."
+
+msgid "Delete damaged preset?"
+msgstr "Удалить повреждённый пресет?"
+
+msgid "Delete preset?"
+msgstr "Удалить пресет?"
+
+msgid "Load from Slot"
+msgstr "Загрузить из ячейки"
+
+msgid "MSEB"
+msgstr "MSEB"
+
+msgid "Preset renamed"
+msgstr "Пресет переименован"
+
+msgid "Preset saved"
+msgstr "Пресет сохранён"
+
+msgid "Restoring ADB…"
+msgstr "Восстановление ADB…"
+
+msgid "Save to Slot"
+msgstr "Сохранить в ячейку"
+
+msgid "Stage"
+msgstr "Сцена"
+
+msgid "Turn off Loudness Boost first"
+msgstr "Сначала отключите усиление громкости"
+
+msgid "DAC"
+msgstr "ЦАП"
+
+msgid "USB Output"
+msgstr "Выход USB"

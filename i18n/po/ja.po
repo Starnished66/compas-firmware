@@ -3823,3 +3823,312 @@ msgstr "受信中"
 
 msgid "BT DAC"
 msgstr "BT DAC"
+
+msgid "Controls"
+msgstr "操作"
+
+msgid "Developer"
+msgstr "開発者"
+
+msgid "Effects"
+msgstr "エフェクト"
+
+msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
+msgstr "BT DACモードを使うには、ワイヤレスまたはクイックドロワーでBluetoothを有効にしてください"
+
+msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgstr "ライブラリを復旧しました。設定 > ライブラリ > 音楽データベースを更新から保存してください"
+
+msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgstr "ライブラリを利用できません。設定 > ライブラリ > 音楽データベースを更新から再構築してください"
+
+msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
+msgstr "プラグインの検索、更新、削除は、後で設定 > システム > プラグインから行えます。"
+
+msgid "Personalize"
+msgstr "カスタマイズ"
+
+msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
+msgstr "最初にADBをオフにしてください（設定 > システム > 詳細設定）。その後、ここからUSB DACを有効にしてください。"
+
+msgid "Use Settings > Library > Update Music Database"
+msgstr "設定 > ライブラリ > 音楽データベースを更新を選択してください"
+
+msgid "%s: %d (outside ±%d)"
+msgstr "%s: %d (±%d の範囲外)"
+
+msgid "A preset with that name already exists"
+msgstr "その名前のプリセットは既に存在します"
+
+msgid "About Play Through"
+msgstr "連続再生について"
+
+msgid "Adjustment Range"
+msgstr "調整範囲"
+
+msgid "Air"
+msgstr "空気感"
+
+msgid "Album mode has priority when both options are enabled."
+msgstr "両方有効な場合はアルバムモードが優先されます。"
+
+msgid "Albums continue in the artist's alphabetical album order."
+msgstr "アルバムはアーティストのアルバム名順（アルファベット順）で続きます。"
+
+msgid "Amount (%)"
+msgstr "適用量 (%)"
+
+msgid "Bass Extension"
+msgstr "低域の伸び"
+
+msgid "Bass Texture"
+msgstr "低域の質感"
+
+msgid "Bass frequency (Hz)"
+msgstr "低音周波数 (Hz)"
+
+msgid "Bass width (dB)"
+msgstr "低音幅 (dB)"
+
+msgid "Confirm"
+msgstr "確認"
+
+msgid "Continuing playback"
+msgstr "再生を継続中"
+
+msgid "Could not apply Soundstage. Try again."
+msgstr "音場を適用できませんでした。再試行してください。"
+
+msgid "Could not apply changes. Try again."
+msgstr "変更を適用できませんでした。再試行してください。"
+
+msgid "Could not load preset. Try again."
+msgstr "プリセットを読み込めませんでした。再試行してください。"
+
+msgid "Could not load slot. Try again."
+msgstr "スロットを読み込めませんでした。再試行してください。"
+
+msgid "Could not save preset. Try again."
+msgstr "プリセットを保存できませんでした。再試行してください。"
+
+msgid "Could not save range. Try again."
+msgstr "範囲を保存できませんでした。再試行してください。"
+
+msgid "Could not save slot. Try again."
+msgstr "スロットに保存できませんでした。再試行してください。"
+
+msgid "Damaged preset"
+msgstr "破損したプリセット"
+
+msgid "Damaged preset %d"
+msgstr "破損したプリセット %d"
+
+msgid "Damping (%)"
+msgstr "ダンピング (%)"
+
+msgid "Enter a short preset name without line breaks"
+msgstr "改行なしの短いプリセット名を入力してください"
+
+msgid "Female Overtones"
+msgstr "女性ボーカル倍音"
+
+msgid "Focused center"
+msgstr "フォーカスセンター"
+
+msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgstr "フォルダは大文字小文字を区別しない名前順で次のフォルダへ続きます。"
+
+msgid "Hall"
+msgstr "ホール"
+
+msgid "How It Works"
+msgstr "仕組み"
+
+msgid "Impulse Response"
+msgstr "インパルス応答"
+
+msgid "Load"
+msgstr "読み込む"
+
+msgid "Named Presets"
+msgstr "名前付きプリセット"
+
+msgid "Natural"
+msgstr "ナチュラル"
+
+msgid "New preset name"
+msgstr "新しいプリセット名"
+
+msgid "Note Thickness"
+msgstr "音の厚み"
+
+msgid "Older MSEB controls are unsupported; preset was not loaded"
+msgstr "旧式の MSEB 調整は非対応のため、プリセットを読み込めませんでした"
+
+msgid "Older MSEB controls are unsupported; slot was not loaded"
+msgstr "旧式の MSEB 調整は非対応のため、スロットを読み込めませんでした"
+
+msgid "Overall Temperature"
+msgstr "全体の温度感"
+
+msgid "Overwrite"
+msgstr "上書き"
+
+msgid "Overwrite preset?"
+msgstr "プリセットを上書きしますか？"
+
+msgid "Play Through"
+msgstr "連続再生"
+
+msgid "Play Through Albums"
+msgstr "アルバムを連続再生"
+
+msgid "Play Through Folders"
+msgstr "フォルダを連続再生"
+
+msgid "Preset"
+msgstr "プリセット"
+
+msgid "Preset changed; reopen the preset list"
+msgstr "プリセットが変更されました。一覧を開き直してください"
+
+msgid "Preset limit reached; delete one first"
+msgstr "プリセット数の上限です。先に1つ削除してください"
+
+msgid "Preset loaded"
+msgstr "プリセットを読み込みました"
+
+msgid "Reflections (%)"
+msgstr "反射音 (%)"
+
+msgid "Rename preset"
+msgstr "プリセット名を変更"
+
+msgid "Reset Soundstage to defaults?"
+msgstr "音場を初期値に戻しますか？"
+
+msgid "Reset to Defaults"
+msgstr "初期値に戻す"
+
+msgid "Room"
+msgstr "ルーム"
+
+msgid "Room size (%)"
+msgstr "ルームサイズ (%)"
+
+msgid "Save Named Preset"
+msgstr "名前付きプリセットを保存"
+
+msgid "Saved"
+msgstr "保存しました"
+
+msgid "Saved to slot"
+msgstr "スロットに保存しました"
+
+msgid "Shuffle and repeat modes are left unchanged."
+msgstr "シャッフルとリピートモードは変更されません。"
+
+msgid "Sibilance HF"
+msgstr "歯擦音 (高域)"
+
+msgid "Sibilance LF"
+msgstr "歯擦音 (低域)"
+
+msgid "Side EQ"
+msgstr "サイド EQ"
+
+msgid "Side level (dB)"
+msgstr "サイドレベル (dB)"
+
+msgid "Slot %d"
+msgstr "スロット %d"
+
+msgid "Slot is empty"
+msgstr "スロットは空です"
+
+msgid "Slot loaded"
+msgstr "スロットを読み込みました"
+
+msgid "Small room"
+msgstr "スモールルーム"
+
+msgid "Sound Stage"
+msgstr "サウンドステージ"
+
+msgid "Sound Tuning"
+msgstr "音質調整"
+
+msgid "Soundstage"
+msgstr "音場"
+
+msgid "Speaker angle (deg)"
+msgstr "スピーカー角度 (deg)"
+
+msgid "Stereo Width"
+msgstr "ステレオ幅"
+
+msgid "Stock MSEB width changes the channel mix."
+msgstr "標準 MSEB の幅調整はチャンネルミックスを変更します。"
+
+msgid "Studio monitors"
+msgstr "スタジオモニター"
+
+msgid "Switch to stock MSEB"
+msgstr "標準 MSEB に切り替え"
+
+msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgstr "保存されたレイアウトは非対応です。切り替えると楽器の定位・低域のアタック・高域のアタックが標準項目に置き換わります。"
+
+msgid "Treble frequency (Hz)"
+msgstr "高音周波数 (Hz)"
+
+msgid "Treble width (dB)"
+msgstr "高音幅 (dB)"
+
+msgid "Virtual speakers"
+msgstr "バーチャルスピーカー"
+
+msgid "Vocals"
+msgstr "ボーカル"
+
+msgid "Wide"
+msgstr "ワイド"
+
+msgid "ADB did not change state. Check Settings > System > Advanced."
+msgstr "ADBの状態が変わりませんでした。設定 > システム > 詳細設定を確認してください。"
+
+msgid "Delete damaged preset?"
+msgstr "破損したプリセットを削除しますか？"
+
+msgid "Delete preset?"
+msgstr "プリセットを削除しますか？"
+
+msgid "Load from Slot"
+msgstr "スロットから読み込む"
+
+msgid "MSEB"
+msgstr "MSEB"
+
+msgid "Preset renamed"
+msgstr "プリセット名を変更しました"
+
+msgid "Preset saved"
+msgstr "プリセットを保存しました"
+
+msgid "Restoring ADB…"
+msgstr "ADBを復元中…"
+
+msgid "Save to Slot"
+msgstr "スロットに保存"
+
+msgid "Stage"
+msgstr "音場"
+
+msgid "Turn off Loudness Boost first"
+msgstr "先にラウドネスブーストをオフにしてください"
+
+msgid "DAC"
+msgstr "DAC"
+
+msgid "USB Output"
+msgstr "USB出力"

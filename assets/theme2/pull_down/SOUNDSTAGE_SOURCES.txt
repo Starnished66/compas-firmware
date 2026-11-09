@@ -1,0 +1,5 @@
+Soundstage quick-toggle icons
+
+soundstage.png and soundstage_s.png come from the Compás Soundstage plugin
+(compas-plugins, plugins/Soundstage/Soundstage/, added in a645f0a). They now
+ship with the player because Soundstage is built in.

@@ -4028,3 +4028,312 @@ msgstr "Vastaanotetaan"
 
 msgid "BT DAC"
 msgstr "BT DAC"
+
+msgid "Controls"
+msgstr "Ohjaimet"
+
+msgid "Developer"
+msgstr "Kehittäjä"
+
+msgid "Effects"
+msgstr "Tehosteet"
+
+msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
+msgstr "Ota Bluetooth käyttöön Langaton-valikossa tai pikavalikossa käyttääksesi BT-DAC-tilaa"
+
+msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgstr "Kirjasto palautettu. Tallenna valitsemalla Asetukset > Kirjasto > Päivitä musiikkitietokanta"
+
+msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgstr "Kirjasto ei ole käytettävissä. Rakenna se uudelleen valitsemalla Asetukset > Kirjasto > Päivitä musiikkitietokanta"
+
+msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
+msgstr "Voit myöhemmin etsiä, päivittää tai poistaa liitännäisiä kohdassa Asetukset > Järjestelmä > Liitännäiset."
+
+msgid "Personalize"
+msgstr "Mukauta"
+
+msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
+msgstr "Poista ADB ensin käytöstä (Asetukset > Järjestelmä > Lisäasetukset) ja ota sitten USB-DAC käyttöön täällä."
+
+msgid "Use Settings > Library > Update Music Database"
+msgstr "Valitse Asetukset > Kirjasto > Päivitä musiikkitietokanta"
+
+msgid "%s: %d (outside ±%d)"
+msgstr "%s: %d (±%d ulkopuolella)"
+
+msgid "A preset with that name already exists"
+msgstr "Samanniminen esiasetus on jo olemassa"
+
+msgid "About Play Through"
+msgstr "Tietoja jatkuvasta toistosta"
+
+msgid "Adjustment Range"
+msgstr "Säätöalue"
+
+msgid "Air"
+msgstr "Ilmavuus"
+
+msgid "Album mode has priority when both options are enabled."
+msgstr "Albumitila on ensisijainen, kun molemmat valinnat ovat käytössä."
+
+msgid "Albums continue in the artist's alphabetical album order."
+msgstr "Albumit jatkuvat esittäjän aakkosjärjestyksessä."
+
+msgid "Amount (%)"
+msgstr "Määrä (%)"
+
+msgid "Bass Extension"
+msgstr "Basson ulottuvuus"
+
+msgid "Bass Texture"
+msgstr "Basson rakenne"
+
+msgid "Bass frequency (Hz)"
+msgstr "Bassotaajuus (Hz)"
+
+msgid "Bass width (dB)"
+msgstr "Basson leveys (dB)"
+
+msgid "Confirm"
+msgstr "Vahvista"
+
+msgid "Continuing playback"
+msgstr "Jatketaan toistoa"
+
+msgid "Could not apply Soundstage. Try again."
+msgstr "Äänikuvan käyttö epäonnistui. Yritä uudelleen."
+
+msgid "Could not apply changes. Try again."
+msgstr "Muutoksia ei voitu ottaa käyttöön. Yritä uudelleen."
+
+msgid "Could not load preset. Try again."
+msgstr "Esiasetusta ei voitu ladata. Yritä uudelleen."
+
+msgid "Could not load slot. Try again."
+msgstr "Muistipaikkaa ei voitu ladata. Yritä uudelleen."
+
+msgid "Could not save preset. Try again."
+msgstr "Esiasetusta ei voitu tallentaa. Yritä uudelleen."
+
+msgid "Could not save range. Try again."
+msgstr "Aluetta ei voitu tallentaa. Yritä uudelleen."
+
+msgid "Could not save slot. Try again."
+msgstr "Muistipaikkaan tallennus epäonnistui. Yritä uudelleen."
+
+msgid "Damaged preset"
+msgstr "Vioittunut esiasetus"
+
+msgid "Damaged preset %d"
+msgstr "Vioittunut esiasetus %d"
+
+msgid "Damping (%)"
+msgstr "Vaimennus (%)"
+
+msgid "Enter a short preset name without line breaks"
+msgstr "Anna lyhyt nimi ilman rivinvaihtoja"
+
+msgid "Female Overtones"
+msgstr "Naisäänen yläsävelet"
+
+msgid "Focused center"
+msgstr "Tarkennettu keskiö"
+
+msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgstr "Kansiot jatkuvat rinnakkaiskansioiden aakkosjärjestyksessä."
+
+msgid "Hall"
+msgstr "Sali"
+
+msgid "How It Works"
+msgstr "Miten se toimii"
+
+msgid "Impulse Response"
+msgstr "Impulssivaste"
+
+msgid "Load"
+msgstr "Lataa"
+
+msgid "Named Presets"
+msgstr "Nimetyt esiasetukset"
+
+msgid "Natural"
+msgstr "Luonnollinen"
+
+msgid "New preset name"
+msgstr "Uuden esiasetuksen nimi"
+
+msgid "Note Thickness"
+msgstr "Sävelten paksuus"
+
+msgid "Older MSEB controls are unsupported; preset was not loaded"
+msgstr "Vanhoja MSEB-säätimiä ei tueta; esiasetusta ei ladattu"
+
+msgid "Older MSEB controls are unsupported; slot was not loaded"
+msgstr "Vanhoja MSEB-säätimiä ei tueta; muistipaikkaa ei ladattu"
+
+msgid "Overall Temperature"
+msgstr "Yleislämpötila"
+
+msgid "Overwrite"
+msgstr "Korvaa"
+
+msgid "Overwrite preset?"
+msgstr "Korvataanko esiasetus?"
+
+msgid "Play Through"
+msgstr "Jatkuva toisto"
+
+msgid "Play Through Albums"
+msgstr "Jatka albumien läpi"
+
+msgid "Play Through Folders"
+msgstr "Jatka kansioiden läpi"
+
+msgid "Preset"
+msgstr "Esiasetus"
+
+msgid "Preset changed; reopen the preset list"
+msgstr "Esiasetus muuttui; avaa lista uudelleen"
+
+msgid "Preset limit reached; delete one first"
+msgstr "Esiasetusten raja saavutettu; poista ensin yksi"
+
+msgid "Preset loaded"
+msgstr "Esiasetus ladattu"
+
+msgid "Reflections (%)"
+msgstr "Heijastukset (%)"
+
+msgid "Rename preset"
+msgstr "Nimeä esiasetus uudelleen"
+
+msgid "Reset Soundstage to defaults?"
+msgstr "Palautetaanko äänikuvan oletusasetukset?"
+
+msgid "Reset to Defaults"
+msgstr "Palauta oletukset"
+
+msgid "Room"
+msgstr "Huone"
+
+msgid "Room size (%)"
+msgstr "Huoneen koko (%)"
+
+msgid "Save Named Preset"
+msgstr "Tallenna nimetty esiasetus"
+
+msgid "Saved"
+msgstr "Tallennettu"
+
+msgid "Saved to slot"
+msgstr "Tallennettu muistipaikkaan"
+
+msgid "Shuffle and repeat modes are left unchanged."
+msgstr "Satunnais- ja kertaustiloja ei muuteta."
+
+msgid "Sibilance HF"
+msgstr "Sibilanssi korkea"
+
+msgid "Sibilance LF"
+msgstr "Sibilanssi matala"
+
+msgid "Side EQ"
+msgstr "Sivu-EQ"
+
+msgid "Side level (dB)"
+msgstr "Sivutaso (dB)"
+
+msgid "Slot %d"
+msgstr "Paikka %d"
+
+msgid "Slot is empty"
+msgstr "Muistipaikka on tyhjä"
+
+msgid "Slot loaded"
+msgstr "Muistipaikka ladattu"
+
+msgid "Small room"
+msgstr "Pieni huone"
+
+msgid "Sound Stage"
+msgstr "Äänikuva"
+
+msgid "Sound Tuning"
+msgstr "Äänen säätö"
+
+msgid "Soundstage"
+msgstr "Äänikuva"
+
+msgid "Speaker angle (deg)"
+msgstr "Kaiutinkulma (deg)"
+
+msgid "Stereo Width"
+msgstr "Stereoleveys"
+
+msgid "Stock MSEB width changes the channel mix."
+msgstr "MSEB-leveys muuttaa kanavamiksausta."
+
+msgid "Studio monitors"
+msgstr "Studiomonitorit"
+
+msgid "Switch to stock MSEB"
+msgstr "Vaihda vakio-MSEB:hen"
+
+msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgstr "Tallennettua asettelua ei tueta. Vaihto korvaa Instrumenttien läsnäolon, Basson purevuuden ja Diskantin purevuuden vakiosäätimillä."
+
+msgid "Treble frequency (Hz)"
+msgstr "Diskanttitaajuus (Hz)"
+
+msgid "Treble width (dB)"
+msgstr "Diskantin leveys (dB)"
+
+msgid "Virtual speakers"
+msgstr "Virtuaalikaiuttimet"
+
+msgid "Vocals"
+msgstr "Laulu"
+
+msgid "Wide"
+msgstr "Leveä"
+
+msgid "ADB did not change state. Check Settings > System > Advanced."
+msgstr "ADB:n tila ei muuttunut. Tarkista Asetukset > Järjestelmä > Lisäasetukset."
+
+msgid "Delete damaged preset?"
+msgstr "Poistetaanko vioittunut esiasetus?"
+
+msgid "Delete preset?"
+msgstr "Poistetaanko esiasetus?"
+
+msgid "Load from Slot"
+msgstr "Lataa muistipaikasta"
+
+msgid "MSEB"
+msgstr "MSEB"
+
+msgid "Preset renamed"
+msgstr "Esiasetus nimetty uudelleen"
+
+msgid "Preset saved"
+msgstr "Esiasetus tallennettu"
+
+msgid "Restoring ADB…"
+msgstr "Palautetaan ADB…"
+
+msgid "Save to Slot"
+msgstr "Tallenna muistipaikkaan"
+
+msgid "Stage"
+msgstr "Äänikuva"
+
+msgid "Turn off Loudness Boost first"
+msgstr "Kytke ensin äänekkyyden korostus pois"
+
+msgid "DAC"
+msgstr "DAC"
+
+msgid "USB Output"
+msgstr "USB-lähtö"

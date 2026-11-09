@@ -4037,3 +4037,312 @@ msgstr "Отримання"
 
 msgid "BT DAC"
 msgstr "BT DAC"
+
+msgid "Controls"
+msgstr "Керування"
+
+msgid "Developer"
+msgstr "Розробник"
+
+msgid "Effects"
+msgstr "Ефекти"
+
+msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
+msgstr "Увімкніть Bluetooth у розділі «Бездротовий зв’язок» або на швидкій панелі для режиму Bluetooth DAC"
+
+msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgstr "Бібліотеку відновлено. Щоб зберегти зміни, виберіть Налаштування > Бібліотека > Оновити музичну базу даних"
+
+msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgstr "Бібліотека недоступна. Виберіть Налаштування > Бібліотека > Оновити музичну базу даних, щоб створити її заново"
+
+msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
+msgstr "Пізніше керуйте плагінами в Налаштування > Система > Плагіни: шукайте, оновлюйте або видаляйте їх."
+
+msgid "Personalize"
+msgstr "Персоналізація"
+
+msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
+msgstr "Спочатку вимкніть ADB (Налаштування > Система > Додатково), а потім увімкніть тут USB DAC."
+
+msgid "Use Settings > Library > Update Music Database"
+msgstr "Виберіть Налаштування > Бібліотека > Оновити музичну базу даних"
+
+msgid "%s: %d (outside ±%d)"
+msgstr "%s: %d (поза ±%d)"
+
+msgid "A preset with that name already exists"
+msgstr "Пресет із такою назвою вже існує"
+
+msgid "About Play Through"
+msgstr "Про наскрізне відтворення"
+
+msgid "Adjustment Range"
+msgstr "Діапазон регулювання"
+
+msgid "Air"
+msgstr "Повітря"
+
+msgid "Album mode has priority when both options are enabled."
+msgstr "Режим альбомів має пріоритет, коли увімкнено обидва параметри."
+
+msgid "Albums continue in the artist's alphabetical album order."
+msgstr "Альбоми продовжуються в алфавітному порядку альбомів виконавця."
+
+msgid "Amount (%)"
+msgstr "Інтенсивність (%)"
+
+msgid "Bass Extension"
+msgstr "Глибина баса"
+
+msgid "Bass Texture"
+msgstr "Текстура баса"
+
+msgid "Bass frequency (Hz)"
+msgstr "Частота баса (Hz)"
+
+msgid "Bass width (dB)"
+msgstr "Ширина баса (dB)"
+
+msgid "Confirm"
+msgstr "Підтвердити"
+
+msgid "Continuing playback"
+msgstr "Продовження відтворення"
+
+msgid "Could not apply Soundstage. Try again."
+msgstr "Не вдалося застосувати звукову сцену. Спробуйте ще раз."
+
+msgid "Could not apply changes. Try again."
+msgstr "Не вдалося застосувати зміни. Спробуйте ще раз."
+
+msgid "Could not load preset. Try again."
+msgstr "Не вдалося завантажити пресет. Спробуйте ще раз."
+
+msgid "Could not load slot. Try again."
+msgstr "Не вдалося завантажити комірку. Спробуйте ще раз."
+
+msgid "Could not save preset. Try again."
+msgstr "Не вдалося зберегти пресет. Спробуйте ще раз."
+
+msgid "Could not save range. Try again."
+msgstr "Не вдалося зберегти діапазон. Спробуйте ще раз."
+
+msgid "Could not save slot. Try again."
+msgstr "Не вдалося зберегти в комірку. Спробуйте ще раз."
+
+msgid "Damaged preset"
+msgstr "Пошкоджений пресет"
+
+msgid "Damaged preset %d"
+msgstr "Пошкоджений пресет %d"
+
+msgid "Damping (%)"
+msgstr "Демпфування (%)"
+
+msgid "Enter a short preset name without line breaks"
+msgstr "Введіть коротку назву без переносів рядків"
+
+msgid "Female Overtones"
+msgstr "Жіночі обертони"
+
+msgid "Focused center"
+msgstr "Сфокусований центр"
+
+msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgstr "Теки продовжуються в алфавітному порядку сусідніх тек (без урахування регістру)."
+
+msgid "Hall"
+msgstr "Зал"
+
+msgid "How It Works"
+msgstr "Як це працює"
+
+msgid "Impulse Response"
+msgstr "Імпульсний відгук"
+
+msgid "Load"
+msgstr "Завантажити"
+
+msgid "Named Presets"
+msgstr "Іменні пресети"
+
+msgid "Natural"
+msgstr "Природний"
+
+msgid "New preset name"
+msgstr "Назва нового пресету"
+
+msgid "Note Thickness"
+msgstr "Щільність нот"
+
+msgid "Older MSEB controls are unsupported; preset was not loaded"
+msgstr "Старі регулятори MSEB не підтримуються; пресет не завантажено"
+
+msgid "Older MSEB controls are unsupported; slot was not loaded"
+msgstr "Старі регулятори MSEB не підтримуються; комірку не завантажено"
+
+msgid "Overall Temperature"
+msgstr "Загальна температура"
+
+msgid "Overwrite"
+msgstr "Перезаписати"
+
+msgid "Overwrite preset?"
+msgstr "Перезаписати пресет?"
+
+msgid "Play Through"
+msgstr "Наскрізне відтворення"
+
+msgid "Play Through Albums"
+msgstr "Переходити до наступного альбому"
+
+msgid "Play Through Folders"
+msgstr "Переходити до наступної теки"
+
+msgid "Preset"
+msgstr "Пресет"
+
+msgid "Preset changed; reopen the preset list"
+msgstr "Пресет змінено; відкрийте список заново"
+
+msgid "Preset limit reached; delete one first"
+msgstr "Досягнуто межі пресетів; спочатку видаліть один"
+
+msgid "Preset loaded"
+msgstr "Пресет завантажено"
+
+msgid "Reflections (%)"
+msgstr "Відбиття (%)"
+
+msgid "Rename preset"
+msgstr "Перейменувати пресет"
+
+msgid "Reset Soundstage to defaults?"
+msgstr "Скинути звукову сцену за замовчуванням?"
+
+msgid "Reset to Defaults"
+msgstr "Скинути за замовчуванням"
+
+msgid "Room"
+msgstr "Кімната"
+
+msgid "Room size (%)"
+msgstr "Розмір кімнати (%)"
+
+msgid "Save Named Preset"
+msgstr "Зберегти іменний пресет"
+
+msgid "Saved"
+msgstr "Збережено"
+
+msgid "Saved to slot"
+msgstr "Збережено в комірку"
+
+msgid "Shuffle and repeat modes are left unchanged."
+msgstr "Режими перемішування та повтору залишаються без змін."
+
+msgid "Sibilance HF"
+msgstr "Сибілянти ВЧ"
+
+msgid "Sibilance LF"
+msgstr "Сибілянти НЧ"
+
+msgid "Side EQ"
+msgstr "Бічний EQ"
+
+msgid "Side level (dB)"
+msgstr "Бічний рівень (dB)"
+
+msgid "Slot %d"
+msgstr "Слот %d"
+
+msgid "Slot is empty"
+msgstr "Комірка порожня"
+
+msgid "Slot loaded"
+msgstr "Комірку завантажено"
+
+msgid "Small room"
+msgstr "Маленька кімната"
+
+msgid "Sound Stage"
+msgstr "Звукова сцена"
+
+msgid "Sound Tuning"
+msgstr "Налаштування звуку"
+
+msgid "Soundstage"
+msgstr "Звукова сцена"
+
+msgid "Speaker angle (deg)"
+msgstr "Кут динаміків (deg)"
+
+msgid "Stereo Width"
+msgstr "Ширина стерео"
+
+msgid "Stock MSEB width changes the channel mix."
+msgstr "Ширина штатного MSEB змінює мікс каналів."
+
+msgid "Studio monitors"
+msgstr "Студійні монітори"
+
+msgid "Switch to stock MSEB"
+msgstr "Перемкнути на штатний MSEB"
+
+msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgstr "Ця збережена схема не підтримується. Перемикання замінить Присутність інструментів, Атаку баса та Атаку ВЧ штатними регуляторами."
+
+msgid "Treble frequency (Hz)"
+msgstr "Частота ВЧ (Hz)"
+
+msgid "Treble width (dB)"
+msgstr "Ширина ВЧ (dB)"
+
+msgid "Virtual speakers"
+msgstr "Віртуальні динаміки"
+
+msgid "Vocals"
+msgstr "Вокал"
+
+msgid "Wide"
+msgstr "Широкий"
+
+msgid "ADB did not change state. Check Settings > System > Advanced."
+msgstr "Стан ADB не змінився. Перевірте Налаштування > Система > Додатково."
+
+msgid "Delete damaged preset?"
+msgstr "Видалити пошкоджений пресет?"
+
+msgid "Delete preset?"
+msgstr "Видалити пресет?"
+
+msgid "Load from Slot"
+msgstr "Завантажити з комірки"
+
+msgid "MSEB"
+msgstr "MSEB"
+
+msgid "Preset renamed"
+msgstr "Пресет перейменовано"
+
+msgid "Preset saved"
+msgstr "Пресет збережено"
+
+msgid "Restoring ADB…"
+msgstr "Відновлення ADB…"
+
+msgid "Save to Slot"
+msgstr "Зберегти в комірку"
+
+msgid "Stage"
+msgstr "Сцена"
+
+msgid "Turn off Loudness Boost first"
+msgstr "Спочатку вимкніть підсилення гучності"
+
+msgid "DAC"
+msgstr "ЦАП"
+
+msgid "USB Output"
+msgstr "Вихід USB"

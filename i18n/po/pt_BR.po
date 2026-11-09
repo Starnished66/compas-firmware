@@ -4065,3 +4065,312 @@ msgstr "Recebendo"
 
 msgid "BT DAC"
 msgstr "BT DAC"
+
+msgid "Controls"
+msgstr "Controles"
+
+msgid "Developer"
+msgstr "Desenvolvedor"
+
+msgid "Effects"
+msgstr "Efeitos"
+
+msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
+msgstr "Ative o Bluetooth em Sem fio ou no painel rápido para usar o modo DAC Bluetooth"
+
+msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgstr "Biblioteca recuperada. Use Configurações > Biblioteca > Atualizar banco de dados de música para salvar"
+
+msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgstr "Biblioteca indisponível. Use Configurações > Biblioteca > Atualizar banco de dados de música para recriar"
+
+msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
+msgstr "Gerencie os plugins depois em Configurações > Sistema > Gerenciador de plugins para pesquisar, atualizar ou remover."
+
+msgid "Personalize"
+msgstr "Personalizar"
+
+msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
+msgstr "Desligue o ADB primeiro (Configurações > Sistema > Avançado) e ative o DAC USB aqui."
+
+msgid "Use Settings > Library > Update Music Database"
+msgstr "Use Configurações > Biblioteca > Atualizar banco de dados de música"
+
+msgid "%s: %d (outside ±%d)"
+msgstr "%s: %d (fora de ±%d)"
+
+msgid "A preset with that name already exists"
+msgstr "Já existe uma predefinição com esse nome"
+
+msgid "About Play Through"
+msgstr "Sobre a Reprodução contínua"
+
+msgid "Adjustment Range"
+msgstr "Faixa de ajuste"
+
+msgid "Air"
+msgstr "Ar"
+
+msgid "Album mode has priority when both options are enabled."
+msgstr "O modo de álbum tem prioridade quando ambas as opções estão ativadas."
+
+msgid "Albums continue in the artist's alphabetical album order."
+msgstr "Os álbuns continuam na ordem alfabética dos álbuns do artista."
+
+msgid "Amount (%)"
+msgstr "Quantidade (%)"
+
+msgid "Bass Extension"
+msgstr "Extensão de graves"
+
+msgid "Bass Texture"
+msgstr "Textura de graves"
+
+msgid "Bass frequency (Hz)"
+msgstr "Frequência dos graves (Hz)"
+
+msgid "Bass width (dB)"
+msgstr "Largura dos graves (dB)"
+
+msgid "Confirm"
+msgstr "Confirmar"
+
+msgid "Continuing playback"
+msgstr "Continuando a reprodução"
+
+msgid "Could not apply Soundstage. Try again."
+msgstr "Não foi possível aplicar o palco sonoro. Tente novamente."
+
+msgid "Could not apply changes. Try again."
+msgstr "Não foi possível aplicar as alterações. Tente novamente."
+
+msgid "Could not load preset. Try again."
+msgstr "Não foi possível carregar a predefinição. Tente novamente."
+
+msgid "Could not load slot. Try again."
+msgstr "Não foi possível carregar a posição. Tente novamente."
+
+msgid "Could not save preset. Try again."
+msgstr "Não foi possível salvar a predefinição. Tente novamente."
+
+msgid "Could not save range. Try again."
+msgstr "Não foi possível salvar a faixa. Tente novamente."
+
+msgid "Could not save slot. Try again."
+msgstr "Não foi possível salvar na posição. Tente novamente."
+
+msgid "Damaged preset"
+msgstr "Predefinição danificada"
+
+msgid "Damaged preset %d"
+msgstr "Predefinição corrompida %d"
+
+msgid "Damping (%)"
+msgstr "Amortecimento (%)"
+
+msgid "Enter a short preset name without line breaks"
+msgstr "Digite um nome curto sem quebras de linha"
+
+msgid "Female Overtones"
+msgstr "Harmônicos femininos"
+
+msgid "Focused center"
+msgstr "Centro focado"
+
+msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgstr "As pastas continuam em ordem alfabética entre pastas vizinhas."
+
+msgid "Hall"
+msgstr "Salão"
+
+msgid "How It Works"
+msgstr "Como funciona"
+
+msgid "Impulse Response"
+msgstr "Resposta ao impulso"
+
+msgid "Load"
+msgstr "Carregar"
+
+msgid "Named Presets"
+msgstr "Predefinições com nome"
+
+msgid "Natural"
+msgstr "Natural"
+
+msgid "New preset name"
+msgstr "Nome da nova predefinição"
+
+msgid "Note Thickness"
+msgstr "Espessura das notas"
+
+msgid "Older MSEB controls are unsupported; preset was not loaded"
+msgstr "Controles antigos do MSEB não são suportados; predefinição não carregada"
+
+msgid "Older MSEB controls are unsupported; slot was not loaded"
+msgstr "Controles antigos do MSEB não são suportados; posição não carregada"
+
+msgid "Overall Temperature"
+msgstr "Temperatura geral"
+
+msgid "Overwrite"
+msgstr "Substituir"
+
+msgid "Overwrite preset?"
+msgstr "Substituir predefinição?"
+
+msgid "Play Through"
+msgstr "Reprodução contínua"
+
+msgid "Play Through Albums"
+msgstr "Continuar pelos álbuns"
+
+msgid "Play Through Folders"
+msgstr "Continuar pelas pastas"
+
+msgid "Preset"
+msgstr "Predefinição"
+
+msgid "Preset changed; reopen the preset list"
+msgstr "A predefinição mudou; reabra a lista"
+
+msgid "Preset limit reached; delete one first"
+msgstr "Limite de predefinições atingido; exclua uma primeiro"
+
+msgid "Preset loaded"
+msgstr "Predefinição carregada"
+
+msgid "Reflections (%)"
+msgstr "Reflexões (%)"
+
+msgid "Rename preset"
+msgstr "Renomear predefinição"
+
+msgid "Reset Soundstage to defaults?"
+msgstr "Restaurar o palco sonoro para os padrões?"
+
+msgid "Reset to Defaults"
+msgstr "Restaurar padrões"
+
+msgid "Room"
+msgstr "Sala"
+
+msgid "Room size (%)"
+msgstr "Tamanho da sala (%)"
+
+msgid "Save Named Preset"
+msgstr "Salvar predefinição com nome"
+
+msgid "Saved"
+msgstr "Salvo"
+
+msgid "Saved to slot"
+msgstr "Salvo na posição"
+
+msgid "Shuffle and repeat modes are left unchanged."
+msgstr "Os modos aleatório e de repetição permanecem inalterados."
+
+msgid "Sibilance HF"
+msgstr "Sibilância AF"
+
+msgid "Sibilance LF"
+msgstr "Sibilância BF"
+
+msgid "Side EQ"
+msgstr "EQ lateral"
+
+msgid "Side level (dB)"
+msgstr "Nível lateral (dB)"
+
+msgid "Slot %d"
+msgstr "Slot %d"
+
+msgid "Slot is empty"
+msgstr "A posição está vazia"
+
+msgid "Slot loaded"
+msgstr "Posição carregada"
+
+msgid "Small room"
+msgstr "Sala pequena"
+
+msgid "Sound Stage"
+msgstr "Palco sonoro"
+
+msgid "Sound Tuning"
+msgstr "Ajuste de som"
+
+msgid "Soundstage"
+msgstr "Palco sonoro"
+
+msgid "Speaker angle (deg)"
+msgstr "Ângulo dos alto-falantes (deg)"
+
+msgid "Stereo Width"
+msgstr "Largura estéreo"
+
+msgid "Stock MSEB width changes the channel mix."
+msgstr "A largura do MSEB altera a mistura de canais."
+
+msgid "Studio monitors"
+msgstr "Monitores de estúdio"
+
+msgid "Switch to stock MSEB"
+msgstr "Mudar para MSEB padrão"
+
+msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgstr "Este layout salvo não é suportado. A troca substitui Presença de instrumentos, Ataque de graves e Ataque de agudos pelos controles padrão."
+
+msgid "Treble frequency (Hz)"
+msgstr "Frequência dos agudos (Hz)"
+
+msgid "Treble width (dB)"
+msgstr "Largura dos agudos (dB)"
+
+msgid "Virtual speakers"
+msgstr "Alto-falantes virtuais"
+
+msgid "Vocals"
+msgstr "Vozes"
+
+msgid "Wide"
+msgstr "Amplo"
+
+msgid "ADB did not change state. Check Settings > System > Advanced."
+msgstr "O estado do ADB não mudou. Verifique Configurações > Sistema > Avançado."
+
+msgid "Delete damaged preset?"
+msgstr "Excluir predefinição corrompida?"
+
+msgid "Delete preset?"
+msgstr "Excluir predefinição?"
+
+msgid "Load from Slot"
+msgstr "Carregar da posição"
+
+msgid "MSEB"
+msgstr "MSEB"
+
+msgid "Preset renamed"
+msgstr "Predefinição renomeada"
+
+msgid "Preset saved"
+msgstr "Predefinição salva"
+
+msgid "Restoring ADB…"
+msgstr "Restaurando ADB…"
+
+msgid "Save to Slot"
+msgstr "Salvar na posição"
+
+msgid "Stage"
+msgstr "Palco"
+
+msgid "Turn off Loudness Boost first"
+msgstr "Desative primeiro o Reforço de sonoridade"
+
+msgid "DAC"
+msgstr "DAC"
+
+msgid "USB Output"
+msgstr "Saída USB"

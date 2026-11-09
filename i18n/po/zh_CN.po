@@ -4116,3 +4116,312 @@ msgstr "正在接收"
 
 msgid "BT DAC"
 msgstr "BT DAC"
+
+msgid "Controls"
+msgstr "控制"
+
+msgid "Developer"
+msgstr "开发者"
+
+msgid "Effects"
+msgstr "音效"
+
+msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
+msgstr "请在无线或快捷抽屉中启用蓝牙以使用蓝牙 DAC 模式"
+
+msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgstr "媒体库已恢复。请使用 设置 > 媒体库 > 更新音乐数据库 保存"
+
+msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgstr "媒体库不可用。请使用 设置 > 媒体库 > 更新音乐数据库 重建"
+
+msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
+msgstr "之后可在 设置 > 系统 > 插件器 中搜索、更新或移除插件。"
+
+msgid "Personalize"
+msgstr "个性化"
+
+msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
+msgstr "请先关闭 ADB（设置 > 系统 > 高级），然后在此启用 USB DAC。"
+
+msgid "Use Settings > Library > Update Music Database"
+msgstr "请使用 设置 > 媒体库 > 更新音乐数据库"
+
+msgid "%s: %d (outside ±%d)"
+msgstr "%s：%d（超出 ±%d）"
+
+msgid "A preset with that name already exists"
+msgstr "同名预设已存在"
+
+msgid "About Play Through"
+msgstr "关于连续播放"
+
+msgid "Adjustment Range"
+msgstr "调节范围"
+
+msgid "Air"
+msgstr "空气感"
+
+msgid "Album mode has priority when both options are enabled."
+msgstr "同时启用两个选项时，专辑模式优先。"
+
+msgid "Albums continue in the artist's alphabetical album order."
+msgstr "专辑按艺人专辑名称的字母顺序继续播放。"
+
+msgid "Amount (%)"
+msgstr "强度 (%)"
+
+msgid "Bass Extension"
+msgstr "低频下潜"
+
+msgid "Bass Texture"
+msgstr "低频质感"
+
+msgid "Bass frequency (Hz)"
+msgstr "低频频率 (Hz)"
+
+msgid "Bass width (dB)"
+msgstr "低频宽度 (dB)"
+
+msgid "Confirm"
+msgstr "确认"
+
+msgid "Continuing playback"
+msgstr "正在继续播放"
+
+msgid "Could not apply Soundstage. Try again."
+msgstr "无法应用声场，请重试。"
+
+msgid "Could not apply changes. Try again."
+msgstr "无法应用更改，请重试。"
+
+msgid "Could not load preset. Try again."
+msgstr "无法加载预设，请重试。"
+
+msgid "Could not load slot. Try again."
+msgstr "无法加载槽位，请重试。"
+
+msgid "Could not save preset. Try again."
+msgstr "无法保存预设，请重试。"
+
+msgid "Could not save range. Try again."
+msgstr "无法保存范围，请重试。"
+
+msgid "Could not save slot. Try again."
+msgstr "无法保存到槽位，请重试。"
+
+msgid "Damaged preset"
+msgstr "损坏的预设"
+
+msgid "Damaged preset %d"
+msgstr "损坏的预设 %d"
+
+msgid "Damping (%)"
+msgstr "阻尼 (%)"
+
+msgid "Enter a short preset name without line breaks"
+msgstr "请输入不含换行的简短预设名称"
+
+msgid "Female Overtones"
+msgstr "女声泛音"
+
+msgid "Focused center"
+msgstr "聚焦中央"
+
+msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgstr "文件夹按同级文件夹的字母顺序（不区分大小写）继续播放。"
+
+msgid "Hall"
+msgstr "大厅"
+
+msgid "How It Works"
+msgstr "工作原理"
+
+msgid "Impulse Response"
+msgstr "脉冲响应"
+
+msgid "Load"
+msgstr "加载"
+
+msgid "Named Presets"
+msgstr "命名预设"
+
+msgid "Natural"
+msgstr "自然"
+
+msgid "New preset name"
+msgstr "新预设名称"
+
+msgid "Note Thickness"
+msgstr "声音厚度"
+
+msgid "Older MSEB controls are unsupported; preset was not loaded"
+msgstr "不支持旧版 MSEB 调节项，未加载预设"
+
+msgid "Older MSEB controls are unsupported; slot was not loaded"
+msgstr "不支持旧版 MSEB 调节项，未加载槽位"
+
+msgid "Overall Temperature"
+msgstr "整体冷暖"
+
+msgid "Overwrite"
+msgstr "覆盖"
+
+msgid "Overwrite preset?"
+msgstr "覆盖预设？"
+
+msgid "Play Through"
+msgstr "连续播放"
+
+msgid "Play Through Albums"
+msgstr "跨专辑连续播放"
+
+msgid "Play Through Folders"
+msgstr "跨文件夹连续播放"
+
+msgid "Preset"
+msgstr "预设"
+
+msgid "Preset changed; reopen the preset list"
+msgstr "预设已更改，请重新打开预设列表"
+
+msgid "Preset limit reached; delete one first"
+msgstr "已达预设上限，请先删除一个"
+
+msgid "Preset loaded"
+msgstr "预设已加载"
+
+msgid "Reflections (%)"
+msgstr "反射 (%)"
+
+msgid "Rename preset"
+msgstr "重命名预设"
+
+msgid "Reset Soundstage to defaults?"
+msgstr "将声场恢复为默认值？"
+
+msgid "Reset to Defaults"
+msgstr "恢复默认"
+
+msgid "Room"
+msgstr "房间"
+
+msgid "Room size (%)"
+msgstr "房间大小 (%)"
+
+msgid "Save Named Preset"
+msgstr "保存命名预设"
+
+msgid "Saved"
+msgstr "已保存"
+
+msgid "Saved to slot"
+msgstr "已保存到槽位"
+
+msgid "Shuffle and repeat modes are left unchanged."
+msgstr "随机播放和重复模式保持不变。"
+
+msgid "Sibilance HF"
+msgstr "高频齿音"
+
+msgid "Sibilance LF"
+msgstr "低频齿音"
+
+msgid "Side EQ"
+msgstr "侧边 EQ"
+
+msgid "Side level (dB)"
+msgstr "侧边电平 (dB)"
+
+msgid "Slot %d"
+msgstr "存储位 %d"
+
+msgid "Slot is empty"
+msgstr "槽位为空"
+
+msgid "Slot loaded"
+msgstr "槽位已加载"
+
+msgid "Small room"
+msgstr "小房间"
+
+msgid "Sound Stage"
+msgstr "声场"
+
+msgid "Sound Tuning"
+msgstr "声音调节"
+
+msgid "Soundstage"
+msgstr "声场"
+
+msgid "Speaker angle (deg)"
+msgstr "扬声器角度 (deg)"
+
+msgid "Stereo Width"
+msgstr "立体声宽度"
+
+msgid "Stock MSEB width changes the channel mix."
+msgstr "原生 MSEB 宽度会改变声道混合。"
+
+msgid "Studio monitors"
+msgstr "录音棚监听"
+
+msgid "Switch to stock MSEB"
+msgstr "切换到原生 MSEB"
+
+msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgstr "不支持此已保存布局。切换后会将乐器存在感、低频冲击和高频冲击替换为原生调节项。"
+
+msgid "Treble frequency (Hz)"
+msgstr "高频频率 (Hz)"
+
+msgid "Treble width (dB)"
+msgstr "高频宽度 (dB)"
+
+msgid "Virtual speakers"
+msgstr "虚拟扬声器"
+
+msgid "Vocals"
+msgstr "人声位置"
+
+msgid "Wide"
+msgstr "宽广"
+
+msgid "ADB did not change state. Check Settings > System > Advanced."
+msgstr "ADB 状态未改变。请检查设置 > 系统 > 高级。"
+
+msgid "Delete damaged preset?"
+msgstr "删除损坏的预设？"
+
+msgid "Delete preset?"
+msgstr "删除预设？"
+
+msgid "Load from Slot"
+msgstr "从槽位加载"
+
+msgid "MSEB"
+msgstr "MSEB"
+
+msgid "Preset renamed"
+msgstr "预设已重命名"
+
+msgid "Preset saved"
+msgstr "预设已保存"
+
+msgid "Restoring ADB…"
+msgstr "正在恢复 ADB…"
+
+msgid "Save to Slot"
+msgstr "保存到槽位"
+
+msgid "Stage"
+msgstr "声场"
+
+msgid "Turn off Loudness Boost first"
+msgstr "请先关闭响度增强"
+
+msgid "DAC"
+msgstr "DAC"
+
+msgid "USB Output"
+msgstr "USB 输出"
