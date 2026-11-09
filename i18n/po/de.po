@@ -2608,13 +2608,6 @@ msgstr "Wiedergabe fortsetzen, wenn externe Stromversorgung den Player einschalt
 msgid "Gain"
 msgstr "Verstärkung"
 
-msgid ""
-"Low\n"
-"High"
-msgstr ""
-"Niedrig\n"
-"Hoch"
-
 #, c-format
 msgid "%d min"
 msgstr "%d Min."
@@ -2805,9 +2798,6 @@ msgstr "Zurücksetzen"
 msgid "Volume Lock (Screen Off)"
 msgstr "Lautstärkesperre (Bildschirm aus)"
 
-msgid "In-line Remote"
-msgstr "Kabelgebundene Fernbedienung"
-
 msgid "Update Music Database to enable this album order"
 msgstr "Aktualisiere die Musikdatenbank, um diese Albumreihenfolge zu aktivieren"
 
@@ -2922,9 +2912,6 @@ msgstr "Akkustand in Prozent"
 msgid "Top Bar"
 msgstr "Obere Leiste"
 
-msgid "Artist Images"
-msgstr "Interpretenbilder"
-
 msgid "Themes"
 msgstr "Designs"
 
@@ -2939,9 +2926,6 @@ msgstr "Layout"
 
 msgid "Lyrics"
 msgstr "Songtexte"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "Obere Leiste im Player/Songtext ausblenden"
 
 msgid "Player Layout"
 msgstr "Player-Layout"
@@ -3674,10 +3658,6 @@ msgstr "Das Streaming-Plugin ist nicht verfügbar"
 msgid "TXT Reader"
 msgstr "TXT-Reader"
 
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "Bildschirm bei Songtexten eingeschaltet lassen"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -4015,9 +3995,6 @@ msgstr "Empfang"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "Bedienung"
-
 msgid "Developer"
 msgstr "Entwickler"
 
@@ -4246,9 +4223,6 @@ msgstr "Kleiner Raum"
 msgid "Sound Stage"
 msgstr "Klangbühne"
 
-msgid "Sound Tuning"
-msgstr "Klangabstimmung"
-
 msgid "Soundstage"
 msgstr "Klangbühne"
 
@@ -4323,3 +4297,78 @@ msgstr "DAC"
 
 msgid "USB Output"
 msgstr "USB-Ausgabe"
+
+msgid "Accent color"
+msgstr "Akzentfarbe"
+
+msgid "Advanced sound"
+msgstr "Erweiterter Klang"
+
+msgid "Button mapping"
+msgstr "Tastenbelegung"
+
+msgid "Buttons"
+msgstr "Tasten"
+
+msgid "Bypassed by NOS"
+msgstr "Bei NOS umgangen"
+
+msgid "Car mode"
+msgstr "Auto-Modus"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Hide player/lyrics top bar"
+msgstr "Obere Leiste im Player/Songtext ausblenden"
+
+msgid "In-line remote"
+msgstr "Kabelgebundene Fernbedienung"
+
+msgid "Keep lyrics screen on"
+msgstr "Bildschirm bei Songtexten eingeschaltet lassen"
+
+msgid "Lyrics text size"
+msgstr "Textgröße der Liedtexte"
+
+msgid "Max %d%%"
+msgstr "Max. %d%%"
+
+msgid "Per album"
+msgstr "Pro Album"
+
+msgid "Per track"
+msgstr "Pro Titel"
+
+msgid "Play through"
+msgstr "Weiterwiedergabe"
+
+msgid "Player layout"
+msgstr "Player-Layout"
+
+msgid "Quick drawer"
+msgstr "Schnellmenü"
+
+msgid "Resume last track"
+msgstr "Letzten Titel fortsetzen"
+
+msgid "Show Artist Images"
+msgstr "Interpretenbilder anzeigen"
+
+msgid "Show Lyrics"
+msgstr "Liedtexte anzeigen"
+
+msgid "Top bar"
+msgstr "Obere Leiste"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "Schalte NOS aus, um einen Filter auszuwählen"
+
+msgid "USB output"
+msgstr "USB-Ausgabe"
+
+msgid "Volume limits"
+msgstr "Lautstärkegrenzen"
+
+msgid "Volume lock (screen off)"
+msgstr "Lautstärkesperre (Bildschirm aus)"

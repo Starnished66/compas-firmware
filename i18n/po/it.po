@@ -2660,13 +2660,6 @@ msgstr "Riprendi la riproduzione quando l'alimentazione esterna accende il playe
 msgid "Gain"
 msgstr "Guadagno"
 
-msgid ""
-"Low\n"
-"High"
-msgstr ""
-"Basso\n"
-"Alto"
-
 #, c-format
 msgid "%d min"
 msgstr "%d min"
@@ -2857,9 +2850,6 @@ msgstr "Ripristina"
 msgid "Volume Lock (Screen Off)"
 msgstr "Blocco volume (schermo spento)"
 
-msgid "In-line Remote"
-msgstr "Telecomando in linea"
-
 msgid "Update Music Database to enable this album order"
 msgstr "Aggiorna il database musicale per attivare questo ordine degli album"
 
@@ -2974,9 +2964,6 @@ msgstr "Percentuale batteria"
 msgid "Top Bar"
 msgstr "Barra superiore"
 
-msgid "Artist Images"
-msgstr "Immagini degli artisti"
-
 msgid "Themes"
 msgstr "Temi"
 
@@ -2991,9 +2978,6 @@ msgstr "Layout"
 
 msgid "Lyrics"
 msgstr "Testi"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "Nascondi barra superiore Player/Testi"
 
 msgid "Player Layout"
 msgstr "Layout del player"
@@ -3726,10 +3710,6 @@ msgstr "Il plugin di streaming non è disponibile"
 msgid "TXT Reader"
 msgstr "Lettore TXT"
 
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "Mantieni acceso lo schermo dei testi"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -4067,9 +4047,6 @@ msgstr "In ricezione"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "Controlli"
-
 msgid "Developer"
 msgstr "Sviluppatore"
 
@@ -4298,9 +4275,6 @@ msgstr "Stanza piccola"
 msgid "Sound Stage"
 msgstr "Scena sonora"
 
-msgid "Sound Tuning"
-msgstr "Regolazione del suono"
-
 msgid "Soundstage"
 msgstr "Scena sonora"
 
@@ -4375,3 +4349,78 @@ msgstr "DAC"
 
 msgid "USB Output"
 msgstr "Uscita USB"
+
+msgid "Accent color"
+msgstr "Colore principale"
+
+msgid "Advanced sound"
+msgstr "Audio avanzato"
+
+msgid "Button mapping"
+msgstr "Mappatura pulsanti"
+
+msgid "Buttons"
+msgstr "Pulsanti"
+
+msgid "Bypassed by NOS"
+msgstr "Bypassato da NOS"
+
+msgid "Car mode"
+msgstr "Modalità auto"
+
+msgid "Filter"
+msgstr "Filtro"
+
+msgid "Hide player/lyrics top bar"
+msgstr "Nascondi barra superiore Player/Testi"
+
+msgid "In-line remote"
+msgstr "Telecomando in linea"
+
+msgid "Keep lyrics screen on"
+msgstr "Mantieni acceso lo schermo dei testi"
+
+msgid "Lyrics text size"
+msgstr "Dimensione testo"
+
+msgid "Max %d%%"
+msgstr "Max %d%%"
+
+msgid "Per album"
+msgstr "Per album"
+
+msgid "Per track"
+msgstr "Per brano"
+
+msgid "Play through"
+msgstr "Riproduzione continua"
+
+msgid "Player layout"
+msgstr "Layout del player"
+
+msgid "Quick drawer"
+msgstr "Pannello rapido"
+
+msgid "Resume last track"
+msgstr "Riprendi ultimo brano"
+
+msgid "Show Artist Images"
+msgstr "Mostra immagini degli artisti"
+
+msgid "Show Lyrics"
+msgstr "Mostra i testi"
+
+msgid "Top bar"
+msgstr "Barra superiore"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "Disattiva NOS per scegliere un filtro"
+
+msgid "USB output"
+msgstr "Uscita USB"
+
+msgid "Volume limits"
+msgstr "Limiti volume"
+
+msgid "Volume lock (screen off)"
+msgstr "Blocco volume (schermo spento)"

@@ -2660,13 +2660,6 @@ msgstr "Reprendre la lecture quand une alimentation externe allume le lecteur."
 msgid "Gain"
 msgstr "Gain"
 
-msgid ""
-"Low\n"
-"High"
-msgstr ""
-"Bas\n"
-"Haut"
-
 #, c-format
 msgid "%d min"
 msgstr "%d min"
@@ -2857,9 +2850,6 @@ msgstr "Rétablir"
 msgid "Volume Lock (Screen Off)"
 msgstr "Verrouillage du volume (écran éteint)"
 
-msgid "In-line Remote"
-msgstr "Télécommande filaire"
-
 msgid "Update Music Database to enable this album order"
 msgstr "Mettez à jour la base musicale pour activer cet ordre d'albums"
 
@@ -2974,9 +2964,6 @@ msgstr "Pourcentage de batterie"
 msgid "Top Bar"
 msgstr "Barre supérieure"
 
-msgid "Artist Images"
-msgstr "Images d'artistes"
-
 msgid "Themes"
 msgstr "Thèmes"
 
@@ -2991,9 +2978,6 @@ msgstr "Disposition"
 
 msgid "Lyrics"
 msgstr "Paroles"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "Masquer la barre du haut Lecteur/Paroles"
 
 msgid "Player Layout"
 msgstr "Disposition du lecteur"
@@ -3726,10 +3710,6 @@ msgstr "Le plugin de streaming n'est pas disponible"
 msgid "TXT Reader"
 msgstr "Lecteur TXT"
 
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "Garder l’écran des paroles allumé"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -4067,9 +4047,6 @@ msgstr "Réception"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "Commandes"
-
 msgid "Developer"
 msgstr "Développeur"
 
@@ -4298,9 +4275,6 @@ msgstr "Petite pièce"
 msgid "Sound Stage"
 msgstr "Scène sonore"
 
-msgid "Sound Tuning"
-msgstr "Réglage du son"
-
 msgid "Soundstage"
 msgstr "Scène sonore"
 
@@ -4375,3 +4349,78 @@ msgstr "DAC"
 
 msgid "USB Output"
 msgstr "Sortie USB"
+
+msgid "Accent color"
+msgstr "Couleur d'accent"
+
+msgid "Advanced sound"
+msgstr "Son avancé"
+
+msgid "Button mapping"
+msgstr "Mappage des boutons"
+
+msgid "Buttons"
+msgstr "Boutons"
+
+msgid "Bypassed by NOS"
+msgstr "Contourné par le NOS"
+
+msgid "Car mode"
+msgstr "Mode voiture"
+
+msgid "Filter"
+msgstr "Filtre"
+
+msgid "Hide player/lyrics top bar"
+msgstr "Masquer la barre du haut Lecteur/Paroles"
+
+msgid "In-line remote"
+msgstr "Télécommande filaire"
+
+msgid "Keep lyrics screen on"
+msgstr "Garder l’écran des paroles allumé"
+
+msgid "Lyrics text size"
+msgstr "Taille du texte des paroles"
+
+msgid "Max %d%%"
+msgstr "Max. %d%%"
+
+msgid "Per album"
+msgstr "Par album"
+
+msgid "Per track"
+msgstr "Par piste"
+
+msgid "Play through"
+msgstr "Lecture enchaînée"
+
+msgid "Player layout"
+msgstr "Disposition du lecteur"
+
+msgid "Quick drawer"
+msgstr "Volet rapide"
+
+msgid "Resume last track"
+msgstr "Reprendre la dernière piste"
+
+msgid "Show Artist Images"
+msgstr "Afficher les images d'artistes"
+
+msgid "Show Lyrics"
+msgstr "Afficher les paroles"
+
+msgid "Top bar"
+msgstr "Barre supérieure"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "Désactivez le NOS pour choisir un filtre"
+
+msgid "USB output"
+msgstr "Sortie USB"
+
+msgid "Volume limits"
+msgstr "Limites de volume"
+
+msgid "Volume lock (screen off)"
+msgstr "Verrouillage du volume (écran éteint)"

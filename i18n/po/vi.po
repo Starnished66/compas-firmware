@@ -2471,9 +2471,6 @@ msgstr "Tiếp tục phát khi nguồn ngoài bật máy nghe nhạc."
 msgid "Gain"
 msgstr "Độ lợi"
 
-msgid "Low\nHigh"
-msgstr "Thấp\nCao"
-
 msgid "%d min"
 msgstr "%d phút"
 
@@ -2658,9 +2655,6 @@ msgstr "Đặt lại"
 msgid "Volume Lock (Screen Off)"
 msgstr "Khóa âm lượng khi tắt màn hình"
 
-msgid "In-line Remote"
-msgstr "Điều khiển trên dây"
-
 msgid "Update Music Database to enable this album order"
 msgstr "Cập nhật cơ sở dữ liệu nhạc để bật thứ tự album này"
 
@@ -2775,9 +2769,6 @@ msgstr "Phần trăm pin"
 msgid "Top Bar"
 msgstr "Thanh trên cùng"
 
-msgid "Artist Images"
-msgstr "Ảnh nghệ sĩ"
-
 msgid "Themes"
 msgstr "Chủ đề"
 
@@ -2792,9 +2783,6 @@ msgstr "Bố cục"
 
 msgid "Lyrics"
 msgstr "Lời bài hát"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "Ẩn thanh trên cùng của trình phát/lời bài hát"
 
 msgid "Player Layout"
 msgstr "Bố cục trình phát"
@@ -3483,9 +3471,6 @@ msgstr "Plugin phát trực tuyến không có sẵn"
 msgid "TXT Reader"
 msgstr "Trình đọc TXT"
 
-msgid "Keep Lyrics Screen On"
-msgstr "Luôn bật màn hình lời bài hát"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -3825,9 +3810,6 @@ msgstr "Đang nhận"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "Điều khiển"
-
 msgid "Developer"
 msgstr "Nhà phát triển"
 
@@ -4056,9 +4038,6 @@ msgstr "Phòng nhỏ"
 msgid "Sound Stage"
 msgstr "Âm trường"
 
-msgid "Sound Tuning"
-msgstr "Tinh chỉnh âm thanh"
-
 msgid "Soundstage"
 msgstr "Âm trường"
 
@@ -4133,3 +4112,78 @@ msgstr "DAC"
 
 msgid "USB Output"
 msgstr "Đầu ra USB"
+
+msgid "Accent color"
+msgstr "Màu nhấn"
+
+msgid "Advanced sound"
+msgstr "Âm thanh nâng cao"
+
+msgid "Button mapping"
+msgstr "Ánh xạ nút"
+
+msgid "Buttons"
+msgstr "Nút"
+
+msgid "Bypassed by NOS"
+msgstr "Được NOS bỏ qua"
+
+msgid "Car mode"
+msgstr "Chế độ ô tô"
+
+msgid "Filter"
+msgstr "Bộ lọc"
+
+msgid "Hide player/lyrics top bar"
+msgstr "Ẩn thanh trên cùng của trình phát/lời bài hát"
+
+msgid "In-line remote"
+msgstr "Điều khiển trên dây"
+
+msgid "Keep lyrics screen on"
+msgstr "Luôn bật màn hình lời bài hát"
+
+msgid "Lyrics text size"
+msgstr "Kích thước văn bản lời bài hát"
+
+msgid "Max %d%%"
+msgstr "Tối đa %d%%"
+
+msgid "Per album"
+msgstr "Theo album"
+
+msgid "Per track"
+msgstr "Theo bản nhạc"
+
+msgid "Play through"
+msgstr "Phát nối tiếp"
+
+msgid "Player layout"
+msgstr "Bố cục trình phát"
+
+msgid "Quick drawer"
+msgstr "Ngăn Kéo Nhanh"
+
+msgid "Resume last track"
+msgstr "Tiếp tục lần phát trước"
+
+msgid "Show Artist Images"
+msgstr "Hiện ảnh nghệ sĩ"
+
+msgid "Show Lyrics"
+msgstr "Hiện lời bài hát"
+
+msgid "Top bar"
+msgstr "Thanh trên cùng"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "Tắt NOS để chọn bộ lọc"
+
+msgid "USB output"
+msgstr "Đầu ra USB"
+
+msgid "Volume limits"
+msgstr "Giới hạn âm lượng"
+
+msgid "Volume lock (screen off)"
+msgstr "Khóa âm lượng khi tắt màn hình"

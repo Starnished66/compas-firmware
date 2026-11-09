@@ -2654,13 +2654,6 @@ msgstr "Reanuda la reproducción cuando la alimentación externa enciende el rep
 msgid "Gain"
 msgstr "Ganancia"
 
-msgid ""
-"Low\n"
-"High"
-msgstr ""
-"Bajo\n"
-"Alto"
-
 #, c-format
 msgid "%d min"
 msgstr "%d min"
@@ -2851,9 +2844,6 @@ msgstr "Restablecer"
 msgid "Volume Lock (Screen Off)"
 msgstr "Bloqueo de volumen (pantalla apagada)"
 
-msgid "In-line Remote"
-msgstr "Control en el cable"
-
 msgid "Update Music Database to enable this album order"
 msgstr "Actualiza la base de datos de música para activar este orden de álbumes"
 
@@ -2968,9 +2958,6 @@ msgstr "Porcentaje de batería"
 msgid "Top Bar"
 msgstr "Barra superior"
 
-msgid "Artist Images"
-msgstr "Imágenes de artistas"
-
 msgid "Themes"
 msgstr "Temas"
 
@@ -2985,9 +2972,6 @@ msgstr "Diseño"
 
 msgid "Lyrics"
 msgstr "Letras"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "Ocultar barra superior en reproductor/letras"
 
 msgid "Player Layout"
 msgstr "Diseño del reproductor"
@@ -3720,10 +3704,6 @@ msgstr "El plugin de streaming no está disponible"
 msgid "TXT Reader"
 msgstr "Lector TXT"
 
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "Mantener la pantalla de letras encendida"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -4061,9 +4041,6 @@ msgstr "Recibiendo"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "Controles"
-
 msgid "Developer"
 msgstr "Desarrollador"
 
@@ -4292,9 +4269,6 @@ msgstr "Sala pequeña"
 msgid "Sound Stage"
 msgstr "Escena sonora"
 
-msgid "Sound Tuning"
-msgstr "Ajuste de sonido"
-
 msgid "Soundstage"
 msgstr "Escenario sonoro"
 
@@ -4369,3 +4343,78 @@ msgstr "DAC"
 
 msgid "USB Output"
 msgstr "Salida USB"
+
+msgid "Accent color"
+msgstr "Color de acento"
+
+msgid "Advanced sound"
+msgstr "Sonido avanzado"
+
+msgid "Button mapping"
+msgstr "Asignación de botones"
+
+msgid "Buttons"
+msgstr "Botones"
+
+msgid "Bypassed by NOS"
+msgstr "Omitido por NOS"
+
+msgid "Car mode"
+msgstr "Modo auto"
+
+msgid "Filter"
+msgstr "Filtro"
+
+msgid "Hide player/lyrics top bar"
+msgstr "Ocultar barra superior en reproductor/letras"
+
+msgid "In-line remote"
+msgstr "Control en el cable"
+
+msgid "Keep lyrics screen on"
+msgstr "Mantener la pantalla de letras encendida"
+
+msgid "Lyrics text size"
+msgstr "Tamaño de la letra"
+
+msgid "Max %d%%"
+msgstr "Máximo %d%%"
+
+msgid "Per album"
+msgstr "Por álbum"
+
+msgid "Per track"
+msgstr "Por pista"
+
+msgid "Play through"
+msgstr "Reproducción continua"
+
+msgid "Player layout"
+msgstr "Diseño del reproductor"
+
+msgid "Quick drawer"
+msgstr "Panel rápido"
+
+msgid "Resume last track"
+msgstr "Reanudar última pista"
+
+msgid "Show Artist Images"
+msgstr "Mostrar imágenes de artistas"
+
+msgid "Show Lyrics"
+msgstr "Mostrar letras"
+
+msgid "Top bar"
+msgstr "Barra superior"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "Desactiva NOS para elegir un filtro"
+
+msgid "USB output"
+msgstr "Salida USB"
+
+msgid "Volume limits"
+msgstr "Límites de volumen"
+
+msgid "Volume lock (screen off)"
+msgstr "Bloqueo de volumen (pantalla apagada)"

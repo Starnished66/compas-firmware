@@ -2687,13 +2687,6 @@ msgstr "外部电源开机时继续播放。"
 msgid "Gain"
 msgstr "增益"
 
-msgid ""
-"Low\n"
-"High"
-msgstr ""
-"低\n"
-"高"
-
 #, c-format
 msgid "%d min"
 msgstr "%d 分钟"
@@ -2884,9 +2877,6 @@ msgstr "重置"
 msgid "Volume Lock (Screen Off)"
 msgstr "音量锁定（息屏）"
 
-msgid "In-line Remote"
-msgstr "线控"
-
 msgid "Update Music Database to enable this album order"
 msgstr "更新音乐数据库以启用此专辑排序"
 
@@ -3006,9 +2996,6 @@ msgstr "电池百分比"
 msgid "Top Bar"
 msgstr "顶栏"
 
-msgid "Artist Images"
-msgstr "艺术家图片"
-
 msgid "Themes"
 msgstr "主题"
 
@@ -3023,9 +3010,6 @@ msgstr "布局"
 
 msgid "Lyrics"
 msgstr "歌词"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "隐藏播放/歌词顶栏"
 
 msgid "Player Layout"
 msgstr "播放器布局"
@@ -3771,10 +3755,6 @@ msgstr "流媒体插件不可用"
 msgid "TXT Reader"
 msgstr "TXT 阅读器"
 
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "歌词界面保持常亮"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -4117,9 +4097,6 @@ msgstr "正在接收"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "控制"
-
 msgid "Developer"
 msgstr "开发者"
 
@@ -4348,9 +4325,6 @@ msgstr "小房间"
 msgid "Sound Stage"
 msgstr "声场"
 
-msgid "Sound Tuning"
-msgstr "声音调节"
-
 msgid "Soundstage"
 msgstr "声场"
 
@@ -4425,3 +4399,78 @@ msgstr "DAC"
 
 msgid "USB Output"
 msgstr "USB 输出"
+
+msgid "Accent color"
+msgstr "强调色"
+
+msgid "Advanced sound"
+msgstr "高级音效"
+
+msgid "Button mapping"
+msgstr "按键映射"
+
+msgid "Buttons"
+msgstr "按键"
+
+msgid "Bypassed by NOS"
+msgstr "由 NOS 旁路"
+
+msgid "Car mode"
+msgstr "车载模式"
+
+msgid "Filter"
+msgstr "滤波器"
+
+msgid "Hide player/lyrics top bar"
+msgstr "隐藏播放/歌词顶栏"
+
+msgid "In-line remote"
+msgstr "线控"
+
+msgid "Keep lyrics screen on"
+msgstr "歌词界面保持常亮"
+
+msgid "Lyrics text size"
+msgstr "歌词字号"
+
+msgid "Max %d%%"
+msgstr "最大 %d%%"
+
+msgid "Per album"
+msgstr "按专辑"
+
+msgid "Per track"
+msgstr "按曲目"
+
+msgid "Play through"
+msgstr "连续播放"
+
+msgid "Player layout"
+msgstr "播放器布局"
+
+msgid "Quick drawer"
+msgstr "快捷抽屉"
+
+msgid "Resume last track"
+msgstr "继续上次曲目"
+
+msgid "Show Artist Images"
+msgstr "显示艺术家图片"
+
+msgid "Show Lyrics"
+msgstr "显示歌词"
+
+msgid "Top bar"
+msgstr "顶栏"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "关闭 NOS 以选择滤波器"
+
+msgid "USB output"
+msgstr "USB 输出"
+
+msgid "Volume limits"
+msgstr "音量限制"
+
+msgid "Volume lock (screen off)"
+msgstr "音量锁定（息屏）"

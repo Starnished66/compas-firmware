@@ -2471,9 +2471,6 @@ msgstr "外部電源でプレーヤーが起動したときに再生を再開し
 msgid "Gain"
 msgstr "ゲイン"
 
-msgid "Low\nHigh"
-msgstr "低\n高"
-
 msgid "%d min"
 msgstr "%d分"
 
@@ -2658,9 +2655,6 @@ msgstr "リセット"
 msgid "Volume Lock (Screen Off)"
 msgstr "画面オフ時の音量ロック"
 
-msgid "In-line Remote"
-msgstr "有線リモコン"
-
 msgid "Update Music Database to enable this album order"
 msgstr "アルバム順を有効にするには音楽データベースを更新してください"
 
@@ -2775,9 +2769,6 @@ msgstr "バッテリー残量の割合"
 msgid "Top Bar"
 msgstr "トップバー"
 
-msgid "Artist Images"
-msgstr "アーティスト画像"
-
 msgid "Themes"
 msgstr "テーマ"
 
@@ -2792,9 +2783,6 @@ msgstr "レイアウト"
 
 msgid "Lyrics"
 msgstr "歌詞"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "プレーヤー／歌詞のトップバーを隠す"
 
 msgid "Player Layout"
 msgstr "プレーヤーレイアウト"
@@ -3483,9 +3471,6 @@ msgstr "ストリーミングプラグインを利用できません"
 msgid "TXT Reader"
 msgstr "TXTリーダー"
 
-msgid "Keep Lyrics Screen On"
-msgstr "歌詞画面をオンのままにする"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -3824,9 +3809,6 @@ msgstr "受信中"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "操作"
-
 msgid "Developer"
 msgstr "開発者"
 
@@ -4055,9 +4037,6 @@ msgstr "スモールルーム"
 msgid "Sound Stage"
 msgstr "サウンドステージ"
 
-msgid "Sound Tuning"
-msgstr "音質調整"
-
 msgid "Soundstage"
 msgstr "音場"
 
@@ -4132,3 +4111,78 @@ msgstr "DAC"
 
 msgid "USB Output"
 msgstr "USB出力"
+
+msgid "Accent color"
+msgstr "アクセントカラー"
+
+msgid "Advanced sound"
+msgstr "詳細なサウンド"
+
+msgid "Button mapping"
+msgstr "ボタン割り当て"
+
+msgid "Buttons"
+msgstr "ボタン"
+
+msgid "Bypassed by NOS"
+msgstr "NOSでバイパス"
+
+msgid "Car mode"
+msgstr "車載モード"
+
+msgid "Filter"
+msgstr "フィルター"
+
+msgid "Hide player/lyrics top bar"
+msgstr "プレーヤー／歌詞のトップバーを隠す"
+
+msgid "In-line remote"
+msgstr "有線リモコン"
+
+msgid "Keep lyrics screen on"
+msgstr "歌詞画面をオンのままにする"
+
+msgid "Lyrics text size"
+msgstr "歌詞の文字サイズ"
+
+msgid "Max %d%%"
+msgstr "最大 %d%%"
+
+msgid "Per album"
+msgstr "アルバムごと"
+
+msgid "Per track"
+msgstr "トラックごと"
+
+msgid "Play through"
+msgstr "連続再生"
+
+msgid "Player layout"
+msgstr "プレーヤーレイアウト"
+
+msgid "Quick drawer"
+msgstr "クイックドロワー"
+
+msgid "Resume last track"
+msgstr "前回の再生を再開"
+
+msgid "Show Artist Images"
+msgstr "アーティスト画像を表示"
+
+msgid "Show Lyrics"
+msgstr "歌詞を表示"
+
+msgid "Top bar"
+msgstr "トップバー"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "NOSをオフにしてフィルターを選択"
+
+msgid "USB output"
+msgstr "USB出力"
+
+msgid "Volume limits"
+msgstr "音量制限"
+
+msgid "Volume lock (screen off)"
+msgstr "画面オフ時の音量ロック"

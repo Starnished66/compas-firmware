@@ -2620,13 +2620,6 @@ msgstr "Hervat het afspelen wanneer externe voeding de speler inschakelt."
 msgid "Gain"
 msgstr "Versterking"
 
-msgid ""
-"Low\n"
-"High"
-msgstr ""
-"Laag\n"
-"Hoog"
-
 #, c-format
 msgid "%d min"
 msgstr "%d min"
@@ -2817,9 +2810,6 @@ msgstr "Herstellen"
 msgid "Volume Lock (Screen Off)"
 msgstr "Volumevergrendeling (scherm uit)"
 
-msgid "In-line Remote"
-msgstr "Inline-afstandsbediening"
-
 msgid "Update Music Database to enable this album order"
 msgstr "Werk de muziekdatabase bij om deze albumvolgorde in te schakelen"
 
@@ -2934,9 +2924,6 @@ msgstr "Batterijpercentage"
 msgid "Top Bar"
 msgstr "Bovenbalk"
 
-msgid "Artist Images"
-msgstr "Artiestenafbeeldingen"
-
 msgid "Themes"
 msgstr "Thema's"
 
@@ -2951,9 +2938,6 @@ msgstr "Indeling"
 
 msgid "Lyrics"
 msgstr "Songteksten"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "Bovenbalk van speler/songteksten verbergen"
 
 msgid "Player Layout"
 msgstr "Spelerindeling"
@@ -3686,10 +3670,6 @@ msgstr "De streamingplug-in is niet beschikbaar"
 msgid "TXT Reader"
 msgstr "TXT-lezer"
 
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "Scherm aan houden bij songteksten"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -4027,9 +4007,6 @@ msgstr "Ontvangen"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "Bediening"
-
 msgid "Developer"
 msgstr "Ontwikkelaar"
 
@@ -4258,9 +4235,6 @@ msgstr "Kleine ruimte"
 msgid "Sound Stage"
 msgstr "Geluidsbeeld"
 
-msgid "Sound Tuning"
-msgstr "Geluidsafstemming"
-
 msgid "Soundstage"
 msgstr "Klankbeeld"
 
@@ -4335,3 +4309,78 @@ msgstr "DAC"
 
 msgid "USB Output"
 msgstr "USB-uitgang"
+
+msgid "Accent color"
+msgstr "Accentkleur"
+
+msgid "Advanced sound"
+msgstr "Geavanceerd geluid"
+
+msgid "Button mapping"
+msgstr "Knoptoewijzing"
+
+msgid "Buttons"
+msgstr "Knoppen"
+
+msgid "Bypassed by NOS"
+msgstr "Omzeild door NOS"
+
+msgid "Car mode"
+msgstr "Automodus"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Hide player/lyrics top bar"
+msgstr "Bovenbalk van speler/songteksten verbergen"
+
+msgid "In-line remote"
+msgstr "Inline-afstandsbediening"
+
+msgid "Keep lyrics screen on"
+msgstr "Scherm aan houden bij songteksten"
+
+msgid "Lyrics text size"
+msgstr "Tekstgrootte songteksten"
+
+msgid "Max %d%%"
+msgstr "Max. %d%%"
+
+msgid "Per album"
+msgstr "Per album"
+
+msgid "Per track"
+msgstr "Per nummer"
+
+msgid "Play through"
+msgstr "Doorblijven spelen"
+
+msgid "Player layout"
+msgstr "Spelerindeling"
+
+msgid "Quick drawer"
+msgstr "Snelpaneel"
+
+msgid "Resume last track"
+msgstr "Laatste nummer hervatten"
+
+msgid "Show Artist Images"
+msgstr "Artiestenafbeeldingen weergeven"
+
+msgid "Show Lyrics"
+msgstr "Songteksten weergeven"
+
+msgid "Top bar"
+msgstr "Bovenbalk"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "Schakel NOS uit om een filter te kiezen"
+
+msgid "USB output"
+msgstr "USB-uitvoer"
+
+msgid "Volume limits"
+msgstr "Volumelimieten"
+
+msgid "Volume lock (screen off)"
+msgstr "Volumevergrendeling (scherm uit)"

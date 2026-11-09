@@ -2622,13 +2622,6 @@ msgstr "Jatka toistoa, kun ulkoinen virta käynnistää soittimen."
 msgid "Gain"
 msgstr "Vahvistus"
 
-msgid ""
-"Low\n"
-"High"
-msgstr ""
-"Matala\n"
-"Korkea"
-
 #, c-format
 msgid "%d min"
 msgstr "%d min"
@@ -2819,9 +2812,6 @@ msgstr "Palauta"
 msgid "Volume Lock (Screen Off)"
 msgstr "Äänenvoimakkuuden lukitus (näyttö pois)"
 
-msgid "In-line Remote"
-msgstr "Johdossa oleva kauko-ohjain"
-
 msgid "Update Music Database to enable this album order"
 msgstr "Päivitä musiikkitietokanta ottaaksesi tämän albumijärjestyksen käyttöön"
 
@@ -2936,9 +2926,6 @@ msgstr "Akun varausprosentti"
 msgid "Top Bar"
 msgstr "Yläpalkki"
 
-msgid "Artist Images"
-msgstr "Esittäjien kuvat"
-
 msgid "Themes"
 msgstr "Teemat"
 
@@ -2953,9 +2940,6 @@ msgstr "Asettelu"
 
 msgid "Lyrics"
 msgstr "Sanoitukset"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "Piilota soittimen/sanoitusten yläpalkki"
 
 msgid "Player Layout"
 msgstr "Soittimen asettelu"
@@ -3688,10 +3672,6 @@ msgstr "Suoratoistolaajennus ei ole käytettävissä"
 msgid "TXT Reader"
 msgstr "TXT-lukija"
 
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "Pidä näyttö päällä sanoituksissa"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -4029,9 +4009,6 @@ msgstr "Vastaanotetaan"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "Ohjaimet"
-
 msgid "Developer"
 msgstr "Kehittäjä"
 
@@ -4260,9 +4237,6 @@ msgstr "Pieni huone"
 msgid "Sound Stage"
 msgstr "Äänikuva"
 
-msgid "Sound Tuning"
-msgstr "Äänen säätö"
-
 msgid "Soundstage"
 msgstr "Äänikuva"
 
@@ -4337,3 +4311,78 @@ msgstr "DAC"
 
 msgid "USB Output"
 msgstr "USB-lähtö"
+
+msgid "Accent color"
+msgstr "Korostusväri"
+
+msgid "Advanced sound"
+msgstr "Lisä-ääni"
+
+msgid "Button mapping"
+msgstr "Painikemääritykset"
+
+msgid "Buttons"
+msgstr "Painikkeet"
+
+msgid "Bypassed by NOS"
+msgstr "NOS ohittaa"
+
+msgid "Car mode"
+msgstr "Autotila"
+
+msgid "Filter"
+msgstr "Suodatin"
+
+msgid "Hide player/lyrics top bar"
+msgstr "Piilota soittimen/sanoitusten yläpalkki"
+
+msgid "In-line remote"
+msgstr "Johdossa oleva kauko-ohjain"
+
+msgid "Keep lyrics screen on"
+msgstr "Pidä näyttö päällä sanoituksissa"
+
+msgid "Lyrics text size"
+msgstr "Sanoitusten tekstikoko"
+
+msgid "Max %d%%"
+msgstr "Enintään %d%%"
+
+msgid "Per album"
+msgstr "Albumikohtainen"
+
+msgid "Per track"
+msgstr "Kappalekohtainen"
+
+msgid "Play through"
+msgstr "Jatkuva toisto"
+
+msgid "Player layout"
+msgstr "Soittimen asettelu"
+
+msgid "Quick drawer"
+msgstr "Pikavalikko"
+
+msgid "Resume last track"
+msgstr "Jatka viimeisestä kappaleesta"
+
+msgid "Show Artist Images"
+msgstr "Näytä esittäjien kuvat"
+
+msgid "Show Lyrics"
+msgstr "Näytä sanoitukset"
+
+msgid "Top bar"
+msgstr "Yläpalkki"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "Poista NOS käytöstä valitaksesi suodattimen"
+
+msgid "USB output"
+msgstr "USB-lähtö"
+
+msgid "Volume limits"
+msgstr "Äänenvoimakkuuden rajat"
+
+msgid "Volume lock (screen off)"
+msgstr "Äänenvoimakkuuden lukitus (näyttö pois)"

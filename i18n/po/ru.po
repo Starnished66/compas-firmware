@@ -2650,13 +2650,6 @@ msgstr "Возобновить воспроизведение, когда под
 msgid "Gain"
 msgstr "Усиление"
 
-msgid ""
-"Low\n"
-"High"
-msgstr ""
-"Низкое\n"
-"Высокое"
-
 #, c-format
 msgid "%d min"
 msgstr "%d мин."
@@ -2847,9 +2840,6 @@ msgstr "Сброс"
 msgid "Volume Lock (Screen Off)"
 msgstr "Блокировка громкости (экран выключен)"
 
-msgid "In-line Remote"
-msgstr "ПДУ на проводе наушников"
-
 msgid "Update Music Database to enable this album order"
 msgstr "Обновите музыкальную базу данных, чтобы включить этот порядок альбомов."
 
@@ -2964,9 +2954,6 @@ msgstr "Процент заряда батареи"
 msgid "Top Bar"
 msgstr "Верхняя панель"
 
-msgid "Artist Images"
-msgstr "Изображения исполнителей"
-
 msgid "Themes"
 msgstr "Темы"
 
@@ -2981,9 +2968,6 @@ msgstr "Макет"
 
 msgid "Lyrics"
 msgstr "Тексты песен"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "Скрыть верхнюю панель проигрывателя/текста песен"
 
 msgid "Player Layout"
 msgstr "Расположение проигрывателя"
@@ -3716,10 +3700,6 @@ msgstr "Плагин стриминга недоступен"
 msgid "TXT Reader"
 msgstr "Просмотр TXT"
 
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "Держать экран текста песен включенным"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -4057,9 +4037,6 @@ msgstr "Приём"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "Управление"
-
 msgid "Developer"
 msgstr "Разработчик"
 
@@ -4288,9 +4265,6 @@ msgstr "Маленькая комната"
 msgid "Sound Stage"
 msgstr "Звуковая сцена"
 
-msgid "Sound Tuning"
-msgstr "Настройка звука"
-
 msgid "Soundstage"
 msgstr "Звуковая сцена"
 
@@ -4365,3 +4339,78 @@ msgstr "ЦАП"
 
 msgid "USB Output"
 msgstr "Выход USB"
+
+msgid "Accent color"
+msgstr "Акцентный цвет"
+
+msgid "Advanced sound"
+msgstr "Расширенные настройки звука"
+
+msgid "Button mapping"
+msgstr "Маппинг кнопок"
+
+msgid "Buttons"
+msgstr "Кнопки"
+
+msgid "Bypassed by NOS"
+msgstr "Обходится NOS"
+
+msgid "Car mode"
+msgstr "Режим автомобиля"
+
+msgid "Filter"
+msgstr "Фильтр"
+
+msgid "Hide player/lyrics top bar"
+msgstr "Скрыть верхнюю панель проигрывателя/текста песен"
+
+msgid "In-line remote"
+msgstr "ПДУ на проводе наушников"
+
+msgid "Keep lyrics screen on"
+msgstr "Держать экран текста песен включенным"
+
+msgid "Lyrics text size"
+msgstr "Размер текста песни"
+
+msgid "Max %d%%"
+msgstr "Макс. %d%%"
+
+msgid "Per album"
+msgstr "По альбому"
+
+msgid "Per track"
+msgstr "По треку"
+
+msgid "Play through"
+msgstr "Сквозное воспроизведение"
+
+msgid "Player layout"
+msgstr "Расположение проигрывателя"
+
+msgid "Quick drawer"
+msgstr "Шторка"
+
+msgid "Resume last track"
+msgstr "Возобновить последний трек"
+
+msgid "Show Artist Images"
+msgstr "Показывать изображения исполнителей"
+
+msgid "Show Lyrics"
+msgstr "Показывать текст песен"
+
+msgid "Top bar"
+msgstr "Верхняя панель"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "Отключите NOS, чтобы выбрать фильтр"
+
+msgid "USB output"
+msgstr "USB-выход"
+
+msgid "Volume limits"
+msgstr "Ограничения громкости"
+
+msgid "Volume lock (screen off)"
+msgstr "Блокировка громкости (экран выключен)"

@@ -2631,13 +2631,6 @@ msgstr "Відновлювати відтворення, коли зовнішн
 msgid "Gain"
 msgstr "Підсилення"
 
-msgid ""
-"Low\n"
-"High"
-msgstr ""
-"Низькі\n"
-"Високі"
-
 #, c-format
 msgid "%d min"
 msgstr "%d хв"
@@ -2828,9 +2821,6 @@ msgstr "Скинути"
 msgid "Volume Lock (Screen Off)"
 msgstr "Блокування гучності (екран вимкнено)"
 
-msgid "In-line Remote"
-msgstr "Пульт на кабелі"
-
 msgid "Update Music Database to enable this album order"
 msgstr "Оновіть музичну базу даних, щоб увімкнути це сортування альбомів"
 
@@ -2945,9 +2935,6 @@ msgstr "Відсоток заряду"
 msgid "Top Bar"
 msgstr "Верхня панель"
 
-msgid "Artist Images"
-msgstr "Зображення виконавців"
-
 msgid "Themes"
 msgstr "Теми"
 
@@ -2962,9 +2949,6 @@ msgstr "Макет"
 
 msgid "Lyrics"
 msgstr "Тексти пісень"
-
-msgid "Hide Player/Lyrics Top Bar"
-msgstr "Приховати верхню панель плеєра/текстів пісень"
 
 msgid "Player Layout"
 msgstr "Макет плеєра"
@@ -3697,10 +3681,6 @@ msgstr "Плагін стримінгу недоступний"
 msgid "TXT Reader"
 msgstr "Перегляд TXT"
 
-#: src/ui/settings/gui_settings.c
-msgid "Keep Lyrics Screen On"
-msgstr "Не вимикати екран на текстах пісень"
-
 msgid "PCM"
 msgstr "PCM"
 
@@ -4038,9 +4018,6 @@ msgstr "Отримання"
 msgid "BT DAC"
 msgstr "BT DAC"
 
-msgid "Controls"
-msgstr "Керування"
-
 msgid "Developer"
 msgstr "Розробник"
 
@@ -4269,9 +4246,6 @@ msgstr "Маленька кімната"
 msgid "Sound Stage"
 msgstr "Звукова сцена"
 
-msgid "Sound Tuning"
-msgstr "Налаштування звуку"
-
 msgid "Soundstage"
 msgstr "Звукова сцена"
 
@@ -4346,3 +4320,78 @@ msgstr "ЦАП"
 
 msgid "USB Output"
 msgstr "Вихід USB"
+
+msgid "Accent color"
+msgstr "Акцентний колір"
+
+msgid "Advanced sound"
+msgstr "Розширені налаштування звуку"
+
+msgid "Button mapping"
+msgstr "Призначення кнопок"
+
+msgid "Buttons"
+msgstr "Кнопки"
+
+msgid "Bypassed by NOS"
+msgstr "Обходиться NOS"
+
+msgid "Car mode"
+msgstr "Режим автомобіля"
+
+msgid "Filter"
+msgstr "Фільтр"
+
+msgid "Hide player/lyrics top bar"
+msgstr "Приховати верхню панель плеєра/текстів пісень"
+
+msgid "In-line remote"
+msgstr "Пульт на кабелі"
+
+msgid "Keep lyrics screen on"
+msgstr "Не вимикати екран на текстах пісень"
+
+msgid "Lyrics text size"
+msgstr "Розмір тексту пісень"
+
+msgid "Max %d%%"
+msgstr "Макс. %d%%"
+
+msgid "Per album"
+msgstr "Для альбому"
+
+msgid "Per track"
+msgstr "Для композиції"
+
+msgid "Play through"
+msgstr "Наскрізне відтворення"
+
+msgid "Player layout"
+msgstr "Макет плеєра"
+
+msgid "Quick drawer"
+msgstr "Швидка панель"
+
+msgid "Resume last track"
+msgstr "Відновити останню композицію"
+
+msgid "Show Artist Images"
+msgstr "Показувати зображення виконавців"
+
+msgid "Show Lyrics"
+msgstr "Показувати текст пісень"
+
+msgid "Top bar"
+msgstr "Верхня панель"
+
+msgid "Turn off NOS to choose a filter"
+msgstr "Вимкніть NOS, щоб вибрати фільтр"
+
+msgid "USB output"
+msgstr "USB-вихід"
+
+msgid "Volume limits"
+msgstr "Обмеження гучності"
+
+msgid "Volume lock (screen off)"
+msgstr "Блокування гучності (екран вимкнено)"
