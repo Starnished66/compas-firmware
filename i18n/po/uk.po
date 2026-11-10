@@ -556,16 +556,6 @@ msgstr "Потокове медіа"
 msgid "Could not open this file."
 msgstr "Не вдалося відкрити цей файл."
 
-#, c-format
-msgid ""
-"[File truncated at %d KB -- showing the first part only]\n"
-"\n"
-"%s"
-msgstr ""
-"[Файл обрізано до %d КБ — показано лише початок]\n"
-"\n"
-"%s"
-
 msgid "Books refreshed"
 msgstr "Книги оновлено"
 
@@ -1112,9 +1102,6 @@ msgstr "Бібліотеку відновлено. Щоб зберегти зм�
 msgid "No music database"
 msgstr "Немає музичної бази даних"
 
-msgid "Build it now? Large libraries can take several minutes."
-msgstr "Створити її зараз? Для великих бібліотек це може тривати кілька хвилин."
-
 msgid "Build"
 msgstr "Створити"
 
@@ -1165,12 +1152,6 @@ msgid ""
 msgstr ""
 "Оновлення\n"
 "музичної бази даних..."
-
-msgid "Preparing metadata refresh..."
-msgstr "Підготовка до оновлення метаданих..."
-
-msgid "Preparing music library..."
-msgstr "Підготовка музичної бібліотеки..."
 
 msgid "Thread launch failed"
 msgstr "Не вдалося запустити потік виконання"
@@ -1250,9 +1231,6 @@ msgstr "Оновлення обкладинок"
 msgid "Reloading cover"
 msgstr "Перезавантаження обкладинки"
 
-msgid "Preparing metadata refresh"
-msgstr "Підготовка до оновлення метаданих"
-
 #, c-format
 msgid ""
 "Looking for music files\n"
@@ -1261,9 +1239,6 @@ msgstr ""
 "Пошук музичних файлів\n"
 "перевірено елементів: %d"
 
-msgid "Looking for music files"
-msgstr "Пошук музичних файлів"
-
 #, c-format
 msgid ""
 "Reading tags\n"
@@ -1271,9 +1246,6 @@ msgid ""
 msgstr ""
 "Читання тегів\n"
 "%d з %d композицій (%d%%)"
-
-msgid "Saving music database"
-msgstr "Збереження музичної бази даних"
 
 msgid ""
 "Saving music database\n"
@@ -1474,9 +1446,6 @@ msgstr "Не вдалося завантажити фото екрана бло�
 msgid "Swipe up to unlock"
 msgstr "Проведіть угору, щоб розблокувати"
 
-msgid "No synchronized lyrics found"
-msgstr "Синхронізованих текстів пісень не знайдено"
-
 msgid "Medium"
 msgstr "Середній"
 
@@ -1530,9 +1499,6 @@ msgstr "Мережі поблизу з’являться, коли Wi-Fi буд
 
 msgid "Searching for networks"
 msgstr "Пошук мереж"
-
-msgid "This can take a few seconds."
-msgstr "Це може тривати кілька секунд."
 
 msgid "No networks found"
 msgstr "Мереж не знайдено"
@@ -1867,14 +1833,8 @@ msgstr ""
 msgid "Import via Wi-Fi"
 msgstr "Імпорт через Wi-Fi"
 
-msgid "Enable WiFi to access"
-msgstr "Увімкніть Wi-Fi для доступу"
-
 msgid "Web Server is busy"
 msgstr "Вебсервер зайнятий"
-
-msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network -- stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
-msgstr "Коли цю функцію ввімкнено, пристрій видимий відправникам AirPlay у вашій мережі Wi-Fi. Передавайте аудіо з iPhone, iPad або Mac для відтворення через вихід цього пристрою."
 
 msgid "Failed to enable AirPlay"
 msgstr "Не вдалося ввімкнути AirPlay"
@@ -1884,9 +1844,6 @@ msgstr "AirPlay несподівано зупинився"
 
 msgid "DLNA Renderer"
 msgstr "Рендерер DLNA"
-
-msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network -- cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
-msgstr "Коли цю функцію ввімкнено, пристрій видимий програмам-контролерам DLNA/UPnP у вашій мережі Wi-Fi. Надішліть композицію з такої програми для відтворення тут. Керування паузою, вимкненням звуку, гучністю та перемотуванням із програми не підтримується; після початку відтворення користуйтеся кнопками пристрою."
 
 msgid "Service is busy"
 msgstr "Служба зайнята"
@@ -2011,9 +1968,6 @@ msgstr "%s · Не завантажено"
 
 msgid "Refreshing plugins..."
 msgstr "Оновлення списку плагінів..."
-
-msgid "Couldn't save -- plugin change was not applied"
-msgstr "Не вдалося зберегти — зміни плагіна не застосовано"
 
 msgid "Plugin Store"
 msgstr "Магазин плагінів"
@@ -2198,9 +2152,6 @@ msgstr "Не вдалося зберегти список відтворення
 
 msgid "Save Queue as Playlist"
 msgstr "Зберегти чергу як список відтворення"
-
-msgid "Edit / Done"
-msgstr "Змінити / Готово"
 
 msgid "Clear Queue"
 msgstr "Очистити чергу"
@@ -2393,9 +2344,6 @@ msgstr "Не вдалося розпочати завантаження"
 
 msgid "Downloading update"
 msgstr "Завантаження оновлення"
-
-msgid "Update saved. Connect to Wi-Fi, then install from Firmware Update > Install from SD card."
-msgstr "Оновлення збережено. Під’єднайтеся до Wi-Fi, а потім виберіть Оновлення прошивки > Установити із SD-картки."
 
 msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
 msgstr "Оновлює всю CompásOS. Прошивка містить завантажувач, плеєр, ядро та драйвери."
@@ -2618,7 +2566,6 @@ msgstr "Максимальна гучність"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Обмежує гучність плеєра, зокрема під час керування кнопками, пультом і плагінами."
 
-
 msgid "Car Mode Volume"
 msgstr "Гучність у режимі автомобіля"
 
@@ -2671,7 +2618,6 @@ msgstr "Вимкнути"
 
 msgid "Suspend to RAM"
 msgstr "Сон зі збереженням в ОЗП"
-
 
 msgid "Africa"
 msgstr "Африка"
@@ -2799,9 +2745,6 @@ msgstr "Тривале"
 
 msgid "Default"
 msgstr "Типово"
-
-msgid "Disabled"
-msgstr "Вимкнено"
 
 msgid "Reset All"
 msgstr "Скинути все"
@@ -2950,9 +2893,6 @@ msgstr "Макет"
 msgid "Lyrics"
 msgstr "Тексти пісень"
 
-msgid "Player Layout"
-msgstr "Макет плеєра"
-
 msgid "Swipe Up for Home"
 msgstr "Проведіть угору, щоб перейти на головний екран"
 
@@ -3034,9 +2974,6 @@ msgstr "Налаштування"
 
 msgid "Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from here."
 msgstr "Спочатку вимкніть ADB (Налаштування > Система > Режим USB), а потім увімкніть тут USB DAC."
-
-msgid "Now Playing layouts"
-msgstr "Макети екрана відтворення"
 
 msgid "More"
 msgstr "Більше"
@@ -3180,9 +3117,6 @@ msgstr ""
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
 msgstr "Кросфід підмішує відфільтрований сигнал протилежного каналу та працює незалежно від PEQ. Із варіантом «Без затримки» ідентичні сигнали лівого й правого каналів змінюються дуже мало."
 
-msgid "PEQ"
-msgstr "PEQ"
-
 msgid "Frequency"
 msgstr "Частота"
 
@@ -3203,12 +3137,6 @@ msgstr "Зачекайте, поки завершиться сканування
 
 msgid "Please wait for plugin installation to finish"
 msgstr "Зачекайте, поки завершиться встановлення плагіна"
-
-msgid "Connect to a Wi-Fi network before continuing."
-msgstr "Перш ніж продовжити, під’єднайтеся до мережі Wi-Fi."
-
-msgid "Select at least one plugin to continue."
-msgstr "Виберіть принаймні один плагін, щоб продовжити."
 
 msgid "Could not start the library scan. Please try again."
 msgstr "Не вдалося розпочати сканування бібліотеки. Спробуйте ще раз."
@@ -3450,9 +3378,6 @@ msgstr "Недостатньо пам’яті для завантаження �
 msgid "Loading from server..."
 msgstr "Завантаження із сервера..."
 
-msgid "Server request timed out after 30 seconds"
-msgstr "Час очікування відповіді сервера минув (30 с)"
-
 msgid "Not enough memory to load artists"
 msgstr "Недостатньо пам’яті для завантаження виконавців"
 
@@ -3474,9 +3399,6 @@ msgstr "Завантажити всі альбоми виконавця «%s»?"
 
 msgid "Failed to connect to server"
 msgstr "Не вдалося під’єднатися до сервера"
-
-msgid "Connection timed out after 30 seconds"
-msgstr "Час очікування з’єднання минув (30 с)"
 
 msgid "Not enough memory to connect"
 msgstr "Недостатньо пам’яті для з’єднання"
@@ -4366,9 +4288,6 @@ msgstr "Для композиції"
 msgid "Play through"
 msgstr "Наскрізне відтворення"
 
-msgid "Player layout"
-msgstr "Макет плеєра"
-
 msgid "Quick drawer"
 msgstr "Швидка панель"
 
@@ -4395,3 +4314,189 @@ msgstr "Обмеження гучності"
 
 msgid "Volume lock (screen off)"
 msgstr "Блокування гучності (екран вимкнено)"
+
+msgid "Albums on an album-artist page"
+msgstr "Альбоми на сторінці виконавця альбому"
+
+msgid "Albums on an artist page"
+msgstr "Альбоми на сторінці виконавця"
+
+msgid "Build it now? This may take a while."
+msgstr "Створити зараз? Це може зайняти деякий час."
+
+msgid "Clear the queue?"
+msgstr "Очистити чергу?"
+
+msgid "Couldn't save. The plugin change was not applied"
+msgstr "Не вдалося зберегти. Зміну плагіна не застосовано"
+
+msgid "Discard"
+msgstr "Відкинути"
+
+msgid "Discard what you typed?"
+msgstr "Відкинути введений текст?"
+
+msgid "Enable Wi-Fi to access"
+msgstr "Увімкніть Wi-Fi для доступу"
+
+msgid "Fast"
+msgstr "Швидко"
+
+msgid "Fastest"
+msgstr "Найшвидше"
+
+msgid "Forget this device?"
+msgstr "Забути цей пристрій?"
+
+msgid "Forget this network?"
+msgstr "Забути цю мережу?"
+
+msgid "Getting around"
+msgstr "Керування"
+
+msgid "Go back"
+msgstr "Назад"
+
+msgid "Home"
+msgstr "Головна"
+
+msgid "Loading lyrics"
+msgstr "Завантаження тексту пісні"
+
+msgid "No lyrics for this song"
+msgstr "Для цієї пісні немає тексту"
+
+msgid "No matches"
+msgstr "Немає збігів"
+
+msgid "No plays yet"
+msgstr "Ще немає прослуховувань"
+
+msgid "Normal"
+msgstr "Звичайно"
+
+msgid "Open Now Playing"
+msgstr "Відкрити поточну композицію"
+
+msgid "Pause Bluetooth DAC to connect a device"
+msgstr "Призупиніть Bluetooth-ЦАП для підключення пристрою"
+
+msgid "Pull down from the top"
+msgstr "Проведіть вниз від верхнього краю"
+
+msgid "Quick Drawer. Hold a tile to open its settings."
+msgstr "Швидка панель. Утримуйте плитку, щоб відкрити її налаштування."
+
+msgid "Scanning for devices"
+msgstr "Пошук пристроїв"
+
+msgid "Songs you play most will appear here."
+msgstr "Тут з'являться пісні, які ви слухаєте найчастіше."
+
+msgid "Still connecting"
+msgstr "Підключення ще триває"
+
+msgid "Swipe left"
+msgstr "Проведіть ліворуч"
+
+msgid "Swipe right"
+msgstr "Проведіть праворуч"
+
+msgid "Swipe up from the bottom"
+msgstr "Проведіть вгору від нижнього краю"
+
+msgid "Tap the cover"
+msgstr "Торкніться обкладинки"
+
+msgid "Tap the heart on a song to keep it here."
+msgstr "Торкніться сердечка пісні, щоб зберегти її тут."
+
+msgid "The playing song keeps playing."
+msgstr "Поточна пісня продовжить грати."
+
+msgid "The server did not answer"
+msgstr "Сервер не відповів"
+
+msgid "This may take a while."
+msgstr "Це може зайняти деякий час."
+
+msgid "Type to search"
+msgstr "Введіть текст для пошуку"
+
+msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgstr "Оновлення збережено. Установіть його через Оновлення прошивки > Установити з SD-картки."
+
+msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
+msgstr "Коли цю функцію ввімкнено, пристрій видимий відправникам AirPlay у вашій мережі Wi-Fi. Передавайте аудіо з iPhone, iPad або Mac для відтворення через вихід цього пристрою."
+
+msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network. Cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
+msgstr "Коли цю функцію ввімкнено, пристрій видимий програмам-контролерам DLNA/UPnP у вашій мережі Wi-Fi. Надішліть композицію з такої програми для відтворення тут. Керування паузою, вимкненням звуку, гучністю та перемотуванням із програми не підтримується; після початку відтворення користуйтеся кнопками пристрою."
+
+msgid "[File truncated at %d KB; showing the first part only]\n\n%s"
+msgstr "[Файл обрізано до %d КБ — показано лише початок]\n\n%s"
+
+msgid "Disabled"
+msgstr "Вимкнено"
+
+msgid "Player layout"
+msgstr "Макет плеєра"
+
+msgid "Faster"
+msgstr "Швидше"
+
+msgid "Add to Favorites"
+msgstr "Додати до улюбленого"
+
+msgid "Remove from Favorites"
+msgstr "Вилучити з улюбленого"
+
+msgid "Go to Album"
+msgstr "Перейти до альбому"
+
+msgid "Go to Artist"
+msgstr "Перейти до виконавця"
+
+msgid "Some songs could not be downloaded"
+msgstr "Не вдалося завантажити деякі пісні"
+
+msgid "Request is too long"
+msgstr "Запит задовгий"
+
+msgid "Server request failed: %s"
+msgstr "Не вдалося виконати запит до сервера: %s"
+
+msgid "network error"
+msgstr "Помилка мережі"
+
+msgid "Server returned HTTP %d"
+msgstr "Сервер повернув HTTP %d"
+
+msgid "Server returned an empty response"
+msgstr "Сервер повернув порожню відповідь"
+
+msgid "Server returned invalid JSON"
+msgstr "Сервер повернув некоректний JSON"
+
+msgid "Server response is not Subsonic JSON"
+msgstr "Відповідь сервера не є JSON Subsonic"
+
+msgid "Subsonic error %d"
+msgstr "Помилка Subsonic %d"
+
+msgid "Invalid Subsonic response status"
+msgstr "Некоректний статус відповіді Subsonic"
+
+msgid "Search"
+msgstr "Пошук"
+
+msgid "Wired"
+msgstr "Дротовий"
+
+msgid "Stop updating the library?"
+msgstr "Зупинити оновлення бібліотеки?"
+
+msgid "Changes found so far may not be saved."
+msgstr "Знайдені зміни можуть не зберегтися."
+
+msgid "Updating the library. This may take a while."
+msgstr "Оновлення бібліотеки. Це може зайняти деякий час."

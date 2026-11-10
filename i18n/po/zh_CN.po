@@ -576,16 +576,6 @@ msgstr "流媒体"
 msgid "Could not open this file."
 msgstr "无法打开此文件。"
 
-#, c-format
-msgid ""
-"[File truncated at %d KB -- showing the first part only]\n"
-"\n"
-"%s"
-msgstr ""
-"[文件已在 %d KB 处截断——仅显示第一部分]\n"
-"\n"
-"%s"
-
 msgid "Books refreshed"
 msgstr "电子书已刷新"
 
@@ -1119,9 +1109,6 @@ msgstr "媒体库已恢复。请使用 设置 > 更新音乐数据库 保存"
 msgid "No music database"
 msgstr "无音乐数据库"
 
-msgid "Build it now? Large libraries can take several minutes."
-msgstr "立即构建？大型媒体库可能需要数分钟。"
-
 msgid "Build"
 msgstr "编译版本"
 
@@ -1172,12 +1159,6 @@ msgid ""
 msgstr ""
 "正在更新\n"
 "音乐数据库..."
-
-msgid "Preparing metadata refresh..."
-msgstr "正在准备刷新元数据..."
-
-msgid "Preparing music library..."
-msgstr "正在准备媒体库..."
 
 msgid "Thread launch failed"
 msgstr "线程启动失败"
@@ -1257,9 +1238,6 @@ msgstr "正在刷新封面"
 msgid "Reloading cover"
 msgstr "正在重新加载封面"
 
-msgid "Preparing metadata refresh"
-msgstr "正在准备刷新元数据"
-
 #, c-format
 msgid ""
 "Looking for music files\n"
@@ -1268,9 +1246,6 @@ msgstr ""
 "正在查找音乐文件\n"
 "已检查 %d 项"
 
-msgid "Looking for music files"
-msgstr "正在查找音乐文件"
-
 #, c-format
 msgid ""
 "Reading tags\n"
@@ -1278,9 +1253,6 @@ msgid ""
 msgstr ""
 "正在读取标签\n"
 "第 %d / %d 首歌曲 (%d%%)"
-
-msgid "Saving music database"
-msgstr "正在保存音乐数据库"
 
 msgid ""
 "Saving music database\n"
@@ -1485,9 +1457,6 @@ msgstr "无法加载锁屏照片"
 msgid "Swipe up to unlock"
 msgstr "上滑解锁"
 
-msgid "No synchronized lyrics found"
-msgstr "未找到同步歌词"
-
 msgid "Medium"
 msgstr "中"
 
@@ -1541,9 +1510,6 @@ msgstr "Wi-Fi 就绪后，附近的网络将显示在此处。"
 
 msgid "Searching for networks"
 msgstr "正在搜索网络"
-
-msgid "This can take a few seconds."
-msgstr "这可能需要几秒钟。"
 
 msgid "No networks found"
 msgstr "未找到网络"
@@ -1883,19 +1849,8 @@ msgstr ""
 msgid "Import via Wi-Fi"
 msgstr "通过 Wi-Fi 导入"
 
-msgid "Enable WiFi to access"
-msgstr "启用 WiFi 以访问"
-
 msgid "Web Server is busy"
 msgstr "Web 服务器忙"
-
-msgid ""
-"When on, this device is visible to AirPlay senders on your Wi-Fi network -- "
-"stream audio from an iPhone, iPad, or Mac to be played through this device's "
-"own output."
-msgstr ""
-"开启后，此设备将可在 Wi-Fi 网络中被 AirPlay 发送端发现——可将 iPhone、iPad 或 "
-"Mac 的音频串流至此设备自身的输出播放。"
 
 msgid "Failed to enable AirPlay"
 msgstr "无法启用 AirPlay"
@@ -1905,16 +1860,6 @@ msgstr "AirPlay 意外停止"
 
 msgid "DLNA Renderer"
 msgstr "DLNA 渲染器"
-
-msgid ""
-"When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi "
-"network -- cast a track from one to play it here. Pause, mute, volume, and "
-"seek from the controller app aren't supported; use this device's own "
-"controls instead once a track starts."
-msgstr ""
-"开启后，此设备将可在 Wi-Fi 网络中被 DLNA/UPnP 控制端应用发现——可从控制端投放"
-"曲目在此播放。不支持从控制端暂停、静音、调节音量和跳转；曲目开始播放后请改用"
-"本设备自身的控制。"
 
 msgid "Service is busy"
 msgstr "服务繁忙"
@@ -2043,9 +1988,6 @@ msgstr "%s · 未加载"
 
 msgid "Refreshing plugins..."
 msgstr "正在刷新插件..."
-
-msgid "Couldn't save -- plugin change was not applied"
-msgstr "无法保存 -- 插件更改未生效"
 
 msgid "Plugin Store"
 msgstr "插件商店"
@@ -2230,9 +2172,6 @@ msgstr "无法保存播放列表"
 
 msgid "Save Queue as Playlist"
 msgstr "将播放队列保存为播放列表"
-
-msgid "Edit / Done"
-msgstr "编辑 / 完成"
 
 msgid "Clear Queue"
 msgstr "清空队列"
@@ -2434,11 +2373,6 @@ msgstr "无法开始下载"
 
 msgid "Downloading update"
 msgstr "正在下载更新"
-
-msgid ""
-"Update saved. Connect to Wi-Fi, then install from Firmware Update > Install "
-"from SD card."
-msgstr "更新已保存。请连接 Wi-Fi，然后从 固件更新 > 从 SD 卡安装。"
 
 msgid ""
 "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, "
@@ -2674,7 +2608,6 @@ msgid ""
 "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "限制播放器音量，包括按键、遥控和插件。"
 
-
 msgid "Car Mode Volume"
 msgstr "车载模式音量"
 
@@ -2727,7 +2660,6 @@ msgstr "关机"
 
 msgid "Suspend to RAM"
 msgstr "挂起到内存"
-
 
 msgid "Africa"
 msgstr "非洲"
@@ -2855,9 +2787,6 @@ msgstr "长"
 
 msgid "Default"
 msgstr "默认"
-
-msgid "Disabled"
-msgstr "已禁用"
 
 msgid "Reset All"
 msgstr "全部重置"
@@ -3011,9 +2940,6 @@ msgstr "布局"
 msgid "Lyrics"
 msgstr "歌词"
 
-msgid "Player Layout"
-msgstr "播放器布局"
-
 msgid "Swipe Up for Home"
 msgstr "上滑返回主屏幕"
 
@@ -3097,9 +3023,6 @@ msgid ""
 "Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from "
 "here."
 msgstr "请先关闭 ADB（设置 > 系统 > USB 模式），然后在此启用 USB DAC。"
-
-msgid "Now Playing layouts"
-msgstr "正在播放布局"
 
 msgid "More"
 msgstr "更多"
@@ -3248,9 +3171,6 @@ msgstr ""
 "交叉馈送会混入来自对侧声道的滤波信号，且独立于 PEQ 工作。选择“无延迟”时，左右"
 "完全相同的信号几乎不受影响。"
 
-msgid "PEQ"
-msgstr "PEQ"
-
 msgid "Frequency"
 msgstr "频率"
 
@@ -3271,12 +3191,6 @@ msgstr "请等待媒体库扫描完成"
 
 msgid "Please wait for plugin installation to finish"
 msgstr "请等待插件安装完成"
-
-msgid "Connect to a Wi-Fi network before continuing."
-msgstr "请先连接 Wi-Fi 网络再继续。"
-
-msgid "Select at least one plugin to continue."
-msgstr "请至少选择一个插件以继续。"
 
 msgid "Could not start the library scan. Please try again."
 msgstr "无法开始扫描媒体库。请重试。"
@@ -3523,9 +3437,6 @@ msgstr "内存不足，无法从服务器加载"
 msgid "Loading from server..."
 msgstr "正在从服务器加载..."
 
-msgid "Server request timed out after 30 seconds"
-msgstr "服务器请求 30 秒后超时"
-
 msgid "Not enough memory to load artists"
 msgstr "内存不足，无法加载艺术家"
 
@@ -3547,9 +3458,6 @@ msgstr "下载“%s”的全部专辑？"
 
 msgid "Failed to connect to server"
 msgstr "无法连接到服务器"
-
-msgid "Connection timed out after 30 seconds"
-msgstr "连接在 30 秒后超时"
 
 msgid "Not enough memory to connect"
 msgstr "内存不足，无法连接"
@@ -4445,9 +4353,6 @@ msgstr "按曲目"
 msgid "Play through"
 msgstr "连续播放"
 
-msgid "Player layout"
-msgstr "播放器布局"
-
 msgid "Quick drawer"
 msgstr "快捷抽屉"
 
@@ -4474,3 +4379,189 @@ msgstr "音量限制"
 
 msgid "Volume lock (screen off)"
 msgstr "音量锁定（息屏）"
+
+msgid "Albums on an album-artist page"
+msgstr "专辑艺术家页面中的专辑"
+
+msgid "Albums on an artist page"
+msgstr "艺术家页面中的专辑"
+
+msgid "Build it now? This may take a while."
+msgstr "现在建立？这可能需要一些时间。"
+
+msgid "Clear the queue?"
+msgstr "清空队列？"
+
+msgid "Couldn't save. The plugin change was not applied"
+msgstr "无法保存。插件更改未应用"
+
+msgid "Discard"
+msgstr "放弃"
+
+msgid "Discard what you typed?"
+msgstr "放弃输入的内容？"
+
+msgid "Enable Wi-Fi to access"
+msgstr "请开启 Wi-Fi 以访问"
+
+msgid "Fast"
+msgstr "快"
+
+msgid "Fastest"
+msgstr "最快"
+
+msgid "Forget this device?"
+msgstr "忘记此设备？"
+
+msgid "Forget this network?"
+msgstr "忘记此网络？"
+
+msgid "Getting around"
+msgstr "操作指南"
+
+msgid "Go back"
+msgstr "返回"
+
+msgid "Home"
+msgstr "主页"
+
+msgid "Loading lyrics"
+msgstr "正在加载歌词"
+
+msgid "No lyrics for this song"
+msgstr "此歌曲没有歌词"
+
+msgid "No matches"
+msgstr "无匹配结果"
+
+msgid "No plays yet"
+msgstr "暂无播放记录"
+
+msgid "Normal"
+msgstr "正常"
+
+msgid "Open Now Playing"
+msgstr "打开正在播放"
+
+msgid "Pause Bluetooth DAC to connect a device"
+msgstr "请暂停蓝牙 DAC 以连接设备"
+
+msgid "Pull down from the top"
+msgstr "从顶部向下滑动"
+
+msgid "Quick Drawer. Hold a tile to open its settings."
+msgstr "快捷面板。长按图块可打开其设置。"
+
+msgid "Scanning for devices"
+msgstr "正在搜索设备"
+
+msgid "Songs you play most will appear here."
+msgstr "你最常播放的歌曲会显示在这里。"
+
+msgid "Still connecting"
+msgstr "仍在连接"
+
+msgid "Swipe left"
+msgstr "向左滑动"
+
+msgid "Swipe right"
+msgstr "向右滑动"
+
+msgid "Swipe up from the bottom"
+msgstr "从底部向上滑动"
+
+msgid "Tap the cover"
+msgstr "点击封面"
+
+msgid "Tap the heart on a song to keep it here."
+msgstr "点击歌曲的爱心即可将其保存在这里。"
+
+msgid "The playing song keeps playing."
+msgstr "当前歌曲将继续播放。"
+
+msgid "The server did not answer"
+msgstr "服务器未响应"
+
+msgid "This may take a while."
+msgstr "这可能需要一些时间。"
+
+msgid "Type to search"
+msgstr "输入以搜索"
+
+msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgstr "更新已保存。请从“固件更新”>“从 SD 卡安装”进行安装。"
+
+msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
+msgstr "开启后，此设备将可在 Wi-Fi 网络中被 AirPlay 发送端发现；可将 iPhone、iPad 或 Mac 的音频串流至此设备自身的输出播放。"
+
+msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network. Cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
+msgstr "开启后，此设备将可在 Wi-Fi 网络中被 DLNA/UPnP 控制端应用发现。可从控制端投放曲目在此播放。不支持从控制端暂停、静音、调节音量和跳转；曲目开始播放后请改用本设备自身的控制。"
+
+msgid "[File truncated at %d KB; showing the first part only]\n\n%s"
+msgstr "[文件已在 %d KB 处截断；仅显示第一部分]\n\n%s"
+
+msgid "Disabled"
+msgstr "已禁用"
+
+msgid "Player layout"
+msgstr "播放器布局"
+
+msgid "Faster"
+msgstr "较快"
+
+msgid "Add to Favorites"
+msgstr "添加到收藏"
+
+msgid "Remove from Favorites"
+msgstr "从收藏中移除"
+
+msgid "Go to Album"
+msgstr "前往专辑"
+
+msgid "Go to Artist"
+msgstr "前往艺人"
+
+msgid "Some songs could not be downloaded"
+msgstr "部分歌曲无法下载"
+
+msgid "Request is too long"
+msgstr "请求过长"
+
+msgid "Server request failed: %s"
+msgstr "服务器请求失败：%s"
+
+msgid "network error"
+msgstr "网络错误"
+
+msgid "Server returned HTTP %d"
+msgstr "服务器返回 HTTP %d"
+
+msgid "Server returned an empty response"
+msgstr "服务器返回了空响应"
+
+msgid "Server returned invalid JSON"
+msgstr "服务器返回了无效的 JSON"
+
+msgid "Server response is not Subsonic JSON"
+msgstr "服务器响应不是 Subsonic JSON"
+
+msgid "Subsonic error %d"
+msgstr "Subsonic 错误 %d"
+
+msgid "Invalid Subsonic response status"
+msgstr "Subsonic 响应状态无效"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Wired"
+msgstr "有线"
+
+msgid "Stop updating the library?"
+msgstr "停止更新媒体库?"
+
+msgid "Changes found so far may not be saved."
+msgstr "目前找到的更改可能不会保存。"
+
+msgid "Updating the library. This may take a while."
+msgstr "正在更新媒体库，可能需要一些时间。"

@@ -543,9 +543,6 @@ msgstr "Phát trực tuyến"
 msgid "Could not open this file."
 msgstr "Không thể mở tập tin này."
 
-msgid "[File truncated at %d KB -- showing the first part only]\n\n%s"
-msgstr "[Tệp bị cắt bớt ở %d KB - chỉ hiển thị phần đầu tiên]\n\n%s"
-
 msgid "Books refreshed"
 msgstr "Sách được làm mới"
 
@@ -1045,9 +1042,6 @@ msgstr "Thư viện đã được phục hồi. Sử dụng Cài đặt > Cập 
 msgid "No music database"
 msgstr "Không có cơ sở dữ liệu âm nhạc"
 
-msgid "Build it now? Large libraries can take several minutes."
-msgstr "Tạo ngay? Thư viện lớn có thể mất vài phút."
-
 msgid "Build"
 msgstr "Tạo"
 
@@ -1086,12 +1080,6 @@ msgstr "Làm mới\nsiêu dữ liệu..."
 
 msgid "Updating\nmusic database..."
 msgstr "Đang cập nhật\ncơ sở dữ liệu âm nhạc..."
-
-msgid "Preparing metadata refresh..."
-msgstr "Đang chuẩn bị làm mới siêu dữ liệu..."
-
-msgid "Preparing music library..."
-msgstr "Đang chuẩn bị thư viện nhạc..."
 
 msgid "Thread launch failed"
 msgstr "Không thể khởi chạy luồng xử lý"
@@ -1153,20 +1141,11 @@ msgstr "Đang làm mới ảnh bìa"
 msgid "Reloading cover"
 msgstr "Đang tải lại ảnh bìa"
 
-msgid "Preparing metadata refresh"
-msgstr "Đang chuẩn bị làm mới siêu dữ liệu"
-
 msgid "Looking for music files\n%d items checked"
 msgstr "Đang tìm tệp nhạc\nĐã kiểm tra %d mục"
 
-msgid "Looking for music files"
-msgstr "Đang tìm tệp nhạc"
-
 msgid "Reading tags\n%d of %d songs (%d%%)"
 msgstr "Đang đọc tag\n%d/%d bài hát (%d%%)"
-
-msgid "Saving music database"
-msgstr "Lưu cơ sở dữ liệu âm nhạc"
 
 msgid "Saving music database\nThis can take a while on large libraries"
 msgstr "Lưu cơ sở dữ liệu âm nhạc\nViệc này có thể mất một lúc trên các thư viện lớn"
@@ -1357,9 +1336,6 @@ msgstr "Không thể tải ảnh màn hình khóa"
 msgid "Swipe up to unlock"
 msgstr "Vuốt lên để mở khóa"
 
-msgid "No synchronized lyrics found"
-msgstr "Không tìm thấy lời bài hát được đồng bộ hóa"
-
 msgid "Medium"
 msgstr "Trung bình"
 
@@ -1413,9 +1389,6 @@ msgstr "Các mạng lân cận sẽ xuất hiện khi Wi-Fi sẵn sàng."
 
 msgid "Searching for networks"
 msgstr "Đang tìm mạng"
-
-msgid "This can take a few seconds."
-msgstr "Việc này có thể mất vài giây."
 
 msgid "No networks found"
 msgstr "Không tìm thấy mạng nào"
@@ -1738,14 +1711,8 @@ msgstr "Đang đóng\nmáy chủ web..."
 msgid "Import via Wi-Fi"
 msgstr "Nhập qua Wi-Fi"
 
-msgid "Enable WiFi to access"
-msgstr "Kích hoạt WiFi để truy cập"
-
 msgid "Web Server is busy"
 msgstr "Máy chủ Web đang bận"
-
-msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network -- stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
-msgstr "Khi bật, thiết bị này hiển thị với người gửi AirPlay trên mạng Wi-Fi của bạn -- truyền phát âm thanh từ iPhone, iPad hoặc Mac để phát qua đầu ra của chính thiết bị này."
 
 msgid "Failed to enable AirPlay"
 msgstr "Không bật được AirPlay"
@@ -1755,9 +1722,6 @@ msgstr "AirPlay dừng đột ngột"
 
 msgid "DLNA Renderer"
 msgstr "Trình kết xuất DLNA"
-
-msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network -- cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
-msgstr "Khi bật, thiết bị này hiển thị trong các ứng dụng điều khiển DLNA/UPnP trên mạng Wi-Fi của bạn -- truyền một bản nhạc từ ứng dụng để phát tại đây. Ứng dụng điều khiển không hỗ trợ tạm dừng, tắt tiếng, chỉnh âm lượng hoặc tua; hãy dùng các nút điều khiển trên thiết bị sau khi nhạc bắt đầu phát."
 
 msgid "Service is busy"
 msgstr "Dịch vụ đang bận"
@@ -1870,9 +1834,6 @@ msgstr "%s · Chưa được tải"
 
 msgid "Refreshing plugins..."
 msgstr "Đang làm mới plugin..."
-
-msgid "Couldn't save -- plugin change was not applied"
-msgstr "Không thể lưu -- thay đổi plugin không được áp dụng"
 
 msgid "Plugin Store"
 msgstr "Cửa hàng plugin"
@@ -2057,9 +2018,6 @@ msgstr "Không thể lưu danh sách phát"
 msgid "Save Queue as Playlist"
 msgstr "Lưu hàng đợi làm danh sách phát"
 
-msgid "Edit / Done"
-msgstr "Chỉnh sửa/Xong"
-
 msgid "Clear Queue"
 msgstr "Xóa hàng đợi"
 
@@ -2237,9 +2195,6 @@ msgstr "Không thể bắt đầu tải xuống"
 
 msgid "Downloading update"
 msgstr "Đang tải xuống bản cập nhật"
-
-msgid "Update saved. Connect to Wi-Fi, then install from Firmware Update > Install from SD card."
-msgstr "Đã lưu bản cập nhật. Kết nối với Wi-Fi, sau đó cài đặt từ Cập nhật firmware > Cài đặt từ thẻ SD."
 
 msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
 msgstr "Cập nhật toàn bộ CompásOS. Firmware được ghi gồm Bootloader, Player, Kernel và Driver."
@@ -2458,7 +2413,6 @@ msgstr "Âm lượng tối đa"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Giới hạn âm lượng của trình phát, bao gồm các nút, điều khiển từ xa và plugin."
 
-
 msgid "Car Mode Volume"
 msgstr "Âm lượng chế độ ô tô"
 
@@ -2506,7 +2460,6 @@ msgstr "Tắt nguồn"
 
 msgid "Suspend to RAM"
 msgstr "Tạm ngưng vào RAM"
-
 
 msgid "Africa"
 msgstr "Châu Phi"
@@ -2633,9 +2586,6 @@ msgstr "Nhấn giữ"
 
 msgid "Default"
 msgstr "Mặc định"
-
-msgid "Disabled"
-msgstr "Đã tắt"
 
 msgid "Reset All"
 msgstr "Đặt lại tất cả"
@@ -2784,9 +2734,6 @@ msgstr "Bố cục"
 msgid "Lyrics"
 msgstr "Lời bài hát"
 
-msgid "Player Layout"
-msgstr "Bố cục trình phát"
-
 msgid "Swipe Up for Home"
 msgstr "Vuốt lên để về màn hình chính"
 
@@ -2864,9 +2811,6 @@ msgstr "Cài đặt"
 
 msgid "Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from here."
 msgstr "Trước tiên, tắt ADB (Cài đặt > Hệ thống > Chế độ USB), sau đó bật USB DAC tại đây."
-
-msgid "Now Playing layouts"
-msgstr "Bố cục Đang phát"
 
 msgid "More"
 msgstr "Thêm"
@@ -2994,9 +2938,6 @@ msgstr "Không trễ\n30°\n45°\n60°\n90°"
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
 msgstr "Crossfeed trộn tín hiệu đã lọc từ kênh đối diện và hoạt động độc lập với PEQ. Khi chọn Không trễ, tín hiệu giống nhau ở hai kênh trái và phải hầu như không bị ảnh hưởng."
 
-msgid "PEQ"
-msgstr "PEQ"
-
 msgid "Frequency"
 msgstr "Tần số"
 
@@ -3017,12 +2958,6 @@ msgstr "Vui lòng đợi quá trình quét thư viện kết thúc"
 
 msgid "Please wait for plugin installation to finish"
 msgstr "Vui lòng đợi quá trình cài đặt plugin hoàn tất"
-
-msgid "Connect to a Wi-Fi network before continuing."
-msgstr "Kết nối với mạng Wi-Fi trước khi tiếp tục."
-
-msgid "Select at least one plugin to continue."
-msgstr "Chọn ít nhất một plugin để tiếp tục."
 
 msgid "Could not start the library scan. Please try again."
 msgstr "Không thể bắt đầu quét thư viện. Vui lòng thử lại."
@@ -3258,9 +3193,6 @@ msgstr "Không đủ bộ nhớ để tải từ máy chủ"
 msgid "Loading from server..."
 msgstr "Đang tải từ máy chủ..."
 
-msgid "Server request timed out after 30 seconds"
-msgstr "Yêu cầu máy chủ hết thời gian chờ sau 30 giây"
-
 msgid "Not enough memory to load artists"
 msgstr "Không đủ bộ nhớ để tải nghệ sĩ"
 
@@ -3275,9 +3207,6 @@ msgstr "Tải xuống mọi album từ \"%s\"?"
 
 msgid "Failed to connect to server"
 msgstr "Không thể kết nối với máy chủ"
-
-msgid "Connection timed out after 30 seconds"
-msgstr "Hết thời gian kết nối sau 30 giây"
 
 msgid "Not enough memory to connect"
 msgstr "Không đủ bộ nhớ để kết nối"
@@ -3497,7 +3426,6 @@ msgstr "Hỗn hợp"
 
 msgid "Hi-Res"
 msgstr "Độ phân giải cao"
-
 
 msgid "Join albums without Album Artist"
 msgstr "Gộp album không có nghệ sĩ album"
@@ -4158,9 +4086,6 @@ msgstr "Theo bản nhạc"
 msgid "Play through"
 msgstr "Phát nối tiếp"
 
-msgid "Player layout"
-msgstr "Bố cục trình phát"
-
 msgid "Quick drawer"
 msgstr "Ngăn Kéo Nhanh"
 
@@ -4187,3 +4112,189 @@ msgstr "Giới hạn âm lượng"
 
 msgid "Volume lock (screen off)"
 msgstr "Khóa âm lượng khi tắt màn hình"
+
+msgid "Albums on an album-artist page"
+msgstr "Album trên trang nghệ sĩ album"
+
+msgid "Albums on an artist page"
+msgstr "Album trên trang nghệ sĩ"
+
+msgid "Build it now? This may take a while."
+msgstr "Tạo ngay? Việc này có thể mất một lúc."
+
+msgid "Clear the queue?"
+msgstr "Xóa hàng đợi?"
+
+msgid "Couldn't save. The plugin change was not applied"
+msgstr "Không thể lưu. Thay đổi tiện ích chưa được áp dụng"
+
+msgid "Discard"
+msgstr "Hủy bỏ"
+
+msgid "Discard what you typed?"
+msgstr "Hủy nội dung bạn đã nhập?"
+
+msgid "Enable Wi-Fi to access"
+msgstr "Bật Wi-Fi để truy cập"
+
+msgid "Fast"
+msgstr "Nhanh"
+
+msgid "Fastest"
+msgstr "Nhanh nhất"
+
+msgid "Forget this device?"
+msgstr "Quên thiết bị này?"
+
+msgid "Forget this network?"
+msgstr "Quên mạng này?"
+
+msgid "Getting around"
+msgstr "Cách điều hướng"
+
+msgid "Go back"
+msgstr "Quay lại"
+
+msgid "Home"
+msgstr "Trang chủ"
+
+msgid "Loading lyrics"
+msgstr "Đang tải lời bài hát"
+
+msgid "No lyrics for this song"
+msgstr "Không có lời cho bài hát này"
+
+msgid "No matches"
+msgstr "Không có kết quả phù hợp"
+
+msgid "No plays yet"
+msgstr "Chưa có lượt phát"
+
+msgid "Normal"
+msgstr "Bình thường"
+
+msgid "Open Now Playing"
+msgstr "Mở Đang phát"
+
+msgid "Pause Bluetooth DAC to connect a device"
+msgstr "Tạm dừng DAC Bluetooth để kết nối thiết bị"
+
+msgid "Pull down from the top"
+msgstr "Vuốt xuống từ mép trên"
+
+msgid "Quick Drawer. Hold a tile to open its settings."
+msgstr "Bảng nhanh. Nhấn giữ một ô để mở cài đặt của ô đó."
+
+msgid "Scanning for devices"
+msgstr "Đang tìm thiết bị"
+
+msgid "Songs you play most will appear here."
+msgstr "Các bài bạn nghe nhiều nhất sẽ xuất hiện ở đây."
+
+msgid "Still connecting"
+msgstr "Vẫn đang kết nối"
+
+msgid "Swipe left"
+msgstr "Vuốt sang trái"
+
+msgid "Swipe right"
+msgstr "Vuốt sang phải"
+
+msgid "Swipe up from the bottom"
+msgstr "Vuốt lên từ mép dưới"
+
+msgid "Tap the cover"
+msgstr "Chạm vào ảnh bìa"
+
+msgid "Tap the heart on a song to keep it here."
+msgstr "Chạm vào trái tim của bài hát để lưu bài hát ở đây."
+
+msgid "The playing song keeps playing."
+msgstr "Bài hát hiện tại vẫn tiếp tục phát."
+
+msgid "The server did not answer"
+msgstr "Máy chủ không phản hồi"
+
+msgid "This may take a while."
+msgstr "Việc này có thể mất một lúc."
+
+msgid "Type to search"
+msgstr "Nhập để tìm kiếm"
+
+msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgstr "Đã lưu bản cập nhật. Cài đặt từ Cập nhật firmware > Cài đặt từ thẻ SD."
+
+msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
+msgstr "Khi bật, thiết bị này hiển thị với người gửi AirPlay trên mạng Wi-Fi của bạn; truyền phát âm thanh từ iPhone, iPad hoặc Mac để phát qua đầu ra của chính thiết bị này."
+
+msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network. Cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
+msgstr "Khi bật, thiết bị này hiển thị trong các ứng dụng điều khiển DLNA/UPnP trên mạng Wi-Fi của bạn. Truyền một bản nhạc từ ứng dụng để phát tại đây. Ứng dụng điều khiển không hỗ trợ tạm dừng, tắt tiếng, chỉnh âm lượng hoặc tua; hãy dùng các nút điều khiển trên thiết bị sau khi nhạc bắt đầu phát."
+
+msgid "[File truncated at %d KB; showing the first part only]\n\n%s"
+msgstr "[Tệp bị cắt bớt ở %d KB - chỉ hiển thị phần đầu tiên]\n\n%s"
+
+msgid "Disabled"
+msgstr "Đã tắt"
+
+msgid "Player layout"
+msgstr "Bố cục trình phát"
+
+msgid "Faster"
+msgstr "Nhanh hơn"
+
+msgid "Add to Favorites"
+msgstr "Thêm vào mục yêu thích"
+
+msgid "Remove from Favorites"
+msgstr "Xóa khỏi mục yêu thích"
+
+msgid "Go to Album"
+msgstr "Đi đến album"
+
+msgid "Go to Artist"
+msgstr "Đi đến nghệ sĩ"
+
+msgid "Some songs could not be downloaded"
+msgstr "Không thể tải xuống một số bài hát"
+
+msgid "Request is too long"
+msgstr "Yêu cầu quá dài"
+
+msgid "Server request failed: %s"
+msgstr "Yêu cầu đến máy chủ thất bại: %s"
+
+msgid "network error"
+msgstr "Lỗi mạng"
+
+msgid "Server returned HTTP %d"
+msgstr "Máy chủ trả về HTTP %d"
+
+msgid "Server returned an empty response"
+msgstr "Máy chủ trả về phản hồi trống"
+
+msgid "Server returned invalid JSON"
+msgstr "Máy chủ trả về JSON không hợp lệ"
+
+msgid "Server response is not Subsonic JSON"
+msgstr "Phản hồi của máy chủ không phải JSON Subsonic"
+
+msgid "Subsonic error %d"
+msgstr "Lỗi Subsonic %d"
+
+msgid "Invalid Subsonic response status"
+msgstr "Trạng thái phản hồi Subsonic không hợp lệ"
+
+msgid "Search"
+msgstr "Tìm kiếm"
+
+msgid "Wired"
+msgstr "Có dây"
+
+msgid "Stop updating the library?"
+msgstr "Dừng cập nhật thư viện?"
+
+msgid "Changes found so far may not be saved."
+msgstr "Các thay đổi tìm thấy đến giờ có thể không được lưu."
+
+msgid "Updating the library. This may take a while."
+msgstr "Đang cập nhật thư viện. Việc này có thể mất một lúc."

@@ -543,9 +543,6 @@ msgstr "ストリーミングメディア"
 msgid "Could not open this file."
 msgstr "このファイルを開けませんでした。"
 
-msgid "[File truncated at %d KB -- showing the first part only]\n\n%s"
-msgstr "[ファイルは%d KBで切り詰められました。先頭部分のみ表示します]\n\n%s"
-
 msgid "Books refreshed"
 msgstr "書籍を更新しました"
 
@@ -1045,9 +1042,6 @@ msgstr "ライブラリを復旧しました。設定 > 音楽データベース
 msgid "No music database"
 msgstr "音楽データベースがありません"
 
-msgid "Build it now? Large libraries can take several minutes."
-msgstr "今すぐ作成しますか？大きなライブラリでは数分かかることがあります。"
-
 msgid "Build"
 msgstr "作成"
 
@@ -1086,12 +1080,6 @@ msgstr "メタデータを\n更新中…"
 
 msgid "Updating\nmusic database..."
 msgstr "音楽データベースを\n更新中…"
-
-msgid "Preparing metadata refresh..."
-msgstr "メタデータの更新を準備中…"
-
-msgid "Preparing music library..."
-msgstr "音楽ライブラリを準備中…"
 
 msgid "Thread launch failed"
 msgstr "スレッドの起動に失敗しました"
@@ -1153,20 +1141,11 @@ msgstr "アートワークを更新中"
 msgid "Reloading cover"
 msgstr "アートワークを再読み込み中"
 
-msgid "Preparing metadata refresh"
-msgstr "メタデータの更新を準備中"
-
 msgid "Looking for music files\n%d items checked"
 msgstr "音楽ファイルを検索中\n%d項目を確認"
 
-msgid "Looking for music files"
-msgstr "音楽ファイルを検索中"
-
 msgid "Reading tags\n%d of %d songs (%d%%)"
 msgstr "タグを読み込み中\n%d / %d曲（%d%%）"
-
-msgid "Saving music database"
-msgstr "音楽データベースを保存中"
 
 msgid "Saving music database\nThis can take a while on large libraries"
 msgstr "音楽データベースを保存中\n大きなライブラリでは時間がかかることがあります"
@@ -1357,9 +1336,6 @@ msgstr "ロック画面の写真を読み込めませんでした"
 msgid "Swipe up to unlock"
 msgstr "上にスワイプしてロックを解除"
 
-msgid "No synchronized lyrics found"
-msgstr "同期された歌詞が見つかりません"
-
 msgid "Medium"
 msgstr "中"
 
@@ -1413,9 +1389,6 @@ msgstr "Wi-Fiの準備ができると、近くのネットワークが表示さ�
 
 msgid "Searching for networks"
 msgstr "ネットワークを検索中"
-
-msgid "This can take a few seconds."
-msgstr "数秒かかる場合があります。"
 
 msgid "No networks found"
 msgstr "ネットワークが見つかりません"
@@ -1738,14 +1711,8 @@ msgstr "Webサーバーを\n終了中…"
 msgid "Import via Wi-Fi"
 msgstr "Wi-Fi経由でインポート"
 
-msgid "Enable WiFi to access"
-msgstr "アクセスするにはWi-Fiを有効にしてください"
-
 msgid "Web Server is busy"
 msgstr "Webサーバーは使用中です"
-
-msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network -- stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
-msgstr "オンにすると、このデバイスはWi-Fiネットワーク上のAirPlay送信元から見えるようになります。iPhone、iPad、Macから音声をストリーミングし、本機の出力で再生できます。"
 
 msgid "Failed to enable AirPlay"
 msgstr "AirPlayを有効にできませんでした"
@@ -1755,9 +1722,6 @@ msgstr "AirPlayが予期せず停止しました"
 
 msgid "DLNA Renderer"
 msgstr "DLNAレンダラー"
-
-msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network -- cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
-msgstr "オンにすると、このデバイスはWi-Fiネットワーク上のDLNA/UPnPコントローラーアプリから見えるようになります。コントローラーアプリから曲をキャストして再生できます。再生開始後は、本機の操作を使用してください。コントローラーアプリからの一時停止、ミュート、音量、シークには対応していません。"
 
 msgid "Service is busy"
 msgstr "サービスは使用中です"
@@ -1870,9 +1834,6 @@ msgstr "%s・読み込みなし"
 
 msgid "Refreshing plugins..."
 msgstr "プラグインを更新中…"
-
-msgid "Couldn't save -- plugin change was not applied"
-msgstr "保存できませんでした。プラグインの変更は適用されませんでした"
 
 msgid "Plugin Store"
 msgstr "プラグインストア"
@@ -2057,9 +2018,6 @@ msgstr "プレイリストを保存できません"
 msgid "Save Queue as Playlist"
 msgstr "キューをプレイリストとして保存"
 
-msgid "Edit / Done"
-msgstr "編集 / 完了"
-
 msgid "Clear Queue"
 msgstr "キューを消去"
 
@@ -2237,9 +2195,6 @@ msgstr "ダウンロードを開始できませんでした"
 
 msgid "Downloading update"
 msgstr "更新をダウンロード中"
-
-msgid "Update saved. Connect to Wi-Fi, then install from Firmware Update > Install from SD card."
-msgstr "更新を保存しました。Wi-Fiに接続してから、「ファームウェア更新」>「SDカードからインストール」を選択してください。"
 
 msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
 msgstr "CompásOS全体を更新します。ファームウェアの書き込みにはブートローダー、プレーヤー、カーネル、ドライバーが含まれます。"
@@ -2458,7 +2413,6 @@ msgstr "最大音量"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "ボタン、リモコン、プラグインを含め、プレーヤーの音量を制限します。"
 
-
 msgid "Car Mode Volume"
 msgstr "車載モードの音量"
 
@@ -2506,7 +2460,6 @@ msgstr "電源オフ"
 
 msgid "Suspend to RAM"
 msgstr "RAMにサスペンド"
-
 
 msgid "Africa"
 msgstr "アフリカ"
@@ -2633,9 +2586,6 @@ msgstr "長押し"
 
 msgid "Default"
 msgstr "デフォルト"
-
-msgid "Disabled"
-msgstr "無効"
 
 msgid "Reset All"
 msgstr "すべてリセット"
@@ -2784,9 +2734,6 @@ msgstr "レイアウト"
 msgid "Lyrics"
 msgstr "歌詞"
 
-msgid "Player Layout"
-msgstr "プレーヤーレイアウト"
-
 msgid "Swipe Up for Home"
 msgstr "上にスワイプしてホームへ"
 
@@ -2864,9 +2811,6 @@ msgstr "設定"
 
 msgid "Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from here."
 msgstr "最初にADBをオフにしてください（設定 > システム > USBモード）。その後、ここからUSB DACを有効にしてください。"
-
-msgid "Now Playing layouts"
-msgstr "再生中レイアウト"
 
 msgid "More"
 msgstr "その他"
@@ -2994,9 +2938,6 @@ msgstr "遅延なし\n30°\n45°\n60°\n90°"
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
 msgstr "クロスフィードは反対チャンネルのフィルター処理済み信号を混合します。PEQとは独立して動作します。「遅延なし」では、左右の信号が同じ場合、影響はごくわずかです。"
 
-msgid "PEQ"
-msgstr "PEQ"
-
 msgid "Frequency"
 msgstr "周波数"
 
@@ -3017,12 +2958,6 @@ msgstr "ライブラリのスキャンが終わるまでお待ちください"
 
 msgid "Please wait for plugin installation to finish"
 msgstr "プラグインのインストールが終わるまでお待ちください"
-
-msgid "Connect to a Wi-Fi network before continuing."
-msgstr "続行する前にWi-Fiネットワークに接続してください。"
-
-msgid "Select at least one plugin to continue."
-msgstr "続行するにはプラグインを1つ以上選択してください。"
 
 msgid "Could not start the library scan. Please try again."
 msgstr "ライブラリのスキャンを開始できませんでした。もう一度お試しください。"
@@ -3258,9 +3193,6 @@ msgstr "サーバーからの読み込みに必要なメモリが不足してい
 msgid "Loading from server..."
 msgstr "サーバーから読み込み中…"
 
-msgid "Server request timed out after 30 seconds"
-msgstr "サーバーのリクエストが30秒後にタイムアウトしました"
-
 msgid "Not enough memory to load artists"
 msgstr "アーティストの読み込みに必要なメモリが不足しています"
 
@@ -3275,9 +3207,6 @@ msgstr "「%s」のアルバムをすべてダウンロードしますか？"
 
 msgid "Failed to connect to server"
 msgstr "サーバーに接続できませんでした"
-
-msgid "Connection timed out after 30 seconds"
-msgstr "接続が30秒後にタイムアウトしました"
 
 msgid "Not enough memory to connect"
 msgstr "接続に必要なメモリが不足しています"
@@ -4157,9 +4086,6 @@ msgstr "トラックごと"
 msgid "Play through"
 msgstr "連続再生"
 
-msgid "Player layout"
-msgstr "プレーヤーレイアウト"
-
 msgid "Quick drawer"
 msgstr "クイックドロワー"
 
@@ -4186,3 +4112,189 @@ msgstr "音量制限"
 
 msgid "Volume lock (screen off)"
 msgstr "画面オフ時の音量ロック"
+
+msgid "Albums on an album-artist page"
+msgstr "アルバムアーティストのページのアルバム"
+
+msgid "Albums on an artist page"
+msgstr "アーティストのページのアルバム"
+
+msgid "Build it now? This may take a while."
+msgstr "今すぐ作成しますか？しばらく時間がかかる場合があります。"
+
+msgid "Clear the queue?"
+msgstr "キューを消去しますか？"
+
+msgid "Couldn't save. The plugin change was not applied"
+msgstr "保存できませんでした。プラグインの変更は適用されていません"
+
+msgid "Discard"
+msgstr "破棄"
+
+msgid "Discard what you typed?"
+msgstr "入力した内容を破棄しますか？"
+
+msgid "Enable Wi-Fi to access"
+msgstr "アクセスするにはWi-Fiを有効にしてください"
+
+msgid "Fast"
+msgstr "速い"
+
+msgid "Fastest"
+msgstr "最速"
+
+msgid "Forget this device?"
+msgstr "このデバイスの登録を解除しますか？"
+
+msgid "Forget this network?"
+msgstr "このネットワークの登録を解除しますか？"
+
+msgid "Getting around"
+msgstr "操作ガイド"
+
+msgid "Go back"
+msgstr "戻る"
+
+msgid "Home"
+msgstr "ホーム"
+
+msgid "Loading lyrics"
+msgstr "歌詞を読み込み中"
+
+msgid "No lyrics for this song"
+msgstr "この曲の歌詞はありません"
+
+msgid "No matches"
+msgstr "一致する項目がありません"
+
+msgid "No plays yet"
+msgstr "まだ再生履歴がありません"
+
+msgid "Normal"
+msgstr "標準"
+
+msgid "Open Now Playing"
+msgstr "再生中の画面を開く"
+
+msgid "Pause Bluetooth DAC to connect a device"
+msgstr "デバイスを接続するにはBluetooth DACを一時停止してください"
+
+msgid "Pull down from the top"
+msgstr "上端から下にスワイプ"
+
+msgid "Quick Drawer. Hold a tile to open its settings."
+msgstr "クイックドロワー。タイルを長押しすると設定が開きます。"
+
+msgid "Scanning for devices"
+msgstr "デバイスを検索中"
+
+msgid "Songs you play most will appear here."
+msgstr "よく再生する曲がここに表示されます。"
+
+msgid "Still connecting"
+msgstr "接続処理中です"
+
+msgid "Swipe left"
+msgstr "左にスワイプ"
+
+msgid "Swipe right"
+msgstr "右にスワイプ"
+
+msgid "Swipe up from the bottom"
+msgstr "下端から上にスワイプ"
+
+msgid "Tap the cover"
+msgstr "ジャケットをタップ"
+
+msgid "Tap the heart on a song to keep it here."
+msgstr "曲のハートをタップするとここに保存できます。"
+
+msgid "The playing song keeps playing."
+msgstr "現在の曲の再生は続きます。"
+
+msgid "The server did not answer"
+msgstr "サーバーから応答がありませんでした"
+
+msgid "This may take a while."
+msgstr "しばらく時間がかかる場合があります。"
+
+msgid "Type to search"
+msgstr "入力して検索"
+
+msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgstr "更新を保存しました。「ファームウェア更新」>「SDカードからインストール」からインストールしてください。"
+
+msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
+msgstr "オンにすると、このデバイスはWi-Fiネットワーク上のAirPlay送信元から見えるようになります。iPhone、iPad、Macから音声をストリーミングし、本機の出力で再生できます。"
+
+msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network. Cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
+msgstr "オンにすると、このデバイスはWi-Fiネットワーク上のDLNA/UPnPコントローラーアプリから見えるようになります。コントローラーアプリから曲をキャストして再生できます。再生開始後は、本機の操作を使用してください。コントローラーアプリからの一時停止、ミュート、音量、シークには対応していません。"
+
+msgid "[File truncated at %d KB; showing the first part only]\n\n%s"
+msgstr "[ファイルは%d KBで切り詰められました。先頭部分のみ表示します]\n\n%s"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Player layout"
+msgstr "プレーヤーレイアウト"
+
+msgid "Faster"
+msgstr "より速い"
+
+msgid "Add to Favorites"
+msgstr "お気に入りに追加"
+
+msgid "Remove from Favorites"
+msgstr "お気に入りから削除"
+
+msgid "Go to Album"
+msgstr "アルバムへ移動"
+
+msgid "Go to Artist"
+msgstr "アーティストへ移動"
+
+msgid "Some songs could not be downloaded"
+msgstr "ダウンロードできなかった曲があります"
+
+msgid "Request is too long"
+msgstr "リクエストが長すぎます"
+
+msgid "Server request failed: %s"
+msgstr "サーバーへのリクエストに失敗しました: %s"
+
+msgid "network error"
+msgstr "ネットワークエラー"
+
+msgid "Server returned HTTP %d"
+msgstr "サーバーがHTTP %dを返しました"
+
+msgid "Server returned an empty response"
+msgstr "サーバーから空の応答が返されました"
+
+msgid "Server returned invalid JSON"
+msgstr "サーバーから不正なJSONが返されました"
+
+msgid "Server response is not Subsonic JSON"
+msgstr "サーバーの応答はSubsonic JSONではありません"
+
+msgid "Subsonic error %d"
+msgstr "Subsonicエラー %d"
+
+msgid "Invalid Subsonic response status"
+msgstr "Subsonic応答のステータスが無効です"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Wired"
+msgstr "有線"
+
+msgid "Stop updating the library?"
+msgstr "ライブラリの更新を中止しますか?"
+
+msgid "Changes found so far may not be saved."
+msgstr "ここまでに見つかった変更は保存されない場合があります。"
+
+msgid "Updating the library. This may take a while."
+msgstr "ライブラリを更新しています。しばらくかかる場合があります。"

@@ -558,16 +558,6 @@ msgstr "Suoratoisto"
 msgid "Could not open this file."
 msgstr "Tätä tiedostoa ei voi avata."
 
-#, c-format
-msgid ""
-"[File truncated at %d KB -- showing the first part only]\n"
-"\n"
-"%s"
-msgstr ""
-"[Tiedosto katkaistu kohdassa %d kt — näytetään vain alkuosa]\n"
-"\n"
-"%s"
-
 msgid "Books refreshed"
 msgstr "Kirjat päivitetty"
 
@@ -1104,9 +1094,6 @@ msgstr "Kirjasto palautettu. Tallenna valitsemalla Asetukset > Päivitä musiikk
 msgid "No music database"
 msgstr "Ei musiikkitietokantaa"
 
-msgid "Build it now? Large libraries can take several minutes."
-msgstr "Rakennetaanko nyt? Suurten kirjastojen luonti voi kestää useita minuutteja."
-
 msgid "Build"
 msgstr "Rakenna"
 
@@ -1157,12 +1144,6 @@ msgid ""
 msgstr ""
 "Päivitetään\n"
 "musiikkitietokantaa..."
-
-msgid "Preparing metadata refresh..."
-msgstr "Valmistellaan metatietojen päivitystä..."
-
-msgid "Preparing music library..."
-msgstr "Valmistellaan musiikkikirjastoa..."
 
 msgid "Thread launch failed"
 msgstr "Säikeen käynnistys epäonnistui"
@@ -1242,9 +1223,6 @@ msgstr "Päivitetään kansikuvia"
 msgid "Reloading cover"
 msgstr "Ladataan kansikuva uudelleen"
 
-msgid "Preparing metadata refresh"
-msgstr "Valmistellaan metatietojen päivitystä"
-
 #, c-format
 msgid ""
 "Looking for music files\n"
@@ -1253,9 +1231,6 @@ msgstr ""
 "Etsitään musiikkitiedostoja\n"
 "%d kohdetta tarkistettu"
 
-msgid "Looking for music files"
-msgstr "Etsitään musiikkitiedostoja"
-
 #, c-format
 msgid ""
 "Reading tags\n"
@@ -1263,9 +1238,6 @@ msgid ""
 msgstr ""
 "Luetaan tunnisteita\n"
 "%d / %d kappaletta (%d%%)"
-
-msgid "Saving music database"
-msgstr "Tallennetaan musiikkitietokantaa"
 
 msgid ""
 "Saving music database\n"
@@ -1466,9 +1438,6 @@ msgstr "Lukitusnäytön kuvan lataus epäonnistui"
 msgid "Swipe up to unlock"
 msgstr "Avaa lukitus pyyhkäisemällä ylöspäin"
 
-msgid "No synchronized lyrics found"
-msgstr "Synkronoituja sanoituksia ei löytynyt"
-
 msgid "Medium"
 msgstr "Keskikoko"
 
@@ -1522,9 +1491,6 @@ msgstr "Lähiverkot tulevat näkyviin, kun Wi-Fi on valmis."
 
 msgid "Searching for networks"
 msgstr "Etsitään verkkoja"
-
-msgid "This can take a few seconds."
-msgstr "Tämä voi kestää muutaman sekunnin."
 
 msgid "No networks found"
 msgstr "Verkkoja ei löytynyt"
@@ -1859,14 +1825,8 @@ msgstr ""
 msgid "Import via Wi-Fi"
 msgstr "Tuo Wi-Fi-yhteyden kautta"
 
-msgid "Enable WiFi to access"
-msgstr "Ota Wi-Fi käyttöön käyttöä varten"
-
 msgid "Web Server is busy"
 msgstr "Verkkopalvelin on varattu"
-
-msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network -- stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
-msgstr "Kun tämä on käytössä, laite näkyy Wi-Fi-verkon AirPlay-lähettimille. Voit suoratoistaa ääntä iPhonesta, iPadista tai Macista ja toistaa sen tämän laitteen oman ulostulon kautta."
 
 msgid "Failed to enable AirPlay"
 msgstr "AirPlayn käyttöönotto epäonnistui"
@@ -1876,9 +1836,6 @@ msgstr "AirPlay pysähtyi odottamatta"
 
 msgid "DLNA Renderer"
 msgstr "DLNA-renderöijä"
-
-msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network -- cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
-msgstr "Kun tämä on käytössä, laite näkyy Wi-Fi-verkon DLNA/UPnP-ohjaussovelluksille. Lähetä kappale tähän toistettavaksi. Ohjaussovellus ei tue taukoa, mykistystä, äänenvoimakkuutta eikä hakua; käytä tämän laitteen omia säätimiä toiston alettua."
 
 msgid "Service is busy"
 msgstr "Palvelu on varattu"
@@ -2002,9 +1959,6 @@ msgstr "%s · Ei ladattu"
 
 msgid "Refreshing plugins..."
 msgstr "Päivitetään liitännäisiä..."
-
-msgid "Couldn't save -- plugin change was not applied"
-msgstr "Tallennus epäonnistui — liitännäisen muutosta ei otettu käyttöön"
 
 msgid "Plugin Store"
 msgstr "Liitännäiskauppa"
@@ -2189,9 +2143,6 @@ msgstr "Soittolistan tallennus epäonnistui"
 
 msgid "Save Queue as Playlist"
 msgstr "Tallenna jono soittolistana"
-
-msgid "Edit / Done"
-msgstr "Muokkaa / Valmis"
 
 msgid "Clear Queue"
 msgstr "Tyhjennä jono"
@@ -2384,9 +2335,6 @@ msgstr "Latauksen käynnistys epäonnistui"
 
 msgid "Downloading update"
 msgstr "Ladataan päivitystä"
-
-msgid "Update saved. Connect to Wi-Fi, then install from Firmware Update > Install from SD card."
-msgstr "Päivitys tallennettu. Yhdistä Wi-Fi-verkkoon ja asenna valitsemalla Laiteohjelmistopäivitys > Asenna SD-kortilta."
 
 msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
 msgstr "Päivittää koko CompásOS:n. Laiteohjelmisto sisältää käynnistyslataimen, soittimen, ytimen ja ajurit."
@@ -2609,7 +2557,6 @@ msgstr "Enimmäisäänenvoimakkuus"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Rajoittaa soittimen äänenvoimakkuutta, myös painikkeiden, kauko-ohjainten ja liitännäisten kautta."
 
-
 msgid "Car Mode Volume"
 msgstr "Autotilan äänenvoimakkuus"
 
@@ -2662,7 +2609,6 @@ msgstr "Sammuta"
 
 msgid "Suspend to RAM"
 msgstr "Valmiustila (RAM)"
-
 
 msgid "Africa"
 msgstr "Afrikka"
@@ -2790,9 +2736,6 @@ msgstr "Pitkä"
 
 msgid "Default"
 msgstr "Oletus"
-
-msgid "Disabled"
-msgstr "Pois käytöstä"
 
 msgid "Reset All"
 msgstr "Palauta kaikki"
@@ -2941,9 +2884,6 @@ msgstr "Asettelu"
 msgid "Lyrics"
 msgstr "Sanoitukset"
 
-msgid "Player Layout"
-msgstr "Soittimen asettelu"
-
 msgid "Swipe Up for Home"
 msgstr "Pyyhkäise ylös siirtyäksesi aloitusnäyttöön"
 
@@ -3025,9 +2965,6 @@ msgstr "Asetukset"
 
 msgid "Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from here."
 msgstr "Poista ADB ensin käytöstä (Asetukset > Järjestelmä > USB-tila) ja ota sitten USB-DAC käyttöön täällä."
-
-msgid "Now Playing layouts"
-msgstr "Nyt soi -asettelut"
 
 msgid "More"
 msgstr "Lisää"
@@ -3171,9 +3108,6 @@ msgstr ""
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
 msgstr "Crossfeed sekoittaa vastakkaisen kanavan suodatetun signaalin ja toimii PEQ:sta riippumatta. Valinnalla Ei viivettä identtisiin vasemman ja oikean kanavan signaaleihin vaikutetaan hyvin vähän."
 
-msgid "PEQ"
-msgstr "PEQ"
-
 msgid "Frequency"
 msgstr "Taajuus"
 
@@ -3194,12 +3128,6 @@ msgstr "Odota, että kirjaston skannaus valmistuu"
 
 msgid "Please wait for plugin installation to finish"
 msgstr "Odota, että liitännäisen asennus valmistuu"
-
-msgid "Connect to a Wi-Fi network before continuing."
-msgstr "Muodosta Wi-Fi-yhteys ennen jatkamista."
-
-msgid "Select at least one plugin to continue."
-msgstr "Valitse vähintään yksi liitännäinen jatkaaksesi."
 
 msgid "Could not start the library scan. Please try again."
 msgstr "Kirjaston skannauksen käynnistys epäonnistui. Yritä uudelleen."
@@ -3441,9 +3369,6 @@ msgstr "Palvelimelta lataamiseen ei ole riittävästi muistia"
 msgid "Loading from server..."
 msgstr "Ladataan palvelimelta..."
 
-msgid "Server request timed out after 30 seconds"
-msgstr "Palvelinpyyntö aikakatkaistiin 30 sekunnin kuluttua"
-
 msgid "Not enough memory to load artists"
 msgstr "Esittäjien lataamiseen ei ole riittävästi muistia"
 
@@ -3465,9 +3390,6 @@ msgstr "Ladataanko kaikki esittäjän ”%s” albumit?"
 
 msgid "Failed to connect to server"
 msgstr "Yhteyden muodostaminen palvelimeen epäonnistui"
-
-msgid "Connection timed out after 30 seconds"
-msgstr "Yhteys aikakatkaistiin 30 sekunnin kuluttua"
 
 msgid "Not enough memory to connect"
 msgstr "Yhteyden muodostamiseen ei ole riittävästi muistia"
@@ -4357,9 +4279,6 @@ msgstr "Kappalekohtainen"
 msgid "Play through"
 msgstr "Jatkuva toisto"
 
-msgid "Player layout"
-msgstr "Soittimen asettelu"
-
 msgid "Quick drawer"
 msgstr "Pikavalikko"
 
@@ -4386,3 +4305,189 @@ msgstr "Äänenvoimakkuuden rajat"
 
 msgid "Volume lock (screen off)"
 msgstr "Äänenvoimakkuuden lukitus (näyttö pois)"
+
+msgid "Albums on an album-artist page"
+msgstr "Albumit albumin esittäjän sivulla"
+
+msgid "Albums on an artist page"
+msgstr "Albumit esittäjän sivulla"
+
+msgid "Build it now? This may take a while."
+msgstr "Luodaanko nyt? Tämä voi kestää hetken."
+
+msgid "Clear the queue?"
+msgstr "Tyhjennetäänkö jono?"
+
+msgid "Couldn't save. The plugin change was not applied"
+msgstr "Tallennus epäonnistui. Lisäosan muutosta ei otettu käyttöön"
+
+msgid "Discard"
+msgstr "Hylkää"
+
+msgid "Discard what you typed?"
+msgstr "Hylätäänkö kirjoittamasi teksti?"
+
+msgid "Enable Wi-Fi to access"
+msgstr "Ota Wi-Fi käyttöön"
+
+msgid "Fast"
+msgstr "Nopea"
+
+msgid "Fastest"
+msgstr "Nopein"
+
+msgid "Forget this device?"
+msgstr "Unohdetaanko tämä laite?"
+
+msgid "Forget this network?"
+msgstr "Unohdetaanko tämä verkko?"
+
+msgid "Getting around"
+msgstr "Näin liikut"
+
+msgid "Go back"
+msgstr "Takaisin"
+
+msgid "Home"
+msgstr "Koti"
+
+msgid "Loading lyrics"
+msgstr "Ladataan sanoituksia"
+
+msgid "No lyrics for this song"
+msgstr "Tälle kappaleelle ei ole sanoituksia"
+
+msgid "No matches"
+msgstr "Ei osumia"
+
+msgid "No plays yet"
+msgstr "Ei vielä toistoja"
+
+msgid "Normal"
+msgstr "Normaali"
+
+msgid "Open Now Playing"
+msgstr "Avaa Nyt soi"
+
+msgid "Pause Bluetooth DAC to connect a device"
+msgstr "Keskeytä Bluetooth-DAC yhdistääksesi laitteen"
+
+msgid "Pull down from the top"
+msgstr "Pyyhkäise yläreunasta alas"
+
+msgid "Quick Drawer. Hold a tile to open its settings."
+msgstr "Pikavalikko. Avaa ruudun asetukset painamalla sitä pitkään."
+
+msgid "Scanning for devices"
+msgstr "Etsitään laitteita"
+
+msgid "Songs you play most will appear here."
+msgstr "Useimmin toistamasi kappaleet näkyvät täällä."
+
+msgid "Still connecting"
+msgstr "Yhdistetään yhä"
+
+msgid "Swipe left"
+msgstr "Pyyhkäise vasemmalle"
+
+msgid "Swipe right"
+msgstr "Pyyhkäise oikealle"
+
+msgid "Swipe up from the bottom"
+msgstr "Pyyhkäise alareunasta ylös"
+
+msgid "Tap the cover"
+msgstr "Napauta kansikuvaa"
+
+msgid "Tap the heart on a song to keep it here."
+msgstr "Tallenna kappale tänne napauttamalla sen sydäntä."
+
+msgid "The playing song keeps playing."
+msgstr "Nykyisen kappaleen toisto jatkuu."
+
+msgid "The server did not answer"
+msgstr "Palvelin ei vastannut"
+
+msgid "This may take a while."
+msgstr "Tämä voi kestää hetken."
+
+msgid "Type to search"
+msgstr "Kirjoita hakeaksesi"
+
+msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgstr "Päivitys tallennettu. Asenna kohdasta Laiteohjelmiston päivitys > Asenna SD-kortilta."
+
+msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
+msgstr "Kun tämä on käytössä, laite näkyy Wi-Fi-verkon AirPlay-lähettimille. Voit suoratoistaa ääntä iPhonesta, iPadista tai Macista ja toistaa sen tämän laitteen oman ulostulon kautta."
+
+msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network. Cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
+msgstr "Kun tämä on käytössä, laite näkyy Wi-Fi-verkon DLNA/UPnP-ohjaussovelluksille. Lähetä kappale tähän toistettavaksi. Ohjaussovellus ei tue taukoa, mykistystä, äänenvoimakkuutta eikä hakua; käytä tämän laitteen omia säätimiä toiston alettua."
+
+msgid "[File truncated at %d KB; showing the first part only]\n\n%s"
+msgstr "[Tiedosto katkaistu kohdassa %d kt — näytetään vain alkuosa]\n\n%s"
+
+msgid "Disabled"
+msgstr "Pois käytöstä"
+
+msgid "Player layout"
+msgstr "Soittimen asettelu"
+
+msgid "Faster"
+msgstr "Nopeampi"
+
+msgid "Add to Favorites"
+msgstr "Lisää suosikkeihin"
+
+msgid "Remove from Favorites"
+msgstr "Poista suosikeista"
+
+msgid "Go to Album"
+msgstr "Siirry albumiin"
+
+msgid "Go to Artist"
+msgstr "Siirry artistiin"
+
+msgid "Some songs could not be downloaded"
+msgstr "Kaikkia kappaleita ei voitu ladata"
+
+msgid "Request is too long"
+msgstr "Pyyntö on liian pitkä"
+
+msgid "Server request failed: %s"
+msgstr "Palvelinpyyntö epäonnistui: %s"
+
+msgid "network error"
+msgstr "Verkkovirhe"
+
+msgid "Server returned HTTP %d"
+msgstr "Palvelin palautti HTTP-tilan %d"
+
+msgid "Server returned an empty response"
+msgstr "Palvelin palautti tyhjän vastauksen"
+
+msgid "Server returned invalid JSON"
+msgstr "Palvelin palautti virheellistä JSON-dataa"
+
+msgid "Server response is not Subsonic JSON"
+msgstr "Palvelimen vastaus ei ole Subsonic-JSONia"
+
+msgid "Subsonic error %d"
+msgstr "Subsonic-virhe %d"
+
+msgid "Invalid Subsonic response status"
+msgstr "Virheellinen Subsonic-vastauksen tila"
+
+msgid "Search"
+msgstr "Haku"
+
+msgid "Wired"
+msgstr "Langallinen"
+
+msgid "Stop updating the library?"
+msgstr "Lopetetaanko kirjaston päivitys?"
+
+msgid "Changes found so far may not be saved."
+msgstr "Tähän mennessä löydettyjä muutoksia ei ehkä tallenneta."
+
+msgid "Updating the library. This may take a while."
+msgstr "Kirjastoa päivitetään. Tämä voi kestää hetken."

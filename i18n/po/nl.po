@@ -558,16 +558,6 @@ msgstr "Streaming"
 msgid "Could not open this file."
 msgstr "Kan dit bestand niet openen."
 
-#, c-format
-msgid ""
-"[File truncated at %d KB -- showing the first part only]\n"
-"\n"
-"%s"
-msgstr ""
-"[Bestand afgebroken bij %d KB — alleen het eerste deel wordt getoond]\n"
-"\n"
-"%s"
-
 msgid "Books refreshed"
 msgstr "Boeken bijgewerkt"
 
@@ -1104,9 +1094,6 @@ msgstr "Bibliotheek hersteld. Gebruik Instellingen > Muziekdatabase bijwerken om
 msgid "No music database"
 msgstr "Geen muziekdatabase"
 
-msgid "Build it now? Large libraries can take several minutes."
-msgstr "Nu opbouwen? Grote bibliotheken kunnen enkele minuten duren."
-
 msgid "Build"
 msgstr "Opbouwen"
 
@@ -1157,12 +1144,6 @@ msgid ""
 msgstr ""
 "Bezig met bijwerken van\n"
 "muziekdatabase..."
-
-msgid "Preparing metadata refresh..."
-msgstr "Metadata bijwerken voorbereiden..."
-
-msgid "Preparing music library..."
-msgstr "Muziekbibliotheek voorbereiden..."
 
 msgid "Thread launch failed"
 msgstr "Starten van thread mislukt"
@@ -1242,9 +1223,6 @@ msgstr "Covers vernieuwen"
 msgid "Reloading cover"
 msgstr "Cover opnieuw laden"
 
-msgid "Preparing metadata refresh"
-msgstr "Metadata bijwerken voorbereiden"
-
 #, c-format
 msgid ""
 "Looking for music files\n"
@@ -1253,9 +1231,6 @@ msgstr ""
 "Zoeken naar muziekbestanden\n"
 "%d items gecontroleerd"
 
-msgid "Looking for music files"
-msgstr "Zoeken naar muziekbestanden"
-
 #, c-format
 msgid ""
 "Reading tags\n"
@@ -1263,9 +1238,6 @@ msgid ""
 msgstr ""
 "Tags lezen\n"
 "%d van %d nummers (%d%%)"
-
-msgid "Saving music database"
-msgstr "Muziekdatabase opslaan"
 
 msgid ""
 "Saving music database\n"
@@ -1466,9 +1438,6 @@ msgstr "Kan foto van vergrendelscherm niet laden"
 msgid "Swipe up to unlock"
 msgstr "Veeg omhoog om te ontgrendelen"
 
-msgid "No synchronized lyrics found"
-msgstr "Geen gesynchroniseerde songteksten gevonden"
-
 msgid "Medium"
 msgstr "Gemiddeld"
 
@@ -1522,9 +1491,6 @@ msgstr "Netwerken in de buurt verschijnen zodra wifi gereed is."
 
 msgid "Searching for networks"
 msgstr "Zoeken naar netwerken"
-
-msgid "This can take a few seconds."
-msgstr "Dit kan enkele seconden duren."
 
 msgid "No networks found"
 msgstr "Geen netwerken gevonden"
@@ -1857,14 +1823,8 @@ msgstr "Webserver sluiten..."
 msgid "Import via Wi-Fi"
 msgstr "Importeren via wifi"
 
-msgid "Enable WiFi to access"
-msgstr "Schakel wifi in voor toegang"
-
 msgid "Web Server is busy"
 msgstr "Webserver is bezet"
-
-msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network -- stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
-msgstr "Als deze optie aanstaat, is dit apparaat zichtbaar voor AirPlay-zenders op je wifi-netwerk. Stream audio vanaf een iPhone, iPad of Mac om die via de eigen uitgang van dit apparaat af te spelen."
 
 msgid "Failed to enable AirPlay"
 msgstr "AirPlay inschakelen mislukt"
@@ -1874,9 +1834,6 @@ msgstr "AirPlay is onverwacht gestopt"
 
 msgid "DLNA Renderer"
 msgstr "DLNA-renderer"
-
-msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network -- cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
-msgstr "Als deze optie aanstaat, is dit apparaat zichtbaar voor DLNA/UPnP-controllerapps op je wifi-netwerk. Cast er een nummer naartoe om het hier af te spelen. Pauzeren, dempen, volume en zoeken worden niet door de controllerapp ondersteund; gebruik de bediening van dit apparaat zodra een nummer start."
 
 msgid "Service is busy"
 msgstr "Service is bezet"
@@ -2000,9 +1957,6 @@ msgstr "%s · Niet geladen"
 
 msgid "Refreshing plugins..."
 msgstr "Plugins vernieuwen..."
-
-msgid "Couldn't save -- plugin change was not applied"
-msgstr "Opslaan mislukt — pluginwijziging is niet toegepast"
 
 msgid "Plugin Store"
 msgstr "Pluginwinkel"
@@ -2187,9 +2141,6 @@ msgstr "Kan afspeellijst niet opslaan"
 
 msgid "Save Queue as Playlist"
 msgstr "Wachtrij opslaan als afspeellijst"
-
-msgid "Edit / Done"
-msgstr "Bewerken / Gereed"
 
 msgid "Clear Queue"
 msgstr "Wachtrij wissen"
@@ -2382,9 +2333,6 @@ msgstr "Kan de download niet starten"
 
 msgid "Downloading update"
 msgstr "Update downloaden"
-
-msgid "Update saved. Connect to Wi-Fi, then install from Firmware Update > Install from SD card."
-msgstr "Update opgeslagen. Maak verbinding met wifi en installeer deze via Firmware-update > Installeren vanaf SD-kaart."
 
 msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
 msgstr "Werkt heel CompásOS bij. De firmware bevat bootloader, speler, kernel en stuurprogramma's."
@@ -2607,7 +2555,6 @@ msgstr "Maximaal volume"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Beperkt het volume van de speler, inclusief knoppen, afstandsbedieningen en plugins."
 
-
 msgid "Car Mode Volume"
 msgstr "Automodusvolume"
 
@@ -2660,7 +2607,6 @@ msgstr "Uitschakelen"
 
 msgid "Suspend to RAM"
 msgstr "Slaapstand (RAM)"
-
 
 msgid "Africa"
 msgstr "Afrika"
@@ -2788,9 +2734,6 @@ msgstr "Lang"
 
 msgid "Default"
 msgstr "Standaard"
-
-msgid "Disabled"
-msgstr "Uitgeschakeld"
 
 msgid "Reset All"
 msgstr "Alles herstellen"
@@ -2939,9 +2882,6 @@ msgstr "Indeling"
 msgid "Lyrics"
 msgstr "Songteksten"
 
-msgid "Player Layout"
-msgstr "Spelerindeling"
-
 msgid "Swipe Up for Home"
 msgstr "Omhoog vegen voor startscherm"
 
@@ -3023,9 +2963,6 @@ msgstr "Instellingen"
 
 msgid "Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from here."
 msgstr "Schakel ADB eerst uit (Instellingen > Systeem > USB-modus) en schakel daarna hier USB-DAC in."
-
-msgid "Now Playing layouts"
-msgstr "Nu aan het afspelen-indelingen"
 
 msgid "More"
 msgstr "Meer"
@@ -3169,9 +3106,6 @@ msgstr ""
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
 msgstr "Crossfeed mengt een gefilterd signaal van het tegenoverliggende kanaal bij en werkt los van PEQ. Bij Geen vertraging worden identieke linker- en rechtersignalen nauwelijks beïnvloed."
 
-msgid "PEQ"
-msgstr "PEQ"
-
 msgid "Frequency"
 msgstr "Frequentie"
 
@@ -3192,12 +3126,6 @@ msgstr "Wacht tot het scannen van de bibliotheek klaar is"
 
 msgid "Please wait for plugin installation to finish"
 msgstr "Wacht tot de plugininstallatie klaar is"
-
-msgid "Connect to a Wi-Fi network before continuing."
-msgstr "Maak verbinding met een wifi-netwerk voordat je doorgaat."
-
-msgid "Select at least one plugin to continue."
-msgstr "Selecteer minstens één plugin om door te gaan."
 
 msgid "Could not start the library scan. Please try again."
 msgstr "Kan bibliotheeks scan niet starten. Probeer opnieuw."
@@ -3439,9 +3367,6 @@ msgstr "Onvoldoende geheugen om van server te laden"
 msgid "Loading from server..."
 msgstr "Laden van server..."
 
-msgid "Server request timed out after 30 seconds"
-msgstr "Serveraanvraag verlopen na 30 seconden"
-
 msgid "Not enough memory to load artists"
 msgstr "Onvoldoende geheugen om artiesten te laden"
 
@@ -3463,9 +3388,6 @@ msgstr "Elk album van ‘%s’ downloaden?"
 
 msgid "Failed to connect to server"
 msgstr "Kan geen verbinding maken met server"
-
-msgid "Connection timed out after 30 seconds"
-msgstr "Verbinding verlopen na 30 seconden"
 
 msgid "Not enough memory to connect"
 msgstr "Onvoldoende geheugen om verbinding te maken"
@@ -4355,9 +4277,6 @@ msgstr "Per nummer"
 msgid "Play through"
 msgstr "Doorblijven spelen"
 
-msgid "Player layout"
-msgstr "Spelerindeling"
-
 msgid "Quick drawer"
 msgstr "Snelpaneel"
 
@@ -4384,3 +4303,189 @@ msgstr "Volumelimieten"
 
 msgid "Volume lock (screen off)"
 msgstr "Volumevergrendeling (scherm uit)"
+
+msgid "Albums on an album-artist page"
+msgstr "Albums op een albumartiestpagina"
+
+msgid "Albums on an artist page"
+msgstr "Albums op een artiestpagina"
+
+msgid "Build it now? This may take a while."
+msgstr "Nu maken? Dit kan even duren."
+
+msgid "Clear the queue?"
+msgstr "Wachtrij wissen?"
+
+msgid "Couldn't save. The plugin change was not applied"
+msgstr "Opslaan mislukt. De pluginwijziging is niet toegepast"
+
+msgid "Discard"
+msgstr "Verwerpen"
+
+msgid "Discard what you typed?"
+msgstr "Getypte tekst verwerpen?"
+
+msgid "Enable Wi-Fi to access"
+msgstr "Schakel Wi-Fi in voor toegang"
+
+msgid "Fast"
+msgstr "Snel"
+
+msgid "Fastest"
+msgstr "Snelst"
+
+msgid "Forget this device?"
+msgstr "Dit apparaat vergeten?"
+
+msgid "Forget this network?"
+msgstr "Dit netwerk vergeten?"
+
+msgid "Getting around"
+msgstr "De bediening"
+
+msgid "Go back"
+msgstr "Terug"
+
+msgid "Home"
+msgstr "Start"
+
+msgid "Loading lyrics"
+msgstr "Songtekst laden"
+
+msgid "No lyrics for this song"
+msgstr "Geen songtekst voor dit nummer"
+
+msgid "No matches"
+msgstr "Geen overeenkomsten"
+
+msgid "No plays yet"
+msgstr "Nog niets afgespeeld"
+
+msgid "Normal"
+msgstr "Normaal"
+
+msgid "Open Now Playing"
+msgstr "Nu afspelen openen"
+
+msgid "Pause Bluetooth DAC to connect a device"
+msgstr "Pauzeer Bluetooth-DAC om een apparaat te verbinden"
+
+msgid "Pull down from the top"
+msgstr "Veeg omlaag vanaf de bovenrand"
+
+msgid "Quick Drawer. Hold a tile to open its settings."
+msgstr "Snelpaneel. Houd een tegel ingedrukt om de instellingen te openen."
+
+msgid "Scanning for devices"
+msgstr "Apparaten zoeken"
+
+msgid "Songs you play most will appear here."
+msgstr "Je meest afgespeelde nummers verschijnen hier."
+
+msgid "Still connecting"
+msgstr "Nog bezig met verbinden"
+
+msgid "Swipe left"
+msgstr "Veeg naar links"
+
+msgid "Swipe right"
+msgstr "Veeg naar rechts"
+
+msgid "Swipe up from the bottom"
+msgstr "Veeg omhoog vanaf de onderrand"
+
+msgid "Tap the cover"
+msgstr "Tik op de hoes"
+
+msgid "Tap the heart on a song to keep it here."
+msgstr "Tik op het hartje bij een nummer om het hier te bewaren."
+
+msgid "The playing song keeps playing."
+msgstr "Het huidige nummer blijft spelen."
+
+msgid "The server did not answer"
+msgstr "De server heeft niet geantwoord"
+
+msgid "This may take a while."
+msgstr "Dit kan even duren."
+
+msgid "Type to search"
+msgstr "Typ om te zoeken"
+
+msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgstr "Update opgeslagen. Installeer via Firmware-update > Installeren vanaf SD-kaart."
+
+msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
+msgstr "Als deze optie aanstaat, is dit apparaat zichtbaar voor AirPlay-zenders op je wifi-netwerk. Stream audio vanaf een iPhone, iPad of Mac om die via de eigen uitgang van dit apparaat af te spelen."
+
+msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network. Cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
+msgstr "Als deze optie aanstaat, is dit apparaat zichtbaar voor DLNA/UPnP-controllerapps op je wifi-netwerk. Cast er een nummer naartoe om het hier af te spelen. Pauzeren, dempen, volume en zoeken worden niet door de controllerapp ondersteund; gebruik de bediening van dit apparaat zodra een nummer start."
+
+msgid "[File truncated at %d KB; showing the first part only]\n\n%s"
+msgstr "[Bestand afgebroken bij %d KB — alleen het eerste deel wordt getoond]\n\n%s"
+
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+msgid "Player layout"
+msgstr "Spelerindeling"
+
+msgid "Faster"
+msgstr "Sneller"
+
+msgid "Add to Favorites"
+msgstr "Aan favorieten toevoegen"
+
+msgid "Remove from Favorites"
+msgstr "Uit favorieten verwijderen"
+
+msgid "Go to Album"
+msgstr "Naar album"
+
+msgid "Go to Artist"
+msgstr "Naar artiest"
+
+msgid "Some songs could not be downloaded"
+msgstr "Sommige nummers konden niet worden gedownload"
+
+msgid "Request is too long"
+msgstr "Het verzoek is te lang"
+
+msgid "Server request failed: %s"
+msgstr "Serververzoek mislukt: %s"
+
+msgid "network error"
+msgstr "Netwerkfout"
+
+msgid "Server returned HTTP %d"
+msgstr "De server heeft HTTP %d teruggegeven"
+
+msgid "Server returned an empty response"
+msgstr "De server heeft een leeg antwoord teruggegeven"
+
+msgid "Server returned invalid JSON"
+msgstr "De server heeft ongeldige JSON teruggegeven"
+
+msgid "Server response is not Subsonic JSON"
+msgstr "Het serverantwoord is geen Subsonic-JSON"
+
+msgid "Subsonic error %d"
+msgstr "Subsonic-fout %d"
+
+msgid "Invalid Subsonic response status"
+msgstr "Ongeldige status van het Subsonic-antwoord"
+
+msgid "Search"
+msgstr "Zoeken"
+
+msgid "Wired"
+msgstr "Bekabeld"
+
+msgid "Stop updating the library?"
+msgstr "Bijwerken van de bibliotheek stoppen?"
+
+msgid "Changes found so far may not be saved."
+msgstr "Wijzigingen die tot nu toe zijn gevonden, worden mogelijk niet opgeslagen."
+
+msgid "Updating the library. This may take a while."
+msgstr "Bibliotheek wordt bijgewerkt. Dit kan even duren."

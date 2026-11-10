@@ -580,16 +580,6 @@ msgstr "Streaming"
 msgid "Could not open this file."
 msgstr "Não foi possível abrir este arquivo."
 
-#, c-format
-msgid ""
-"[File truncated at %d KB -- showing the first part only]\n"
-"\n"
-"%s"
-msgstr ""
-"[Arquivo truncado em %d KB -- mostrando só o início]\n"
-"\n"
-"%s"
-
 msgid "Books refreshed"
 msgstr "Livros atualizados"
 
@@ -1139,9 +1129,6 @@ msgstr "Biblioteca recuperada. Use Configurações > Atualizar banco de dados de
 msgid "No music database"
 msgstr "Sem banco de dados de música"
 
-msgid "Build it now? Large libraries can take several minutes."
-msgstr "Criar agora? Bibliotecas grandes podem demorar bastante."
-
 msgid "Build"
 msgstr "Criar"
 
@@ -1192,12 +1179,6 @@ msgid ""
 msgstr ""
 "Atualizando\n"
 "banco de dados de música..."
-
-msgid "Preparing metadata refresh..."
-msgstr "Preparando atualização dos metadados..."
-
-msgid "Preparing music library..."
-msgstr "Preparando biblioteca de música..."
 
 msgid "Thread launch failed"
 msgstr "Falha ao iniciar a thread"
@@ -1277,9 +1258,6 @@ msgstr "Atualizando capas"
 msgid "Reloading cover"
 msgstr "Recarregando capa"
 
-msgid "Preparing metadata refresh"
-msgstr "Preparando atualização dos metadados"
-
 #, c-format
 msgid ""
 "Looking for music files\n"
@@ -1288,9 +1266,6 @@ msgstr ""
 "Procurando arquivos de música\n"
 "%d itens verificados"
 
-msgid "Looking for music files"
-msgstr "Procurando arquivos de música"
-
 #, c-format
 msgid ""
 "Reading tags\n"
@@ -1298,9 +1273,6 @@ msgid ""
 msgstr ""
 "Lendo tags\n"
 "%d de %d músicas (%d%%)"
-
-msgid "Saving music database"
-msgstr "Salvando banco de dados de música"
 
 msgid ""
 "Saving music database\n"
@@ -1502,9 +1474,6 @@ msgstr "Não foi possível carregar a foto da tela de bloqueio"
 msgid "Swipe up to unlock"
 msgstr "Deslize para cima para desbloquear"
 
-msgid "No synchronized lyrics found"
-msgstr "Nenhuma letra sincronizada encontrada"
-
 msgid "Medium"
 msgstr "Médio"
 
@@ -1558,9 +1527,6 @@ msgstr "As redes próximas aparecerão quando o Wi-Fi estiver pronto."
 
 msgid "Searching for networks"
 msgstr "Buscando redes"
-
-msgid "This can take a few seconds."
-msgstr "Pode levar alguns segundos."
 
 msgid "No networks found"
 msgstr "Nenhuma rede encontrada"
@@ -1895,14 +1861,8 @@ msgstr ""
 msgid "Import via Wi-Fi"
 msgstr "Importar por Wi-Fi"
 
-msgid "Enable WiFi to access"
-msgstr "Ative o Wi-Fi para acessar"
-
 msgid "Web Server is busy"
 msgstr "O servidor web está ocupado"
-
-msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network -- stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
-msgstr "Quando ligado, este aparelho fica visível para emissores AirPlay na sua rede Wi-Fi -- envie áudio de um iPhone, iPad ou Mac para tocar pela saída do próprio aparelho."
 
 msgid "Failed to enable AirPlay"
 msgstr "Falha ao ativar o AirPlay"
@@ -1912,9 +1872,6 @@ msgstr "O AirPlay parou inesperadamente"
 
 msgid "DLNA Renderer"
 msgstr "Renderizador DLNA"
-
-msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network -- cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
-msgstr "Quando ligado, este aparelho fica visível para apps controladores DLNA/UPnP na sua rede Wi-Fi -- envie uma faixa de um deles para tocá-la aqui. Pausar, silenciar, volume e avançar pelo app controlador não são compatíveis; use os controles do próprio aparelho depois que a faixa começar."
 
 msgid "Service is busy"
 msgstr "O serviço está ocupado"
@@ -2038,9 +1995,6 @@ msgstr "%s · Não carregado"
 
 msgid "Refreshing plugins..."
 msgstr "Atualizando plugins..."
-
-msgid "Couldn't save -- plugin change was not applied"
-msgstr "Não foi possível salvar -- a mudança do plugin não foi aplicada"
 
 msgid "Plugin Store"
 msgstr "Loja de plugins"
@@ -2225,9 +2179,6 @@ msgstr "Não foi possível salvar a playlist"
 
 msgid "Save Queue as Playlist"
 msgstr "Salvar fila como playlist"
-
-msgid "Edit / Done"
-msgstr "Editar / Concluir"
 
 msgid "Clear Queue"
 msgstr "Limpar fila"
@@ -2420,9 +2371,6 @@ msgstr "Não foi possível iniciar o download"
 
 msgid "Downloading update"
 msgstr "Baixando atualização"
-
-msgid "Update saved. Connect to Wi-Fi, then install from Firmware Update > Install from SD card."
-msgstr "Atualização salva. Conecte-se ao Wi-Fi e depois instale em Atualização de firmware > Instalar do cartão SD."
 
 msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
 msgstr "Atualiza todo o CompásOS. O firmware contém bootloader, player, kernel e drivers."
@@ -2646,7 +2594,6 @@ msgstr "Volume máximo"
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Limita o volume do player, incluindo botões, controles remotos e plugins."
 
-
 msgid "Car Mode Volume"
 msgstr "Volume do modo carro"
 
@@ -2699,7 +2646,6 @@ msgstr "Desligar"
 
 msgid "Suspend to RAM"
 msgstr "Suspender na RAM"
-
 
 msgid "Africa"
 msgstr "África"
@@ -2827,9 +2773,6 @@ msgstr "Longa"
 
 msgid "Default"
 msgstr "Padrão"
-
-msgid "Disabled"
-msgstr "Desativado"
 
 msgid "Reset All"
 msgstr "Redefinir tudo"
@@ -2978,9 +2921,6 @@ msgstr "Layout"
 msgid "Lyrics"
 msgstr "Letras"
 
-msgid "Player Layout"
-msgstr "Layout do player"
-
 msgid "Swipe Up for Home"
 msgstr "Deslizar para cima para o Início"
 
@@ -3062,9 +3002,6 @@ msgstr "Configurações"
 
 msgid "Turn off ADB first (Settings > System > USB Mode), then enable USB DAC from here."
 msgstr "Desligue o ADB primeiro (Configurações > Sistema > Modo USB) e ative o DAC USB aqui."
-
-msgid "Now Playing layouts"
-msgstr "Layouts do reprodutor"
 
 msgid "More"
 msgstr "Mais"
@@ -3208,9 +3145,6 @@ msgstr ""
 msgid "Crossfeed blends a filtered signal from the opposite channel and works independently of PEQ. With No delay, identical left and right signals are affected very little."
 msgstr "O crossfeed mistura um sinal filtrado do canal oposto e funciona independentemente do PEQ. Com Sem atraso, sinais idênticos nos canais esquerdo e direito são pouco afetados."
 
-msgid "PEQ"
-msgstr "PEQ"
-
 msgid "Frequency"
 msgstr "Frequência"
 
@@ -3231,12 +3165,6 @@ msgstr "Aguarde a conclusão da busca na biblioteca"
 
 msgid "Please wait for plugin installation to finish"
 msgstr "Aguarde a instalação dos plugins terminar"
-
-msgid "Connect to a Wi-Fi network before continuing."
-msgstr "Conecte-se a uma rede Wi-Fi antes de continuar."
-
-msgid "Select at least one plugin to continue."
-msgstr "Selecione pelo menos um plugin para continuar."
 
 msgid "Could not start the library scan. Please try again."
 msgstr "Não foi possível iniciar a busca na biblioteca. Tente novamente."
@@ -3478,9 +3406,6 @@ msgstr "Memória insuficiente para carregar do servidor"
 msgid "Loading from server..."
 msgstr "Carregando do servidor..."
 
-msgid "Server request timed out after 30 seconds"
-msgstr "A solicitação ao servidor expirou após 30 segundos"
-
 msgid "Not enough memory to load artists"
 msgstr "Memória insuficiente para carregar artistas"
 
@@ -3502,9 +3427,6 @@ msgstr "Baixar todos os álbuns de \"%s\"?"
 
 msgid "Failed to connect to server"
 msgstr "Falha ao conectar ao servidor"
-
-msgid "Connection timed out after 30 seconds"
-msgstr "A conexão expirou após 30 segundos"
 
 msgid "Not enough memory to connect"
 msgstr "Memória insuficiente para conectar"
@@ -4394,9 +4316,6 @@ msgstr "Por faixa"
 msgid "Play through"
 msgstr "Reprodução contínua"
 
-msgid "Player layout"
-msgstr "Layout do player"
-
 msgid "Quick drawer"
 msgstr "Painel rápido"
 
@@ -4423,3 +4342,189 @@ msgstr "Limites de volume"
 
 msgid "Volume lock (screen off)"
 msgstr "Bloqueio de volume (tela desligada)"
+
+msgid "Albums on an album-artist page"
+msgstr "Álbuns na página de um artista do álbum"
+
+msgid "Albums on an artist page"
+msgstr "Álbuns na página de um artista"
+
+msgid "Build it now? This may take a while."
+msgstr "Criar agora? Isso pode demorar um pouco."
+
+msgid "Clear the queue?"
+msgstr "Limpar a fila?"
+
+msgid "Couldn't save. The plugin change was not applied"
+msgstr "Não foi possível salvar. A alteração do plugin não foi aplicada"
+
+msgid "Discard"
+msgstr "Descartar"
+
+msgid "Discard what you typed?"
+msgstr "Descartar o que você digitou?"
+
+msgid "Enable Wi-Fi to access"
+msgstr "Ative o Wi-Fi para acessar"
+
+msgid "Fast"
+msgstr "Rápida"
+
+msgid "Fastest"
+msgstr "Mais rápida"
+
+msgid "Forget this device?"
+msgstr "Esquecer este dispositivo?"
+
+msgid "Forget this network?"
+msgstr "Esquecer esta rede?"
+
+msgid "Getting around"
+msgstr "Como navegar"
+
+msgid "Go back"
+msgstr "Voltar"
+
+msgid "Home"
+msgstr "Início"
+
+msgid "Loading lyrics"
+msgstr "Carregando letras"
+
+msgid "No lyrics for this song"
+msgstr "Não há letra para esta música"
+
+msgid "No matches"
+msgstr "Nenhum resultado"
+
+msgid "No plays yet"
+msgstr "Nenhuma reprodução ainda"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Open Now Playing"
+msgstr "Abrir Em reprodução"
+
+msgid "Pause Bluetooth DAC to connect a device"
+msgstr "Pause o DAC Bluetooth para conectar um dispositivo"
+
+msgid "Pull down from the top"
+msgstr "Deslize para baixo a partir do topo"
+
+msgid "Quick Drawer. Hold a tile to open its settings."
+msgstr "Painel rápido. Mantenha um bloco pressionado para abrir suas configurações."
+
+msgid "Scanning for devices"
+msgstr "Buscando dispositivos"
+
+msgid "Songs you play most will appear here."
+msgstr "As músicas que você mais ouvir aparecerão aqui."
+
+msgid "Still connecting"
+msgstr "Ainda conectando"
+
+msgid "Swipe left"
+msgstr "Deslize para a esquerda"
+
+msgid "Swipe right"
+msgstr "Deslize para a direita"
+
+msgid "Swipe up from the bottom"
+msgstr "Deslize para cima a partir da borda inferior"
+
+msgid "Tap the cover"
+msgstr "Toque na capa"
+
+msgid "Tap the heart on a song to keep it here."
+msgstr "Toque no coração de uma música para guardá-la aqui."
+
+msgid "The playing song keeps playing."
+msgstr "A música atual continuará tocando."
+
+msgid "The server did not answer"
+msgstr "O servidor não respondeu"
+
+msgid "This may take a while."
+msgstr "Isso pode demorar um pouco."
+
+msgid "Type to search"
+msgstr "Digite para buscar"
+
+msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgstr "Atualização salva. Instale em Atualização de firmware > Instalar do cartão SD."
+
+msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
+msgstr "Quando ligado, este aparelho fica visível para emissores AirPlay na sua rede Wi-Fi; envie áudio de um iPhone, iPad ou Mac para tocar pela saída do próprio aparelho."
+
+msgid "When on, this device is visible to DLNA/UPnP controller apps on your Wi-Fi network. Cast a track from one to play it here. Pause, mute, volume, and seek from the controller app aren't supported; use this device's own controls instead once a track starts."
+msgstr "Quando ligado, este aparelho fica visível para apps controladores DLNA/UPnP na sua rede Wi-Fi. Envie uma faixa de um deles para tocá-la aqui. Pausar, silenciar, volume e avançar pelo app controlador não são compatíveis; use os controles do próprio aparelho depois que a faixa começar."
+
+msgid "[File truncated at %d KB; showing the first part only]\n\n%s"
+msgstr "[Arquivo truncado em %d KB; mostrando só o início]\n\n%s"
+
+msgid "Disabled"
+msgstr "Desativado"
+
+msgid "Player layout"
+msgstr "Layout do player"
+
+msgid "Faster"
+msgstr "Mais rápida"
+
+msgid "Add to Favorites"
+msgstr "Adicionar aos favoritos"
+
+msgid "Remove from Favorites"
+msgstr "Remover dos favoritos"
+
+msgid "Go to Album"
+msgstr "Ir para o álbum"
+
+msgid "Go to Artist"
+msgstr "Ir para o artista"
+
+msgid "Some songs could not be downloaded"
+msgstr "Não foi possível baixar algumas músicas"
+
+msgid "Request is too long"
+msgstr "A solicitação é longa demais"
+
+msgid "Server request failed: %s"
+msgstr "Falha na solicitação ao servidor: %s"
+
+msgid "network error"
+msgstr "Erro de rede"
+
+msgid "Server returned HTTP %d"
+msgstr "O servidor retornou HTTP %d"
+
+msgid "Server returned an empty response"
+msgstr "O servidor retornou uma resposta vazia"
+
+msgid "Server returned invalid JSON"
+msgstr "O servidor retornou JSON inválido"
+
+msgid "Server response is not Subsonic JSON"
+msgstr "A resposta do servidor não está no formato JSON do Subsonic"
+
+msgid "Subsonic error %d"
+msgstr "Erro do Subsonic %d"
+
+msgid "Invalid Subsonic response status"
+msgstr "Status inválido na resposta do Subsonic"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Wired"
+msgstr "Com fio"
+
+msgid "Stop updating the library?"
+msgstr "Parar a atualização da biblioteca?"
+
+msgid "Changes found so far may not be saved."
+msgstr "As alterações encontradas até agora podem não ser salvas."
+
+msgid "Updating the library. This may take a while."
+msgstr "Atualizando a biblioteca. Isso pode demorar um pouco."
