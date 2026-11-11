@@ -539,10 +539,10 @@ msgid "Unexpected library response"
 msgstr "Respuesta inesperada de la biblioteca"
 
 msgid "On"
-msgstr "Activado"
+msgstr "On"
 
 msgid "Off"
-msgstr "Desactivado"
+msgstr "Off"
 
 msgid "Screenshot saved"
 msgstr "Captura guardada"
