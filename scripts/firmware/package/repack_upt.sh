@@ -1351,29 +1351,6 @@ if [[ -z $vendor_drivers ]]; then
 fi
 python3 "$repo/scripts/firmware/package/clean_os.py" "$work/root" "$repo" --report "$output.cleanup.json"
 
-# This stock USB DAC overlay is required by the player at
-# /usr/resource/litegui/theme2/usb/usb.png. The cleanup removes stock files
-# that no tracked asset declares, so reinstall this hash-pinned tracked asset
-# afterwards and fail closed if it differs from the reviewed original.
-if [[ $board == r3ii_2025 ]]; then
-    usb_overlay_asset="$repo/assets/r3ii_2025/theme2/usb/usb.png"
-    usb_overlay_sha=1c4714d9b446aa0e9733e0cc0db1dbd9607e2d5214cb9eae5afb81ce16bac519
-else
-    usb_overlay_asset="$repo/assets/theme2/usb/usb.png"
-    usb_overlay_sha=02cf183970c58042dc62537e98afb15174dba361c93a0e574de65bf7abdf1084
-fi
-[[ -f $usb_overlay_asset && ! -L $usb_overlay_asset &&
-   $(sha256sum "$usb_overlay_asset" | awk '{print $1}') == "$usb_overlay_sha" ]] || {
-    echo "Missing or unexpected canonical USB DAC overlay asset: $usb_overlay_asset" >&2
-    exit 1
-}
-usb_overlay_dest="$work/root/usr/resource/litegui/theme2/usb/usb.png"
-install -D -m 0644 "$usb_overlay_asset" "$usb_overlay_dest"
-[[ $(sha256sum "$usb_overlay_dest" | awk '{print $1}') == "$usb_overlay_sha" ]] || {
-    echo "Installed USB DAC overlay asset failed its SHA-256 check" >&2
-    exit 1
-}
-
 # A base built by scripts/base_image/build_r1_base_v2.py records every driver and firmware file it
 # carries. Check that the weekly repack changed none of them except the edits the record lists,
 # and write the final hashes of those next to the base ones.

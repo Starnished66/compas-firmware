@@ -931,8 +931,6 @@ def remove_unused_oem_files(root: pathlib.Path) -> dict[str, str]:
 
 
 ASSET_REPO = pathlib.Path(__file__).resolve().parents[3]
-USB_OVERLAY_ASSET = "assets/v1/theme2/usb/usb.png"
-USB_OVERLAY_SHA256 = "fb7c7e98ce1efb7ef33f341c508e09c0110c1e09093cea7a960860266662c434"
 
 
 def copy_current_assets(root: pathlib.Path) -> dict[str, object]:
@@ -980,27 +978,10 @@ def clean_new_os(root: pathlib.Path) -> dict[str, object]:
     return module.prepare(root, ASSET_REPO)
 
 
-def install_required_usb_overlay(root: pathlib.Path) -> dict[str, object]:
-    """Restore the pinned 150px V1 overlay icon after tracked-asset cleanup."""
-    source = ASSET_REPO / USB_OVERLAY_ASSET
-    safe_regular(source, "canonical stock USB DAC overlay asset")
-    if digest(source) != USB_OVERLAY_SHA256:
-        raise RepackError("canonical stock USB DAC overlay differs from its pinned hash")
-    rel = "usr/resource/litegui/theme2/usb/usb.png"
-    target = root / rel
-    if target.is_symlink() or (target.exists() and not target.is_file()):
-        raise RepackError("unsafe USB DAC overlay destination")
-    target.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source, target)
-    if digest(target) != USB_OVERLAY_SHA256:
-        raise RepackError("installed USB DAC overlay failed its pinned hash check")
-    return {rel: {"sha256": USB_OVERLAY_SHA256}}
-
-
 # Panel-sized (240x320) boot artwork. The shared theme2 splash is 480x800. The V1 splash script
 # picks etc/logo.jpeg, logo1.jpeg or logo2.jpeg from a NAND theme flag; all three carry the same
 # splash. Provenance: assets/boot-artwork-source.txt (the per-board folders hold only
-# installable files, so it lives beside usb-overlay-source.txt).
+# installable files).
 V1_BOOT_ARTWORK = {
     "etc/logo.jpeg": ("JPEG", "assets/v1/etc/logo.jpeg"),
     "etc/logo1.jpeg": ("JPEG", "assets/v1/etc/logo1.jpeg"),
@@ -1324,7 +1305,6 @@ def repack(base: pathlib.Path, player: pathlib.Path, r1_candidate: pathlib.Path,
         removed_oem_files = remove_unused_oem_files(v1_root)
         current_assets = copy_current_assets(v1_root)
         clean_os = clean_new_os(v1_root)
-        current_assets.update(install_required_usb_overlay(v1_root))
         current_assets.update(install_v1_boot_artwork(v1_root))
         zram_assets = install_v1_zram_overlay(v1_root) if kernel is not None else {}
         current_assets.update(zram_assets)

@@ -10,7 +10,7 @@ Licence texts and provenance sit beside the files they cover. Summary:
 | Font Awesome, UNSCII | `assets/fonts` | `FONTAWESOME_LICENSE.txt`, `UNSCII_LICENSE.txt` |
 | Breeze icons | `assets/theme2/*/BREEZE_*`, `assets/bootloader/selector/icons` | LGPL-3.0 (`COPYING-ICONS`, `LGPL-3.0.txt`) |
 | Other icons | `assets/theme*/**/SOURCES.txt`, `LICENSE*` | per folder |
-| Stock HiBy / TempoTec artwork and fonts | `assets/theme1`, `assets/theme2` (parts), `assets/*/theme2/usb`, `default.otf`, `Thai.ttf` | derived from vendor firmware, see "Concerns" |
+| Stock HiBy / TempoTec artwork and fonts | `assets/theme1`, `assets/theme2` (parts), `default.otf`, `Thai.ttf` | derived from vendor firmware, see "Concerns" |
 | SpeexDSP, alsa-plugins speexrate | `firmware/overlay/usr/lib`, `usr/share/licenses/speex-runtime` | BSD / LGPL, texts included |
 | dosfstools, exfatprogs, ntfs-3g (`fsck.*`, `ntfsfix`) | `firmware/overlay/usr/sbin`, `usr/share/licenses/sd-fsck` | GPL-2.0 / LGPL, texts included; build recipe `scripts/build/storage/build_sd_fsck_tools.sh` |
 | BlueZ 5.87 `bluetoothd`, `obexd` | `firmware/overlay/usr/share/licenses/bluez`, `scripts/base_image/patches/bluez` | GPL-2.0-or-later / LGPL-2.1-or-later, texts included; pinned tarball plus repository patches, `scripts/build/base/bluetooth/build_base_bluez.sh` |

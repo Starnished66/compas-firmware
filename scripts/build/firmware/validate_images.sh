@@ -48,14 +48,13 @@ PY
 }
 
 # Per-board folders hold only what differs per board: the boot animation at the board's
-# resolution, etc/logo1.jpeg (also shipped as logo.jpeg and logo2.jpeg) and a board-specific
-# USB DAC overlay. Shared icons live in assets/theme1 and assets/theme2 and are never
-# duplicated per board.
+# resolution, etc/logo1.jpeg (also shipped as logo.jpeg and logo2.jpeg). Shared icons live in
+# assets/theme1 and assets/theme2 and are never duplicated per board.
 for dir in r1 r3proii r3ii_2025 v1; do
     while IFS= read -r f; do
         case $f in
             theme2/boot_animation/en/0.jpg|theme2/boot_animation/en/0.png|theme2/boot_animation/en/config.ini) ;;
-            etc/logo1.jpeg|theme2/usb/usb.png) ;;
+            etc/logo1.jpeg) ;;
             etc/logo.jpeg|etc/logo2.jpeg) [[ $dir == v1 ]] || { echo "assets/$dir/$f is only valid for v1" >&2; exit 1; } ;;
             *) echo "assets/$dir/$f is not board-specific; move it to assets/theme1 or assets/theme2" >&2; exit 1 ;;
         esac
@@ -249,7 +248,6 @@ if [[ -f $out/v1.upt ]]; then
     python3 -I "$repo/scripts/build/firmware/check_v1_kernel.py" \
         --ota-dir "$work/v1/upt/ota_v0" --root "$root" --kernel-output "$work/v1/xImage"
     grep -aq 'COMPAS_PLAYER_BOARD:tempotec_v1' "$root/usr/bin/compas_player"
-    cmp -- "$repo/assets/v1/theme2/usb/usb.png" "$root/usr/resource/litegui/theme2/usb/usb.png"
     # Panel-sized (240x320) artwork, not the shared 480x800 one.
     for logo in logo.jpeg logo1.jpeg logo2.jpeg; do
         cmp -- "$repo/assets/v1/etc/$logo" "$root/etc/$logo"
