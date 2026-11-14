@@ -4229,3 +4229,12 @@ msgstr "USB DACを有効にする"
 
 msgid "Stop USB DAC"
 msgstr "USB DACを停止"
+
+msgid "USB storage"
+msgstr "USBストレージ"
+
+msgid "USB storage mounted"
+msgstr "USBストレージをマウントしました"
+
+msgid "USB storage could not be mounted"
+msgstr "USBストレージをマウントできませんでした"

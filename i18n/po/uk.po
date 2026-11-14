@@ -4422,3 +4422,12 @@ msgstr "Увімкнути USB-ЦАП"
 
 msgid "Stop USB DAC"
 msgstr "Зупинити USB-ЦАП"
+
+msgid "USB storage"
+msgstr "USB-накопичувач"
+
+msgid "USB storage mounted"
+msgstr "USB-накопичувач підключено"
+
+msgid "USB storage could not be mounted"
+msgstr "Не вдалося підключити USB-накопичувач"

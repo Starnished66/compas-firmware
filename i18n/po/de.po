@@ -4399,3 +4399,12 @@ msgstr "USB-DAC aktivieren"
 
 msgid "Stop USB DAC"
 msgstr "USB-DAC stoppen"
+
+msgid "USB storage"
+msgstr "USB-Speicher"
+
+msgid "USB storage mounted"
+msgstr "USB-Speicher eingebunden"
+
+msgid "USB storage could not be mounted"
+msgstr "USB-Speicher konnte nicht eingebunden werden"

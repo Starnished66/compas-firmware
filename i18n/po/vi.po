@@ -4229,3 +4229,12 @@ msgstr "Bật DAC USB"
 
 msgid "Stop USB DAC"
 msgstr "Dừng DAC USB"
+
+msgid "USB storage"
+msgstr "Bộ nhớ USB"
+
+msgid "USB storage mounted"
+msgstr "Đã gắn bộ nhớ USB"
+
+msgid "USB storage could not be mounted"
+msgstr "Không thể gắn bộ nhớ USB"

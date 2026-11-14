@@ -4441,3 +4441,12 @@ msgstr "Включить USB-ЦАП"
 
 msgid "Stop USB DAC"
 msgstr "Остановить USB-ЦАП"
+
+msgid "USB storage"
+msgstr "USB-накопитель"
+
+msgid "USB storage mounted"
+msgstr "USB-накопитель подключён"
+
+msgid "USB storage could not be mounted"
+msgstr "Не удалось подключить USB-накопитель"

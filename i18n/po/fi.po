@@ -4413,3 +4413,12 @@ msgstr "Ota USB-DAC käyttöön"
 
 msgid "Stop USB DAC"
 msgstr "Pysäytä USB-DAC"
+
+msgid "USB storage"
+msgstr "USB-tallennustila"
+
+msgid "USB storage mounted"
+msgstr "USB-tallennustila liitetty"
+
+msgid "USB storage could not be mounted"
+msgstr "USB-tallennustilaa ei voitu liittää"

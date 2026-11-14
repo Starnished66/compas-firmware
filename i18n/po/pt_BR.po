@@ -4450,3 +4450,12 @@ msgstr "Ativar DAC USB"
 
 msgid "Stop USB DAC"
 msgstr "Parar DAC USB"
+
+msgid "USB storage"
+msgstr "Armazenamento USB"
+
+msgid "USB storage mounted"
+msgstr "Armazenamento USB montado"
+
+msgid "USB storage could not be mounted"
+msgstr "Não foi possível montar o armazenamento USB"

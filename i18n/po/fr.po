@@ -4451,3 +4451,12 @@ msgstr "Activer le DAC USB"
 
 msgid "Stop USB DAC"
 msgstr "Arrêter le DAC USB"
+
+msgid "USB storage"
+msgstr "Stockage USB"
+
+msgid "USB storage mounted"
+msgstr "Stockage USB monté"
+
+msgid "USB storage could not be mounted"
+msgstr "Impossible de monter le stockage USB"

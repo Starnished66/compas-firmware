@@ -4487,3 +4487,12 @@ msgstr "启用 USB DAC"
 
 msgid "Stop USB DAC"
 msgstr "停止 USB DAC"
+
+msgid "USB storage"
+msgstr "USB 存储"
+
+msgid "USB storage mounted"
+msgstr "USB 存储已挂载"
+
+msgid "USB storage could not be mounted"
+msgstr "无法挂载 USB 存储"

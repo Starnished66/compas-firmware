@@ -4295,3 +4295,12 @@ msgstr ""
 
 msgid "Stop USB DAC"
 msgstr ""
+
+msgid "USB storage"
+msgstr ""
+
+msgid "USB storage mounted"
+msgstr ""
+
+msgid "USB storage could not be mounted"
+msgstr ""

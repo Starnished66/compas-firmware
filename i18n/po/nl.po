@@ -4411,3 +4411,12 @@ msgstr "USB-DAC inschakelen"
 
 msgid "Stop USB DAC"
 msgstr "USB-DAC stoppen"
+
+msgid "USB storage"
+msgstr "USB-opslag"
+
+msgid "USB storage mounted"
+msgstr "USB-opslag gekoppeld"
+
+msgid "USB storage could not be mounted"
+msgstr "USB-opslag kon niet worden gekoppeld"
