@@ -224,13 +224,13 @@ msgstr "Artistas"
 msgid "Albums"
 msgstr "Álbumes"
 
-msgid "Album Artist"
+msgid "Album artist"
 msgstr "Artista del álbum"
 
 msgid "Genres"
 msgstr "Géneros"
 
-msgid "All Songs"
+msgid "All songs"
 msgstr "Todas las canciones"
 
 msgid "Playlists"
@@ -251,7 +251,7 @@ msgstr "Wi-Fi"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-msgid "Sleep Timer"
+msgid "Sleep timer"
 msgstr "Temporizador de sueño"
 
 msgid "Crossfade"
@@ -266,10 +266,10 @@ msgstr "DLNA"
 msgid "Gapless"
 msgstr "Gapless"
 
-msgid "Remote Control"
+msgid "Remote control"
 msgstr "Control remoto"
 
-msgid "Car Mode"
+msgid "Car mode"
 msgstr "Modo auto"
 
 msgid "Plugins"
@@ -738,7 +738,7 @@ msgid "Disconnect USB storage from the computer before changing files."
 msgstr "Desconecta el almacenamiento USB del ordenador antes de modificar archivos."
 
 #
-msgid "File Manager"
+msgid "File manager"
 msgstr "Administrador de archivos"
 
 #, c-format
@@ -879,7 +879,7 @@ msgstr "Lista creada"
 msgid "Failed to create playlist"
 msgstr "No se pudo crear la lista"
 
-msgid "Playlist Name"
+msgid "Playlist name"
 msgstr "Nombre de la lista"
 
 msgid "Song already added"
@@ -931,19 +931,19 @@ msgstr "Buscando archivos reproducibles"
 msgid "File path is too long"
 msgstr "La ruta del archivo es demasiado larga"
 
-msgid "Play All (Sequential)"
+msgid "Play all (sequential)"
 msgstr "Reproducir todo (en orden)"
 
-msgid "Play All (Shuffle)"
+msgid "Play all (shuffle)"
 msgstr "Reproducir todo (aleatorio)"
 
-msgid "Add to Queue"
+msgid "Add to queue"
 msgstr "Agregar a la cola"
 
-msgid "Add to Playlist"
+msgid "Add to playlist"
 msgstr "Agregar a lista"
 
-msgid "+ New Playlist"
+msgid "+ New playlist"
 msgstr "+ Nueva lista"
 
 msgid "Audio"
@@ -964,7 +964,7 @@ msgid_plural "%lld tracks"
 msgstr[0] "%lld pista"
 msgstr[1] "%lld pistas"
 
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "Agregadas recientemente"
 
 msgid "Playlist changed. Select a song again."
@@ -1012,7 +1012,7 @@ msgstr "Disco %d"
 msgid "Next  •  %d–%d of %d"
 msgstr "Siguiente  •  %d–%d de %d"
 
-msgid "Most Played"
+msgid "Most played"
 msgstr "Más reproducidas"
 
 msgid "Library changed. Open the album again."
@@ -1072,7 +1072,7 @@ msgstr "No se puede renombrar: nombre inválido o el archivo ya existe"
 msgid "Playlist renamed"
 msgstr "Lista renombrada"
 
-msgid "Rename Playlist"
+msgid "Rename playlist"
 msgstr "Renombrar lista"
 
 msgid "Delete playlist?"
@@ -1081,7 +1081,7 @@ msgstr "¿Eliminar lista?"
 msgid "The playlist file will be deleted. Music files are kept."
 msgstr "Se eliminará el archivo de la lista. Los archivos de música se conservan."
 
-msgid "Delete Playlist"
+msgid "Delete playlist"
 msgstr "Eliminar lista"
 
 msgid "System playlists"
@@ -1356,17 +1356,17 @@ msgstr "No se pudo reiniciar en el selector de arranque"
 msgid "An update is in progress. Please wait."
 msgstr "Hay una actualización en curso. Espera, por favor."
 
-msgid "Tap Power off again to confirm"
+msgid "Tap power off again to confirm"
 msgstr "Toca Apagar otra vez para confirmar"
 
-msgid "Tap Restart again to confirm"
+msgid "Tap restart again to confirm"
 msgstr "Toca Reiniciar otra vez para confirmar"
 
 #, c-format
 msgid "Sleep timer: %d min remaining"
 msgstr "Temporizador: faltan %d min"
 
-msgid "Sleep timer: Off"
+msgid "Sleep timer: off"
 msgstr "Temporizador: apagado"
 
 msgid "Music"
@@ -1484,13 +1484,13 @@ msgstr "Conectando a"
 msgid "Couldn't connect to Wi-Fi network"
 msgstr "No se pudo conectar a la red Wi-Fi"
 
-msgid "Wi-Fi Password"
+msgid "Wi-Fi password"
 msgstr "Contraseña de Wi-Fi"
 
-msgid "Secured · Connected"
+msgid "Secured · connected"
 msgstr "Protegida · Conectada"
 
-msgid "Open · Connected"
+msgid "Open · connected"
 msgstr "Abierta · Conectada"
 
 msgid "Saved network"
@@ -1529,7 +1529,7 @@ msgstr "El SSID debe tener de 1 a 32 bytes"
 msgid "Wi-Fi is still starting"
 msgstr "El Wi-Fi aún se está iniciando"
 
-msgid "Network Name (SSID)"
+msgid "Network name (SSID)"
 msgstr "Nombre de red (SSID)"
 
 msgid "Connect"
@@ -1564,7 +1564,7 @@ msgid "SSID: %s"
 msgstr "SSID: %s"
 
 #, c-format
-msgid "IP Address: %s"
+msgid "IP address: %s"
 msgstr "Dirección IP: %s"
 
 #, c-format
@@ -1572,14 +1572,14 @@ msgid "Gateway: %s"
 msgstr "Puerta de enlace: %s"
 
 #, c-format
-msgid "MAC Address: %s"
+msgid "MAC address: %s"
 msgstr "Dirección MAC: %s"
 
 #, c-format
 msgid "Signal: %s"
 msgstr "Señal: %s"
 
-msgid "Wi-Fi Info"
+msgid "Wi-Fi info"
 msgstr "Info de Wi-Fi"
 
 msgid "Primary DNS"
@@ -1591,13 +1591,13 @@ msgstr "DNS secundario"
 msgid "Not set"
 msgstr "Sin definir"
 
-msgid "DNS Settings"
+msgid "DNS settings"
 msgstr "Ajustes de DNS"
 
-msgid "Manual SSID Entry"
+msgid "Manual SSID entry"
 msgstr "SSID manual"
 
-msgid "Memorized Networks"
+msgid "Memorized networks"
 msgstr "Redes guardadas"
 
 msgid "No memorized networks"
@@ -1615,7 +1615,7 @@ msgstr "Se están revisando los datos de la red guardada."
 msgid "Connected"
 msgstr "Conectado"
 
-msgid "Available Networks"
+msgid "Available networks"
 msgstr "Redes disponibles"
 
 msgid "Scanning for networks"
@@ -1672,10 +1672,10 @@ msgstr "Esperando transmisión Bluetooth…"
 msgid "Auto"
 msgstr "Auto"
 
-msgid "LDAC Quality"
+msgid "LDAC quality"
 msgstr "LDAC calidad"
 
-msgid "LDAC Standard"
+msgid "LDAC standard"
 msgstr "LDAC estándar"
 
 msgid "Could not save Bluetooth codec"
@@ -1699,34 +1699,34 @@ msgstr "Aún se aplica la opción anterior"
 msgid "Headset may disconnect, manual reconnection might be required"
 msgstr "Los audífonos pueden desconectarse y quizá debas reconectarlos manualmente"
 
-msgid "Sample Rate"
+msgid "Sample rate"
 msgstr "Frecuencia de muestreo"
 
-msgid "Bluetooth Volume Sync"
+msgid "Bluetooth volume sync"
 msgstr "Sincronizar volumen Bluetooth"
 
 msgid "Codec"
 msgstr "Códec"
 
-msgid "Speex Resampling"
+msgid "Speex resampling"
 msgstr "Remuestreo Speex"
 
-msgid "Hide Unnamed Devices"
+msgid "Hide unnamed devices"
 msgstr "Ocultar sin nombre"
 
 msgid "Advanced"
 msgstr "Avanzado"
 
-msgid "Resume and Play"
+msgid "Resume and play"
 msgstr "Reanudar y reproducir"
 
-msgid "Resume, but Paused"
+msgid "Resume, but paused"
 msgstr "Reanudar en pausa"
 
 msgid "Applies next time you launch the app"
 msgstr "Se aplica la próxima vez que abras la app"
 
-msgid "Resume Last Track"
+msgid "Resume last track"
 msgstr "Reanudar última pista"
 
 msgid "Small"
@@ -1735,13 +1735,13 @@ msgstr "Pequeño"
 msgid "Could not apply font size"
 msgstr "No se pudo aplicar el tamaño de fuente"
 
-msgid "Font Size"
+msgid "Font size"
 msgstr "Tamaño de fuente"
 
-msgid "Per Track"
+msgid "Per track"
 msgstr "Por pista"
 
-msgid "Per Album"
+msgid "Per album"
 msgstr "Por álbum"
 
 msgid "ReplayGain"
@@ -1768,9 +1768,6 @@ msgstr "Modo USB"
 #, c-format
 msgid "Failed to switch to %s"
 msgstr "No se pudo cambiar a %s"
-
-msgid "USB Mode"
-msgstr "Modo USB"
 
 msgid "Failed to update USB charging"
 msgstr "No se pudo actualizar la carga por USB"
@@ -1816,7 +1813,7 @@ msgstr "Bluetooth apagado"
 msgid "Turn on Bluetooth to see paired and nearby devices."
 msgstr "Enciende Bluetooth para ver los dispositivos vinculados y cercanos."
 
-msgid "Paired Devices"
+msgid "Paired devices"
 msgstr "Dispositivos vinculados"
 
 msgid "No paired devices"
@@ -1825,7 +1822,7 @@ msgstr "No hay dispositivos vinculados"
 msgid "Previously connected accessories will appear here."
 msgstr "Los accesorios conectados antes aparecerán aquí."
 
-msgid "Available Devices"
+msgid "Available devices"
 msgstr "Dispositivos disponibles"
 
 msgid "No nearby devices"
@@ -1859,7 +1856,7 @@ msgstr "No se pudo activar AirPlay"
 msgid "AirPlay stopped unexpectedly"
 msgstr "AirPlay se detuvo inesperadamente"
 
-msgid "DLNA Renderer"
+msgid "DLNA renderer"
 msgstr "Reproductor DLNA"
 
 msgid "Service is busy"
@@ -1889,7 +1886,7 @@ msgstr "Bluetooth: esperando el registro del servicio"
 msgid "Connect using either available route:"
 msgstr "Conéctate por cualquiera de estas vías:"
 
-msgid "Bluetooth: Compas Remote Control"
+msgid "Bluetooth: Compas remote control"
 msgstr "Bluetooth: Compas Remote Control"
 
 msgid "Could not generate a new PIN"
@@ -1988,7 +1985,7 @@ msgstr "Refrescando plugins..."
 msgid "Plugin Store"
 msgstr "Tienda de plugins"
 
-msgid "Refresh Plugins"
+msgid "Refresh plugins"
 msgstr "Refrescar plugins"
 
 msgid "Plugin Manager"
@@ -2166,13 +2163,13 @@ msgstr "Guardando lista…"
 msgid "Cannot save playlist"
 msgstr "No se puede guardar la lista"
 
-msgid "Save Queue as Playlist"
+msgid "Save queue as playlist"
 msgstr "Guardar cola como lista"
 
-msgid "Clear Queue"
+msgid "Clear queue"
 msgstr "Vaciar cola"
 
-msgid "Save as Playlist"
+msgid "Save as playlist"
 msgstr "Guardar como lista"
 
 msgid "Playlist saved"
@@ -2181,7 +2178,7 @@ msgstr "Lista guardada"
 msgid "Cannot save: invalid or streaming entries"
 msgstr "No se puede guardar: hay entradas inválidas o de streaming"
 
-msgid "Play Next"
+msgid "Play next"
 msgstr "Reproducir a continuación"
 
 msgid "Custom"
@@ -2191,13 +2188,6 @@ msgstr "Personalizado"
 msgid "%d min remaining"
 msgstr "faltan %d min"
 
-msgid "Crossfeed: Off"
-msgstr "Crossfeed: desactivado"
-
-#, c-format
-msgid "Crossfeed: %d%%"
-msgstr "Crossfeed: %d%%"
-
 #, c-format
 msgid "%+.2f dB"
 msgstr "%+.2f dB"
@@ -2206,7 +2196,7 @@ msgstr "%+.2f dB"
 msgid "%.0f Hz"
 msgstr "%.0f Hz"
 
-msgid "Pre-Amp (dB, -12 to 12)"
+msgid "Pre-amp (dB, -12 to 12)"
 msgstr "Preamplificador (dB, -12 a 12)"
 
 msgid "Crossfeed (0 to 100)"
@@ -2240,7 +2230,7 @@ msgstr "Preparando actualización"
 msgid "Checking the file on the SD card"
 msgstr "Revisando el archivo en la tarjeta SD"
 
-msgid "Update & Reboot"
+msgid "Update & reboot"
 msgstr "Actualizar y reiniciar"
 
 #, c-format
@@ -2291,13 +2281,13 @@ msgstr "Buscar actualización en línea"
 msgid "Install from SD card"
 msgstr "Instalar desde tarjeta SD"
 
-msgid "Update the Player only, retaining current drivers, kernel and bootloader."
+msgid "Update the player only, retaining current drivers, kernel and bootloader."
 msgstr "Actualiza solo el reproductor, conservando los controladores, el kernel y el bootloader actuales."
 
-msgid "Download & Install"
+msgid "Download & install"
 msgstr "Descargar e instalar"
 
-msgid "Install & Restart"
+msgid "Install & restart"
 msgstr "Instalar y reiniciar"
 
 msgid "Downloading player update"
@@ -2361,13 +2351,13 @@ msgstr "No se pudo iniciar la descarga"
 msgid "Downloading update"
 msgstr "Descargando actualización"
 
-msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
+msgid "Update the entire CompásOS. Flashing firmware contains bootloader, player, kernel and drivers."
 msgstr "Actualiza todo CompásOS. El firmware incluye bootloader, reproductor, kernel y controladores."
 
 msgid "Download"
 msgstr "Descargar"
 
-msgid "Install & Reboot"
+msgid "Install & reboot"
 msgstr "Instalar y reiniciar"
 
 msgid "Preparing and verifying recovery mode"
@@ -2463,7 +2453,7 @@ msgstr "Guía: docs/development/CREATING.md"
 msgid "Write a Lua plugin on your computer. Copy its .lua file to the .plugins folder on your SD card."
 msgstr "Escribe un plugin en Lua en tu computadora. Copia su archivo .lua a la carpeta .plugins de tu tarjeta SD."
 
-msgid "Open More > Plugins > Refresh Plugins. Scan for a working example and the full API guide."
+msgid "Open More > Plugins > Refresh plugins. Scan for a working example and the full API guide."
 msgstr "Abre Más > Plugins > Refrescar plugins. Escanea para ver un ejemplo funcional y la guía completa de la API."
 
 msgid "Edit a .theme text file on your computer. Copy it to the Themes folder on your SD card, then select it in More > Themes."
@@ -2484,10 +2474,10 @@ msgstr "Opciones de desarrollador"
 msgid "About"
 msgstr "Acerca de"
 
-msgid "Screenshots (Power + Previous)"
+msgid "Screenshots (power + previous)"
 msgstr "Capturas (Encendido + Anterior)"
 
-msgid "Screenshots (Power + Vol Down)"
+msgid "Screenshots (power + vol down)"
 msgstr "Capturas (Encendido + Vol. -)"
 
 msgid "Enable debug logging"
@@ -2505,7 +2495,7 @@ msgstr "De la carátula del álbum"
 msgid "From album art (no cover, using custom)"
 msgstr "De la carátula (sin carátula, se usa el personalizado)"
 
-msgid "Accent Color"
+msgid "Accent color"
 msgstr "Color de acento"
 
 msgid "Accent Options"
@@ -2532,7 +2522,7 @@ msgstr "Usa el color de acento para los iconos junto a los títulos de pantalla.
 msgid "Presets"
 msgstr "Predefinidos"
 
-msgid "Default (Built-in)"
+msgid "Default (built-in)"
 msgstr "Predeterminada (integrada)"
 
 msgid "No .ttf fonts found in /Fonts"
@@ -2559,31 +2549,31 @@ msgstr "Las fuentes personalizadas solo afectan al texto latino."
 msgid "Place .ttf fonts in SD /Fonts folder."
 msgstr "Coloca fuentes .ttf en la carpeta /Fonts de la tarjeta SD."
 
-msgid "Screen Timeout"
+msgid "Screen timeout"
 msgstr "Apagado de pantalla"
 
 msgid "Turn off screen automatically"
 msgstr "Apagar la pantalla automáticamente"
 
-msgid "Screen Dimming"
+msgid "Screen dimming"
 msgstr "Atenuar pantalla"
 
 msgid "Dim screen before timeout"
 msgstr "Atenuar antes de apagar la pantalla"
 
-msgid "Startup Volume"
+msgid "Startup volume"
 msgstr "Volumen de inicio"
 
 msgid "Launch at a fixed volume"
 msgstr "Iniciar con un volumen fijo"
 
-msgid "Max Volume"
+msgid "Max volume"
 msgstr "Volumen máximo"
 
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Limita el volumen del reproductor, incluidos los botones, los controles remotos y los plugins."
 
-msgid "Car Mode Volume"
+msgid "Car mode volume"
 msgstr "Volumen del modo auto"
 
 msgid "Auto-resume"
@@ -2615,13 +2605,13 @@ msgstr "Tiempo restante: %d:%02d:%02d"
 msgid "Time remaining: %d:%02d"
 msgstr "Tiempo restante: %d:%02d"
 
-msgid "Enable Sleep Timer"
+msgid "Enable sleep timer"
 msgstr "Activar temporizador de sueño"
 
-msgid "Show Time Remaining"
+msgid "Show time remaining"
 msgstr "Mostrar tiempo restante"
 
-msgid "Idle Shutdown"
+msgid "Idle shutdown"
 msgstr "Apagado por inactividad"
 
 msgid "Automatically go idle"
@@ -2630,7 +2620,7 @@ msgstr "Pasar a inactivo automáticamente"
 msgid "Choose what happens when idle:"
 msgstr "Elige qué ocurre al estar inactivo:"
 
-msgid "Power Off"
+msgid "Power off"
 msgstr "Apagar"
 
 msgid "Suspend to RAM"
@@ -2676,13 +2666,13 @@ msgstr "No se pudo aplicar la zona horaria"
 msgid "%s (current)"
 msgstr "%s (actual)"
 
-msgid "Time Zone"
+msgid "Time zone"
 msgstr "Zona horaria"
 
 msgid "Sound Effects"
 msgstr "Efectos de sonido"
 
-msgid "Download Profiles"
+msgid "Download profiles"
 msgstr "Descargar perfiles"
 
 msgid "Buttons & Remote"
@@ -2700,13 +2690,13 @@ msgstr "Crossfeed"
 msgid "Power"
 msgstr "Energía"
 
-msgid "Play/Pause"
+msgid "Play/pause"
 msgstr "Reproducir/Pausa"
 
-msgid "Next Track"
+msgid "Next track"
 msgstr "Pista siguiente"
 
-msgid "Previous Track"
+msgid "Previous track"
 msgstr "Pista anterior"
 
 msgid "Clockwise"
@@ -2715,10 +2705,10 @@ msgstr "Sentido horario"
 msgid "Counterclockwise"
 msgstr "Sentido antihorario"
 
-msgid "Volume Up"
+msgid "Volume up"
 msgstr "Subir volumen"
 
-msgid "Volume Down"
+msgid "Volume down"
 msgstr "Bajar volumen"
 
 msgid "Button"
@@ -2727,19 +2717,19 @@ msgstr "Botón"
 msgid "Default (native behavior)"
 msgstr "Predeterminado (comportamiento nativo)"
 
-msgid "Seek Forward"
+msgid "Seek forward"
 msgstr "Avanzar en la pista"
 
-msgid "Seek Backward"
+msgid "Seek backward"
 msgstr "Retroceder en la pista"
 
-msgid "Toggle Screen"
+msgid "Toggle screen"
 msgstr "Alternar pantalla"
 
-msgid "Power Menu"
+msgid "Power menu"
 msgstr "Menú de energía"
 
-msgid "Do Nothing"
+msgid "Do nothing"
 msgstr "No hacer nada"
 
 msgid "Single press"
@@ -2763,13 +2753,13 @@ msgstr "Prolongada"
 msgid "Default"
 msgstr "Predeterminado"
 
-msgid "Reset All"
+msgid "Reset all"
 msgstr "Restablecer todo"
 
-msgid "Button Mapping"
+msgid "Button mapping"
 msgstr "Asignación de botones"
 
-msgid "Keep a button assigned to Toggle Screen or Power Menu"
+msgid "Keep a button assigned to toggle screen or power menu"
 msgstr "Mantén un botón asignado a Alternar pantalla o Menú de energía"
 
 msgid "Reset all button mappings?"
@@ -2778,10 +2768,7 @@ msgstr "¿Restablecer todas las asignaciones de botones?"
 msgid "Reset"
 msgstr "Restablecer"
 
-msgid "Volume Lock (Screen Off)"
-msgstr "Bloqueo de volumen (pantalla apagada)"
-
-msgid "Update Music Database to enable this album order"
+msgid "Update music database to enable this album order"
 msgstr "Actualiza la base de datos de música para activar este orden de álbumes"
 
 msgid "Sorting"
@@ -2793,25 +2780,25 @@ msgstr "Archivos (las carpetas van primero)"
 msgid "Name (A–Z)"
 msgstr "Nombre (A–Z)"
 
-msgid "Newest Modified"
+msgid "Newest modified"
 msgstr "Modificados recientemente"
 
-msgid "Release Year (oldest first)"
+msgid "Release year (oldest first)"
 msgstr "Año de lanzamiento (más antiguo primero)"
 
 msgid "Files use modification dates. Albums use the newest track added; missing release years sort last. Update Music Database once to read years from existing files."
 msgstr "Los archivos usan la fecha de modificación. Los álbumes usan la pista agregada más reciente; los que no tienen año van al final. Actualiza la base de datos de música una vez para leer los años de los archivos existentes."
 
-msgid "Update Music Database"
+msgid "Update music database"
 msgstr "Actualizar base de datos de música"
 
-msgid "Refresh All Metadata"
+msgid "Refresh all metadata"
 msgstr "Refrescar todos los metadatos"
 
-msgid "Refresh All Covers"
+msgid "Refresh all covers"
 msgstr "Refrescar todas las carátulas"
 
-msgid "Animation Speed"
+msgid "Animation speed"
 msgstr "Velocidad de animación"
 
 msgid "T9"
@@ -2835,7 +2822,7 @@ msgstr "Orden de plugins"
 msgid "Enabled"
 msgstr "Activado"
 
-msgid "Volume Slider"
+msgid "Volume slider"
 msgstr "Control deslizante de volumen"
 
 msgid "Reorder Items"
@@ -2859,22 +2846,22 @@ msgstr "Inactivo después de"
 msgid "Clock"
 msgstr "Reloj"
 
-msgid "Wired Headphones"
+msgid "Wired headphones"
 msgstr "Auriculares con cable"
 
-msgid "Bluetooth Audio (A2DP)"
+msgid "Bluetooth audio (A2DP)"
 msgstr "Audio Bluetooth (A2DP)"
 
-msgid "USB Audio"
+msgid "USB audio"
 msgstr "Audio USB"
 
-msgid "Playback Status"
+msgid "Playback status"
 msgstr "Estado de reproducción"
 
-msgid "Bluetooth Codec"
+msgid "Bluetooth codec"
 msgstr "Códec Bluetooth"
 
-msgid "Battery Icon"
+msgid "Battery icon"
 msgstr "Icono de batería"
 
 msgid "Left"
@@ -2886,13 +2873,13 @@ msgstr "Centro"
 msgid "Right"
 msgstr "Derecha"
 
-msgid "Clock Position"
+msgid "Clock position"
 msgstr "Posición del reloj"
 
-msgid "Battery Percentage"
+msgid "Battery percentage"
 msgstr "Porcentaje de batería"
 
-msgid "Top Bar"
+msgid "Top bar"
 msgstr "Barra superior"
 
 msgid "Themes"
@@ -2910,10 +2897,10 @@ msgstr "Diseño"
 msgid "Lyrics"
 msgstr "Letras"
 
-msgid "Swipe Up for Home"
+msgid "Swipe up for home"
 msgstr "Deslizar arriba para ir a Inicio"
 
-msgid "Upside Down Screen"
+msgid "Upside down screen"
 msgstr "Pantalla invertida"
 
 msgid "Gestures & Orientation"
@@ -2922,10 +2909,10 @@ msgstr "Gestos y orientación"
 msgid "Display"
 msgstr "Pantalla"
 
-msgid "Charge Limit (85%)"
+msgid "Charge limit (85%)"
 msgstr "Límite de carga (85%)"
 
-msgid "Safe Charging (500mA)"
+msgid "Safe charging (500mA)"
 msgstr "Carga segura (500 mA)"
 
 msgid "LED charge indicator"
@@ -2941,19 +2928,19 @@ msgstr ""
 msgid "Charging"
 msgstr "Carga"
 
-msgid "Additional Tools"
+msgid "Additional tools"
 msgstr "Herramientas adicionales"
 
-msgid "Turn off Automatic to set the clock"
+msgid "Turn off automatic to set the clock"
 msgstr "Desactiva Automático para ajustar el reloj"
 
 msgid "Automatic"
 msgstr "Automático"
 
-msgid "Set Time"
+msgid "Set time"
 msgstr "Ajustar hora"
 
-msgid "24-Hour Clock"
+msgid "24-hour clock"
 msgstr "Reloj de 24 horas"
 
 msgid "Save"
@@ -2962,19 +2949,19 @@ msgstr "Guardar"
 msgid "Hostname"
 msgstr "Nombre del equipo"
 
-msgid "Factory Reset"
+msgid "Factory reset"
 msgstr "Restablecer de fábrica"
 
 msgid "Maintenance"
 msgstr "Mantenimiento"
 
-msgid "Firmware Update"
+msgid "Firmware update"
 msgstr "Actualizar firmware"
 
-msgid "Player Update"
+msgid "Player update"
 msgstr "Actualización del reproductor"
 
-msgid "Plugins & Layouts"
+msgid "Plugins & layouts"
 msgstr "Plugins y diseños"
 
 msgid "Applying language, this may take a while"
@@ -3028,7 +3015,7 @@ msgstr "¿Restablecer todos los ajustes y reiniciar?"
 msgid "Restart now to apply the new hostname?"
 msgstr "¿Reiniciar ahora para aplicar el nuevo nombre del equipo?"
 
-msgid "Restart Now"
+msgid "Restart now"
 msgstr "Reiniciar ahora"
 
 msgid "Hostname can only use letters, numbers, and hyphens"
@@ -3061,10 +3048,10 @@ msgstr "No se pudo renombrar el perfil"
 msgid "Profile renamed"
 msgstr "Perfil renombrado"
 
-msgid "Rename Profile"
+msgid "Rename profile"
 msgstr "Renombrar perfil"
 
-msgid "Replace Profile"
+msgid "Replace profile"
 msgstr "Reemplazar perfil"
 
 msgid "Profiles"
@@ -3073,28 +3060,25 @@ msgstr "Perfiles"
 msgid "No saved profiles"
 msgstr "No hay perfiles guardados"
 
-msgid "Download profiles"
-msgstr "Descargar perfiles"
-
 msgid "Delete this profile?"
 msgstr "¿Eliminar este perfil?"
 
-msgid "Save Profile As"
+msgid "Save profile as"
 msgstr "Guardar perfil como"
 
-msgid "Profile Name"
+msgid "Profile name"
 msgstr "Nombre del perfil"
 
-msgid "Save Profile"
+msgid "Save profile"
 msgstr "Guardar perfil"
 
 msgid "Save as a new profile, or replace one that already exists?"
 msgstr "¿Guardar como perfil nuevo o reemplazar uno existente?"
 
-msgid "Replace Existing"
+msgid "Replace existing"
 msgstr "Reemplazar existente"
 
-msgid "New Profile"
+msgid "New profile"
 msgstr "Perfil nuevo"
 
 msgid "Band options"
@@ -3103,10 +3087,7 @@ msgstr "Opciones de banda"
 msgid "Filter type"
 msgstr "Tipo de filtro"
 
-msgid ""
-"Peaking\n"
-"Low Shelf\n"
-"High Shelf"
+msgid "Peaking\nLow shelf\nHigh shelf"
 msgstr ""
 "Pico\n"
 "Estante bajo\n"
@@ -3137,7 +3118,7 @@ msgstr "El crossfeed mezcla una señal filtrada del canal opuesto y funciona de 
 msgid "Frequency"
 msgstr "Frecuencia"
 
-msgid "Pre-Amp"
+msgid "Pre-amp"
 msgstr "Preamplificador"
 
 msgid "Reset to defaults"
@@ -3176,9 +3157,6 @@ msgstr "Cargando catálogo de plugins…"
 msgid "No network detected"
 msgstr "No se detectó ninguna red"
 
-msgid "Time zone"
-msgstr "Zona horaria"
-
 msgid "Quick setup"
 msgstr "Configuración rápida"
 
@@ -3194,7 +3172,7 @@ msgstr "Te damos la bienvenida a Compás"
 msgid "Get started"
 msgstr "Comenzar"
 
-msgid "Quick Setup Complete"
+msgid "Quick setup complete"
 msgstr "Configuración rápida completa"
 
 msgid "Continue"
@@ -3334,7 +3312,7 @@ msgstr "Alto"
 msgid "Stream quality: %s"
 msgstr "Calidad de streaming: %s"
 
-msgid "Stream Quality"
+msgid "Stream quality"
 msgstr "Calidad de streaming"
 
 msgid "Applies to new streaming queues"
@@ -3362,7 +3340,7 @@ msgstr "Nombre de carpeta de descarga inválido"
 msgid "Download subfolder"
 msgstr "Subcarpeta de descarga"
 
-msgid "Download Settings"
+msgid "Download settings"
 msgstr "Ajustes de descarga"
 
 msgid "Subfolder: SD root"
@@ -3374,10 +3352,10 @@ msgstr "La subcarpeta es relativa a la raíz de la SD (ejemplo: Music/Offline); 
 msgid "Folder layout for downloaded albums"
 msgstr "Estructura de carpetas de los álbumes descargados"
 
-msgid "Album Artist / Album"
+msgid "Album artist / album"
 msgstr "Artista del álbum / Álbum"
 
-msgid "Album Artist - Album"
+msgid "Album artist - album"
 msgstr "Artista del álbum - Álbum"
 
 msgid "Failed to load from server"
@@ -3429,10 +3407,10 @@ msgstr "No se pudo iniciar la conexión"
 msgid "No saved servers"
 msgstr "No hay servidores guardados"
 
-msgid "Go back and choose New Connection to add one."
+msgid "Go back and choose New connection to add one."
 msgstr "Vuelve y elige Nueva conexión para agregar uno."
 
-msgid "Saved Servers"
+msgid "Saved servers"
 msgstr "Servidores guardados"
 
 #, c-format
@@ -3465,11 +3443,8 @@ msgstr "Contraseña: sin definir"
 msgid "Connect & Browse"
 msgstr "Conectar y explorar"
 
-msgid "New Connection"
+msgid "New connection"
 msgstr "Nueva conexión"
-
-msgid "Download settings"
-msgstr "Ajustes de descarga"
 
 msgid "Songs"
 msgstr "Canciones"
@@ -3572,17 +3547,11 @@ msgstr "Se está cargando tu biblioteca."
 msgid "Leave this view and try again."
 msgstr "Sal de esta vista e inténtalo de nuevo."
 
-msgid "Power off"
-msgstr "Apagar"
-
 msgid "Restart"
 msgstr "Reiniciar"
 
 msgid "Screen off"
 msgstr "Apagar pantalla"
-
-msgid "Sleep timer"
-msgstr "Temporizador"
 
 msgid "Power controls"
 msgstr "Controles de energía"
@@ -3650,17 +3619,11 @@ msgstr "Brillo"
 msgid "Connections"
 msgstr "Conexiones"
 
-msgid "Play Mode"
+msgid "Play mode"
 msgstr "Modo de reproducción"
 
 msgid "Sequential"
 msgstr "Secuencial"
-
-msgid "Repeat All"
-msgstr "Repetir todo"
-
-msgid "Repeat One"
-msgstr "Repetir una"
 
 msgid "Shuffle with repeat"
 msgstr "Aleatorio con repetición"
@@ -3669,7 +3632,7 @@ msgid "Shuffle once"
 msgstr "Aleatorio una vez"
 
 #. External apps (More menu and launcher)
-msgid "External Apps"
+msgid "External apps"
 msgstr "Apps externas"
 
 msgid "Apps run on the player only."
@@ -3723,13 +3686,13 @@ msgstr "Mixto"
 msgid "Hi-Res"
 msgstr "Hi-Res"
 
-msgid "Join albums without Album Artist"
+msgid "Join albums without album artist"
 msgstr "Unir álbumes sin artista del álbum"
 
 msgid "Could not open this image"
 msgstr "No se pudo abrir esta imagen"
 
-msgid "Album Artist (A–Z)"
+msgid "Album artist (A–Z)"
 msgstr "Artista del álbum (A–Z)"
 
 msgid "Buttons locked"
@@ -3774,7 +3737,7 @@ msgstr "Menú de música"
 msgid "Cover Flow"
 msgstr "Cover Flow"
 
-msgid "NOS Mode"
+msgid "NOS mode"
 msgstr "Modo NOS"
 
 msgid "Out of memory"
@@ -3784,10 +3747,10 @@ msgstr "Memoria agotada"
 msgid "Select all (%d)"
 msgstr "Seleccionar todo (%d)"
 
-msgid "Power + Volume Up to unlock"
+msgid "Power + volume up to unlock"
 msgstr "Pulsa Encendido + Subir volumen para desbloquear"
 
-msgid "Hold Power + turn volume up to unlock"
+msgid "Hold power + turn volume up to unlock"
 msgstr "Mantén Encendido y sube el volumen para desbloquear"
 
 msgid "Player image validation failed (ELF mismatch)."
@@ -3850,7 +3813,7 @@ msgstr "Confirma que se muestra el mismo código en el otro dispositivo."
 msgid "Type this code on the other device."
 msgstr "Escribe este código en el otro dispositivo."
 
-msgid "DSD Gain"
+msgid "DSD gain"
 msgstr "Ganancia DSD"
 
 #, c-format
@@ -3860,7 +3823,7 @@ msgstr "+%d dB"
 msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
 msgstr "Sube el DSD nativo en las salidas de auriculares de este reproductor. No puede superar el paso de volumen más alto."
 
-msgid "Seek Step"
+msgid "Seek step"
 msgstr "Paso de búsqueda"
 
 #, c-format
@@ -3889,7 +3852,7 @@ msgid "Random Songs"
 msgstr "Canciones aleatorias"
 
 msgctxt "albums"
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "Agregados recientemente"
 
 msgctxt "albums"
@@ -3897,10 +3860,10 @@ msgid "Recently Played"
 msgstr "Reproducidos recientemente"
 
 msgctxt "albums"
-msgid "Most Played"
+msgid "Most played"
 msgstr "Más reproducidos"
 
-msgid "Restore at Startup"
+msgid "Restore at startup"
 msgstr "Restaurar al iniciar"
 
 msgid "Restore Wi-Fi at Startup"
@@ -3912,25 +3875,25 @@ msgstr "Restaurar Bluetooth al iniciar"
 msgid "Name (Z–A)"
 msgstr "Nombre (Z–A)"
 
-msgid "Oldest Modified"
+msgid "Oldest modified"
 msgstr "Modificados hace más tiempo"
 
-msgid "Oldest Added"
+msgid "Oldest added"
 msgstr "Agregadas hace más tiempo"
 
-msgid "Release Year (newest first)"
+msgid "Release year (newest first)"
 msgstr "Año de lanzamiento (más reciente primero)"
 
-msgid "Album Artist (Z–A)"
+msgid "Album artist (Z–A)"
 msgstr "Artista del álbum (Z–A)"
 
-msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
-msgstr "Los archivos usan la fecha de modificación. Los álbumes usan la pista agregada más recientemente; Año de lanzamiento deja los años ausentes al final. Actualiza la base de datos musical una vez para leer los años de los archivos existentes."
+msgid "Files sort by modification date; albums by newest track added. Release year keeps unknown years last. Run Update music database to load years."
+msgstr "Los archivos se ordenan por fecha de modificación; los álbumes, por la última pista agregada. Los años desconocidos quedan al final. Actualiza la base de datos musical para cargar los años."
 
 msgid "Now Playing"
 msgstr "Reproduciendo ahora"
 
-msgid "In Queue"
+msgid "In queue"
 msgstr "En cola"
 
 msgid "Continue Playing"
@@ -3966,10 +3929,10 @@ msgstr "Efectos"
 msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
 msgstr "Activa Bluetooth en Inalámbrico o en el panel rápido para usar el modo DAC Bluetooth"
 
-msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgid "Library recovered. Use Settings > Library > Update music database to save"
 msgstr "Biblioteca recuperada. Usa Ajustes > Biblioteca > Actualizar base de datos de música para guardar"
 
-msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgid "Library unavailable. Use Settings > Library > Update music database to rebuild"
 msgstr "Biblioteca no disponible. Usa Ajustes > Biblioteca > Actualizar base de datos de música para reconstruirla"
 
 msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
@@ -3981,7 +3944,7 @@ msgstr "Personalizar"
 msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
 msgstr "Desactiva primero ADB (Ajustes > Sistema > Avanzado) y luego activa el DAC USB desde aquí."
 
-msgid "Use Settings > Library > Update Music Database"
+msgid "Use Settings > Library > Update music database"
 msgstr "Usa Ajustes > Biblioteca > Actualizar base de datos de música"
 
 msgid "%s: %d (outside ±%d)"
@@ -3990,10 +3953,10 @@ msgstr "%s: %d (fuera de ±%d)"
 msgid "A preset with that name already exists"
 msgstr "Ya existe un preajuste con ese nombre"
 
-msgid "About Play Through"
+msgid "About play through"
 msgstr "Acerca de Reproducción continua"
 
-msgid "Adjustment Range"
+msgid "Adjustment range"
 msgstr "Rango de ajuste"
 
 msgid "Air"
@@ -4008,10 +3971,10 @@ msgstr "Los álbumes continúan en el orden alfabético del artista."
 msgid "Amount (%)"
 msgstr "Cantidad (%)"
 
-msgid "Bass Extension"
+msgid "Bass extension"
 msgstr "Extensión de graves"
 
-msgid "Bass Texture"
+msgid "Bass texture"
 msgstr "Textura de graves"
 
 msgid "Bass frequency (Hz)"
@@ -4026,7 +3989,7 @@ msgstr "Confirmar"
 msgid "Continuing playback"
 msgstr "Continuando la reproducción"
 
-msgid "Could not apply Soundstage. Try again."
+msgid "Could not apply soundstage. Try again."
 msgstr "No se pudo aplicar Escenario sonoro. Inténtalo de nuevo."
 
 msgid "Could not apply changes. Try again."
@@ -4059,7 +4022,7 @@ msgstr "Amortiguación (%)"
 msgid "Enter a short preset name without line breaks"
 msgstr "Escribe un nombre corto sin saltos de línea"
 
-msgid "Female Overtones"
+msgid "Female overtones"
 msgstr "Armónicos femeninos"
 
 msgid "Focused center"
@@ -4071,16 +4034,16 @@ msgstr "Las carpetas continúan en orden alfabético (sin distinguir mayúsculas
 msgid "Hall"
 msgstr "Sala de conciertos"
 
-msgid "How It Works"
+msgid "How it works"
 msgstr "Cómo funciona"
 
-msgid "Impulse Response"
+msgid "Impulse response"
 msgstr "Respuesta al impulso"
 
 msgid "Load"
 msgstr "Cargar"
 
-msgid "Named Presets"
+msgid "Named presets"
 msgstr "Preajustes con nombre"
 
 msgid "Natural"
@@ -4089,7 +4052,7 @@ msgstr "Natural"
 msgid "New preset name"
 msgstr "Nombre del nuevo preajuste"
 
-msgid "Note Thickness"
+msgid "Note thickness"
 msgstr "Grosor de notas"
 
 msgid "Older MSEB controls are unsupported; preset was not loaded"
@@ -4098,7 +4061,7 @@ msgstr "Los controles antiguos de MSEB no son compatibles; no se cargó el preaj
 msgid "Older MSEB controls are unsupported; slot was not loaded"
 msgstr "Los controles antiguos de MSEB no son compatibles; no se cargó la ranura"
 
-msgid "Overall Temperature"
+msgid "Overall temperature"
 msgstr "Temperatura general"
 
 msgid "Overwrite"
@@ -4107,13 +4070,13 @@ msgstr "Sobrescribir"
 msgid "Overwrite preset?"
 msgstr "¿Sobrescribir preajuste?"
 
-msgid "Play Through"
+msgid "Play through"
 msgstr "Reproducción continua"
 
-msgid "Play Through Albums"
+msgid "Play through albums"
 msgstr "Continuar entre álbumes"
 
-msgid "Play Through Folders"
+msgid "Play through folders"
 msgstr "Continuar entre carpetas"
 
 msgid "Preset"
@@ -4134,11 +4097,8 @@ msgstr "Reflexiones (%)"
 msgid "Rename preset"
 msgstr "Renombrar preajuste"
 
-msgid "Reset Soundstage to defaults?"
+msgid "Reset soundstage to defaults?"
 msgstr "¿Restablecer Escenario sonoro a los valores por defecto?"
-
-msgid "Reset to Defaults"
-msgstr "Restablecer valores"
 
 msgid "Room"
 msgstr "Sala"
@@ -4146,7 +4106,7 @@ msgstr "Sala"
 msgid "Room size (%)"
 msgstr "Tamaño de sala (%)"
 
-msgid "Save Named Preset"
+msgid "Save named preset"
 msgstr "Guardar preajuste con nombre"
 
 msgid "Saved"
@@ -4182,7 +4142,7 @@ msgstr "Ranura cargada"
 msgid "Small room"
 msgstr "Sala pequeña"
 
-msgid "Sound Stage"
+msgid "Sound stage"
 msgstr "Escena sonora"
 
 msgid "Soundstage"
@@ -4191,7 +4151,7 @@ msgstr "Escenario sonoro"
 msgid "Speaker angle (deg)"
 msgstr "Ángulo de altavoces (deg)"
 
-msgid "Stereo Width"
+msgid "Stereo width"
 msgstr "Amplitud estéreo"
 
 msgid "Stock MSEB width changes the channel mix."
@@ -4203,7 +4163,7 @@ msgstr "Monitores de estudio"
 msgid "Switch to stock MSEB"
 msgstr "Cambiar a MSEB estándar"
 
-msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgid "This saved layout is unsupported. Switching replaces instrument presence, bass bite, and treble bite with the stock controls."
 msgstr "Este diseño guardado no es compatible. Al cambiar se reemplazan Presencia instrumental, Ataque de graves y Ataque de agudos por los controles estándar."
 
 msgid "Treble frequency (Hz)"
@@ -4230,7 +4190,7 @@ msgstr "¿Eliminar preajuste dañado?"
 msgid "Delete preset?"
 msgstr "¿Eliminar preajuste?"
 
-msgid "Load from Slot"
+msgid "Load from slot"
 msgstr "Cargar de ranura"
 
 msgid "MSEB"
@@ -4245,38 +4205,29 @@ msgstr "Preajuste guardado"
 msgid "Restoring ADB…"
 msgstr "Restaurando ADB…"
 
-msgid "Save to Slot"
+msgid "Save to slot"
 msgstr "Guardar en ranura"
 
 msgid "Stage"
 msgstr "Escena"
 
-msgid "Turn off Loudness Boost first"
+msgid "Turn off loudness boost first"
 msgstr "Desactiva primero el realce de sonoridad"
 
 msgid "DAC"
 msgstr "DAC"
 
-msgid "USB Output"
+msgid "USB output"
 msgstr "Salida USB"
-
-msgid "Accent color"
-msgstr "Color de acento"
 
 msgid "Advanced sound"
 msgstr "Sonido avanzado"
-
-msgid "Button mapping"
-msgstr "Asignación de botones"
 
 msgid "Buttons"
 msgstr "Botones"
 
 msgid "Bypassed by NOS"
 msgstr "Omitido por NOS"
-
-msgid "Car mode"
-msgstr "Modo auto"
 
 msgid "Filter"
 msgstr "Filtro"
@@ -4296,35 +4247,14 @@ msgstr "Tamaño de la letra"
 msgid "Max %d%%"
 msgstr "Máximo %d%%"
 
-msgid "Per album"
-msgstr "Por álbum"
-
-msgid "Per track"
-msgstr "Por pista"
-
-msgid "Play through"
-msgstr "Reproducción continua"
-
-msgid "Quick drawer"
-msgstr "Panel rápido"
-
-msgid "Resume last track"
-msgstr "Reanudar última pista"
-
-msgid "Show Artist Images"
+msgid "Show artist images"
 msgstr "Mostrar imágenes de artistas"
 
-msgid "Show Lyrics"
+msgid "Show lyrics"
 msgstr "Mostrar letras"
-
-msgid "Top bar"
-msgstr "Barra superior"
 
 msgid "Turn off NOS to choose a filter"
 msgstr "Desactiva NOS para elegir un filtro"
-
-msgid "USB output"
-msgstr "Salida USB"
 
 msgid "Volume limits"
 msgstr "Límites de volumen"
@@ -4332,11 +4262,11 @@ msgstr "Límites de volumen"
 msgid "Volume lock (screen off)"
 msgstr "Bloqueo de volumen (pantalla apagada)"
 
-msgid "Albums on an album-artist page"
-msgstr "Álbumes en la página de un artista de álbum"
+msgid "Album artist pages"
+msgstr "Páginas de artistas de álbum"
 
-msgid "Albums on an artist page"
-msgstr "Álbumes en la página de un artista"
+msgid "Artist pages"
+msgstr "Páginas de artistas"
 
 msgid "Build it now? This may take a while."
 msgstr "¿Crear ahora? Esto puede tardar."
@@ -4355,12 +4285,6 @@ msgstr "¿Descartar lo que escribiste?"
 
 msgid "Enable Wi-Fi to access"
 msgstr "Activa Wi-Fi para acceder"
-
-msgid "Fast"
-msgstr "Rápida"
-
-msgid "Fastest"
-msgstr "La más rápida"
 
 msgid "Forget this device?"
 msgstr "¿Olvidar este dispositivo?"
@@ -4388,9 +4312,6 @@ msgstr "Sin coincidencias"
 
 msgid "No plays yet"
 msgstr "Aún no hay reproducciones"
-
-msgid "Normal"
-msgstr "Normal"
 
 msgid "Open Now Playing"
 msgstr "Abrir Ahora suena"
@@ -4446,7 +4367,7 @@ msgstr "Escribe para buscar"
 msgid "Update"
 msgstr "Actualizar"
 
-msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgid "Update saved. Install from firmware update > install from SD card."
 msgstr "Actualización guardada. Instálala desde Actualización de firmware > Instalar desde la tarjeta SD."
 
 msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
@@ -4464,19 +4385,16 @@ msgstr "Desactivado"
 msgid "Player layout"
 msgstr "Diseño del reproductor"
 
-msgid "Faster"
-msgstr "Más rápida"
-
-msgid "Add to Favorites"
+msgid "Add to favorites"
 msgstr "Añadir a favoritos"
 
-msgid "Remove from Favorites"
+msgid "Remove from favorites"
 msgstr "Quitar de favoritos"
 
-msgid "Go to Album"
+msgid "Go to album"
 msgstr "Ir al álbum"
 
-msgid "Go to Artist"
+msgid "Go to artist"
 msgstr "Ir al artista"
 
 msgid "Some songs could not be downloaded"
@@ -4523,3 +4441,12 @@ msgstr "Puede que no se guarden los cambios encontrados hasta ahora."
 
 msgid "Updating the library. This may take a while."
 msgstr "Actualizando la biblioteca. Esto puede tardar un rato."
+
+msgid "Too demanding for this device"
+msgstr "Demasiado exigente para este dispositivo"
+
+msgid "Waiting for a network address"
+msgstr "Esperando una dirección de red"
+
+msgid "Artist unavailable"
+msgstr "Artista no disponible"

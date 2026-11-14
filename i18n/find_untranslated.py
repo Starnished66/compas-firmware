@@ -444,7 +444,8 @@ def main(argv):
     files = [a for a in argv[1:] if not a.startswith("--")]
     full_scan = not files
     if not files:
-        for dp, _, fns in os.walk(os.path.join(ROOT, "src")):
+        for dp, dns, fns in os.walk(os.path.join(ROOT, "src")):
+            dns[:] = [d for d in dns if d != "tests"]
             for fn in fns:
                 if fn.endswith(".c") and not re.search(r"_(test|check|regression)\.c$", fn) and not fn.startswith("i18n_catalog"):
                     files.append(os.path.join(dp, fn))

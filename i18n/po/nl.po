@@ -208,13 +208,13 @@ msgstr "Artiesten"
 msgid "Albums"
 msgstr "Albums"
 
-msgid "Album Artist"
+msgid "Album artist"
 msgstr "Albumartiest"
 
 msgid "Genres"
 msgstr "Genres"
 
-msgid "All Songs"
+msgid "All songs"
 msgstr "Alle nummers"
 
 msgid "Playlists"
@@ -235,7 +235,7 @@ msgstr "Wifi"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-msgid "Sleep Timer"
+msgid "Sleep timer"
 msgstr "Slaaptimer"
 
 msgid "Crossfade"
@@ -250,10 +250,10 @@ msgstr "DLNA"
 msgid "Gapless"
 msgstr "Naadloos"
 
-msgid "Remote Control"
+msgid "Remote control"
 msgstr "Afstandsbediening"
 
-msgid "Car Mode"
+msgid "Car mode"
 msgstr "Automodus"
 
 msgid "Plugins"
@@ -722,7 +722,7 @@ msgstr "Download een emulator om games te spelen."
 msgid "Disconnect USB storage from the computer before changing files."
 msgstr "Koppel de USB-opslag los van de computer voordat je bestanden wijzigt."
 
-msgid "File Manager"
+msgid "File manager"
 msgstr "Bestandsbeheer"
 
 #, c-format
@@ -853,7 +853,7 @@ msgstr "Afspeellijst gemaakt"
 msgid "Failed to create playlist"
 msgstr "Aanmaken van afspeellijst mislukt"
 
-msgid "Playlist Name"
+msgid "Playlist name"
 msgstr "Naam van afspeellijst"
 
 msgid "Song already added"
@@ -904,19 +904,19 @@ msgstr "Scannen naar afspeelbare bestanden"
 msgid "File path is too long"
 msgstr "Bestandspad is te lang"
 
-msgid "Play All (Sequential)"
+msgid "Play all (sequential)"
 msgstr "Alles afspelen (op volgorde)"
 
-msgid "Play All (Shuffle)"
+msgid "Play all (shuffle)"
 msgstr "Alles afspelen (willekeurig)"
 
-msgid "Add to Queue"
+msgid "Add to queue"
 msgstr "Toevoegen aan wachtrij"
 
-msgid "Add to Playlist"
+msgid "Add to playlist"
 msgstr "Toevoegen aan afspeellijst"
 
-msgid "+ New Playlist"
+msgid "+ New playlist"
 msgstr "+ Nieuwe afspeellijst"
 
 msgid "Audio"
@@ -937,7 +937,7 @@ msgid_plural "%lld tracks"
 msgstr[0] "%lld nummer"
 msgstr[1] "%lld nummers"
 
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "Recent toegevoegd"
 
 msgid "Playlist changed. Select a song again."
@@ -985,7 +985,7 @@ msgstr "Schijf %d"
 msgid "Next  •  %d–%d of %d"
 msgstr "Volgende  •  %d–%d van %d"
 
-msgid "Most Played"
+msgid "Most played"
 msgstr "Meest afgespeeld"
 
 msgid "Library changed. Open the album again."
@@ -1045,7 +1045,7 @@ msgstr "Kan niet hernoemen: ongeldige naam of bestand bestaat al"
 msgid "Playlist renamed"
 msgstr "Afspeellijst hernoemd"
 
-msgid "Rename Playlist"
+msgid "Rename playlist"
 msgstr "Afspeellijst hernoemen"
 
 msgid "Delete playlist?"
@@ -1054,7 +1054,7 @@ msgstr "Afspeellijst verwijderen?"
 msgid "The playlist file will be deleted. Music files are kept."
 msgstr "Het afspeellijstbestand wordt verwijderd. Muziekbestanden blijven behouden."
 
-msgid "Delete Playlist"
+msgid "Delete playlist"
 msgstr "Afspeellijst verwijderen"
 
 msgid "System playlists"
@@ -1331,17 +1331,17 @@ msgstr "Kan niet opnieuw starten naar de opstartkeuze"
 msgid "An update is in progress. Please wait."
 msgstr "Er wordt een update uitgevoerd. Even geduld."
 
-msgid "Tap Power off again to confirm"
+msgid "Tap power off again to confirm"
 msgstr "Tik nogmaals op Uitschakelen om te bevestigen"
 
-msgid "Tap Restart again to confirm"
+msgid "Tap restart again to confirm"
 msgstr "Tik nogmaals op Opnieuw starten om te bevestigen"
 
 #, c-format
 msgid "Sleep timer: %d min remaining"
 msgstr "Slaaptimer: nog %d min"
 
-msgid "Sleep timer: Off"
+msgid "Sleep timer: off"
 msgstr "Slaaptimer: uit"
 
 msgid "Music"
@@ -1459,13 +1459,13 @@ msgstr "Verbinden met"
 msgid "Couldn't connect to Wi-Fi network"
 msgstr "Kan geen verbinding maken met wifi-netwerk"
 
-msgid "Wi-Fi Password"
+msgid "Wi-Fi password"
 msgstr "Wifi-wachtwoord"
 
-msgid "Secured · Connected"
+msgid "Secured · connected"
 msgstr "Beveiligd · Verbonden"
 
-msgid "Open · Connected"
+msgid "Open · connected"
 msgstr "Open · Verbonden"
 
 msgid "Saved network"
@@ -1504,7 +1504,7 @@ msgstr "SSID moet 1 tot 32 bytes lang zijn"
 msgid "Wi-Fi is still starting"
 msgstr "Wifi start nog op"
 
-msgid "Network Name (SSID)"
+msgid "Network name (SSID)"
 msgstr "Netwerknaam (SSID)"
 
 msgid "Connect"
@@ -1539,7 +1539,7 @@ msgid "SSID: %s"
 msgstr "SSID: %s"
 
 #, c-format
-msgid "IP Address: %s"
+msgid "IP address: %s"
 msgstr "IP-adres: %s"
 
 #, c-format
@@ -1547,14 +1547,14 @@ msgid "Gateway: %s"
 msgstr "Gateway: %s"
 
 #, c-format
-msgid "MAC Address: %s"
+msgid "MAC address: %s"
 msgstr "MAC-adres: %s"
 
 #, c-format
 msgid "Signal: %s"
 msgstr "Signaal: %s"
 
-msgid "Wi-Fi Info"
+msgid "Wi-Fi info"
 msgstr "Wifi-info"
 
 msgid "Primary DNS"
@@ -1566,13 +1566,13 @@ msgstr "Secundaire DNS"
 msgid "Not set"
 msgstr "Niet ingesteld"
 
-msgid "DNS Settings"
+msgid "DNS settings"
 msgstr "DNS-instellingen"
 
-msgid "Manual SSID Entry"
+msgid "Manual SSID entry"
 msgstr "SSID handmatig invoeren"
 
-msgid "Memorized Networks"
+msgid "Memorized networks"
 msgstr "Opgeslagen netwerken"
 
 msgid "No memorized networks"
@@ -1590,7 +1590,7 @@ msgstr "Opgeslagen netwerkgegevens worden gecontroleerd."
 msgid "Connected"
 msgstr "Verbonden"
 
-msgid "Available Networks"
+msgid "Available networks"
 msgstr "Beschikbare netwerken"
 
 msgid "Scanning for networks"
@@ -1647,10 +1647,10 @@ msgstr "Wachten op Bluetooth-stream…"
 msgid "Auto"
 msgstr "Automatisch"
 
-msgid "LDAC Quality"
+msgid "LDAC quality"
 msgstr "LDAC-kwaliteit"
 
-msgid "LDAC Standard"
+msgid "LDAC standard"
 msgstr "LDAC-standaard"
 
 msgid "Could not save Bluetooth codec"
@@ -1674,34 +1674,34 @@ msgstr "Vorige keuze wordt nog toegepast"
 msgid "Headset may disconnect, manual reconnection might be required"
 msgstr "De headset kan worden losgekoppeld; handmatig opnieuw verbinden kan nodig zijn"
 
-msgid "Sample Rate"
+msgid "Sample rate"
 msgstr "Samplefrequentie"
 
-msgid "Bluetooth Volume Sync"
+msgid "Bluetooth volume sync"
 msgstr "Bluetooth-volumesynchronisatie"
 
 msgid "Codec"
 msgstr "Codec"
 
-msgid "Speex Resampling"
+msgid "Speex resampling"
 msgstr "Speex-resampling"
 
-msgid "Hide Unnamed Devices"
+msgid "Hide unnamed devices"
 msgstr "Apparaten zonder naam verbergen"
 
 msgid "Advanced"
 msgstr "Geavanceerd"
 
-msgid "Resume and Play"
+msgid "Resume and play"
 msgstr "Hervatten en afspelen"
 
-msgid "Resume, but Paused"
+msgid "Resume, but paused"
 msgstr "Hervatten, maar gepauzeerd"
 
 msgid "Applies next time you launch the app"
 msgstr "Wordt toegepast wanneer je de app de volgende keer start"
 
-msgid "Resume Last Track"
+msgid "Resume last track"
 msgstr "Laatste nummer hervatten"
 
 msgid "Small"
@@ -1710,13 +1710,13 @@ msgstr "Klein"
 msgid "Could not apply font size"
 msgstr "Kan lettergrootte niet toepassen"
 
-msgid "Font Size"
+msgid "Font size"
 msgstr "Lettergrootte"
 
-msgid "Per Track"
+msgid "Per track"
 msgstr "Per nummer"
 
-msgid "Per Album"
+msgid "Per album"
 msgstr "Per album"
 
 msgid "ReplayGain"
@@ -1743,9 +1743,6 @@ msgstr "USB-modus"
 #, c-format
 msgid "Failed to switch to %s"
 msgstr "Omschakelen naar %s mislukt"
-
-msgid "USB Mode"
-msgstr "USB-modus"
 
 msgid "Failed to update USB charging"
 msgstr "Kan USB-opladen niet bijwerken"
@@ -1791,7 +1788,7 @@ msgstr "Bluetooth is uitgeschakeld"
 msgid "Turn on Bluetooth to see paired and nearby devices."
 msgstr "Schakel Bluetooth in om gekoppelde apparaten en apparaten in de buurt te zien."
 
-msgid "Paired Devices"
+msgid "Paired devices"
 msgstr "Gekoppelde apparaten"
 
 msgid "No paired devices"
@@ -1800,7 +1797,7 @@ msgstr "Geen gekoppelde apparaten"
 msgid "Previously connected accessories will appear here."
 msgstr "Eerder verbonden accessoires verschijnen hier."
 
-msgid "Available Devices"
+msgid "Available devices"
 msgstr "Beschikbare apparaten"
 
 msgid "No nearby devices"
@@ -1832,7 +1829,7 @@ msgstr "AirPlay inschakelen mislukt"
 msgid "AirPlay stopped unexpectedly"
 msgstr "AirPlay is onverwacht gestopt"
 
-msgid "DLNA Renderer"
+msgid "DLNA renderer"
 msgstr "DLNA-renderer"
 
 msgid "Service is busy"
@@ -1862,7 +1859,7 @@ msgstr "Bluetooth: wachten op serviceregistratie"
 msgid "Connect using either available route:"
 msgstr "Maak verbinding via een van deze routes:"
 
-msgid "Bluetooth: Compas Remote Control"
+msgid "Bluetooth: Compas remote control"
 msgstr "Bluetooth: Compas-afstandsbediening"
 
 msgid "Could not generate a new PIN"
@@ -1961,7 +1958,7 @@ msgstr "Plugins vernieuwen..."
 msgid "Plugin Store"
 msgstr "Pluginwinkel"
 
-msgid "Refresh Plugins"
+msgid "Refresh plugins"
 msgstr "Plugins vernieuwen"
 
 msgid "Plugin Manager"
@@ -2139,13 +2136,13 @@ msgstr "Afspeellijst opslaan…"
 msgid "Cannot save playlist"
 msgstr "Kan afspeellijst niet opslaan"
 
-msgid "Save Queue as Playlist"
+msgid "Save queue as playlist"
 msgstr "Wachtrij opslaan als afspeellijst"
 
-msgid "Clear Queue"
+msgid "Clear queue"
 msgstr "Wachtrij wissen"
 
-msgid "Save as Playlist"
+msgid "Save as playlist"
 msgstr "Opslaan als afspeellijst"
 
 msgid "Playlist saved"
@@ -2154,7 +2151,7 @@ msgstr "Afspeellijst opgeslagen"
 msgid "Cannot save: invalid or streaming entries"
 msgstr "Kan niet opslaan: ongeldige of gestreamde items"
 
-msgid "Play Next"
+msgid "Play next"
 msgstr "Hierna afspelen"
 
 msgid "Custom"
@@ -2164,13 +2161,6 @@ msgstr "Aangepast"
 msgid "%d min remaining"
 msgstr "Nog %d min"
 
-msgid "Crossfeed: Off"
-msgstr "Crossfeed: uit"
-
-#, c-format
-msgid "Crossfeed: %d%%"
-msgstr "Crossfeed: %d%%"
-
 #, c-format
 msgid "%+.2f dB"
 msgstr "%+.2f dB"
@@ -2179,7 +2169,7 @@ msgstr "%+.2f dB"
 msgid "%.0f Hz"
 msgstr "%.0f Hz"
 
-msgid "Pre-Amp (dB, -12 to 12)"
+msgid "Pre-amp (dB, -12 to 12)"
 msgstr "Voorversterking (dB, -12 tot 12)"
 
 msgid "Crossfeed (0 to 100)"
@@ -2213,7 +2203,7 @@ msgstr "Update voorbereiden"
 msgid "Checking the file on the SD card"
 msgstr "Bestand op SD-kaart controleren"
 
-msgid "Update & Reboot"
+msgid "Update & reboot"
 msgstr "Bijwerken en opnieuw starten"
 
 #, c-format
@@ -2264,13 +2254,13 @@ msgstr "Online-update controleren"
 msgid "Install from SD card"
 msgstr "Installeren vanaf SD-kaart"
 
-msgid "Update the Player only, retaining current drivers, kernel and bootloader."
+msgid "Update the player only, retaining current drivers, kernel and bootloader."
 msgstr "Werkt alleen de speler bij. Huidige stuurprogramma's, kernel en bootloader blijven behouden."
 
-msgid "Download & Install"
+msgid "Download & install"
 msgstr "Downloaden en installeren"
 
-msgid "Install & Restart"
+msgid "Install & restart"
 msgstr "Installeren en opnieuw starten"
 
 msgid "Downloading player update"
@@ -2334,13 +2324,13 @@ msgstr "Kan de download niet starten"
 msgid "Downloading update"
 msgstr "Update downloaden"
 
-msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
+msgid "Update the entire CompásOS. Flashing firmware contains bootloader, player, kernel and drivers."
 msgstr "Werkt heel CompásOS bij. De firmware bevat bootloader, speler, kernel en stuurprogramma's."
 
 msgid "Download"
 msgstr "Downloaden"
 
-msgid "Install & Reboot"
+msgid "Install & reboot"
 msgstr "Installeren en opnieuw starten"
 
 msgid "Preparing and verifying recovery mode"
@@ -2435,7 +2425,7 @@ msgstr "Handleiding: docs/development/CREATING.md"
 msgid "Write a Lua plugin on your computer. Copy its .lua file to the .plugins folder on your SD card."
 msgstr "Schrijf een Lua-plugin op je computer. Kopieer het .lua-bestand naar de map .plugins op je SD-kaart."
 
-msgid "Open More > Plugins > Refresh Plugins. Scan for a working example and the full API guide."
+msgid "Open More > Plugins > Refresh plugins. Scan for a working example and the full API guide."
 msgstr "Open Meer > Plugins > Plugins vernieuwen. Scan voor een werkend voorbeeld en de volledige API-handleiding."
 
 msgid "Edit a .theme text file on your computer. Copy it to the Themes folder on your SD card, then select it in More > Themes."
@@ -2456,10 +2446,10 @@ msgstr "Ontwikkelaarsopties"
 msgid "About"
 msgstr "Over"
 
-msgid "Screenshots (Power + Previous)"
+msgid "Screenshots (power + previous)"
 msgstr "Schermafbeeldingen (Aan/uit + Vorige)"
 
-msgid "Screenshots (Power + Vol Down)"
+msgid "Screenshots (power + vol down)"
 msgstr "Schermafbeeldingen (Aan/uit + Volume omlaag)"
 
 msgid "Enable debug logging"
@@ -2477,7 +2467,7 @@ msgstr "Van albumhoes"
 msgid "From album art (no cover, using custom)"
 msgstr "Van albumhoes (geen cover, aangepaste kleur gebruiken)"
 
-msgid "Accent Color"
+msgid "Accent color"
 msgstr "Accentkleur"
 
 msgid "Accent Options"
@@ -2504,7 +2494,7 @@ msgstr "Gebruikt de accentkleur voor de pictogrammen naast schermtitels."
 msgid "Presets"
 msgstr "Voorinstellingen"
 
-msgid "Default (Built-in)"
+msgid "Default (built-in)"
 msgstr "Standaard (ingebouwd)"
 
 msgid "No .ttf fonts found in /Fonts"
@@ -2531,31 +2521,31 @@ msgstr "Aangepaste lettertypen gelden alleen voor Latijnse tekst."
 msgid "Place .ttf fonts in SD /Fonts folder."
 msgstr "Plaats .ttf-lettertypen in de map SD:/Fonts."
 
-msgid "Screen Timeout"
+msgid "Screen timeout"
 msgstr "Schermtime-out"
 
 msgid "Turn off screen automatically"
 msgstr "Scherm automatisch uitschakelen"
 
-msgid "Screen Dimming"
+msgid "Screen dimming"
 msgstr "Scherm dimmen"
 
 msgid "Dim screen before timeout"
 msgstr "Scherm dimmen vóór time-out"
 
-msgid "Startup Volume"
+msgid "Startup volume"
 msgstr "Opstartvolume"
 
 msgid "Launch at a fixed volume"
 msgstr "Starten met vast volume"
 
-msgid "Max Volume"
+msgid "Max volume"
 msgstr "Maximaal volume"
 
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Beperkt het volume van de speler, inclusief knoppen, afstandsbedieningen en plugins."
 
-msgid "Car Mode Volume"
+msgid "Car mode volume"
 msgstr "Automodusvolume"
 
 msgid "Auto-resume"
@@ -2587,13 +2577,13 @@ msgstr "Resterende tijd: %d:%02d:%02d"
 msgid "Time remaining: %d:%02d"
 msgstr "Resterende tijd: %d:%02d"
 
-msgid "Enable Sleep Timer"
+msgid "Enable sleep timer"
 msgstr "Slaaptimer inschakelen"
 
-msgid "Show Time Remaining"
+msgid "Show time remaining"
 msgstr "Resterende tijd weergeven"
 
-msgid "Idle Shutdown"
+msgid "Idle shutdown"
 msgstr "Automatisch uitschakelen bij inactiviteit"
 
 msgid "Automatically go idle"
@@ -2602,7 +2592,7 @@ msgstr "Automatisch inactief worden"
 msgid "Choose what happens when idle:"
 msgstr "Kies wat er gebeurt bij inactiviteit:"
 
-msgid "Power Off"
+msgid "Power off"
 msgstr "Uitschakelen"
 
 msgid "Suspend to RAM"
@@ -2648,13 +2638,13 @@ msgstr "Tijdzone instellen mislukt"
 msgid "%s (current)"
 msgstr "%s (huidig)"
 
-msgid "Time Zone"
+msgid "Time zone"
 msgstr "Tijdzone"
 
 msgid "Sound Effects"
 msgstr "Geluidseffecten"
 
-msgid "Download Profiles"
+msgid "Download profiles"
 msgstr "Profielen downloaden"
 
 msgid "Buttons & Remote"
@@ -2672,13 +2662,13 @@ msgstr "Crossfeed"
 msgid "Power"
 msgstr "Voeding"
 
-msgid "Play/Pause"
+msgid "Play/pause"
 msgstr "Afspelen/pauzeren"
 
-msgid "Next Track"
+msgid "Next track"
 msgstr "Volgende nummer"
 
-msgid "Previous Track"
+msgid "Previous track"
 msgstr "Vorige nummer"
 
 msgid "Clockwise"
@@ -2687,10 +2677,10 @@ msgstr "Met de klok mee"
 msgid "Counterclockwise"
 msgstr "Tegen de klok in"
 
-msgid "Volume Up"
+msgid "Volume up"
 msgstr "Volume omhoog"
 
-msgid "Volume Down"
+msgid "Volume down"
 msgstr "Volume omlaag"
 
 msgid "Button"
@@ -2699,19 +2689,19 @@ msgstr "Knop"
 msgid "Default (native behavior)"
 msgstr "Standaard (oorspronkelijk gedrag)"
 
-msgid "Seek Forward"
+msgid "Seek forward"
 msgstr "Vooruit zoeken"
 
-msgid "Seek Backward"
+msgid "Seek backward"
 msgstr "Achteruit zoeken"
 
-msgid "Toggle Screen"
+msgid "Toggle screen"
 msgstr "Scherm omschakelen"
 
-msgid "Power Menu"
+msgid "Power menu"
 msgstr "Aan/uit-menu"
 
-msgid "Do Nothing"
+msgid "Do nothing"
 msgstr "Niets doen"
 
 msgid "Single press"
@@ -2735,13 +2725,13 @@ msgstr "Lang"
 msgid "Default"
 msgstr "Standaard"
 
-msgid "Reset All"
+msgid "Reset all"
 msgstr "Alles herstellen"
 
-msgid "Button Mapping"
+msgid "Button mapping"
 msgstr "Knoptoewijzing"
 
-msgid "Keep a button assigned to Toggle Screen or Power Menu"
+msgid "Keep a button assigned to toggle screen or power menu"
 msgstr "Wijs een knop toe aan Scherm omschakelen of Aan/uit-menu"
 
 msgid "Reset all button mappings?"
@@ -2750,10 +2740,7 @@ msgstr "Alle knoptoewijzingen herstellen?"
 msgid "Reset"
 msgstr "Herstellen"
 
-msgid "Volume Lock (Screen Off)"
-msgstr "Volumevergrendeling (scherm uit)"
-
-msgid "Update Music Database to enable this album order"
+msgid "Update music database to enable this album order"
 msgstr "Werk de muziekdatabase bij om deze albumvolgorde in te schakelen"
 
 msgid "Sorting"
@@ -2765,25 +2752,25 @@ msgstr "Bestanden (mappen eerst)"
 msgid "Name (A–Z)"
 msgstr "Naam (A–Z)"
 
-msgid "Newest Modified"
+msgid "Newest modified"
 msgstr "Nieuwst gewijzigd"
 
-msgid "Release Year (oldest first)"
+msgid "Release year (oldest first)"
 msgstr "Uitgavejaar (oudste eerst)"
 
 msgid "Files use modification dates. Albums use the newest track added; missing release years sort last. Update Music Database once to read years from existing files."
 msgstr "Bestanden gebruiken wijzigingsdatums. Albums gebruiken de nieuwste toegevoegde track; ontbrekende uitgavejaren komen als laatste. Werk de muziekdatabase eenmalig bij om jaren uit bestaande bestanden te lezen."
 
-msgid "Update Music Database"
+msgid "Update music database"
 msgstr "Muziekdatabase bijwerken"
 
-msgid "Refresh All Metadata"
+msgid "Refresh all metadata"
 msgstr "Alle metadata vernieuwen"
 
-msgid "Refresh All Covers"
+msgid "Refresh all covers"
 msgstr "Alle covers vernieuwen"
 
-msgid "Animation Speed"
+msgid "Animation speed"
 msgstr "Animatiesnelheid"
 
 msgid "T9"
@@ -2807,7 +2794,7 @@ msgstr "Pluginvolgorde"
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-msgid "Volume Slider"
+msgid "Volume slider"
 msgstr "Volumeschuifregelaar"
 
 msgid "Reorder Items"
@@ -2831,22 +2818,22 @@ msgstr "Inactief na"
 msgid "Clock"
 msgstr "Klok"
 
-msgid "Wired Headphones"
+msgid "Wired headphones"
 msgstr "Bedrade koptelefoon"
 
-msgid "Bluetooth Audio (A2DP)"
+msgid "Bluetooth audio (A2DP)"
 msgstr "Bluetooth-audio (A2DP)"
 
-msgid "USB Audio"
+msgid "USB audio"
 msgstr "USB-audio"
 
-msgid "Playback Status"
+msgid "Playback status"
 msgstr "Afspeelstatus"
 
-msgid "Bluetooth Codec"
+msgid "Bluetooth codec"
 msgstr "Bluetooth-codec"
 
-msgid "Battery Icon"
+msgid "Battery icon"
 msgstr "Batterijpictogram"
 
 msgid "Left"
@@ -2858,13 +2845,13 @@ msgstr "Midden"
 msgid "Right"
 msgstr "Rechts"
 
-msgid "Clock Position"
+msgid "Clock position"
 msgstr "Klokpositie"
 
-msgid "Battery Percentage"
+msgid "Battery percentage"
 msgstr "Batterijpercentage"
 
-msgid "Top Bar"
+msgid "Top bar"
 msgstr "Bovenbalk"
 
 msgid "Themes"
@@ -2882,10 +2869,10 @@ msgstr "Indeling"
 msgid "Lyrics"
 msgstr "Songteksten"
 
-msgid "Swipe Up for Home"
+msgid "Swipe up for home"
 msgstr "Omhoog vegen voor startscherm"
 
-msgid "Upside Down Screen"
+msgid "Upside down screen"
 msgstr "Scherm ondersteboven"
 
 msgid "Gestures & Orientation"
@@ -2894,10 +2881,10 @@ msgstr "Gebaren en oriëntatie"
 msgid "Display"
 msgstr "Scherm"
 
-msgid "Charge Limit (85%)"
+msgid "Charge limit (85%)"
 msgstr "Laadlimiet (85%)"
 
-msgid "Safe Charging (500mA)"
+msgid "Safe charging (500mA)"
 msgstr "Veilig opladen (500 mA)"
 
 msgid "LED charge indicator"
@@ -2913,19 +2900,19 @@ msgstr ""
 msgid "Charging"
 msgstr "Opladen"
 
-msgid "Additional Tools"
+msgid "Additional tools"
 msgstr "Extra hulpprogramma's"
 
-msgid "Turn off Automatic to set the clock"
+msgid "Turn off automatic to set the clock"
 msgstr "Schakel Automatisch uit om de klok in te stellen"
 
 msgid "Automatic"
 msgstr "Automatisch"
 
-msgid "Set Time"
+msgid "Set time"
 msgstr "Tijd instellen"
 
-msgid "24-Hour Clock"
+msgid "24-hour clock"
 msgstr "24-uursklok"
 
 msgid "Save"
@@ -2934,19 +2921,19 @@ msgstr "Opslaan"
 msgid "Hostname"
 msgstr "Hostnaam"
 
-msgid "Factory Reset"
+msgid "Factory reset"
 msgstr "Fabrieksinstellingen herstellen"
 
 msgid "Maintenance"
 msgstr "Onderhoud"
 
-msgid "Firmware Update"
+msgid "Firmware update"
 msgstr "Firmware-update"
 
-msgid "Player Update"
+msgid "Player update"
 msgstr "Spelerupdate"
 
-msgid "Plugins & Layouts"
+msgid "Plugins & layouts"
 msgstr "Plugins en indelingen"
 
 msgid "Applying language, this may take a while"
@@ -3000,7 +2987,7 @@ msgstr "Alle instellingen herstellen en opnieuw starten?"
 msgid "Restart now to apply the new hostname?"
 msgstr "Nu opnieuw starten om de nieuwe hostnaam toe te passen?"
 
-msgid "Restart Now"
+msgid "Restart now"
 msgstr "Nu opnieuw starten"
 
 msgid "Hostname can only use letters, numbers, and hyphens"
@@ -3033,10 +3020,10 @@ msgstr "Profiel hernoemen mislukt"
 msgid "Profile renamed"
 msgstr "Profiel hernoemd"
 
-msgid "Rename Profile"
+msgid "Rename profile"
 msgstr "Profiel hernoemen"
 
-msgid "Replace Profile"
+msgid "Replace profile"
 msgstr "Profiel vervangen"
 
 msgid "Profiles"
@@ -3045,28 +3032,25 @@ msgstr "Profielen"
 msgid "No saved profiles"
 msgstr "Geen opgeslagen profielen"
 
-msgid "Download profiles"
-msgstr "Profielen downloaden"
-
 msgid "Delete this profile?"
 msgstr "Dit profiel verwijderen?"
 
-msgid "Save Profile As"
+msgid "Save profile as"
 msgstr "Profiel opslaan als"
 
-msgid "Profile Name"
+msgid "Profile name"
 msgstr "Profielnaam"
 
-msgid "Save Profile"
+msgid "Save profile"
 msgstr "Profiel opslaan"
 
 msgid "Save as a new profile, or replace one that already exists?"
 msgstr "Opslaan als nieuw profiel of een bestaand profiel vervangen?"
 
-msgid "Replace Existing"
+msgid "Replace existing"
 msgstr "Bestaande vervangen"
 
-msgid "New Profile"
+msgid "New profile"
 msgstr "Nieuw profiel"
 
 msgid "Band options"
@@ -3075,10 +3059,7 @@ msgstr "Bandopties"
 msgid "Filter type"
 msgstr "Filtertype"
 
-msgid ""
-"Peaking\n"
-"Low Shelf\n"
-"High Shelf"
+msgid "Peaking\nLow shelf\nHigh shelf"
 msgstr ""
 "Piek\n"
 "Lage plank\n"
@@ -3109,11 +3090,11 @@ msgstr "Crossfeed mengt een gefilterd signaal van het tegenoverliggende kanaal b
 msgid "Frequency"
 msgstr "Frequentie"
 
-msgid "Pre-Amp"
+msgid "Pre-amp"
 msgstr "Voorversterking"
 
 msgid "Reset to defaults"
-msgstr "Herstellen naar standaardwaarden"
+msgstr "Standaardwaarden herstellen"
 
 msgid "48 kHz reference"
 msgstr "Referentie 48 kHz"
@@ -3148,9 +3129,6 @@ msgstr "Plugincatalogus laden..."
 msgid "No network detected"
 msgstr "Geen netwerk gevonden"
 
-msgid "Time zone"
-msgstr "Tijdzone"
-
 msgid "Quick setup"
 msgstr "Snelle installatie"
 
@@ -3166,7 +3144,7 @@ msgstr "Welkom bij Compás"
 msgid "Get started"
 msgstr "Aan de slag"
 
-msgid "Quick Setup Complete"
+msgid "Quick setup complete"
 msgstr "Snelle installatie voltooid"
 
 msgid "Continue"
@@ -3306,7 +3284,7 @@ msgstr "Hoog"
 msgid "Stream quality: %s"
 msgstr "Streamkwaliteit: %s"
 
-msgid "Stream Quality"
+msgid "Stream quality"
 msgstr "Streamkwaliteit"
 
 msgid "Applies to new streaming queues"
@@ -3334,7 +3312,7 @@ msgstr "Ongeldige naam voor downloadmap"
 msgid "Download subfolder"
 msgstr "Downloadsubmap"
 
-msgid "Download Settings"
+msgid "Download settings"
 msgstr "Downloadinstellingen"
 
 msgid "Subfolder: SD root"
@@ -3346,10 +3324,10 @@ msgstr "Submap is relatief aan de hoofdmap van de SD-kaart (bijvoorbeeld Music/O
 msgid "Folder layout for downloaded albums"
 msgstr "Mapindeling voor gedownloade albums"
 
-msgid "Album Artist / Album"
+msgid "Album artist / album"
 msgstr "Albumartiest / Album"
 
-msgid "Album Artist - Album"
+msgid "Album artist - album"
 msgstr "Albumartiest - Album"
 
 msgid "Failed to load from server"
@@ -3401,10 +3379,10 @@ msgstr "Kan verbinding niet starten"
 msgid "No saved servers"
 msgstr "Geen opgeslagen servers"
 
-msgid "Go back and choose New Connection to add one."
+msgid "Go back and choose New connection to add one."
 msgstr "Ga terug en kies Nieuwe verbinding om er een toe te voegen."
 
-msgid "Saved Servers"
+msgid "Saved servers"
 msgstr "Opgeslagen servers"
 
 #, c-format
@@ -3437,11 +3415,8 @@ msgstr "Wachtwoord: niet ingesteld"
 msgid "Connect & Browse"
 msgstr "Verbinden en bladeren"
 
-msgid "New Connection"
+msgid "New connection"
 msgstr "Nieuwe verbinding"
-
-msgid "Download settings"
-msgstr "Downloadinstellingen"
 
 msgid "Songs"
 msgstr "Nummers"
@@ -3544,17 +3519,11 @@ msgstr "Je bibliotheek wordt geladen."
 msgid "Leave this view and try again."
 msgstr "Verlaat deze weergave en probeer opnieuw."
 
-msgid "Power off"
-msgstr "Uitschakelen"
-
 msgid "Restart"
 msgstr "Opnieuw starten"
 
 msgid "Screen off"
 msgstr "Scherm uitschakelen"
-
-msgid "Sleep timer"
-msgstr "Slaaptimer"
 
 msgid "Power controls"
 msgstr "Voedingsbediening"
@@ -3622,17 +3591,11 @@ msgstr "Helderheid"
 msgid "Connections"
 msgstr "Verbindingen"
 
-msgid "Play Mode"
+msgid "Play mode"
 msgstr "Afspeelmodus"
 
 msgid "Sequential"
 msgstr "Op volgorde"
-
-msgid "Repeat All"
-msgstr "Alles herhalen"
-
-msgid "Repeat One"
-msgstr "Eén nummer herhalen"
 
 msgid "Shuffle with repeat"
 msgstr "Willekeurig met herhaling"
@@ -3641,7 +3604,7 @@ msgid "Shuffle once"
 msgstr "Eén keer willekeurig"
 
 #. External apps (More menu and launcher)
-msgid "External Apps"
+msgid "External apps"
 msgstr "Externe apps"
 
 msgid "Apps run on the player only."
@@ -3695,13 +3658,13 @@ msgstr "Gemengd"
 msgid "Hi-Res"
 msgstr "Hi-Res"
 
-msgid "Join albums without Album Artist"
+msgid "Join albums without album artist"
 msgstr "Albums zonder albumartiest samenvoegen"
 
 msgid "Could not open this image"
 msgstr "Kan deze afbeelding niet openen"
 
-msgid "Album Artist (A–Z)"
+msgid "Album artist (A–Z)"
 msgstr "Albumartiest (A–Z)"
 
 msgid "Buttons locked"
@@ -3746,7 +3709,7 @@ msgstr "Muziekmenu"
 msgid "Cover Flow"
 msgstr "Cover Flow"
 
-msgid "NOS Mode"
+msgid "NOS mode"
 msgstr "NOS-modus"
 
 msgid "Out of memory"
@@ -3756,10 +3719,10 @@ msgstr "Geheugen vol"
 msgid "Select all (%d)"
 msgstr "Alles selecteren (%d)"
 
-msgid "Power + Volume Up to unlock"
+msgid "Power + volume up to unlock"
 msgstr "Aan/uit + Volume omhoog om te ontgrendelen"
 
-msgid "Hold Power + turn volume up to unlock"
+msgid "Hold power + turn volume up to unlock"
 msgstr "Houd Aan/uit ingedrukt en verhoog het volume om te ontgrendelen"
 
 msgid "Player image validation failed (ELF mismatch)."
@@ -3822,7 +3785,7 @@ msgstr "Controleer of op het andere apparaat dezelfde code wordt getoond."
 msgid "Type this code on the other device."
 msgstr "Typ deze code op het andere apparaat."
 
-msgid "DSD Gain"
+msgid "DSD gain"
 msgstr "DSD-versterking"
 
 #, c-format
@@ -3832,7 +3795,7 @@ msgstr "+%d dB"
 msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
 msgstr "Verhoogt native DSD op de hoofdtelefoonuitgangen van deze speler. Gaat niet verder dan de hoogste volumestap."
 
-msgid "Seek Step"
+msgid "Seek step"
 msgstr "Zoekstap"
 
 #, c-format
@@ -3861,7 +3824,7 @@ msgid "Random Songs"
 msgstr "Willekeurige nummers"
 
 msgctxt "albums"
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "Recent toegevoegd"
 
 msgctxt "albums"
@@ -3869,10 +3832,10 @@ msgid "Recently Played"
 msgstr "Recent afgespeeld"
 
 msgctxt "albums"
-msgid "Most Played"
+msgid "Most played"
 msgstr "Meest afgespeeld"
 
-msgid "Restore at Startup"
+msgid "Restore at startup"
 msgstr "Herstellen bij opstarten"
 
 msgid "Restore Wi-Fi at Startup"
@@ -3884,25 +3847,25 @@ msgstr "Bluetooth herstellen bij opstarten"
 msgid "Name (Z–A)"
 msgstr "Naam (Z–A)"
 
-msgid "Oldest Modified"
+msgid "Oldest modified"
 msgstr "Oudst gewijzigd"
 
-msgid "Oldest Added"
+msgid "Oldest added"
 msgstr "Oudst toegevoegd"
 
-msgid "Release Year (newest first)"
+msgid "Release year (newest first)"
 msgstr "Uitgavejaar (nieuwste eerst)"
 
-msgid "Album Artist (Z–A)"
+msgid "Album artist (Z–A)"
 msgstr "Albumartiest (Z–A)"
 
-msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
-msgstr "Bestanden gebruiken de wijzigingsdatum. Albums gebruiken het laatst toegevoegde nummer; Uitgavejaar zet ontbrekende jaren achteraan. Werk de muziekdatabase eenmaal bij om jaren uit bestaande bestanden te lezen."
+msgid "Files sort by modification date; albums by newest track added. Release year keeps unknown years last. Run Update music database to load years."
+msgstr "Bestanden worden op wijzigingsdatum gesorteerd, albums op het laatst toegevoegde nummer. Onbekende uitgavejaren staan achteraan. Werk de muziekdatabase bij om jaren te laden."
 
 msgid "Now Playing"
 msgstr "Wordt nu afgespeeld"
 
-msgid "In Queue"
+msgid "In queue"
 msgstr "In wachtrij"
 
 msgid "Continue Playing"
@@ -3938,10 +3901,10 @@ msgstr "Effecten"
 msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
 msgstr "Schakel Bluetooth in via Draadloos of het snelpaneel om de BT-DAC-modus te gebruiken"
 
-msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgid "Library recovered. Use Settings > Library > Update music database to save"
 msgstr "Bibliotheek hersteld. Gebruik Instellingen > Bibliotheek > Muziekdatabase bijwerken om op te slaan"
 
-msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgid "Library unavailable. Use Settings > Library > Update music database to rebuild"
 msgstr "Bibliotheek niet beschikbaar. Gebruik Instellingen > Bibliotheek > Muziekdatabase bijwerken om deze opnieuw op te bouwen"
 
 msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
@@ -3953,7 +3916,7 @@ msgstr "Personaliseren"
 msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
 msgstr "Schakel ADB eerst uit (Instellingen > Systeem > Geavanceerd) en schakel daarna hier USB-DAC in."
 
-msgid "Use Settings > Library > Update Music Database"
+msgid "Use Settings > Library > Update music database"
 msgstr "Gebruik Instellingen > Bibliotheek > Muziekdatabase bijwerken"
 
 msgid "%s: %d (outside ±%d)"
@@ -3962,10 +3925,10 @@ msgstr "%s: %d (buiten ±%d)"
 msgid "A preset with that name already exists"
 msgstr "Er bestaat al een preset met die naam"
 
-msgid "About Play Through"
+msgid "About play through"
 msgstr "Over Doorblijven spelen"
 
-msgid "Adjustment Range"
+msgid "Adjustment range"
 msgstr "Instelbereik"
 
 msgid "Air"
@@ -3980,10 +3943,10 @@ msgstr "Albums gaan verder in alfabetische albumvolgorde van de artiest."
 msgid "Amount (%)"
 msgstr "Hoeveelheid (%)"
 
-msgid "Bass Extension"
+msgid "Bass extension"
 msgstr "Basbereik"
 
-msgid "Bass Texture"
+msgid "Bass texture"
 msgstr "Bastextuur"
 
 msgid "Bass frequency (Hz)"
@@ -3998,7 +3961,7 @@ msgstr "Bevestigen"
 msgid "Continuing playback"
 msgstr "Afspelen wordt voortgezet"
 
-msgid "Could not apply Soundstage. Try again."
+msgid "Could not apply soundstage. Try again."
 msgstr "Kon klankbeeld niet toepassen. Probeer het opnieuw."
 
 msgid "Could not apply changes. Try again."
@@ -4031,7 +3994,7 @@ msgstr "Demping (%)"
 msgid "Enter a short preset name without line breaks"
 msgstr "Voer een korte presetnaam in zonder regeleinden"
 
-msgid "Female Overtones"
+msgid "Female overtones"
 msgstr "Vrouwelijke boventonen"
 
 msgid "Focused center"
@@ -4043,16 +4006,16 @@ msgstr "Mappen gaan verder in alfabetische volgorde van naastgelegen mappen."
 msgid "Hall"
 msgstr "Zaal"
 
-msgid "How It Works"
+msgid "How it works"
 msgstr "Hoe het werkt"
 
-msgid "Impulse Response"
+msgid "Impulse response"
 msgstr "Impulsrespons"
 
 msgid "Load"
 msgstr "Laden"
 
-msgid "Named Presets"
+msgid "Named presets"
 msgstr "Presets met naam"
 
 msgid "Natural"
@@ -4061,7 +4024,7 @@ msgstr "Natuurlijk"
 msgid "New preset name"
 msgstr "Nieuwe presetnaam"
 
-msgid "Note Thickness"
+msgid "Note thickness"
 msgstr "Nootdikte"
 
 msgid "Older MSEB controls are unsupported; preset was not loaded"
@@ -4070,7 +4033,7 @@ msgstr "Oudere MSEB-regelaars worden niet ondersteund; preset niet geladen"
 msgid "Older MSEB controls are unsupported; slot was not loaded"
 msgstr "Oudere MSEB-regelaars worden niet ondersteund; geheugenplek niet geladen"
 
-msgid "Overall Temperature"
+msgid "Overall temperature"
 msgstr "Algemene temperatuur"
 
 msgid "Overwrite"
@@ -4079,13 +4042,13 @@ msgstr "Overschrijven"
 msgid "Overwrite preset?"
 msgstr "Preset overschrijven?"
 
-msgid "Play Through"
+msgid "Play through"
 msgstr "Doorblijven spelen"
 
-msgid "Play Through Albums"
+msgid "Play through albums"
 msgstr "Albums doorspelen"
 
-msgid "Play Through Folders"
+msgid "Play through folders"
 msgstr "Mappen doorspelen"
 
 msgid "Preset"
@@ -4106,11 +4069,8 @@ msgstr "Reflecties (%)"
 msgid "Rename preset"
 msgstr "Preset hernoemen"
 
-msgid "Reset Soundstage to defaults?"
+msgid "Reset soundstage to defaults?"
 msgstr "Klankbeeld herstellen naar standaardwaarden?"
-
-msgid "Reset to Defaults"
-msgstr "Standaardwaarden herstellen"
 
 msgid "Room"
 msgstr "Ruimte"
@@ -4118,7 +4078,7 @@ msgstr "Ruimte"
 msgid "Room size (%)"
 msgstr "Ruimtegrootte (%)"
 
-msgid "Save Named Preset"
+msgid "Save named preset"
 msgstr "Preset met naam opslaan"
 
 msgid "Saved"
@@ -4154,7 +4114,7 @@ msgstr "Geheugenplek geladen"
 msgid "Small room"
 msgstr "Kleine ruimte"
 
-msgid "Sound Stage"
+msgid "Sound stage"
 msgstr "Geluidsbeeld"
 
 msgid "Soundstage"
@@ -4163,7 +4123,7 @@ msgstr "Klankbeeld"
 msgid "Speaker angle (deg)"
 msgstr "Luidsprekerhoek (deg)"
 
-msgid "Stereo Width"
+msgid "Stereo width"
 msgstr "Stereobreedte"
 
 msgid "Stock MSEB width changes the channel mix."
@@ -4175,7 +4135,7 @@ msgstr "Studiomonitors"
 msgid "Switch to stock MSEB"
 msgstr "Omschakelen naar standaard MSEB"
 
-msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgid "This saved layout is unsupported. Switching replaces instrument presence, bass bite, and treble bite with the stock controls."
 msgstr "Deze opgeslagen indeling wordt niet ondersteund. Omschakelen vervangt Instrumentaanwezigheid, Bas-bite en Treble-bite door de standaardregelaars."
 
 msgid "Treble frequency (Hz)"
@@ -4202,7 +4162,7 @@ msgstr "Beschadigde preset verwijderen?"
 msgid "Delete preset?"
 msgstr "Preset verwijderen?"
 
-msgid "Load from Slot"
+msgid "Load from slot"
 msgstr "Laden van plek"
 
 msgid "MSEB"
@@ -4217,38 +4177,29 @@ msgstr "Preset opgeslagen"
 msgid "Restoring ADB…"
 msgstr "ADB herstellen…"
 
-msgid "Save to Slot"
+msgid "Save to slot"
 msgstr "Opslaan op plek"
 
 msgid "Stage"
 msgstr "Podium"
 
-msgid "Turn off Loudness Boost first"
+msgid "Turn off loudness boost first"
 msgstr "Schakel eerst Loudness Boost uit"
 
 msgid "DAC"
 msgstr "DAC"
 
-msgid "USB Output"
+msgid "USB output"
 msgstr "USB-uitgang"
-
-msgid "Accent color"
-msgstr "Accentkleur"
 
 msgid "Advanced sound"
 msgstr "Geavanceerd geluid"
-
-msgid "Button mapping"
-msgstr "Knoptoewijzing"
 
 msgid "Buttons"
 msgstr "Knoppen"
 
 msgid "Bypassed by NOS"
 msgstr "Omzeild door NOS"
-
-msgid "Car mode"
-msgstr "Automodus"
 
 msgid "Filter"
 msgstr "Filter"
@@ -4268,35 +4219,14 @@ msgstr "Tekstgrootte songteksten"
 msgid "Max %d%%"
 msgstr "Max. %d%%"
 
-msgid "Per album"
-msgstr "Per album"
-
-msgid "Per track"
-msgstr "Per nummer"
-
-msgid "Play through"
-msgstr "Doorblijven spelen"
-
-msgid "Quick drawer"
-msgstr "Snelpaneel"
-
-msgid "Resume last track"
-msgstr "Laatste nummer hervatten"
-
-msgid "Show Artist Images"
+msgid "Show artist images"
 msgstr "Artiestenafbeeldingen weergeven"
 
-msgid "Show Lyrics"
+msgid "Show lyrics"
 msgstr "Songteksten weergeven"
-
-msgid "Top bar"
-msgstr "Bovenbalk"
 
 msgid "Turn off NOS to choose a filter"
 msgstr "Schakel NOS uit om een filter te kiezen"
-
-msgid "USB output"
-msgstr "USB-uitvoer"
 
 msgid "Volume limits"
 msgstr "Volumelimieten"
@@ -4304,11 +4234,11 @@ msgstr "Volumelimieten"
 msgid "Volume lock (screen off)"
 msgstr "Volumevergrendeling (scherm uit)"
 
-msgid "Albums on an album-artist page"
-msgstr "Albums op een albumartiestpagina"
+msgid "Album artist pages"
+msgstr "Albumartiestpagina’s"
 
-msgid "Albums on an artist page"
-msgstr "Albums op een artiestpagina"
+msgid "Artist pages"
+msgstr "Artiestpagina’s"
 
 msgid "Build it now? This may take a while."
 msgstr "Nu maken? Dit kan even duren."
@@ -4327,12 +4257,6 @@ msgstr "Getypte tekst verwerpen?"
 
 msgid "Enable Wi-Fi to access"
 msgstr "Schakel Wi-Fi in voor toegang"
-
-msgid "Fast"
-msgstr "Snel"
-
-msgid "Fastest"
-msgstr "Snelst"
 
 msgid "Forget this device?"
 msgstr "Dit apparaat vergeten?"
@@ -4360,9 +4284,6 @@ msgstr "Geen overeenkomsten"
 
 msgid "No plays yet"
 msgstr "Nog niets afgespeeld"
-
-msgid "Normal"
-msgstr "Normaal"
 
 msgid "Open Now Playing"
 msgstr "Nu afspelen openen"
@@ -4412,7 +4333,7 @@ msgstr "Dit kan even duren."
 msgid "Type to search"
 msgstr "Typ om te zoeken"
 
-msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgid "Update saved. Install from firmware update > install from SD card."
 msgstr "Update opgeslagen. Installeer via Firmware-update > Installeren vanaf SD-kaart."
 
 msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
@@ -4430,19 +4351,16 @@ msgstr "Uitgeschakeld"
 msgid "Player layout"
 msgstr "Spelerindeling"
 
-msgid "Faster"
-msgstr "Sneller"
-
-msgid "Add to Favorites"
+msgid "Add to favorites"
 msgstr "Aan favorieten toevoegen"
 
-msgid "Remove from Favorites"
+msgid "Remove from favorites"
 msgstr "Uit favorieten verwijderen"
 
-msgid "Go to Album"
+msgid "Go to album"
 msgstr "Naar album"
 
-msgid "Go to Artist"
+msgid "Go to artist"
 msgstr "Naar artiest"
 
 msgid "Some songs could not be downloaded"
@@ -4489,3 +4407,12 @@ msgstr "Wijzigingen die tot nu toe zijn gevonden, worden mogelijk niet opgeslage
 
 msgid "Updating the library. This may take a while."
 msgstr "Bibliotheek wordt bijgewerkt. Dit kan even duren."
+
+msgid "Too demanding for this device"
+msgstr "Te veeleisend voor dit apparaat"
+
+msgid "Waiting for a network address"
+msgstr "Wachten op een netwerkadres"
+
+msgid "Artist unavailable"
+msgstr "Artiest niet beschikbaar"

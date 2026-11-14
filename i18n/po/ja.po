@@ -198,13 +198,13 @@ msgstr "アーティスト"
 msgid "Albums"
 msgstr "アルバム"
 
-msgid "Album Artist"
+msgid "Album artist"
 msgstr "アルバムアーティスト"
 
 msgid "Genres"
 msgstr "ジャンル"
 
-msgid "All Songs"
+msgid "All songs"
 msgstr "すべての曲"
 
 msgid "Playlists"
@@ -225,7 +225,7 @@ msgstr "Wi-Fi"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-msgid "Sleep Timer"
+msgid "Sleep timer"
 msgstr "スリープタイマー"
 
 msgid "Crossfade"
@@ -240,10 +240,10 @@ msgstr "DLNA"
 msgid "Gapless"
 msgstr "ギャップレス再生"
 
-msgid "Remote Control"
+msgid "Remote control"
 msgstr "リモコン"
 
-msgid "Car Mode"
+msgid "Car mode"
 msgstr "車載モード"
 
 msgid "Plugins"
@@ -699,7 +699,7 @@ msgstr "ゲームをプレイするにはエミュレーターをダウンロー
 msgid "Disconnect USB storage from the computer before changing files."
 msgstr "ファイルを変更する前に、コンピューターからUSBストレージを取り外してください。"
 
-msgid "File Manager"
+msgid "File manager"
 msgstr "ファイルマネージャー"
 
 msgid "%d selected"
@@ -815,7 +815,7 @@ msgstr "プレイリストを作成しました"
 msgid "Failed to create playlist"
 msgstr "プレイリストの作成に失敗しました"
 
-msgid "Playlist Name"
+msgid "Playlist name"
 msgstr "プレイリスト名"
 
 msgid "Song already added"
@@ -866,19 +866,19 @@ msgstr "再生可能なファイルをスキャン中"
 msgid "File path is too long"
 msgstr "ファイルパスが長すぎます"
 
-msgid "Play All (Sequential)"
+msgid "Play all (sequential)"
 msgstr "すべて再生（順番）"
 
-msgid "Play All (Shuffle)"
+msgid "Play all (shuffle)"
 msgstr "すべて再生（シャッフル）"
 
-msgid "Add to Queue"
+msgid "Add to queue"
 msgstr "キューに追加"
 
-msgid "Add to Playlist"
+msgid "Add to playlist"
 msgstr "プレイリストに追加"
 
-msgid "+ New Playlist"
+msgid "+ New playlist"
 msgstr "＋ 新しいプレイリスト"
 
 msgid "Audio"
@@ -897,7 +897,7 @@ msgid "%lld track"
 msgid_plural "%lld tracks"
 msgstr[0] "%lld曲"
 
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "最近追加"
 
 msgid "Playlist changed. Select a song again."
@@ -940,7 +940,7 @@ msgstr "ディスク%d"
 msgid "Next  •  %d–%d of %d"
 msgstr "次へ  •  %d～%d / %d"
 
-msgid "Most Played"
+msgid "Most played"
 msgstr "再生回数の多い曲"
 
 msgid "Library changed. Open the album again."
@@ -994,7 +994,7 @@ msgstr "名前を変更できません：名前が無効か、ファイルがす
 msgid "Playlist renamed"
 msgstr "プレイリストの名前を変更しました"
 
-msgid "Rename Playlist"
+msgid "Rename playlist"
 msgstr "プレイリスト名を変更"
 
 msgid "Delete playlist?"
@@ -1003,7 +1003,7 @@ msgstr "プレイリストを削除しますか？"
 msgid "The playlist file will be deleted. Music files are kept."
 msgstr "プレイリストファイルが削除されます。音楽ファイルは残ります。"
 
-msgid "Delete Playlist"
+msgid "Delete playlist"
 msgstr "プレイリストを削除"
 
 msgid "System playlists"
@@ -1231,16 +1231,16 @@ msgstr "ブートセレクターで再起動できませんでした"
 msgid "An update is in progress. Please wait."
 msgstr "更新中です。お待ちください。"
 
-msgid "Tap Power off again to confirm"
+msgid "Tap power off again to confirm"
 msgstr "確認するには、もう一度電源オフをタップしてください"
 
-msgid "Tap Restart again to confirm"
+msgid "Tap restart again to confirm"
 msgstr "確認するには、もう一度再起動をタップしてください"
 
 msgid "Sleep timer: %d min remaining"
 msgstr "スリープタイマー：残り%d分"
 
-msgid "Sleep timer: Off"
+msgid "Sleep timer: off"
 msgstr "スリープタイマー：オフ"
 
 msgid "Music"
@@ -1357,13 +1357,13 @@ msgstr "接続先："
 msgid "Couldn't connect to Wi-Fi network"
 msgstr "Wi-Fiネットワークに接続できませんでした"
 
-msgid "Wi-Fi Password"
+msgid "Wi-Fi password"
 msgstr "Wi-Fiパスワード"
 
-msgid "Secured · Connected"
+msgid "Secured · connected"
 msgstr "保護あり・接続済み"
 
-msgid "Open · Connected"
+msgid "Open · connected"
 msgstr "オープン・接続済み"
 
 msgid "Saved network"
@@ -1402,7 +1402,7 @@ msgstr "SSIDは1～32バイトで指定してください"
 msgid "Wi-Fi is still starting"
 msgstr "Wi-Fiはまだ起動中です"
 
-msgid "Network Name (SSID)"
+msgid "Network name (SSID)"
 msgstr "ネットワーク名（SSID）"
 
 msgid "Connect"
@@ -1435,19 +1435,19 @@ msgstr "非常に良好"
 msgid "SSID: %s"
 msgstr "SSID：%s"
 
-msgid "IP Address: %s"
+msgid "IP address: %s"
 msgstr "IPアドレス：%s"
 
 msgid "Gateway: %s"
 msgstr "ゲートウェイ：%s"
 
-msgid "MAC Address: %s"
+msgid "MAC address: %s"
 msgstr "MACアドレス：%s"
 
 msgid "Signal: %s"
 msgstr "電波強度：%s"
 
-msgid "Wi-Fi Info"
+msgid "Wi-Fi info"
 msgstr "Wi-Fi情報"
 
 msgid "Primary DNS"
@@ -1459,13 +1459,13 @@ msgstr "代替DNS"
 msgid "Not set"
 msgstr "未設定"
 
-msgid "DNS Settings"
+msgid "DNS settings"
 msgstr "DNS設定"
 
-msgid "Manual SSID Entry"
+msgid "Manual SSID entry"
 msgstr "SSIDを手動で入力"
 
-msgid "Memorized Networks"
+msgid "Memorized networks"
 msgstr "保存済みネットワーク"
 
 msgid "No memorized networks"
@@ -1483,7 +1483,7 @@ msgstr "保存済みネットワークの詳細を確認しています。"
 msgid "Connected"
 msgstr "接続済み"
 
-msgid "Available Networks"
+msgid "Available networks"
 msgstr "利用可能なネットワーク"
 
 msgid "Scanning for networks"
@@ -1540,10 +1540,10 @@ msgstr "Bluetoothストリームを待機中…"
 msgid "Auto"
 msgstr "自動"
 
-msgid "LDAC Quality"
+msgid "LDAC quality"
 msgstr "LDAC高音質"
 
-msgid "LDAC Standard"
+msgid "LDAC standard"
 msgstr "LDAC標準"
 
 msgid "Could not save Bluetooth codec"
@@ -1567,34 +1567,34 @@ msgstr "前の選択をまだ適用中です"
 msgid "Headset may disconnect, manual reconnection might be required"
 msgstr "ヘッドセットが切断される場合があります。手動で再接続が必要になることがあります"
 
-msgid "Sample Rate"
+msgid "Sample rate"
 msgstr "サンプルレート"
 
-msgid "Bluetooth Volume Sync"
+msgid "Bluetooth volume sync"
 msgstr "Bluetooth音量同期"
 
 msgid "Codec"
 msgstr "コーデック"
 
-msgid "Speex Resampling"
+msgid "Speex resampling"
 msgstr "Speexリサンプリング"
 
-msgid "Hide Unnamed Devices"
+msgid "Hide unnamed devices"
 msgstr "名前のないデバイスを非表示"
 
 msgid "Advanced"
 msgstr "詳細設定"
 
-msgid "Resume and Play"
+msgid "Resume and play"
 msgstr "続きから再生"
 
-msgid "Resume, but Paused"
+msgid "Resume, but paused"
 msgstr "続きから（一時停止）"
 
 msgid "Applies next time you launch the app"
 msgstr "アプリを次回起動したときに適用されます"
 
-msgid "Resume Last Track"
+msgid "Resume last track"
 msgstr "前回の再生を再開"
 
 msgid "Small"
@@ -1603,13 +1603,13 @@ msgstr "小"
 msgid "Could not apply font size"
 msgstr "フォントサイズを適用できませんでした"
 
-msgid "Font Size"
+msgid "Font size"
 msgstr "フォントサイズ"
 
-msgid "Per Track"
+msgid "Per track"
 msgstr "トラックごと"
 
-msgid "Per Album"
+msgid "Per album"
 msgstr "アルバムごと"
 
 msgid "ReplayGain"
@@ -1635,9 +1635,6 @@ msgstr "USBモード"
 
 msgid "Failed to switch to %s"
 msgstr "%sへの切り替えに失敗しました"
-
-msgid "USB Mode"
-msgstr "USBモード"
 
 msgid "Failed to update USB charging"
 msgstr "USB充電設定の更新に失敗しました"
@@ -1681,7 +1678,7 @@ msgstr "Bluetoothはオフです"
 msgid "Turn on Bluetooth to see paired and nearby devices."
 msgstr "ペアリング済みまたは近くのデバイスを表示するにはBluetoothをオンにしてください。"
 
-msgid "Paired Devices"
+msgid "Paired devices"
 msgstr "ペアリング済みデバイス"
 
 msgid "No paired devices"
@@ -1690,7 +1687,7 @@ msgstr "ペアリング済みデバイスはありません"
 msgid "Previously connected accessories will appear here."
 msgstr "以前接続したアクセサリーがここに表示されます。"
 
-msgid "Available Devices"
+msgid "Available devices"
 msgstr "利用可能なデバイス"
 
 msgid "No nearby devices"
@@ -1720,7 +1717,7 @@ msgstr "AirPlayを有効にできませんでした"
 msgid "AirPlay stopped unexpectedly"
 msgstr "AirPlayが予期せず停止しました"
 
-msgid "DLNA Renderer"
+msgid "DLNA renderer"
 msgstr "DLNAレンダラー"
 
 msgid "Service is busy"
@@ -1750,7 +1747,7 @@ msgstr "Bluetooth：サービス登録を待機中"
 msgid "Connect using either available route:"
 msgstr "次のいずれかの方法で接続してください："
 
-msgid "Bluetooth: Compas Remote Control"
+msgid "Bluetooth: Compas remote control"
 msgstr "Bluetooth：Compas Remote Control"
 
 msgid "Could not generate a new PIN"
@@ -1838,7 +1835,7 @@ msgstr "プラグインを更新中…"
 msgid "Plugin Store"
 msgstr "プラグインストア"
 
-msgid "Refresh Plugins"
+msgid "Refresh plugins"
 msgstr "プラグインを更新"
 
 msgid "Plugin Manager"
@@ -2015,13 +2012,13 @@ msgstr "プレイリストを保存中…"
 msgid "Cannot save playlist"
 msgstr "プレイリストを保存できません"
 
-msgid "Save Queue as Playlist"
+msgid "Save queue as playlist"
 msgstr "キューをプレイリストとして保存"
 
-msgid "Clear Queue"
+msgid "Clear queue"
 msgstr "キューを消去"
 
-msgid "Save as Playlist"
+msgid "Save as playlist"
 msgstr "プレイリストとして保存"
 
 msgid "Playlist saved"
@@ -2030,7 +2027,7 @@ msgstr "プレイリストを保存しました"
 msgid "Cannot save: invalid or streaming entries"
 msgstr "保存できません：無効な項目またはストリーミング項目が含まれています"
 
-msgid "Play Next"
+msgid "Play next"
 msgstr "次に再生"
 
 msgid "Custom"
@@ -2039,19 +2036,13 @@ msgstr "カスタム"
 msgid "%d min remaining"
 msgstr "残り%d分"
 
-msgid "Crossfeed: Off"
-msgstr "クロスフィード：オフ"
-
-msgid "Crossfeed: %d%%"
-msgstr "クロスフィード：%d%%"
-
 msgid "%+.2f dB"
 msgstr "%+.2f dB"
 
 msgid "%.0f Hz"
 msgstr "%.0f Hz"
 
-msgid "Pre-Amp (dB, -12 to 12)"
+msgid "Pre-amp (dB, -12 to 12)"
 msgstr "プリアンプ（dB、-12～12）"
 
 msgid "Crossfeed (0 to 100)"
@@ -2084,7 +2075,7 @@ msgstr "更新を準備中"
 msgid "Checking the file on the SD card"
 msgstr "SDカード上のファイルを確認中"
 
-msgid "Update & Reboot"
+msgid "Update & reboot"
 msgstr "更新して再起動"
 
 msgid ""
@@ -2128,13 +2119,13 @@ msgstr "オンライン更新を確認"
 msgid "Install from SD card"
 msgstr "SDカードからインストール"
 
-msgid "Update the Player only, retaining current drivers, kernel and bootloader."
+msgid "Update the player only, retaining current drivers, kernel and bootloader."
 msgstr "ドライバー、カーネル、ブートローダーを維持して、プレーヤーのみを更新します。"
 
-msgid "Download & Install"
+msgid "Download & install"
 msgstr "ダウンロードしてインストール"
 
-msgid "Install & Restart"
+msgid "Install & restart"
 msgstr "インストールして再起動"
 
 msgid "Downloading player update"
@@ -2196,13 +2187,13 @@ msgstr "ダウンロードを開始できませんでした"
 msgid "Downloading update"
 msgstr "更新をダウンロード中"
 
-msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
+msgid "Update the entire CompásOS. Flashing firmware contains bootloader, player, kernel and drivers."
 msgstr "CompásOS全体を更新します。ファームウェアの書き込みにはブートローダー、プレーヤー、カーネル、ドライバーが含まれます。"
 
 msgid "Download"
 msgstr "ダウンロード"
 
-msgid "Install & Reboot"
+msgid "Install & reboot"
 msgstr "インストールして再起動"
 
 msgid "Preparing and verifying recovery mode"
@@ -2293,7 +2284,7 @@ msgstr "ガイド：docs/development/CREATING.md"
 msgid "Write a Lua plugin on your computer. Copy its .lua file to the .plugins folder on your SD card."
 msgstr "コンピューターでLuaプラグインを作成します。.luaファイルをSDカードの.pluginsフォルダーにコピーしてください。"
 
-msgid "Open More > Plugins > Refresh Plugins. Scan for a working example and the full API guide."
+msgid "Open More > Plugins > Refresh plugins. Scan for a working example and the full API guide."
 msgstr "その他 > プラグイン > プラグインを更新を開きます。動作するサンプルとAPIガイド全文を確認するにはスキャンしてください。"
 
 msgid "Edit a .theme text file on your computer. Copy it to the Themes folder on your SD card, then select it in More > Themes."
@@ -2314,10 +2305,10 @@ msgstr "開発者向けオプション"
 msgid "About"
 msgstr "このデバイスについて"
 
-msgid "Screenshots (Power + Previous)"
+msgid "Screenshots (power + previous)"
 msgstr "スクリーンショット（電源＋前へ）"
 
-msgid "Screenshots (Power + Vol Down)"
+msgid "Screenshots (power + vol down)"
 msgstr "スクリーンショット（電源＋音量ダウン）"
 
 msgid "Enable debug logging"
@@ -2335,7 +2326,7 @@ msgstr "アートワークから"
 msgid "From album art (no cover, using custom)"
 msgstr "アートワークから（アートワークがない場合はカスタムカラーを使用）"
 
-msgid "Accent Color"
+msgid "Accent color"
 msgstr "アクセントカラー"
 
 msgid "Accent Options"
@@ -2362,7 +2353,7 @@ msgstr "画面タイトル横のアイコンにアクセントカラーを使用
 msgid "Presets"
 msgstr "プリセット"
 
-msgid "Default (Built-in)"
+msgid "Default (built-in)"
 msgstr "デフォルト（内蔵）"
 
 msgid "No .ttf fonts found in /Fonts"
@@ -2389,31 +2380,31 @@ msgstr "カスタムフォントはラテン文字にのみ適用されます。
 msgid "Place .ttf fonts in SD /Fonts folder."
 msgstr ".ttfフォントをSDカードの/Fontsフォルダーに配置してください。"
 
-msgid "Screen Timeout"
+msgid "Screen timeout"
 msgstr "画面タイムアウト"
 
 msgid "Turn off screen automatically"
 msgstr "画面を自動的にオフにする"
 
-msgid "Screen Dimming"
+msgid "Screen dimming"
 msgstr "画面の減光"
 
 msgid "Dim screen before timeout"
 msgstr "タイムアウト前に画面を暗くする"
 
-msgid "Startup Volume"
+msgid "Startup volume"
 msgstr "起動時の音量"
 
 msgid "Launch at a fixed volume"
 msgstr "一定の音量で起動"
 
-msgid "Max Volume"
+msgid "Max volume"
 msgstr "最大音量"
 
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "ボタン、リモコン、プラグインを含め、プレーヤーの音量を制限します。"
 
-msgid "Car Mode Volume"
+msgid "Car mode volume"
 msgstr "車載モードの音量"
 
 msgid "Auto-resume"
@@ -2440,13 +2431,13 @@ msgstr "残り時間：%d:%02d:%02d"
 msgid "Time remaining: %d:%02d"
 msgstr "残り時間：%d:%02d"
 
-msgid "Enable Sleep Timer"
+msgid "Enable sleep timer"
 msgstr "スリープタイマーを有効にする"
 
-msgid "Show Time Remaining"
+msgid "Show time remaining"
 msgstr "残り時間を表示"
 
-msgid "Idle Shutdown"
+msgid "Idle shutdown"
 msgstr "アイドル時のシャットダウン"
 
 msgid "Automatically go idle"
@@ -2455,7 +2446,7 @@ msgstr "自動的にアイドル状態にする"
 msgid "Choose what happens when idle:"
 msgstr "アイドル時の動作を選択："
 
-msgid "Power Off"
+msgid "Power off"
 msgstr "電源オフ"
 
 msgid "Suspend to RAM"
@@ -2500,13 +2491,13 @@ msgstr "タイムゾーンを適用できませんでした"
 msgid "%s (current)"
 msgstr "%s（現在）"
 
-msgid "Time Zone"
+msgid "Time zone"
 msgstr "タイムゾーン"
 
 msgid "Sound Effects"
 msgstr "効果音"
 
-msgid "Download Profiles"
+msgid "Download profiles"
 msgstr "プロファイルをダウンロード"
 
 msgid "Buttons & Remote"
@@ -2524,13 +2515,13 @@ msgstr "クロスフィード"
 msgid "Power"
 msgstr "電源"
 
-msgid "Play/Pause"
+msgid "Play/pause"
 msgstr "再生／一時停止"
 
-msgid "Next Track"
+msgid "Next track"
 msgstr "次の曲"
 
-msgid "Previous Track"
+msgid "Previous track"
 msgstr "前の曲"
 
 msgid "Clockwise"
@@ -2539,10 +2530,10 @@ msgstr "時計回り"
 msgid "Counterclockwise"
 msgstr "反時計回り"
 
-msgid "Volume Up"
+msgid "Volume up"
 msgstr "音量を上げる"
 
-msgid "Volume Down"
+msgid "Volume down"
 msgstr "音量を下げる"
 
 msgid "Button"
@@ -2551,19 +2542,19 @@ msgstr "ボタン"
 msgid "Default (native behavior)"
 msgstr "デフォルト（本来の動作）"
 
-msgid "Seek Forward"
+msgid "Seek forward"
 msgstr "早送り"
 
-msgid "Seek Backward"
+msgid "Seek backward"
 msgstr "巻き戻し"
 
-msgid "Toggle Screen"
+msgid "Toggle screen"
 msgstr "画面の切り替え"
 
-msgid "Power Menu"
+msgid "Power menu"
 msgstr "電源メニュー"
 
-msgid "Do Nothing"
+msgid "Do nothing"
 msgstr "何もしない"
 
 msgid "Single press"
@@ -2587,13 +2578,13 @@ msgstr "長押し"
 msgid "Default"
 msgstr "デフォルト"
 
-msgid "Reset All"
+msgid "Reset all"
 msgstr "すべてリセット"
 
-msgid "Button Mapping"
+msgid "Button mapping"
 msgstr "ボタン割り当て"
 
-msgid "Keep a button assigned to Toggle Screen or Power Menu"
+msgid "Keep a button assigned to toggle screen or power menu"
 msgstr "「画面の切り替え」または「電源メニュー」に割り当てたボタンを残してください"
 
 msgid "Reset all button mappings?"
@@ -2602,10 +2593,7 @@ msgstr "すべてのボタン割り当てをリセットしますか？"
 msgid "Reset"
 msgstr "リセット"
 
-msgid "Volume Lock (Screen Off)"
-msgstr "画面オフ時の音量ロック"
-
-msgid "Update Music Database to enable this album order"
+msgid "Update music database to enable this album order"
 msgstr "アルバム順を有効にするには音楽データベースを更新してください"
 
 msgid "Sorting"
@@ -2617,25 +2605,25 @@ msgstr "ファイル（フォルダーを先に表示）"
 msgid "Name (A–Z)"
 msgstr "名前（A～Z）"
 
-msgid "Newest Modified"
+msgid "Newest modified"
 msgstr "更新日の新しい順"
 
-msgid "Release Year (oldest first)"
+msgid "Release year (oldest first)"
 msgstr "リリース年（古い順）"
 
 msgid "Files use modification dates. Albums use the newest track added; missing release years sort last. Update Music Database once to read years from existing files."
 msgstr "ファイルは更新日時で並べ替えます。アルバムは追加された最新のトラックを基準にし、リリース年がないものは最後に並びます。既存ファイルから年を読み取るには、音楽データベースを一度更新してください。"
 
-msgid "Update Music Database"
+msgid "Update music database"
 msgstr "音楽データベースを更新"
 
-msgid "Refresh All Metadata"
+msgid "Refresh all metadata"
 msgstr "すべてのメタデータを更新"
 
-msgid "Refresh All Covers"
+msgid "Refresh all covers"
 msgstr "全アートワークを更新"
 
-msgid "Animation Speed"
+msgid "Animation speed"
 msgstr "アニメーション速度"
 
 msgid "T9"
@@ -2659,7 +2647,7 @@ msgstr "プラグインの順序"
 msgid "Enabled"
 msgstr "有効"
 
-msgid "Volume Slider"
+msgid "Volume slider"
 msgstr "音量スライダー"
 
 msgid "Reorder Items"
@@ -2683,22 +2671,22 @@ msgstr "アイドルまでの時間"
 msgid "Clock"
 msgstr "時計"
 
-msgid "Wired Headphones"
+msgid "Wired headphones"
 msgstr "有線ヘッドホン"
 
-msgid "Bluetooth Audio (A2DP)"
+msgid "Bluetooth audio (A2DP)"
 msgstr "Bluetoothオーディオ（A2DP）"
 
-msgid "USB Audio"
+msgid "USB audio"
 msgstr "USBオーディオ"
 
-msgid "Playback Status"
+msgid "Playback status"
 msgstr "再生状態"
 
-msgid "Bluetooth Codec"
+msgid "Bluetooth codec"
 msgstr "Bluetoothコーデック"
 
-msgid "Battery Icon"
+msgid "Battery icon"
 msgstr "バッテリーアイコン"
 
 msgid "Left"
@@ -2710,13 +2698,13 @@ msgstr "中央"
 msgid "Right"
 msgstr "右"
 
-msgid "Clock Position"
+msgid "Clock position"
 msgstr "時計の位置"
 
-msgid "Battery Percentage"
+msgid "Battery percentage"
 msgstr "バッテリー残量の割合"
 
-msgid "Top Bar"
+msgid "Top bar"
 msgstr "トップバー"
 
 msgid "Themes"
@@ -2734,10 +2722,10 @@ msgstr "レイアウト"
 msgid "Lyrics"
 msgstr "歌詞"
 
-msgid "Swipe Up for Home"
+msgid "Swipe up for home"
 msgstr "上にスワイプしてホームへ"
 
-msgid "Upside Down Screen"
+msgid "Upside down screen"
 msgstr "画面を上下反転"
 
 msgid "Gestures & Orientation"
@@ -2746,10 +2734,10 @@ msgstr "ジェスチャーと向き"
 msgid "Display"
 msgstr "ディスプレイ"
 
-msgid "Charge Limit (85%)"
+msgid "Charge limit (85%)"
 msgstr "充電上限（85%）"
 
-msgid "Safe Charging (500mA)"
+msgid "Safe charging (500mA)"
 msgstr "安全充電（500mA）"
 
 msgid "LED charge indicator"
@@ -2761,19 +2749,19 @@ msgstr "USB DACモードで\n充電を無効にする"
 msgid "Charging"
 msgstr "充電"
 
-msgid "Additional Tools"
+msgid "Additional tools"
 msgstr "追加ツール"
 
-msgid "Turn off Automatic to set the clock"
+msgid "Turn off automatic to set the clock"
 msgstr "時計を設定するには自動をオフにしてください"
 
 msgid "Automatic"
 msgstr "自動"
 
-msgid "Set Time"
+msgid "Set time"
 msgstr "時刻を設定"
 
-msgid "24-Hour Clock"
+msgid "24-hour clock"
 msgstr "24時間表示"
 
 msgid "Save"
@@ -2782,19 +2770,19 @@ msgstr "保存"
 msgid "Hostname"
 msgstr "ホスト名"
 
-msgid "Factory Reset"
+msgid "Factory reset"
 msgstr "工場出荷時の状態にリセット"
 
 msgid "Maintenance"
 msgstr "メンテナンス"
 
-msgid "Firmware Update"
+msgid "Firmware update"
 msgstr "ファームウェア更新"
 
-msgid "Player Update"
+msgid "Player update"
 msgstr "プレーヤー更新"
 
-msgid "Plugins & Layouts"
+msgid "Plugins & layouts"
 msgstr "プラグインとレイアウト"
 
 msgid "Applying language, this may take a while"
@@ -2848,7 +2836,7 @@ msgstr "すべての設定をリセットして再起動しますか？"
 msgid "Restart now to apply the new hostname?"
 msgstr "新しいホスト名を適用するために今すぐ再起動しますか？"
 
-msgid "Restart Now"
+msgid "Restart now"
 msgstr "今すぐ再起動"
 
 msgid "Hostname can only use letters, numbers, and hyphens"
@@ -2881,10 +2869,10 @@ msgstr "プロファイル名を変更できませんでした"
 msgid "Profile renamed"
 msgstr "プロファイル名を変更しました"
 
-msgid "Rename Profile"
+msgid "Rename profile"
 msgstr "プロファイル名を変更"
 
-msgid "Replace Profile"
+msgid "Replace profile"
 msgstr "プロファイルを置き換え"
 
 msgid "Profiles"
@@ -2893,28 +2881,25 @@ msgstr "プロファイル"
 msgid "No saved profiles"
 msgstr "保存済みプロファイルはありません"
 
-msgid "Download profiles"
-msgstr "プロファイルをダウンロード"
-
 msgid "Delete this profile?"
 msgstr "このプロファイルを削除しますか？"
 
-msgid "Save Profile As"
+msgid "Save profile as"
 msgstr "プロファイルに名前を付けて保存"
 
-msgid "Profile Name"
+msgid "Profile name"
 msgstr "プロファイル名"
 
-msgid "Save Profile"
+msgid "Save profile"
 msgstr "プロファイルを保存"
 
 msgid "Save as a new profile, or replace one that already exists?"
 msgstr "新しいプロファイルとして保存しますか？それとも既存のものを置き換えますか？"
 
-msgid "Replace Existing"
+msgid "Replace existing"
 msgstr "既存のプロファイルを置き換える"
 
-msgid "New Profile"
+msgid "New profile"
 msgstr "新しいプロファイル"
 
 msgid "Band options"
@@ -2923,7 +2908,7 @@ msgstr "バンドのオプション"
 msgid "Filter type"
 msgstr "フィルターの種類"
 
-msgid "Peaking\nLow Shelf\nHigh Shelf"
+msgid "Peaking\nLow shelf\nHigh shelf"
 msgstr "ピーキング\nローシェルフ\nハイシェルフ"
 
 msgid "Enable band"
@@ -2941,11 +2926,11 @@ msgstr "クロスフィードは反対チャンネルのフィルター処理済
 msgid "Frequency"
 msgstr "周波数"
 
-msgid "Pre-Amp"
+msgid "Pre-amp"
 msgstr "プリアンプ"
 
 msgid "Reset to defaults"
-msgstr "初期設定に戻す"
+msgstr "初期値に戻す"
 
 msgid "48 kHz reference"
 msgstr "48 kHz基準"
@@ -2980,9 +2965,6 @@ msgstr "プラグインカタログを読み込み中…"
 msgid "No network detected"
 msgstr "ネットワークが検出されません"
 
-msgid "Time zone"
-msgstr "タイムゾーン"
-
 msgid "Quick setup"
 msgstr "クイック設定"
 
@@ -2998,7 +2980,7 @@ msgstr "Compásへようこそ"
 msgid "Get started"
 msgstr "始める"
 
-msgid "Quick Setup Complete"
+msgid "Quick setup complete"
 msgstr "クイックセットアップ完了"
 
 msgid "Continue"
@@ -3133,7 +3115,7 @@ msgstr "高"
 msgid "Stream quality: %s"
 msgstr "ストリーム音質：%s"
 
-msgid "Stream Quality"
+msgid "Stream quality"
 msgstr "ストリーム音質"
 
 msgid "Applies to new streaming queues"
@@ -3160,7 +3142,7 @@ msgstr "ダウンロードフォルダー名が無効です"
 msgid "Download subfolder"
 msgstr "ダウンロード用サブフォルダー"
 
-msgid "Download Settings"
+msgid "Download settings"
 msgstr "ダウンロード設定"
 
 msgid "Subfolder: SD root"
@@ -3172,10 +3154,10 @@ msgstr "サブフォルダーはSDカードのルートからの相対パスで�
 msgid "Folder layout for downloaded albums"
 msgstr "ダウンロードしたアルバムのフォルダー構成"
 
-msgid "Album Artist / Album"
+msgid "Album artist / album"
 msgstr "アルバムアーティスト / アルバム"
 
-msgid "Album Artist - Album"
+msgid "Album artist - album"
 msgstr "アルバムアーティスト - アルバム"
 
 msgid "Failed to load from server"
@@ -3220,10 +3202,10 @@ msgstr "接続を開始できませんでした"
 msgid "No saved servers"
 msgstr "保存済みサーバーはありません"
 
-msgid "Go back and choose New Connection to add one."
+msgid "Go back and choose New connection to add one."
 msgstr "戻って「新しい接続」を選択し、サーバーを追加してください。"
 
-msgid "Saved Servers"
+msgid "Saved servers"
 msgstr "保存済みサーバー"
 
 msgid "Server URL (e.g. %s)"
@@ -3253,11 +3235,8 @@ msgstr "パスワード：未設定"
 msgid "Connect & Browse"
 msgstr "接続して閲覧"
 
-msgid "New Connection"
+msgid "New connection"
 msgstr "新しい接続"
-
-msgid "Download settings"
-msgstr "ダウンロード設定"
 
 msgid "Songs"
 msgstr "曲"
@@ -3352,17 +3331,11 @@ msgstr "ライブラリを読み込み中です。"
 msgid "Leave this view and try again."
 msgstr "この画面を閉じて、もう一度お試しください。"
 
-msgid "Power off"
-msgstr "電源オフ"
-
 msgid "Restart"
 msgstr "再起動"
 
 msgid "Screen off"
 msgstr "画面オフ"
-
-msgid "Sleep timer"
-msgstr "スリープタイマー"
 
 msgid "Power controls"
 msgstr "電源操作"
@@ -3427,13 +3400,13 @@ msgstr "ミックス"
 msgid "Hi-Res"
 msgstr "ハイレゾ"
 
-msgid "Join albums without Album Artist"
+msgid "Join albums without album artist"
 msgstr "アルバムアーティストのないアルバムを結合"
 
 msgid "Could not open this image"
 msgstr "この画像を開けませんでした"
 
-msgid "Album Artist (A–Z)"
+msgid "Album artist (A–Z)"
 msgstr "アルバムアーティスト（A～Z）"
 
 msgid "Buttons locked"
@@ -3478,7 +3451,7 @@ msgstr "音楽メニュー"
 msgid "Cover Flow"
 msgstr "Cover Flow"
 
-msgid "NOS Mode"
+msgid "NOS mode"
 msgstr "NOSモード"
 
 msgid "Out of memory"
@@ -3488,10 +3461,10 @@ msgstr "メモリ不足です"
 msgid "Select all (%d)"
 msgstr "すべて選択（%d）"
 
-msgid "Power + Volume Up to unlock"
+msgid "Power + volume up to unlock"
 msgstr "電源 + 音量アップで解除"
 
-msgid "Hold Power + turn volume up to unlock"
+msgid "Hold power + turn volume up to unlock"
 msgstr "電源を長押ししながら音量を上げて解除"
 
 msgid "Another app is waiting for approval."
@@ -3518,7 +3491,7 @@ msgstr "承認を保存できませんでした。"
 msgid "Could not start the app."
 msgstr "アプリを起動できませんでした。"
 
-msgid "External Apps"
+msgid "External apps"
 msgstr "外部アプリ"
 
 msgid "External apps have full access to the player."
@@ -3530,14 +3503,8 @@ msgstr "リモートから音楽のスキャンを開始しました"
 msgid "No apps installed"
 msgstr "インストールされているアプリはありません"
 
-msgid "Play Mode"
+msgid "Play mode"
 msgstr "再生モード"
-
-msgid "Repeat All"
-msgstr "すべてリピート"
-
-msgid "Repeat One"
-msgstr "1曲リピート"
 
 msgid "Run"
 msgstr "実行"
@@ -3631,7 +3598,7 @@ msgstr "もう一方のデバイスに同じコードが表示されているこ
 msgid "Type this code on the other device."
 msgstr "このコードをもう一方のデバイスに入力してください。"
 
-msgid "DSD Gain"
+msgid "DSD gain"
 msgstr "DSDゲイン"
 
 #, c-format
@@ -3641,7 +3608,7 @@ msgstr "+%d dB"
 msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
 msgstr "このプレーヤーのヘッドホン出力でネイティブDSDの音量を上げます。最大の音量ステップを超えることはできません。"
 
-msgid "Seek Step"
+msgid "Seek step"
 msgstr "シークステップ"
 
 #, c-format
@@ -3670,7 +3637,7 @@ msgid "Random Songs"
 msgstr "ランダムな曲"
 
 msgctxt "albums"
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "最近追加"
 
 msgctxt "albums"
@@ -3678,10 +3645,10 @@ msgid "Recently Played"
 msgstr "最近再生"
 
 msgctxt "albums"
-msgid "Most Played"
+msgid "Most played"
 msgstr "再生回数の多い順"
 
-msgid "Restore at Startup"
+msgid "Restore at startup"
 msgstr "起動時に復元"
 
 msgid "Restore Wi-Fi at Startup"
@@ -3693,25 +3660,25 @@ msgstr "起動時にBluetoothを復元"
 msgid "Name (Z–A)"
 msgstr "名前（Z～A）"
 
-msgid "Oldest Modified"
+msgid "Oldest modified"
 msgstr "更新日の古い順"
 
-msgid "Oldest Added"
+msgid "Oldest added"
 msgstr "追加日の古い順"
 
-msgid "Release Year (newest first)"
+msgid "Release year (newest first)"
 msgstr "リリース年（新しい順）"
 
-msgid "Album Artist (Z–A)"
+msgid "Album artist (Z–A)"
 msgstr "アルバムアーティスト（Z～A）"
 
-msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
-msgstr "ファイルは更新日を使います。アルバムは最後に追加された曲を使い、リリース年では年が不明な項目を最後に表示します。既存のファイルから年を読み取るには、音楽データベースを一度更新してください。"
+msgid "Files sort by modification date; albums by newest track added. Release year keeps unknown years last. Run Update music database to load years."
+msgstr "ファイルは更新日、アルバムは最後に追加された曲の日付で並びます。リリース年が不明な項目は最後になります。年を読み込むには音楽データベースを更新してください。"
 
 msgid "Now Playing"
 msgstr "再生中"
 
-msgid "In Queue"
+msgid "In queue"
 msgstr "キュー内"
 
 msgid "Continue Playing"
@@ -3747,10 +3714,10 @@ msgstr "エフェクト"
 msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
 msgstr "BT DACモードを使うには、ワイヤレスまたはクイックドロワーでBluetoothを有効にしてください"
 
-msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgid "Library recovered. Use Settings > Library > Update music database to save"
 msgstr "ライブラリを復旧しました。設定 > ライブラリ > 音楽データベースを更新から保存してください"
 
-msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgid "Library unavailable. Use Settings > Library > Update music database to rebuild"
 msgstr "ライブラリを利用できません。設定 > ライブラリ > 音楽データベースを更新から再構築してください"
 
 msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
@@ -3762,7 +3729,7 @@ msgstr "カスタマイズ"
 msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
 msgstr "最初にADBをオフにしてください（設定 > システム > 詳細設定）。その後、ここからUSB DACを有効にしてください。"
 
-msgid "Use Settings > Library > Update Music Database"
+msgid "Use Settings > Library > Update music database"
 msgstr "設定 > ライブラリ > 音楽データベースを更新を選択してください"
 
 msgid "%s: %d (outside ±%d)"
@@ -3771,10 +3738,10 @@ msgstr "%s: %d (±%d の範囲外)"
 msgid "A preset with that name already exists"
 msgstr "その名前のプリセットは既に存在します"
 
-msgid "About Play Through"
+msgid "About play through"
 msgstr "連続再生について"
 
-msgid "Adjustment Range"
+msgid "Adjustment range"
 msgstr "調整範囲"
 
 msgid "Air"
@@ -3789,10 +3756,10 @@ msgstr "アルバムはアーティストのアルバム名順（アルファベ
 msgid "Amount (%)"
 msgstr "適用量 (%)"
 
-msgid "Bass Extension"
+msgid "Bass extension"
 msgstr "低域の伸び"
 
-msgid "Bass Texture"
+msgid "Bass texture"
 msgstr "低域の質感"
 
 msgid "Bass frequency (Hz)"
@@ -3807,7 +3774,7 @@ msgstr "確認"
 msgid "Continuing playback"
 msgstr "再生を継続中"
 
-msgid "Could not apply Soundstage. Try again."
+msgid "Could not apply soundstage. Try again."
 msgstr "音場を適用できませんでした。再試行してください。"
 
 msgid "Could not apply changes. Try again."
@@ -3840,7 +3807,7 @@ msgstr "ダンピング (%)"
 msgid "Enter a short preset name without line breaks"
 msgstr "改行なしの短いプリセット名を入力してください"
 
-msgid "Female Overtones"
+msgid "Female overtones"
 msgstr "女性ボーカル倍音"
 
 msgid "Focused center"
@@ -3852,16 +3819,16 @@ msgstr "フォルダは大文字小文字を区別しない名前順で次のフ
 msgid "Hall"
 msgstr "ホール"
 
-msgid "How It Works"
+msgid "How it works"
 msgstr "仕組み"
 
-msgid "Impulse Response"
+msgid "Impulse response"
 msgstr "インパルス応答"
 
 msgid "Load"
 msgstr "読み込む"
 
-msgid "Named Presets"
+msgid "Named presets"
 msgstr "名前付きプリセット"
 
 msgid "Natural"
@@ -3870,7 +3837,7 @@ msgstr "ナチュラル"
 msgid "New preset name"
 msgstr "新しいプリセット名"
 
-msgid "Note Thickness"
+msgid "Note thickness"
 msgstr "音の厚み"
 
 msgid "Older MSEB controls are unsupported; preset was not loaded"
@@ -3879,7 +3846,7 @@ msgstr "旧式の MSEB 調整は非対応のため、プリセットを読み込
 msgid "Older MSEB controls are unsupported; slot was not loaded"
 msgstr "旧式の MSEB 調整は非対応のため、スロットを読み込めませんでした"
 
-msgid "Overall Temperature"
+msgid "Overall temperature"
 msgstr "全体の温度感"
 
 msgid "Overwrite"
@@ -3888,13 +3855,13 @@ msgstr "上書き"
 msgid "Overwrite preset?"
 msgstr "プリセットを上書きしますか？"
 
-msgid "Play Through"
+msgid "Play through"
 msgstr "連続再生"
 
-msgid "Play Through Albums"
+msgid "Play through albums"
 msgstr "アルバムを連続再生"
 
-msgid "Play Through Folders"
+msgid "Play through folders"
 msgstr "フォルダを連続再生"
 
 msgid "Preset"
@@ -3915,11 +3882,8 @@ msgstr "反射音 (%)"
 msgid "Rename preset"
 msgstr "プリセット名を変更"
 
-msgid "Reset Soundstage to defaults?"
+msgid "Reset soundstage to defaults?"
 msgstr "音場を初期値に戻しますか？"
-
-msgid "Reset to Defaults"
-msgstr "初期値に戻す"
 
 msgid "Room"
 msgstr "ルーム"
@@ -3927,7 +3891,7 @@ msgstr "ルーム"
 msgid "Room size (%)"
 msgstr "ルームサイズ (%)"
 
-msgid "Save Named Preset"
+msgid "Save named preset"
 msgstr "名前付きプリセットを保存"
 
 msgid "Saved"
@@ -3963,7 +3927,7 @@ msgstr "スロットを読み込みました"
 msgid "Small room"
 msgstr "スモールルーム"
 
-msgid "Sound Stage"
+msgid "Sound stage"
 msgstr "サウンドステージ"
 
 msgid "Soundstage"
@@ -3972,7 +3936,7 @@ msgstr "音場"
 msgid "Speaker angle (deg)"
 msgstr "スピーカー角度 (deg)"
 
-msgid "Stereo Width"
+msgid "Stereo width"
 msgstr "ステレオ幅"
 
 msgid "Stock MSEB width changes the channel mix."
@@ -3984,7 +3948,7 @@ msgstr "スタジオモニター"
 msgid "Switch to stock MSEB"
 msgstr "標準 MSEB に切り替え"
 
-msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgid "This saved layout is unsupported. Switching replaces instrument presence, bass bite, and treble bite with the stock controls."
 msgstr "保存されたレイアウトは非対応です。切り替えると楽器の定位・低域のアタック・高域のアタックが標準項目に置き換わります。"
 
 msgid "Treble frequency (Hz)"
@@ -4011,7 +3975,7 @@ msgstr "破損したプリセットを削除しますか？"
 msgid "Delete preset?"
 msgstr "プリセットを削除しますか？"
 
-msgid "Load from Slot"
+msgid "Load from slot"
 msgstr "スロットから読み込む"
 
 msgid "MSEB"
@@ -4026,38 +3990,29 @@ msgstr "プリセットを保存しました"
 msgid "Restoring ADB…"
 msgstr "ADBを復元中…"
 
-msgid "Save to Slot"
+msgid "Save to slot"
 msgstr "スロットに保存"
 
 msgid "Stage"
 msgstr "音場"
 
-msgid "Turn off Loudness Boost first"
+msgid "Turn off loudness boost first"
 msgstr "先にラウドネスブーストをオフにしてください"
 
 msgid "DAC"
 msgstr "DAC"
 
-msgid "USB Output"
+msgid "USB output"
 msgstr "USB出力"
-
-msgid "Accent color"
-msgstr "アクセントカラー"
 
 msgid "Advanced sound"
 msgstr "詳細なサウンド"
-
-msgid "Button mapping"
-msgstr "ボタン割り当て"
 
 msgid "Buttons"
 msgstr "ボタン"
 
 msgid "Bypassed by NOS"
 msgstr "NOSでバイパス"
-
-msgid "Car mode"
-msgstr "車載モード"
 
 msgid "Filter"
 msgstr "フィルター"
@@ -4077,35 +4032,14 @@ msgstr "歌詞の文字サイズ"
 msgid "Max %d%%"
 msgstr "最大 %d%%"
 
-msgid "Per album"
-msgstr "アルバムごと"
-
-msgid "Per track"
-msgstr "トラックごと"
-
-msgid "Play through"
-msgstr "連続再生"
-
-msgid "Quick drawer"
-msgstr "クイックドロワー"
-
-msgid "Resume last track"
-msgstr "前回の再生を再開"
-
-msgid "Show Artist Images"
+msgid "Show artist images"
 msgstr "アーティスト画像を表示"
 
-msgid "Show Lyrics"
+msgid "Show lyrics"
 msgstr "歌詞を表示"
-
-msgid "Top bar"
-msgstr "トップバー"
 
 msgid "Turn off NOS to choose a filter"
 msgstr "NOSをオフにしてフィルターを選択"
-
-msgid "USB output"
-msgstr "USB出力"
 
 msgid "Volume limits"
 msgstr "音量制限"
@@ -4113,11 +4047,11 @@ msgstr "音量制限"
 msgid "Volume lock (screen off)"
 msgstr "画面オフ時の音量ロック"
 
-msgid "Albums on an album-artist page"
-msgstr "アルバムアーティストのページのアルバム"
+msgid "Album artist pages"
+msgstr "アルバムアーティストのページ"
 
-msgid "Albums on an artist page"
-msgstr "アーティストのページのアルバム"
+msgid "Artist pages"
+msgstr "アーティストのページ"
 
 msgid "Build it now? This may take a while."
 msgstr "今すぐ作成しますか？しばらく時間がかかる場合があります。"
@@ -4136,12 +4070,6 @@ msgstr "入力した内容を破棄しますか？"
 
 msgid "Enable Wi-Fi to access"
 msgstr "アクセスするにはWi-Fiを有効にしてください"
-
-msgid "Fast"
-msgstr "速い"
-
-msgid "Fastest"
-msgstr "最速"
 
 msgid "Forget this device?"
 msgstr "このデバイスの登録を解除しますか？"
@@ -4169,9 +4097,6 @@ msgstr "一致する項目がありません"
 
 msgid "No plays yet"
 msgstr "まだ再生履歴がありません"
-
-msgid "Normal"
-msgstr "標準"
 
 msgid "Open Now Playing"
 msgstr "再生中の画面を開く"
@@ -4221,7 +4146,7 @@ msgstr "しばらく時間がかかる場合があります。"
 msgid "Type to search"
 msgstr "入力して検索"
 
-msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgid "Update saved. Install from firmware update > install from SD card."
 msgstr "更新を保存しました。「ファームウェア更新」>「SDカードからインストール」からインストールしてください。"
 
 msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
@@ -4239,19 +4164,16 @@ msgstr "無効"
 msgid "Player layout"
 msgstr "プレーヤーレイアウト"
 
-msgid "Faster"
-msgstr "より速い"
-
-msgid "Add to Favorites"
+msgid "Add to favorites"
 msgstr "お気に入りに追加"
 
-msgid "Remove from Favorites"
+msgid "Remove from favorites"
 msgstr "お気に入りから削除"
 
-msgid "Go to Album"
+msgid "Go to album"
 msgstr "アルバムへ移動"
 
-msgid "Go to Artist"
+msgid "Go to artist"
 msgstr "アーティストへ移動"
 
 msgid "Some songs could not be downloaded"
@@ -4298,3 +4220,15 @@ msgstr "ここまでに見つかった変更は保存されない場合があり
 
 msgid "Updating the library. This may take a while."
 msgstr "ライブラリを更新しています。しばらくかかる場合があります。"
+
+msgid "Connections"
+msgstr "接続"
+
+msgid "Too demanding for this device"
+msgstr "このデバイスには負荷が高すぎます"
+
+msgid "Waiting for a network address"
+msgstr "ネットワークアドレスを待機中"
+
+msgid "Artist unavailable"
+msgstr "アーティストを利用できません"

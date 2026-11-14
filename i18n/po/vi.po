@@ -198,13 +198,13 @@ msgstr "Nghệ sĩ"
 msgid "Albums"
 msgstr "Album"
 
-msgid "Album Artist"
+msgid "Album artist"
 msgstr "Nghệ sĩ album"
 
 msgid "Genres"
 msgstr "Thể loại"
 
-msgid "All Songs"
+msgid "All songs"
 msgstr "Tất cả bài hát"
 
 msgid "Playlists"
@@ -225,7 +225,7 @@ msgstr "Wi-Fi"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-msgid "Sleep Timer"
+msgid "Sleep timer"
 msgstr "Hẹn giờ ngủ"
 
 msgid "Crossfade"
@@ -240,10 +240,10 @@ msgstr "DLNA"
 msgid "Gapless"
 msgstr "Phát liền mạch"
 
-msgid "Remote Control"
+msgid "Remote control"
 msgstr "Điều khiển từ xa"
 
-msgid "Car Mode"
+msgid "Car mode"
 msgstr "Chế độ ô tô"
 
 msgid "Plugins"
@@ -699,7 +699,7 @@ msgstr "Tải trình giả lập xuống để chơi trò chơi."
 msgid "Disconnect USB storage from the computer before changing files."
 msgstr "Ngắt bộ nhớ USB khỏi máy tính trước khi thay đổi tệp."
 
-msgid "File Manager"
+msgid "File manager"
 msgstr "Trình quản lý tệp"
 
 msgid "%d selected"
@@ -815,7 +815,7 @@ msgstr "Đã tạo danh sách phát"
 msgid "Failed to create playlist"
 msgstr "Không tạo được danh sách phát"
 
-msgid "Playlist Name"
+msgid "Playlist name"
 msgstr "Tên danh sách phát"
 
 msgid "Song already added"
@@ -866,19 +866,19 @@ msgstr "Đang tìm tệp có thể phát"
 msgid "File path is too long"
 msgstr "Đường dẫn tệp quá dài"
 
-msgid "Play All (Sequential)"
+msgid "Play all (sequential)"
 msgstr "Phát tất cả (lần lượt)"
 
-msgid "Play All (Shuffle)"
+msgid "Play all (shuffle)"
 msgstr "Phát tất cả (ngẫu nhiên)"
 
-msgid "Add to Queue"
+msgid "Add to queue"
 msgstr "Thêm vào hàng đợi"
 
-msgid "Add to Playlist"
+msgid "Add to playlist"
 msgstr "Thêm vào danh sách phát"
 
-msgid "+ New Playlist"
+msgid "+ New playlist"
 msgstr "+ Danh sách phát mới"
 
 msgid "Audio"
@@ -897,7 +897,7 @@ msgid "%lld track"
 msgid_plural "%lld tracks"
 msgstr[0] "%lld bản nhạc"
 
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "Mới thêm gần đây"
 
 msgid "Playlist changed. Select a song again."
@@ -940,7 +940,7 @@ msgstr "Đĩa %d"
 msgid "Next  •  %d–%d of %d"
 msgstr "Tiếp  •  %d–%d/%d"
 
-msgid "Most Played"
+msgid "Most played"
 msgstr "Được phát nhiều nhất"
 
 msgid "Library changed. Open the album again."
@@ -994,7 +994,7 @@ msgstr "Không thể đổi tên: tên không hợp lệ hoặc tệp đã tồn
 msgid "Playlist renamed"
 msgstr "Danh sách phát đã được đổi tên"
 
-msgid "Rename Playlist"
+msgid "Rename playlist"
 msgstr "Đổi tên danh sách phát"
 
 msgid "Delete playlist?"
@@ -1003,7 +1003,7 @@ msgstr "Xóa danh sách phát?"
 msgid "The playlist file will be deleted. Music files are kept."
 msgstr "Tệp danh sách phát sẽ bị xóa. Các tệp nhạc vẫn được giữ nguyên."
 
-msgid "Delete Playlist"
+msgid "Delete playlist"
 msgstr "Xóa danh sách phát"
 
 msgid "System playlists"
@@ -1231,16 +1231,16 @@ msgstr "Không thể khởi động lại vào bộ chọn khởi động"
 msgid "An update is in progress. Please wait."
 msgstr "Một bản cập nhật đang được tiến hành. Vui lòng chờ."
 
-msgid "Tap Power off again to confirm"
+msgid "Tap power off again to confirm"
 msgstr "Nhấn Tắt nguồn lần nữa để xác nhận"
 
-msgid "Tap Restart again to confirm"
+msgid "Tap restart again to confirm"
 msgstr "Nhấn Khởi động lại lần nữa để xác nhận"
 
 msgid "Sleep timer: %d min remaining"
 msgstr "Hẹn giờ ngủ: Còn lại %d phút"
 
-msgid "Sleep timer: Off"
+msgid "Sleep timer: off"
 msgstr "Hẹn giờ ngủ: Tắt"
 
 msgid "Music"
@@ -1357,13 +1357,13 @@ msgstr "Đang kết nối với"
 msgid "Couldn't connect to Wi-Fi network"
 msgstr "Không thể kết nối với mạng Wi-Fi"
 
-msgid "Wi-Fi Password"
+msgid "Wi-Fi password"
 msgstr "Mật khẩu Wi-Fi"
 
-msgid "Secured · Connected"
+msgid "Secured · connected"
 msgstr "Bảo mật · Đã kết nối"
 
-msgid "Open · Connected"
+msgid "Open · connected"
 msgstr "Mở · Đã kết nối"
 
 msgid "Saved network"
@@ -1402,7 +1402,7 @@ msgstr "SSID phải từ 1 đến 32 byte"
 msgid "Wi-Fi is still starting"
 msgstr "Wi-Fi vẫn đang bắt đầu"
 
-msgid "Network Name (SSID)"
+msgid "Network name (SSID)"
 msgstr "Tên mạng (SSID)"
 
 msgid "Connect"
@@ -1435,19 +1435,19 @@ msgstr "Xuất sắc"
 msgid "SSID: %s"
 msgstr "SSID: %s"
 
-msgid "IP Address: %s"
+msgid "IP address: %s"
 msgstr "Địa chỉ IP: %s"
 
 msgid "Gateway: %s"
 msgstr "Cổng mặc định: %s"
 
-msgid "MAC Address: %s"
+msgid "MAC address: %s"
 msgstr "Địa chỉ MAC: %s"
 
 msgid "Signal: %s"
 msgstr "Tín hiệu: %s"
 
-msgid "Wi-Fi Info"
+msgid "Wi-Fi info"
 msgstr "Thông tin Wi-Fi"
 
 msgid "Primary DNS"
@@ -1459,13 +1459,13 @@ msgstr "DNS phụ"
 msgid "Not set"
 msgstr "Chưa đặt"
 
-msgid "DNS Settings"
+msgid "DNS settings"
 msgstr "Cài đặt DNS"
 
-msgid "Manual SSID Entry"
+msgid "Manual SSID entry"
 msgstr "Nhập SSID thủ công"
 
-msgid "Memorized Networks"
+msgid "Memorized networks"
 msgstr "Mạng được ghi nhớ"
 
 msgid "No memorized networks"
@@ -1483,7 +1483,7 @@ msgstr "Chi tiết mạng đã lưu đang được kiểm tra."
 msgid "Connected"
 msgstr "Đã kết nối"
 
-msgid "Available Networks"
+msgid "Available networks"
 msgstr "Mạng có sẵn"
 
 msgid "Scanning for networks"
@@ -1540,10 +1540,10 @@ msgstr "Đang chờ luồng Bluetooth…"
 msgid "Auto"
 msgstr "Tự động"
 
-msgid "LDAC Quality"
+msgid "LDAC quality"
 msgstr "Chất lượng LDAC"
 
-msgid "LDAC Standard"
+msgid "LDAC standard"
 msgstr "Tiêu chuẩn LDAC"
 
 msgid "Could not save Bluetooth codec"
@@ -1567,34 +1567,34 @@ msgstr "Vẫn áp dụng lựa chọn trước đó"
 msgid "Headset may disconnect, manual reconnection might be required"
 msgstr "Tai nghe có thể bị ngắt kết nối, có thể phải kết nối lại theo cách thủ công"
 
-msgid "Sample Rate"
+msgid "Sample rate"
 msgstr "Tần số lấy mẫu"
 
-msgid "Bluetooth Volume Sync"
+msgid "Bluetooth volume sync"
 msgstr "Đồng bộ hóa âm lượng Bluetooth"
 
 msgid "Codec"
 msgstr "Codec"
 
-msgid "Speex Resampling"
+msgid "Speex resampling"
 msgstr "Lấy mẫu lại Speex"
 
-msgid "Hide Unnamed Devices"
+msgid "Hide unnamed devices"
 msgstr "Ẩn thiết bị chưa được đặt tên"
 
 msgid "Advanced"
 msgstr "Nâng cao"
 
-msgid "Resume and Play"
+msgid "Resume and play"
 msgstr "Tiếp tục và phát"
 
-msgid "Resume, but Paused"
+msgid "Resume, but paused"
 msgstr "Tiếp tục nhưng vẫn tạm dừng"
 
 msgid "Applies next time you launch the app"
 msgstr "Áp dụng vào lần tiếp theo bạn khởi chạy ứng dụng"
 
-msgid "Resume Last Track"
+msgid "Resume last track"
 msgstr "Tiếp tục lần phát trước"
 
 msgid "Small"
@@ -1603,13 +1603,13 @@ msgstr "Nhỏ"
 msgid "Could not apply font size"
 msgstr "Không thể áp dụng cỡ chữ"
 
-msgid "Font Size"
+msgid "Font size"
 msgstr "Cỡ chữ"
 
-msgid "Per Track"
+msgid "Per track"
 msgstr "Theo bản nhạc"
 
-msgid "Per Album"
+msgid "Per album"
 msgstr "Theo album"
 
 msgid "ReplayGain"
@@ -1635,9 +1635,6 @@ msgstr "Chế độ USB"
 
 msgid "Failed to switch to %s"
 msgstr "Không thể chuyển sang %s"
-
-msgid "USB Mode"
-msgstr "Chế độ USB"
 
 msgid "Failed to update USB charging"
 msgstr "Không thể cập nhật sạc USB"
@@ -1681,7 +1678,7 @@ msgstr "Bluetooth đã tắt"
 msgid "Turn on Bluetooth to see paired and nearby devices."
 msgstr "Bật Bluetooth để xem thiết bị đã ghép nối và các thiết bị ở gần."
 
-msgid "Paired Devices"
+msgid "Paired devices"
 msgstr "Thiết bị được ghép nối"
 
 msgid "No paired devices"
@@ -1690,7 +1687,7 @@ msgstr "Không có thiết bị nào được ghép nối"
 msgid "Previously connected accessories will appear here."
 msgstr "Các phụ kiện đã kết nối trước đó sẽ xuất hiện ở đây."
 
-msgid "Available Devices"
+msgid "Available devices"
 msgstr "Thiết bị có sẵn"
 
 msgid "No nearby devices"
@@ -1720,7 +1717,7 @@ msgstr "Không bật được AirPlay"
 msgid "AirPlay stopped unexpectedly"
 msgstr "AirPlay dừng đột ngột"
 
-msgid "DLNA Renderer"
+msgid "DLNA renderer"
 msgstr "Trình kết xuất DLNA"
 
 msgid "Service is busy"
@@ -1750,7 +1747,7 @@ msgstr "Bluetooth: chờ đăng ký dịch vụ"
 msgid "Connect using either available route:"
 msgstr "Kết nối bằng một trong hai tuyến có sẵn:"
 
-msgid "Bluetooth: Compas Remote Control"
+msgid "Bluetooth: Compas remote control"
 msgstr "Bluetooth: Compas Remote Control"
 
 msgid "Could not generate a new PIN"
@@ -1838,7 +1835,7 @@ msgstr "Đang làm mới plugin..."
 msgid "Plugin Store"
 msgstr "Cửa hàng plugin"
 
-msgid "Refresh Plugins"
+msgid "Refresh plugins"
 msgstr "Làm mới plugin"
 
 msgid "Plugin Manager"
@@ -2015,13 +2012,13 @@ msgstr "Đang lưu danh sách phát…"
 msgid "Cannot save playlist"
 msgstr "Không thể lưu danh sách phát"
 
-msgid "Save Queue as Playlist"
+msgid "Save queue as playlist"
 msgstr "Lưu hàng đợi làm danh sách phát"
 
-msgid "Clear Queue"
+msgid "Clear queue"
 msgstr "Xóa hàng đợi"
 
-msgid "Save as Playlist"
+msgid "Save as playlist"
 msgstr "Lưu dưới dạng danh sách phát"
 
 msgid "Playlist saved"
@@ -2030,7 +2027,7 @@ msgstr "Đã lưu danh sách phát"
 msgid "Cannot save: invalid or streaming entries"
 msgstr "Không thể lưu: mục không hợp lệ hoặc là nội dung phát trực tuyến"
 
-msgid "Play Next"
+msgid "Play next"
 msgstr "Phát tiếp theo"
 
 msgid "Custom"
@@ -2039,19 +2036,13 @@ msgstr "Tùy chỉnh"
 msgid "%d min remaining"
 msgstr "%d phút còn lại"
 
-msgid "Crossfeed: Off"
-msgstr "Crossfeed: Tắt"
-
-msgid "Crossfeed: %d%%"
-msgstr "Crossfeed: %d%%"
-
 msgid "%+.2f dB"
 msgstr "%+.2f dB"
 
 msgid "%.0f Hz"
 msgstr "%.0f Hz"
 
-msgid "Pre-Amp (dB, -12 to 12)"
+msgid "Pre-amp (dB, -12 to 12)"
 msgstr "Tiền khuếch đại (dB, -12 đến 12)"
 
 msgid "Crossfeed (0 to 100)"
@@ -2084,7 +2075,7 @@ msgstr "Đang chuẩn bị cập nhật"
 msgid "Checking the file on the SD card"
 msgstr "Đang kiểm tra tệp trên thẻ SD"
 
-msgid "Update & Reboot"
+msgid "Update & reboot"
 msgstr "Cập nhật & Khởi động lại"
 
 msgid ""
@@ -2128,13 +2119,13 @@ msgstr "Kiểm tra cập nhật trực tuyến"
 msgid "Install from SD card"
 msgstr "Cài đặt từ thẻ SD"
 
-msgid "Update the Player only, retaining current drivers, kernel and bootloader."
+msgid "Update the player only, retaining current drivers, kernel and bootloader."
 msgstr "Chỉ cập nhật Trình phát, giữ lại trình điều khiển, kernel và bộ tải khởi động hiện tại."
 
-msgid "Download & Install"
+msgid "Download & install"
 msgstr "Tải xuống và cài đặt"
 
-msgid "Install & Restart"
+msgid "Install & restart"
 msgstr "Cài đặt và khởi động lại"
 
 msgid "Downloading player update"
@@ -2196,13 +2187,13 @@ msgstr "Không thể bắt đầu tải xuống"
 msgid "Downloading update"
 msgstr "Đang tải xuống bản cập nhật"
 
-msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
+msgid "Update the entire CompásOS. Flashing firmware contains bootloader, player, kernel and drivers."
 msgstr "Cập nhật toàn bộ CompásOS. Firmware được ghi gồm Bootloader, Player, Kernel và Driver."
 
 msgid "Download"
 msgstr "Tải xuống"
 
-msgid "Install & Reboot"
+msgid "Install & reboot"
 msgstr "Cài đặt và khởi động lại"
 
 msgid "Preparing and verifying recovery mode"
@@ -2293,7 +2284,7 @@ msgstr "Hướng dẫn: docs/development/CREATING.md"
 msgid "Write a Lua plugin on your computer. Copy its .lua file to the .plugins folder on your SD card."
 msgstr "Viết plugin Lua trên máy tính của bạn. Sao chép tệp .lua của nó vào thư mục .plugins trên thẻ SD của bạn."
 
-msgid "Open More > Plugins > Refresh Plugins. Scan for a working example and the full API guide."
+msgid "Open More > Plugins > Refresh plugins. Scan for a working example and the full API guide."
 msgstr "Mở Thêm > Plugin > Làm mới plugin. Quét để tìm ví dụ hoạt động và hướng dẫn API đầy đủ."
 
 msgid "Edit a .theme text file on your computer. Copy it to the Themes folder on your SD card, then select it in More > Themes."
@@ -2314,10 +2305,10 @@ msgstr "Tùy chọn nhà phát triển"
 msgid "About"
 msgstr "Giới thiệu"
 
-msgid "Screenshots (Power + Previous)"
+msgid "Screenshots (power + previous)"
 msgstr "Ảnh chụp màn hình (Nguồn + Trước)"
 
-msgid "Screenshots (Power + Vol Down)"
+msgid "Screenshots (power + vol down)"
 msgstr "Ảnh chụp màn hình (Nguồn + Giảm âm lượng)"
 
 msgid "Enable debug logging"
@@ -2335,7 +2326,7 @@ msgstr "Lấy từ ảnh bìa album"
 msgid "From album art (no cover, using custom)"
 msgstr "Lấy từ ảnh bìa album (nếu không có ảnh bìa thì dùng màu tùy chỉnh)"
 
-msgid "Accent Color"
+msgid "Accent color"
 msgstr "Màu nhấn"
 
 msgid "Accent Options"
@@ -2362,7 +2353,7 @@ msgstr "Sử dụng màu nhấn cho các biểu tượng bên cạnh tiêu đề
 msgid "Presets"
 msgstr "Cài đặt sẵn"
 
-msgid "Default (Built-in)"
+msgid "Default (built-in)"
 msgstr "Mặc định (Tích hợp)"
 
 msgid "No .ttf fonts found in /Fonts"
@@ -2389,31 +2380,31 @@ msgstr "Phông chữ tùy chỉnh chỉ ảnh hưởng đến văn bản Latinh.
 msgid "Place .ttf fonts in SD /Fonts folder."
 msgstr "Đặt phông chữ .ttf vào thư mục SD /Fonts."
 
-msgid "Screen Timeout"
+msgid "Screen timeout"
 msgstr "Thời gian tắt màn hình"
 
 msgid "Turn off screen automatically"
 msgstr "Tắt màn hình tự động"
 
-msgid "Screen Dimming"
+msgid "Screen dimming"
 msgstr "Làm mờ màn hình"
 
 msgid "Dim screen before timeout"
 msgstr "Làm mờ màn hình trước khi hết thời gian chờ"
 
-msgid "Startup Volume"
+msgid "Startup volume"
 msgstr "Âm lượng khi khởi động"
 
 msgid "Launch at a fixed volume"
 msgstr "Khởi chạy với âm lượng cố định"
 
-msgid "Max Volume"
+msgid "Max volume"
 msgstr "Âm lượng tối đa"
 
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Giới hạn âm lượng của trình phát, bao gồm các nút, điều khiển từ xa và plugin."
 
-msgid "Car Mode Volume"
+msgid "Car mode volume"
 msgstr "Âm lượng chế độ ô tô"
 
 msgid "Auto-resume"
@@ -2440,13 +2431,13 @@ msgstr "Thời gian còn lại: %d:%02d:%02d"
 msgid "Time remaining: %d:%02d"
 msgstr "Thời gian còn lại: %d:%02d"
 
-msgid "Enable Sleep Timer"
+msgid "Enable sleep timer"
 msgstr "Bật hẹn giờ ngủ"
 
-msgid "Show Time Remaining"
+msgid "Show time remaining"
 msgstr "Hiển thị thời gian còn lại"
 
-msgid "Idle Shutdown"
+msgid "Idle shutdown"
 msgstr "Tắt nguồn khi không hoạt động"
 
 msgid "Automatically go idle"
@@ -2455,7 +2446,7 @@ msgstr "Tự động nhàn rỗi"
 msgid "Choose what happens when idle:"
 msgstr "Chọn điều gì sẽ xảy ra khi không hoạt động:"
 
-msgid "Power Off"
+msgid "Power off"
 msgstr "Tắt nguồn"
 
 msgid "Suspend to RAM"
@@ -2500,13 +2491,13 @@ msgstr "Không thể áp dụng múi giờ"
 msgid "%s (current)"
 msgstr "%s (hiện tại)"
 
-msgid "Time Zone"
+msgid "Time zone"
 msgstr "Múi giờ"
 
 msgid "Sound Effects"
 msgstr "Hiệu ứng âm thanh"
 
-msgid "Download Profiles"
+msgid "Download profiles"
 msgstr "Tải xuống hồ sơ"
 
 msgid "Buttons & Remote"
@@ -2524,13 +2515,13 @@ msgstr "Crossfeed"
 msgid "Power"
 msgstr "Nguồn"
 
-msgid "Play/Pause"
+msgid "Play/pause"
 msgstr "Phát/Tạm dừng"
 
-msgid "Next Track"
+msgid "Next track"
 msgstr "Bản nhạc tiếp theo"
 
-msgid "Previous Track"
+msgid "Previous track"
 msgstr "Bản nhạc trước"
 
 msgid "Clockwise"
@@ -2539,10 +2530,10 @@ msgstr "Theo chiều kim đồng hồ"
 msgid "Counterclockwise"
 msgstr "Ngược chiều kim đồng hồ"
 
-msgid "Volume Up"
+msgid "Volume up"
 msgstr "Tăng âm lượng"
 
-msgid "Volume Down"
+msgid "Volume down"
 msgstr "Giảm âm lượng"
 
 msgid "Button"
@@ -2551,19 +2542,19 @@ msgstr "Nút"
 msgid "Default (native behavior)"
 msgstr "Mặc định (chức năng gốc)"
 
-msgid "Seek Forward"
+msgid "Seek forward"
 msgstr "Tua tới"
 
-msgid "Seek Backward"
+msgid "Seek backward"
 msgstr "Tua lùi"
 
-msgid "Toggle Screen"
+msgid "Toggle screen"
 msgstr "Bật/tắt màn hình"
 
-msgid "Power Menu"
+msgid "Power menu"
 msgstr "Menu nguồn"
 
-msgid "Do Nothing"
+msgid "Do nothing"
 msgstr "Không làm gì"
 
 msgid "Single press"
@@ -2587,13 +2578,13 @@ msgstr "Nhấn giữ"
 msgid "Default"
 msgstr "Mặc định"
 
-msgid "Reset All"
+msgid "Reset all"
 msgstr "Đặt lại tất cả"
 
-msgid "Button Mapping"
+msgid "Button mapping"
 msgstr "Ánh xạ nút"
 
-msgid "Keep a button assigned to Toggle Screen or Power Menu"
+msgid "Keep a button assigned to toggle screen or power menu"
 msgstr "Giữ lại ít nhất một nút được gán cho Bật/tắt màn hình hoặc Menu nguồn"
 
 msgid "Reset all button mappings?"
@@ -2602,10 +2593,7 @@ msgstr "Đặt lại toàn bộ chức năng nút?"
 msgid "Reset"
 msgstr "Đặt lại"
 
-msgid "Volume Lock (Screen Off)"
-msgstr "Khóa âm lượng khi tắt màn hình"
-
-msgid "Update Music Database to enable this album order"
+msgid "Update music database to enable this album order"
 msgstr "Cập nhật cơ sở dữ liệu nhạc để bật thứ tự album này"
 
 msgid "Sorting"
@@ -2617,25 +2605,25 @@ msgstr "Tệp (thư mục luôn ở trên cùng)"
 msgid "Name (A–Z)"
 msgstr "Tên (A–Z)"
 
-msgid "Newest Modified"
+msgid "Newest modified"
 msgstr "Sửa đổi gần đây nhất"
 
-msgid "Release Year (oldest first)"
+msgid "Release year (oldest first)"
 msgstr "Năm phát hành (cũ nhất xếp trước)"
 
 msgid "Files use modification dates. Albums use the newest track added; missing release years sort last. Update Music Database once to read years from existing files."
 msgstr "Tệp được sắp xếp theo ngày sửa đổi. Album dùng ngày thêm của bản nhạc mới nhất; album thiếu năm phát hành sẽ xếp cuối. Cập nhật cơ sở dữ liệu nhạc một lần để đọc năm từ các tệp hiện có."
 
-msgid "Update Music Database"
+msgid "Update music database"
 msgstr "Cập nhật cơ sở dữ liệu nhạc"
 
-msgid "Refresh All Metadata"
+msgid "Refresh all metadata"
 msgstr "Làm mới toàn bộ siêu dữ liệu"
 
-msgid "Refresh All Covers"
+msgid "Refresh all covers"
 msgstr "Làm mới toàn bộ ảnh bìa"
 
-msgid "Animation Speed"
+msgid "Animation speed"
 msgstr "Tốc độ hoạt ảnh"
 
 msgid "T9"
@@ -2659,7 +2647,7 @@ msgstr "Thứ tự plugin"
 msgid "Enabled"
 msgstr "Bật"
 
-msgid "Volume Slider"
+msgid "Volume slider"
 msgstr "Thanh trượt âm lượng"
 
 msgid "Reorder Items"
@@ -2683,22 +2671,22 @@ msgstr "Nhàn rỗi sau"
 msgid "Clock"
 msgstr "Đồng hồ"
 
-msgid "Wired Headphones"
+msgid "Wired headphones"
 msgstr "Tai nghe có dây"
 
-msgid "Bluetooth Audio (A2DP)"
+msgid "Bluetooth audio (A2DP)"
 msgstr "Âm thanh Bluetooth (A2DP)"
 
-msgid "USB Audio"
+msgid "USB audio"
 msgstr "Âm thanh USB"
 
-msgid "Playback Status"
+msgid "Playback status"
 msgstr "Trạng thái phát lại"
 
-msgid "Bluetooth Codec"
+msgid "Bluetooth codec"
 msgstr "Bluetooth Codec"
 
-msgid "Battery Icon"
+msgid "Battery icon"
 msgstr "Biểu tượng pin"
 
 msgid "Left"
@@ -2710,13 +2698,13 @@ msgstr "Ở giữa"
 msgid "Right"
 msgstr "Phải"
 
-msgid "Clock Position"
+msgid "Clock position"
 msgstr "Vị trí đồng hồ"
 
-msgid "Battery Percentage"
+msgid "Battery percentage"
 msgstr "Phần trăm pin"
 
-msgid "Top Bar"
+msgid "Top bar"
 msgstr "Thanh trên cùng"
 
 msgid "Themes"
@@ -2734,10 +2722,10 @@ msgstr "Bố cục"
 msgid "Lyrics"
 msgstr "Lời bài hát"
 
-msgid "Swipe Up for Home"
+msgid "Swipe up for home"
 msgstr "Vuốt lên để về màn hình chính"
 
-msgid "Upside Down Screen"
+msgid "Upside down screen"
 msgstr "Xoay ngược màn hình"
 
 msgid "Gestures & Orientation"
@@ -2746,10 +2734,10 @@ msgstr "Cử chỉ và hướng màn hình"
 msgid "Display"
 msgstr "Màn hình"
 
-msgid "Charge Limit (85%)"
+msgid "Charge limit (85%)"
 msgstr "Giới hạn sạc (85%)"
 
-msgid "Safe Charging (500mA)"
+msgid "Safe charging (500mA)"
 msgstr "Sạc an toàn (500mA)"
 
 msgid "LED charge indicator"
@@ -2761,19 +2749,19 @@ msgstr "Tắt sạc\nở chế độ USB DAC"
 msgid "Charging"
 msgstr "Sạc"
 
-msgid "Additional Tools"
+msgid "Additional tools"
 msgstr "Công cụ bổ sung"
 
-msgid "Turn off Automatic to set the clock"
+msgid "Turn off automatic to set the clock"
 msgstr "Tắt chế độ Tự động để chỉnh giờ"
 
 msgid "Automatic"
 msgstr "Tự động"
 
-msgid "Set Time"
+msgid "Set time"
 msgstr "Đặt giờ"
 
-msgid "24-Hour Clock"
+msgid "24-hour clock"
 msgstr "Đồng hồ 24 giờ"
 
 msgid "Save"
@@ -2782,19 +2770,19 @@ msgstr "Lưu"
 msgid "Hostname"
 msgstr "Tên máy chủ"
 
-msgid "Factory Reset"
+msgid "Factory reset"
 msgstr "Khôi phục cài đặt gốc"
 
 msgid "Maintenance"
 msgstr "Bảo trì"
 
-msgid "Firmware Update"
+msgid "Firmware update"
 msgstr "Cập nhật firmware"
 
-msgid "Player Update"
+msgid "Player update"
 msgstr "Cập nhật trình phát"
 
-msgid "Plugins & Layouts"
+msgid "Plugins & layouts"
 msgstr "Plugin & Bố cục"
 
 msgid "Applying language, this may take a while"
@@ -2848,7 +2836,7 @@ msgstr "Đặt lại tất cả cài đặt và khởi động lại?"
 msgid "Restart now to apply the new hostname?"
 msgstr "Khởi động lại ngay bây giờ để áp dụng tên máy chủ mới?"
 
-msgid "Restart Now"
+msgid "Restart now"
 msgstr "Khởi động lại ngay"
 
 msgid "Hostname can only use letters, numbers, and hyphens"
@@ -2881,10 +2869,10 @@ msgstr "Không đổi tên được hồ sơ"
 msgid "Profile renamed"
 msgstr "Đã đổi tên hồ sơ"
 
-msgid "Rename Profile"
+msgid "Rename profile"
 msgstr "Đổi tên hồ sơ"
 
-msgid "Replace Profile"
+msgid "Replace profile"
 msgstr "Thay thế hồ sơ"
 
 msgid "Profiles"
@@ -2893,28 +2881,25 @@ msgstr "Hồ sơ"
 msgid "No saved profiles"
 msgstr "Chưa lưu hồ sơ nào"
 
-msgid "Download profiles"
-msgstr "Tải hồ sơ xuống"
-
 msgid "Delete this profile?"
 msgstr "Xóa hồ sơ này?"
 
-msgid "Save Profile As"
+msgid "Save profile as"
 msgstr "Lưu hồ sơ với tên"
 
-msgid "Profile Name"
+msgid "Profile name"
 msgstr "Tên hồ sơ"
 
-msgid "Save Profile"
+msgid "Save profile"
 msgstr "Lưu hồ sơ"
 
 msgid "Save as a new profile, or replace one that already exists?"
 msgstr "Lưu thành hồ sơ mới hay thay thế hồ sơ hiện có?"
 
-msgid "Replace Existing"
+msgid "Replace existing"
 msgstr "Thay thế hồ sơ hiện có"
 
-msgid "New Profile"
+msgid "New profile"
 msgstr "Hồ sơ mới"
 
 msgid "Band options"
@@ -2923,7 +2908,7 @@ msgstr "Tùy chọn dải tần"
 msgid "Filter type"
 msgstr "Loại bộ lọc"
 
-msgid "Peaking\nLow Shelf\nHigh Shelf"
+msgid "Peaking\nLow shelf\nHigh shelf"
 msgstr "Peaking\nLow Shelf\nHigh Shelf"
 
 msgid "Enable band"
@@ -2941,11 +2926,11 @@ msgstr "Crossfeed trộn tín hiệu đã lọc từ kênh đối diện và ho�
 msgid "Frequency"
 msgstr "Tần số"
 
-msgid "Pre-Amp"
+msgid "Pre-amp"
 msgstr "Tiền khuếch đại"
 
 msgid "Reset to defaults"
-msgstr "Đặt lại về mặc định"
+msgstr "Khôi phục mặc định"
 
 msgid "48 kHz reference"
 msgstr "Tham chiếu 48 kHz"
@@ -2980,9 +2965,6 @@ msgstr "Đang tải danh mục plugin..."
 msgid "No network detected"
 msgstr "Không phát hiện thấy mạng"
 
-msgid "Time zone"
-msgstr "Múi giờ"
-
 msgid "Quick setup"
 msgstr "Thiết lập nhanh"
 
@@ -2998,7 +2980,7 @@ msgstr "Chào mừng đến với Compás"
 msgid "Get started"
 msgstr "Bắt đầu"
 
-msgid "Quick Setup Complete"
+msgid "Quick setup complete"
 msgstr "Hoàn tất thiết lập nhanh"
 
 msgid "Continue"
@@ -3133,7 +3115,7 @@ msgstr "Cao"
 msgid "Stream quality: %s"
 msgstr "Chất lượng phát trực tiếp: %s"
 
-msgid "Stream Quality"
+msgid "Stream quality"
 msgstr "Chất lượng luồng"
 
 msgid "Applies to new streaming queues"
@@ -3160,7 +3142,7 @@ msgstr "Tên thư mục tải xuống không hợp lệ"
 msgid "Download subfolder"
 msgstr "Thư mục con tải xuống"
 
-msgid "Download Settings"
+msgid "Download settings"
 msgstr "Cài đặt tải xuống"
 
 msgid "Subfolder: SD root"
@@ -3172,10 +3154,10 @@ msgstr "Đường dẫn thư mục con tính từ thư mục gốc thẻ SD (ví
 msgid "Folder layout for downloaded albums"
 msgstr "Bố cục thư mục cho album đã tải xuống"
 
-msgid "Album Artist / Album"
+msgid "Album artist / album"
 msgstr "Nghệ sĩ album / Album"
 
-msgid "Album Artist - Album"
+msgid "Album artist - album"
 msgstr "Nghệ sĩ album - Album"
 
 msgid "Failed to load from server"
@@ -3220,10 +3202,10 @@ msgstr "Không thể bắt đầu kết nối"
 msgid "No saved servers"
 msgstr "Không có máy chủ nào được lưu"
 
-msgid "Go back and choose New Connection to add one."
+msgid "Go back and choose New connection to add one."
 msgstr "Quay lại và chọn Kết nối mới để thêm một kết nối."
 
-msgid "Saved Servers"
+msgid "Saved servers"
 msgstr "Máy chủ đã lưu"
 
 msgid "Server URL (e.g. %s)"
@@ -3253,11 +3235,8 @@ msgstr "Mật khẩu: Chưa đặt"
 msgid "Connect & Browse"
 msgstr "Kết nối và duyệt"
 
-msgid "New Connection"
+msgid "New connection"
 msgstr "Kết nối mới"
-
-msgid "Download settings"
-msgstr "Cài đặt tải xuống"
 
 msgid "Songs"
 msgstr "Bài hát"
@@ -3352,17 +3331,11 @@ msgstr "Thư viện của bạn đang được tải."
 msgid "Leave this view and try again."
 msgstr "Hãy rời khỏi chế độ xem này và thử lại."
 
-msgid "Power off"
-msgstr "Tắt nguồn"
-
 msgid "Restart"
 msgstr "Khởi động lại"
 
 msgid "Screen off"
 msgstr "Tắt màn hình"
-
-msgid "Sleep timer"
-msgstr "Hẹn giờ ngủ"
 
 msgid "Power controls"
 msgstr "Điều khiển nguồn"
@@ -3427,13 +3400,13 @@ msgstr "Hỗn hợp"
 msgid "Hi-Res"
 msgstr "Độ phân giải cao"
 
-msgid "Join albums without Album Artist"
+msgid "Join albums without album artist"
 msgstr "Gộp album không có nghệ sĩ album"
 
 msgid "Could not open this image"
 msgstr "Không thể mở hình ảnh này"
 
-msgid "Album Artist (A–Z)"
+msgid "Album artist (A–Z)"
 msgstr "Nghệ sĩ album (A–Z)"
 
 msgid "Buttons locked"
@@ -3478,7 +3451,7 @@ msgstr "Menu Âm nhạc"
 msgid "Cover Flow"
 msgstr "Cover Flow"
 
-msgid "NOS Mode"
+msgid "NOS mode"
 msgstr "Chế độ NOS"
 
 msgid "Out of memory"
@@ -3488,10 +3461,10 @@ msgstr "Hết bộ nhớ"
 msgid "Select all (%d)"
 msgstr "Chọn tất cả (%d)"
 
-msgid "Power + Volume Up to unlock"
+msgid "Power + volume up to unlock"
 msgstr "Nguồn + Tăng âm lượng để mở khóa"
 
-msgid "Hold Power + turn volume up to unlock"
+msgid "Hold power + turn volume up to unlock"
 msgstr "Giữ Nguồn và tăng âm lượng để mở khóa"
 
 msgid "Another app is waiting for approval."
@@ -3518,7 +3491,7 @@ msgstr "Không thể lưu phê duyệt."
 msgid "Could not start the app."
 msgstr "Không thể khởi chạy ứng dụng."
 
-msgid "External Apps"
+msgid "External apps"
 msgstr "Ứng dụng bên ngoài"
 
 msgid "External apps have full access to the player."
@@ -3530,14 +3503,8 @@ msgstr "Đã bắt đầu quét nhạc từ điều khiển từ xa"
 msgid "No apps installed"
 msgstr "Chưa cài đặt ứng dụng nào"
 
-msgid "Play Mode"
+msgid "Play mode"
 msgstr "Chế độ phát"
-
-msgid "Repeat All"
-msgstr "Lặp lại tất cả"
-
-msgid "Repeat One"
-msgstr "Lặp lại một bài"
 
 msgid "Run"
 msgstr "Chạy"
@@ -3631,7 +3598,7 @@ msgstr "Xác nhận thiết bị kia hiển thị cùng mã này."
 msgid "Type this code on the other device."
 msgstr "Nhập mã này trên thiết bị kia."
 
-msgid "DSD Gain"
+msgid "DSD gain"
 msgstr "Độ lợi DSD"
 
 #, c-format
@@ -3641,7 +3608,7 @@ msgstr "+%d dB"
 msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
 msgstr "Tăng âm lượng DSD gốc trên các cổng tai nghe của máy này. Không thể vượt quá mức âm lượng lớn nhất."
 
-msgid "Seek Step"
+msgid "Seek step"
 msgstr "Bước tua"
 
 #, c-format
@@ -3670,7 +3637,7 @@ msgid "Random Songs"
 msgstr "Bài hát ngẫu nhiên"
 
 msgctxt "albums"
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "Mới thêm gần đây"
 
 msgctxt "albums"
@@ -3678,10 +3645,10 @@ msgid "Recently Played"
 msgstr "Đã phát gần đây"
 
 msgctxt "albums"
-msgid "Most Played"
+msgid "Most played"
 msgstr "Được phát nhiều nhất"
 
-msgid "Restore at Startup"
+msgid "Restore at startup"
 msgstr "Khôi phục khi khởi động"
 
 msgid "Restore Wi-Fi at Startup"
@@ -3693,25 +3660,25 @@ msgstr "Khôi phục Bluetooth khi khởi động"
 msgid "Name (Z–A)"
 msgstr "Tên (Z–A)"
 
-msgid "Oldest Modified"
+msgid "Oldest modified"
 msgstr "Sửa đổi cũ nhất"
 
-msgid "Oldest Added"
+msgid "Oldest added"
 msgstr "Được thêm lâu nhất"
 
-msgid "Release Year (newest first)"
+msgid "Release year (newest first)"
 msgstr "Năm phát hành (mới nhất xếp trước)"
 
-msgid "Album Artist (Z–A)"
+msgid "Album artist (Z–A)"
 msgstr "Nghệ sĩ album (Z–A)"
 
-msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
-msgstr "Tệp dùng ngày sửa đổi. Album dùng bản nhạc được thêm gần đây nhất; Năm phát hành luôn xếp mục thiếu năm ở cuối. Cập nhật cơ sở dữ liệu nhạc một lần để đọc năm từ các tệp hiện có."
+msgid "Files sort by modification date; albums by newest track added. Release year keeps unknown years last. Run Update music database to load years."
+msgstr "Tệp được sắp theo ngày sửa đổi; album theo bản nhạc được thêm gần nhất. Năm phát hành không rõ luôn ở cuối. Cập nhật cơ sở dữ liệu nhạc để tải năm."
 
 msgid "Now Playing"
 msgstr "Đang phát"
 
-msgid "In Queue"
+msgid "In queue"
 msgstr "Trong hàng đợi"
 
 msgid "Continue Playing"
@@ -3747,10 +3714,10 @@ msgstr "Hiệu ứng"
 msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
 msgstr "Bật Bluetooth trong Không dây hoặc Ngăn Kéo Nhanh để dùng chế độ DAC Bluetooth"
 
-msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgid "Library recovered. Use Settings > Library > Update music database to save"
 msgstr "Thư viện đã được phục hồi. Sử dụng Cài đặt > Cập nhật cơ sở dữ liệu âm nhạc để lưu"
 
-msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgid "Library unavailable. Use Settings > Library > Update music database to rebuild"
 msgstr "Thư viện không có sẵn. Sử dụng Cài đặt > Cập nhật cơ sở dữ liệu âm nhạc để xây dựng lại"
 
 msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
@@ -3762,7 +3729,7 @@ msgstr "Cá nhân hóa"
 msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
 msgstr "Trước tiên, tắt ADB (Cài đặt > Hệ thống > Nâng cao), sau đó bật USB DAC tại đây."
 
-msgid "Use Settings > Library > Update Music Database"
+msgid "Use Settings > Library > Update music database"
 msgstr "Sử dụng Cài đặt > Cập nhật cơ sở dữ liệu âm nhạc"
 
 msgid "%s: %d (outside ±%d)"
@@ -3771,10 +3738,10 @@ msgstr "%s: %d (ngoài ±%d)"
 msgid "A preset with that name already exists"
 msgstr "Đã có cài đặt sẵn mang tên này"
 
-msgid "About Play Through"
+msgid "About play through"
 msgstr "Giới thiệu Phát nối tiếp"
 
-msgid "Adjustment Range"
+msgid "Adjustment range"
 msgstr "Phạm vi điều chỉnh"
 
 msgid "Air"
@@ -3789,10 +3756,10 @@ msgstr "Các album tiếp tục theo thứ tự bảng chữ cái của nghệ s
 msgid "Amount (%)"
 msgstr "Mức độ (%)"
 
-msgid "Bass Extension"
+msgid "Bass extension"
 msgstr "Độ sâu âm trầm"
 
-msgid "Bass Texture"
+msgid "Bass texture"
 msgstr "Kết cấu âm trầm"
 
 msgid "Bass frequency (Hz)"
@@ -3807,7 +3774,7 @@ msgstr "Xác nhận"
 msgid "Continuing playback"
 msgstr "Đang tiếp tục phát"
 
-msgid "Could not apply Soundstage. Try again."
+msgid "Could not apply soundstage. Try again."
 msgstr "Không thể áp dụng âm trường. Hãy thử lại."
 
 msgid "Could not apply changes. Try again."
@@ -3840,7 +3807,7 @@ msgstr "Độ suy giảm (%)"
 msgid "Enter a short preset name without line breaks"
 msgstr "Nhập tên ngắn gọn không xuống dòng"
 
-msgid "Female Overtones"
+msgid "Female overtones"
 msgstr "Âm bồi giọng nữ"
 
 msgid "Focused center"
@@ -3852,16 +3819,16 @@ msgstr "Các thư mục tiếp tục theo thứ tự bảng chữ cái của th�
 msgid "Hall"
 msgstr "Hội trường"
 
-msgid "How It Works"
+msgid "How it works"
 msgstr "Cách hoạt động"
 
-msgid "Impulse Response"
+msgid "Impulse response"
 msgstr "Đáp ứng xung"
 
 msgid "Load"
 msgstr "Tải"
 
-msgid "Named Presets"
+msgid "Named presets"
 msgstr "Cài đặt sẵn có tên"
 
 msgid "Natural"
@@ -3870,7 +3837,7 @@ msgstr "Tự nhiên"
 msgid "New preset name"
 msgstr "Tên cài đặt sẵn mới"
 
-msgid "Note Thickness"
+msgid "Note thickness"
 msgstr "Độ dày nốt nhạc"
 
 msgid "Older MSEB controls are unsupported; preset was not loaded"
@@ -3879,7 +3846,7 @@ msgstr "Không hỗ trợ thanh chỉnh MSEB cũ; chưa tải cài đặt sẵn"
 msgid "Older MSEB controls are unsupported; slot was not loaded"
 msgstr "Không hỗ trợ thanh chỉnh MSEB cũ; chưa tải ô nhớ"
 
-msgid "Overall Temperature"
+msgid "Overall temperature"
 msgstr "Độ ấm tổng thể"
 
 msgid "Overwrite"
@@ -3888,13 +3855,13 @@ msgstr "Ghi đè"
 msgid "Overwrite preset?"
 msgstr "Ghi đè cài đặt sẵn?"
 
-msgid "Play Through"
+msgid "Play through"
 msgstr "Phát nối tiếp"
 
-msgid "Play Through Albums"
+msgid "Play through albums"
 msgstr "Phát tiếp qua các album"
 
-msgid "Play Through Folders"
+msgid "Play through folders"
 msgstr "Phát tiếp qua các thư mục"
 
 msgid "Preset"
@@ -3915,11 +3882,8 @@ msgstr "Phản xạ (%)"
 msgid "Rename preset"
 msgstr "Đổi tên cài đặt sẵn"
 
-msgid "Reset Soundstage to defaults?"
+msgid "Reset soundstage to defaults?"
 msgstr "Đặt lại âm trường về mặc định?"
-
-msgid "Reset to Defaults"
-msgstr "Khôi phục mặc định"
 
 msgid "Room"
 msgstr "Phòng"
@@ -3927,7 +3891,7 @@ msgstr "Phòng"
 msgid "Room size (%)"
 msgstr "Kích thước phòng (%)"
 
-msgid "Save Named Preset"
+msgid "Save named preset"
 msgstr "Lưu cài đặt sẵn có tên"
 
 msgid "Saved"
@@ -3963,7 +3927,7 @@ msgstr "Đã tải ô nhớ"
 msgid "Small room"
 msgstr "Phòng nhỏ"
 
-msgid "Sound Stage"
+msgid "Sound stage"
 msgstr "Âm trường"
 
 msgid "Soundstage"
@@ -3972,7 +3936,7 @@ msgstr "Âm trường"
 msgid "Speaker angle (deg)"
 msgstr "Góc loa (deg)"
 
-msgid "Stereo Width"
+msgid "Stereo width"
 msgstr "Độ rộng stereo"
 
 msgid "Stock MSEB width changes the channel mix."
@@ -3984,7 +3948,7 @@ msgstr "Loa kiểm âm"
 msgid "Switch to stock MSEB"
 msgstr "Chuyển sang MSEB chuẩn"
 
-msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgid "This saved layout is unsupported. Switching replaces instrument presence, bass bite, and treble bite with the stock controls."
 msgstr "Bố cục đã lưu này không được hỗ trợ. Chuyển đổi sẽ thay thế Độ nổi nhạc cụ, Độ sắc âm trầm và Độ sắc âm cao bằng các thanh chỉnh chuẩn."
 
 msgid "Treble frequency (Hz)"
@@ -4011,7 +3975,7 @@ msgstr "Xóa cài đặt sẵn bị hỏng?"
 msgid "Delete preset?"
 msgstr "Xóa cài đặt sẵn?"
 
-msgid "Load from Slot"
+msgid "Load from slot"
 msgstr "Tải từ ô nhớ"
 
 msgid "MSEB"
@@ -4026,38 +3990,29 @@ msgstr "Đã lưu cài đặt sẵn"
 msgid "Restoring ADB…"
 msgstr "Đang khôi phục ADB…"
 
-msgid "Save to Slot"
+msgid "Save to slot"
 msgstr "Lưu vào ô nhớ"
 
 msgid "Stage"
 msgstr "Sân khấu"
 
-msgid "Turn off Loudness Boost first"
+msgid "Turn off loudness boost first"
 msgstr "Hãy tắt Tăng âm lượng trước"
 
 msgid "DAC"
 msgstr "DAC"
 
-msgid "USB Output"
+msgid "USB output"
 msgstr "Đầu ra USB"
-
-msgid "Accent color"
-msgstr "Màu nhấn"
 
 msgid "Advanced sound"
 msgstr "Âm thanh nâng cao"
-
-msgid "Button mapping"
-msgstr "Ánh xạ nút"
 
 msgid "Buttons"
 msgstr "Nút"
 
 msgid "Bypassed by NOS"
 msgstr "Được NOS bỏ qua"
-
-msgid "Car mode"
-msgstr "Chế độ ô tô"
 
 msgid "Filter"
 msgstr "Bộ lọc"
@@ -4077,35 +4032,14 @@ msgstr "Kích thước văn bản lời bài hát"
 msgid "Max %d%%"
 msgstr "Tối đa %d%%"
 
-msgid "Per album"
-msgstr "Theo album"
-
-msgid "Per track"
-msgstr "Theo bản nhạc"
-
-msgid "Play through"
-msgstr "Phát nối tiếp"
-
-msgid "Quick drawer"
-msgstr "Ngăn Kéo Nhanh"
-
-msgid "Resume last track"
-msgstr "Tiếp tục lần phát trước"
-
-msgid "Show Artist Images"
+msgid "Show artist images"
 msgstr "Hiện ảnh nghệ sĩ"
 
-msgid "Show Lyrics"
+msgid "Show lyrics"
 msgstr "Hiện lời bài hát"
-
-msgid "Top bar"
-msgstr "Thanh trên cùng"
 
 msgid "Turn off NOS to choose a filter"
 msgstr "Tắt NOS để chọn bộ lọc"
-
-msgid "USB output"
-msgstr "Đầu ra USB"
 
 msgid "Volume limits"
 msgstr "Giới hạn âm lượng"
@@ -4113,11 +4047,11 @@ msgstr "Giới hạn âm lượng"
 msgid "Volume lock (screen off)"
 msgstr "Khóa âm lượng khi tắt màn hình"
 
-msgid "Albums on an album-artist page"
-msgstr "Album trên trang nghệ sĩ album"
+msgid "Album artist pages"
+msgstr "Trang nghệ sĩ album"
 
-msgid "Albums on an artist page"
-msgstr "Album trên trang nghệ sĩ"
+msgid "Artist pages"
+msgstr "Trang nghệ sĩ"
 
 msgid "Build it now? This may take a while."
 msgstr "Tạo ngay? Việc này có thể mất một lúc."
@@ -4136,12 +4070,6 @@ msgstr "Hủy nội dung bạn đã nhập?"
 
 msgid "Enable Wi-Fi to access"
 msgstr "Bật Wi-Fi để truy cập"
-
-msgid "Fast"
-msgstr "Nhanh"
-
-msgid "Fastest"
-msgstr "Nhanh nhất"
 
 msgid "Forget this device?"
 msgstr "Quên thiết bị này?"
@@ -4169,9 +4097,6 @@ msgstr "Không có kết quả phù hợp"
 
 msgid "No plays yet"
 msgstr "Chưa có lượt phát"
-
-msgid "Normal"
-msgstr "Bình thường"
 
 msgid "Open Now Playing"
 msgstr "Mở Đang phát"
@@ -4221,7 +4146,7 @@ msgstr "Việc này có thể mất một lúc."
 msgid "Type to search"
 msgstr "Nhập để tìm kiếm"
 
-msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgid "Update saved. Install from firmware update > install from SD card."
 msgstr "Đã lưu bản cập nhật. Cài đặt từ Cập nhật firmware > Cài đặt từ thẻ SD."
 
 msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
@@ -4239,19 +4164,16 @@ msgstr "Đã tắt"
 msgid "Player layout"
 msgstr "Bố cục trình phát"
 
-msgid "Faster"
-msgstr "Nhanh hơn"
-
-msgid "Add to Favorites"
+msgid "Add to favorites"
 msgstr "Thêm vào mục yêu thích"
 
-msgid "Remove from Favorites"
+msgid "Remove from favorites"
 msgstr "Xóa khỏi mục yêu thích"
 
-msgid "Go to Album"
+msgid "Go to album"
 msgstr "Đi đến album"
 
-msgid "Go to Artist"
+msgid "Go to artist"
 msgstr "Đi đến nghệ sĩ"
 
 msgid "Some songs could not be downloaded"
@@ -4298,3 +4220,15 @@ msgstr "Các thay đổi tìm thấy đến giờ có thể không được lưu
 
 msgid "Updating the library. This may take a while."
 msgstr "Đang cập nhật thư viện. Việc này có thể mất một lúc."
+
+msgid "Connections"
+msgstr "Kết nối"
+
+msgid "Too demanding for this device"
+msgstr "Quá nặng so với thiết bị này"
+
+msgid "Waiting for a network address"
+msgstr "Đang chờ địa chỉ mạng"
+
+msgid "Artist unavailable"
+msgstr "Nghệ sĩ không có sẵn"

@@ -217,13 +217,13 @@ msgstr "艺术家"
 msgid "Albums"
 msgstr "专辑"
 
-msgid "Album Artist"
+msgid "Album artist"
 msgstr "专辑艺术家"
 
 msgid "Genres"
 msgstr "流派"
 
-msgid "All Songs"
+msgid "All songs"
 msgstr "全部歌曲"
 
 msgid "Playlists"
@@ -244,7 +244,7 @@ msgstr "Wi-Fi"
 msgid "Bluetooth"
 msgstr "蓝牙"
 
-msgid "Sleep Timer"
+msgid "Sleep timer"
 msgstr "定时关机"
 
 msgid "Crossfade"
@@ -259,10 +259,10 @@ msgstr "DLNA"
 msgid "Gapless"
 msgstr "无缝播放"
 
-msgid "Remote Control"
+msgid "Remote control"
 msgstr "遥控控制"
 
-msgid "Car Mode"
+msgid "Car mode"
 msgstr "车载模式"
 
 msgid "Plugins"
@@ -742,7 +742,7 @@ msgstr "下载模拟器以玩游戏。"
 msgid "Disconnect USB storage from the computer before changing files."
 msgstr "更改文件前请从电脑断开 USB 存储。"
 
-msgid "File Manager"
+msgid "File manager"
 msgstr "文件管理器"
 
 #, c-format
@@ -873,7 +873,7 @@ msgstr "播放列表已创建"
 msgid "Failed to create playlist"
 msgstr "无法创建播放列表"
 
-msgid "Playlist Name"
+msgid "Playlist name"
 msgstr "播放列表名称"
 
 msgid "Song already added"
@@ -924,19 +924,19 @@ msgstr "正在扫描可播放文件"
 msgid "File path is too long"
 msgstr "文件路径过长"
 
-msgid "Play All (Sequential)"
+msgid "Play all (sequential)"
 msgstr "全部播放（顺序）"
 
-msgid "Play All (Shuffle)"
+msgid "Play all (shuffle)"
 msgstr "全部播放（随机）"
 
-msgid "Add to Queue"
+msgid "Add to queue"
 msgstr "加入播放队列"
 
-msgid "Add to Playlist"
+msgid "Add to playlist"
 msgstr "加入播放列表"
 
-msgid "+ New Playlist"
+msgid "+ New playlist"
 msgstr "+ 新建播放列表"
 
 msgid "Audio"
@@ -956,7 +956,7 @@ msgid "%lld track"
 msgid_plural "%lld tracks"
 msgstr[0] "%lld 首曲目"
 
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "最近添加"
 
 msgid "Playlist changed. Select a song again."
@@ -1003,7 +1003,7 @@ msgstr "光盘 %d"
 msgid "Next  •  %d–%d of %d"
 msgstr "下一页  •  %d–%d，共 %d"
 
-msgid "Most Played"
+msgid "Most played"
 msgstr "最常播放"
 
 msgid "Library changed. Open the album again."
@@ -1060,7 +1060,7 @@ msgstr "无法重命名：名称无效或文件已存在"
 msgid "Playlist renamed"
 msgstr "播放列表已重命名"
 
-msgid "Rename Playlist"
+msgid "Rename playlist"
 msgstr "重命名播放列表"
 
 msgid "Delete playlist?"
@@ -1069,7 +1069,7 @@ msgstr "删除播放列表？"
 msgid "The playlist file will be deleted. Music files are kept."
 msgstr "播放列表文件将被删除，音乐文件会保留。"
 
-msgid "Delete Playlist"
+msgid "Delete playlist"
 msgstr "删除播放列表"
 
 msgid "System playlists"
@@ -1350,17 +1350,17 @@ msgstr "无法重启进入启动选择器"
 msgid "An update is in progress. Please wait."
 msgstr "正在更新，请稍候。"
 
-msgid "Tap Power off again to confirm"
+msgid "Tap power off again to confirm"
 msgstr "再次点击关机以确认"
 
-msgid "Tap Restart again to confirm"
+msgid "Tap restart again to confirm"
 msgstr "再次点击重启以确认"
 
 #, c-format
 msgid "Sleep timer: %d min remaining"
 msgstr "定时关机：剩余 %d 分钟"
 
-msgid "Sleep timer: Off"
+msgid "Sleep timer: off"
 msgstr "定时关机：关闭"
 
 msgid "Music"
@@ -1478,13 +1478,13 @@ msgstr "正在连接到"
 msgid "Couldn't connect to Wi-Fi network"
 msgstr "无法连接 Wi-Fi 网络"
 
-msgid "Wi-Fi Password"
+msgid "Wi-Fi password"
 msgstr "Wi-Fi 密码"
 
-msgid "Secured · Connected"
+msgid "Secured · connected"
 msgstr "加密 · 已连接"
 
-msgid "Open · Connected"
+msgid "Open · connected"
 msgstr "已开放 · 已连接"
 
 msgid "Saved network"
@@ -1523,7 +1523,7 @@ msgstr "SSID 必须为 1 到 32 字节"
 msgid "Wi-Fi is still starting"
 msgstr "Wi-Fi 仍在启动"
 
-msgid "Network Name (SSID)"
+msgid "Network name (SSID)"
 msgstr "网络名称（SSID）"
 
 msgid "Connect"
@@ -1558,7 +1558,7 @@ msgid "SSID: %s"
 msgstr "SSID：%s"
 
 #, c-format
-msgid "IP Address: %s"
+msgid "IP address: %s"
 msgstr "IP 地址：%s"
 
 #, c-format
@@ -1566,14 +1566,14 @@ msgid "Gateway: %s"
 msgstr "网关：%s"
 
 #, c-format
-msgid "MAC Address: %s"
+msgid "MAC address: %s"
 msgstr "MAC 地址：%s"
 
 #, c-format
 msgid "Signal: %s"
 msgstr "信号：%s"
 
-msgid "Wi-Fi Info"
+msgid "Wi-Fi info"
 msgstr "Wi-Fi 信息"
 
 msgid "Primary DNS"
@@ -1585,13 +1585,13 @@ msgstr "备用 DNS"
 msgid "Not set"
 msgstr "未设置"
 
-msgid "DNS Settings"
+msgid "DNS settings"
 msgstr "DNS 设置"
 
-msgid "Manual SSID Entry"
+msgid "Manual SSID entry"
 msgstr "手动输入 SSID"
 
-msgid "Memorized Networks"
+msgid "Memorized networks"
 msgstr "已保存的网络"
 
 msgid "No memorized networks"
@@ -1609,7 +1609,7 @@ msgstr "正在检查已保存的网络详情。"
 msgid "Connected"
 msgstr "已连接"
 
-msgid "Available Networks"
+msgid "Available networks"
 msgstr "可用网络"
 
 msgid "Scanning for networks"
@@ -1671,10 +1671,10 @@ msgstr "正在等待蓝牙串流…"
 msgid "Auto"
 msgstr "自动"
 
-msgid "LDAC Quality"
+msgid "LDAC quality"
 msgstr "LDAC 音质优先"
 
-msgid "LDAC Standard"
+msgid "LDAC standard"
 msgstr "LDAC 标准"
 
 msgid "Could not save Bluetooth codec"
@@ -1698,34 +1698,34 @@ msgstr "仍在应用上一选择"
 msgid "Headset may disconnect, manual reconnection might be required"
 msgstr "耳机可能断开，可能需要手动重连"
 
-msgid "Sample Rate"
+msgid "Sample rate"
 msgstr "采样率"
 
-msgid "Bluetooth Volume Sync"
+msgid "Bluetooth volume sync"
 msgstr "蓝牙音量同步"
 
 msgid "Codec"
 msgstr "编解码器"
 
-msgid "Speex Resampling"
+msgid "Speex resampling"
 msgstr "Speex 重采样"
 
-msgid "Hide Unnamed Devices"
+msgid "Hide unnamed devices"
 msgstr "隐藏未命名设备"
 
 msgid "Advanced"
 msgstr "高级"
 
-msgid "Resume and Play"
+msgid "Resume and play"
 msgstr "继续并播放"
 
-msgid "Resume, but Paused"
+msgid "Resume, but paused"
 msgstr "继续但保持暂停"
 
 msgid "Applies next time you launch the app"
 msgstr "下次启动应用时生效"
 
-msgid "Resume Last Track"
+msgid "Resume last track"
 msgstr "继续上次曲目"
 
 msgid "Small"
@@ -1734,13 +1734,13 @@ msgstr "小"
 msgid "Could not apply font size"
 msgstr "无法应用字体大小"
 
-msgid "Font Size"
+msgid "Font size"
 msgstr "字体大小"
 
-msgid "Per Track"
+msgid "Per track"
 msgstr "按曲目"
 
-msgid "Per Album"
+msgid "Per album"
 msgstr "按专辑"
 
 msgid "ReplayGain"
@@ -1767,9 +1767,6 @@ msgstr "USB 模式"
 #, c-format
 msgid "Failed to switch to %s"
 msgstr "无法切换到 %s"
-
-msgid "USB Mode"
-msgstr "USB 模式"
 
 msgid "Failed to update USB charging"
 msgstr "更新 USB 充电失败"
@@ -1815,7 +1812,7 @@ msgstr "蓝牙已关闭"
 msgid "Turn on Bluetooth to see paired and nearby devices."
 msgstr "开启蓝牙以查看已配对和附近的设备。"
 
-msgid "Paired Devices"
+msgid "Paired devices"
 msgstr "已配对设备"
 
 msgid "No paired devices"
@@ -1824,7 +1821,7 @@ msgstr "无已配对设备"
 msgid "Previously connected accessories will appear here."
 msgstr "之前连接过的配件将显示在此处。"
 
-msgid "Available Devices"
+msgid "Available devices"
 msgstr "可用设备"
 
 msgid "No nearby devices"
@@ -1858,7 +1855,7 @@ msgstr "无法启用 AirPlay"
 msgid "AirPlay stopped unexpectedly"
 msgstr "AirPlay 意外停止"
 
-msgid "DLNA Renderer"
+msgid "DLNA renderer"
 msgstr "DLNA 渲染器"
 
 msgid "Service is busy"
@@ -1888,7 +1885,7 @@ msgstr "蓝牙：等待服务注册"
 msgid "Connect using either available route:"
 msgstr "使用任一可用方式连接："
 
-msgid "Bluetooth: Compas Remote Control"
+msgid "Bluetooth: Compas remote control"
 msgstr "蓝牙：Compas 遥控"
 
 msgid "Could not generate a new PIN"
@@ -1992,7 +1989,7 @@ msgstr "正在刷新插件..."
 msgid "Plugin Store"
 msgstr "插件商店"
 
-msgid "Refresh Plugins"
+msgid "Refresh plugins"
 msgstr "刷新插件"
 
 msgid "Plugin Manager"
@@ -2170,13 +2167,13 @@ msgstr "正在保存播放列表…"
 msgid "Cannot save playlist"
 msgstr "无法保存播放列表"
 
-msgid "Save Queue as Playlist"
+msgid "Save queue as playlist"
 msgstr "将播放队列保存为播放列表"
 
-msgid "Clear Queue"
+msgid "Clear queue"
 msgstr "清空队列"
 
-msgid "Save as Playlist"
+msgid "Save as playlist"
 msgstr "保存为播放列表"
 
 msgid "Playlist saved"
@@ -2185,7 +2182,7 @@ msgstr "播放列表已保存"
 msgid "Cannot save: invalid or streaming entries"
 msgstr "无法保存：含无效或流媒体项目"
 
-msgid "Play Next"
+msgid "Play next"
 msgstr "下一首播放"
 
 msgid "Custom"
@@ -2195,13 +2192,6 @@ msgstr "自定义"
 msgid "%d min remaining"
 msgstr "剩余 %d 分钟"
 
-msgid "Crossfeed: Off"
-msgstr "交叉馈送：关闭"
-
-#, c-format
-msgid "Crossfeed: %d%%"
-msgstr "交叉馈送：%d%%"
-
 #, c-format
 msgid "%+.2f dB"
 msgstr "%+.2f dB"
@@ -2210,7 +2200,7 @@ msgstr "%+.2f dB"
 msgid "%.0f Hz"
 msgstr "%.0f Hz"
 
-msgid "Pre-Amp (dB, -12 to 12)"
+msgid "Pre-amp (dB, -12 to 12)"
 msgstr "前置放大（dB，-12 至 12）"
 
 msgid "Crossfeed (0 to 100)"
@@ -2246,7 +2236,7 @@ msgstr "正在准备更新"
 msgid "Checking the file on the SD card"
 msgstr "正在检查 SD 卡上的文件"
 
-msgid "Update & Reboot"
+msgid "Update & reboot"
 msgstr "更新并重启"
 
 #, c-format
@@ -2298,14 +2288,13 @@ msgstr "检查在线更新"
 msgid "Install from SD card"
 msgstr "从 SD 卡安装"
 
-msgid ""
-"Update the Player only, retaining current drivers, kernel and bootloader."
+msgid "Update the player only, retaining current drivers, kernel and bootloader."
 msgstr "仅更新播放器，保留当前驱动、内核和引导程序。"
 
-msgid "Download & Install"
+msgid "Download & install"
 msgstr "下载并安装"
 
-msgid "Install & Restart"
+msgid "Install & restart"
 msgstr "安装并重启"
 
 msgid "Downloading player update"
@@ -2374,15 +2363,13 @@ msgstr "无法开始下载"
 msgid "Downloading update"
 msgstr "正在下载更新"
 
-msgid ""
-"Update the entire CompásOS. Flashing firmware contains Bootloader, Player, "
-"Kernel and Drivers."
+msgid "Update the entire CompásOS. Flashing firmware contains bootloader, player, kernel and drivers."
 msgstr "更新整个 CompásOS。刷写固件包含引导程序、播放器、内核和驱动。"
 
 msgid "Download"
 msgstr "下载"
 
-msgid "Install & Reboot"
+msgid "Install & reboot"
 msgstr "安装并重启"
 
 msgid "Preparing and verifying recovery mode"
@@ -2479,7 +2466,7 @@ msgstr ""
 "在电脑上编写 Lua 插件，将其 .lua 文件复制到 SD 卡上的 .plugins 文件夹。"
 
 msgid ""
-"Open More > Plugins > Refresh Plugins. Scan for a working example and the "
+"Open More > Plugins > Refresh plugins. Scan for a working example and the "
 "full API guide."
 msgstr "打开 更多 > 插件 > 刷新插件，扫描后可查看示例与完整 API 指南。"
 
@@ -2508,10 +2495,10 @@ msgstr "开发者选项"
 msgid "About"
 msgstr "关于"
 
-msgid "Screenshots (Power + Previous)"
+msgid "Screenshots (power + previous)"
 msgstr "截图（电源 + 上一曲）"
 
-msgid "Screenshots (Power + Vol Down)"
+msgid "Screenshots (power + vol down)"
 msgstr "截图（电源 + 音量减）"
 
 msgid "Enable debug logging"
@@ -2529,7 +2516,7 @@ msgstr "来自专辑封面"
 msgid "From album art (no cover, using custom)"
 msgstr "来自专辑封面（无封面，使用自定义）"
 
-msgid "Accent Color"
+msgid "Accent color"
 msgstr "强调色"
 
 msgid "Accent Options"
@@ -2556,7 +2543,7 @@ msgstr "屏幕标题旁的图标使用强调色。"
 msgid "Presets"
 msgstr "预设"
 
-msgid "Default (Built-in)"
+msgid "Default (built-in)"
 msgstr "默认（内置）"
 
 msgid "No .ttf fonts found in /Fonts"
@@ -2583,32 +2570,32 @@ msgstr "自定义字体仅影响拉丁文本。"
 msgid "Place .ttf fonts in SD /Fonts folder."
 msgstr "将 .ttf 字体放入 SD 的 /Fonts 文件夹。"
 
-msgid "Screen Timeout"
+msgid "Screen timeout"
 msgstr "屏幕超时"
 
 msgid "Turn off screen automatically"
 msgstr "自动关闭屏幕"
 
-msgid "Screen Dimming"
+msgid "Screen dimming"
 msgstr "屏幕变暗"
 
 msgid "Dim screen before timeout"
 msgstr "超时前调暗屏幕"
 
-msgid "Startup Volume"
+msgid "Startup volume"
 msgstr "开机音量"
 
 msgid "Launch at a fixed volume"
 msgstr "以固定音量启动"
 
-msgid "Max Volume"
+msgid "Max volume"
 msgstr "最大音量"
 
 msgid ""
 "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "限制播放器音量，包括按键、遥控和插件。"
 
-msgid "Car Mode Volume"
+msgid "Car mode volume"
 msgstr "车载模式音量"
 
 msgid "Auto-resume"
@@ -2640,13 +2627,13 @@ msgstr "剩余时间：%d:%02d:%02d"
 msgid "Time remaining: %d:%02d"
 msgstr "剩余时间：%d:%02d"
 
-msgid "Enable Sleep Timer"
+msgid "Enable sleep timer"
 msgstr "启用定时关机"
 
-msgid "Show Time Remaining"
+msgid "Show time remaining"
 msgstr "显示剩余时间"
 
-msgid "Idle Shutdown"
+msgid "Idle shutdown"
 msgstr "空闲关机"
 
 msgid "Automatically go idle"
@@ -2655,7 +2642,7 @@ msgstr "自动待机"
 msgid "Choose what happens when idle:"
 msgstr "选择待机时的行为："
 
-msgid "Power Off"
+msgid "Power off"
 msgstr "关机"
 
 msgid "Suspend to RAM"
@@ -2701,13 +2688,13 @@ msgstr "无法应用时区"
 msgid "%s (current)"
 msgstr "%s（当前）"
 
-msgid "Time Zone"
+msgid "Time zone"
 msgstr "时区"
 
 msgid "Sound Effects"
 msgstr "音效"
 
-msgid "Download Profiles"
+msgid "Download profiles"
 msgstr "下载配置文件"
 
 msgid "Buttons & Remote"
@@ -2725,13 +2712,13 @@ msgstr "交叉馈送"
 msgid "Power"
 msgstr "电源"
 
-msgid "Play/Pause"
+msgid "Play/pause"
 msgstr "播放/暂停"
 
-msgid "Next Track"
+msgid "Next track"
 msgstr "下一曲"
 
-msgid "Previous Track"
+msgid "Previous track"
 msgstr "上一曲"
 
 msgid "Clockwise"
@@ -2740,10 +2727,10 @@ msgstr "顺时针"
 msgid "Counterclockwise"
 msgstr "逆时针"
 
-msgid "Volume Up"
+msgid "Volume up"
 msgstr "音量加"
 
-msgid "Volume Down"
+msgid "Volume down"
 msgstr "音量减"
 
 msgid "Button"
@@ -2752,19 +2739,19 @@ msgstr "按键"
 msgid "Default (native behavior)"
 msgstr "默认（原生行为）"
 
-msgid "Seek Forward"
+msgid "Seek forward"
 msgstr "快进"
 
-msgid "Seek Backward"
+msgid "Seek backward"
 msgstr "快退"
 
-msgid "Toggle Screen"
+msgid "Toggle screen"
 msgstr "切换屏幕"
 
-msgid "Power Menu"
+msgid "Power menu"
 msgstr "电源菜单"
 
-msgid "Do Nothing"
+msgid "Do nothing"
 msgstr "不执行操作"
 
 msgid "Single press"
@@ -2788,13 +2775,13 @@ msgstr "长"
 msgid "Default"
 msgstr "默认"
 
-msgid "Reset All"
+msgid "Reset all"
 msgstr "全部重置"
 
-msgid "Button Mapping"
+msgid "Button mapping"
 msgstr "按键映射"
 
-msgid "Keep a button assigned to Toggle Screen or Power Menu"
+msgid "Keep a button assigned to toggle screen or power menu"
 msgstr "请保留一个按键用于“开关屏幕”或“电源菜单”"
 
 msgid "Reset all button mappings?"
@@ -2803,10 +2790,7 @@ msgstr "重置所有按键映射？"
 msgid "Reset"
 msgstr "重置"
 
-msgid "Volume Lock (Screen Off)"
-msgstr "音量锁定（息屏）"
-
-msgid "Update Music Database to enable this album order"
+msgid "Update music database to enable this album order"
 msgstr "更新音乐数据库以启用此专辑排序"
 
 msgid "Sorting"
@@ -2818,10 +2802,10 @@ msgstr "文件（文件夹优先）"
 msgid "Name (A–Z)"
 msgstr "名称（A–Z）"
 
-msgid "Newest Modified"
+msgid "Newest modified"
 msgstr "最近修改"
 
-msgid "Release Year (oldest first)"
+msgid "Release year (oldest first)"
 msgstr "发行年份（最早优先）"
 
 msgid ""
@@ -2832,16 +2816,16 @@ msgstr ""
 "文件按修改日期排序。专辑按最新添加的曲目排序，缺少发行年份的排在最后。请执行"
 "一次“更新音乐数据库”以读取现有文件中的年份。"
 
-msgid "Update Music Database"
+msgid "Update music database"
 msgstr "更新音乐数据库"
 
-msgid "Refresh All Metadata"
+msgid "Refresh all metadata"
 msgstr "刷新全部元数据"
 
-msgid "Refresh All Covers"
+msgid "Refresh all covers"
 msgstr "刷新全部封面"
 
-msgid "Animation Speed"
+msgid "Animation speed"
 msgstr "动画速度"
 
 msgid "T9"
@@ -2865,7 +2849,7 @@ msgstr "插件顺序"
 msgid "Enabled"
 msgstr "已启用"
 
-msgid "Volume Slider"
+msgid "Volume slider"
 msgstr "音量滑块"
 
 msgid "Reorder Items"
@@ -2889,22 +2873,22 @@ msgstr "待机延时"
 msgid "Clock"
 msgstr "时钟"
 
-msgid "Wired Headphones"
+msgid "Wired headphones"
 msgstr "有线耳机"
 
-msgid "Bluetooth Audio (A2DP)"
+msgid "Bluetooth audio (A2DP)"
 msgstr "蓝牙音频 (A2DP)"
 
-msgid "USB Audio"
+msgid "USB audio"
 msgstr "USB 音频"
 
-msgid "Playback Status"
+msgid "Playback status"
 msgstr "播放状态"
 
-msgid "Bluetooth Codec"
+msgid "Bluetooth codec"
 msgstr "蓝牙编解码器"
 
-msgid "Battery Icon"
+msgid "Battery icon"
 msgstr "电池图标"
 
 msgid "Left"
@@ -2916,13 +2900,13 @@ msgstr "居中"
 msgid "Right"
 msgstr "右"
 
-msgid "Clock Position"
+msgid "Clock position"
 msgstr "时钟位置"
 
-msgid "Battery Percentage"
+msgid "Battery percentage"
 msgstr "电池百分比"
 
-msgid "Top Bar"
+msgid "Top bar"
 msgstr "顶栏"
 
 msgid "Themes"
@@ -2940,10 +2924,10 @@ msgstr "布局"
 msgid "Lyrics"
 msgstr "歌词"
 
-msgid "Swipe Up for Home"
+msgid "Swipe up for home"
 msgstr "上滑返回主屏幕"
 
-msgid "Upside Down Screen"
+msgid "Upside down screen"
 msgstr "倒置屏幕"
 
 msgid "Gestures & Orientation"
@@ -2952,10 +2936,10 @@ msgstr "手势与方向"
 msgid "Display"
 msgstr "显示"
 
-msgid "Charge Limit (85%)"
+msgid "Charge limit (85%)"
 msgstr "充电上限（85%）"
 
-msgid "Safe Charging (500mA)"
+msgid "Safe charging (500mA)"
 msgstr "安全充电（500mA）"
 
 msgid "LED charge indicator"
@@ -2971,19 +2955,19 @@ msgstr ""
 msgid "Charging"
 msgstr "充电"
 
-msgid "Additional Tools"
+msgid "Additional tools"
 msgstr "其他工具"
 
-msgid "Turn off Automatic to set the clock"
+msgid "Turn off automatic to set the clock"
 msgstr "关闭自动以设置时钟"
 
 msgid "Automatic"
 msgstr "自动"
 
-msgid "Set Time"
+msgid "Set time"
 msgstr "设置时间"
 
-msgid "24-Hour Clock"
+msgid "24-hour clock"
 msgstr "24 小时制"
 
 msgid "Save"
@@ -2992,19 +2976,19 @@ msgstr "保存"
 msgid "Hostname"
 msgstr "主机名"
 
-msgid "Factory Reset"
+msgid "Factory reset"
 msgstr "恢复出厂设置"
 
 msgid "Maintenance"
 msgstr "维护"
 
-msgid "Firmware Update"
+msgid "Firmware update"
 msgstr "固件更新"
 
-msgid "Player Update"
+msgid "Player update"
 msgstr "播放器更新"
 
-msgid "Plugins & Layouts"
+msgid "Plugins & layouts"
 msgstr "插件与布局"
 
 msgid "Applying language, this may take a while"
@@ -3060,7 +3044,7 @@ msgstr "重置所有设置并重启？"
 msgid "Restart now to apply the new hostname?"
 msgstr "立即重启以应用新主机名？"
 
-msgid "Restart Now"
+msgid "Restart now"
 msgstr "立即重启"
 
 msgid "Hostname can only use letters, numbers, and hyphens"
@@ -3093,10 +3077,10 @@ msgstr "无法重命名配置文件"
 msgid "Profile renamed"
 msgstr "配置已重命名"
 
-msgid "Rename Profile"
+msgid "Rename profile"
 msgstr "重命名配置"
 
-msgid "Replace Profile"
+msgid "Replace profile"
 msgstr "替换配置"
 
 msgid "Profiles"
@@ -3105,28 +3089,25 @@ msgstr "配置"
 msgid "No saved profiles"
 msgstr "无已保存配置"
 
-msgid "Download profiles"
-msgstr "下载配置文件"
-
 msgid "Delete this profile?"
 msgstr "删除此配置文件？"
 
-msgid "Save Profile As"
+msgid "Save profile as"
 msgstr "配置另存为"
 
-msgid "Profile Name"
+msgid "Profile name"
 msgstr "配置名称"
 
-msgid "Save Profile"
+msgid "Save profile"
 msgstr "保存配置"
 
 msgid "Save as a new profile, or replace one that already exists?"
 msgstr "保存为新配置，或替换已有配置？"
 
-msgid "Replace Existing"
+msgid "Replace existing"
 msgstr "替换现有"
 
-msgid "New Profile"
+msgid "New profile"
 msgstr "新建配置"
 
 msgid "Band options"
@@ -3135,10 +3116,7 @@ msgstr "频段选项"
 msgid "Filter type"
 msgstr "筛选类型"
 
-msgid ""
-"Peaking\n"
-"Low Shelf\n"
-"High Shelf"
+msgid "Peaking\nLow shelf\nHigh shelf"
 msgstr ""
 "峰值\n"
 "低架\n"
@@ -3174,11 +3152,11 @@ msgstr ""
 msgid "Frequency"
 msgstr "频率"
 
-msgid "Pre-Amp"
+msgid "Pre-amp"
 msgstr "前置放大"
 
 msgid "Reset to defaults"
-msgstr "恢复默认值"
+msgstr "恢复默认"
 
 msgid "48 kHz reference"
 msgstr "48 kHz 基准"
@@ -3213,9 +3191,6 @@ msgstr "正在加载插件目录..."
 msgid "No network detected"
 msgstr "未检测到网络"
 
-msgid "Time zone"
-msgstr "时区"
-
 msgid "Quick setup"
 msgstr "快速设置"
 
@@ -3231,7 +3206,7 @@ msgstr "欢迎使用 Compás"
 msgid "Get started"
 msgstr "开始使用"
 
-msgid "Quick Setup Complete"
+msgid "Quick setup complete"
 msgstr "快速设置完成"
 
 msgid "Continue"
@@ -3375,7 +3350,7 @@ msgstr "高"
 msgid "Stream quality: %s"
 msgstr "流媒体音质：%s"
 
-msgid "Stream Quality"
+msgid "Stream quality"
 msgstr "流媒体音质"
 
 msgid "Applies to new streaming queues"
@@ -3403,7 +3378,7 @@ msgstr "下载文件夹名称无效"
 msgid "Download subfolder"
 msgstr "下载子文件夹"
 
-msgid "Download Settings"
+msgid "Download settings"
 msgstr "下载设置"
 
 msgid "Subfolder: SD root"
@@ -3416,10 +3391,10 @@ msgstr "子文件夹相对于 SD 根目录（例如 Music/Offline）；留空则
 msgid "Folder layout for downloaded albums"
 msgstr "下载专辑的文件夹结构"
 
-msgid "Album Artist / Album"
+msgid "Album artist / album"
 msgstr "专辑艺术家 / 专辑"
 
-msgid "Album Artist - Album"
+msgid "Album artist - album"
 msgstr "专辑艺术家 - 专辑"
 
 msgid "Failed to load from server"
@@ -3471,10 +3446,10 @@ msgstr "无法启动连接"
 msgid "No saved servers"
 msgstr "无已保存服务器"
 
-msgid "Go back and choose New Connection to add one."
+msgid "Go back and choose New connection to add one."
 msgstr "请返回并选择“新建连接”来添加。"
 
-msgid "Saved Servers"
+msgid "Saved servers"
 msgstr "已保存的服务器"
 
 #, c-format
@@ -3507,11 +3482,8 @@ msgstr "密码：未设置"
 msgid "Connect & Browse"
 msgstr "连接并浏览"
 
-msgid "New Connection"
+msgid "New connection"
 msgstr "新建连接"
-
-msgid "Download settings"
-msgstr "下载设置"
 
 msgid "Songs"
 msgstr "歌曲"
@@ -3615,17 +3587,11 @@ msgstr "正在加载媒体库。"
 msgid "Leave this view and try again."
 msgstr "请离开此界面后重试。"
 
-msgid "Power off"
-msgstr "关机"
-
 msgid "Restart"
 msgstr "重启"
 
 msgid "Screen off"
 msgstr "息屏"
-
-msgid "Sleep timer"
-msgstr "定时关机"
 
 msgid "Power controls"
 msgstr "电源控制"
@@ -3694,13 +3660,13 @@ msgstr "混合"
 msgid "Hi-Res"
 msgstr "Hi-Res"
 
-msgid "Join albums without Album Artist"
+msgid "Join albums without album artist"
 msgstr "合并没有专辑艺术家的专辑"
 
 msgid "Could not open this image"
 msgstr "无法打开此图片"
 
-msgid "Album Artist (A–Z)"
+msgid "Album artist (A–Z)"
 msgstr "专辑艺术家（A–Z）"
 
 msgid "Buttons locked"
@@ -3745,7 +3711,7 @@ msgstr "音乐菜单"
 msgid "Cover Flow"
 msgstr "Cover Flow"
 
-msgid "NOS Mode"
+msgid "NOS mode"
 msgstr "NOS 模式"
 
 msgid "Out of memory"
@@ -3755,10 +3721,10 @@ msgstr "内存耗尽"
 msgid "Select all (%d)"
 msgstr "全选（%d）"
 
-msgid "Power + Volume Up to unlock"
+msgid "Power + volume up to unlock"
 msgstr "电源 + 音量加 解锁"
 
-msgid "Hold Power + turn volume up to unlock"
+msgid "Hold power + turn volume up to unlock"
 msgstr "按住电源并调高音量解锁"
 
 msgid "Another app is waiting for approval."
@@ -3785,7 +3751,7 @@ msgstr "无法保存批准。"
 msgid "Could not start the app."
 msgstr "无法启动应用。"
 
-msgid "External Apps"
+msgid "External apps"
 msgstr "外部应用"
 
 msgid "External apps have full access to the player."
@@ -3797,14 +3763,8 @@ msgstr "已从遥控端开始扫描音乐"
 msgid "No apps installed"
 msgstr "未安装任何应用"
 
-msgid "Play Mode"
+msgid "Play mode"
 msgstr "播放模式"
-
-msgid "Repeat All"
-msgstr "全部循环"
-
-msgid "Repeat One"
-msgstr "单曲循环"
 
 msgid "Run"
 msgstr "运行"
@@ -3898,7 +3858,7 @@ msgstr "请确认另一台设备上显示相同的代码。"
 msgid "Type this code on the other device."
 msgstr "请在另一台设备上输入此代码。"
 
-msgid "DSD Gain"
+msgid "DSD gain"
 msgstr "DSD 增益"
 
 #, c-format
@@ -3908,7 +3868,7 @@ msgstr "+%d dB"
 msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
 msgstr "提高本播放器耳机输出上原生 DSD 的音量。不会超过最大音量档。"
 
-msgid "Seek Step"
+msgid "Seek step"
 msgstr "跳转步长"
 
 #, c-format
@@ -3937,7 +3897,7 @@ msgid "Random Songs"
 msgstr "随机歌曲"
 
 msgctxt "albums"
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "最近添加"
 
 msgctxt "albums"
@@ -3945,10 +3905,10 @@ msgid "Recently Played"
 msgstr "最近播放"
 
 msgctxt "albums"
-msgid "Most Played"
+msgid "Most played"
 msgstr "最常播放"
 
-msgid "Restore at Startup"
+msgid "Restore at startup"
 msgstr "开机时恢复"
 
 msgid "Restore Wi-Fi at Startup"
@@ -3960,25 +3920,25 @@ msgstr "开机时恢复蓝牙"
 msgid "Name (Z–A)"
 msgstr "名称（Z–A）"
 
-msgid "Oldest Modified"
+msgid "Oldest modified"
 msgstr "最早修改"
 
-msgid "Oldest Added"
+msgid "Oldest added"
 msgstr "最早添加"
 
-msgid "Release Year (newest first)"
+msgid "Release year (newest first)"
 msgstr "发行年份（最新优先）"
 
-msgid "Album Artist (Z–A)"
+msgid "Album artist (Z–A)"
 msgstr "专辑艺术家（Z–A）"
 
-msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
-msgstr "文件使用修改日期。专辑使用最近添加的曲目日期；按发行年份排序时，缺少年份的项目始终排在最后。请更新一次音乐数据库，以读取现有文件中的年份。"
+msgid "Files sort by modification date; albums by newest track added. Release year keeps unknown years last. Run Update music database to load years."
+msgstr "文件按修改日期排序，专辑按最近添加的曲目日期排序。未知发行年份始终排在最后。请更新音乐数据库以读取年份。"
 
 msgid "Now Playing"
 msgstr "正在播放"
 
-msgid "In Queue"
+msgid "In queue"
 msgstr "队列中"
 
 msgid "Continue Playing"
@@ -4014,10 +3974,10 @@ msgstr "音效"
 msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
 msgstr "请在无线或快捷抽屉中启用蓝牙以使用蓝牙 DAC 模式"
 
-msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgid "Library recovered. Use Settings > Library > Update music database to save"
 msgstr "媒体库已恢复。请使用 设置 > 媒体库 > 更新音乐数据库 保存"
 
-msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgid "Library unavailable. Use Settings > Library > Update music database to rebuild"
 msgstr "媒体库不可用。请使用 设置 > 媒体库 > 更新音乐数据库 重建"
 
 msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
@@ -4029,7 +3989,7 @@ msgstr "个性化"
 msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
 msgstr "请先关闭 ADB（设置 > 系统 > 高级），然后在此启用 USB DAC。"
 
-msgid "Use Settings > Library > Update Music Database"
+msgid "Use Settings > Library > Update music database"
 msgstr "请使用 设置 > 媒体库 > 更新音乐数据库"
 
 msgid "%s: %d (outside ±%d)"
@@ -4038,10 +3998,10 @@ msgstr "%s：%d（超出 ±%d）"
 msgid "A preset with that name already exists"
 msgstr "同名预设已存在"
 
-msgid "About Play Through"
+msgid "About play through"
 msgstr "关于连续播放"
 
-msgid "Adjustment Range"
+msgid "Adjustment range"
 msgstr "调节范围"
 
 msgid "Air"
@@ -4056,10 +4016,10 @@ msgstr "专辑按艺人专辑名称的字母顺序继续播放。"
 msgid "Amount (%)"
 msgstr "强度 (%)"
 
-msgid "Bass Extension"
+msgid "Bass extension"
 msgstr "低频下潜"
 
-msgid "Bass Texture"
+msgid "Bass texture"
 msgstr "低频质感"
 
 msgid "Bass frequency (Hz)"
@@ -4074,7 +4034,7 @@ msgstr "确认"
 msgid "Continuing playback"
 msgstr "正在继续播放"
 
-msgid "Could not apply Soundstage. Try again."
+msgid "Could not apply soundstage. Try again."
 msgstr "无法应用声场，请重试。"
 
 msgid "Could not apply changes. Try again."
@@ -4107,7 +4067,7 @@ msgstr "阻尼 (%)"
 msgid "Enter a short preset name without line breaks"
 msgstr "请输入不含换行的简短预设名称"
 
-msgid "Female Overtones"
+msgid "Female overtones"
 msgstr "女声泛音"
 
 msgid "Focused center"
@@ -4119,16 +4079,16 @@ msgstr "文件夹按同级文件夹的字母顺序（不区分大小写）继续
 msgid "Hall"
 msgstr "大厅"
 
-msgid "How It Works"
+msgid "How it works"
 msgstr "工作原理"
 
-msgid "Impulse Response"
+msgid "Impulse response"
 msgstr "脉冲响应"
 
 msgid "Load"
 msgstr "加载"
 
-msgid "Named Presets"
+msgid "Named presets"
 msgstr "命名预设"
 
 msgid "Natural"
@@ -4137,7 +4097,7 @@ msgstr "自然"
 msgid "New preset name"
 msgstr "新预设名称"
 
-msgid "Note Thickness"
+msgid "Note thickness"
 msgstr "声音厚度"
 
 msgid "Older MSEB controls are unsupported; preset was not loaded"
@@ -4146,7 +4106,7 @@ msgstr "不支持旧版 MSEB 调节项，未加载预设"
 msgid "Older MSEB controls are unsupported; slot was not loaded"
 msgstr "不支持旧版 MSEB 调节项，未加载槽位"
 
-msgid "Overall Temperature"
+msgid "Overall temperature"
 msgstr "整体冷暖"
 
 msgid "Overwrite"
@@ -4155,13 +4115,13 @@ msgstr "覆盖"
 msgid "Overwrite preset?"
 msgstr "覆盖预设？"
 
-msgid "Play Through"
+msgid "Play through"
 msgstr "连续播放"
 
-msgid "Play Through Albums"
+msgid "Play through albums"
 msgstr "跨专辑连续播放"
 
-msgid "Play Through Folders"
+msgid "Play through folders"
 msgstr "跨文件夹连续播放"
 
 msgid "Preset"
@@ -4182,11 +4142,8 @@ msgstr "反射 (%)"
 msgid "Rename preset"
 msgstr "重命名预设"
 
-msgid "Reset Soundstage to defaults?"
+msgid "Reset soundstage to defaults?"
 msgstr "将声场恢复为默认值？"
-
-msgid "Reset to Defaults"
-msgstr "恢复默认"
 
 msgid "Room"
 msgstr "房间"
@@ -4194,7 +4151,7 @@ msgstr "房间"
 msgid "Room size (%)"
 msgstr "房间大小 (%)"
 
-msgid "Save Named Preset"
+msgid "Save named preset"
 msgstr "保存命名预设"
 
 msgid "Saved"
@@ -4230,7 +4187,7 @@ msgstr "槽位已加载"
 msgid "Small room"
 msgstr "小房间"
 
-msgid "Sound Stage"
+msgid "Sound stage"
 msgstr "声场"
 
 msgid "Soundstage"
@@ -4239,7 +4196,7 @@ msgstr "声场"
 msgid "Speaker angle (deg)"
 msgstr "扬声器角度 (deg)"
 
-msgid "Stereo Width"
+msgid "Stereo width"
 msgstr "立体声宽度"
 
 msgid "Stock MSEB width changes the channel mix."
@@ -4251,7 +4208,7 @@ msgstr "录音棚监听"
 msgid "Switch to stock MSEB"
 msgstr "切换到原生 MSEB"
 
-msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgid "This saved layout is unsupported. Switching replaces instrument presence, bass bite, and treble bite with the stock controls."
 msgstr "不支持此已保存布局。切换后会将乐器存在感、低频冲击和高频冲击替换为原生调节项。"
 
 msgid "Treble frequency (Hz)"
@@ -4278,7 +4235,7 @@ msgstr "删除损坏的预设？"
 msgid "Delete preset?"
 msgstr "删除预设？"
 
-msgid "Load from Slot"
+msgid "Load from slot"
 msgstr "从槽位加载"
 
 msgid "MSEB"
@@ -4293,38 +4250,29 @@ msgstr "预设已保存"
 msgid "Restoring ADB…"
 msgstr "正在恢复 ADB…"
 
-msgid "Save to Slot"
+msgid "Save to slot"
 msgstr "保存到槽位"
 
 msgid "Stage"
 msgstr "声场"
 
-msgid "Turn off Loudness Boost first"
+msgid "Turn off loudness boost first"
 msgstr "请先关闭响度增强"
 
 msgid "DAC"
 msgstr "DAC"
 
-msgid "USB Output"
+msgid "USB output"
 msgstr "USB 输出"
-
-msgid "Accent color"
-msgstr "强调色"
 
 msgid "Advanced sound"
 msgstr "高级音效"
-
-msgid "Button mapping"
-msgstr "按键映射"
 
 msgid "Buttons"
 msgstr "按键"
 
 msgid "Bypassed by NOS"
 msgstr "由 NOS 旁路"
-
-msgid "Car mode"
-msgstr "车载模式"
 
 msgid "Filter"
 msgstr "滤波器"
@@ -4344,35 +4292,14 @@ msgstr "歌词字号"
 msgid "Max %d%%"
 msgstr "最大 %d%%"
 
-msgid "Per album"
-msgstr "按专辑"
-
-msgid "Per track"
-msgstr "按曲目"
-
-msgid "Play through"
-msgstr "连续播放"
-
-msgid "Quick drawer"
-msgstr "快捷抽屉"
-
-msgid "Resume last track"
-msgstr "继续上次曲目"
-
-msgid "Show Artist Images"
+msgid "Show artist images"
 msgstr "显示艺术家图片"
 
-msgid "Show Lyrics"
+msgid "Show lyrics"
 msgstr "显示歌词"
-
-msgid "Top bar"
-msgstr "顶栏"
 
 msgid "Turn off NOS to choose a filter"
 msgstr "关闭 NOS 以选择滤波器"
-
-msgid "USB output"
-msgstr "USB 输出"
 
 msgid "Volume limits"
 msgstr "音量限制"
@@ -4380,11 +4307,11 @@ msgstr "音量限制"
 msgid "Volume lock (screen off)"
 msgstr "音量锁定（息屏）"
 
-msgid "Albums on an album-artist page"
-msgstr "专辑艺术家页面中的专辑"
+msgid "Album artist pages"
+msgstr "专辑艺术家页面"
 
-msgid "Albums on an artist page"
-msgstr "艺术家页面中的专辑"
+msgid "Artist pages"
+msgstr "艺术家页面"
 
 msgid "Build it now? This may take a while."
 msgstr "现在建立？这可能需要一些时间。"
@@ -4403,12 +4330,6 @@ msgstr "放弃输入的内容？"
 
 msgid "Enable Wi-Fi to access"
 msgstr "请开启 Wi-Fi 以访问"
-
-msgid "Fast"
-msgstr "快"
-
-msgid "Fastest"
-msgstr "最快"
 
 msgid "Forget this device?"
 msgstr "忘记此设备？"
@@ -4436,9 +4357,6 @@ msgstr "无匹配结果"
 
 msgid "No plays yet"
 msgstr "暂无播放记录"
-
-msgid "Normal"
-msgstr "正常"
 
 msgid "Open Now Playing"
 msgstr "打开正在播放"
@@ -4488,7 +4406,7 @@ msgstr "这可能需要一些时间。"
 msgid "Type to search"
 msgstr "输入以搜索"
 
-msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgid "Update saved. Install from firmware update > install from SD card."
 msgstr "更新已保存。请从“固件更新”>“从 SD 卡安装”进行安装。"
 
 msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
@@ -4506,19 +4424,16 @@ msgstr "已禁用"
 msgid "Player layout"
 msgstr "播放器布局"
 
-msgid "Faster"
-msgstr "较快"
-
-msgid "Add to Favorites"
+msgid "Add to favorites"
 msgstr "添加到收藏"
 
-msgid "Remove from Favorites"
+msgid "Remove from favorites"
 msgstr "从收藏中移除"
 
-msgid "Go to Album"
+msgid "Go to album"
 msgstr "前往专辑"
 
-msgid "Go to Artist"
+msgid "Go to artist"
 msgstr "前往艺人"
 
 msgid "Some songs could not be downloaded"
@@ -4565,3 +4480,15 @@ msgstr "目前找到的更改可能不会保存。"
 
 msgid "Updating the library. This may take a while."
 msgstr "正在更新媒体库，可能需要一些时间。"
+
+msgid "Connections"
+msgstr "连接"
+
+msgid "Too demanding for this device"
+msgstr "此设备性能不足，无法播放"
+
+msgid "Waiting for a network address"
+msgstr "正在等待网络地址"
+
+msgid "Artist unavailable"
+msgstr "艺术家不可用"

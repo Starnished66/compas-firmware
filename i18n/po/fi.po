@@ -208,13 +208,13 @@ msgstr "Esittäjät"
 msgid "Albums"
 msgstr "Albumit"
 
-msgid "Album Artist"
+msgid "Album artist"
 msgstr "Albumin esittäjä"
 
 msgid "Genres"
 msgstr "Tyylilajit"
 
-msgid "All Songs"
+msgid "All songs"
 msgstr "Kaikki kappaleet"
 
 msgid "Playlists"
@@ -235,7 +235,7 @@ msgstr "Wi-Fi"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-msgid "Sleep Timer"
+msgid "Sleep timer"
 msgstr "Uniajastin"
 
 msgid "Crossfade"
@@ -250,10 +250,10 @@ msgstr "DLNA"
 msgid "Gapless"
 msgstr "Katkeamaton toisto"
 
-msgid "Remote Control"
+msgid "Remote control"
 msgstr "Kauko-ohjaus"
 
-msgid "Car Mode"
+msgid "Car mode"
 msgstr "Autotila"
 
 msgid "Plugins"
@@ -722,7 +722,7 @@ msgstr "Lataa emulaattori pelataksesi pelejä."
 msgid "Disconnect USB storage from the computer before changing files."
 msgstr "Irrota USB-tallennus tietokoneesta ennen tiedostojen muuttamista."
 
-msgid "File Manager"
+msgid "File manager"
 msgstr "Tiedostonhallinta"
 
 #, c-format
@@ -853,7 +853,7 @@ msgstr "Soittolista luotu"
 msgid "Failed to create playlist"
 msgstr "Soittolistan luonti epäonnistui"
 
-msgid "Playlist Name"
+msgid "Playlist name"
 msgstr "Soittolistan nimi"
 
 msgid "Song already added"
@@ -904,19 +904,19 @@ msgstr "Etsitään toistettavia tiedostoja"
 msgid "File path is too long"
 msgstr "Tiedostopolku on liian pitkä"
 
-msgid "Play All (Sequential)"
+msgid "Play all (sequential)"
 msgstr "Toista kaikki (järjestyksessä)"
 
-msgid "Play All (Shuffle)"
+msgid "Play all (shuffle)"
 msgstr "Toista kaikki (satunnaisesti)"
 
-msgid "Add to Queue"
+msgid "Add to queue"
 msgstr "Lisää jonoon"
 
-msgid "Add to Playlist"
+msgid "Add to playlist"
 msgstr "Lisää soittolistaan"
 
-msgid "+ New Playlist"
+msgid "+ New playlist"
 msgstr "+ Uusi soittolista"
 
 msgid "Audio"
@@ -937,7 +937,7 @@ msgid_plural "%lld tracks"
 msgstr[0] "%lld kappale"
 msgstr[1] "%lld kappaletta"
 
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "Äskettäin lisätyt"
 
 msgid "Playlist changed. Select a song again."
@@ -985,7 +985,7 @@ msgstr "Levy %d"
 msgid "Next  •  %d–%d of %d"
 msgstr "Seuraavat  •  %d–%d / %d"
 
-msgid "Most Played"
+msgid "Most played"
 msgstr "Eniten toistetut"
 
 msgid "Library changed. Open the album again."
@@ -1045,7 +1045,7 @@ msgstr "Nimeä ei voi muuttaa: nimi ei kelpaa tai tiedosto on jo olemassa"
 msgid "Playlist renamed"
 msgstr "Soittolistan nimi muutettu"
 
-msgid "Rename Playlist"
+msgid "Rename playlist"
 msgstr "Nimeä soittolista uudelleen"
 
 msgid "Delete playlist?"
@@ -1054,7 +1054,7 @@ msgstr "Poistetaanko soittolista?"
 msgid "The playlist file will be deleted. Music files are kept."
 msgstr "Soittolistatiedosto poistetaan. Musiikkitiedostot säilyvät."
 
-msgid "Delete Playlist"
+msgid "Delete playlist"
 msgstr "Poista soittolista"
 
 msgid "System playlists"
@@ -1331,17 +1331,17 @@ msgstr "Uudelleenkäynnistys käynnistysvalitsimeen epäonnistui"
 msgid "An update is in progress. Please wait."
 msgstr "Päivitys on käynnissä. Odota hetki."
 
-msgid "Tap Power off again to confirm"
+msgid "Tap power off again to confirm"
 msgstr "Vahvista sammuttaminen napauttamalla uudelleen"
 
-msgid "Tap Restart again to confirm"
+msgid "Tap restart again to confirm"
 msgstr "Vahvista uudelleenkäynnistys napauttamalla uudelleen"
 
 #, c-format
 msgid "Sleep timer: %d min remaining"
 msgstr "Uniajastin: %d min jäljellä"
 
-msgid "Sleep timer: Off"
+msgid "Sleep timer: off"
 msgstr "Uniajastin: pois"
 
 msgid "Music"
@@ -1459,13 +1459,13 @@ msgstr "Yhdistetään verkkoon"
 msgid "Couldn't connect to Wi-Fi network"
 msgstr "Wi-Fi-verkkoon yhdistäminen epäonnistui"
 
-msgid "Wi-Fi Password"
+msgid "Wi-Fi password"
 msgstr "Wi-Fi-salasana"
 
-msgid "Secured · Connected"
+msgid "Secured · connected"
 msgstr "Suojattu · Yhdistetty"
 
-msgid "Open · Connected"
+msgid "Open · connected"
 msgstr "Avoin · Yhdistetty"
 
 msgid "Saved network"
@@ -1504,7 +1504,7 @@ msgstr "SSID:n pituuden on oltava 1–32 tavua"
 msgid "Wi-Fi is still starting"
 msgstr "Wi-Fi käynnistyy yhä"
 
-msgid "Network Name (SSID)"
+msgid "Network name (SSID)"
 msgstr "Verkon nimi (SSID)"
 
 msgid "Connect"
@@ -1539,7 +1539,7 @@ msgid "SSID: %s"
 msgstr "SSID: %s"
 
 #, c-format
-msgid "IP Address: %s"
+msgid "IP address: %s"
 msgstr "IP-osoite: %s"
 
 #, c-format
@@ -1547,14 +1547,14 @@ msgid "Gateway: %s"
 msgstr "Yhdyskäytävä: %s"
 
 #, c-format
-msgid "MAC Address: %s"
+msgid "MAC address: %s"
 msgstr "MAC-osoite: %s"
 
 #, c-format
 msgid "Signal: %s"
 msgstr "Signaali: %s"
 
-msgid "Wi-Fi Info"
+msgid "Wi-Fi info"
 msgstr "Wi-Fi-tiedot"
 
 msgid "Primary DNS"
@@ -1566,13 +1566,13 @@ msgstr "Toissijainen DNS"
 msgid "Not set"
 msgstr "Ei asetettu"
 
-msgid "DNS Settings"
+msgid "DNS settings"
 msgstr "DNS-asetukset"
 
-msgid "Manual SSID Entry"
+msgid "Manual SSID entry"
 msgstr "Anna SSID manuaalisesti"
 
-msgid "Memorized Networks"
+msgid "Memorized networks"
 msgstr "Tallennetut verkot"
 
 msgid "No memorized networks"
@@ -1590,7 +1590,7 @@ msgstr "Tallennetun verkon tietoja tarkistetaan."
 msgid "Connected"
 msgstr "Yhdistetty"
 
-msgid "Available Networks"
+msgid "Available networks"
 msgstr "Käytettävissä olevat verkot"
 
 msgid "Scanning for networks"
@@ -1647,10 +1647,10 @@ msgstr "Odotetaan Bluetooth-virtaa…"
 msgid "Auto"
 msgstr "Automaattinen"
 
-msgid "LDAC Quality"
+msgid "LDAC quality"
 msgstr "LDAC-laatu"
 
-msgid "LDAC Standard"
+msgid "LDAC standard"
 msgstr "LDAC-vakio"
 
 msgid "Could not save Bluetooth codec"
@@ -1674,34 +1674,34 @@ msgstr "Edellistä valintaa otetaan vielä käyttöön"
 msgid "Headset may disconnect, manual reconnection might be required"
 msgstr "Kuulokkeet voivat katketa; yhteys saattaa joutua muodostamaan uudelleen käsin"
 
-msgid "Sample Rate"
+msgid "Sample rate"
 msgstr "Näytteenottotaajuus"
 
-msgid "Bluetooth Volume Sync"
+msgid "Bluetooth volume sync"
 msgstr "Bluetooth-äänenvoimakkuuden synkronointi"
 
 msgid "Codec"
 msgstr "Koodekki"
 
-msgid "Speex Resampling"
+msgid "Speex resampling"
 msgstr "Speex-ylinäytteistys"
 
-msgid "Hide Unnamed Devices"
+msgid "Hide unnamed devices"
 msgstr "Piilota nimettömät laitteet"
 
 msgid "Advanced"
 msgstr "Lisäasetukset"
 
-msgid "Resume and Play"
+msgid "Resume and play"
 msgstr "Jatka ja toista"
 
-msgid "Resume, but Paused"
+msgid "Resume, but paused"
 msgstr "Jatka, mutta pidä tauolla"
 
 msgid "Applies next time you launch the app"
 msgstr "Käytetään, kun käynnistät sovelluksen seuraavan kerran"
 
-msgid "Resume Last Track"
+msgid "Resume last track"
 msgstr "Jatka viimeisestä kappaleesta"
 
 msgid "Small"
@@ -1710,13 +1710,13 @@ msgstr "Pieni"
 msgid "Could not apply font size"
 msgstr "Fonttikoon asetus epäonnistui"
 
-msgid "Font Size"
+msgid "Font size"
 msgstr "Fonttikoko"
 
-msgid "Per Track"
+msgid "Per track"
 msgstr "Kappalekohtainen"
 
-msgid "Per Album"
+msgid "Per album"
 msgstr "Albumikohtainen"
 
 msgid "ReplayGain"
@@ -1743,9 +1743,6 @@ msgstr "USB-tila"
 #, c-format
 msgid "Failed to switch to %s"
 msgstr "Vaihto tilaan %s epäonnistui"
-
-msgid "USB Mode"
-msgstr "USB-tila"
 
 msgid "Failed to update USB charging"
 msgstr "USB-latauksen päivitys epäonnistui"
@@ -1791,7 +1788,7 @@ msgstr "Bluetooth ei ole käytössä"
 msgid "Turn on Bluetooth to see paired and nearby devices."
 msgstr "Ota Bluetooth käyttöön nähdäksesi pariliitetyt ja lähistöllä olevat laitteet."
 
-msgid "Paired Devices"
+msgid "Paired devices"
 msgstr "Pariliitetyt laitteet"
 
 msgid "No paired devices"
@@ -1800,7 +1797,7 @@ msgstr "Ei pariliitettyjä laitteita"
 msgid "Previously connected accessories will appear here."
 msgstr "Aiemmin yhdistetyt lisälaitteet näkyvät tässä."
 
-msgid "Available Devices"
+msgid "Available devices"
 msgstr "Käytettävissä olevat laitteet"
 
 msgid "No nearby devices"
@@ -1834,7 +1831,7 @@ msgstr "AirPlayn käyttöönotto epäonnistui"
 msgid "AirPlay stopped unexpectedly"
 msgstr "AirPlay pysähtyi odottamatta"
 
-msgid "DLNA Renderer"
+msgid "DLNA renderer"
 msgstr "DLNA-renderöijä"
 
 msgid "Service is busy"
@@ -1864,7 +1861,7 @@ msgstr "Bluetooth: odotetaan palvelun rekisteröintiä"
 msgid "Connect using either available route:"
 msgstr "Yhdistä jommallakummalla tavalla:"
 
-msgid "Bluetooth: Compas Remote Control"
+msgid "Bluetooth: Compas remote control"
 msgstr "Bluetooth: Compas-kauko-ohjaus"
 
 msgid "Could not generate a new PIN"
@@ -1963,7 +1960,7 @@ msgstr "Päivitetään liitännäisiä..."
 msgid "Plugin Store"
 msgstr "Liitännäiskauppa"
 
-msgid "Refresh Plugins"
+msgid "Refresh plugins"
 msgstr "Päivitä liitännäiset"
 
 msgid "Plugin Manager"
@@ -2141,13 +2138,13 @@ msgstr "Tallennetaan soittolistaa…"
 msgid "Cannot save playlist"
 msgstr "Soittolistan tallennus epäonnistui"
 
-msgid "Save Queue as Playlist"
+msgid "Save queue as playlist"
 msgstr "Tallenna jono soittolistana"
 
-msgid "Clear Queue"
+msgid "Clear queue"
 msgstr "Tyhjennä jono"
 
-msgid "Save as Playlist"
+msgid "Save as playlist"
 msgstr "Tallenna soittolistana"
 
 msgid "Playlist saved"
@@ -2156,7 +2153,7 @@ msgstr "Soittolista tallennettu"
 msgid "Cannot save: invalid or streaming entries"
 msgstr "Tallennus epäonnistui: virheellisiä kohteita tai suoratoistokohteita"
 
-msgid "Play Next"
+msgid "Play next"
 msgstr "Toista seuraavaksi"
 
 msgid "Custom"
@@ -2166,13 +2163,6 @@ msgstr "Mukautettu"
 msgid "%d min remaining"
 msgstr "%d min jäljellä"
 
-msgid "Crossfeed: Off"
-msgstr "Crossfeed: pois"
-
-#, c-format
-msgid "Crossfeed: %d%%"
-msgstr "Crossfeed: %d%%"
-
 #, c-format
 msgid "%+.2f dB"
 msgstr "%+.2f dB"
@@ -2181,7 +2171,7 @@ msgstr "%+.2f dB"
 msgid "%.0f Hz"
 msgstr "%.0f Hz"
 
-msgid "Pre-Amp (dB, -12 to 12)"
+msgid "Pre-amp (dB, -12 to 12)"
 msgstr "Esivahvistus (dB, -12–12)"
 
 msgid "Crossfeed (0 to 100)"
@@ -2215,7 +2205,7 @@ msgstr "Valmistellaan päivitystä"
 msgid "Checking the file on the SD card"
 msgstr "Tarkistetaan SD-kortin tiedostoa"
 
-msgid "Update & Reboot"
+msgid "Update & reboot"
 msgstr "Päivitä ja käynnistä uudelleen"
 
 #, c-format
@@ -2266,13 +2256,13 @@ msgstr "Tarkista verkkopäivitys"
 msgid "Install from SD card"
 msgstr "Asenna SD-kortilta"
 
-msgid "Update the Player only, retaining current drivers, kernel and bootloader."
+msgid "Update the player only, retaining current drivers, kernel and bootloader."
 msgstr "Päivittää vain soittimen. Nykyiset ajurit, ydin ja käynnistyslatain säilyvät."
 
-msgid "Download & Install"
+msgid "Download & install"
 msgstr "Lataa ja asenna"
 
-msgid "Install & Restart"
+msgid "Install & restart"
 msgstr "Asenna ja käynnistä uudelleen"
 
 msgid "Downloading player update"
@@ -2336,13 +2326,13 @@ msgstr "Latauksen käynnistys epäonnistui"
 msgid "Downloading update"
 msgstr "Ladataan päivitystä"
 
-msgid "Update the entire CompásOS. Flashing firmware contains Bootloader, Player, Kernel and Drivers."
+msgid "Update the entire CompásOS. Flashing firmware contains bootloader, player, kernel and drivers."
 msgstr "Päivittää koko CompásOS:n. Laiteohjelmisto sisältää käynnistyslataimen, soittimen, ytimen ja ajurit."
 
 msgid "Download"
 msgstr "Lataa"
 
-msgid "Install & Reboot"
+msgid "Install & reboot"
 msgstr "Asenna ja käynnistä uudelleen"
 
 msgid "Preparing and verifying recovery mode"
@@ -2437,7 +2427,7 @@ msgstr "Opas: docs/development/CREATING.md"
 msgid "Write a Lua plugin on your computer. Copy its .lua file to the .plugins folder on your SD card."
 msgstr "Kirjoita Lua-liitännäinen tietokoneella. Kopioi sen .lua-tiedosto SD-kortin .plugins-kansioon."
 
-msgid "Open More > Plugins > Refresh Plugins. Scan for a working example and the full API guide."
+msgid "Open More > Plugins > Refresh plugins. Scan for a working example and the full API guide."
 msgstr "Avaa Lisää > Liitännäiset > Päivitä liitännäiset. Skannaa toimiva esimerkki ja koko API-opas."
 
 msgid "Edit a .theme text file on your computer. Copy it to the Themes folder on your SD card, then select it in More > Themes."
@@ -2458,10 +2448,10 @@ msgstr "Kehittäjäasetukset"
 msgid "About"
 msgstr "Tietoja"
 
-msgid "Screenshots (Power + Previous)"
+msgid "Screenshots (power + previous)"
 msgstr "Kuvakaappaukset (Virta + Edellinen)"
 
-msgid "Screenshots (Power + Vol Down)"
+msgid "Screenshots (power + vol down)"
 msgstr "Kuvakaappaukset (Virta + Äänenvoimakkuus alas)"
 
 msgid "Enable debug logging"
@@ -2479,7 +2469,7 @@ msgstr "Albumin kansikuvasta"
 msgid "From album art (no cover, using custom)"
 msgstr "Albumin kansikuvasta (ei kantta, käytä mukautettua väriä)"
 
-msgid "Accent Color"
+msgid "Accent color"
 msgstr "Korostusväri"
 
 msgid "Accent Options"
@@ -2506,7 +2496,7 @@ msgstr "Käyttää korostusväriä näkymien otsikoiden vieressä oleviin kuvakk
 msgid "Presets"
 msgstr "Esiasetukset"
 
-msgid "Default (Built-in)"
+msgid "Default (built-in)"
 msgstr "Oletus (sisäinen)"
 
 msgid "No .ttf fonts found in /Fonts"
@@ -2533,31 +2523,31 @@ msgstr "Mukautetut fontit vaikuttavat vain latinalaiseen tekstiin."
 msgid "Place .ttf fonts in SD /Fonts folder."
 msgstr "Aseta .ttf-fontit SD-kortin /Fonts-kansioon."
 
-msgid "Screen Timeout"
+msgid "Screen timeout"
 msgstr "Näytön aikakatkaisu"
 
 msgid "Turn off screen automatically"
 msgstr "Sammuta näyttö automaattisesti"
 
-msgid "Screen Dimming"
+msgid "Screen dimming"
 msgstr "Näytön himmennys"
 
 msgid "Dim screen before timeout"
 msgstr "Himmennä näyttö ennen aikakatkaisua"
 
-msgid "Startup Volume"
+msgid "Startup volume"
 msgstr "Käynnistysäänenvoimakkuus"
 
 msgid "Launch at a fixed volume"
 msgstr "Käynnistä kiinteällä äänenvoimakkuudella"
 
-msgid "Max Volume"
+msgid "Max volume"
 msgstr "Enimmäisäänenvoimakkuus"
 
 msgid "Limits the player volume, including buttons, remote controls and plugins."
 msgstr "Rajoittaa soittimen äänenvoimakkuutta, myös painikkeiden, kauko-ohjainten ja liitännäisten kautta."
 
-msgid "Car Mode Volume"
+msgid "Car mode volume"
 msgstr "Autotilan äänenvoimakkuus"
 
 msgid "Auto-resume"
@@ -2589,13 +2579,13 @@ msgstr "Aikaa jäljellä: %d:%02d:%02d"
 msgid "Time remaining: %d:%02d"
 msgstr "Aikaa jäljellä: %d:%02d"
 
-msgid "Enable Sleep Timer"
+msgid "Enable sleep timer"
 msgstr "Ota uniajastin käyttöön"
 
-msgid "Show Time Remaining"
+msgid "Show time remaining"
 msgstr "Näytä jäljellä oleva aika"
 
-msgid "Idle Shutdown"
+msgid "Idle shutdown"
 msgstr "Sammuta automaattisesti käyttämättömänä"
 
 msgid "Automatically go idle"
@@ -2604,7 +2594,7 @@ msgstr "Siirry automaattisesti lepotilaan"
 msgid "Choose what happens when idle:"
 msgstr "Valitse, mitä tehdään käyttämättömänä:"
 
-msgid "Power Off"
+msgid "Power off"
 msgstr "Sammuta"
 
 msgid "Suspend to RAM"
@@ -2650,13 +2640,13 @@ msgstr "Aikavyöhykkeen asetus epäonnistui"
 msgid "%s (current)"
 msgstr "%s (nykyinen)"
 
-msgid "Time Zone"
+msgid "Time zone"
 msgstr "Aikavyöhyke"
 
 msgid "Sound Effects"
 msgstr "Äänitehosteet"
 
-msgid "Download Profiles"
+msgid "Download profiles"
 msgstr "Lataa profiileja"
 
 msgid "Buttons & Remote"
@@ -2674,13 +2664,13 @@ msgstr "Crossfeed"
 msgid "Power"
 msgstr "Virta"
 
-msgid "Play/Pause"
+msgid "Play/pause"
 msgstr "Toista/keskeytä"
 
-msgid "Next Track"
+msgid "Next track"
 msgstr "Seuraava kappale"
 
-msgid "Previous Track"
+msgid "Previous track"
 msgstr "Edellinen kappale"
 
 msgid "Clockwise"
@@ -2689,10 +2679,10 @@ msgstr "Myötäpäivään"
 msgid "Counterclockwise"
 msgstr "Vastapäivään"
 
-msgid "Volume Up"
+msgid "Volume up"
 msgstr "Lisää äänenvoimakkuutta"
 
-msgid "Volume Down"
+msgid "Volume down"
 msgstr "Vähennä äänenvoimakkuutta"
 
 msgid "Button"
@@ -2701,19 +2691,19 @@ msgstr "Painike"
 msgid "Default (native behavior)"
 msgstr "Oletus (natiivi toiminta)"
 
-msgid "Seek Forward"
+msgid "Seek forward"
 msgstr "Kelaa eteenpäin"
 
-msgid "Seek Backward"
+msgid "Seek backward"
 msgstr "Kelaa taaksepäin"
 
-msgid "Toggle Screen"
+msgid "Toggle screen"
 msgstr "Vaihda näytön tilaa"
 
-msgid "Power Menu"
+msgid "Power menu"
 msgstr "Virtavalikko"
 
-msgid "Do Nothing"
+msgid "Do nothing"
 msgstr "Älä tee mitään"
 
 msgid "Single press"
@@ -2737,13 +2727,13 @@ msgstr "Pitkä"
 msgid "Default"
 msgstr "Oletus"
 
-msgid "Reset All"
+msgid "Reset all"
 msgstr "Palauta kaikki"
 
-msgid "Button Mapping"
+msgid "Button mapping"
 msgstr "Painikemääritykset"
 
-msgid "Keep a button assigned to Toggle Screen or Power Menu"
+msgid "Keep a button assigned to toggle screen or power menu"
 msgstr "Pidä painikkeelle määritettynä Näytön tila tai Virtavalikko"
 
 msgid "Reset all button mappings?"
@@ -2752,10 +2742,7 @@ msgstr "Palautetaanko kaikki painikemääritykset?"
 msgid "Reset"
 msgstr "Palauta"
 
-msgid "Volume Lock (Screen Off)"
-msgstr "Äänenvoimakkuuden lukitus (näyttö pois)"
-
-msgid "Update Music Database to enable this album order"
+msgid "Update music database to enable this album order"
 msgstr "Päivitä musiikkitietokanta ottaaksesi tämän albumijärjestyksen käyttöön"
 
 msgid "Sorting"
@@ -2767,25 +2754,25 @@ msgstr "Tiedostot (kansiot ensin)"
 msgid "Name (A–Z)"
 msgstr "Nimi (A–Ö)"
 
-msgid "Newest Modified"
+msgid "Newest modified"
 msgstr "Viimeksi muokatut"
 
-msgid "Release Year (oldest first)"
+msgid "Release year (oldest first)"
 msgstr "Julkaisuvuosi (vanhin ensin)"
 
 msgid "Files use modification dates. Albums use the newest track added; missing release years sort last. Update Music Database once to read years from existing files."
 msgstr "Tiedostot järjestetään muokkauspäivän mukaan. Albumit käyttävät uusimman lisätyn kappaleen päivämäärää; puuttuvat julkaisuvuodet sijoitetaan viimeiseksi. Päivitä musiikkitietokanta kerran lukeaksesi vuodet olemassa olevista tiedostoista."
 
-msgid "Update Music Database"
+msgid "Update music database"
 msgstr "Päivitä musiikkitietokanta"
 
-msgid "Refresh All Metadata"
+msgid "Refresh all metadata"
 msgstr "Päivitä kaikki metatiedot"
 
-msgid "Refresh All Covers"
+msgid "Refresh all covers"
 msgstr "Päivitä kaikki kansikuvat"
 
-msgid "Animation Speed"
+msgid "Animation speed"
 msgstr "Animaation nopeus"
 
 msgid "T9"
@@ -2809,7 +2796,7 @@ msgstr "Liitännäisten järjestys"
 msgid "Enabled"
 msgstr "Käytössä"
 
-msgid "Volume Slider"
+msgid "Volume slider"
 msgstr "Äänenvoimakkuuden liukusäädin"
 
 msgid "Reorder Items"
@@ -2833,22 +2820,22 @@ msgstr "Lepotilaviive"
 msgid "Clock"
 msgstr "Kello"
 
-msgid "Wired Headphones"
+msgid "Wired headphones"
 msgstr "Langalliset kuulokkeet"
 
-msgid "Bluetooth Audio (A2DP)"
+msgid "Bluetooth audio (A2DP)"
 msgstr "Bluetooth-ääni (A2DP)"
 
-msgid "USB Audio"
+msgid "USB audio"
 msgstr "USB-ääni"
 
-msgid "Playback Status"
+msgid "Playback status"
 msgstr "Toiston tila"
 
-msgid "Bluetooth Codec"
+msgid "Bluetooth codec"
 msgstr "Bluetooth-koodekki"
 
-msgid "Battery Icon"
+msgid "Battery icon"
 msgstr "Akun kuvake"
 
 msgid "Left"
@@ -2860,13 +2847,13 @@ msgstr "Keski"
 msgid "Right"
 msgstr "Oikea"
 
-msgid "Clock Position"
+msgid "Clock position"
 msgstr "Kellon sijainti"
 
-msgid "Battery Percentage"
+msgid "Battery percentage"
 msgstr "Akun varausprosentti"
 
-msgid "Top Bar"
+msgid "Top bar"
 msgstr "Yläpalkki"
 
 msgid "Themes"
@@ -2884,10 +2871,10 @@ msgstr "Asettelu"
 msgid "Lyrics"
 msgstr "Sanoitukset"
 
-msgid "Swipe Up for Home"
+msgid "Swipe up for home"
 msgstr "Pyyhkäise ylös siirtyäksesi aloitusnäyttöön"
 
-msgid "Upside Down Screen"
+msgid "Upside down screen"
 msgstr "Näyttö ylösalaisin"
 
 msgid "Gestures & Orientation"
@@ -2896,10 +2883,10 @@ msgstr "Eleet ja suunta"
 msgid "Display"
 msgstr "Näyttö"
 
-msgid "Charge Limit (85%)"
+msgid "Charge limit (85%)"
 msgstr "Latausraja (85%)"
 
-msgid "Safe Charging (500mA)"
+msgid "Safe charging (500mA)"
 msgstr "Turvallinen lataus (500 mA)"
 
 msgid "LED charge indicator"
@@ -2915,19 +2902,19 @@ msgstr ""
 msgid "Charging"
 msgstr "Lataus"
 
-msgid "Additional Tools"
+msgid "Additional tools"
 msgstr "Lisätyökalut"
 
-msgid "Turn off Automatic to set the clock"
+msgid "Turn off automatic to set the clock"
 msgstr "Poista Automaattinen käytöstä asettaaksesi kellon"
 
 msgid "Automatic"
 msgstr "Automaattinen"
 
-msgid "Set Time"
+msgid "Set time"
 msgstr "Aseta aika"
 
-msgid "24-Hour Clock"
+msgid "24-hour clock"
 msgstr "24 tunnin kello"
 
 msgid "Save"
@@ -2936,19 +2923,19 @@ msgstr "Tallenna"
 msgid "Hostname"
 msgstr "Laitenimi"
 
-msgid "Factory Reset"
+msgid "Factory reset"
 msgstr "Palauta tehdasasetukset"
 
 msgid "Maintenance"
 msgstr "Ylläpito"
 
-msgid "Firmware Update"
+msgid "Firmware update"
 msgstr "Laiteohjelmistopäivitys"
 
-msgid "Player Update"
+msgid "Player update"
 msgstr "Soittimen päivitys"
 
-msgid "Plugins & Layouts"
+msgid "Plugins & layouts"
 msgstr "Liitännäiset ja asettelut"
 
 msgid "Applying language, this may take a while"
@@ -3002,7 +2989,7 @@ msgstr "Palautetaanko kaikki asetukset ja käynnistetäänkö uudelleen?"
 msgid "Restart now to apply the new hostname?"
 msgstr "Käynnistetäänkö nyt uudelleen uuden laitenimen käyttöönottamiseksi?"
 
-msgid "Restart Now"
+msgid "Restart now"
 msgstr "Käynnistä uudelleen nyt"
 
 msgid "Hostname can only use letters, numbers, and hyphens"
@@ -3035,10 +3022,10 @@ msgstr "Profiilin nimen muuttaminen epäonnistui"
 msgid "Profile renamed"
 msgstr "Profiilin nimi muutettu"
 
-msgid "Rename Profile"
+msgid "Rename profile"
 msgstr "Nimeä profiili uudelleen"
 
-msgid "Replace Profile"
+msgid "Replace profile"
 msgstr "Korvaa profiili"
 
 msgid "Profiles"
@@ -3047,28 +3034,25 @@ msgstr "Profiilit"
 msgid "No saved profiles"
 msgstr "Ei tallennettuja profiileja"
 
-msgid "Download profiles"
-msgstr "Lataa profiileja"
-
 msgid "Delete this profile?"
 msgstr "Poistetaanko tämä profiili?"
 
-msgid "Save Profile As"
+msgid "Save profile as"
 msgstr "Tallenna profiili nimellä"
 
-msgid "Profile Name"
+msgid "Profile name"
 msgstr "Profiilin nimi"
 
-msgid "Save Profile"
+msgid "Save profile"
 msgstr "Tallenna profiili"
 
 msgid "Save as a new profile, or replace one that already exists?"
 msgstr "Tallennetaanko uutena profiilina vai korvataanko olemassa oleva?"
 
-msgid "Replace Existing"
+msgid "Replace existing"
 msgstr "Korvaa olemassa oleva"
 
-msgid "New Profile"
+msgid "New profile"
 msgstr "Uusi profiili"
 
 msgid "Band options"
@@ -3077,10 +3061,7 @@ msgstr "Kaistan asetukset"
 msgid "Filter type"
 msgstr "Suodatintyyppi"
 
-msgid ""
-"Peaking\n"
-"Low Shelf\n"
-"High Shelf"
+msgid "Peaking\nLow shelf\nHigh shelf"
 msgstr ""
 "Huippu\n"
 "Alahylly\n"
@@ -3111,11 +3092,11 @@ msgstr "Crossfeed sekoittaa vastakkaisen kanavan suodatetun signaalin ja toimii 
 msgid "Frequency"
 msgstr "Taajuus"
 
-msgid "Pre-Amp"
+msgid "Pre-amp"
 msgstr "Esivahvistus"
 
 msgid "Reset to defaults"
-msgstr "Palauta oletusarvot"
+msgstr "Palauta oletukset"
 
 msgid "48 kHz reference"
 msgstr "48 kHz:n viite"
@@ -3150,9 +3131,6 @@ msgstr "Ladataan liitännäisluetteloa..."
 msgid "No network detected"
 msgstr "Verkkoa ei havaittu"
 
-msgid "Time zone"
-msgstr "Aikavyöhyke"
-
 msgid "Quick setup"
 msgstr "Pika-asennus"
 
@@ -3168,7 +3146,7 @@ msgstr "Tervetuloa Compáseen"
 msgid "Get started"
 msgstr "Aloita"
 
-msgid "Quick Setup Complete"
+msgid "Quick setup complete"
 msgstr "Pika-asennus valmis"
 
 msgid "Continue"
@@ -3308,7 +3286,7 @@ msgstr "Korkea"
 msgid "Stream quality: %s"
 msgstr "Suoratoiston laatu: %s"
 
-msgid "Stream Quality"
+msgid "Stream quality"
 msgstr "Suoratoiston laatu"
 
 msgid "Applies to new streaming queues"
@@ -3336,7 +3314,7 @@ msgstr "Virheellinen latauskansion nimi"
 msgid "Download subfolder"
 msgstr "Latauksen alikansio"
 
-msgid "Download Settings"
+msgid "Download settings"
 msgstr "Latausasetukset"
 
 msgid "Subfolder: SD root"
@@ -3348,10 +3326,10 @@ msgstr "Alikansio on suhteessa SD-kortin juureen (esim. Music/Offline); tyhjän�
 msgid "Folder layout for downloaded albums"
 msgstr "Ladattujen albumien kansiorakenne"
 
-msgid "Album Artist / Album"
+msgid "Album artist / album"
 msgstr "Albumin esittäjä / albumi"
 
-msgid "Album Artist - Album"
+msgid "Album artist - album"
 msgstr "Albumin esittäjä - albumi"
 
 msgid "Failed to load from server"
@@ -3403,10 +3381,10 @@ msgstr "Yhteyden käynnistys epäonnistui"
 msgid "No saved servers"
 msgstr "Ei tallennettuja palvelimia"
 
-msgid "Go back and choose New Connection to add one."
+msgid "Go back and choose New connection to add one."
 msgstr "Palaa takaisin ja lisää palvelin valitsemalla Uusi yhteys."
 
-msgid "Saved Servers"
+msgid "Saved servers"
 msgstr "Tallennetut palvelimet"
 
 #, c-format
@@ -3439,11 +3417,8 @@ msgstr "Salasana: ei asetettu"
 msgid "Connect & Browse"
 msgstr "Yhdistä ja selaa"
 
-msgid "New Connection"
+msgid "New connection"
 msgstr "Uusi yhteys"
-
-msgid "Download settings"
-msgstr "Latausasetukset"
 
 msgid "Songs"
 msgstr "Kappaleet"
@@ -3546,17 +3521,11 @@ msgstr "Kirjastoasi ladataan."
 msgid "Leave this view and try again."
 msgstr "Poistu tästä näkymästä ja yritä uudelleen."
 
-msgid "Power off"
-msgstr "Sammuta"
-
 msgid "Restart"
 msgstr "Käynnistä uudelleen"
 
 msgid "Screen off"
 msgstr "Sammuta näyttö"
-
-msgid "Sleep timer"
-msgstr "Uniajastin"
 
 msgid "Power controls"
 msgstr "Virtatoiminnot"
@@ -3624,17 +3593,11 @@ msgstr "Kirkkaus"
 msgid "Connections"
 msgstr "Yhteydet"
 
-msgid "Play Mode"
+msgid "Play mode"
 msgstr "Toistotila"
 
 msgid "Sequential"
 msgstr "Järjestyksessä"
-
-msgid "Repeat All"
-msgstr "Toista kaikki uudelleen"
-
-msgid "Repeat One"
-msgstr "Toista kappale uudelleen"
 
 msgid "Shuffle with repeat"
 msgstr "Sekoitus ja toisto"
@@ -3643,7 +3606,7 @@ msgid "Shuffle once"
 msgstr "Sekoita kerran"
 
 #. External apps (More menu and launcher)
-msgid "External Apps"
+msgid "External apps"
 msgstr "Ulkoiset sovellukset"
 
 msgid "Apps run on the player only."
@@ -3697,13 +3660,13 @@ msgstr "Sekalainen"
 msgid "Hi-Res"
 msgstr "Hi-Res"
 
-msgid "Join albums without Album Artist"
+msgid "Join albums without album artist"
 msgstr "Yhdistä albumit, joilla ei ole albumin esittäjää"
 
 msgid "Could not open this image"
 msgstr "Tätä kuvaa ei voitu avata"
 
-msgid "Album Artist (A–Z)"
+msgid "Album artist (A–Z)"
 msgstr "Albumin esittäjä (A–Ö)"
 
 msgid "Buttons locked"
@@ -3748,7 +3711,7 @@ msgstr "Musiikkivalikko"
 msgid "Cover Flow"
 msgstr "Cover Flow"
 
-msgid "NOS Mode"
+msgid "NOS mode"
 msgstr "NOS-tila"
 
 msgid "Out of memory"
@@ -3758,10 +3721,10 @@ msgstr "Muisti loppui"
 msgid "Select all (%d)"
 msgstr "Valitse kaikki (%d)"
 
-msgid "Power + Volume Up to unlock"
+msgid "Power + volume up to unlock"
 msgstr "Avaa lukitus: virta + äänenvoimakkuus ylös"
 
-msgid "Hold Power + turn volume up to unlock"
+msgid "Hold power + turn volume up to unlock"
 msgstr "Avaa lukitus: pidä virtaa painettuna ja nosta äänenvoimakkuutta"
 
 msgid "Player image validation failed (ELF mismatch)."
@@ -3824,7 +3787,7 @@ msgstr "Varmista, että sama koodi näkyy toisessa laitteessa."
 msgid "Type this code on the other device."
 msgstr "Kirjoita tämä koodi toiseen laitteeseen."
 
-msgid "DSD Gain"
+msgid "DSD gain"
 msgstr "DSD-vahvistus"
 
 #, c-format
@@ -3834,7 +3797,7 @@ msgstr "+%d dB"
 msgid "Raises native DSD on this player's headphone outputs. It cannot go past the loudest volume step."
 msgstr "Nostaa natiivia DSD:tä tämän soittimen kuulokelähdöissä. Se ei voi ylittää voimakkainta äänenvoimakkuusportaaa."
 
-msgid "Seek Step"
+msgid "Seek step"
 msgstr "Haun askel"
 
 #, c-format
@@ -3863,7 +3826,7 @@ msgid "Random Songs"
 msgstr "Satunnaiset kappaleet"
 
 msgctxt "albums"
-msgid "Recently Added"
+msgid "Recently added"
 msgstr "Äskettäin lisätyt"
 
 msgctxt "albums"
@@ -3871,10 +3834,10 @@ msgid "Recently Played"
 msgstr "Äskettäin toistetut"
 
 msgctxt "albums"
-msgid "Most Played"
+msgid "Most played"
 msgstr "Eniten toistetut"
 
-msgid "Restore at Startup"
+msgid "Restore at startup"
 msgstr "Palauta käynnistettäessä"
 
 msgid "Restore Wi-Fi at Startup"
@@ -3886,25 +3849,25 @@ msgstr "Palauta Bluetooth käynnistettäessä"
 msgid "Name (Z–A)"
 msgstr "Nimi (Ö–A)"
 
-msgid "Oldest Modified"
+msgid "Oldest modified"
 msgstr "Vanhimmat muokatut"
 
-msgid "Oldest Added"
+msgid "Oldest added"
 msgstr "Vanhimmat lisätyt"
 
-msgid "Release Year (newest first)"
+msgid "Release year (newest first)"
 msgstr "Julkaisuvuosi (uusin ensin)"
 
-msgid "Album Artist (Z–A)"
+msgid "Album artist (Z–A)"
 msgstr "Albumin esittäjä (Ö–A)"
 
-msgid "Files use modification dates. Albums use the newest track added; Release Year keeps missing years last. Update Music Database once to read years from existing files."
-msgstr "Tiedostot käyttävät muokkauspäivää. Albumit käyttävät uusinta lisättyä kappaletta; Julkaisuvuosi pitää puuttuvat vuodet viimeisinä. Päivitä musiikkitietokanta kerran, jotta vuodet luetaan olemassa olevista tiedostoista."
+msgid "Files sort by modification date; albums by newest track added. Release year keeps unknown years last. Run Update music database to load years."
+msgstr "Tiedostot järjestetään muokkauspäivän, albumit viimeksi lisätyn kappaleen mukaan. Tuntemattomat julkaisuvuodet jäävät viimeisiksi. Lue vuodet päivittämällä musiikkitietokanta."
 
 msgid "Now Playing"
 msgstr "Nyt soi"
 
-msgid "In Queue"
+msgid "In queue"
 msgstr "Jonossa"
 
 msgid "Continue Playing"
@@ -3940,10 +3903,10 @@ msgstr "Tehosteet"
 msgid "Enable Bluetooth in Wireless or the Quick Drawer to use BT DAC mode"
 msgstr "Ota Bluetooth käyttöön Langaton-valikossa tai pikavalikossa käyttääksesi BT-DAC-tilaa"
 
-msgid "Library recovered. Use Settings > Library > Update Music Database to save"
+msgid "Library recovered. Use Settings > Library > Update music database to save"
 msgstr "Kirjasto palautettu. Tallenna valitsemalla Asetukset > Kirjasto > Päivitä musiikkitietokanta"
 
-msgid "Library unavailable. Use Settings > Library > Update Music Database to rebuild"
+msgid "Library unavailable. Use Settings > Library > Update music database to rebuild"
 msgstr "Kirjasto ei ole käytettävissä. Rakenna se uudelleen valitsemalla Asetukset > Kirjasto > Päivitä musiikkitietokanta"
 
 msgid "Manage plugins later in Settings > System > Plugins to search, update, or remove them."
@@ -3955,7 +3918,7 @@ msgstr "Mukauta"
 msgid "Turn off ADB first (Settings > System > Advanced), then enable USB DAC from here."
 msgstr "Poista ADB ensin käytöstä (Asetukset > Järjestelmä > Lisäasetukset) ja ota sitten USB-DAC käyttöön täällä."
 
-msgid "Use Settings > Library > Update Music Database"
+msgid "Use Settings > Library > Update music database"
 msgstr "Valitse Asetukset > Kirjasto > Päivitä musiikkitietokanta"
 
 msgid "%s: %d (outside ±%d)"
@@ -3964,10 +3927,10 @@ msgstr "%s: %d (±%d ulkopuolella)"
 msgid "A preset with that name already exists"
 msgstr "Samanniminen esiasetus on jo olemassa"
 
-msgid "About Play Through"
+msgid "About play through"
 msgstr "Tietoja jatkuvasta toistosta"
 
-msgid "Adjustment Range"
+msgid "Adjustment range"
 msgstr "Säätöalue"
 
 msgid "Air"
@@ -3982,10 +3945,10 @@ msgstr "Albumit jatkuvat esittäjän aakkosjärjestyksessä."
 msgid "Amount (%)"
 msgstr "Määrä (%)"
 
-msgid "Bass Extension"
+msgid "Bass extension"
 msgstr "Basson ulottuvuus"
 
-msgid "Bass Texture"
+msgid "Bass texture"
 msgstr "Basson rakenne"
 
 msgid "Bass frequency (Hz)"
@@ -4000,7 +3963,7 @@ msgstr "Vahvista"
 msgid "Continuing playback"
 msgstr "Jatketaan toistoa"
 
-msgid "Could not apply Soundstage. Try again."
+msgid "Could not apply soundstage. Try again."
 msgstr "Äänikuvan käyttö epäonnistui. Yritä uudelleen."
 
 msgid "Could not apply changes. Try again."
@@ -4033,7 +3996,7 @@ msgstr "Vaimennus (%)"
 msgid "Enter a short preset name without line breaks"
 msgstr "Anna lyhyt nimi ilman rivinvaihtoja"
 
-msgid "Female Overtones"
+msgid "Female overtones"
 msgstr "Naisäänen yläsävelet"
 
 msgid "Focused center"
@@ -4045,16 +4008,16 @@ msgstr "Kansiot jatkuvat rinnakkaiskansioiden aakkosjärjestyksessä."
 msgid "Hall"
 msgstr "Sali"
 
-msgid "How It Works"
+msgid "How it works"
 msgstr "Miten se toimii"
 
-msgid "Impulse Response"
+msgid "Impulse response"
 msgstr "Impulssivaste"
 
 msgid "Load"
 msgstr "Lataa"
 
-msgid "Named Presets"
+msgid "Named presets"
 msgstr "Nimetyt esiasetukset"
 
 msgid "Natural"
@@ -4063,7 +4026,7 @@ msgstr "Luonnollinen"
 msgid "New preset name"
 msgstr "Uuden esiasetuksen nimi"
 
-msgid "Note Thickness"
+msgid "Note thickness"
 msgstr "Sävelten paksuus"
 
 msgid "Older MSEB controls are unsupported; preset was not loaded"
@@ -4072,7 +4035,7 @@ msgstr "Vanhoja MSEB-säätimiä ei tueta; esiasetusta ei ladattu"
 msgid "Older MSEB controls are unsupported; slot was not loaded"
 msgstr "Vanhoja MSEB-säätimiä ei tueta; muistipaikkaa ei ladattu"
 
-msgid "Overall Temperature"
+msgid "Overall temperature"
 msgstr "Yleislämpötila"
 
 msgid "Overwrite"
@@ -4081,13 +4044,13 @@ msgstr "Korvaa"
 msgid "Overwrite preset?"
 msgstr "Korvataanko esiasetus?"
 
-msgid "Play Through"
+msgid "Play through"
 msgstr "Jatkuva toisto"
 
-msgid "Play Through Albums"
+msgid "Play through albums"
 msgstr "Jatka albumien läpi"
 
-msgid "Play Through Folders"
+msgid "Play through folders"
 msgstr "Jatka kansioiden läpi"
 
 msgid "Preset"
@@ -4108,11 +4071,8 @@ msgstr "Heijastukset (%)"
 msgid "Rename preset"
 msgstr "Nimeä esiasetus uudelleen"
 
-msgid "Reset Soundstage to defaults?"
+msgid "Reset soundstage to defaults?"
 msgstr "Palautetaanko äänikuvan oletusasetukset?"
-
-msgid "Reset to Defaults"
-msgstr "Palauta oletukset"
 
 msgid "Room"
 msgstr "Huone"
@@ -4120,7 +4080,7 @@ msgstr "Huone"
 msgid "Room size (%)"
 msgstr "Huoneen koko (%)"
 
-msgid "Save Named Preset"
+msgid "Save named preset"
 msgstr "Tallenna nimetty esiasetus"
 
 msgid "Saved"
@@ -4156,7 +4116,7 @@ msgstr "Muistipaikka ladattu"
 msgid "Small room"
 msgstr "Pieni huone"
 
-msgid "Sound Stage"
+msgid "Sound stage"
 msgstr "Äänikuva"
 
 msgid "Soundstage"
@@ -4165,7 +4125,7 @@ msgstr "Äänikuva"
 msgid "Speaker angle (deg)"
 msgstr "Kaiutinkulma (deg)"
 
-msgid "Stereo Width"
+msgid "Stereo width"
 msgstr "Stereoleveys"
 
 msgid "Stock MSEB width changes the channel mix."
@@ -4177,7 +4137,7 @@ msgstr "Studiomonitorit"
 msgid "Switch to stock MSEB"
 msgstr "Vaihda vakio-MSEB:hen"
 
-msgid "This saved layout is unsupported. Switching replaces Instrument Presence, Bass Bite, and Treble Bite with the stock controls."
+msgid "This saved layout is unsupported. Switching replaces instrument presence, bass bite, and treble bite with the stock controls."
 msgstr "Tallennettua asettelua ei tueta. Vaihto korvaa Instrumenttien läsnäolon, Basson purevuuden ja Diskantin purevuuden vakiosäätimillä."
 
 msgid "Treble frequency (Hz)"
@@ -4204,7 +4164,7 @@ msgstr "Poistetaanko vioittunut esiasetus?"
 msgid "Delete preset?"
 msgstr "Poistetaanko esiasetus?"
 
-msgid "Load from Slot"
+msgid "Load from slot"
 msgstr "Lataa muistipaikasta"
 
 msgid "MSEB"
@@ -4219,38 +4179,29 @@ msgstr "Esiasetus tallennettu"
 msgid "Restoring ADB…"
 msgstr "Palautetaan ADB…"
 
-msgid "Save to Slot"
+msgid "Save to slot"
 msgstr "Tallenna muistipaikkaan"
 
 msgid "Stage"
 msgstr "Äänikuva"
 
-msgid "Turn off Loudness Boost first"
+msgid "Turn off loudness boost first"
 msgstr "Kytke ensin äänekkyyden korostus pois"
 
 msgid "DAC"
 msgstr "DAC"
 
-msgid "USB Output"
+msgid "USB output"
 msgstr "USB-lähtö"
-
-msgid "Accent color"
-msgstr "Korostusväri"
 
 msgid "Advanced sound"
 msgstr "Lisä-ääni"
-
-msgid "Button mapping"
-msgstr "Painikemääritykset"
 
 msgid "Buttons"
 msgstr "Painikkeet"
 
 msgid "Bypassed by NOS"
 msgstr "NOS ohittaa"
-
-msgid "Car mode"
-msgstr "Autotila"
 
 msgid "Filter"
 msgstr "Suodatin"
@@ -4270,35 +4221,14 @@ msgstr "Sanoitusten tekstikoko"
 msgid "Max %d%%"
 msgstr "Enintään %d%%"
 
-msgid "Per album"
-msgstr "Albumikohtainen"
-
-msgid "Per track"
-msgstr "Kappalekohtainen"
-
-msgid "Play through"
-msgstr "Jatkuva toisto"
-
-msgid "Quick drawer"
-msgstr "Pikavalikko"
-
-msgid "Resume last track"
-msgstr "Jatka viimeisestä kappaleesta"
-
-msgid "Show Artist Images"
+msgid "Show artist images"
 msgstr "Näytä esittäjien kuvat"
 
-msgid "Show Lyrics"
+msgid "Show lyrics"
 msgstr "Näytä sanoitukset"
-
-msgid "Top bar"
-msgstr "Yläpalkki"
 
 msgid "Turn off NOS to choose a filter"
 msgstr "Poista NOS käytöstä valitaksesi suodattimen"
-
-msgid "USB output"
-msgstr "USB-lähtö"
 
 msgid "Volume limits"
 msgstr "Äänenvoimakkuuden rajat"
@@ -4306,11 +4236,11 @@ msgstr "Äänenvoimakkuuden rajat"
 msgid "Volume lock (screen off)"
 msgstr "Äänenvoimakkuuden lukitus (näyttö pois)"
 
-msgid "Albums on an album-artist page"
-msgstr "Albumit albumin esittäjän sivulla"
+msgid "Album artist pages"
+msgstr "Albumin esittäjäsivut"
 
-msgid "Albums on an artist page"
-msgstr "Albumit esittäjän sivulla"
+msgid "Artist pages"
+msgstr "Esittäjäsivut"
 
 msgid "Build it now? This may take a while."
 msgstr "Luodaanko nyt? Tämä voi kestää hetken."
@@ -4329,12 +4259,6 @@ msgstr "Hylätäänkö kirjoittamasi teksti?"
 
 msgid "Enable Wi-Fi to access"
 msgstr "Ota Wi-Fi käyttöön"
-
-msgid "Fast"
-msgstr "Nopea"
-
-msgid "Fastest"
-msgstr "Nopein"
 
 msgid "Forget this device?"
 msgstr "Unohdetaanko tämä laite?"
@@ -4362,9 +4286,6 @@ msgstr "Ei osumia"
 
 msgid "No plays yet"
 msgstr "Ei vielä toistoja"
-
-msgid "Normal"
-msgstr "Normaali"
 
 msgid "Open Now Playing"
 msgstr "Avaa Nyt soi"
@@ -4414,7 +4335,7 @@ msgstr "Tämä voi kestää hetken."
 msgid "Type to search"
 msgstr "Kirjoita hakeaksesi"
 
-msgid "Update saved. Install from Firmware Update > Install from SD card."
+msgid "Update saved. Install from firmware update > install from SD card."
 msgstr "Päivitys tallennettu. Asenna kohdasta Laiteohjelmiston päivitys > Asenna SD-kortilta."
 
 msgid "When on, this device is visible to AirPlay senders on your Wi-Fi network. Stream audio from an iPhone, iPad, or Mac to be played through this device's own output."
@@ -4432,19 +4353,16 @@ msgstr "Pois käytöstä"
 msgid "Player layout"
 msgstr "Soittimen asettelu"
 
-msgid "Faster"
-msgstr "Nopeampi"
-
-msgid "Add to Favorites"
+msgid "Add to favorites"
 msgstr "Lisää suosikkeihin"
 
-msgid "Remove from Favorites"
+msgid "Remove from favorites"
 msgstr "Poista suosikeista"
 
-msgid "Go to Album"
+msgid "Go to album"
 msgstr "Siirry albumiin"
 
-msgid "Go to Artist"
+msgid "Go to artist"
 msgstr "Siirry artistiin"
 
 msgid "Some songs could not be downloaded"
@@ -4491,3 +4409,12 @@ msgstr "Tähän mennessä löydettyjä muutoksia ei ehkä tallenneta."
 
 msgid "Updating the library. This may take a while."
 msgstr "Kirjastoa päivitetään. Tämä voi kestää hetken."
+
+msgid "Too demanding for this device"
+msgstr "Liian raskas tälle laitteelle"
+
+msgid "Waiting for a network address"
+msgstr "Odotetaan verkko-osoitetta"
+
+msgid "Artist unavailable"
+msgstr "Esittäjä ei ole käytettävissä"

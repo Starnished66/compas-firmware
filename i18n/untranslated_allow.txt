@@ -25,3 +25,7 @@ src/ui/library/browse/gui_group_songs_rows.c::Ag
 # Remote Control API error strings (English API, like the file's other errors).
 src/ui/library/browse/gui_library_collections.c::Unable to start collection playback
 src/ui/library/browse/gui_library_collections.c::Playback request was cancelled
+# Download folder names on the SD card stay English so paths do not change with the language.
+src/ui/network/subsonic/gui_subsonic_download.c::Unknown Artist
+src/ui/network/subsonic/gui_subsonic_download.c::Unknown Album
+src/ui/network/subsonic/gui_subsonic_download.c::Unknown Title

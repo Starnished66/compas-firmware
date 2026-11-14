@@ -190,6 +190,10 @@ def render_lang(code, table):
         out.append("    {0, 0, 0}")
     out.append("};")
     out.append("")
+    # Counted from the array itself so a hand edit can never leave entries unreachable.
+    out.append("const size_t i18n_count_%s = sizeof(i18n_entries_%s) / sizeof(i18n_entries_%s[0]);"
+               % (ident(code), ident(code), ident(code)))
+    out.append("")
     return "\n".join(out)
 
 
@@ -198,14 +202,15 @@ def render_list(langs):
            '#include "i18n.h"', ""]
     for code, name, table in langs:
         out.append("extern const i18n_entry_t i18n_entries_%s[];" % ident(code))
+        out.append("extern const size_t i18n_count_%s;" % ident(code))
     out.append("")
     out.append("const i18n_lang_t i18n_catalog_langs[] = {")
     for code, name, table in langs:
-        out.append("    {%s, %s, i18n_entries_%s, %d}," % (c_str(code), c_str(name), ident(code), len(table)))
+        out.append("    {%s, %s, i18n_entries_%s, &i18n_count_%s}," % (c_str(code), c_str(name), ident(code), ident(code)))
     if not langs:
         out.append("    {0, 0, 0, 0}")
     out.append("};")
-    out.append("const size_t i18n_catalog_lang_count = %d;" % len(langs))
+    out.append("const size_t i18n_catalog_lang_count = sizeof(i18n_catalog_langs) / sizeof(i18n_catalog_langs[0]);")
     out.append("")
     return "\n".join(out)
 
