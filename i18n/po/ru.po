@@ -1783,9 +1783,6 @@ msgstr "Не удалось запустить обновление профил
 msgid "Leave USB DAC mode?"
 msgstr "Выйти из режима USB-ЦАП?"
 
-msgid "USB DAC mode"
-msgstr "Режим USB-ЦАП"
-
 msgid "Waiting for USB audio…"
 msgstr "Ожидание USB-аудио…"
 
@@ -1798,16 +1795,8 @@ msgstr "Неизвестный формат"
 msgid "Unknown codec"
 msgstr "Неизвестный кодек"
 
-msgid "This device is now a USB sound card"
-msgstr "Это устройство теперь является звуковой картой USB."
-
-#, c-format
-msgid "USB input: %s · %u-bit"
-msgstr "USB-вход: %s · %u-бит"
-
-#, c-format
-msgid "DAC path: %s · %u-bit"
-msgstr "Путь ЦАП: %s · %u-бит"
+msgid "Stream audio from a computer over USB."
+msgstr "Потоковая передача звука с компьютера по USB."
 
 msgid "Bluetooth is off"
 msgstr "Bluetooth выключен"
@@ -4446,3 +4435,9 @@ msgstr "Ожидание сетевого адреса"
 
 msgid "Artist unavailable"
 msgstr "Исполнитель недоступен"
+
+msgid "Enable USB DAC"
+msgstr "Включить USB-ЦАП"
+
+msgid "Stop USB DAC"
+msgstr "Остановить USB-ЦАП"

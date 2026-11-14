@@ -1792,9 +1792,6 @@ msgstr "Não foi possível iniciar a atualização do carregamento por USB"
 msgid "Leave USB DAC mode?"
 msgstr "Sair do modo DAC USB?"
 
-msgid "USB DAC mode"
-msgstr "Modo DAC USB"
-
 msgid "Waiting for USB audio…"
 msgstr "Aguardando áudio USB..."
 
@@ -1807,16 +1804,8 @@ msgstr "Formato desconhecido"
 msgid "Unknown codec"
 msgstr "Codec desconhecido"
 
-msgid "This device is now a USB sound card"
-msgstr "Este aparelho agora é uma placa de som USB"
-
-#, c-format
-msgid "USB input: %s · %u-bit"
-msgstr "Entrada USB: %s · %u-bit"
-
-#, c-format
-msgid "DAC path: %s · %u-bit"
-msgstr "Caminho do DAC: %s · %u-bit"
+msgid "Stream audio from a computer over USB."
+msgstr "Transmita áudio de um computador por USB."
 
 msgid "Bluetooth is off"
 msgstr "Bluetooth desligado"
@@ -4455,3 +4444,9 @@ msgstr "Aguardando um endereço de rede"
 
 msgid "Artist unavailable"
 msgstr "Artista indisponível"
+
+msgid "Enable USB DAC"
+msgstr "Ativar DAC USB"
+
+msgid "Stop USB DAC"
+msgstr "Parar DAC USB"

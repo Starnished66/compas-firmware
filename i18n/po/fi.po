@@ -1756,9 +1756,6 @@ msgstr "USB-latauksen päivityksen käynnistys epäonnistui"
 msgid "Leave USB DAC mode?"
 msgstr "Poistutaanko USB-DAC-tilasta?"
 
-msgid "USB DAC mode"
-msgstr "USB-DAC-tila"
-
 msgid "Waiting for USB audio…"
 msgstr "Odotetaan USB-ääntä…"
 
@@ -1771,16 +1768,8 @@ msgstr "Tuntematon muoto"
 msgid "Unknown codec"
 msgstr "Tuntematon koodekki"
 
-msgid "This device is now a USB sound card"
-msgstr "Laite toimii nyt USB-äänikorttina"
-
-#, c-format
-msgid "USB input: %s · %u-bit"
-msgstr "USB-tulo: %s · %u-bittinen"
-
-#, c-format
-msgid "DAC path: %s · %u-bit"
-msgstr "DAC-polku: %s · %u-bittinen"
+msgid "Stream audio from a computer over USB."
+msgstr "Suoratoista ääntä tietokoneesta USB:n kautta."
 
 msgid "Bluetooth is off"
 msgstr "Bluetooth ei ole käytössä"
@@ -4418,3 +4407,9 @@ msgstr "Odotetaan verkko-osoitetta"
 
 msgid "Artist unavailable"
 msgstr "Esittäjä ei ole käytettävissä"
+
+msgid "Enable USB DAC"
+msgstr "Ota USB-DAC käyttöön"
+
+msgid "Stop USB DAC"
+msgstr "Pysäytä USB-DAC"

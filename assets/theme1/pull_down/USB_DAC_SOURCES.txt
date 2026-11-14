@@ -1,0 +1,6 @@
+USB DAC quick-toggle icons
+
+usb_dac.png and usb_dac_s.png are original Compas Player artwork, drawn from
+geometric lines, circles, a triangle and a square: the USB trident symbol.
+The 84 x 84 RGBA circular icons use the adjacent bt_dac icons' off/on palette.
+No stock or third-party artwork was copied or modified.

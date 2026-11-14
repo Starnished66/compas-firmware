@@ -1764,9 +1764,6 @@ msgstr "Не вдалося розпочати оновлення заряджа
 msgid "Leave USB DAC mode?"
 msgstr "Вийти з режиму USB DAC?"
 
-msgid "USB DAC mode"
-msgstr "Режим USB DAC"
-
 msgid "Waiting for USB audio…"
 msgstr "Очікування аудіо через USB…"
 
@@ -1779,16 +1776,8 @@ msgstr "Невідомий формат"
 msgid "Unknown codec"
 msgstr "Невідомий кодек"
 
-msgid "This device is now a USB sound card"
-msgstr "Цей пристрій тепер є звуковою картою USB"
-
-#, c-format
-msgid "USB input: %s · %u-bit"
-msgstr "Вхід USB: %s · %u біт"
-
-#, c-format
-msgid "DAC path: %s · %u-bit"
-msgstr "Шлях ЦАП: %s · %u біт"
+msgid "Stream audio from a computer over USB."
+msgstr "Потокове передавання звуку з комп’ютера через USB."
 
 msgid "Bluetooth is off"
 msgstr "Bluetooth вимкнено"
@@ -4427,3 +4416,9 @@ msgstr "Очікування мережевої адреси"
 
 msgid "Artist unavailable"
 msgstr "Виконавець недоступний"
+
+msgid "Enable USB DAC"
+msgstr "Увімкнути USB-ЦАП"
+
+msgid "Stop USB DAC"
+msgstr "Зупинити USB-ЦАП"

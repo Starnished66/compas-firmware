@@ -1648,9 +1648,6 @@ msgstr "USB充電設定の更新を開始できませんでした"
 msgid "Leave USB DAC mode?"
 msgstr "USB DACモードを終了しますか？"
 
-msgid "USB DAC mode"
-msgstr "USB DACモード"
-
 msgid "Waiting for USB audio…"
 msgstr "USBオーディオを待機中…"
 
@@ -1663,14 +1660,8 @@ msgstr "不明な形式"
 msgid "Unknown codec"
 msgstr "不明なコーデック"
 
-msgid "This device is now a USB sound card"
-msgstr "このデバイスはUSBサウンドカードになりました"
-
-msgid "USB input: %s · %u-bit"
-msgstr "USB入力：%s・%uビット"
-
-msgid "DAC path: %s · %u-bit"
-msgstr "DAC経路：%s・%uビット"
+msgid "Stream audio from a computer over USB."
+msgstr "USB でコンピューターから音声をストリーミングします。"
 
 msgid "Bluetooth is off"
 msgstr "Bluetoothはオフです"
@@ -4232,3 +4223,9 @@ msgstr "ネットワークアドレスを待機中"
 
 msgid "Artist unavailable"
 msgstr "アーティストを利用できません"
+
+msgid "Enable USB DAC"
+msgstr "USB DACを有効にする"
+
+msgid "Stop USB DAC"
+msgstr "USB DACを停止"

@@ -1787,9 +1787,6 @@ msgstr ""
 msgid "Leave USB DAC mode?"
 msgstr ""
 
-msgid "USB DAC mode"
-msgstr ""
-
 msgid "Waiting for USB audio…"
 msgstr ""
 
@@ -1802,15 +1799,7 @@ msgstr ""
 msgid "Unknown codec"
 msgstr ""
 
-msgid "This device is now a USB sound card"
-msgstr ""
-
-#, c-format
-msgid "USB input: %s · %u-bit"
-msgstr ""
-
-#, c-format
-msgid "DAC path: %s · %u-bit"
+msgid "Stream audio from a computer over USB."
 msgstr ""
 
 msgid "Bluetooth is off"
@@ -4299,4 +4288,10 @@ msgid "Waiting for a network address"
 msgstr ""
 
 msgid "Artist unavailable"
+msgstr ""
+
+msgid "Enable USB DAC"
+msgstr ""
+
+msgid "Stop USB DAC"
 msgstr ""

@@ -1648,9 +1648,6 @@ msgstr "Không thể bắt đầu cập nhật sạc USB"
 msgid "Leave USB DAC mode?"
 msgstr "Rời khỏi chế độ USB DAC?"
 
-msgid "USB DAC mode"
-msgstr "Chế độ USB DAC"
-
 msgid "Waiting for USB audio…"
 msgstr "Đang chờ âm thanh USB…"
 
@@ -1663,14 +1660,8 @@ msgstr "Định dạng không xác định"
 msgid "Unknown codec"
 msgstr "Codec không xác định"
 
-msgid "This device is now a USB sound card"
-msgstr "Thiết bị này bây giờ là một card âm thanh USB"
-
-msgid "USB input: %s · %u-bit"
-msgstr "Đầu vào USB: %s · %u-bit"
-
-msgid "DAC path: %s · %u-bit"
-msgstr "Đường dẫn DAC: %s · %u-bit"
+msgid "Stream audio from a computer over USB."
+msgstr "Phát trực tuyến âm thanh từ máy tính qua USB."
 
 msgid "Bluetooth is off"
 msgstr "Bluetooth đã tắt"
@@ -4232,3 +4223,9 @@ msgstr "Đang chờ địa chỉ mạng"
 
 msgid "Artist unavailable"
 msgstr "Nghệ sĩ không có sẵn"
+
+msgid "Enable USB DAC"
+msgstr "Bật DAC USB"
+
+msgid "Stop USB DAC"
+msgstr "Dừng DAC USB"

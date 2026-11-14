@@ -1780,9 +1780,6 @@ msgstr "无法启动 USB 充电更新"
 msgid "Leave USB DAC mode?"
 msgstr "退出 USB DAC 模式？"
 
-msgid "USB DAC mode"
-msgstr "USB DAC 模式"
-
 msgid "Waiting for USB audio…"
 msgstr "正在等待 USB 音频…"
 
@@ -1795,16 +1792,8 @@ msgstr "未知格式"
 msgid "Unknown codec"
 msgstr "未知编码"
 
-msgid "This device is now a USB sound card"
-msgstr "此设备现为 USB 声卡"
-
-#, c-format
-msgid "USB input: %s · %u-bit"
-msgstr "USB 输入：%s · %u-bit"
-
-#, c-format
-msgid "DAC path: %s · %u-bit"
-msgstr "DAC 路径：%s · %u 位"
+msgid "Stream audio from a computer over USB."
+msgstr "通过 USB 从电脑串流音频。"
 
 msgid "Bluetooth is off"
 msgstr "蓝牙已关闭"
@@ -4492,3 +4481,9 @@ msgstr "正在等待网络地址"
 
 msgid "Artist unavailable"
 msgstr "艺术家不可用"
+
+msgid "Enable USB DAC"
+msgstr "启用 USB DAC"
+
+msgid "Stop USB DAC"
+msgstr "停止 USB DAC"

@@ -1756,9 +1756,6 @@ msgstr "Kan de update van USB-opladen niet starten"
 msgid "Leave USB DAC mode?"
 msgstr "USB-DAC-modus verlaten?"
 
-msgid "USB DAC mode"
-msgstr "USB-DAC-modus"
-
 msgid "Waiting for USB audio…"
 msgstr "Wachten op USB-audio…"
 
@@ -1771,16 +1768,8 @@ msgstr "Onbekend formaat"
 msgid "Unknown codec"
 msgstr "Onbekende codec"
 
-msgid "This device is now a USB sound card"
-msgstr "Dit apparaat is nu een USB-geluidskaart"
-
-#, c-format
-msgid "USB input: %s · %u-bit"
-msgstr "USB-ingang: %s · %u-bits"
-
-#, c-format
-msgid "DAC path: %s · %u-bit"
-msgstr "DAC-pad: %s · %u-bits"
+msgid "Stream audio from a computer over USB."
+msgstr "Stream audio van een computer via USB."
 
 msgid "Bluetooth is off"
 msgstr "Bluetooth is uitgeschakeld"
@@ -4416,3 +4405,9 @@ msgstr "Wachten op een netwerkadres"
 
 msgid "Artist unavailable"
 msgstr "Artiest niet beschikbaar"
+
+msgid "Enable USB DAC"
+msgstr "USB-DAC inschakelen"
+
+msgid "Stop USB DAC"
+msgstr "USB-DAC stoppen"
