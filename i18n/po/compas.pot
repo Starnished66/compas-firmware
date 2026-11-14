@@ -4023,7 +4023,7 @@ msgstr ""
 msgid "Album mode has priority when both options are enabled."
 msgstr ""
 
-msgid "Albums continue in the artist's alphabetical album order."
+msgid "Albums continue in the artist's album order, then with the next artist."
 msgstr ""
 
 msgid "Amount (%)"
@@ -4086,7 +4086,7 @@ msgstr ""
 msgid "Focused center"
 msgstr ""
 
-msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
+msgid "Folders continue alphabetically, then with the next folder one level up."
 msgstr ""
 
 msgid "Hall"

@@ -3956,8 +3956,8 @@ msgstr "Воздух"
 msgid "Album mode has priority when both options are enabled."
 msgstr "Режим альбомов имеет приоритет, когда включены оба параметра."
 
-msgid "Albums continue in the artist's alphabetical album order."
-msgstr "Альбомы продолжаются в алфавитном порядке альбомов исполнителя."
+msgid "Albums continue in the artist's album order, then with the next artist."
+msgstr "Альбомы продолжаются в порядке альбомов исполнителя, затем со следующим исполнителем."
 
 msgid "Amount (%)"
 msgstr "Интенсивность (%)"
@@ -4019,8 +4019,8 @@ msgstr "Женские обертоны"
 msgid "Focused center"
 msgstr "Сфокусированный центр"
 
-msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
-msgstr "Папки продолжаются в алфавитном порядке соседних папок (без учёта регистра)."
+msgid "Folders continue alphabetically, then with the next folder one level up."
+msgstr "Папки продолжаются в алфавитном порядке, затем со следующей папкой уровнем выше."
 
 msgid "Hall"
 msgstr "Зал"

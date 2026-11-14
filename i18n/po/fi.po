@@ -3928,8 +3928,8 @@ msgstr "Ilmavuus"
 msgid "Album mode has priority when both options are enabled."
 msgstr "Albumitila on ensisijainen, kun molemmat valinnat ovat käytössä."
 
-msgid "Albums continue in the artist's alphabetical album order."
-msgstr "Albumit jatkuvat esittäjän aakkosjärjestyksessä."
+msgid "Albums continue in the artist's album order, then with the next artist."
+msgstr "Albumit jatkuvat esittäjän albumijärjestyksessä ja sen jälkeen seuraavan esittäjän albumeilla."
 
 msgid "Amount (%)"
 msgstr "Määrä (%)"
@@ -3991,8 +3991,8 @@ msgstr "Naisäänen yläsävelet"
 msgid "Focused center"
 msgstr "Tarkennettu keskiö"
 
-msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
-msgstr "Kansiot jatkuvat rinnakkaiskansioiden aakkosjärjestyksessä."
+msgid "Folders continue alphabetically, then with the next folder one level up."
+msgstr "Kansiot jatkuvat aakkosjärjestyksessä ja sen jälkeen seuraavalla kansiolla yksi taso ylempänä."
 
 msgid "Hall"
 msgstr "Sali"

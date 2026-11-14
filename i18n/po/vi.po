@@ -3741,8 +3741,8 @@ msgstr "Độ thoáng"
 msgid "Album mode has priority when both options are enabled."
 msgstr "Chế độ album được ưu tiên khi bật cả hai tùy chọn."
 
-msgid "Albums continue in the artist's alphabetical album order."
-msgstr "Các album tiếp tục theo thứ tự bảng chữ cái của nghệ sĩ."
+msgid "Albums continue in the artist's album order, then with the next artist."
+msgstr "Các album tiếp tục theo thứ tự album của nghệ sĩ, sau đó đến nghệ sĩ tiếp theo."
 
 msgid "Amount (%)"
 msgstr "Mức độ (%)"
@@ -3804,8 +3804,8 @@ msgstr "Âm bồi giọng nữ"
 msgid "Focused center"
 msgstr "Tập trung trung tâm"
 
-msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
-msgstr "Các thư mục tiếp tục theo thứ tự bảng chữ cái của thư mục cùng cấp."
+msgid "Folders continue alphabetically, then with the next folder one level up."
+msgstr "Các thư mục tiếp tục theo thứ tự bảng chữ cái, sau đó đến thư mục kế tiếp ở cấp trên."
 
 msgid "Hall"
 msgstr "Hội trường"

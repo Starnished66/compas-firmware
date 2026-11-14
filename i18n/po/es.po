@@ -3954,8 +3954,8 @@ msgstr "Aire"
 msgid "Album mode has priority when both options are enabled."
 msgstr "El modo de álbum tiene prioridad cuando ambas opciones están activadas."
 
-msgid "Albums continue in the artist's alphabetical album order."
-msgstr "Los álbumes continúan en el orden alfabético del artista."
+msgid "Albums continue in the artist's album order, then with the next artist."
+msgstr "Los álbumes continúan en el orden de álbumes del artista y después con el siguiente artista."
 
 msgid "Amount (%)"
 msgstr "Cantidad (%)"
@@ -4017,8 +4017,8 @@ msgstr "Armónicos femeninos"
 msgid "Focused center"
 msgstr "Centro enfocado"
 
-msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
-msgstr "Las carpetas continúan en orden alfabético (sin distinguir mayúsculas) entre carpetas vecinas."
+msgid "Folders continue alphabetically, then with the next folder one level up."
+msgstr "Las carpetas continúan en orden alfabético y después con la siguiente carpeta un nivel más arriba."
 
 msgid "Hall"
 msgstr "Sala de conciertos"

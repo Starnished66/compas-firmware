@@ -3741,8 +3741,8 @@ msgstr "空気感"
 msgid "Album mode has priority when both options are enabled."
 msgstr "両方有効な場合はアルバムモードが優先されます。"
 
-msgid "Albums continue in the artist's alphabetical album order."
-msgstr "アルバムはアーティストのアルバム名順（アルファベット順）で続きます。"
+msgid "Albums continue in the artist's album order, then with the next artist."
+msgstr "アルバムはアーティストのアルバム順で続き、その後は次のアーティストへ続きます。"
 
 msgid "Amount (%)"
 msgstr "適用量 (%)"
@@ -3804,8 +3804,8 @@ msgstr "女性ボーカル倍音"
 msgid "Focused center"
 msgstr "フォーカスセンター"
 
-msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
-msgstr "フォルダは大文字小文字を区別しない名前順で次のフォルダへ続きます。"
+msgid "Folders continue alphabetically, then with the next folder one level up."
+msgstr "フォルダは名前順で続き、その後は一つ上の階層の次のフォルダへ続きます。"
 
 msgid "Hall"
 msgstr "ホール"

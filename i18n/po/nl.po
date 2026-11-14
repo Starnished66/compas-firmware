@@ -3926,8 +3926,8 @@ msgstr "Luchtigheid"
 msgid "Album mode has priority when both options are enabled."
 msgstr "Albummodus heeft voorrang wanneer beide opties zijn ingeschakeld."
 
-msgid "Albums continue in the artist's alphabetical album order."
-msgstr "Albums gaan verder in alfabetische albumvolgorde van de artiest."
+msgid "Albums continue in the artist's album order, then with the next artist."
+msgstr "Albums gaan verder in de albumvolgorde van de artiest, daarna met de volgende artiest."
 
 msgid "Amount (%)"
 msgstr "Hoeveelheid (%)"
@@ -3989,8 +3989,8 @@ msgstr "Vrouwelijke boventonen"
 msgid "Focused center"
 msgstr "Gefocust midden"
 
-msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
-msgstr "Mappen gaan verder in alfabetische volgorde van naastgelegen mappen."
+msgid "Folders continue alphabetically, then with the next folder one level up."
+msgstr "Mappen gaan verder in alfabetische volgorde, daarna met de volgende map een niveau hoger."
 
 msgid "Hall"
 msgstr "Zaal"

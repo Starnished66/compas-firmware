@@ -3999,8 +3999,8 @@ msgstr "空气感"
 msgid "Album mode has priority when both options are enabled."
 msgstr "同时启用两个选项时，专辑模式优先。"
 
-msgid "Albums continue in the artist's alphabetical album order."
-msgstr "专辑按艺人专辑名称的字母顺序继续播放。"
+msgid "Albums continue in the artist's album order, then with the next artist."
+msgstr "专辑按该艺人的专辑顺序继续播放，之后播放下一位艺人。"
 
 msgid "Amount (%)"
 msgstr "强度 (%)"
@@ -4062,8 +4062,8 @@ msgstr "女声泛音"
 msgid "Focused center"
 msgstr "聚焦中央"
 
-msgid "Folders continue in lexical (alphabetical, case-insensitive) sibling-folder order."
-msgstr "文件夹按同级文件夹的字母顺序（不区分大小写）继续播放。"
+msgid "Folders continue alphabetically, then with the next folder one level up."
+msgstr "文件夹按字母顺序继续播放，之后播放上一级的下一个文件夹。"
 
 msgid "Hall"
 msgstr "大厅"
