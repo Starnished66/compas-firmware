@@ -4238,3 +4238,6 @@ msgstr "USBストレージをマウントしました"
 
 msgid "USB storage could not be mounted"
 msgstr "USBストレージをマウントできませんでした"
+
+msgid "Wireless ADB"
+msgstr "ワイヤレスADB"

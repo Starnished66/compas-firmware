@@ -4431,3 +4431,6 @@ msgstr "USB-накопичувач підключено"
 
 msgid "USB storage could not be mounted"
 msgstr "Не вдалося підключити USB-накопичувач"
+
+msgid "Wireless ADB"
+msgstr "Бездротовий ADB"

@@ -4238,3 +4238,6 @@ msgstr "Đã gắn bộ nhớ USB"
 
 msgid "USB storage could not be mounted"
 msgstr "Không thể gắn bộ nhớ USB"
+
+msgid "Wireless ADB"
+msgstr "ADB không dây"

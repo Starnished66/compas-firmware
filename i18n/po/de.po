@@ -4408,3 +4408,6 @@ msgstr "USB-Speicher eingebunden"
 
 msgid "USB storage could not be mounted"
 msgstr "USB-Speicher konnte nicht eingebunden werden"
+
+msgid "Wireless ADB"
+msgstr "Drahtloses ADB"

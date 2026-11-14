@@ -4422,3 +4422,6 @@ msgstr "USB-tallennustila liitetty"
 
 msgid "USB storage could not be mounted"
 msgstr "USB-tallennustilaa ei voitu liittää"
+
+msgid "Wireless ADB"
+msgstr "Langaton ADB"

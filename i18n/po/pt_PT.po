@@ -4423,3 +4423,6 @@ msgstr "Armazenamento USB montado"
 
 msgid "USB storage could not be mounted"
 msgstr "Não foi possível montar o armazenamento USB"
+
+msgid "Wireless ADB"
+msgstr "ADB sem fios"

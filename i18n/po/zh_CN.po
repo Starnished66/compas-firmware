@@ -4496,3 +4496,6 @@ msgstr "USB 存储已挂载"
 
 msgid "USB storage could not be mounted"
 msgstr "无法挂载 USB 存储"
+
+msgid "Wireless ADB"
+msgstr "无线 ADB"

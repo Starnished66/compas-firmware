@@ -4420,3 +4420,6 @@ msgstr "USB-opslag gekoppeld"
 
 msgid "USB storage could not be mounted"
 msgstr "USB-opslag kon niet worden gekoppeld"
+
+msgid "Wireless ADB"
+msgstr "Draadloze ADB"

@@ -4450,3 +4450,6 @@ msgstr "USB-накопитель подключён"
 
 msgid "USB storage could not be mounted"
 msgstr "Не удалось подключить USB-накопитель"
+
+msgid "Wireless ADB"
+msgstr "Беспроводной ADB"

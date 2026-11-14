@@ -4460,3 +4460,6 @@ msgstr "Stockage USB monté"
 
 msgid "USB storage could not be mounted"
 msgstr "Impossible de monter le stockage USB"
+
+msgid "Wireless ADB"
+msgstr "ADB sans fil"
