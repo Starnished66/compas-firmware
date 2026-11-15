@@ -6,8 +6,9 @@ Inputs (all pinned by SHA-256 in firmware/r1_base_v2.json):
   --base-upt the current staging-image-base r1.upt; it supplies the Compás kernel, 20 of the 23 rebuilt
              modules and the base-system layer (BlueALSA 5, BlueZ 5.87, GLib, D-Bus, Compás boot files)
   --rebuilt-modules  directory with cw2015.ko, soc_aic.ko and lcd_lg35583.ko from
-             scripts/kernel/modules/build/build_r1_v2_modules.py (they carry the HiBy v2.0 fixes and
-             replace the base's older builds)
+             scripts/kernel/modules/build/build_r1_v2_modules.py (the HiBy v2.0 fixes).
+             axp2101_wake.ko is taken from that directory when present and pinned; otherwise from
+             firmware/kernel/open-modules, so a null source commit needs no hand copy.
   --system-map the pinned System.map; the final module set is checked against it
   --clean-binaries  directory (same layout as the rootfs) with the base-system layer binaries rebuilt
              without the builder's home path in them; each replaces the base's file of the same path
@@ -35,6 +36,8 @@ import tempfile
 REPO = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "scripts/kernel/modules/verification"))
 import verify_module_abi as abi  # noqa: E402
+sys.path.insert(0, str(REPO / "scripts/kernel/modules/axp2101_wake"))
+import install_axp2101_wake as wake  # noqa: E402
 MAX_BYTES = 45 * 1024 * 1024
 CHUNK = 512 * 1024
 SOC_PROBE = '''# COMPAS_MSC0_FREQUENCY: msc0 is the radio SDIO bus. HiBy v2.0 lowers it to 40 MHz for the
@@ -195,6 +198,9 @@ def apply_script_edits(drivers: pathlib.Path, pol: dict) -> dict:
         replace_once(msc, "msc0_max_frequency=40000000", "msc0_max_frequency=$msc0_max_frequency")
         msc.write_text(SOC_PROBE + msc.read_text())
         edits["/module_driver/soc_msc.sh"] = "msc0 40 MHz only when axp2101 identifies X1600EN/HN, else 50 MHz"
+    init = drivers / "driver_default_init_script.sh"
+    init.write_text(wake.insert_wake_loader(init.read_text()))
+    edits["/module_driver/driver_default_init_script.sh"] = "load axp2101_wake.sh after axp2101.sh"
     return edits
 
 
@@ -255,6 +261,23 @@ def replace_clean_binaries(src, root: pathlib.Path, m: dict) -> dict:
     return out
 
 
+def resolve_added_module(name: str, want: str, rebuilt: pathlib.Path) -> pathlib.Path:
+    """Rebuilt copy when the module build emitted one. Otherwise the pinned open-modules file."""
+    built = rebuilt / name
+    if built.is_symlink():
+        fail(f"rebuilt module {name} is a symlink")
+    if built.exists():
+        if not built.is_file() or sha(built) != want:
+            fail(f"rebuilt module {name} is missing or does not match firmware/r1_base_v2.json")
+        return built
+    stem = name[:-3] if name.endswith(".ko") else name
+    shipped = REPO / "firmware/kernel/open-modules" / stem / name
+    if shipped.is_symlink() or not shipped.is_file() or sha(shipped) != want:
+        got = sha(shipped) if shipped.is_file() else "absent"
+        fail(f"{name} is not in {rebuilt} and open-modules copy is {got}, expected {want}")
+    return shipped
+
+
 def check_module_set(system_map: pathlib.Path, drivers: pathlib.Path, m: dict):
     """Every module of the final set has the kernel's vermagic and resolves its imports against the
     pinned System.map and the other modules."""
@@ -282,14 +305,21 @@ def build(args, m: dict, work: pathlib.Path):
     for name in pinned:
         shutil.copy2(drivers / name, stash / name)
     # cw2015, soc_aic and lcd_lg35583 come from the HiBy v2.0 fixes rebuild, not from the base.
+    # axp2101_wake is a Compás-only module added beside the vendor axp2101.ko.
     fixed = {f"{k}.ko": v for k, v in m["module_build"]["modules"].items()}
+    added = {f"{k}.ko": v for k, v in (m["module_build"].get("added_modules") or {}).items()}
     for name, want in fixed.items():
         built = args.rebuilt_modules / name
         if built.is_symlink() or not built.is_file() or sha(built) != want:
             fail(f"rebuilt module {name} is missing or does not match firmware/r1_base_v2.json")
         shutil.copy2(built, stash / name)
+    for name, want in added.items():
+        shutil.copy2(resolve_added_module(name, want, args.rebuilt_modules), stash / name)
     pinned.update(fixed)
+    pinned.update(added)
     for name in pinned:
+        if name in added:
+            continue
         if not (v2_root / "module_driver" / name).is_file():
             fail(f"HiBy v2.0 has no {name}")
     brcm = work / "kept-brcm"
@@ -307,6 +337,13 @@ def build(args, m: dict, work: pathlib.Path):
     shutil.copytree(v2_root / "module_driver", drivers, symlinks=True)
     for name in pinned:
         shutil.copy2(stash / name, drivers / name)
+    wake_sh = REPO / "firmware/kernel/open-modules/axp2101_wake/axp2101_wake.sh"
+    if wake_sh.is_symlink() or not wake_sh.is_file():
+        fail("missing firmware/kernel/open-modules/axp2101_wake/axp2101_wake.sh")
+    shutil.copy2(wake_sh, drivers / "axp2101_wake.sh")
+    (drivers / "axp2101_wake.sh").chmod(0o755)
+    origins["/module_driver/axp2101_wake.ko"] = "compas-rebuild"
+    origins["/module_driver/axp2101_wake.sh"] = "compas"
     edits = apply_script_edits(drivers, pol)
     config_edit = set_config_version(root, v2_root)
     check_module_set(args.system_map, drivers, m)
@@ -380,7 +417,8 @@ def build(args, m: dict, work: pathlib.Path):
             "toolchain": m["module_build"]["toolchain_note"],
             "patches": m["module_build"]["patches"],
             "builder": "scripts/kernel/modules/build/build_r1_v2_modules.py",
-            "hiby_v2_fixes": {f"{k}.ko": v for k, v in m["module_build"]["modules"].items()}},
+            "hiby_v2_fixes": {f"{k}.ko": v for k, v in m["module_build"]["modules"].items()},
+            "added": {f"{k}.ko": v for k, v in (m["module_build"].get("added_modules") or {}).items()}},
         "unmodified_vendor_radio": {
             "policy": "Wi-Fi/Bluetooth drivers and firmware ship exactly as HiBy built them",
             "files": unmodified},

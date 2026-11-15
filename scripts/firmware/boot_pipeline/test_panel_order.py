@@ -12,7 +12,7 @@ trace = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(trace)
 
 PREFIX = ["utils", "rmem_manager", "soc_utils", "soc_i2c", "i2c_gpio_add", "axp2101",
-          "cw2015", "keyboard_gpio_add", "soc_gpio", "soc_pwm", "pwm_backlight"]
+          "axp2101_wake", "cw2015", "keyboard_gpio_add", "soc_gpio", "soc_pwm", "pwm_backlight"]
 TAIL = ["soc_fb", "soc_aic", "soc_msc", "r1_wireless_select", "soc_adc", "lcd_lg35583",
         "sa_sound_switch", "codec_cs43131", "cst8xx_touch", "keyboard_adc_multifunc"]
 

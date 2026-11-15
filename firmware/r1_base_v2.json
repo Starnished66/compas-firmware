@@ -44,7 +44,7 @@
     "x1600_hiby_r1_sound_card.ko": "388117aa8f3b78989127f2064f7563ddfd1e293bb8d7d6ad1f7bbfa5e0af6952"
   },
   "module_build": {
-    "note": "cw2015, soc_aic and lcd_lg35583 are rebuilt from the reconstructed sources with the safety patch and the HiBy v2.0 fixes patch; scripts/kernel/modules/build/build_r1_v2_modules.py reproduces them",
+    "note": "cw2015, soc_aic and lcd_lg35583 are rebuilt from the reconstructed sources with the safety patch and the HiBy v2.0 fixes patch. axp2101_wake is archived from added_module_sources (the owner's fork, not the working tree) once its commit is set. While that commit is null, build_r1_v2_modules.py skips it and still rebuilds the three modules. build_r1_base_v2.py installs the open-modules .ko when the rebuild directory does not contain it.",
     "kernel_config_sha256": "02f4645490ba261c903ea19057507eef36389a9b17e644825ba5f5122642c572",
     "system_map_sha256": "3975b9395fdc5555bb70ce077eb60dd5a3b3dd8cf89fcf1b30c43922d78465ea",
     "toolchain": {
@@ -62,6 +62,17 @@
       "cw2015": "e7f6f2b49bcb417ff714fdd77611c97b4c055fe9c42cdf00de1890e640d50b0d",
       "lcd_lg35583": "85e9d51a9350ca5e056a927a16ab36b6034cc153aa5eb0ad1438d6a228d38e14",
       "soc_aic": "ddf1e01075a5365f66d318cde4dcf9d076d8ea3224151776b4df15b78753da34"
+    },
+    "added_module_sources": {
+      "axp2101_wake": {
+        "repo": "https://github.com/Starnished66/hiby-custom-kernel.git",
+        "upstream": "https://github.com/Jepl4r/hiby-custom-kernel",
+        "path": "modules/axp2101_wake",
+        "commit": "5caa1fcf5c108e03b0f6a6616f55782bcd969577"
+      }
+    },
+    "added_modules": {
+      "axp2101_wake": "67f1444188904b8827599025dcdf8b499a38855a9822a26eb7a7e4d46ac523fa"
     },
     "previous_base_sha256": {
       "cw2015.ko": "96fbab18849f43d997282d83cd9f727a5c96cae27f16eb5975f24c6f78615131",

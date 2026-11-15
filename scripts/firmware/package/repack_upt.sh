@@ -1064,6 +1064,12 @@ fi
 
 apply_r1_runtime_overlay "$work/root"
 
+# Charger VBUS-insert wake, R1 only. R3 II 2025 and V1 are unverified.
+# R3 Pro II charges through the MP2731 and must not load this module.
+if [[ $board == r1 ]]; then
+    python3 "$repo/scripts/kernel/modules/axp2101_wake/install_axp2101_wake.py" "$board" "$work/root"
+fi
+
 # Apply the same portable startup changes to every board after optional local
 # runtime overlays, so those overlays cannot restore an unstandardized wrapper.
 "$repo/scripts/firmware/boot_pipeline/standardize_boot_pipeline.sh" --board "$board" "$work/root"
@@ -1174,7 +1180,15 @@ pinned_loader = expected.get(loader_rel)
 if pinned_loader != {"sha256": source_sha, "size": source_size}:
     raise SystemExit("Pinned vendor module loader differs from its installed-files manifest")
 trace_module = runpy.run_path(str(trace_installer))["instrument_modules"]
-instrumented_loader = trace_module(source_loader.read_text()).encode()
+source_text = source_loader.read_text()
+if board == "r1":
+    wake_root = trace_installer.resolve()
+    wake = runpy.run_path(str(wake_root.parents[2] / "kernel/modules/axp2101_wake/install_axp2101_wake.py"))
+    source_text = wake["insert_wake_loader"](source_text)
+    wake_record = json.loads((wake_root.parents[3] / "firmware/kernel/open-modules/axp2101_wake/axp2101_wake.json").read_text())["module"]
+    expected["/module_driver/axp2101_wake.ko"] = {"sha256": wake_record["sha256"], "size": wake_record["size"]}
+    expected["/module_driver/axp2101_wake.sh"] = {"sha256": wake_record["loader_sha256"], "size": (root / "module_driver/axp2101_wake.sh").stat().st_size}
+instrumented_loader = trace_module(source_text).encode()
 derived_sha = hashlib.sha256(instrumented_loader).hexdigest()
 derived_size = len(instrumented_loader)
 if (installed_sha, installed_size) != (derived_sha, derived_size):
@@ -1383,7 +1397,11 @@ for rel in ("module_driver", "lib/firmware"):
                 actual[key] = {"sha256": digest(path), "size": path.stat().st_size}
 recorded = {k: {f: v for f, v in e.items() if f != "origin"} for k, e in record["installed_files"].items()}
 # Bases built before the key poll edit do not list it; the repack makes it itself.
-allowed = set(record.get("weekly_repack_edits", {})) | {"/module_driver/keyboard_adc_multifunc.sh"}
+allowed = set(record.get("weekly_repack_edits", {})) | {
+    "/module_driver/keyboard_adc_multifunc.sh",
+    "/module_driver/axp2101_wake.ko",
+    "/module_driver/axp2101_wake.sh",
+}
 changed = {k for k in set(actual) | set(recorded) if actual.get(k) != recorded.get(k)}
 if changed - allowed:
     raise SystemExit("Driver or firmware files differ from the base provenance record: " + ", ".join(sorted(changed - allowed)))
