@@ -6,7 +6,6 @@ are not verified, and the R3 Pro II charges through the MP2731.
 """
 from __future__ import annotations
 
-import hashlib
 import json
 import pathlib
 import re
@@ -14,32 +13,18 @@ import shutil
 import sys
 
 REPO = pathlib.Path(__file__).resolve().parents[4]
+sys.path.insert(0, str(REPO / "scripts/kernel/modules/verification"))
+import verify_module_abi as abi  # noqa: E402
+
+sys.path.insert(0, str(REPO / "scripts/firmware/boot_pipeline"))
+from install_startup_trace import checkpoint_block  # noqa: E402
+
 ARTIFACTS = REPO / "firmware/kernel/open-modules/axp2101_wake"
 RECORD = ARTIFACTS / "axp2101_wake.json"
 WAKE_BOARDS = ("r1",)
 RAW_LINE = "sh axp2101_wake.sh\n"
-WAKE_BLOCK = (
-    'compas_startup_checkpoint module-before "axp2101_wake.sh" -\n'
-    "sh axp2101_wake.sh\n"
-    "_compas_module_status=$?\n"
-    'compas_startup_checkpoint module-after "axp2101_wake.sh" "$_compas_module_status"\n'
-    '(exit "$_compas_module_status")\n'
-)
-AXP_BLOCK = (
-    'compas_startup_checkpoint module-before "axp2101.sh" -\n'
-    "sh axp2101.sh\n"
-    "_compas_module_status=$?\n"
-    'compas_startup_checkpoint module-after "axp2101.sh" "$_compas_module_status"\n'
-    '(exit "$_compas_module_status")\n'
-)
-
-
-def sha(path: pathlib.Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for block in iter(lambda: f.read(1 << 20), b""):
-            h.update(block)
-    return h.hexdigest()
+WAKE_BLOCK = checkpoint_block("axp2101_wake.sh")
+AXP_BLOCK = checkpoint_block("axp2101.sh")
 
 
 def fail(message: str) -> None:
@@ -79,10 +64,10 @@ def install(root: pathlib.Path, artifacts: pathlib.Path = ARTIFACTS,
     for path, label in ((ko_src, "axp2101_wake.ko"), (sh_src, "axp2101_wake.sh")):
         if path.is_symlink() or not path.is_file():
             fail(f"{label} is missing or not a regular file: {path}")
-    if sha(ko_src) != entry["sha256"]:
-        fail(f"axp2101_wake.ko is {sha(ko_src)}, expected {entry['sha256']}")
-    if sha(sh_src) != entry["loader_sha256"]:
-        fail(f"axp2101_wake.sh is {sha(sh_src)}, expected {entry['loader_sha256']}")
+    if abi.file_sha256(ko_src) != entry["sha256"]:
+        fail(f"axp2101_wake.ko is {abi.file_sha256(ko_src)}, expected {entry['sha256']}")
+    if abi.file_sha256(sh_src) != entry["loader_sha256"]:
+        fail(f"axp2101_wake.sh is {abi.file_sha256(sh_src)}, expected {entry['loader_sha256']}")
     drivers = root / "module_driver"
     if drivers.is_symlink() or not drivers.is_dir():
         fail("unsafe or missing /module_driver")

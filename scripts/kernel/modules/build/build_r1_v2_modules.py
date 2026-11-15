@@ -25,7 +25,6 @@ module_driver directory of the assembled base) to the undefined-symbol check.
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import os
 import pathlib
@@ -47,14 +46,6 @@ TOOL_FILES = {
 PATCH_GLOB = "compas-reconstructed-drivers-*.patch"
 
 
-def sha(path: pathlib.Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for block in iter(lambda: f.read(1 << 20), b""):
-            h.update(block)
-    return h.hexdigest()
-
-
 def fail(message: str):
     raise SystemExit(f"build_r1_v2_modules: {message}")
 
@@ -66,19 +57,19 @@ def run(*argv, **kw):
 def check_pins(args, pins: dict):
     tree = args.kernel_tree
     for rel, key in ((".config", "kernel_config_sha256"), ("System.map", "system_map_sha256")):
-        if not (tree / rel).is_file() or sha(tree / rel) != pins[key]:
+        if not (tree / rel).is_file() or abi.file_sha256(tree / rel) != pins[key]:
             fail(f"kernel tree {rel} does not match the pin in firmware/r1_base_v2.json")
     if not (tree / "Module.symvers").is_file():
         fail("kernel tree has no Module.symvers (it must be a built tree)")
     for name, rel in TOOL_FILES.items():
         path = args.toolchain / rel
-        if not path.is_file() or sha(path) != pins["toolchain"][name]:
+        if not path.is_file() or abi.file_sha256(path) != pins["toolchain"][name]:
             fail(f"toolchain {rel} does not match the pin in firmware/r1_base_v2.json")
     patches = sorted(p for p in (REPO / "firmware/kernel/module-patches").glob(PATCH_GLOB))
     if [p.name for p in patches] != list(pins["patches"]):
         fail(f"module patches {[p.name for p in patches]} differ from the pinned list {list(pins['patches'])}")
     for p in patches:
-        if sha(p) != pins["patches"][p.name]:
+        if abi.file_sha256(p) != pins["patches"][p.name]:
             fail(f"{p.name} does not match its pin")
     return patches
 
@@ -158,6 +149,22 @@ def module_dir(kit_tree: pathlib.Path, name: str) -> pathlib.Path:
     fail(f"no source directory for {name}")
 
 
+def build_one(src_dir, name, want, work_root, args, env, out) -> str:
+    work = work_root / name
+    shutil.copytree(src_dir, work)
+    run("make", "-C", args.kernel_tree, "ARCH=mips", "CROSS_COMPILE=mips-linux-gnu-",
+        "HOSTCC=gcc -fcommon", f"M={work}", "HIBY_MODEL=r1", "modules", env=env,
+        stdout=subprocess.DEVNULL)
+    ko = work / f"{name}.ko"
+    if not ko.is_file():
+        fail(f"{name}.ko was not produced")
+    digest = abi.file_sha256(ko)
+    if digest != want:
+        fail(f"{name}.ko is {digest}, expected {want}")
+    shutil.copy2(ko, out / f"{name}.ko")
+    return digest
+
+
 def build(args, pins: dict, commit: str):
     added = pins.get("added_modules") or {}
     sources = pins.get("added_module_sources") or {}
@@ -179,18 +186,8 @@ def build(args, pins: dict, commit: str):
             run("patch", "--batch", "--forward", "--fuzz=0", "-s", "-p1", "-d", src, "-i", patch)
         built = {}
         for name in pins["modules"]:
-            work = tmp / "ext" / name
-            shutil.copytree(module_dir(src, name), work)
-            run("make", "-C", args.kernel_tree, "ARCH=mips", "CROSS_COMPILE=mips-linux-gnu-",
-                "HOSTCC=gcc -fcommon", f"M={work}", "HIBY_MODEL=r1", "modules", env=env,
-                stdout=subprocess.DEVNULL)
-            ko = work / f"{name}.ko"
-            if not ko.is_file():
-                fail(f"{name}.ko was not produced")
-            if sha(ko) != pins["modules"][name]:
-                fail(f"{name}.ko is {sha(ko)}, expected {pins['modules'][name]}")
-            shutil.copy2(ko, out / f"{name}.ko")
-            built[name] = sha(ko)
+            built[name] = build_one(module_dir(src, name), name, pins["modules"][name],
+                                    tmp / "ext", args, env, out)
         for name, want in added.items():
             spec = sources[name]
             if planned[name] is None:
@@ -198,19 +195,7 @@ def build(args, pins: dict, commit: str):
                       f"{owner_commit_text(name, spec)}", file=sys.stderr)
                 continue
             src_dir = added_source(args.kit, name, spec, tmp / "added" / name)
-            work = tmp / "ext" / name
-            shutil.copytree(src_dir, work)
-            run("make", "-C", args.kernel_tree, "ARCH=mips", "CROSS_COMPILE=mips-linux-gnu-",
-                "HOSTCC=gcc -fcommon", f"M={work}", "HIBY_MODEL=r1", "modules", env=env,
-                stdout=subprocess.DEVNULL)
-            ko = work / f"{name}.ko"
-            if not ko.is_file():
-                fail(f"{name}.ko was not produced")
-            digest = sha(ko)
-            if digest != want:
-                fail(f"{name}.ko is {digest}, expected {want}")
-            shutil.copy2(ko, out / f"{name}.ko")
-            built[name] = digest
+            built[name] = build_one(src_dir, name, want, tmp / "ext", args, env, out)
     return built
 
 

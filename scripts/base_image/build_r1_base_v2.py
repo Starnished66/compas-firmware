@@ -56,14 +56,6 @@ fi
 '''
 
 
-def sha(path: pathlib.Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for block in iter(lambda: f.read(1 << 20), b""):
-            h.update(block)
-    return h.hexdigest()
-
-
 def run(*argv, **kw):
     return subprocess.run([str(a) for a in argv], check=True, **kw)
 
@@ -73,7 +65,7 @@ def fail(message: str):
 
 
 def require_pin(path: pathlib.Path, want: str, label: str):
-    if sha(path) != want:
+    if abi.file_sha256(path) != want:
         fail(f"{label} SHA-256 does not match firmware/r1_base_v2.json: {path}")
 
 
@@ -120,7 +112,7 @@ def inventory(root: pathlib.Path) -> dict:
             if p.is_symlink():
                 out[rel] = ("L", os.readlink(p))
             elif p.is_file():
-                out[rel] = ("F", sha(p), p.stat().st_mode & 0o7777)
+                out[rel] = ("F", abi.file_sha256(p), p.stat().st_mode & 0o7777)
             else:
                 out[rel] = ("D", p.stat().st_mode & 0o7777)
     return out
@@ -155,7 +147,7 @@ def file_map(root: pathlib.Path, rels, origins: dict) -> dict:
                 if p.is_symlink():
                     out[key] = {"symlink": os.readlink(p), "origin": origin}
                 elif p.is_file():
-                    out[key] = {"sha256": sha(p), "size": p.stat().st_size, "origin": origin}
+                    out[key] = {"sha256": abi.file_sha256(p), "size": p.stat().st_size, "origin": origin}
     return out
 
 
@@ -228,9 +220,9 @@ def verify_unmodified_radio(v2_root: pathlib.Path, root: pathlib.Path, kept: set
     out = {}
     for rel in rels:
         a, b = v2_root / rel, root / rel
-        if b.is_symlink() or not b.is_file() or sha(a) != sha(b):
+        if b.is_symlink() or not b.is_file() or abi.file_sha256(a) != abi.file_sha256(b):
             fail(f"radio file differs from HiBy v2.0 (must ship unmodified): /{rel}")
-        out["/" + rel] = sha(b)
+        out["/" + rel] = abi.file_sha256(b)
     for parent, _, names in os.walk(root / "lib/firmware"):
         for n in names:
             rel = str((pathlib.Path(parent) / n).relative_to(root))
@@ -249,9 +241,9 @@ def replace_clean_binaries(src, root: pathlib.Path, m: dict) -> dict:
     out = {}
     for rel, pin in sorted(spec["files"].items()):
         target, built = root / rel, src / rel
-        if target.is_symlink() or not target.is_file() or sha(target) != pin["pre_sha256"]:
+        if target.is_symlink() or not target.is_file() or abi.file_sha256(target) != pin["pre_sha256"]:
             fail(f"base file /{rel} is not the pinned staging binary")
-        if built.is_symlink() or not built.is_file() or sha(built) != pin["post_sha256"]:
+        if built.is_symlink() or not built.is_file() or abi.file_sha256(built) != pin["post_sha256"]:
             fail(f"clean rebuild of /{rel} is missing or does not match firmware/r1_base_v2.json")
         mode = target.stat().st_mode & 0o7777
         copy_file(built, target)
@@ -267,13 +259,13 @@ def resolve_added_module(name: str, want: str, rebuilt: pathlib.Path) -> pathlib
     if built.is_symlink():
         fail(f"rebuilt module {name} is a symlink")
     if built.exists():
-        if not built.is_file() or sha(built) != want:
+        if not built.is_file() or abi.file_sha256(built) != want:
             fail(f"rebuilt module {name} is missing or does not match firmware/r1_base_v2.json")
         return built
     stem = name[:-3] if name.endswith(".ko") else name
     shipped = REPO / "firmware/kernel/open-modules" / stem / name
-    if shipped.is_symlink() or not shipped.is_file() or sha(shipped) != want:
-        got = sha(shipped) if shipped.is_file() else "absent"
+    if shipped.is_symlink() or not shipped.is_file() or abi.file_sha256(shipped) != want:
+        got = abi.file_sha256(shipped) if shipped.is_file() else "absent"
         fail(f"{name} is not in {rebuilt} and open-modules copy is {got}, expected {want}")
     return shipped
 
@@ -281,7 +273,7 @@ def resolve_added_module(name: str, want: str, rebuilt: pathlib.Path) -> pathlib
 def check_module_set(system_map: pathlib.Path, drivers: pathlib.Path, m: dict):
     """Every module of the final set has the kernel's vermagic and resolves its imports against the
     pinned System.map and the other modules."""
-    if sha(system_map) != m["kernel"]["system_map_sha256"]:
+    if abi.file_sha256(system_map) != m["kernel"]["system_map_sha256"]:
         fail("--system-map does not match the pinned System.map")
     with tempfile.TemporaryDirectory(prefix="r1-base-abi.") as empty:
         report = abi.verify(system_map, pathlib.Path(empty), drivers, shutil.which("nm") or "nm",
@@ -298,7 +290,7 @@ def build(args, m: dict, work: pathlib.Path):
     drivers = root / "module_driver"
     pinned = dict(m["compas_modules"])
     for name, want in pinned.items():
-        if not (drivers / name).is_file() or sha(drivers / name) != want:
+        if not (drivers / name).is_file() or abi.file_sha256(drivers / name) != want:
             fail(f"base module {name} is not the pinned Compás rebuild")
     stash = work / "compas-modules"
     stash.mkdir()
@@ -310,7 +302,7 @@ def build(args, m: dict, work: pathlib.Path):
     added = {f"{k}.ko": v for k, v in (m["module_build"].get("added_modules") or {}).items()}
     for name, want in fixed.items():
         built = args.rebuilt_modules / name
-        if built.is_symlink() or not built.is_file() or sha(built) != want:
+        if built.is_symlink() or not built.is_file() or abi.file_sha256(built) != want:
             fail(f"rebuilt module {name} is missing or does not match firmware/r1_base_v2.json")
         shutil.copy2(built, stash / name)
     for name, want in added.items():
@@ -362,19 +354,19 @@ def build(args, m: dict, work: pathlib.Path):
     patched = []
     for rel in m["userspace_from_v2"]:
         dst = root / rel
-        replaced[rel] = sha(dst) if dst.is_file() else None
+        replaced[rel] = abi.file_sha256(dst) if dst.is_file() else None
         copy_file(v2_root / rel, dst)
     vw = m["vendor_wifi_on"]
     dst = root / vw["to"]
-    replaced[vw["to"]] = sha(dst) if dst.is_file() else None
+    replaced[vw["to"]] = abi.file_sha256(dst) if dst.is_file() else None
     copy_file(v2_root / vw["from"], dst)
     for entry in m["script_patches"]:
         target = root / entry["path"]
-        if sha(target) != entry["pre_sha256"]:
+        if abi.file_sha256(target) != entry["pre_sha256"]:
             fail(f"{entry['path']} is not the pinned base script")
         patch_file = REPO / entry["patch"]
         run("patch", "--no-backup-if-mismatch", "-s", "-p1", "-d", root, "-i", patch_file)
-        if sha(target) != entry["post_sha256"]:
+        if abi.file_sha256(target) != entry["post_sha256"]:
             fail(f"{entry['path']} differs from the pinned patched script")
         patched.append(entry["path"])
     clean_rebuilds = replace_clean_binaries(args.clean_binaries, root, m)
@@ -387,7 +379,7 @@ def build(args, m: dict, work: pathlib.Path):
     userspace = {}
     for rel in user_rels:
         p = root / rel
-        userspace["/" + rel] = {"sha256": sha(p), "size": p.stat().st_size,
+        userspace["/" + rel] = {"sha256": abi.file_sha256(p), "size": p.stat().st_size,
                                 "origin": user_origin["/" + rel], "replaced_sha256": replaced.get(rel)}
     for rel in patched:
         userspace["/" + rel]["replaced_sha256"] = next(
@@ -514,13 +506,13 @@ def main():
         check = work / "check"
         check.mkdir()
         new_root, new_kernel, _ = unpack_upt(args.output.resolve(), check)
-        if inventory(new_root) != inventory(root) or sha(new_kernel) != m["kernel"]["xImage_sha256"]:
+        if inventory(new_root) != inventory(root) or abi.file_sha256(new_kernel) != m["kernel"]["xImage_sha256"]:
             fail("the packed image does not match the assembled tree")
     finally:
         if own:
             shutil.rmtree(work, ignore_errors=True)
     print(f"Created {args.output} ({args.output.stat().st_size} bytes)")
-    print(f"{sha(args.output.resolve())}  {args.output.name}")
+    print(f"{abi.file_sha256(args.output.resolve())}  {args.output.name}")
 
 
 if __name__ == "__main__":

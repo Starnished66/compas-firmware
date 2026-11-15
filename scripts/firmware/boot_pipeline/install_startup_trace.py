@@ -154,9 +154,21 @@ def instrument_rcs(text: str, checkpoint_block: str) -> str:
     return "".join(lines)
 
 
-def instrument_modules(text: str, checkpoint_block: str | None = None) -> str:
-    if checkpoint_block is None:
-        checkpoint_block = canonical_checkpoint_block()
+def checkpoint_block(module: str, line: str | None = None) -> str:
+    if line is None:
+        line = f"sh {module}\n"
+    elif not line.endswith("\n"):
+        line += "\n"
+    return (f'compas_startup_checkpoint module-before "{module}" -\n'
+            + line
+            + '_compas_module_status=$?\n'
+            + f'compas_startup_checkpoint module-after "{module}" "$_compas_module_status"\n'
+            + '(exit "$_compas_module_status")\n')
+
+
+def instrument_modules(text: str, checkpoint_text: str | None = None) -> str:
+    if checkpoint_text is None:
+        checkpoint_text = canonical_checkpoint_block()
     lines = text.splitlines(keepends=True)
     if not lines or lines[0].strip() != "#!/bin/sh":
         fail("Unsupported module loader: expected #!/bin/sh")
@@ -166,7 +178,7 @@ def instrument_modules(text: str, checkpoint_block: str | None = None) -> str:
             fail("Unrecognized or incomplete startup trace instrumentation in module loader")
         if sum(line.rstrip("\r\n") in (CHECKPOINT_BEGIN, CHECKPOINT_END) for line in lines) != 2:
             fail("Stale module loader startup tracing template; checkpoint block is missing")
-        if body.count(checkpoint_block) != 1:
+        if body.count(checkpoint_text) != 1:
             fail("Stale module loader startup tracing template; checkpoint block differs from the runtime helper")
         clean_lines = []
         bootstrap = {
@@ -185,8 +197,8 @@ def instrument_modules(text: str, checkpoint_block: str | None = None) -> str:
                     or stripped == '(exit "$_compas_module_status")'):
                 continue
             clean_lines.append(line)
-        clean = "".join(clean_lines).replace(checkpoint_block, "", 1)
-        if instrument_modules(clean, checkpoint_block) != body:
+        clean = "".join(clean_lines).replace(checkpoint_text, "", 1)
+        if instrument_modules(clean, checkpoint_text) != body:
             fail("Unrecognized or incomplete startup trace instrumentation in module loader")
         return body
     active: list[tuple[int, str]] = []
@@ -200,7 +212,7 @@ def instrument_modules(text: str, checkpoint_block: str | None = None) -> str:
         active.append((n, match.group(1)))
     if not active:
         fail("Unsupported module loader: no module scripts found")
-    result = [lines[0], MODULE_MARKER + "\n", checkpoint_block]
+    result = [lines[0], MODULE_MARKER + "\n", checkpoint_text]
     result.extend([
         'if [ -z "${COMPAS_STARTUP_BOOT_ID:-}" ]; then\n',
         '    IFS= read -r COMPAS_STARTUP_BOOT_ID < /proc/sys/kernel/random/boot_id || COMPAS_STARTUP_BOOT_ID=\n',
@@ -214,13 +226,7 @@ def instrument_modules(text: str, checkpoint_block: str | None = None) -> str:
             result.append(line)
             continue
         module = active_by_line[n]
-        result.extend([
-            f'compas_startup_checkpoint module-before "{module}" -\n',
-            line if line.endswith("\n") else line + "\n",
-            "_compas_module_status=$?\n",
-            f'compas_startup_checkpoint module-after "{module}" "$_compas_module_status"\n',
-            '(exit "$_compas_module_status")\n',
-        ])
+        result.append(checkpoint_block(module, line))
     result.append('exit "$_compas_module_status"\n')
     return "".join(result)
 
@@ -248,17 +254,10 @@ def prioritize_panel(text: str) -> str:
     if modules[start:start + len(original)] != original:
         return text
 
-    def block(module: str) -> str:
-        return (f'compas_startup_checkpoint module-before "{module}" -\n'
-                f'sh {module}\n'
-                '_compas_module_status=$?\n'
-                f'compas_startup_checkpoint module-after "{module}" "$_compas_module_status"\n'
-                '(exit "$_compas_module_status")\n')
-
-    before = "".join(map(block, original))
+    before = "".join(map(checkpoint_block, original))
     if text.count(before) != 1:
         return text
-    return text.replace(before, "".join(map(block, reordered)), 1)
+    return text.replace(before, "".join(map(checkpoint_block, reordered)), 1)
 
 
 def main(root: pathlib.Path) -> None:
