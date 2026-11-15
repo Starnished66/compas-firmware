@@ -21,6 +21,7 @@ Mapping (icons/<path>, after following the repository's symlinks):
   breeze_delete.png    <- actions/22/edit-delete.svg
   breeze_download.png  <- actions/22/download.svg (edit-download.svg)
   breeze_refresh.png   <- actions/22/view-refresh.svg
+  breeze_sort.png      <- actions/22/view-sort-ascending.svg
   breeze_favorite.png  <- emblems/22/emblem-favorite.svg (rating.svg)
   breeze_favorite_off.png <- emblems/22/rating-unrated.svg
   breeze_handle.png    <- actions/22/handle-sort.svg, padding trimmed to fill the
