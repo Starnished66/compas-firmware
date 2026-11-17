@@ -3807,7 +3807,7 @@ msgid "All Albums"
 msgstr "Todos os álbuns"
 
 msgid "Top Rated"
-msgstr "Mais bem avaliados"
+msgstr "Mais bem avaliadas"
 
 msgid "Random"
 msgstr "Aleatório"
@@ -4391,15 +4391,6 @@ msgstr "Pesquisar"
 msgid "Wired"
 msgstr "Com fios"
 
-msgid "Stop updating the library?"
-msgstr "Parar a atualização da biblioteca?"
-
-msgid "Changes found so far may not be saved."
-msgstr "As alterações encontradas até agora podem não ser guardadas."
-
-msgid "Updating the library. This may take a while."
-msgstr "A atualizar a biblioteca. Isto pode demorar algum tempo."
-
 msgid "Too demanding for this device"
 msgstr "Demasiado exigente para este dispositivo"
 
@@ -4426,3 +4417,65 @@ msgstr "Não foi possível montar o armazenamento USB"
 
 msgid "Wireless ADB"
 msgstr "ADB sem fios"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "Ainda não há álbuns com 3 estrelas ou mais."
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "Ainda não há músicas com 3 estrelas ou mais."
+
+msgid "Rate album"
+msgstr "Avaliar álbum"
+
+msgid "Rate song"
+msgstr "Avaliar música"
+
+msgid "Rating"
+msgstr "Avaliação"
+
+msgid "Top rated"
+msgstr "Mais bem avaliadas"
+
+msgid "Top rated albums"
+msgstr "Álbuns mais bem avaliados"
+
+msgid "Unrated"
+msgstr "Sem avaliação"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (0,1 a 10)"
+
+msgid "%ds"
+msgstr "%d s"
+
+msgid "%dm %ds"
+msgstr "%d min %d s"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "Codificação de texto não suportada. Use UTF-8."
+
+msgid "This file is empty."
+msgstr "Este ficheiro está vazio."
+
+msgid "Queue checkpoint is still saving"
+msgstr "A fila ainda está a ser guardada."
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "Mais bem avaliados"
+
+msgid "Preparing music library..."
+msgstr "A preparar a biblioteca de música..."
+
+msgid "Preparing metadata refresh..."
+msgstr "A preparar a atualização dos metadados..."
+
+msgid "Preparing metadata refresh"
+msgstr "A preparar a atualização dos metadados"
+
+msgid "Looking for music files"
+msgstr "A procurar ficheiros de música"
+
+msgid "Saving music database"
+msgstr "A guardar a base de dados de música"
+

@@ -4307,3 +4307,45 @@ msgstr ""
 
 msgid "Wireless ADB"
 msgstr ""
+
+msgid "No albums rated 3 stars or more yet."
+msgstr ""
+
+msgid "No songs rated 3 stars or more yet."
+msgstr ""
+
+msgid "Rate album"
+msgstr ""
+
+msgid "Rate song"
+msgstr ""
+
+msgid "Rating"
+msgstr ""
+
+msgid "Top rated"
+msgstr ""
+
+msgid "Top rated albums"
+msgstr ""
+
+msgid "Unrated"
+msgstr ""
+
+msgid "Q (0.1 to 10)"
+msgstr ""
+
+msgid "%ds"
+msgstr ""
+
+msgid "%dm %ds"
+msgstr ""
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr ""
+
+msgid "This file is empty."
+msgstr ""
+
+msgid "Queue checkpoint is still saving"
+msgstr ""

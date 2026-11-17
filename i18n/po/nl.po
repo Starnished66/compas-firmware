@@ -3804,7 +3804,7 @@ msgid "All Albums"
 msgstr "Alle albums"
 
 msgid "Top Rated"
-msgstr "Hoogst beoordeeld"
+msgstr "Best beoordeeld"
 
 msgid "Random"
 msgstr "Willekeurig"
@@ -4388,15 +4388,6 @@ msgstr "Zoeken"
 msgid "Wired"
 msgstr "Bekabeld"
 
-msgid "Stop updating the library?"
-msgstr "Bijwerken van de bibliotheek stoppen?"
-
-msgid "Changes found so far may not be saved."
-msgstr "Wijzigingen die tot nu toe zijn gevonden, worden mogelijk niet opgeslagen."
-
-msgid "Updating the library. This may take a while."
-msgstr "Bibliotheek wordt bijgewerkt. Dit kan even duren."
-
 msgid "Too demanding for this device"
 msgstr "Te veeleisend voor dit apparaat"
 
@@ -4423,3 +4414,65 @@ msgstr "USB-opslag kon niet worden gekoppeld"
 
 msgid "Wireless ADB"
 msgstr "Draadloze ADB"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "Nog geen albums met 3 sterren of meer."
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "Nog geen nummers met 3 sterren of meer."
+
+msgid "Rate album"
+msgstr "Album beoordelen"
+
+msgid "Rate song"
+msgstr "Nummer beoordelen"
+
+msgid "Rating"
+msgstr "Beoordeling"
+
+msgid "Top rated"
+msgstr "Best beoordeeld"
+
+msgid "Top rated albums"
+msgstr "Best beoordeelde albums"
+
+msgid "Unrated"
+msgstr "Niet beoordeeld"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (0,1 tot 10)"
+
+msgid "%ds"
+msgstr "%d s"
+
+msgid "%dm %ds"
+msgstr "%d min %d s"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "Niet-ondersteunde tekstcodering. Gebruik UTF-8."
+
+msgid "This file is empty."
+msgstr "Dit bestand is leeg."
+
+msgid "Queue checkpoint is still saving"
+msgstr "De wachtrij wordt nog opgeslagen."
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "Best beoordeeld"
+
+msgid "Preparing music library..."
+msgstr "Muziekbibliotheek voorbereiden..."
+
+msgid "Preparing metadata refresh..."
+msgstr "Metadata bijwerken voorbereiden..."
+
+msgid "Preparing metadata refresh"
+msgstr "Metadata bijwerken voorbereiden"
+
+msgid "Looking for music files"
+msgstr "Zoeken naar muziekbestanden"
+
+msgid "Saving music database"
+msgstr "Muziekdatabase opslaan"
+

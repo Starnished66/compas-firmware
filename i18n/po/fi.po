@@ -239,7 +239,7 @@ msgid "Sleep timer"
 msgstr "Uniajastin"
 
 msgid "Crossfade"
-msgstr "Ristiinhäivytys"
+msgstr "Ristihäivytys"
 
 msgid "AirPlay"
 msgstr "AirPlay"
@@ -4390,15 +4390,6 @@ msgstr "Haku"
 msgid "Wired"
 msgstr "Langallinen"
 
-msgid "Stop updating the library?"
-msgstr "Lopetetaanko kirjaston päivitys?"
-
-msgid "Changes found so far may not be saved."
-msgstr "Tähän mennessä löydettyjä muutoksia ei ehkä tallenneta."
-
-msgid "Updating the library. This may take a while."
-msgstr "Kirjastoa päivitetään. Tämä voi kestää hetken."
-
 msgid "Too demanding for this device"
 msgstr "Liian raskas tälle laitteelle"
 
@@ -4425,3 +4416,65 @@ msgstr "USB-tallennustilaa ei voitu liittää"
 
 msgid "Wireless ADB"
 msgstr "Langaton ADB"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "Ei vielä vähintään 3 tähden albumeita."
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "Ei vielä vähintään 3 tähden kappaleita."
+
+msgid "Rate album"
+msgstr "Arvostele albumi"
+
+msgid "Rate song"
+msgstr "Arvioi kappale"
+
+msgid "Rating"
+msgstr "Arvio"
+
+msgid "Top rated"
+msgstr "Parhaiten arvioidut"
+
+msgid "Top rated albums"
+msgstr "Parhaiten arvioidut albumit"
+
+msgid "Unrated"
+msgstr "Arvostelematon"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (0,1–10)"
+
+msgid "%ds"
+msgstr "%d s"
+
+msgid "%dm %ds"
+msgstr "%d min %d s"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "Tekstin koodausta ei tueta. Käytä UTF-8-muotoa."
+
+msgid "This file is empty."
+msgstr "Tämä tiedosto on tyhjä."
+
+msgid "Queue checkpoint is still saving"
+msgstr "Jonon tallennus on vielä käynnissä."
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "Parhaiten arvioidut"
+
+msgid "Preparing music library..."
+msgstr "Valmistellaan musiikkikirjastoa..."
+
+msgid "Preparing metadata refresh..."
+msgstr "Valmistellaan metatietojen päivitystä..."
+
+msgid "Preparing metadata refresh"
+msgstr "Valmistellaan metatietojen päivitystä"
+
+msgid "Looking for music files"
+msgstr "Etsitään musiikkitiedostoja"
+
+msgid "Saving music database"
+msgstr "Tallennetaan musiikkitietokantaa"
+

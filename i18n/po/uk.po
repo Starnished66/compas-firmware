@@ -3815,7 +3815,7 @@ msgid "All Albums"
 msgstr "Усі альбоми"
 
 msgid "Top Rated"
-msgstr "Найвище оцінені"
+msgstr "З найвищими оцінками"
 
 msgid "Random"
 msgstr "Випадкові"
@@ -4399,15 +4399,6 @@ msgstr "Пошук"
 msgid "Wired"
 msgstr "Дротовий"
 
-msgid "Stop updating the library?"
-msgstr "Зупинити оновлення бібліотеки?"
-
-msgid "Changes found so far may not be saved."
-msgstr "Знайдені зміни можуть не зберегтися."
-
-msgid "Updating the library. This may take a while."
-msgstr "Оновлення бібліотеки. Це може зайняти деякий час."
-
 msgid "Too demanding for this device"
 msgstr "Надто ресурсоємно для цього пристрою"
 
@@ -4434,3 +4425,65 @@ msgstr "Не вдалося підключити USB-накопичувач"
 
 msgid "Wireless ADB"
 msgstr "Бездротовий ADB"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "Ще немає альбомів з оцінкою від 3 зірок."
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "Ще немає пісень з оцінкою від 3 зірок."
+
+msgid "Rate album"
+msgstr "Оцінити альбом"
+
+msgid "Rate song"
+msgstr "Оцінити пісню"
+
+msgid "Rating"
+msgstr "Оцінка"
+
+msgid "Top rated"
+msgstr "З найвищими оцінками"
+
+msgid "Top rated albums"
+msgstr "Альбоми з найвищими оцінками"
+
+msgid "Unrated"
+msgstr "Без оцінки"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (від 0,1 до 10)"
+
+msgid "%ds"
+msgstr "%d с"
+
+msgid "%dm %ds"
+msgstr "%d хв %d с"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "Кодування тексту не підтримується. Використовуйте UTF-8."
+
+msgid "This file is empty."
+msgstr "Цей файл порожній."
+
+msgid "Queue checkpoint is still saving"
+msgstr "Черга ще зберігається."
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "З найвищими оцінками"
+
+msgid "Preparing music library..."
+msgstr "Підготовка музичної бібліотеки..."
+
+msgid "Preparing metadata refresh..."
+msgstr "Підготовка до оновлення метаданих..."
+
+msgid "Preparing metadata refresh"
+msgstr "Підготовка до оновлення метаданих"
+
+msgid "Looking for music files"
+msgstr "Пошук музичних файлів"
+
+msgid "Saving music database"
+msgstr "Збереження музичної бази даних"
+

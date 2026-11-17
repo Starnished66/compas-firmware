@@ -3792,7 +3792,7 @@ msgid "All Albums"
 msgstr "Alle Alben"
 
 msgid "Top Rated"
-msgstr "Am besten bewertet"
+msgstr "Bestbewertet"
 
 msgid "Random"
 msgstr "Zufällig"
@@ -4376,15 +4376,6 @@ msgstr "Suche"
 msgid "Wired"
 msgstr "Kabelgebunden"
 
-msgid "Stop updating the library?"
-msgstr "Aktualisierung der Bibliothek stoppen?"
-
-msgid "Changes found so far may not be saved."
-msgstr "Bisher gefundene Änderungen werden eventuell nicht gespeichert."
-
-msgid "Updating the library. This may take a while."
-msgstr "Bibliothek wird aktualisiert. Das kann eine Weile dauern."
-
 msgid "Too demanding for this device"
 msgstr "Zu anspruchsvoll für dieses Gerät"
 
@@ -4411,3 +4402,65 @@ msgstr "USB-Speicher konnte nicht eingebunden werden"
 
 msgid "Wireless ADB"
 msgstr "Drahtloses ADB"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "Noch keine Alben mit mindestens 3 Sternen."
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "Noch keine Songs mit mindestens 3 Sternen."
+
+msgid "Rate album"
+msgstr "Album bewerten"
+
+msgid "Rate song"
+msgstr "Lied bewerten"
+
+msgid "Rating"
+msgstr "Bewertung"
+
+msgid "Top rated"
+msgstr "Bestbewertet"
+
+msgid "Top rated albums"
+msgstr "Bestbewertete Alben"
+
+msgid "Unrated"
+msgstr "Unbewertet"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (0,1 bis 10)"
+
+msgid "%ds"
+msgstr "%d Sek."
+
+msgid "%dm %ds"
+msgstr "%d Min. %d Sek."
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "Nicht unterstützte Textkodierung. UTF-8 verwenden."
+
+msgid "This file is empty."
+msgstr "Diese Datei ist leer."
+
+msgid "Queue checkpoint is still saving"
+msgstr "Die Warteschlange wird noch gespeichert."
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "Bestbewertet"
+
+msgid "Preparing music library..."
+msgstr "Musikbibliothek wird vorbereitet …"
+
+msgid "Preparing metadata refresh..."
+msgstr "Metadatenaktualisierung wird vorbereitet …"
+
+msgid "Preparing metadata refresh"
+msgstr "Metadatenaktualisierung wird vorbereitet"
+
+msgid "Looking for music files"
+msgstr "Musikdateien werden gesucht"
+
+msgid "Saving music database"
+msgstr "Musikdatenbank wird gespeichert"
+

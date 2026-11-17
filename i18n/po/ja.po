@@ -3619,7 +3619,7 @@ msgid "All Albums"
 msgstr "すべてのアルバム"
 
 msgid "Top Rated"
-msgstr "高評価"
+msgstr "高評価の曲"
 
 msgid "Random"
 msgstr "ランダム"
@@ -4203,15 +4203,6 @@ msgstr "検索"
 msgid "Wired"
 msgstr "有線"
 
-msgid "Stop updating the library?"
-msgstr "ライブラリの更新を中止しますか?"
-
-msgid "Changes found so far may not be saved."
-msgstr "ここまでに見つかった変更は保存されない場合があります。"
-
-msgid "Updating the library. This may take a while."
-msgstr "ライブラリを更新しています。しばらくかかる場合があります。"
-
 msgid "Connections"
 msgstr "接続"
 
@@ -4241,3 +4232,65 @@ msgstr "USBストレージをマウントできませんでした"
 
 msgid "Wireless ADB"
 msgstr "ワイヤレスADB"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "星3つ以上のアルバムはまだありません。"
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "星3つ以上の曲はまだありません。"
+
+msgid "Rate album"
+msgstr "アルバムを評価"
+
+msgid "Rate song"
+msgstr "曲を評価"
+
+msgid "Rating"
+msgstr "評価"
+
+msgid "Top rated"
+msgstr "高評価の曲"
+
+msgid "Top rated albums"
+msgstr "高評価のアルバム"
+
+msgid "Unrated"
+msgstr "未評価"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (0.1～10)"
+
+msgid "%ds"
+msgstr "%d秒"
+
+msgid "%dm %ds"
+msgstr "%d分 %d秒"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "未対応のテキスト形式です。UTF-8を使用してください。"
+
+msgid "This file is empty."
+msgstr "このファイルは空です。"
+
+msgid "Queue checkpoint is still saving"
+msgstr "キューをまだ保存しています。"
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "高評価のアルバム"
+
+msgid "Preparing music library..."
+msgstr "音楽ライブラリを準備中…"
+
+msgid "Preparing metadata refresh..."
+msgstr "メタデータの更新を準備中…"
+
+msgid "Preparing metadata refresh"
+msgstr "メタデータの更新を準備中"
+
+msgid "Looking for music files"
+msgstr "音楽ファイルを検索中"
+
+msgid "Saving music database"
+msgstr "音楽データベースを保存中"
+

@@ -1155,14 +1155,14 @@ msgid ""
 "Refreshing\n"
 "all metadata..."
 msgstr ""
-"Actualizando\n"
+"Refrescando\n"
 "todos los metadatos..."
 
 msgid ""
 "Refreshing\n"
 "metadata..."
 msgstr ""
-"Actualizando\n"
+"Refrescando\n"
 "metadatos..."
 
 msgid ""
@@ -1188,7 +1188,7 @@ msgid ""
 "Refreshing\n"
 "all covers..."
 msgstr ""
-"Actualizando\n"
+"Refrescando\n"
 "todas las carátulas..."
 
 msgid ""
@@ -1230,7 +1230,7 @@ msgid ""
 "Refreshing covers\n"
 "%d of %d (%d%%)"
 msgstr ""
-"Actualizando carátulas\n"
+"Refrescando carátulas\n"
 "%d de %d (%d%%)"
 
 #, c-format
@@ -2198,10 +2198,10 @@ msgid "Gain (dB, -12 to 12)"
 msgstr "Ganancia (dB, -12 a 12)"
 
 msgid "OFF"
-msgstr "NO"
+msgstr "OFF"
 
 msgid "ON"
-msgstr "SÍ"
+msgstr "ON"
 
 msgid "EQ curve"
 msgstr "Curva del EQ"
@@ -3832,7 +3832,7 @@ msgid "All Albums"
 msgstr "Todos los álbumes"
 
 msgid "Top Rated"
-msgstr "Mejor valorados"
+msgstr "Mejor valoradas"
 
 msgid "Random"
 msgstr "Aleatorio"
@@ -4422,15 +4422,6 @@ msgstr "Buscar"
 msgid "Wired"
 msgstr "Por cable"
 
-msgid "Stop updating the library?"
-msgstr "¿Detener la actualización de la biblioteca?"
-
-msgid "Changes found so far may not be saved."
-msgstr "Puede que no se guarden los cambios encontrados hasta ahora."
-
-msgid "Updating the library. This may take a while."
-msgstr "Actualizando la biblioteca. Esto puede tardar un rato."
-
 msgid "Too demanding for this device"
 msgstr "Demasiado exigente para este dispositivo"
 
@@ -4457,3 +4448,68 @@ msgstr "No se pudo montar el almacenamiento USB"
 
 msgid "Wireless ADB"
 msgstr "ADB inalámbrico"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "Aún no hay álbumes con 3 estrellas o más."
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "Aún no hay canciones con 3 estrellas o más."
+
+msgid "Rate album"
+msgstr "Valorar álbum"
+
+msgid "Rate song"
+msgstr "Valorar canción"
+
+msgid "Rating"
+msgstr "Valoración"
+
+msgid "Top rated"
+msgstr "Mejor valoradas"
+
+msgid "Top rated albums"
+msgstr "Álbumes mejor valorados"
+
+msgid "Unrated"
+msgstr "Sin valorar"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (0,1 a 10)"
+
+msgid "%ds"
+msgstr "%d s"
+
+msgid "%dm %ds"
+msgstr "%d min %d s"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "Codificación de texto no compatible. Usa UTF-8."
+
+msgid "This file is empty."
+msgstr "Este archivo está vacío."
+
+msgid "Queue checkpoint is still saving"
+msgstr "El guardado de la cola sigue en curso."
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "Mejor valorados"
+
+msgid "Could not save changes"
+msgstr "No se pudieron guardar los cambios"
+
+msgid "Preparing music library..."
+msgstr "Preparando la biblioteca de música..."
+
+msgid "Preparing metadata refresh..."
+msgstr "Preparando para refrescar los metadatos..."
+
+msgid "Preparing metadata refresh"
+msgstr "Preparando para refrescar los metadatos"
+
+msgid "Looking for music files"
+msgstr "Buscando archivos de música"
+
+msgid "Saving music database"
+msgstr "Guardando la base de datos de música"
+

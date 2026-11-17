@@ -4428,15 +4428,6 @@ msgstr "Rechercher"
 msgid "Wired"
 msgstr "Filaire"
 
-msgid "Stop updating the library?"
-msgstr "Arrêter la mise à jour de la bibliothèque ?"
-
-msgid "Changes found so far may not be saved."
-msgstr "Les changements trouvés jusqu'ici risquent de ne pas être enregistrés."
-
-msgid "Updating the library. This may take a while."
-msgstr "Mise à jour de la bibliothèque. Cela peut prendre un moment."
-
 msgid "Too demanding for this device"
 msgstr "Trop exigeant pour cet appareil"
 
@@ -4463,3 +4454,65 @@ msgstr "Impossible de monter le stockage USB"
 
 msgid "Wireless ADB"
 msgstr "ADB sans fil"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "Aucun album noté 3 étoiles ou plus pour le moment."
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "Aucun morceau noté 3 étoiles ou plus pour le moment."
+
+msgid "Rate album"
+msgstr "Noter l’album"
+
+msgid "Rate song"
+msgstr "Noter le morceau"
+
+msgid "Rating"
+msgstr "Note"
+
+msgid "Top rated"
+msgstr "Les mieux notés"
+
+msgid "Top rated albums"
+msgstr "Albums les mieux notés"
+
+msgid "Unrated"
+msgstr "Non notés"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (0,1 à 10)"
+
+msgid "%ds"
+msgstr "%d s"
+
+msgid "%dm %ds"
+msgstr "%d min %d s"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "Encodage du texte non pris en charge. Utilisez UTF-8."
+
+msgid "This file is empty."
+msgstr "Ce fichier est vide."
+
+msgid "Queue checkpoint is still saving"
+msgstr "L’enregistrement de la file est toujours en cours."
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "Les mieux notés"
+
+msgid "Preparing music library..."
+msgstr "Préparation de la bibliothèque musicale..."
+
+msgid "Preparing metadata refresh..."
+msgstr "Préparation de l'actualisation des métadonnées..."
+
+msgid "Preparing metadata refresh"
+msgstr "Préparation de l'actualisation des métadonnées"
+
+msgid "Looking for music files"
+msgstr "Recherche des fichiers musicaux"
+
+msgid "Saving music database"
+msgstr "Enregistrement de la base musicale"
+

@@ -3619,7 +3619,7 @@ msgid "All Albums"
 msgstr "Tất cả album"
 
 msgid "Top Rated"
-msgstr "Được đánh giá cao nhất"
+msgstr "Được đánh giá cao"
 
 msgid "Random"
 msgstr "Ngẫu nhiên"
@@ -4203,15 +4203,6 @@ msgstr "Tìm kiếm"
 msgid "Wired"
 msgstr "Có dây"
 
-msgid "Stop updating the library?"
-msgstr "Dừng cập nhật thư viện?"
-
-msgid "Changes found so far may not be saved."
-msgstr "Các thay đổi tìm thấy đến giờ có thể không được lưu."
-
-msgid "Updating the library. This may take a while."
-msgstr "Đang cập nhật thư viện. Việc này có thể mất một lúc."
-
 msgid "Connections"
 msgstr "Kết nối"
 
@@ -4241,3 +4232,65 @@ msgstr "Không thể gắn bộ nhớ USB"
 
 msgid "Wireless ADB"
 msgstr "ADB không dây"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "Chưa có album nào được đánh giá từ 3 sao."
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "Chưa có bài hát nào được đánh giá từ 3 sao."
+
+msgid "Rate album"
+msgstr "Đánh giá album"
+
+msgid "Rate song"
+msgstr "Đánh giá bài hát"
+
+msgid "Rating"
+msgstr "Đánh giá"
+
+msgid "Top rated"
+msgstr "Được đánh giá cao"
+
+msgid "Top rated albums"
+msgstr "Album được đánh giá cao"
+
+msgid "Unrated"
+msgstr "Chưa đánh giá"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (0,1 đến 10)"
+
+msgid "%ds"
+msgstr "%d giây"
+
+msgid "%dm %ds"
+msgstr "%d phút %d giây"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "Mã hóa văn bản không được hỗ trợ. Hãy dùng UTF-8."
+
+msgid "This file is empty."
+msgstr "Tệp này trống."
+
+msgid "Queue checkpoint is still saving"
+msgstr "Đang lưu hàng đợi."
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "Được đánh giá cao"
+
+msgid "Preparing music library..."
+msgstr "Đang chuẩn bị thư viện nhạc..."
+
+msgid "Preparing metadata refresh..."
+msgstr "Đang chuẩn bị làm mới siêu dữ liệu..."
+
+msgid "Preparing metadata refresh"
+msgstr "Đang chuẩn bị làm mới siêu dữ liệu"
+
+msgid "Looking for music files"
+msgstr "Đang tìm tệp nhạc"
+
+msgid "Saving music database"
+msgstr "Lưu cơ sở dữ liệu âm nhạc"
+

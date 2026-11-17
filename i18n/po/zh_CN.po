@@ -3877,7 +3877,7 @@ msgid "All Albums"
 msgstr "所有专辑"
 
 msgid "Top Rated"
-msgstr "评分最高"
+msgstr "高分歌曲"
 
 msgid "Random"
 msgstr "随机"
@@ -4461,15 +4461,6 @@ msgstr "搜索"
 msgid "Wired"
 msgstr "有线"
 
-msgid "Stop updating the library?"
-msgstr "停止更新媒体库?"
-
-msgid "Changes found so far may not be saved."
-msgstr "目前找到的更改可能不会保存。"
-
-msgid "Updating the library. This may take a while."
-msgstr "正在更新媒体库，可能需要一些时间。"
-
 msgid "Connections"
 msgstr "连接"
 
@@ -4499,3 +4490,65 @@ msgstr "无法挂载 USB 存储"
 
 msgid "Wireless ADB"
 msgstr "无线 ADB"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "还没有获评3星及以上的专辑。"
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "还没有获评3星及以上的歌曲。"
+
+msgid "Rate album"
+msgstr "评价专辑"
+
+msgid "Rate song"
+msgstr "评价歌曲"
+
+msgid "Rating"
+msgstr "评分"
+
+msgid "Top rated"
+msgstr "高分歌曲"
+
+msgid "Top rated albums"
+msgstr "高分专辑"
+
+msgid "Unrated"
+msgstr "未评分"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q（0.1 至 10）"
+
+msgid "%ds"
+msgstr "%d秒"
+
+msgid "%dm %ds"
+msgstr "%d分 %d秒"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "不支持此文本编码。请使用 UTF-8。"
+
+msgid "This file is empty."
+msgstr "此文件为空。"
+
+msgid "Queue checkpoint is still saving"
+msgstr "队列仍在保存。"
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "高分专辑"
+
+msgid "Preparing music library..."
+msgstr "正在准备媒体库..."
+
+msgid "Preparing metadata refresh..."
+msgstr "正在准备刷新元数据..."
+
+msgid "Preparing metadata refresh"
+msgstr "正在准备刷新元数据"
+
+msgid "Looking for music files"
+msgstr "正在查找音乐文件"
+
+msgid "Saving music database"
+msgstr "正在保存音乐数据库"
+

@@ -3834,7 +3834,7 @@ msgid "All Albums"
 msgstr "Все альбомы"
 
 msgid "Top Rated"
-msgstr "Лучшие по рейтингу"
+msgstr "С высокой оценкой"
 
 msgid "Random"
 msgstr "Случайные"
@@ -4418,15 +4418,6 @@ msgstr "Поиск"
 msgid "Wired"
 msgstr "Проводной"
 
-msgid "Stop updating the library?"
-msgstr "Остановить обновление библиотеки?"
-
-msgid "Changes found so far may not be saved."
-msgstr "Найденные изменения могут не сохраниться."
-
-msgid "Updating the library. This may take a while."
-msgstr "Обновление библиотеки. Это может занять некоторое время."
-
 msgid "Too demanding for this device"
 msgstr "Слишком ресурсоёмко для этого устройства"
 
@@ -4453,3 +4444,65 @@ msgstr "Не удалось подключить USB-накопитель"
 
 msgid "Wireless ADB"
 msgstr "Беспроводной ADB"
+
+msgid "No albums rated 3 stars or more yet."
+msgstr "Пока нет альбомов с оценкой от 3 звёзд."
+
+msgid "No songs rated 3 stars or more yet."
+msgstr "Пока нет песен с оценкой от 3 звёзд."
+
+msgid "Rate album"
+msgstr "Оценить альбом"
+
+msgid "Rate song"
+msgstr "Оценить песню"
+
+msgid "Rating"
+msgstr "Оценка"
+
+msgid "Top rated"
+msgstr "С высокой оценкой"
+
+msgid "Top rated albums"
+msgstr "Альбомы с высокой оценкой"
+
+msgid "Unrated"
+msgstr "Без оценки"
+
+msgid "Q (0.1 to 10)"
+msgstr "Q (от 0,1 до 10)"
+
+msgid "%ds"
+msgstr "%d с"
+
+msgid "%dm %ds"
+msgstr "%d мин %d с"
+
+msgid "Unsupported text encoding. Use UTF-8."
+msgstr "Кодировка текста не поддерживается. Используйте UTF-8."
+
+msgid "This file is empty."
+msgstr "Этот файл пуст."
+
+msgid "Queue checkpoint is still saving"
+msgstr "Сохранение очереди ещё выполняется."
+
+msgctxt "albums"
+msgid "Top rated"
+msgstr "С высокой оценкой"
+
+msgid "Preparing music library..."
+msgstr "Подготовка музыкальной библиотеки..."
+
+msgid "Preparing metadata refresh..."
+msgstr "Подготовка обновления метаданных..."
+
+msgid "Preparing metadata refresh"
+msgstr "Подготовка обновления метаданных"
+
+msgid "Looking for music files"
+msgstr "Ищу музыкальные файлы"
+
+msgid "Saving music database"
+msgstr "Сохранение музыкальной базы данных"
+
