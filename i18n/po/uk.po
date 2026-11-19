@@ -4487,3 +4487,6 @@ msgstr "Пошук музичних файлів"
 msgid "Saving music database"
 msgstr "Збереження музичної бази даних"
 
+
+msgid "iPhone users must stay on this screen to use USB DAC mode with your %s."
+msgstr "Власникам iPhone потрібно залишатися на цьому екрані, щоб використовувати режим USB-ЦАП із %s."

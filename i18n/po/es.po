@@ -4513,3 +4513,6 @@ msgstr "Buscando archivos de música"
 msgid "Saving music database"
 msgstr "Guardando la base de datos de música"
 
+
+msgid "iPhone users must stay on this screen to use USB DAC mode with your %s."
+msgstr "Si usas un iPhone, quédate en esta pantalla para usar el modo DAC USB con tu %s."

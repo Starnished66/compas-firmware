@@ -4464,3 +4464,6 @@ msgstr "Musikdateien werden gesucht"
 msgid "Saving music database"
 msgstr "Musikdatenbank wird gespeichert"
 
+
+msgid "iPhone users must stay on this screen to use USB DAC mode with your %s."
+msgstr "iPhone-Nutzer müssen auf diesem Bildschirm bleiben, um den USB-DAC-Modus mit ihrem %s zu verwenden."

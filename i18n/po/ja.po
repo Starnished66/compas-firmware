@@ -4294,3 +4294,6 @@ msgstr "音楽ファイルを検索中"
 msgid "Saving music database"
 msgstr "音楽データベースを保存中"
 
+
+msgid "iPhone users must stay on this screen to use USB DAC mode with your %s."
+msgstr "iPhone をお使いの場合、%s で USB DAC モードを使うにはこの画面を開いたままにしてください。"
