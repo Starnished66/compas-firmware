@@ -22,6 +22,7 @@ Mapping (icons/<path>, after following the repository's symlinks):
   breeze_download.png  <- actions/22/download.svg (edit-download.svg)
   breeze_refresh.png   <- actions/22/view-refresh.svg
   breeze_sort.png      <- actions/22/view-sort-ascending.svg
+  breeze_settings.png  <- actions/22/configure.svg (settings-configure.svg)
   breeze_favorite.png  <- emblems/22/emblem-favorite.svg (rating.svg)
   breeze_favorite_off.png <- emblems/22/rating-unrated.svg
   breeze_handle.png    <- actions/22/handle-sort.svg, padding trimmed to fill the
@@ -29,7 +30,8 @@ Mapping (icons/<path>, after following the repository's symlinks):
 
 Used in place of these title-bar assets, which remain the fallback:
   navigation/back.png, navigation/search.png, navigation/more.png,
-  settings/sound.png, settings/playback.png, submenu/music_database.png,
+  settings/sound.png, settings/playback.png, sub_back/set.png,
+  submenu/music_database.png,
   playlist_actions/trash.png, stream_media/download.png,
   playing_plane/collect_in.png, playing_plane/collect_out.png
   (text reader title bar), and the LV_SYMBOL_REFRESH glyph of the
