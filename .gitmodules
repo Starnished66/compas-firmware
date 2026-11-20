@@ -1,0 +1,3 @@
+[submodule "firmware/kernel"]
+	path = firmware/kernel
+	url = https://github.com/Starnished66/compas-kernel.git

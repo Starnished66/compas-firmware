@@ -65,8 +65,8 @@
     },
     "added_module_sources": {
       "axp2101_wake": {
-        "repo": "https://github.com/Starnished66/hiby-custom-kernel.git",
-        "upstream": "https://github.com/Jepl4r/hiby-custom-kernel",
+        "repo": "https://github.com/Starnished66/compas-kernel.git",
+        "upstream": "Jepl4r/hiby-custom-kernel (removed; its history is in compas-kernel)",
         "path": "modules/axp2101_wake",
         "commit": "5caa1fcf5c108e03b0f6a6616f55782bcd969577"
       }

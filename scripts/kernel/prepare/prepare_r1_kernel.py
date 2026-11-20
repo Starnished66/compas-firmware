@@ -22,7 +22,7 @@ import sys
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[3]
 PIN_PATH = REPO_ROOT / "firmware/kernel/upstream.json"
 EXPECTED_COMMIT = "e1c5915290197ba01297e3f7c53f37197e0b1f9c"
-UPSTREAM_REPO_URL = "https://github.com/Jepl4r/hiby-custom-kernel"
+UPSTREAM_REPO_URL = "https://github.com/Starnished66/compas-kernel"
 SDK_GLOB_PREFIX = "ingenic-linux-kernel4.4.94-x1600-"
 DOCKER_IMAGE = "hiby-custom-kernel"
 WIFI_FRAGMENTS = {"brcmfmac": "compas-r1-brcmfmac.config"}

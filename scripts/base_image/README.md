@@ -265,12 +265,12 @@ the matching official vendor kernel and modules as one unit; otherwise keep
 
 ### Experimental source-built R1 kernel
 
-`firmware/kernel/upstream.json` pins Jepl4r's
-[hiby-custom-kernel](https://github.com/Jepl4r/hiby-custom-kernel), which builds
+`firmware/kernel/upstream.json` pins the kernel kit in
+[compas-kernel](https://github.com/Starnished66/compas-kernel) (Jepl4r's hiby-custom-kernel, with its history), which builds
 4.4.94+ from the external Ingenic SDK and preserves the R1 device tree and
 vendor-module ABI. Its credits include
 [MatthewBriggs's R1 kernel work](https://github.com/MatthewBriggs/hiby-r1-linux-kernel-compiling).
-The kernel source/toolchain SDK is not bundled or available in this checkout.
+The SDK is not in this checkout; compas-kernel's `sdk-x1600-v6.0-20240606` release has a copy.
 
 Prepare an isolated workspace from a clean checkout at the pinned commit and
 the extracted **base firmware's** `xImage`:
