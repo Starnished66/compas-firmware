@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Validate the images in a build output directory. For every image: it unpacks,
 # ota_update.in satisfies the player's strict parser (firmware_image.c parse_manifest) and the
-# kernel/rootfs chunk chains and chain files exist and the image holds no record the player's OTA validator rejects
-# (such as ota_compatibility.in). HiBy boards: branding assets match the tracked
+# kernel/rootfs chunk chains and chain files exist and the image holds no record the player's OTA validator rejects.
+# r1.upt carries HiBy 2.0's ota_compatibility.in (since v1.6.1). HiBy boards: branding assets match the tracked
 # sources, the shipped player is the one in OUT_DIR and no file carries the build machine's paths or forbidden
 # words (the path rule is report-only except for r1, see check_no_build_paths below). R1: the Compas Bluetooth stack,
 # not HiBy's stock one. V1: the player carries its board marker,
@@ -228,6 +228,8 @@ for board in r1 r3proii r3ii_2025; do
     root=$work/$board/root
     check_manifest "$work/$board/upt/ota_v0"
     check_ota_entries "$work/$board/upt" "$board.upt"
+    [[ $board != r1 || -s $work/$board/upt/ota_v0/ota_compatibility.in ]] || {
+        echo "r1.upt: ota_v0/ota_compatibility.in is missing; HiBy 2.0 units need it" >&2; exit 1; }
     for logo in logo.jpeg logo1.jpeg logo2.jpeg; do cmp -- "$logo_src" "$root/etc/$logo"; done
     cmp -- "$theme_src/boot_animation/en/0.jpg" "$root/usr/resource/litegui/theme2/boot_animation/en/0.jpg"
     cmp -- "$theme_src/boot_animation/en/0.png" "$root/usr/resource/litegui/theme2/boot_animation/en/0.png"

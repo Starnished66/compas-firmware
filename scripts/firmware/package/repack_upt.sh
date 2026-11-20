@@ -1467,8 +1467,11 @@ img_name=$root_name
 img_size=$root_size
 img_md5=$root_md5
 EOF
-# HiBy 2.0 bases carry ota_v0/ota_compatibility.in. It is deliberately not copied: the player's
-# firmware_image.c rejects any entry it does not know, and players already in the field cannot change.
+# HiBy 2.0 bases carry ota_v0/ota_compatibility.in, which HiBy 2.0 recovery needs to accept the image.
+# R1 images ship it since v1.6.1: players from v1.6.0 on accept the record in-app (older ones do not).
+if [[ $board == r1 && -f $ota_dir/ota_compatibility.in ]]; then
+    cp -- "$ota_dir/ota_compatibility.in" "$work/new-iso/ota_v0/ota_compatibility.in"
+fi
 : > "$work/new-iso/ota_v0/ota_v0.ok"
 echo 'current_version=0' > "$work/new-iso/ota_config.in"
 

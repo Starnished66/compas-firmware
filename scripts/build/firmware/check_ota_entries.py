@@ -3,10 +3,10 @@
 
 Usage: check_ota_entries.py UNPACKED_UPT_DIR
 
-The player (firmware_image.c) accepts only ota_config.in and, in ota_v0, ota_update.in, ota_v0.ok, the
-ota_md5_* chain lists and the xImage / rootfs.squashfs chunks. Anything else, such as HiBy 2.0's
-ota_v0/ota_compatibility.in, makes every in-app update fail with "unexpected OTA image record", and
-players already in the field cannot change. Exit status: 0 clean, 1 unexpected entries, 2 usage error.
+The player (firmware_image.c) accepts only ota_config.in and, in ota_v0, ota_update.in, ota_v0.ok,
+ota_compatibility.in (since v1.6.0), the ota_md5_* chain lists and the xImage / rootfs.squashfs chunks.
+Anything else makes every in-app update fail with "unexpected OTA image record", and players already in
+the field cannot change. Exit status: 0 clean, 1 unexpected entries, 2 usage error.
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ import re
 import sys
 
 ALLOWED = re.compile(
-    r"(?:ota_config\.in|ota_v0|ota_v0/(?:ota_update\.in|ota_v0\.ok|"
+    r"(?:ota_config\.in|ota_v0|ota_v0/(?:ota_update\.in|ota_v0\.ok|ota_compatibility\.in|"
     r"ota_md5_(?:rootfs\.squashfs|xImage)\.[0-9a-f]{32}|"
     r"(?:rootfs\.squashfs|xImage)\.[0-9]{4}\.[0-9a-f]{32}))")
 

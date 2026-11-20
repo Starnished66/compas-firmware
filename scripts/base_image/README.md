@@ -166,7 +166,7 @@ HiBy 2.0: the remaining module scripts and `.ko` files (`axp2101`, `cywdhd`, `sa
 `aic8800_*`), `r1_wireless_select.sh` and the loaders it runs, all of `/lib/firmware` (Broadcom and AIC8800
 firmware; the base's `brcm/` directory is kept), the AIC userspace (`aic_radio.sh`, `bt_enable_aic.sh`, `bt_test`,
 `S52wifi_aic_init_config`, `bt_enable`, `bt_disable`, `wifi_off.sh`), HiBy's `wifi_on.sh` as
-`usr/libexec/compas/wifi_on.vendor.sh`. HiBy 2.0's `ota_v0/ota_compatibility.in` stays in the base but the weekly image does not ship it: the player's OTA validator rejects unknown records. `bt_init`, `bt_resume` and `bt_suspend` stay the
+`usr/libexec/compas/wifi_on.vendor.sh`. HiBy 2.0's `ota_v0/ota_compatibility.in` stays in the base and the R1 image ships it since v1.6.1 (players from v1.6.0 on accept it). `bt_init`, `bt_resume` and `bt_suspend` stay the
 base's scripts (hardened rfkill handling, `bluealsad`) plus HiBy's AIC branches, applied with the patches in
 `scripts/base_image/r1_v2/patches` (the base script's hash is checked first). The base-system layer is reused
 from the staging base rather than rebuilt: HiBy 2.0 ships the same glibc 2.22, D-Bus, GLib, BlueZ, zlib and Expat

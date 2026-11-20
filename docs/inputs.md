@@ -138,8 +138,9 @@ with toolchain paths (`scripts/build/firmware/vendor_home_paths_pending.txt` lis
 the findings are warnings. Pin the files or rebuild the bases, then drop `--warn-only` in `validate_images.sh`.
 The forbidden words always fail, on every board.
 
-The weekly image never carries `ota_v0/ota_compatibility.in` (HiBy 2.0 bases have it): the player's OTA validator
-rejects unknown records, and players already in the field cannot be changed. `check_ota_entries.py` enforces this.
+Since v1.6.1 the R1 image carries the base's `ota_v0/ota_compatibility.in`, so HiBy 2.0 units install it and no
+separate compatibility image is needed. Players from v1.6.0 on accept the record in-app; older players reject it,
+so they update to v1.6.0 first or flash the full image. `check_ota_entries.py` rejects any other unknown record.
 
 ## V1 zram kernel refresh
 
