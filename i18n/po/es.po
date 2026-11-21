@@ -557,8 +557,17 @@ msgstr "desconocido"
 msgid "Cannot play folder"
 msgstr "No se puede reproducir la carpeta"
 
+msgid "Paused"
+msgstr "En pausa"
+
+msgid "Paused while MSEB is on"
+msgstr "En pausa mientras MSEB está activado"
+
 msgid "Paused: headphones disconnected"
 msgstr "En pausa: audífonos desconectados"
+
+msgid "Pauses the Equalizer while on"
+msgstr "Pausa el ecualizador mientras está activado"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Falló el punto de control de la cola; el almacenamiento puede ser de solo lectura"

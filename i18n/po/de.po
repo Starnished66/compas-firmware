@@ -538,8 +538,17 @@ msgstr "unbekannt"
 msgid "Cannot play folder"
 msgstr "Ordner kann nicht wiedergegeben werden"
 
+msgid "Paused"
+msgstr "Pausiert"
+
+msgid "Paused while MSEB is on"
+msgstr "Pausiert, solange MSEB an ist"
+
 msgid "Paused: headphones disconnected"
 msgstr "Pausiert: Kopfhörer getrennt"
+
+msgid "Pauses the Equalizer while on"
+msgstr "Pausiert den Equalizer, solange es an ist"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Warteschlangen-Prüfpunkt fehlgeschlagen; Speicher ist möglicherweise schreibgeschützt"

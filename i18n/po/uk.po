@@ -538,8 +538,17 @@ msgstr "невідомо"
 msgid "Cannot play folder"
 msgstr "Не вдалося відтворити папку"
 
+msgid "Paused"
+msgstr "Призупинено"
+
+msgid "Paused while MSEB is on"
+msgstr "Призупинено, поки ввімкнено MSEB"
+
 msgid "Paused: headphones disconnected"
 msgstr "Пауза: навушники від’єднано"
+
+msgid "Pauses the Equalizer while on"
+msgstr "Призупиняє еквалайзер, поки увімкнено"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Не вдалося зберегти стан черги; можливо, сховище доступне лише для читання"

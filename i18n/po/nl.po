@@ -540,8 +540,17 @@ msgstr "onbekend"
 msgid "Cannot play folder"
 msgstr "Kan map niet afspelen"
 
+msgid "Paused"
+msgstr "Gepauzeerd"
+
+msgid "Paused while MSEB is on"
+msgstr "Gepauzeerd zolang MSEB aan staat"
+
 msgid "Paused: headphones disconnected"
 msgstr "Gepauzeerd: koptelefoon losgekoppeld"
+
+msgid "Pauses the Equalizer while on"
+msgstr "Pauzeert de equalizer zolang het aan staat"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Wachtrijcontrolepunt mislukt; opslag is mogelijk alleen-lezen"

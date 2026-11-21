@@ -562,8 +562,17 @@ msgstr "desconhecido"
 msgid "Cannot play folder"
 msgstr "Não é possível tocar a pasta"
 
+msgid "Paused"
+msgstr "Em pausa"
+
+msgid "Paused while MSEB is on"
+msgstr "Em pausa enquanto o MSEB estiver ativado"
+
 msgid "Paused: headphones disconnected"
 msgstr "Pausado: fones desconectados"
+
+msgid "Pauses the Equalizer while on"
+msgstr "Pausa o equalizador enquanto estiver ativado"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Falha ao salvar a fila; o armazenamento pode estar somente leitura"

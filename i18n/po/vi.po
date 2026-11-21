@@ -525,8 +525,17 @@ msgstr "Không rõ"
 msgid "Cannot play folder"
 msgstr "Không thể phát thư mục"
 
+msgid "Paused"
+msgstr "Tạm dừng"
+
+msgid "Paused while MSEB is on"
+msgstr "Tạm dừng khi MSEB đang bật"
+
 msgid "Paused: headphones disconnected"
 msgstr "Đã tạm dừng: tai nghe đã bị ngắt kết nối"
+
+msgid "Pauses the Equalizer while on"
+msgstr "Tạm dừng bộ chỉnh âm khi đang bật"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Điểm kiểm tra hàng đợi không thành công; bộ nhớ có thể ở chế độ chỉ đọc"

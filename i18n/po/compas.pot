@@ -554,7 +554,16 @@ msgstr ""
 msgid "Cannot play folder"
 msgstr ""
 
+msgid "Paused"
+msgstr ""
+
+msgid "Paused while MSEB is on"
+msgstr ""
+
 msgid "Paused: headphones disconnected"
+msgstr ""
+
+msgid "Pauses the Equalizer while on"
 msgstr ""
 
 msgid "Queue checkpoint failed; storage may be read-only"

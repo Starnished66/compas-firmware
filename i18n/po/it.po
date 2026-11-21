@@ -563,8 +563,17 @@ msgstr "sconosciuto"
 msgid "Cannot play folder"
 msgstr "Impossibile riprodurre la cartella"
 
+msgid "Paused"
+msgstr "In pausa"
+
+msgid "Paused while MSEB is on"
+msgstr "In pausa finché MSEB è attivo"
+
 msgid "Paused: headphones disconnected"
 msgstr "In pausa: cuffie scollegate"
+
+msgid "Pauses the Equalizer while on"
+msgstr "Mette in pausa l'equalizzatore quando è attivo"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Checkpoint della coda non riuscito; l'archiviazione potrebbe essere di sola lettura"

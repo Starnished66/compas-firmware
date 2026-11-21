@@ -525,8 +525,17 @@ msgstr "不明"
 msgid "Cannot play folder"
 msgstr "フォルダーを再生できません"
 
+msgid "Paused"
+msgstr "一時停止中"
+
+msgid "Paused while MSEB is on"
+msgstr "MSEBがオンの間は一時停止"
+
 msgid "Paused: headphones disconnected"
 msgstr "一時停止中：ヘッドホンが切断されました"
+
+msgid "Pauses the Equalizer while on"
+msgstr "オンの間はイコライザーを一時停止します"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "キューのチェックポイント保存に失敗しました。ストレージが読み取り専用の可能性があります"

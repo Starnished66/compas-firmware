@@ -540,8 +540,17 @@ msgstr "tuntematon"
 msgid "Cannot play folder"
 msgstr "Kansiota ei voi toistaa"
 
+msgid "Paused"
+msgstr "Tauolla"
+
+msgid "Paused while MSEB is on"
+msgstr "Tauolla, kun MSEB on päällä"
+
 msgid "Paused: headphones disconnected"
 msgstr "Keskeytetty: kuulokkeet irrotettiin"
+
+msgid "Pauses the Equalizer while on"
+msgstr "Keskeyttää taajuuskorjaimen, kun päällä"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Jonon tarkistuspisteen tallennus epäonnistui; tallennustila voi olla vain luku -tilassa"

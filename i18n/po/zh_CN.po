@@ -558,8 +558,17 @@ msgstr "未知"
 msgid "Cannot play folder"
 msgstr "无法播放文件夹"
 
+msgid "Paused"
+msgstr "已暂停"
+
+msgid "Paused while MSEB is on"
+msgstr "MSEB 开启时已暂停"
+
 msgid "Paused: headphones disconnected"
 msgstr "已暂停：耳机已断开"
+
+msgid "Pauses the Equalizer while on"
+msgstr "开启时暂停均衡器"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "队列检查点失败；存储可能为只读"

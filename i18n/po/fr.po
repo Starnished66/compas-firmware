@@ -563,8 +563,17 @@ msgstr "inconnu"
 msgid "Cannot play folder"
 msgstr "Impossible de lire le dossier"
 
+msgid "Paused"
+msgstr "En pause"
+
+msgid "Paused while MSEB is on"
+msgstr "En pause tant que MSEB est activé"
+
 msgid "Paused: headphones disconnected"
 msgstr "En pause : casque débranché"
+
+msgid "Pauses the Equalizer while on"
+msgstr "Met l'égaliseur en pause lorsqu'il est activé"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Échec de la sauvegarde de la file ; le stockage est peut-être en lecture seule"
