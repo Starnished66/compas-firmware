@@ -567,7 +567,7 @@ msgid "Paused: headphones disconnected"
 msgstr "En pausa: audífonos desconectados"
 
 msgid "Pauses the Equalizer while on"
-msgstr "Pausa el ecualizador mientras está activado"
+msgstr "EQ pausado mientras MSEB está activo"
 
 msgid "Queue checkpoint failed; storage may be read-only"
 msgstr "Falló el punto de control de la cola; el almacenamiento puede ser de solo lectura"
