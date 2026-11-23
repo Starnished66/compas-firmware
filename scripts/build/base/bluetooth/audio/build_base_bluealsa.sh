@@ -44,6 +44,8 @@ grep -q 'Preferring SBC Dual Channel HD' "$run/src/src/a2dp-sbc.c" ||
     { echo 'BlueALSA SBC XQ capability patch not applied' >&2; exit 1; }
 grep -q 'a2dp_ssc_source' "$run/src/src/a2dp.c" ||
     { echo 'BlueALSA SSC patch not applied' >&2; exit 1; }
+grep -q 'pcm_is_near_silent' "$run/src/utils/aplay/aplay.c" ||
+    { echo 'BlueALSA aplay silence-gate patch not applied' >&2; exit 1; }
 for stage in "${stages[@]}"; do cp -a "$stage/usr/." "$sysroot/usr/"; done
 # Libtool .la metadata from staged libraries can cause it to embed the
 # workstation sysroot as an RPATH. pkg-config supplies the required linkage;

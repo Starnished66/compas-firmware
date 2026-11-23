@@ -1,0 +1,44 @@
+--- a/utils/aplay/aplay.c
++++ b/utils/aplay/aplay.c
+@@ -209,6 +209,30 @@
+ 	}
+ }
+ 
++/* HiBy: a paused or muted source can keep sending a tiny repeating signal,
++ * which makes the R1's DAC whistle. True for samples that all stay within one
++ * 16-bit step of zero (about -90 dBFS). */
++static bool pcm_is_near_silent(snd_pcm_format_t format, const void *data, size_t samples) {
++	const int16_t *s16 = data;
++	const int32_t *s32 = data;
++	const int32_t limit = format == SND_PCM_FORMAT_S32_LE ? 1 << 16 : 1 << 8;
++	switch (format) {
++	case SND_PCM_FORMAT_S16_LE:
++		for (size_t i = 0; i < samples; i++)
++			if (s16[i] > 1 || s16[i] < -1)
++				return false;
++		return true;
++	case SND_PCM_FORMAT_S24_LE:
++	case SND_PCM_FORMAT_S32_LE:
++		for (size_t i = 0; i < samples; i++)
++			if (s32[i] > limit || s32[i] < -limit)
++				return false;
++		return true;
++	default:
++		return false;
++	}
++}
++
+ static void print_bt_device_list(void) {
+ 
+ 	static const struct {
+@@ -716,6 +740,10 @@
+ 			if (ret % pcm_format_size != 0)
+ 				warn("Invalid read from BlueALSA source PCM: %zd %% %zd != 0", ret, pcm_format_size);
+ 
++			/* HiBy: the DAC gets exact zeros instead. */
++			if (pcm_is_near_silent(pcm_format, read_buffer.tail, read_samples))
++				memset(read_buffer.tail, 0, read_samples * pcm_format_size);
++
+ #if WITH_LIBSAMPLERATE
+ 			if (use_resampler)
+ 				resampler_convert_to_native_endian_format(read_buffer.tail, read_samples, pcm_format);
