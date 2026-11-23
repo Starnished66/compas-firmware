@@ -21,7 +21,7 @@
   "files": {
     "usr/bin/bluealsa-aplay": {
       "pre_sha256": "f93126e5744cf4449723e7aef55228bc882ae4ed213d7757addc1b7bf00c582c",
-      "post_sha256": "6a3ea72b185de45a99c19b02b958469131d79a80291e4a60abf7c361bec05c17",
+      "post_sha256": "a0fe00733919a99de1a9bd926d6f3ac9bde790f7e48a0d232cf616289ef14ea7",
       "pre_size_bytes": 63428,
       "post_size_bytes": 63428
     },

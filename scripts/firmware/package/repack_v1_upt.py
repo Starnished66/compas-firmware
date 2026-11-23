@@ -60,6 +60,8 @@ FONT_FILES = (
 RUNTIME_FILES = (
     "usr/bin/bluealsad",
     "usr/bin/bluealsactl",
+    # The R1 build carries the #231 silence gate for Bluetooth DAC mode.
+    "usr/bin/bluealsa-aplay",
     "usr/lib/alsa-lib/libasound_module_pcm_bluealsa.so",
     "usr/lib/alsa-lib/libasound_module_ctl_bluealsa.so",
 )
@@ -889,6 +891,7 @@ def verify_only_allowed_changes(before: dict[str, tuple[str, int, str]], after: 
         "usr/bin/bt_init", "usr/bin/bt_init.oem",
         "usr/bin/bt_resume", "usr/bin/bt_resume.oem",
         "usr/bin/bluealsad", "usr/bin/bluealsactl",
+        "usr/bin/bluealsa-aplay", "usr/bin/bluealsa-aplay.oem",
         "usr/lib/alsa-lib/libasound_module_pcm_bluealsa.so",
         "usr/lib/alsa-lib/libasound_module_ctl_bluealsa.so",
         "usr/lib/alsa-lib/stock-v1",
@@ -1108,6 +1111,13 @@ def install_ssc_runtime(r1_root: pathlib.Path, v1_root: pathlib.Path) -> dict[st
             if not dest.is_file() or dest.is_symlink() or backup.exists():
                 raise RepackError(f"expected regular OEM ALSA module or empty backup path: {dest}")
             backup.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(dest, backup)
+            dest.unlink()
+        elif dest.exists() or dest.is_symlink():
+            # A stock V1 tool (bluealsa-aplay): keep it as .oem until the final OS cleanup.
+            backup = dest.with_name(dest.name + ".oem")
+            if not dest.is_file() or dest.is_symlink() or backup.exists() or backup.is_symlink():
+                raise RepackError(f"expected regular OEM file or empty backup path: {dest}")
             shutil.copy2(dest, backup)
             dest.unlink()
         copied[src.name] = copy_explicit_file(src, dest, "approved R1 runtime")

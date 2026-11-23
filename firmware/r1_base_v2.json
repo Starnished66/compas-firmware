@@ -128,7 +128,7 @@
     }
   ],
   "base_layer_clean_rebuilds": {
-    "note": "Rebuilds of base-system layer binaries whose __FILE__ strings carried the build machine's home path. Same versions, configure options and patches as the staging base; built with the Ingenic GCC 5.2 toolchain by scripts/build/base/* (relative configure path, -fdebug-prefix-map), then stripped with --strip-unneeded. Instruction streams equal the staging base's apart from address immediates. build_r1_base_v2.py --clean-binaries DIR supplies them.",
+    "note": "Rebuilds of base-system layer binaries whose __FILE__ strings carried the build machine's home path. Same versions, configure options and patches as the staging base; built with the Ingenic GCC 5.2 toolchain by scripts/build/base/* (relative configure path, -fdebug-prefix-map), then stripped with --strip-unneeded. Instruction streams equal the staging base's apart from address immediates. build_r1_base_v2.py --clean-binaries DIR supplies them. Exception: usr/bin/bluealsa-aplay also carries scripts/base_image/patches/bluealsa/bluealsa-aplay-silence-gate.patch (#231), so its post hash is that build.",
     "files": {
       "usr/bin/amixer": {
         "pre_sha256": "016f43bfecb3a8793a6d3c996a928c847bffa43968d89a85f55ee15747a9db64",
@@ -140,7 +140,7 @@
       },
       "usr/bin/bluealsa-aplay": {
         "pre_sha256": "f93126e5744cf4449723e7aef55228bc882ae4ed213d7757addc1b7bf00c582c",
-        "post_sha256": "6a3ea72b185de45a99c19b02b958469131d79a80291e4a60abf7c361bec05c17"
+        "post_sha256": "a0fe00733919a99de1a9bd926d6f3ac9bde790f7e48a0d232cf616289ef14ea7"
       },
       "usr/bin/bluetoothctl": {
         "pre_sha256": "c7827d6f19e803622cca2de4d1ea3b6300965863752f9c02d94966c3c5a00c17",
