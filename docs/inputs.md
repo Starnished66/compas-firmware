@@ -6,7 +6,7 @@ SHA-256 that is tracked in this repository (no secrets are involved).
 | Input | Used for | Source | Pin |
 | --- | --- | --- | --- |
 | `r1.upt`, `r3proii.upt`, `r3ii_2025.upt` | prepared base images (kernel, drivers, base system) | public `compas-player` release `staging-image-base` | `firmware/inputs.sha256` (equal to the release asset digests) |
-| `r1.upt` base on HiBy R1 2.0 | next R1 base: Compás kernel, 23 rebuilt modules, HiBy 2.0 vendor modules and AIC8800 support | built by `scripts/base_image/build_r1_base_v2.py` from the vendor UPT and the current staging base | `firmware/r1_base_v2.json` (HiBy 2.0 UPT `0fec88bb...`) |
+| `r1.upt` base on HiBy R1 2.0 | how the published R1 base is made: Compás kernel, 23 rebuilt modules, HiBy 2.0 vendor modules and AIC8800 support | built by `scripts/base_image/build_r1_base_v2.py` from the vendor UPT and the pre-2.0 staging base | `firmware/r1_base_v2.json` (HiBy 2.0 UPT `0fec88bb...`, staging base `cedb0b05...`) |
 | `bluealsad` | Samsung SSC Bluetooth (BlueALSA 5.0.0 + `bluealsa-ssc.patch`, libssc linked statically) | release `build-inputs` of this repository, asset `bluealsad` | `firmware/ssc-overlay.sha256` |
 | `bluetoothd`, `obexd` | BlueZ 5.87 daemon with the repository patches (AVDTP endpoint rediscovery, AVRCP cover art) and the cover-art-only OBEX daemon | release `build-inputs` of this repository, assets `bluetoothd` and `obexd` | `firmware/ssc-overlay.sha256` |
 | `v1-stock.upt` | official TempoTec V1 1.2 firmware (kernel, recovery, stock rootfs) | release `build-inputs` of this repository, asset `v1-stock.upt` (a byte-identical mirror of the vendor download) | `firmware/inputs.sha256` (`9f929a92...`) |
@@ -14,10 +14,10 @@ SHA-256 that is tracked in this repository (no secrets are involved).
 
 `scripts/build/firmware/fetch_inputs.sh DEST` downloads and verifies all of them.
 
-The R1 base on HiBy 2.0 is not downloaded: build it with `scripts/base_image/build_r1_base_v2.py` (see
-`scripts/base_image/README.md`) from HiBy's public 2.0 firmware (`firmware/vendor_drivers.json` has the URL and
-SHA-256) and the staging base `r1.upt` pinned in `firmware/inputs.sha256`. Until the new base is published to
-`staging-image-base` and its hash replaces the R1 line there, `fetch_inputs.sh` still delivers the 1.8.b2-driver base.
+The R1 base in `staging-image-base` is the HiBy 2.0 base. To rebuild it, run `scripts/base_image/build_r1_base_v2.py`
+(see `scripts/base_image/README.md`) with HiBy's public 2.0 firmware (`firmware/vendor_drivers.json` has the URL and
+SHA-256) and the pre-2.0 staging base pinned in `firmware/r1_base_v2.json`, then publish the result to
+`staging-image-base` and put its hash on the R1 line of `firmware/inputs.sha256`.
 
 Exact assets of release `build-inputs` (tag `build-inputs`):
 
