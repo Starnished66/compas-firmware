@@ -4361,3 +4361,6 @@ msgstr ""
 
 msgid "iPhone users must stay on this screen to use USB DAC mode with your %s."
 msgstr ""
+
+msgid "Could not save changes"
+msgstr ""

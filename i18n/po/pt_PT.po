@@ -4491,3 +4491,6 @@ msgstr "A guardar a base de dados de música"
 
 msgid "iPhone users must stay on this screen to use USB DAC mode with your %s."
 msgstr "Quem utiliza iPhone tem de permanecer neste ecrã para usar o modo DAC USB com o seu %s."
+
+msgid "Could not save changes"
+msgstr "Não foi possível guardar as alterações"

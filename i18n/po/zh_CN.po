@@ -4564,3 +4564,6 @@ msgstr "正在保存音乐数据库"
 
 msgid "iPhone users must stay on this screen to use USB DAC mode with your %s."
 msgstr "iPhone 用户需停留在此界面，才能在 %s 上使用 USB DAC 模式。"
+
+msgid "Could not save changes"
+msgstr "无法保存更改"

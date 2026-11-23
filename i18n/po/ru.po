@@ -4518,3 +4518,6 @@ msgstr "Сохранение музыкальной базы данных"
 
 msgid "iPhone users must stay on this screen to use USB DAC mode with your %s."
 msgstr "Владельцам iPhone нужно оставаться на этом экране, чтобы использовать режим USB-ЦАП с %s."
+
+msgid "Could not save changes"
+msgstr "Не удалось сохранить изменения"

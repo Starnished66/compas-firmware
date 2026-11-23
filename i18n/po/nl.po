@@ -4488,3 +4488,6 @@ msgstr "Muziekdatabase opslaan"
 
 msgid "iPhone users must stay on this screen to use USB DAC mode with your %s."
 msgstr "iPhone-gebruikers moeten op dit scherm blijven om de USB-DAC-modus met hun %s te gebruiken."
+
+msgid "Could not save changes"
+msgstr "Wijzigingen konden niet worden opgeslagen"
