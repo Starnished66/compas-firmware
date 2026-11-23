@@ -2546,8 +2546,8 @@ msgstr "Съешь ещё этих мягких французских 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "Пользовательские шрифты влияют только на латинский текст."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Поместите шрифты .ttf в папку SD/Fonts."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Поместите шрифты .ttf размером до 4 МБ в папку SD/Fonts."
 
 msgid "Screen timeout"
 msgstr "Тайм-аут экрана"

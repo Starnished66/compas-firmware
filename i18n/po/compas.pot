@@ -2559,7 +2559,7 @@ msgstr ""
 msgid "Custom fonts affect Latin text only."
 msgstr ""
 
-msgid "Place .ttf fonts in SD /Fonts folder."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
 msgstr ""
 
 msgid "Screen timeout"

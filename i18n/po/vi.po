@@ -2377,8 +2377,8 @@ msgstr "Cáo nâu nhanh nhẹn nhảy 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "Phông chữ tùy chỉnh chỉ ảnh hưởng đến văn bản Latinh."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Đặt phông chữ .ttf vào thư mục SD /Fonts."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Đặt phông chữ .ttf tối đa 4 MB vào thư mục SD /Fonts."
 
 msgid "Screen timeout"
 msgstr "Thời gian tắt màn hình"

@@ -2527,8 +2527,8 @@ msgstr "Швидка бура лисиця перестрибує 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "Власні шрифти впливають лише на латиницю."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Розмістіть шрифти .ttf у папці /Fonts на SD-картці."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Розмістіть шрифти .ttf розміром до 4 МБ у папці /Fonts на SD-картці."
 
 msgid "Screen timeout"
 msgstr "Час очікування екрана"

@@ -2519,8 +2519,8 @@ msgstr "A rápida raposa castanha salta sobre o cão preguiçoso 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "Os tipos de letra personalizados afetam apenas o texto latino."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Coloque tipos de letra .ttf na pasta /Fonts do cartão SD."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Coloque tipos de letra .ttf até 4 MB na pasta /Fonts do cartão SD."
 
 msgid "Screen timeout"
 msgstr "Tempo limite do ecrã"

@@ -2516,8 +2516,8 @@ msgstr "Pa's wijze lynx bezag vroom het fikse aquaduct"
 msgid "Custom fonts affect Latin text only."
 msgstr "Aangepaste lettertypen gelden alleen voor Latijnse tekst."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Plaats .ttf-lettertypen in de map SD:/Fonts."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Plaats .ttf-lettertypen tot 4 MB in de map SD:/Fonts."
 
 msgid "Screen timeout"
 msgstr "Schermtime-out"

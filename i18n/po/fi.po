@@ -2518,8 +2518,8 @@ msgstr "Törkylempijävongahdus"
 msgid "Custom fonts affect Latin text only."
 msgstr "Mukautetut fontit vaikuttavat vain latinalaiseen tekstiin."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Aseta .ttf-fontit SD-kortin /Fonts-kansioon."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Aseta enintään 4 Mt:n .ttf-fontit SD-kortin /Fonts-kansioon."
 
 msgid "Screen timeout"
 msgstr "Näytön aikakatkaisu"

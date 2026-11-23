@@ -2555,8 +2555,8 @@ msgstr "A rápida raposa marrom salta 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "Fontes personalizadas afetam só texto latino."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Coloque fontes .ttf na pasta /Fonts do SD."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Coloque fontes .ttf de até 4 MB na pasta /Fonts do SD."
 
 msgid "Screen timeout"
 msgstr "Tempo de tela ligada"

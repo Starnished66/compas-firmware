@@ -2565,8 +2565,8 @@ msgstr "华夏风韵 洛水天依 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "自定义字体仅影响拉丁文本。"
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "将 .ttf 字体放入 SD 的 /Fonts 文件夹。"
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "将不超过 4 MB 的 .ttf 字体放入 SD 的 /Fonts 文件夹。"
 
 msgid "Screen timeout"
 msgstr "屏幕超时"

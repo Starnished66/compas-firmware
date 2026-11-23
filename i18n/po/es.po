@@ -2544,8 +2544,8 @@ msgstr "El veloz murciélago hindú 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "Las fuentes personalizadas solo afectan al texto latino."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Coloca fuentes .ttf en la carpeta /Fonts de la tarjeta SD."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Coloca fuentes .ttf de hasta 4 MB en la carpeta /Fonts de la tarjeta SD."
 
 msgid "Screen timeout"
 msgstr "Apagado de pantalla"

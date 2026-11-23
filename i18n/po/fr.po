@@ -2556,8 +2556,8 @@ msgstr "Portez ce vieux whisky au juge blond qui fume 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "Les polices perso ne concernent que le texte latin."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Placez les polices .ttf dans le dossier /Fonts de la carte SD."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Placez les polices .ttf de 4 Mo maximum dans le dossier /Fonts de la carte SD."
 
 msgid "Screen timeout"
 msgstr "Extinction de l'écran"

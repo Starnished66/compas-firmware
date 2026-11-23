@@ -2556,8 +2556,8 @@ msgstr "La rapida volpe bruna salta 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "I font personalizzati influiscono solo sul testo latino."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Metti i font .ttf nella cartella /Fonts della scheda SD."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Metti i font .ttf fino a 4 MB nella cartella /Fonts della scheda SD."
 
 msgid "Screen timeout"
 msgstr "Timeout schermo"

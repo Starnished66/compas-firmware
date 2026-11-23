@@ -2504,8 +2504,8 @@ msgstr "Franz jagt im komplett verwahrlosten Taxi quer durch Bayern 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "Benutzerdefinierte Schriftarten beeinflussen nur lateinischen Text."
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr "Lege .ttf-Schriftarten im Ordner /Fonts auf der SD-Karte ab."
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "Lege .ttf-Schriftarten bis 4 MB im Ordner /Fonts auf der SD-Karte ab."
 
 msgid "Screen timeout"
 msgstr "Bildschirm-Timeout"

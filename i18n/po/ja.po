@@ -2377,8 +2377,8 @@ msgstr "The quick brown fox jumps 123"
 msgid "Custom fonts affect Latin text only."
 msgstr "カスタムフォントはラテン文字にのみ適用されます。"
 
-msgid "Place .ttf fonts in SD /Fonts folder."
-msgstr ".ttfフォントをSDカードの/Fontsフォルダーに配置してください。"
+msgid "Place .ttf fonts up to 4 MB in SD /Fonts folder."
+msgstr "4MBまでの.ttfフォントをSDカードの/Fontsフォルダーに配置してください。"
 
 msgid "Screen timeout"
 msgstr "画面タイムアウト"
